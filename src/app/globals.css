@@ -13,15 +13,7 @@ body {
 .lg-backdrop {
  background-color: rgba(0, 0, 0, 0.9) !important;
 }
-.Line{
-    background-color: gray;
-    height: 3px;
-    width: 50px;
-    margin-top: 22px;
-}
-.grid_description{
-    background-color: rgba(121, 89, 29, 0.84);
-}
+
 .my-paroller img {
  transform: none;
 }

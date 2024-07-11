@@ -69,7 +69,9 @@ const news = () => {
   ]
   return (
     <>
-      <div className=''>
+    <div className='w-75 mx-auto'>
+    <div className=''>
+      <div className='news_line'><span></span></div>
         <h1 className='fw-bold fs-1'>NEWS UPDATES</h1>
       </div>
       <div className="row grid md-marg">
@@ -89,6 +91,7 @@ const news = () => {
         }
       </div>
       <div className='fw-900'>
+        <div className='awd_line'><span></span></div>
         <h1 className='fs-1 fw-900'>AWARDS</h1>
       </div>
       <div className="row grid md-marg">
@@ -106,6 +109,7 @@ const news = () => {
         }
       </div>
       <div>
+        <div className='photos_line'><span></span></div>
         <h1 className='fs-1 font-bold'>PHOTOS GALLERY</h1>
       </div>
       <div className="row grid md-marg">
@@ -127,6 +131,7 @@ const news = () => {
         <p className='text-black-50 fs-5'>VIDEO</p>
       </div>
       <div>
+        <div className='gallery_line'><span></span></div>
       <h1 className='fs-1 font-bold'>Gallery</h1>
       </div>
       <div className=''>
@@ -147,8 +152,7 @@ const news = () => {
             }
           </div>
       </div>
-      
-      
+    </div>
     </>
   )
 }
