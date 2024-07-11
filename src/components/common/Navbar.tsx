@@ -95,7 +95,7 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Group Websties</span>
+                <span className="rolling-text">Business</span>
               </a>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" href={`/`}>
@@ -121,6 +121,17 @@ function Navbar() {
                 aria-expanded="false"
               >
                 <span className="rolling-text">News & Media</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="/about"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span className="rolling-text">Blogs</span>
               </a>
             </li>
             <li className="nav-item">

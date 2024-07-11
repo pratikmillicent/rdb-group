@@ -33,8 +33,7 @@ function GroupGrid() {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <h6 className="dot-titl colorbg-3 mb-10">Group</h6>
-                <h2 className="fz-60 fw-700">Group Websites</h2>
+                <h2 className="fz-60 fw-700 underline">Group Websites</h2>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center">

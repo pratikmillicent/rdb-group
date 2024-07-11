@@ -2,6 +2,10 @@ body {
  padding: 0 !important;
 }
 
+*:has(> video) {
+ font-size: 0;
+}
+
 .lg-react-element {
  display: none;
 }
