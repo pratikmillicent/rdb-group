@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// @ts-ignore
 import { Navigation, Pagination } from "swiper";
 
 const swiperOptions = {

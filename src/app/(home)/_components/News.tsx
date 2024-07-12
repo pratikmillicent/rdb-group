@@ -1,10 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-// @ts-ignore
 import { Navigation } from "swiper";
 
 const data = [
