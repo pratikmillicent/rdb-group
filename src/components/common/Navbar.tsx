@@ -1,8 +1,10 @@
 "use client";
 import React, { MouseEvent, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
+  const path = usePathname();
   const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -46,7 +48,12 @@ function Navbar() {
   }
 
   return (
-    <nav ref={navRef} className={"navbar navbar-expand-lg"}>
+    <nav
+      ref={navRef}
+      className={`navbar navbar-expand-lg ${
+        path === "/" || path === "/about" ? "navbar-home" : ""
+      }`}
+    >
       <div className="container">
         <Link className="logo" href="/">
           <img style={{ width: "175px" }} src="/logo.svg" alt="logo" />

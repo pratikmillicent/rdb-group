@@ -3090,15 +3090,18 @@ body.loaded {
 /* ====================== [ End Overlay ] ====================== */
 /* Menu
 -----------------------------------------------------------------*/
-.navbar {
+.navbar-home {
   position: absolute;
   left: 0;
   top: 0;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar {
+  background: var(--navy);
   padding: 0;
   margin: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  /* background: var(--background); */
   border-bottom: 2px solid transparent;
   z-index: 999;
 }
@@ -3175,9 +3178,8 @@ body.loaded {
 }
 
 .navbar.nav-scroll {
-  /* background: var(--background); */
+  background: var(--navy) !important;
   /* border-color: rgba(0, 0, 0, 0.05); */
-  background: var(--navy);
   padding: 0;
   position: fixed;
   top: -80px;
