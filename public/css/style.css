@@ -102,6 +102,37 @@ main {
   left: 0;
 }
 
+.awd_line{
+  height: 2px;
+  background-color: #55e6a5; 
+  width: 14%;
+}
+.photos_line{
+  height: 3px;
+  background-color: #55e6a5; 
+  width: 14%;
+}
+.gallery_line{
+  margin-top: 20px;
+  height: 2px;
+  background-color: #55e6a5; 
+  width: 11%;
+}
+.news_line{
+  height: 3px;
+  background-color: #55e6a5; 
+  width: 10%;
+}
+.Line{
+  background-color: gray;
+  height: 3px;
+  width: 50px;
+  margin-top: 22px;
+}
+.grid_description{
+  background-color: rgba(121, 89, 29, 0.84);
+  height: 80px;
+}
 .row.sm-marg {
   margin-left: -5px;
   margin-right: -5px;
