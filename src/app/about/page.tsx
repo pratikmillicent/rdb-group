@@ -1,7 +1,6 @@
-import CoreValuesImage from "./core-value";
-import CoreValue from "./core-value";
-import Director from "./director";
-import Overview from "./overview";
+import CoreValuesImage from "./CoreValue";
+import Director from "./Director";
+import Overview from "./Overview";
 
 function About() {
   return (
@@ -20,14 +19,14 @@ function About() {
         <Overview />
 
         <div className="p-3 px-5 h-100">
-          <h4 className="d-flex align-items-center justify-content-center p-2">
+          <h4 className="d-flex align-items-center justify-content-start p-2">
             GROUP EXECUTIVE DIRECTORS/HEADS
           </h4>
 
           <Director />
         </div>
         <div className="p-3 px-5 h-100">
-          <h4 className="d-flex align-items-center justify-content-center p-2">
+          <h4 className="d-flex align-items-center justify-content-start p-2">
             - - - BUSSINESS HEADS
           </h4>
 

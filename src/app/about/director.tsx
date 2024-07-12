@@ -1,36 +1,26 @@
-import Link from "next/link";
 import React from "react";
 
 const director = [
   {
-    name: "Hitest Keshwari",
-    title: "Managing Director - Aspect Global & President Operation",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Temporibus unde eaque sunt minus tempore ea enim harum facilissimilique. Qui sequi, voluptas quasi sunt perspiciatis laborumrerum aut blanditiis, debitis labore corrupti itaque officiisbeatae nostrum. Suscipit voluptatum ipsam perferendis similiquealiquid? Nesciunt, quo!",
+    id: 1,
+    name: "Bonas THAKKAR - ",
+    title: "FOUNDER & CEO",
+    image: "/assets/images2/Bonas_Thakkar.jpg",
+    desc: "Bonas Thakkar has 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
   },
   {
-    name: "Hitest Keshwari",
-    title: "Managing Director - Aspect Global & President Operation",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Temporibus unde eaque sunt minus tempore ea enim harum facilissimilique. Qui sequi, voluptas quasi sunt perspiciatis laborumrerum aut blanditiis, debitis labore corrupti itaque officiisbeatae nostrum. Suscipit voluptatum ipsam perferendis similiquealiquid? Nesciunt, quo!",
+    id: 2,
+    name: "Bonas THAKKAR - ",
+    title: "FOUNDER & CEO",
+    image: "/assets/images2/Bonas_Thakkar.jpg",
+    desc: "Bonas Thakkar has 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
   },
   {
-    name: "Hitest Keshwari",
-    title: "Managing Director - Aspect Global & President Operation",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Temporibus unde eaque sunt minus tempore ea enim harum facilissimilique. Qui sequi, voluptas quasi sunt perspiciatis laborumrerum aut blanditiis, debitis labore corrupti itaque officiisbeatae nostrum. Suscipit voluptatum ipsam perferendis similiquealiquid? Nesciunt, quo!",
-  },
-  {
-    name: "Hitest Keshwari",
-    title: "Managing Director - Aspect Global & President Operation",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Temporibus unde eaque sunt minus tempore ea enim harum facilissimilique. Qui sequi, voluptas quasi sunt perspiciatis laborumrerum aut blanditiis, debitis labore corrupti itaque officiisbeatae nostrum. Suscipit voluptatum ipsam perferendis similiquealiquid? Nesciunt, quo!",
-  },
-  {
-    name: "Hitest Keshwari",
-    title: "Managing Director - Aspect Global & President Operation",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Temporibus unde eaque sunt minus tempore ea enim harum facilissimilique. Qui sequi, voluptas quasi sunt perspiciatis laborumrerum aut blanditiis, debitis labore corrupti itaque officiisbeatae nostrum. Suscipit voluptatum ipsam perferendis similiquealiquid? Nesciunt, quo!",
-  },
-  {
-    name: "Hitest Keshwari",
-    title: "Managing Director - Aspect Global & President Operation",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit Temporibus unde eaque sunt minus tempore ea enim harum facilissimilique. Qui sequi, voluptas quasi sunt perspiciatis laborumrerum aut blanditiis, debitis labore corrupti itaque officiisbeatae nostrum. Suscipit voluptatum ipsam perferendis similiquealiquid? Nesciunt, quo!",
+    id: 3,
+    name: "Bonas THAKKAR - ",
+    title: "FOUNDER & CEO",
+    image: "/assets/images2/Bonas_Thakkar.jpg",
+    desc: "Bonas Thakkar has 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
   },
 ];
 
@@ -38,15 +28,10 @@ const Director = () => {
   return (
     <div className="row">
       {director.map((data, key) => (
-        <div className="col-12 col-md-4 pb-4" key={key}>
+        <div className="col-12 col-md-4 pb-4" key={data.id}>
           <div>
-            <div className="w-100">
-              <img
-                src={
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrm4eYJn6gJYcN_euL5UamqUmT52R7TmWXg&s"
-                }
-                alt=""
-              />
+            <div className="w-75">
+              <img src={data.image} alt="" />
             </div>
             <div className="info d-flex align-items-center">
               <div className="">
