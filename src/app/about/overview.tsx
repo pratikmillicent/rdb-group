@@ -1,6 +1,21 @@
-import Link from "next/link";
-
 import React from "react";
+
+const OverviewData = [
+  {
+    id: 1,
+    name: "Dhaval Thakkar",
+    image: "/assets/images2/Dhaval.jpg",
+    description:
+      "WITH OVER 15 YEARS OF REAL ESTATE EXPERIENCE, SPECIALISING IN COMMERCIAL AND RETAIL SPACES ACROSS MUMBAI AND GUJARAT, DHAVAL HAS PERSONALLY LED PROJECT MARKETING INITIATIVES FOR NUMEROUCOMMERCIAL PROJECTS IN AND AROUND MUMBAI. HE HAS ALSO DELIVERED OVER 1.5 MILLION SQ. FT. ACROSS 14 CITIES IN INDIA AND HAS STRIVED TO BRING AN ELEMENT OF PROFESSIONALISM TO THE UNORGANIZED REAL ESTATE SECTOR. HE HAS ALSO BEEN AN ARDEN SUPPORTER FOR THE ADOPTION OF TECHNOLOGY FOR BETTER BUSINESS MANAGEMENT, BUSINESS EXPANSION AND SOCIAL OUTREACH, INSPIRING A SENSE OF CONFIDENCE AND REASSURANCE AMONG HIS 700+ HAPPY CUSTOMERS. HE IS ALSO MOVING INTO NEWER FACETS OF REAL ESTATE AS DIRECTOR OF FRACROSPACE A NEW VENTURE DEALING IN FRACTIONAL OWNERSHIP OF PROPERTIES.",
+  },
+  {
+    id: 2,
+    image: "/assets/images2/Raj.jpg",
+    name: "Raj Thakkar",
+    description:
+      "WITH OVER 21 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI. HE HAS DELIVERED MORE THAN 1.2 MILLION SQ. FT. EXCLUSIVELY LEADING SEVERAL PROJECT MARKETING INITIATIVES WITH SOME LEADING DEVELOPERS. OVER THE YEARS, HE HAS SOUGHT TO ADD AN ELEMENT OF TRANSPARENCY TO ALL ASPECTS OF THE BUSINESS, PRIORITISING RELATIONSHIPS OVER DEALS. HIS CHARMING AND FRIENDLY NATURE ADD A CERTAIN WARMTH TO THE BUSINESS, WHILE HIS DEDICATION AND PROFESSIONALISM HAVE EARNED HIM THE TRUST OF MANY SATISFIED CUSTOMERS.",
+  },
+];
 
 const Overview = () => {
   return (
@@ -9,13 +24,11 @@ const Overview = () => {
         <div className="row bord-thin-bottom p-3">
           <div className="col-12 col-md-6">
             <div>
-              <h6>Our vision</h6>
+              <h5>Our vision</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                earum <br />
-                aliquid doloribus distinctio voluptates amet voluptas illo,
-                porro odit facere veri <br /> deserunt est eos animi
-                consequuntur minus suscipit accusantium sunt.
+                To be global powerhouse where tradition and innovation unite,
+                building a sustainble, impactful, and visionary future for all
+                stakeholder
               </p>
             </div>
           </div>
@@ -57,101 +70,40 @@ const Overview = () => {
           </div>
           <div className="col-12 col-md-6">
             <div>
-              <h6>Our vision</h6>
+              <h5>Our vision</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                earum <br />
-                aliquid doloribus distinctio voluptates amet voluptas illo,
-                porro odit facere veri <br /> deserunt est eos animi
-                consequuntur minus suscipit accusantium sunt.
+                To embrance our roots while propelling forward, delevering value
+                through ethical sustainable and pioneering solutions, and
+                ensuring Aspect Global Ventures remains a symbol of trust
+                quality , and progress for generations
               </p>
             </div>
           </div>
         </div>
 
         {/* overview part 2  */}
-        <div className="row  p-3 mb-5">
-          <div className="col-12 col-md-8">
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                minus nobis, dolore veritatis, facere ad error voluptate aut
-                dolorum inventore deleniti. Fugiat, non vero fugit impedit quia
-                ipsam? Dolorem autem obcaecati cupiditate! Aut mollitia
-                distinctio eius odio adipisci, dolores totam consectetur
-                consequuntur corrupti earum eaque, perspiciatis animi, deserunt
-                non similique delectus laudantium blanditiis assumenda! Unde
-                fuga odio corporis, nulla quidem et ipsa.orem ipsum dolor sit
-                amet consectetur adipisicing elit. Facilis minus nobis, dolore
-                veritatis, facere ad error voluptate aut dolorum inventore
-                deleniti. Fugiat, non vero fugit impedit quia ipsam? Dolorem
-                autem obcaecati cupiditate! Aut mollitia distinctio eius odio
-                adipisci, dolores totam consectetur consequuntur corrupti earum
-                eaque, perspiciatis animi, deserunt non similique delectus
-                laudantium blanditiis assumenda! Unde fuga odio corporis, nulla
-                quidem et ipsa
-              </p>
+        {OverviewData.map((data, key) => (
+          <div className="row  p-3 mb-5" key={data?.id}>
+            <div className="col-12 col-md-8">
+              <div className="">
+                <p>{data.description}</p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-12 col-md-4">
-            <div className="cont">
-              <div className="item d-flex align-items-center justify-content-center pb-20">
-                <div>
-                  <div className="icon-img-200 mr-60">
-                    <img
-                      src={
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrm4eYJn6gJYcN_euL5UamqUmT52R7TmWXg&s"
-                      }
-                      alt=""
-                    />
+            <div className="col-12 col-md-4">
+              <div className="cont h-100">
+                <div className="item d-flex align-items-center justify-content-center pb-20">
+                  <div>
+                    <div className="icon-img-200 mr-60">
+                      <img src={data.image} alt="dhaval-img" />
+                    </div>
+                    <div className="fs-4 p-2 ps-5 ms-3">{data?.name}</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="row  p-3">
-          <div className="col-12 col-md-8">
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                minus nobis, dolore veritatis, facere ad error voluptate aut
-                dolorum inventore deleniti. Fugiat, non vero fugit impedit quia
-                ipsam? Dolorem autem obcaecati cupiditate! Aut mollitia
-                distinctio eius odio adipisci, dolores totam consectetur
-                consequuntur corrupti earum eaque, perspiciatis animi, deserunt
-                non similique delectus laudantium blanditiis assumenda! Unde
-                fuga odio corporis, nulla quidem et ipsa.orem ipsum dolor sit
-                amet consectetur adipisicing elit. Facilis minus nobis, dolore
-                veritatis, facere ad error voluptate aut dolorum inventore
-                deleniti. Fugiat, non vero fugit impedit quia ipsam? Dolorem
-                autem obcaecati cupiditate! Aut mollitia distinctio eius odio
-                adipisci, dolores totam consectetur consequuntur corrupti earum
-                eaque, perspiciatis animi, deserunt non similique delectus
-                laudantium blanditiis assumenda! Unde fuga odio corporis, nulla
-                quidem et ipsa
-              </p>
-            </div>
-          </div>
-
-          <div className="col-12 col-md-4">
-            <div className="cont">
-              <div className="item d-flex align-items-center justify-content-center pb-20">
-                <div>
-                  <div className="icon-img-200 mr-60">
-                    <img
-                      src={
-                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrm4eYJn6gJYcN_euL5UamqUmT52R7TmWXg&s"
-                      }
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
