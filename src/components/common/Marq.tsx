@@ -2,15 +2,16 @@ import React from "react";
 
 function Marq({ data }: { data: string[] }) {
   return (
-    <section className="serv-marq main-colorbg3">
+    <section className="serv-marq" style={{ backgroundColor: "#1F2D58" }}>
       <div className="container-fluid rest">
         <div className="row">
           <div className="col-12">
-            <div className="main-marq dark-text">
+            <div className="main-marq" style={{ color: "#FFF" }}>
               <div className="slide-har st1" style={{ padding: "12px 0" }}>
                 <div className="box non-strok">
                   {data.map((item: string) => (
                     <span
+                      key={item}
                       style={{
                         fontSize: "16px",
                         textWrap: "nowrap",
@@ -24,6 +25,7 @@ function Marq({ data }: { data: string[] }) {
                 <div className="box non-strok">
                   {data.map((item: string) => (
                     <span
+                      key={item}
                       style={{
                         fontSize: "16px",
                         textWrap: "nowrap",
