@@ -4586,7 +4586,7 @@ body.loaded {
   bottom: -30px;
   width: 200px;
   height: 200px;
-  background-image: url(../imgs/patterns/dots2.png);
+  background-image: url(../images/patterns/dots2.png);
   background-repeat: repeat;
   z-index: -1;
 }
