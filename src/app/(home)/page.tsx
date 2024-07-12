@@ -2,6 +2,7 @@ import Marq from "@/components/common/Marq";
 import About from "./_components/About";
 import GroupGrid from "./_components/Group";
 import News from "./_components/News";
+import VideoGallary from "./_components/VideoGallary";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -29,6 +30,7 @@ export default function Home() {
         <Marq data={marque_data} />
       </div>
       <About />
+      <VideoGallary />
       <GroupGrid />
       <News />
     </main>
