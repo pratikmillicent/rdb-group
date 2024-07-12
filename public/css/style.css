@@ -107,6 +107,7 @@ main {
   background-color: var(--navy);
   position: absolute;
   left: 0;
+  top: -10px;
 }
 
 .awd_line {
