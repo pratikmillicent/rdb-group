@@ -31,19 +31,19 @@ const CoreValuesImage = () => {
         >
           <div className="text-center">
             <i className="fas fa-lightbulb fs-1 text-light"></i>
-            <p className="">INNOVATION</p>
+            <p className="text-light">INNOVATION</p>
           </div>
           <div className="text-center">
             <i className="fas fa-puzzle-piece fs-1 text-light"></i>
-            <p>COMMITMENT</p>
+            <p className="text-light">COMMITMENT</p>
           </div>
           <div className="text-center">
             <i className="fas fa-handshake fs-1 text-light"></i>
-            <p>INTEGRITY</p>
+            <p className="text-light">INTEGRITY</p>
           </div>
           <div className="text-center">
             <i className="fas fa-medal fs-1 text-light"></i>
-            <p>QUALITY</p>
+            <p className="text-light">QUALITY</p>
           </div>
         </div>
       </div>
