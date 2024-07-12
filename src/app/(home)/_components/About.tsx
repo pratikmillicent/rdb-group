@@ -8,8 +8,8 @@ function About() {
       style={{ paddingBottom: "60px" }}
     >
       <div className="container">
-        <div className="row lg-marg">
-          <div className="col-lg-6 md-mb50">
+        <div className="row md-marg">
+          <div className="col-lg-6 md-mb50 d-none d-lg-block">
             <div className="imgs mb-80">
               <div className="img1 main-color3">
                 <img src="/assets/images/home/about1.jpg" alt="" />
