@@ -148,7 +148,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="/contact-us"
+                href="/contactus"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
