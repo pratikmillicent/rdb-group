@@ -22,7 +22,7 @@ function About() {
           <div className="col-lg-6 valign">
             <div className="cont">
               <h6 className="sub-title mb-15">About Company</h6>
-              <h3 className="mb-15">
+              <h3 className="mb-15" style={{ color: "var(--navy)" }}>
                 BUILDING ON OUR EXPERIENCE TO REACH FOR MORE
               </h3>
               <p>

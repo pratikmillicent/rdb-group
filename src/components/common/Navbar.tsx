@@ -99,16 +99,16 @@ function Navbar() {
               </a>
               <div className="dropdown-menu">
                 <Link className="dropdown-item" href={`/`}>
-                  www.rdbrothers.com
+                  Properties
                 </Link>
                 <Link className="dropdown-item" href={`/`}>
-                  www.rdbrother-realty.com
+                  Realty
                 </Link>
                 <Link className="dropdown-item" href={`/`}>
-                  www.rdbrothers-proptech.com
+                  Fracto
                 </Link>
                 <Link className="dropdown-item" href={`/`}>
-                  www.rdbrothers-movies.com
+                  Movies
                 </Link>
               </div>
             </li>
