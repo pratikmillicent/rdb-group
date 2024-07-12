@@ -3091,13 +3091,13 @@ body.loaded {
 /* Menu
 -----------------------------------------------------------------*/
 .navbar {
-  /* position: absolute;
+  position: absolute;
   left: 0;
-  top: 0; */
+  top: 0;
   padding: 0;
   margin: 0;
   width: 100%;
-  /* background: transparent; */
+  background: rgba(0, 0, 0, 0.5);
   /* background: var(--background); */
   border-bottom: 2px solid transparent;
   z-index: 999;
@@ -3175,8 +3175,9 @@ body.loaded {
 }
 
 .navbar.nav-scroll {
-  background: var(--background);
-  border-color: rgba(0, 0, 0, 0.05);
+  /* background: var(--background); */
+  /* border-color: rgba(0, 0, 0, 0.05); */
+  background: var(--navy);
   padding: 0;
   position: fixed;
   top: -80px;
@@ -3199,7 +3200,8 @@ body.loaded {
   letter-spacing: 1px;
   font-size: 13px;
   font-weight: 600;
-  color: var(--foreground);
+  /* color: var(--foreground); */
+  color: #fff;
   padding: 20px 10px 15px 10px;
   margin: 0 15px;
 }

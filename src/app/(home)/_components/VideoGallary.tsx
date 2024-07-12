@@ -62,7 +62,30 @@ function VideoGallary() {
         data={data}
         component={(item: Video) => (
           <div onClick={(e) => openVideo(e, item)}>
-            <img src={item.image} />
+            <div style={{ position: "relative" }}>
+              <svg
+                style={{
+                  position: "absolute",
+                  width: "100px",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                }}
+                className="video-overlay-play-button"
+                viewBox="0 0 200 200"
+              >
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="90"
+                  fill="none"
+                  stroke-width="15"
+                  stroke="#fff"
+                />
+                <polygon points="70, 55 70, 145 145, 100" fill="#fff" />\
+              </svg>
+              <img src={item.image} />
+            </div>
             <div
               style={{
                 background: "#fff",
