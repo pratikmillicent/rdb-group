@@ -146,6 +146,34 @@ main {
   height: 80px;
 }
 
+/* contact us */
+.main_box {
+  height: 600px;
+}
+
+.msg_box {
+  margin-top: 20px;
+}
+
+.contact_line {
+  height: 4px;
+  width: 30px;
+}
+
+.inpt_box {
+  min-height: 80px;
+  margin-top: 10px;
+}
+
+.cnt_btn1 {
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.label_flex {
+  padding-top: 55px;
+}
+
 .row.sm-marg {
   margin-left: -5px;
   margin-right: -5px;
