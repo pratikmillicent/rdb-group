@@ -146,6 +146,16 @@ main {
   background-color: rgba(121, 89, 29, 0.84);
   height: 80px;
 }
+/*career*/
+.career_line{
+  background: var(--navy);
+  height: 3px;
+  width: 30px;
+}
+.apply_part{
+  background: var(--navy);
+  margin-top: 25px;
+}
 
 /* contact us */
 .main_box {
