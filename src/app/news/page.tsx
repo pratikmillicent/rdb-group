@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { useEffect, useState } from "react";
-import ModalVideo from "@/components/common/ModalVideo";
-import Carousel from "@/components/common/Carousel";
+import ModalVideo from "@/components/modal-video/ModalVideo";
+import Carousel from "@/components/cursor/Carousel";
 interface Video {
   image: string;
   title: string;
