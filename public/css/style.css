@@ -142,11 +142,19 @@ main {
   margin-top: 22px;
 }
 
-<<<<<<<
-  HEAD=======>>>>>>>e8907cc740f6a886e7703aa49bc901cf0649da0a
-  .grid_description {
+.grid_description {
   background-color: rgba(121, 89, 29, 0.84);
   height: 80px;
+}
+/*career*/
+.career_line {
+  background: var(--navy);
+  height: 3px;
+  width: 30px;
+}
+.apply_part {
+  background: var(--navy);
+  margin-top: 25px;
 }
 
 /* contact us */
