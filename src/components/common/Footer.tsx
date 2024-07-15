@@ -27,19 +27,19 @@ function Footer() {
                   <h6>Get in touch</h6>
                 </div>
                 <div className="text">
-                  <p className="mb-10">
+                  <div className="mb-10">
                     <Link href="mail:info@rdbrothers.com">
                       info@rdbrothers.com
                     </Link>
-                  </p>
-                  <p className="">
+                  </div>
+                  <div className="">
                     <li>
                       <Link href="tel:+91 9321711146">+91 9321711146</Link>
                     </li>
                     <li>
                       <Link href="tel:+91 9877737776">+91 9877737776</Link>
                     </li>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -96,9 +96,9 @@ function Footer() {
               <div className="col-lg-8">
                 <div className="copyright d-flex">
                   <div className="ml-auto">
-                    <p className="fz-13">
+                    <div className="fz-13">
                       Copyright © 2024 All rights reserved
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>

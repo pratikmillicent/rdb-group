@@ -13,14 +13,14 @@ const director = [
     name: "Bonas THAKKAR - ",
     title: "FOUNDER & CEO",
     image: "/assets/images2/Bonas_Thakkar.jpg",
-    desc: "Bonas Thakkar has 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
+    desc: "BONAS THAKKAR HAS 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
   },
   {
     id: 3,
     name: "Bonas THAKKAR - ",
     title: "FOUNDER & CEO",
     image: "/assets/images2/Bonas_Thakkar.jpg",
-    desc: "Bonas Thakkar has 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
+    desc: " BONAS THAKKAR HAS 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
   },
 ];
 
@@ -35,24 +35,18 @@ const Director = () => {
             </div>
             <div className="info d-flex align-items-center">
               <div className="">
-                <div className="fs-5 py-2 link-danger fw-bold">{data.name}</div>
+                <div className="fs-5 py-2 main-color3  fw-bold">
+                  {data.name}
+                </div>
 
-                <div className="fz-12 fw-bold pb-2">{data.title}</div>
-                <p
-                  className="fz-12"
-                  style={{
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    width: "300px",
-                  }}
-                >
-                  {data.desc}
-                </p>
+                <div className="fz-12 fw-bold pb-2 main-color3">
+                  {data.title}
+                </div>
+                <div className="fz-12 main-color3">{data.desc}</div>
               </div>
             </div>
             <div className="arrow mt-5 cursor-pointer">
-              <span className="fz-12 text-danger mr-10 text-decoration-underline">
+              <span className="fz-12 main-color3 mr-10 text-decoration-underline">
                 Read More
               </span>
             </div>
