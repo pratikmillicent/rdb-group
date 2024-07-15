@@ -30,8 +30,10 @@ const Director = () => {
       {director.map((data, key) => (
         <div className="col-12 col-md-4 pb-4" key={data.id}>
           <div>
-            <div className="w-75">
-              <img src={data.image} alt="" />
+            <div className="imago wow">
+              <div className="inner wow">
+                <img src={data.image} alt="image" />
+              </div>
             </div>
             <div className="info d-flex align-items-center">
               <div className="">

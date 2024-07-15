@@ -111,7 +111,7 @@ main {
 }
 
 .awd_line {
-  height: 2px;
+  height: 3px;
   background-color: var(--navy);
   width: 14%;
 }
@@ -147,12 +147,12 @@ main {
   height: 80px;
 }
 /*career*/
-.career_line{
+.career_line {
   background: var(--navy);
   height: 3px;
   width: 30px;
 }
-.apply_part{
+.apply_part {
   background: var(--navy);
   margin-top: 25px;
 }
@@ -314,7 +314,7 @@ h6 {
 
 p {
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   color: #696969;
   margin: 0;
@@ -10692,6 +10692,17 @@ header.in-box {
 
 .flex-row {
   flex-direction: row;
+}
+
+.apply-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.positions-item:hover .apply-btn {
+  background-color: #ffaa17 !important;
+  color: #000 !important;
+  transition: background-color 0.6s ease; /* Add transition for background-color with 0.5s duration */
 }
 
 /* ====================== [ End Responsive ] ====================== */

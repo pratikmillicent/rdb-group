@@ -5,7 +5,12 @@ const CoreValuesImage = () => {
   const coreImage = "/assets/images2/Core.jpg";
   return (
     <div className="position-relative text-center text-white">
-      <img src={coreImage} alt="Core Values" className="img-fluid" />
+      <img
+        src={coreImage}
+        alt="Core Values"
+        className="img-fluid"
+        style={{ height: "100vh", objectFit: "cover" }}
+      />
       <div
         style={{
           position: "absolute",

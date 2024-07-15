@@ -1,4 +1,4 @@
-import Marq from "@/components/common/Marq";
+import Marq from "@/components/marq/Marq";
 import About from "./_components/About";
 import GroupGrid from "./_components/Group";
 import News from "./_components/News";

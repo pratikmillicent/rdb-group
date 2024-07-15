@@ -1,4 +1,6 @@
+import Heading from "@/components/heading/Heading";
 import CoreValuesImage from "./CoreValue";
+import Grid from "./Director";
 import Director from "./Director";
 import Overview from "./Overview";
 
@@ -18,19 +20,24 @@ function About() {
         ></video>
         <Overview />
 
-        <div className="p-3 px-5 h-100">
-          <h4 className="main-color3 d-flex align-items-center justify-content-start p-2">
+        <div className="container section-padding">
+          {/* <h4 className="main-color3 d-flex align-items-center justify-content-start">
             GROUP EXECUTIVE DIRECTORS/HEADS
-          </h4>
+          </h4> */}
+          <Heading
+            headTitle="GROUP EXECUTIVE DIRECTORS/HEADS"
+            fontSize="fs-1"
+          />
 
-          <Director />
+          <Grid />
         </div>
-        <div className="p-3 px-5 h-100">
-          <h4 className="main-color3 d-flex align-items-center justify-content-start p-2">
+        <div className="container section-padding">
+          {/* <h4 className="main-color3 d-flex align-items-center justify-content-start p-2">
             - - - BUSSINESS HEADS
-          </h4>
+          </h4> */}
+          <Heading headTitle="BUSSINESS HEADS" fontSize="fs-1" />
 
-          <Director />
+          <Grid />
         </div>
         <div>
           {" "}
