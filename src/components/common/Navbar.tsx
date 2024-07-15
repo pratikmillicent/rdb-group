@@ -133,7 +133,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="/about"
+                href="/blogs"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -155,7 +155,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="/contactus"
+                href="/contact-us"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"

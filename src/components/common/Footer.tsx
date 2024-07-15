@@ -32,10 +32,14 @@ function Footer() {
                       info@rdbrothers.com
                     </Link>
                   </p>
-                  <h5>
-                    <Link href="tel:+91 9321711146">+91 9321711146</Link>
-                    <Link href="tel:+91 9877737776">+91 9877737776</Link>
-                  </h5>
+                  <p className="">
+                    <li>
+                      <Link href="tel:+91 9321711146">+91 9321711146</Link>
+                    </li>
+                    <li>
+                      <Link href="tel:+91 9877737776">+91 9877737776</Link>
+                    </li>
+                  </p>
                 </div>
               </div>
             </div>
