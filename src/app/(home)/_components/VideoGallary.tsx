@@ -1,6 +1,6 @@
 "use client";
-import Carousel from "@/components/common/Carousel";
-import ModalVideo from "@/components/common/ModalVideo";
+import Carousel from "@/components/carousel/Carousel";
+import ModalVideo from "@/components/modal-video/ModalVideo";
 import React, { useState } from "react";
 
 interface Video {
