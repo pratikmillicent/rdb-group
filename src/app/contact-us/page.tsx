@@ -118,9 +118,15 @@ const ContactUs = () => {
               </div>
               <div className="row">
                 <div className="col-12 ">
-                  <p className="fz-30 fw-bold text-center text-dark">Global Presence</p>
-                  <div className="w-75">
-                    <img src="/assets/images2/map.png" alt="" className="w-100"/>
+                  <p className="fz-30 fw-bold text-center text-dark">
+                    Global Presence
+                  </p>
+                  <div style={{ margin: "60px 0" }}>
+                    <img
+                      src="/assets/images2/map.png"
+                      alt=""
+                      className="w-100"
+                    />
                   </div>
                 </div>
               </div>
