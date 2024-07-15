@@ -1,5 +1,4 @@
-import React from "react";
-const news = () => {
+const News = () => {
   const data = [
     {
       id: 1,
@@ -63,6 +62,7 @@ const news = () => {
       url: "https://www.youtube.com/embed/FeiiAvkAcnA?si=fXcp3EW3SacCe-hQ",
     },
   ];
+
   return (
     <>
       <div className="w-75 mx-auto">
@@ -168,4 +168,4 @@ const news = () => {
   );
 };
 
-export default news;
+export default News;
