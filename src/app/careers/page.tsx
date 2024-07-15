@@ -46,14 +46,14 @@ const page = () => {
                     </div>
                   </div>
                   <div className=" mt-5">
-                    <strong>Postions </strong>- {data.position}
+                    <strong>Positions </strong>- {data.position}
                   </div>
                   <div>
                     <strong>Description </strong>- {data.description}
                   </div>
                   <div>
-                    <strong>Qualification and Experience required </strong>-
-                    {data.qualifications}
+                    <strong>Qualification and Experience required </strong>
+                    -&nbsp;{data.qualifications}
                   </div>
                 </div>
               ))}
