@@ -26,7 +26,7 @@ function About() {
           </h4> */}
           <Heading
             headTitle="GROUP EXECUTIVE DIRECTORS/HEADS"
-            fontSize="fs-3"
+            fontSize="fs-1"
           />
 
           <Grid />
@@ -35,7 +35,7 @@ function About() {
           {/* <h4 className="main-color3 d-flex align-items-center justify-content-start p-2">
             - - - BUSSINESS HEADS
           </h4> */}
-          <Heading headTitle="BUSSINESS HEADS" fontSize="fs-3" />
+          <Heading headTitle="BUSSINESS HEADS" fontSize="fs-1" />
 
           <Grid />
         </div>
