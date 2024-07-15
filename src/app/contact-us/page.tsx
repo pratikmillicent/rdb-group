@@ -1,14 +1,19 @@
+import Heading from "@/components/heading/Heading";
+
 const ContactUs = () => {
   return (
     <div className="container">
-      <div className="d-flex gap-3">
+      <div className="d-flex gap-3 mt-30">
         <div className="col-12 col-md-1 contact_line mt-3"></div>
         <div className="col-12 col-md-11">
-          <p className="fs-4 fw-bold text-dark">
+          {/* <p className="fs-4 fw-bold text-dark">
             Questions or concerns? Contact Us Now!
-          </p>
-          <div className="bg-dark w-75 msg_box p-3">
-            <div className="row text-light msg_box">
+          </p> */}
+          <div className="">
+          <Heading headTitle="Questions or concerns? Contact Us Now!" fontSize="fs-3"/>
+          </div>
+          <div className="w-75 msg_box p-2">
+            {/* <div className="row text-light msg_box">
               <div className="col-12 col-md-4 text-center mb-2">
                 <p className="text-light">Enter Full Name</p>
               </div>
@@ -18,13 +23,26 @@ const ContactUs = () => {
               <div className="col-12 col-md-4 text-center mb-2">
                 <p className="text-light">Enter Email Address</p>
               </div>
-            </div>
+            </div> */}
             <div className="row">
               <div className="col-12">
+                <p className="text-dark">Enter Full Name</p>
                 <input
-                  placeholder="ENTER YOUR MESSAGE..."
-                  className="w-100 mb-2 p-2 inpt_box rounded border border-secondary bg-dark text-light"
+                  placeholder="ENTER YOUR NAME..."
+                  className="w-100 mb-2 p-2 inpt_box rounded border border-secondary text-light"
                 ></input>
+                <p className="text-dark mt-20">Enter Phone Number</p>
+                <input
+                  placeholder="ENTER YOUR NUMBER..."
+                  className="w-100 mb-2 p-2 inpt_box rounded border border-secondary text-light"
+                ></input>
+                <p className="text-dark mt-20">Enter Email Address</p>
+                <input
+                  placeholder="ENTER YOUR ADDRESS..."
+                  className="w-100 mb-2 p-2 inpt_box rounded border border-secondary text-light"
+                ></input>
+              </div>
+              <div className="col-12 mt-20">
                 <button className="btn rounded border-secondary cnt_btn1 text-white">
                   Send
                 </button>
@@ -38,9 +56,12 @@ const ContactUs = () => {
                 React out for assistance and suuport.We're hre to listen and
                 help you thrive
               </p>
-              <p className="fs-4 fw-bold text-dark text-center">
+              {/* <p className="fs-4 fw-bold text-dark">
                 Registered Offices:
-              </p>
+              </p> */}
+              <div className="d-flex justify-content-center w-100 mt-30">
+              <Heading headTitle="Registered Offices:" fontSize="fs-4" />
+              </div>
               <div className="row text-light msg_box">
                 <div className="col-12 col-md-4 mb-2">
                   <p className="text-dark fw-bold">
@@ -118,15 +139,22 @@ const ContactUs = () => {
               </div>
               <div className="row">
                 <div className="col-12 ">
-                  <p className="fz-30 fw-bold text-center text-dark">
-                    Global Presence
-                  </p>
-                  <div style={{ margin: "60px 0" }}>
-                    <img
-                      src="/assets/images2/map.png"
-                      alt=""
-                      className="w-100"
-                    />
+                  {/* <<<<<<< HEAD */}
+                 
+                  <div className="w-75">
+                    
+                    {/* ======= */}
+                    <p className="fz-30 fw-bold text-center text-dark">
+                      Global Presence
+                    </p>
+                    <div style={{ margin: "60px 0" }}>
+                      <img
+                        src="/assets/images2/map.png"
+                        alt=""
+                        className="w-100"
+                      />
+                      {/* >>>>>>> fc0e9628b16eeb6a40a7025e1bbc8ee40d8ce3ea */}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -134,8 +162,8 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>  
+      );
 };
 
-export default ContactUs;
+      export default ContactUs;

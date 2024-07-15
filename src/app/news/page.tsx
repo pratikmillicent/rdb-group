@@ -5,6 +5,7 @@ import { Navigation } from "swiper";
 import { useEffect, useState } from "react";
 import ModalVideo from "@/components/modal-video/ModalVideo";
 import Carousel from "@/components/carousel/Carousel";
+import Heading from "@/components/heading/Heading";
 interface Video {
   image: string;
   title: string;
@@ -76,9 +77,13 @@ const News = () => {
             <div className="sec-lg-head mb-80">
               <div className="row">
                 <div className="col-lg-8">
-                  <div className="position-re">
+                  {/* <div className="position-re">
                     <h2 className="fz-60 fw-700 underline">Latest News</h2>
-                  </div>
+                  </div> */}
+                  <Heading
+                  headTitle="Latest News"
+                  fontSize="fs-1"
+                  />
                 </div>
               </div>
             </div>
@@ -150,9 +155,13 @@ const News = () => {
             <div className="sec-lg-head mb-80">
               <div className="row">
                 <div className="col-lg-8">
-                  <div className="position-re">
+                  {/* <div className="position-re">
                     <h2 className="fz-60 fw-700 underline">AWARDS</h2>
-                  </div>
+                  </div> */}
+                  <Heading
+                  headTitle="AWARDS"
+                  fontSize="fs-1"
+                  />
                 </div>
               </div>
             </div>
@@ -197,9 +206,13 @@ const News = () => {
             <div className="sec-lg-head mb-80">
               <div className="row">
                 <div className="col-lg-8">
-                  <div className="position-re">
+                  {/* <div className="position-re">
                     <h2 className="fz-60 fw-700 underline">PHOTOS GALLERY</h2>
-                  </div>
+                  </div> */}
+                  <Heading
+                  headTitle="PHOTOS GALLERY"
+                  fontSize="fs-1"
+                  />
                 </div>
               </div>
             </div>
@@ -240,9 +253,13 @@ const News = () => {
           <div className="sec-lg-head">
             <div className="row">
               <div className="col-lg-8">
-                <div className="position-re">
+                {/* <div className="position-re">
                   <h2 className="fz-60 fw-700 underline">Video Gallery</h2>
-                </div>
+                </div> */}
+                <Heading
+            headTitle="Video Gallery"
+            fontSize="fs-1"
+          />
               </div>
             </div>
           </div>
