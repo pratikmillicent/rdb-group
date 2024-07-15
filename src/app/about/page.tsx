@@ -29,7 +29,7 @@ function About() {
             fontSize="fs-1"
           />
 
-          <Grid />
+          <Grid Data={director} />
         </div>
         <div className="container section-padding">
           {/* <h4 className="main-color3 d-flex align-items-center justify-content-start p-2">
@@ -37,11 +37,11 @@ function About() {
           </h4> */}
           <Heading headTitle="BUSSINESS HEADS" fontSize="fs-1" />
 
-          <Grid />
+          <Grid Data={businessHead} />
         </div>
         <div>
           {" "}
-          <div>
+          <div className="pt-4 mt-1">
             <CoreValuesImage />
           </div>
         </div>
@@ -51,3 +51,51 @@ function About() {
 }
 
 export default About;
+
+const director = [
+  {
+    id: 1,
+    name: "Arjun Mehta",
+    title: "Managing Director - Aspect Hospitality",
+    image: "/assets/images2/person/person2nd.jfif",
+    desc: "Bonas Thakkar has 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
+  },
+  {
+    id: 2,
+    name: "Tejas Thakkar",
+    title: "Managing Director - Aspect Bullion",
+    image: "/assets/images2/person/person3.jfif",
+    desc: "BONAS THAKKAR HAS 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
+  },
+  {
+    id: 3,
+    name: "Ravi Shah",
+    title: "Managing Director - Ecomix Concrete",
+    image: "/assets/images2/person/person4.jfif",
+    desc: "BONAS THAKKAR HAS 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
+  },
+];
+
+const businessHead = [
+  {
+    id: 1,
+    name: "Anil Kumar",
+    title: "FOUNDER & CEO",
+    image: "/assets/images2/person/person5.jfif",
+    desc: "Anil Kumar has 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
+  },
+  {
+    id: 2,
+    name: "Harsh Yadav",
+    title: "FOUNDER & CEO",
+    image: "/assets/images2/person/person6.jfif",
+    desc: "HARSH YADAV HAS 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
+  },
+  {
+    id: 3,
+    name: "Sunil Patel",
+    title: "FOUNDER & CEO",
+    image: "/assets/images2/person/person1.jfif",
+    desc: "SUNIL PATEL HAS 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
+  },
+];

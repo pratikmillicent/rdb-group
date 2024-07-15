@@ -1,53 +1,55 @@
 import React from "react";
 
-const director = [
-  {
-    id: 1,
-    name: "Bonas THAKKAR - ",
-    title: "FOUNDER & CEO",
-    image: "/assets/images2/Bonas_Thakkar.jpg",
-    desc: "Bonas Thakkar has 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
-  },
-  {
-    id: 2,
-    name: "Bonas THAKKAR - ",
-    title: "FOUNDER & CEO",
-    image: "/assets/images2/Bonas_Thakkar.jpg",
-    desc: "BONAS THAKKAR HAS 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
-  },
-  {
-    id: 3,
-    name: "Bonas THAKKAR - ",
-    title: "FOUNDER & CEO",
-    image: "/assets/images2/Bonas_Thakkar.jpg",
-    desc: " BONAS THAKKAR HAS 10 YEARS OF EXPERIENCE IN HIS FAMILY'S REAL ESTATE BUSINESS, RAJ HAS LENT HIS FOCUS TO RESIDENTIAL REAL ESTATE IN MUMBAI",
-  },
-];
+interface DirectorData {
+  id: number;
+  name: string;
+  title: string;
+  image: string;
+  desc: string;
+}
 
-const Director = () => {
+interface DirectorProps {
+  Data: DirectorData[]; // Corrected prop type from string to array of DirectorData objects
+}
+
+const Director: React.FC<DirectorProps> = ({ Data }) => {
   return (
     <div className="row">
-      {director.map((data, key) => (
-        <div className="col-12 col-md-4 pb-4" key={data.id}>
+      {Data?.map((item) => (
+        <div className="col-12 col-md-4 pb-4" key={item.id}>
           <div>
             <div className="imago wow">
-              <div className="inner wow">
-                <img src={data.image} alt="image" />
+              {" "}
+              <div className="inner">
+                <img
+                  src={item.image}
+                  alt={`${item.name} - ${item.title}`}
+                  className="image-responsive"
+                  style={{
+                    width: "100%",
+                    maxWidth: "300px",
+                    height: "200px",
+                    objectFit: "cover",
+                    borderRadius: "8px",
+                    overflow: "hidden",
+                  }}
+                />
               </div>
             </div>
             <div className="info d-flex align-items-center">
-              <div className="">
-                <div className="fs-5 py-2 main-color3  fw-bold">
-                  {data.name}
-                </div>
+              <div>
+                <div className="fs-5 py-2 main-color3 fw-bold">{item.name}</div>
 
                 <div className="fz-12 fw-bold pb-2 main-color3">
-                  {data.title}
+                  {item.title}
                 </div>
-                <div className="fz-12 main-color3">{data.desc}</div>
+                <div className="fz-12 main-color3">{item.desc}</div>
               </div>
             </div>
-            <div className="arrow mt-5 cursor-pointer">
+            <div
+              className="arrow mt-5 cursor-pointer"
+              // onClick={() => handleReadMore(item.id)}
+            >
               <span className="fz-12 main-color3 mr-10 text-decoration-underline">
                 Read More
               </span>
@@ -58,5 +60,10 @@ const Director = () => {
     </div>
   );
 };
+
+// const handleReadMore = (id: number) => {
+//   console.log(`Read More clicked for item with id: ${id}`);
+//   // Implement the functionality here
+// };
 
 export default Director;
