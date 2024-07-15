@@ -167,6 +167,7 @@ main {
 }
 
 .contact_line {
+  background: var(--navy);
   height: 4px;
   width: 30px;
 }
@@ -178,6 +179,7 @@ main {
 
 .cnt_btn1 {
   width: 100px;
+  background: var(--navy);
   margin-bottom: 50px;
 }
 

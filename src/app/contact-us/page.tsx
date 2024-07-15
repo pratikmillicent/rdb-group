@@ -2,12 +2,12 @@ const ContactUs = () => {
   return (
     <div className="container">
       <div className="d-flex gap-3">
-        <div className="col-12 col-md-1 bg-danger contact_line mt-3"></div>
+        <div className="col-12 col-md-1 contact_line mt-3"></div>
         <div className="col-12 col-md-11">
           <p className="fs-4 fw-bold text-dark">
             Questions or concerns? Contact Us Now!
           </p>
-          <div className="bg-dark msg_box p-3">
+          <div className="bg-dark w-75 msg_box p-3">
             <div className="row text-light msg_box">
               <div className="col-12 col-md-4 text-center mb-2">
                 <p className="text-light">Enter Full Name</p>
@@ -21,18 +21,18 @@ const ContactUs = () => {
             </div>
             <div className="row">
               <div className="col-12">
-                <textarea
+                <input
                   placeholder="ENTER YOUR MESSAGE..."
-                  className="w-100 mb-2 p-2 inpt_box rounded border-secondary bg-dark text-light"
-                ></textarea>
-                <button className="btn btn-danger rounded border-secondary cnt_btn1">
+                  className="w-100 mb-2 p-2 inpt_box rounded border border-secondary bg-dark text-light"
+                ></input>
+                <button className="btn rounded border-secondary cnt_btn1 text-white">
                   Send
                 </button>
               </div>
             </div>
           </div>
           <div className="d-flex gap-3">
-            <div className="col-12 col-md-1 bg-danger contact_line mt-3"></div>
+            <div className="col-12 col-md-1 contact_line mt-3"></div>
             <div className="col-12 col-md-11">
               <p className="fs-4 fw-bold text-dark">
                 React out for assistance and suuport.We're hre to listen and
@@ -114,6 +114,20 @@ const ContactUs = () => {
                 <div className="col-12 col-md-4  mb-2">
                   <p className="text-dark fw-bold">Email ID:</p>
                   <p>info@aspectglobal</p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-12 ">
+                  <p className="fz-30 fw-bold text-center text-dark">
+                    Global Presence
+                  </p>
+                  <div style={{ margin: "60px 0" }}>
+                    <img
+                      src="/assets/images2/map.png"
+                      alt=""
+                      className="w-100"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
