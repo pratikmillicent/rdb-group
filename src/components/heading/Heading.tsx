@@ -7,9 +7,14 @@ interface HeadingProps {
 
 const Heading: React.FC<HeadingProps> = ({ headTitle, fontSize = "fs-2" }) => {
   return (
-    <div className="position-re">
-      <h2 className={`${fontSize} fw-700 underline`}>{headTitle}</h2>
-    </div>
+    <h2
+      className={`${fontSize} fw-700 underline`}
+      style={{ width: "fit-content" }}
+    >
+      {headTitle}
+    </h2>
+    // <div className="position-re">
+    // </div>
   );
 };
 
