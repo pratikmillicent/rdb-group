@@ -1,5 +1,5 @@
 "use client";
-import Carousel from "@/components/cursor/Carousel";
+import Carousel from "@/components/carousel/Carousel";
 import ModalVideo from "@/components/modal-video/ModalVideo";
 import React, { useState } from "react";
 

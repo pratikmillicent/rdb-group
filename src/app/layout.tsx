@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "@/app/globals.css";
-import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
-import Cursor from "@/components/common/Cursor";
-import ProgressScroll from "@/components/common/ProgressScroll";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
+import Cursor from "@/components/cursor/Cursor";
+import ProgressScroll from "@/components/progress-scroll/ProgressScroll";
 import Script from "next/script";
 
 const inter = Roboto({
