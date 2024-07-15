@@ -34,82 +34,29 @@ const page = () => {
               global network.
             </p>
             <div className="w-100">
-              <div className="apply_part w-100 positions-item justify-content-around text-light p-4">
-                <div className="w-100 d-flex">
-                  <p className="fw-bolder  text-light">PMC</p>
-                  <div className="ms-auto apply-btn">
-                    <a className="mt-1 fw-bolder">APPLY NOW</a>
+              {data.map((data, i) => (
+                <div
+                  key={i}
+                  className="apply_part w-100 positions-item justify-content-around text-light p-4"
+                >
+                  <div className="w-100 align-items-center d-flex">
+                    <p className="fw-bolder  text-light">{data.title}</p>
+                    <div className="ms-auto apply-btn">
+                      <a className="mt-1 fw-bolder">APPLY NOW</a>
+                    </div>
+                  </div>
+                  <div className=" mt-5">
+                    <strong>Postions </strong>- {data.position}
+                  </div>
+                  <div>
+                    <strong>Description </strong>- {data.description}
+                  </div>
+                  <div>
+                    <strong>Qualification and Experience required </strong>-
+                    {data.qualifications}
                   </div>
                 </div>
-                <div className="d-flex gap-1 mt-5">
-                  <span className="fw-bolder ">Postions -</span>
-                  <span>Project Manager</span>
-                </div>
-                <div className="d-flex gap-1">
-                  <span className="fw-bolder">Description -</span>
-                  <span>Manager various sites of projects</span>
-                </div>
-                <div className="d-flex gap-1">
-                  <span className="fw-bolder">
-                    Qualification and Experience required -
-                  </span>
-
-                  <span>
-                    B.E- Civil with 3 to 4 years of similar experience
-                  </span>
-                </div>
-              </div>
-              <div className="apply_part positions-item w-100 justify-content-around text-light p-4">
-                <div className="w-100 d-flex">
-                  <p className="fw-bolder text-light">Redevelopment Project</p>
-                  <div className="ms-auto apply-btn">
-                    <a className="mt-1 fw-bolder">APPLY NOW</a>
-                  </div>
-                </div>
-                <div className="d-flex mt-5 gap-1">
-                  <span className="fw-bolder">Postions - </span>
-                  <span>Project Head</span>
-                </div>
-                <div className="d-flex gap-1">
-                  <span className="fw-bolder">Description -</span>
-                  <span>Manager complete project of SRA/Redevelopment</span>
-                </div>
-                <div className="d-flex gap-1">
-                  <span className="fw-bolder">
-                    Qualification and Experience required -
-                  </span>
-
-                  <span>
-                    20 - 25 years experience with BE Civil and similar
-                    experience with Developers
-                  </span>
-                </div>
-              </div>
-              <div className="apply_part w-100  positions-item justify-content-around text-light p-4">
-                <div className="w-100 d-flex ">
-                  <p className="fw-bolder text-light">
-                    Brunch & Cake - Aspect Hospitality
-                  </p>
-                  <div className="ms-auto apply-btn">
-                    <a className="mt-1 fw-bolder">APPLY NOW</a>
-                  </div>
-                </div>
-                <div className="d-flex mt-5 gap-1">
-                  <span className="fw-bolder">Postions -</span>
-                  <span>Branch Manager(Food & Beverage)</span>
-                </div>
-                <div className="d-flex gap-1">
-                  <span className="fw-bolder text-nowrap">Description -</span>
-                  <span>
-                    The F&B Brand Manager is responsible for overseeing the
-                    day-to-day operations & long-term devlopment of mltiple
-                    outlets following the vision of Brunch & cake
-                    Global;ensuring all stores are copliant with company
-                    guidelines,quality standards,food safety and health & safety
-                    policies.
-                  </span>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -119,3 +66,26 @@ const page = () => {
 };
 
 export default page;
+
+const data = [
+  {
+    title: "PMC",
+    position: "Project Manager",
+    description: "Manager various sites of projects",
+    qualifications: "B.E-Civil with 3 to 4 years of similar experience",
+  },
+  {
+    title: "Redevelopment Project",
+    position: "Project Head",
+    description: "Manager complete project of SRA/Redevelopment",
+    qualifications:
+      "20 - 25 years experience with BE Civil and similar experience with Developers",
+  },
+  {
+    title: "Brunch & Cake - Aspect Hospitality",
+    position: "Branch Manager",
+    description: "Branch Manager(Food & Beverage)",
+    qualifications:
+      "20 - 25 years experience with BE Civil and similar experience with Developers",
+  },
+];
