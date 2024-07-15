@@ -1,3 +1,4 @@
+import Heading from "@/components/heading/Heading";
 import React from "react";
 
 const OverviewData = [
@@ -24,7 +25,8 @@ const Overview = () => {
         <div className="row bord-thin-bottom p-3">
           <div className="col-12 col-md-6">
             <div>
-              <h5 className="main-color3 fw-bold">--- Our vision</h5>
+              {/* <h5 className="main-color3 fw-bold">--- Our vision</h5> */}
+              <Heading headTitle="Our vision" fontSize="fs-2" />
               <p className="main-color3">
                 To be global powerhouse where tradition and innovation unite,
                 building a sustainble, impactful, and visionary future for all
@@ -70,16 +72,15 @@ const Overview = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6">
-            <div>
-              <h5 className="main-color3 fw-bold">--- Our mission</h5>
-              <p className="main-color3">
-                To embrance our roots while propelling forward, delevering value
-                through ethical sustainable and pioneering solutions, and
-                ensuring Aspect Global Ventures remains a symbol of trust
-                quality , and progress for generations
-              </p>
-            </div>
+          <div className="col-12 col-md-6 py-2">
+            {/* <h5 className="main-color3 fw-bold">--- Our mission</h5> */}
+            <Heading headTitle="Our mission" fontSize="fs-2" />
+            <p className="main-color3">
+              To embrance our roots while propelling forward, delevering value
+              through ethical sustainable and pioneering solutions, and ensuring
+              Aspect Global Ventures remains a symbol of trust quality , and
+              progress for generations
+            </p>
           </div>
         </div>
 
