@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { useEffect, useState } from "react";
 import ModalVideo from "@/components/modal-video/ModalVideo";
-import Carousel from "@/components/cursor/Carousel";
+import Carousel from "@/components/carousel/Carousel";
 interface Video {
   image: string;
   title: string;

@@ -312,7 +312,7 @@ h6 {
 
 p {
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   color: #696969;
   margin: 0;
@@ -10690,6 +10690,17 @@ header.in-box {
 
 .flex-row {
   flex-direction: row;
+}
+
+.apply-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.positions-item:hover .apply-btn {
+  background-color: #ffaa17 !important;
+  color: #000 !important;
+  transition: background-color 0.6s ease; /* Add transition for background-color with 0.5s duration */
 }
 
 /* ====================== [ End Responsive ] ====================== */
