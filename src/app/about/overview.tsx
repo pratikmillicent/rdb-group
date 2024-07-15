@@ -24,8 +24,8 @@ const Overview = () => {
         <div className="row bord-thin-bottom p-3">
           <div className="col-12 col-md-6">
             <div>
-              <h5>Our vision</h5>
-              <p>
+              <h5 className="main-color3 fw-bold">--- Our vision</h5>
+              <p className="main-color3">
                 To be global powerhouse where tradition and innovation unite,
                 building a sustainble, impactful, and visionary future for all
                 stakeholder
@@ -70,8 +70,8 @@ const Overview = () => {
           </div>
           <div className="col-12 col-md-6">
             <div>
-              <h5>Our vision</h5>
-              <p>
+              <h5 className="main-color3 fw-bold">--- Our mission</h5>
+              <p className="main-color3">
                 To embrance our roots while propelling forward, delevering value
                 through ethical sustainable and pioneering solutions, and
                 ensuring Aspect Global Ventures remains a symbol of trust
@@ -86,7 +86,7 @@ const Overview = () => {
           <div className="row  p-3 mb-5" key={data?.id}>
             <div className="col-12 col-md-8">
               <div className="">
-                <p>{data.description}</p>
+                <p className="main-color3">{data.description}</p>
               </div>
             </div>
 
@@ -97,7 +97,9 @@ const Overview = () => {
                     <div className="icon-img-200 mr-60">
                       <img src={data.image} alt="dhaval-img" />
                     </div>
-                    <div className="fs-4 p-2 ps-5 ms-3">{data?.name}</div>
+                    <div className="fs-4 p-2 fw-bold  main-color3">
+                      {data?.name}
+                    </div>
                   </div>
                 </div>
               </div>
