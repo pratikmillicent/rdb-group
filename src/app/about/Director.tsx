@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface DirectorData {
@@ -18,22 +19,17 @@ const Director: React.FC<DirectorProps> = ({ Data }) => {
       {Data?.map((item) => (
         <div className="col-12 col-md-4 pb-4" key={item.id}>
           <div>
-            <div className="imago wow">
-              {" "}
-              <div className="inner">
-                <img
-                  src={item.image}
-                  alt={`${item.name} - ${item.title}`}
-                  className="image-responsive"
-                  style={{
-                    width: "100%",
-                    maxWidth: "300px",
-                    height: "200px",
-                    objectFit: "cover",
-                    borderRadius: "8px",
-                    overflow: "hidden",
-                  }}
-                />
+            <div className="item-img o-hidden">
+              <div className="imago wow">
+                <div className="inner wow">
+                  <Image
+                    width={1000}
+                    height={1000}
+                    src={item.image}
+                    // src={overview.vision}
+                    alt="image"
+                  />
+                </div>
               </div>
             </div>
             <div className="info d-flex align-items-center">
