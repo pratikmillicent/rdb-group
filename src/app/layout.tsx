@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import localFont from "next/font/local";
 import "@/app/globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
@@ -8,11 +8,29 @@ import ProgressScroll from "@/components/progress-scroll/ProgressScroll";
 import Script from "next/script";
 import Whatapps from "@/components/chat/Whatapps";
 
-const inter = Roboto({
-  weight: ["400"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
+const Avenir = localFont({
+  src: [
+    {
+      path: "/fonts/Avenir-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "/fonts/Avenir-Italic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "/fonts/Avenir-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "/fonts/Avenir-BoldItalic.woff2",
+      weight: "700",
+      style: "italic",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -31,7 +49,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/plugins.css" />
         <link rel="stylesheet" href="/css/style.css" />
       </head>
-      <body className={inter.className}>
+      <body className={Avenir.className}>
         <Navbar />
         {children}
         <Footer />
