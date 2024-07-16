@@ -30,9 +30,9 @@ export default function Home() {
         <Marq data={marque_data} />
       </div>
       <About />
-      <VideoGallary />
       <GroupGrid />
       <News />
+      <VideoGallary />
     </main>
   );
 }
