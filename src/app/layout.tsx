@@ -11,24 +11,34 @@ import Whatapps from "@/components/chat/Whatapps";
 const Avenir = localFont({
   src: [
     {
-      path: "/fonts/Avenir-Regular.woff2",
+      path: "../../public/fonts/rd-brother_fonts/AvenirLTStd-Roman.woff2",
       weight: "400",
-      style: "normal",
+      style: "roman",
     },
     {
-      path: "/fonts/Avenir-Italic.woff2",
+      path: "../../public/fonts/rd-brother_fonts/AvenirLTStd-Medium.woff2",
       weight: "400",
-      style: "italic",
+      style: "medium",
     },
     {
-      path: "/fonts/Avenir-Bold.woff2",
+      path: "../../public/fonts/rd-brother_fonts/avenirltstd-light.woff2",
       weight: "700",
-      style: "normal",
+      style: "light",
     },
     {
-      path: "/fonts/Avenir-BoldItalic.woff2",
+      path: "../../public/fonts/rd-brother_fonts/AvenirLTStd-Heavy.woff2",
       weight: "700",
-      style: "italic",
+      style: "heavy",
+    },
+    {
+      path: "../../public/fonts/rd-brother_fonts/AvenirLTStd-Book.woff2",
+      weight: "700",
+      style: "book",
+    },
+    {
+      path: "../../public/fonts/rd-brother_fonts/AvenirLTStd-Black.woff2",
+      weight: "700",
+      style: "black",
     },
   ],
 });
