@@ -6,7 +6,7 @@ import Footer from "@/components/footer/Footer";
 import Cursor from "@/components/cursor/Cursor";
 import ProgressScroll from "@/components/progress-scroll/ProgressScroll";
 import Script from "next/script";
-import Whatapps from "@/components/progress-scroll/Whatapps";
+import Whatapps from "@/components/chat/Whatapps";
 
 const inter = Roboto({
   weight: ["400"],
