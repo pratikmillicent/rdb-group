@@ -22,7 +22,7 @@ const OverviewData = [
 
 const overview = {
   vision: "/assets/images2/vision.jpg",
-  mission: "/assets/images2/mission.jpg",
+  mission: "/assets/images2/mission.jfif",
 };
 
 const Overview = () => {
@@ -51,6 +51,14 @@ const Overview = () => {
                         width={1000}
                         height={1000}
                         // src={item.image}
+                        style={{
+                          width: "100%",
+                          height: "300px",
+                          maxWidth: "700px",
+                          objectFit: "cover",
+
+                          overflow: "hidden",
+                        }}
                         src={overview.vision}
                         alt="image"
                       />
@@ -75,6 +83,14 @@ const Overview = () => {
                         // src={item.image}
                         src={overview.mission}
                         alt="image"
+                        style={{
+                          width: "100%",
+                          height: "300px",
+                          maxWidth: "700px",
+                          objectFit: "cover",
+
+                          overflow: "hidden",
+                        }}
                       />
                     </div>
                   </div>
