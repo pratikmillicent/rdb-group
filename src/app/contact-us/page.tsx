@@ -4,26 +4,9 @@ const ContactUs = () => {
   return (
     <div className="container section-padding">
       <div className="d-flex gap-3">
-        {/* <div className="col-12 col-md-1 contact_line mt-3"></div> */}
         <div className="col-12 col-md-11">
-          {/* <p className="fs-4 fw-bold text-dark">
-            Questions or concerns? Contact Us Now!
-          </p> */}
-          {/* <div className=""> */}
           <Heading headTitle="Contact Us Now!" />
-          {/* </div> */}
           <div className="w-75 msg_box">
-            {/* <div className="row text-light msg_box">
-              <div className="col-12 col-md-4 text-center mb-2">
-                <p className="text-light">Enter Full Name</p>
-              </div>
-              <div className="col-12 col-md-4 text-center mb-2">
-                <p className="text-light">Enter Phone Number</p>
-              </div>
-              <div className="col-12 col-md-4 text-center mb-2">
-                <p className="text-light">Enter Email Address</p>
-              </div>
-            </div> */}
             <div className="">
               <div className="">
                 <p className="text-dark">Enter Full Name</p>
@@ -49,19 +32,9 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className="d-flex gap-3 section-padding">
-            {/* <div className="col-12 col-md-1 contact_line mt-3"></div> */}
-            <div className="">
-              {/* <p className="fs-4 fw-bold text-dark">
-                Reach out for assistance and support. We're here to listen and
-                help you thrive
-              </p> */}
-              {/* <p className="fs-4 fw-bold text-dark">
-                Registered Offices:
-              </p> */}
-              {/* <div className="d-flex justify-content-center w-100 mt-30"> */}
+          <div className="gap-3 section-padding">
+            <div className="">            
               <Heading headTitle="Registered Offices:" />
-              {/* </div> */}
               <div className="row text-light msg_box">
                 <div className="col-12 col-md-4 mb-2">
                   <p className="text-dark fw-bold">
@@ -140,10 +113,6 @@ const ContactUs = () => {
               <div className="section-padding" style={{ marginBottom: "60px" }}>
                 <div className="col-12 ">
                   <div>
-                    {/* ======= */}
-                    {/* <p className="fz-30 fw-bold text-center text-dark">
-                      Global Presence
-                    </p> */}
                     <Heading headTitle="Global Presence" />
                     <div className="w-75" style={{ margin: "60px auto" }}>
                       <img
@@ -151,7 +120,6 @@ const ContactUs = () => {
                         alt=""
                         className="w-100"
                       />
-                      {/* >>>>>>> fc0e9628b16eeb6a40a7025e1bbc8ee40d8ce3ea */}
                     </div>
                   </div>
                 </div>

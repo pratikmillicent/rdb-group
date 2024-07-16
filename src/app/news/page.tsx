@@ -68,7 +68,6 @@ const News = () => {
             </div>
           </div>
         </header>
-
         <section
           className="blog-modern section-padding"
           style={{ paddingBottom: "60px" }}
@@ -77,9 +76,6 @@ const News = () => {
             <div className="sec-lg-head mb-80">
               <div className="row">
                 <div className="col-lg-8">
-                  {/* <div className="position-re">
-                    <h2 className="fz-60 fw-700 underline">Latest News</h2>
-                  </div> */}
                   <Heading
                   headTitle="Latest News"
                   fontSize="fs-1"
@@ -146,7 +142,6 @@ const News = () => {
             </div>
           </div>
         </section>
-
         <section
           className="blog-modern section-padding"
           style={{ paddingBottom: "60px" }}
@@ -155,9 +150,6 @@ const News = () => {
             <div className="sec-lg-head mb-80">
               <div className="row">
                 <div className="col-lg-8">
-                  {/* <div className="position-re">
-                    <h2 className="fz-60 fw-700 underline">AWARDS</h2>
-                  </div> */}
                   <Heading
                   headTitle="AWARDS"
                   fontSize="fs-1"
@@ -206,9 +198,6 @@ const News = () => {
             <div className="sec-lg-head mb-80">
               <div className="row">
                 <div className="col-lg-8">
-                  {/* <div className="position-re">
-                    <h2 className="fz-60 fw-700 underline">PHOTOS GALLERY</h2>
-                  </div> */}
                   <Heading
                   headTitle="PHOTOS GALLERY"
                   fontSize="fs-1"
@@ -253,9 +242,7 @@ const News = () => {
           <div className="sec-lg-head">
             <div className="row">
               <div className="col-lg-8">
-                {/* <div className="position-re">
-                  <h2 className="fz-60 fw-700 underline">Video Gallery</h2>
-                </div> */}
+                
                 <Heading
             headTitle="Video Gallery"
             fontSize="fs-1"
