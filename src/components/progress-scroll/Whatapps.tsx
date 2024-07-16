@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 
 const Whatapps = () => {
   const handleWhatapps = () => {
-    console.log("dd");
     window.location.href =
       "https://api.whatsapp.com/send/?phone=919321711146&text=Hi,%20I%27m%20interested%20in%20Atharv%20lifestyle%27s%20elegant%20projects.%20Kindly%20share%20details";
   };
