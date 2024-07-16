@@ -25,6 +25,14 @@ const Director: React.FC<DirectorProps> = ({ Data }) => {
                   <Image
                     width={1000}
                     height={1000}
+                    style={{
+                      width: "100%",
+                      maxWidth: "300px",
+                      height: "200px",
+                      objectFit: "cover",
+
+                      overflow: "hidden",
+                    }}
                     src={item.image}
                     // src={overview.vision}
                     alt="image"
