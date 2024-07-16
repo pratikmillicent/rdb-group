@@ -45,7 +45,7 @@ const page = () => {
                       <a className="mt-1 fw-bolder">APPLY NOW</a>
                     </div>
                   </div>
-                  <div className=" mt-5">
+                  <div className="mt-5">
                     <strong>Positions </strong>- {data.position}
                   </div>
                   <div>

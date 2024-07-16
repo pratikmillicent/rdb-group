@@ -1,4 +1,6 @@
 import Heading from "@/components/heading/Heading";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const OverviewData = [
@@ -42,20 +44,17 @@ const Overview = () => {
           <div className="col-12 col-md-6">
             <div className="cont">
               <div className="item d-flex align-items-center justify-content-center pb-2">
-                <div className="imago wow">
-                  <div className="inner wow">
-                    <img
-                      src={overview.vision}
-                      alt=""
-                      style={{
-                        width: "100%",
-                        maxWidth: "300px",
-                        height: "200px",
-                        objectFit: "cover",
-                        borderRadius: "8px",
-                        overflow: "hidden",
-                      }}
-                    />
+                <div className="item-img o-hidden">
+                  <div className="imago wow">
+                    <div className="inner wow">
+                      <Image
+                        width={1000}
+                        height={1000}
+                        // src={item.image}
+                        src={overview.vision}
+                        alt="image"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -67,22 +66,17 @@ const Overview = () => {
           <div className="col-12 col-md-6">
             <div className="cont">
               <div className="item d-flex align-items-center justify-content-center pb-20">
-                {/* <div>
-                  <div className="icon-img-200 mr-60"> */}
-                <div className="imago wow">
-                  <div className="inner wow">
-                    <img
-                      src={overview.mission}
-                      alt=""
-                      style={{
-                        width: "100%",
-                        maxWidth: "300px",
-                        height: "200px",
-                        objectFit: "cover",
-                        borderRadius: "8px",
-                        overflow: "hidden",
-                      }}
-                    />
+                <div className="item-img o-hidden">
+                  <div className="imago wow">
+                    <div className="inner wow">
+                      <Image
+                        width={1000}
+                        height={1000}
+                        // src={item.image}
+                        src={overview.mission}
+                        alt="image"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -113,12 +107,16 @@ const Overview = () => {
               <div className="cont h-100">
                 <div className="item d-flex align-items-center justify-content-center pb-20">
                   <div>
-                    {/* <div className="icon-img-200 mr-60">
-                      <img src={data.image} alt="dhaval-img" />
-                    </div> */}
-                    <div className="imago wow">
-                      <div className="inner wow">
-                        <img src={data.image} alt="image" />
+                    <div className="item-img o-hidden">
+                      <div className="imago wow">
+                        <div className="inner wow">
+                          <Image
+                            width={1000}
+                            height={1000}
+                            src={data?.image}
+                            alt="image"
+                          />
+                        </div>
                       </div>
                     </div>
                     <div className="fs-4 p-2 fw-bold  main-color3">
