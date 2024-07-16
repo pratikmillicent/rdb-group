@@ -55,19 +55,8 @@ const News = () => {
   }, []);
   return (
     <>
+      <img src="/assets/images/news/banner.png" style={{ height: "100vh" }} />
       <div className="container">
-        <header className="work-header ">
-          <div className="container mt-80 ">
-            <div className="row">
-              <div className="col-12">
-                <div className="caption">
-                  <h6 className="sub-title">News & Media</h6>
-                  <h2>See what the world is saying about us.</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
         <section
           className="blog-modern section-padding"
           style={{ paddingBottom: "60px" }}
@@ -76,10 +65,7 @@ const News = () => {
             <div className="sec-lg-head mb-80">
               <div className="row">
                 <div className="col-lg-8">
-                  <Heading
-                  headTitle="Latest News"
-                  fontSize="fs-1"
-                  />
+                  <Heading headTitle="Latest News" fontSize="fs-1" />
                 </div>
               </div>
             </div>
@@ -150,10 +136,7 @@ const News = () => {
             <div className="sec-lg-head mb-80">
               <div className="row">
                 <div className="col-lg-8">
-                  <Heading
-                  headTitle="AWARDS"
-                  fontSize="fs-1"
-                  />
+                  <Heading headTitle="AWARDS" fontSize="fs-1" />
                 </div>
               </div>
             </div>
@@ -198,10 +181,7 @@ const News = () => {
             <div className="sec-lg-head mb-80">
               <div className="row">
                 <div className="col-lg-8">
-                  <Heading
-                  headTitle="PHOTOS GALLERY"
-                  fontSize="fs-1"
-                  />
+                  <Heading headTitle="PHOTOS GALLERY" fontSize="fs-1" />
                 </div>
               </div>
             </div>
@@ -242,11 +222,7 @@ const News = () => {
           <div className="sec-lg-head">
             <div className="row">
               <div className="col-lg-8">
-                
-                <Heading
-            headTitle="Video Gallery"
-            fontSize="fs-1"
-          />
+                <Heading headTitle="Video Gallery" fontSize="fs-1" />
               </div>
             </div>
           </div>

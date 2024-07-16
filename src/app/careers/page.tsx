@@ -1,3 +1,4 @@
+import Heading from "@/components/heading/Heading";
 import React from "react";
 
 const page = () => {
@@ -28,7 +29,10 @@ const page = () => {
               careers, fostering an environment where aspirations meet
               opportunities and where passion meets purpose.
             </p>
-            <p className="text-dark fw-900 mb-4">Open Positions</p>
+            {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
+            <div style={{ paddingTop: "60px" }}>
+              <Heading headTitle="Open Positions" />
+            </div>
             <p className="mt-5 text-dark">
               Join us in shaping the future. Explore current openings across our
               global network.

@@ -1,5 +1,9 @@
 function Blog() {
-  return <h1>Blog</h1>;
+  return (
+    <>
+      <img src="/assets/images/blog/banner.png" style={{ height: "100vh" }} />
+    </>
+  );
 }
 
 export default Blog;
