@@ -408,6 +408,10 @@ figure {
   color: var(--foreground);
 }
 
+.text-grey { 
+  color: var(--grey) !important;
+}
+
 .text-dark .swiper-controls.arrow-out .left,
 .text-dark .swiper-controls.arrow-out .right {
   border-color: rgba(0, 0, 0, 0.2);
