@@ -32,6 +32,11 @@
   list-style: none;
 }
 
+.text-golden {
+  color : var(--golden)
+
+}
+
 body {
   color: var(--foreground);
   background-color: var(--background);
