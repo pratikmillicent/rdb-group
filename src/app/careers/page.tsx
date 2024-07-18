@@ -4,9 +4,10 @@ import React from "react";
 const page = () => {
   return (
     <>
+      <img src="/assets/images/career/banner.png" style={{ height: "100vh" }} />
       <div className="container">
         <header className="work-header ">
-          <div className="mt-80 ">
+          <div className="mt-60 ">
             <div>
               <div className="caption">
                 <h6 className="sub-title">INTRODUCTION</h6>
@@ -17,11 +18,11 @@ const page = () => {
         </header>
         <div className="d-flex gap-3 mb-80">
           <div className="">
-            <p className="text-dark fw-bold mb-4">
+            <p className="text-dark fz-20 fw-bold mb-3">
               Become part of a global conglomerate where opportunities are
               boundless, growth is accelerated, and excellence is a way of life.
             </p>
-            <p className="text-dark mb-4">
+            <p className="text-dark mb-3">
               At Aspect, every day is a journey of discovery, innovation, and
               collaboration. Joining our team means becoming part of a diverse
               family that values everyone’s contributions and encourages
@@ -30,7 +31,7 @@ const page = () => {
               opportunities and where passion meets purpose.
             </p>
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
-            <div style={{ paddingTop: "60px" }}>
+            <div style={{ paddingTop: "30px" }}>
               <Heading headTitle="Open Positions" />
             </div>
             <p className="mt-5 text-dark">

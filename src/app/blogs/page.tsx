@@ -148,7 +148,7 @@ const Blog = () => {
           style={{ paddingBottom: "60px" }}
         >
           <div className="container">
-            <div className="sec-lg-head mb-80">
+            <div className="sec-lg-head mb-35">
               <div className="row">
                 <div className="col-lg-8">
                   <Heading headTitle="Blogs" fontSize="fs-1" />
@@ -168,12 +168,12 @@ const Blog = () => {
                           <img src={item.image} alt={item.description} />
                         </div>
                         <div className="blog-content">
-                          <h5 className="blog-title fz-22 fw-medium text-grey">
+                          <h5 className="blog-title fz-20 fw-bold mb-0 text-grey">
                             {/* <Link href="/dark/blog-post" className="text-grey">{item.heading}</Link> */}
                             {item.heading}
                           </h5>
                           <p className="blog-date fz-14">{item.date}</p>
-                          <h5 className="blog-title fz-16">
+                          <h5 className="blog-title fz-16 mb-2">
                             {/* <Link href="/dark/blog-post">{item.description}</Link> */}
                             {item.description}
                           </h5>
