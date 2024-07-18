@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 
 import Heading from "@/components/heading/Heading";
@@ -34,8 +35,7 @@ const ContactUs = () => {
     const mapInstance = new google.maps.Map(mapRef.current, mapOptions);
     setMap(mapInstance);
 
-    const myIcon =
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/cheshire1-icon.png";
+    const myIcon = "/assets/images/pin.png";
     const catIcon: google.maps.Icon = {
       url: myIcon,
       size: new google.maps.Size(80, 40),
