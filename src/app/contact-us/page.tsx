@@ -7,14 +7,27 @@ import { useEffect, useRef, useState } from "react";
 const ContactUs = () => {
   const mapRef = useRef<HTMLDivElement | null>(null);
   const [map, setMap] = useState<google.maps.Map | null>(null);
-  console.log("🚀 ~ ContactUs ~ map:", map);
+  const [markers, setMarkers] = useState<google.maps.Marker[]>([]);
+  const [activeMarker, setActiveMarker] = useState<google.maps.Marker | null>(
+    null
+  );
+  console.log("activeMarker", activeMarker);
+
+  // Updated countries array to include multiple states within India
+  const states = [
+    { name: "Maharashtra", lat: 19.7515, lng: 75.7139 },
+    { name: "Karnataka", lat: 15.3173, lng: 75.7139 },
+    { name: "Tamil Nadu", lat: 11.1271, lng: 78.6569 },
+    { name: "Gujarat", lat: 22.2587, lng: 71.1924 },
+    { name: "Rajasthan", lat: 27.0238, lng: 74.2179 },
+  ];
 
   useEffect(() => {
     if (!mapRef.current) return;
 
     const mapOptions: google.maps.MapOptions = {
-      zoom: 9,
-      center: new google.maps.LatLng(42.36, -71.06),
+      zoom: 5,
+      center: new google.maps.LatLng(20.5937, 78.9629), // Centering map to India
       mapTypeControl: false,
     };
 
@@ -23,46 +36,58 @@ const ContactUs = () => {
 
     const myIcon =
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/cheshire1-icon.png";
-
     const catIcon: google.maps.Icon = {
       url: myIcon,
-      size: new google.maps.Size(100, 60),
-      scaledSize: new google.maps.Size(70, 60),
+      size: new google.maps.Size(80, 40),
+      scaledSize: new google.maps.Size(40, 30),
       origin: new google.maps.Point(-15, 0),
     };
 
-    var marker = new google.maps.Marker({
-      position: latLng,
-      map: map,
-      // set the icon as catIcon declared above
-      icon: catIcon,
-      // must use optimized false for CSS
-      optimized: false,
+    const newMarkers = states?.map((state) => {
+      const marker = new google.maps.Marker({
+        position: new google.maps.LatLng(state.lat, state.lng),
+        map: mapInstance,
+        icon: catIcon,
+        optimized: false,
+      });
+      return marker;
     });
 
-    // fetch("https://codepen.io/kevinkononenko/pen/dMKzgG.js")
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    // setMarkers(newMarkers);
+    setMarkers(newMarkers);
+
+    // Set the first state marker as the default active marker
+    if (newMarkers.length > 0) {
+      setActiveMarker(newMarkers[0]);
+    }
 
     const overlay = new google.maps.OverlayView();
     overlay.draw = function () {
       const panes = this.getPanes && this.getPanes();
-      if (panes && panes?.markerLayer) {
+      if (panes && panes.markerLayer) {
         panes.markerLayer.id = "markerLayer";
       }
     };
     overlay.setMap(mapInstance);
-    // });
   }, [mapRef]);
 
-  const handleAnimationChange = (animation: string) => {
-    const markerLayer = document.getElementById("markerLayer");
-    console.log("🚀 ~ handleAnimationChange ~ markerLayer:", markerLayer);
-    if (markerLayer) {
-      const images = markerLayer?.getElementsByTagName("img");
-      for (let i = 0; i < images.length; i++) {
-        images[i].style.animation = `${animation} 1s infinite alternate`;
+  const handleMouseEnter = (index: number) => {
+    if (markers[index]) {
+      setActiveMarker(markers[index]);
+      const markerLayer = document.getElementById("markerLayer");
+      if (markerLayer) {
+        const images = markerLayer.getElementsByTagName("img");
+        images[index].style.animation = "bounce 1s infinite alternate";
+      }
+    }
+  };
+
+  const handleMouseLeave = (index: number) => {
+    if (markers[index]) {
+      setActiveMarker(null);
+      const markerLayer = document.getElementById("markerLayer");
+      if (markerLayer) {
+        const images = markerLayer.getElementsByTagName("img");
+        images[index].style.animation = "";
       }
     }
   };
@@ -187,28 +212,38 @@ const ContactUs = () => {
                         className="w-100"
                       />
                     </div> */}
-                    <div className="map-container">
-                      <div className="buttons">
-                        <div
-                          className="btn"
-                          onClick={() => handleAnimationChange("pulse")}
-                        >
-                          Shrink/Grow
-                        </div>
-                        <div
-                          className="btn"
-                          onClick={() => handleAnimationChange("wobble")}
-                        >
-                          Wobble
-                        </div>
-                        <div
-                          className="btn"
-                          onClick={() => handleAnimationChange("flicker")}
-                        >
-                          Flicker
-                        </div>
+                    <div className="map-container" style={{ display: "flex" }}>
+                      <div
+                        id="map"
+                        ref={mapRef}
+                        style={{ width: "70%", height: "500px" }}
+                      ></div>
+                      <div
+                        className="country-list p-3"
+                        style={{
+                          width: "30%",
+                          border: "1px solid #ddd",
+                          borderRadius: "5px",
+                          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                        }}
+                      >
+                        <ul className="list-group">
+                          {states.map((country, index) => (
+                            <li
+                              key={country.name}
+                              className="list-group-item"
+                              onMouseOver={() => handleMouseEnter(index)}
+                              onMouseOut={() => handleMouseLeave(index)}
+                              style={{
+                                cursor: "pointer",
+                                transition: "background-color 0.3s",
+                              }}
+                            >
+                              {country.name}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                      <div id="map" ref={mapRef}></div>
                     </div>
                   </div>
                 </div>

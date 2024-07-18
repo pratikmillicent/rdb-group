@@ -4,14 +4,14 @@
   position: relative;
 }
 
-.buttons {
+/* .buttons {
   position: absolute;
   top: 4px;
   right: 8px;
   z-index: 100;
-}
+} */
 
-.btn {
+/* .btn {
   display: inline-block;
   padding: 4px 8px;
   background-color: #ccc;
@@ -19,7 +19,7 @@
   border: 1px solid #999;
   font-size: 16px;
   cursor: pointer;
-}
+} */
 
 .btn:hover {
   background-color: #999;
@@ -141,4 +141,8 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.country-list .list-group-item:hover {
+  background-color: #f8f9fa;
 }
