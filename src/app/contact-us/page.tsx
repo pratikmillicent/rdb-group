@@ -1,6 +1,72 @@
+"use client";
+
 import Heading from "@/components/heading/Heading";
+import "./map.css";
+import { useEffect, useRef, useState } from "react";
 
 const ContactUs = () => {
+  const mapRef = useRef<HTMLDivElement | null>(null);
+  const [map, setMap] = useState<google.maps.Map | null>(null);
+  console.log("🚀 ~ ContactUs ~ map:", map);
+
+  useEffect(() => {
+    if (!mapRef.current) return;
+
+    const mapOptions: google.maps.MapOptions = {
+      zoom: 9,
+      center: new google.maps.LatLng(42.36, -71.06),
+      mapTypeControl: false,
+    };
+
+    const mapInstance = new google.maps.Map(mapRef.current, mapOptions);
+    setMap(mapInstance);
+
+    const myIcon =
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/cheshire1-icon.png";
+
+    const catIcon: google.maps.Icon = {
+      url: myIcon,
+      size: new google.maps.Size(100, 60),
+      scaledSize: new google.maps.Size(70, 60),
+      origin: new google.maps.Point(-15, 0),
+    };
+
+    var marker = new google.maps.Marker({
+      position: latLng,
+      map: map,
+      // set the icon as catIcon declared above
+      icon: catIcon,
+      // must use optimized false for CSS
+      optimized: false,
+    });
+
+    // fetch("https://codepen.io/kevinkononenko/pen/dMKzgG.js")
+    //   .then((response) => response.json())
+    //   .then((data) => {
+    // setMarkers(newMarkers);
+
+    const overlay = new google.maps.OverlayView();
+    overlay.draw = function () {
+      const panes = this.getPanes && this.getPanes();
+      if (panes && panes?.markerLayer) {
+        panes.markerLayer.id = "markerLayer";
+      }
+    };
+    overlay.setMap(mapInstance);
+    // });
+  }, [mapRef]);
+
+  const handleAnimationChange = (animation: string) => {
+    const markerLayer = document.getElementById("markerLayer");
+    console.log("🚀 ~ handleAnimationChange ~ markerLayer:", markerLayer);
+    if (markerLayer) {
+      const images = markerLayer?.getElementsByTagName("img");
+      for (let i = 0; i < images.length; i++) {
+        images[i].style.animation = `${animation} 1s infinite alternate`;
+      }
+    }
+  };
+
   return (
     <div className="container section-padding">
       <div className="d-flex gap-3">
@@ -33,7 +99,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="gap-3 section-padding">
-            <div className="">            
+            <div className="">
               <Heading headTitle="Registered Offices:" />
               <div className="row text-light msg_box">
                 <div className="col-12 col-md-4 mb-2">
@@ -114,12 +180,35 @@ const ContactUs = () => {
                 <div className="col-12 ">
                   <div>
                     <Heading headTitle="Global Presence" />
-                    <div className="w-75" style={{ margin: "60px auto" }}>
+                    {/* <div className="w-75" style={{ margin: "60px auto" }}>
                       <img
                         src="/assets/images2/map.png"
                         alt=""
                         className="w-100"
                       />
+                    </div> */}
+                    <div className="map-container">
+                      <div className="buttons">
+                        <div
+                          className="btn"
+                          onClick={() => handleAnimationChange("pulse")}
+                        >
+                          Shrink/Grow
+                        </div>
+                        <div
+                          className="btn"
+                          onClick={() => handleAnimationChange("wobble")}
+                        >
+                          Wobble
+                        </div>
+                        <div
+                          className="btn"
+                          onClick={() => handleAnimationChange("flicker")}
+                        >
+                          Flicker
+                        </div>
+                      </div>
+                      <div id="map" ref={mapRef}></div>
                     </div>
                   </div>
                 </div>
