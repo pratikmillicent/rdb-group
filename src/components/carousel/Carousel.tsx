@@ -76,7 +76,7 @@ function Carousel({
                 <div className="container">
                   <div className="d-flex">
                     <div className="swiper-button-prev">
-                      <span className="left">
+                      <span className="left d-flex justify-content-center align-items-center">
                         <svg
                           width="20"
                           height="20"
@@ -92,7 +92,7 @@ function Carousel({
                       </span>
                     </div>
                     <div className="swiper-button-next ml-auto">
-                      <span className="right">
+                    <span className="right d-flex justify-content-center align-items-center">
                         <svg
                           width="20"
                           height="20"

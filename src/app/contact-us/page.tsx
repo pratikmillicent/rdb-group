@@ -1,3 +1,4 @@
+import { FaMapMarkerAlt } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
 
 const ContactUs = () => {
@@ -114,13 +115,17 @@ const ContactUs = () => {
                 <div className="col-12 ">
                   <div>
                     <Heading headTitle="Global Presence" />
-                    <div className="w-75" style={{ margin: "60px auto" }}>
+                    <div className="w-75 position-relative" style={{ margin: "60px auto" }}>
                       <img
                         src="/assets/images2/map.png"
                         alt=""
                         className="w-100"
                       />
-                    </div>
+                      <div className="icon-container">
+                       <FaMapMarkerAlt className="main-color3 fz-24" />
+                       <span className="tooltip-text ">Mumbai</span>
+                      </div>
+                    </div>                   
                   </div>
                 </div>
               </div>
