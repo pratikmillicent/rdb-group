@@ -1,7 +1,7 @@
 // @ts-nocheck
 "use client";
 
-import { FaMapMarkerAlt } from "react-icons/fa";
+// import { FaMapMarkerAlt } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
 import "./map.css";
 import { useEffect, useRef, useState } from "react";
@@ -268,10 +268,7 @@ const ContactUs = () => {
                           alt=""
                           className="w-100"
                         />
-                        <div className="icon-container">
-                          <FaMapMarkerAlt className="main-color3 fz-24" />
-                          <span className="tooltip-text ">Mumbai</span>
-                        </div>
+                        
                       </div>
                     </div>
                   </div>
