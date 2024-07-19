@@ -103,6 +103,7 @@ const ContactUs = () => {
         src="/assets/images/contact/banner.png"
         style={{ height: "100vh" }}
       />
+
       <div className="container section-padding">
         <div className="d-flex gap-3">
           <div className="col-12 col-md-11">
@@ -226,40 +227,41 @@ const ContactUs = () => {
                         className="w-100"
                       />
                     </div> */}
-                    <div
-                      className="map-container mt-2"
-                      style={{ display: "flex" }}
-                    >
                       <div
-                        id="map"
-                        ref={mapRef}
-                        style={{ width: "100%", height: "100%" }}
-                      ></div>
-                      <div
-                        className="country-list p-3"
-                        style={{
-                          width: "30%",
-                          border: "1px solid #ddd",
-                          borderRadius: "5px",
-                          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                        }}
+                        className="map-container mt-2"
+                        style={{ display: "flex" }}
                       >
-                        <ul className="list-group">
-                          {states.map((country, index) => (
-                            <li
-                              key={country.name}
-                              className="list-group-item"
-                              onMouseOver={() => handleMouseEnter(index)}
-                              onMouseOut={() => handleMouseLeave(index)}
-                              style={{
-                                cursor: "pointer",
-                                transition: "background-color 0.3s",
-                              }}
-                            >
-                              {country.name}
-                            </li>
-                          ))}
-                        </ul>
+                        <div
+                          id="map"
+                          ref={mapRef}
+                          style={{ width: "100%", height: "100%" }}
+                        ></div>
+                        <div
+                          className="country-list p-3"
+                          style={{
+                            width: "30%",
+                            border: "1px solid #ddd",
+                            borderRadius: "5px",
+                            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                          }}
+                        >
+                          <ul className="list-group">
+                            {states.map((country, index) => (
+                              <li
+                                key={country.name}
+                                className="list-group-item"
+                                onMouseOver={() => handleMouseEnter(index)}
+                                onMouseOut={() => handleMouseLeave(index)}
+                                style={{
+                                  cursor: "pointer",
+                                  transition: "background-color 0.3s",
+                                }}
+                              >
+                                {country.name}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
