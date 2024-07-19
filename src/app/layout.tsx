@@ -42,50 +42,56 @@ import Whatapps from "@/components/chat/Whatapps";
 //     },
 //   ],
 // });
-const Sora = localFont({
-  src: [
-    {
-      path: "../../public/fonts/Sora/Sora-Bold.ttf",
-      // weight: "400",
-      style: "bold",
-    },
-    {
-      path: "../../public/fonts/Sora/Sora-ExtraBold.ttf",
-      // weight: "400",
-      style: "extra-bold",
-    },
-    {
-      path: "../../public/fonts/Sora/Sora-ExtraLight.ttf",
-      // weight: "700",
-      style: "extra-light",
-    },
-    {
-      path: "../../public/fonts/Sora/Sora-Light.ttf",
-      // weight: "700",
-      style: "light",
-    },
-    {
-      path: "../../public/fonts/Sora/Sora-Medium.ttf",
-      // weight: "700",
-      style: "medium",
-    },
+// const Sora = localFont({
+//   src: [
+//     {
+//       path: "../../public/fonts/Sora/Sora-Bold.ttf",
+//       // weight: "400",
+//       style: "bold",
+//     },
+//     {
+//       path: "../../public/fonts/Sora/Sora-ExtraBold.ttf",
+//       // weight: "400",
+//       style: "extra-bold",
+//     },
+//     {
+//       path: "../../public/fonts/Sora/Sora-ExtraLight.ttf",
+//       // weight: "700",
+//       style: "extra-light",
+//     },
+//     {
+//       path: "../../public/fonts/Sora/Sora-Light.ttf",
+//       // weight: "700",
+//       style: "light",
+//     },
+//     {
+//       path: "../../public/fonts/Sora/Sora-Medium.ttf",
+//       // weight: "700",
+//       style: "medium",
+//     },
 
-    {
-      path: "../../public/fonts/Sora/Sora-SemiBold.ttf",
-      // weight: "700",
-      style: "semi-bold",
-    },
-    {
-      path: "../../public/fonts/Sora/Sora-Thin.ttf",
-      // weight: "700",
-      style: "thin",
-    },
-    {
-      path: "../../public/fonts/Sora/Sora-Regular.ttf",
-      // weight: "700",
-      style: "regular",
-    },
-  ],
+//     {
+//       path: "../../public/fonts/Sora/Sora-SemiBold.ttf",
+//       // weight: "700",
+//       style: "semi-bold",
+//     },
+//     {
+//       path: "../../public/fonts/Sora/Sora-Thin.ttf",
+//       // weight: "700",
+//       style: "thin",
+//     },
+//     {
+//       path: "../../public/fonts/Sora/Sora-Regular.ttf",
+//       // weight: "700",
+//       style: "regular",
+//     },
+//   ],
+// });
+import { Epilogue } from "next/font/google";
+
+const epilogue = Epilogue({
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -104,7 +110,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/plugins.css" />
         <link rel="stylesheet" href="/css/style.css" />
       </head>
-      <body className={Sora.className}>
+      <body className={epilogue.className}>
         <Navbar />
         {children}
         <Footer />

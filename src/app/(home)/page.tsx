@@ -33,8 +33,8 @@ export default function Home() {
       <About />
       <GroupGrid />
       <News />
-      <VideoGallary />
       <Testimonials />
+      <VideoGallary />
     </main>
   );
 }

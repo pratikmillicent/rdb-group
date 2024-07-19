@@ -43,9 +43,9 @@ function Testimonials({}) {
                     {data.map((item) => (
                       <div className="item radius-30 mt-30" key={item.id}>
                         <div className="cont mb-40">
-                          <div className="rate-stars mb-30 fz-12">
-                            <span className="">
-                              <i className="fas fa-star"></i>
+                          <div className="rate-stars mb-30 fz-12 ">
+                            <span className="text-golden">
+                              <i className="fas fa-star "></i>
                               <i className="fas fa-star"></i>
                               <i className="fas fa-star"></i>
                               <i className="fas fa-star"></i>
@@ -58,7 +58,7 @@ function Testimonials({}) {
                           <div>
                             <div className="img circle-80">
                               <img
-                                src={`/dark/${item.image}`}
+                                src={item.image}
                                 alt=""
                                 className="circle-img"
                               />
@@ -128,7 +128,7 @@ const data = [
     id: 1,
     content:
       "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
-    image: "assets/imgs/testim/4.jpg",
+    image: "/assets/images2/person/testimonial2.jpg",
     author: "Leonard Heiser",
     position: "CEO",
   },
@@ -136,7 +136,7 @@ const data = [
     id: 2,
     content:
       "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
-    image: "assets/imgs/testim/4.jpg",
+    image: "/assets/images2/person/testimonial.jpg",
     author: "Leonard Heiser",
     position: "CEO",
   },
@@ -144,7 +144,7 @@ const data = [
     id: 3,
     content:
       "I have been hiring people in this space for a number of years and I have never seen this level of professiona lism. It really feels like you are working with a team that can get the job done i have been hiring people in this space for a number of years.",
-    image: "assets/imgs/testim/3.jpg",
+    image: "/assets/images2/person/testimonial2.jpg",
     author: "Leonard Heiser",
     position: "CEO",
   },
@@ -152,7 +152,7 @@ const data = [
     id: 4,
     content:
       "I have been hiring people in this space for a number of years and I have never seen this level of professionalism. It really feels like you are working with a team that can get the job done.",
-    image: "assets/imgs/testim/4.jpg",
+    image: "/assets/images2/person/testimonial.jpg",
     author: "Leonard Heiser",
     position: "CEO",
   },
