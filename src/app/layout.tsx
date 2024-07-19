@@ -76,7 +76,10 @@ export default function RootLayout({
           strategy="beforeInteractive"
           src="/assets/js/script.js"
         ></Script>
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <Script
+          strategy="beforeInteractive"
+          src="https://maps.googleapis.com/maps/api/js?sensor=false"
+        ></Script>
       </body>
     </html>
   );
