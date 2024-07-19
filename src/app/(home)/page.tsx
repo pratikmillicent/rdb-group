@@ -3,6 +3,7 @@ import About from "./_components/About";
 import GroupGrid from "./_components/Group";
 import News from "./_components/News";
 import VideoGallary from "./_components/VideoGallary";
+import Testimonials from "./_components/Testimonials";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -33,6 +34,7 @@ export default function Home() {
       <GroupGrid />
       <News />
       <VideoGallary />
+      <Testimonials />
     </main>
   );
 }

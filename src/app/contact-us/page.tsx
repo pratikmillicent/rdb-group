@@ -60,11 +60,6 @@ const ContactUs = () => {
 
     setMarkers(newMarkers);
 
-    // Set the first state marker as the default active marker
-    // if (newMarkers.length > 0) {
-    //   setActiveMarker(newMarkers[0]);
-    // }
-
     const overlay = new google.maps.OverlayView();
     overlay.draw = function () {
       const panes = this.getPanes && this.getPanes();
