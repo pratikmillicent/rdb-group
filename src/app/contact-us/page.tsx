@@ -1,17 +1,16 @@
 "use client";
-
 import Heading from "@/components/heading/Heading";
-import "./map.css";
 import { useEffect, useRef, useState } from "react";
+import "./map.css";
 
 const ContactUs = () => {
   const mapRef = useRef<HTMLDivElement | null>(null);
-  const [map, setMap] = useState<google.maps.Map | null>(null);
+  // const [map, setMap] = useState<google.maps.Map | null>(null);
   const [markers, setMarkers] = useState<google.maps.Marker[]>([]);
-  const [activeMarker, setActiveMarker] = useState<google.maps.Marker | null>(
-    null
-  );
-  console.log("activeMarker", activeMarker);
+  // const [activeMarker, setActiveMarker] = useState<google.maps.Marker | null>(
+  //   null
+  // );
+  // console.log("activeMarker", activeMarker);
 
   // Updated countries array to include multiple states within India
   const states = [
@@ -27,15 +26,18 @@ const ContactUs = () => {
 
     const mapOptions: google.maps.MapOptions = {
       zoom: 5,
-      center: new google.maps.LatLng(20.5937, 78.9629), // Centering map to India
+      center: new google.maps.LatLng(20.5937, 78.9629),
       mapTypeControl: false,
     };
 
     const mapInstance = new google.maps.Map(mapRef.current, mapOptions);
-    setMap(mapInstance);
+    // setMap(mapInstance);
 
-    const myIcon =
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/cheshire1-icon.png";
+    const myIcon: any = (
+      <div>
+        <i className="fa-solid fa-location-dot"></i>
+      </div>
+    );
     const catIcon: google.maps.Icon = {
       url: myIcon,
       size: new google.maps.Size(80, 40),
@@ -56,9 +58,9 @@ const ContactUs = () => {
     setMarkers(newMarkers);
 
     // Set the first state marker as the default active marker
-    if (newMarkers.length > 0) {
-      setActiveMarker(newMarkers[0]);
-    }
+    // if (newMarkers.length > 0) {
+    //   setActiveMarker(newMarkers[0]);
+    // }
 
     const overlay = new google.maps.OverlayView();
     overlay.draw = function () {
@@ -72,7 +74,7 @@ const ContactUs = () => {
 
   const handleMouseEnter = (index: number) => {
     if (markers[index]) {
-      setActiveMarker(markers[index]);
+      // setActiveMarker(markers[index]);
       const markerLayer = document.getElementById("markerLayer");
       if (markerLayer) {
         const images = markerLayer.getElementsByTagName("img");
@@ -83,7 +85,7 @@ const ContactUs = () => {
 
   const handleMouseLeave = (index: number) => {
     if (markers[index]) {
-      setActiveMarker(null);
+      // setActiveMarker(null);
       const markerLayer = document.getElementById("markerLayer");
       if (markerLayer) {
         const images = markerLayer.getElementsByTagName("img");
@@ -212,11 +214,14 @@ const ContactUs = () => {
                         className="w-100"
                       />
                     </div> */}
-                    <div className="map-container" style={{ display: "flex" }}>
+                    <div
+                      className="map-container mt-2"
+                      style={{ display: "flex" }}
+                    >
                       <div
                         id="map"
                         ref={mapRef}
-                        style={{ width: "70%", height: "500px" }}
+                        style={{ width: "100%", height: "100%" }}
                       ></div>
                       <div
                         className="country-list p-3"
