@@ -59,10 +59,10 @@ const News = () => {
       <div className="container">
         <section
           className="blog-modern section-padding"
-          style={{ paddingBottom: "60px" }}
+          style={{ paddingBottom: "40px" }}
         >
           <div className="container">
-            <div className="sec-lg-head mb-80">
+            <div className="sec-lg-head mb-30">
               <div className="row">
                 <div className="col-lg-8">
                   <Heading headTitle="Latest News" fontSize="fs-1" />
@@ -94,14 +94,14 @@ const News = () => {
                           />
                         </div>
                         <div className="cont mt-30">
-                          <h6>
+                          <h6 className="fw-bold">
                             <Link href="/dark/blog-post">
                               {item.description}
                             </Link>
                           </h6>
                           <Link
                             href="/dark/blog-post"
-                            className="mt-20 ls1 sub-title"
+                            className="mt-10 ls1 sub-title"
                           >
                             Read More{" "}
                             <i className="ml-5">
@@ -130,10 +130,10 @@ const News = () => {
         </section>
         <section
           className="blog-modern section-padding"
-          style={{ paddingBottom: "60px" }}
+          style={{ paddingBottom: "40px" }}
         >
           <div className="container">
-            <div className="sec-lg-head mb-80">
+            <div className="sec-lg-head mb-30">
               <div className="row">
                 <div className="col-lg-8">
                   <Heading headTitle="AWARDS" fontSize="fs-1" />
@@ -175,10 +175,10 @@ const News = () => {
 
         <section
           className="blog-modern section-padding"
-          style={{ paddingBottom: "60px" }}
+          style={{ paddingBottom: "40px" }}
         >
           <div className="container">
-            <div className="sec-lg-head mb-80">
+            <div className="sec-lg-head mb-40">
               <div className="row">
                 <div className="col-lg-8">
                   <Heading headTitle="PHOTOS GALLERY" fontSize="fs-1" />
