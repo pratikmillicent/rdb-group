@@ -1,8 +1,11 @@
+"use client"
 import Marq from "@/components/marq/Marq";
 import About from "./_components/About";
 import GroupGrid from "./_components/Group";
 import News from "./_components/News";
 import VideoGallary from "./_components/VideoGallary";
+import { ParallaxProvider } from "react-scroll-parallax";
+import SideImage from "./_components/SideImage";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -14,7 +17,8 @@ const marque_data = [
 
 export default function Home() {
   return (
-    <main className="mw-100">
+    <ParallaxProvider>
+      <main className="mw-100">
       <div>
         <video
           className="mw-100"
@@ -30,9 +34,12 @@ export default function Home() {
         <Marq data={marque_data} />
       </div>
       <About />
+     <SideImage/>
       <GroupGrid />
       <News />
       <VideoGallary />
     </main>
+    </ParallaxProvider>
+    
   );
 }

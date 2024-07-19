@@ -38,7 +38,7 @@ const ContactUs = () => {
 
     const myIcon: any = (
       <div>
-        <i className="fa-solid fa-location-dot"></i>
+        <i className="fa-solid fa-location"></i>
       </div>
     );
     const catIcon: google.maps.Icon = {
@@ -268,6 +268,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
