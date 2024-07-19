@@ -36,13 +36,13 @@ const ContactUs = () => {
     const mapInstance = new google.maps.Map(mapRef.current, mapOptions);
     // setMap(mapInstance);
 
-    const myIcon: any = (
-      <div>
-        <i className="fa-solid fa-location-dot"></i>
-      </div>
-    );
+    // const myIcon: any = (
+    //   <div>
+    //     <i className="fa-solid fa-location-dot"></i>
+    //   </div>
+    // );
     const catIcon: google.maps.Icon = {
-      url: myIcon,
+      url: "/assets/images/pin.png",
       size: new google.maps.Size(80, 40),
       scaledSize: new google.maps.Size(40, 30),
       origin: new google.maps.Point(-15, 0),
