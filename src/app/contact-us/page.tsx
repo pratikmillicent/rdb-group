@@ -36,13 +36,13 @@ const ContactUs = () => {
     const mapInstance = new google.maps.Map(mapRef.current, mapOptions);
     // setMap(mapInstance);
 
-    const myIcon: any = (
-      <div>
-        <i className="fa-solid fa-location-dot"></i>
-      </div>
-    );
+    // const myIcon: any = (
+    //   <div>
+    //     <i className="fa-solid fa-location-dot"></i>
+    //   </div>
+    // );
     const catIcon: google.maps.Icon = {
-      url: myIcon,
+      url: "/assets/images/pin.png",
       size: new google.maps.Size(80, 40),
       scaledSize: new google.maps.Size(40, 30),
       origin: new google.maps.Point(-15, 0),
@@ -59,11 +59,6 @@ const ContactUs = () => {
     });
 
     setMarkers(newMarkers);
-
-    // Set the first state marker as the default active marker
-    // if (newMarkers.length > 0) {
-    //   setActiveMarker(newMarkers[0]);
-    // }
 
     const overlay = new google.maps.OverlayView();
     overlay.draw = function () {
@@ -103,6 +98,7 @@ const ContactUs = () => {
         src="/assets/images/contact/banner.png"
         style={{ height: "100vh" }}
       />
+
       <div className="container section-padding">
         <div className="d-flex gap-3">
           <div className="col-12 col-md-11">
@@ -226,40 +222,41 @@ const ContactUs = () => {
                         className="w-100"
                       />
                     </div> */}
-                    <div
-                      className="map-container mt-2"
-                      style={{ display: "flex" }}
-                    >
                       <div
-                        id="map"
-                        ref={mapRef}
-                        style={{ width: "100%", height: "100%" }}
-                      ></div>
-                      <div
-                        className="country-list p-3"
-                        style={{
-                          width: "30%",
-                          border: "1px solid #ddd",
-                          borderRadius: "5px",
-                          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                        }}
+                        className="map-container mt-2"
+                        style={{ display: "flex" }}
                       >
-                        <ul className="list-group">
-                          {states.map((country, index) => (
-                            <li
-                              key={country.name}
-                              className="list-group-item"
-                              onMouseOver={() => handleMouseEnter(index)}
-                              onMouseOut={() => handleMouseLeave(index)}
-                              style={{
-                                cursor: "pointer",
-                                transition: "background-color 0.3s",
-                              }}
-                            >
-                              {country.name}
-                            </li>
-                          ))}
-                        </ul>
+                        <div
+                          id="map"
+                          ref={mapRef}
+                          style={{ width: "100%", height: "100%" }}
+                        ></div>
+                        <div
+                          className="country-list p-3"
+                          style={{
+                            width: "30%",
+                            border: "1px solid #ddd",
+                            borderRadius: "5px",
+                            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                          }}
+                        >
+                          <ul className="list-group">
+                            {states.map((country, index) => (
+                              <li
+                                key={country.name}
+                                className="list-group-item"
+                                onMouseOver={() => handleMouseEnter(index)}
+                                onMouseOut={() => handleMouseLeave(index)}
+                                style={{
+                                  cursor: "pointer",
+                                  transition: "background-color 0.3s",
+                                }}
+                              >
+                                {country.name}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
