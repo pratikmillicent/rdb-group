@@ -65,7 +65,7 @@ const News = () => {
             <div className="sec-lg-head mb-30">
               <div className="row">
                 <div className="col-lg-8">
-                  <Heading headTitle="Latest News" fontSize="fs-1" />
+                  <Heading headTitle="LATEST NEWS" fontSize="fs-1" />
                 </div>
               </div>
             </div>
