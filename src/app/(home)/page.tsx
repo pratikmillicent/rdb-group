@@ -19,27 +19,27 @@ export default function Home() {
   return (
     <ParallaxProvider>
       <main className="mw-100">
-      <div>
-        <video
-          className="mw-100"
-          src="https://www.aspect.global/video/aspect_global_apr24.mp4"
-          autoPlay
-          muted
-          playsInline
-          loop
-          preload="auto"
-          poster="https://www.aspect.global/video/aspect_video.webp"
-        ></video>
+        <div>
+          <video
+            className="mw-100"
+            src="https://www.aspect.global/video/aspect_global_apr24.mp4"
+            autoPlay
+            muted
+            playsInline
+            loop
+            preload="auto"
+            poster="https://www.aspect.global/video/aspect_video.webp"
+          ></video>
 
-        <Marq data={marque_data} />
-      </div>
-      <About />
-     <SideImage/>
-      <GroupGrid />
-      <News />
-      <VideoGallary />
-    </main>
+          <Marq data={marque_data} />
+        </div>
+        <About />
+        <SideImage />
+        <GroupGrid />
+        <News />
+        <VideoGallary />
+      </main>
     </ParallaxProvider>
-    
+
   );
 }
