@@ -343,6 +343,7 @@
 // export default ContactUs;
 
 
+"use client"
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
 import { useRef, useState,useEffect } from "react";
@@ -620,8 +621,21 @@ const ContactUs = () => {
                         alt=""
                         className="w-100"
                       />
+                      <div className="icon-container1">
+                       <FaMapMarkerAlt className="main-color3 fz-24" />
+                       <span className="tooltip-text">501, Aspect Global Ventures Pvt.Ltd <br /> Dalamal House, 206 Jamnalal Bajal Marg <br />Nariman Point Mumbai </span>
+                    </div>
+                    <div className="icon-container2" >
+                       <FaMapMarkerAlt className="main-color3 fz-24" />
+                       <span className="tooltip-text">1224, Aspect Global Ventures Pvt.Ltd <br /> Dalamal House, 206 Jamnalal Bajal Marg <br />China</span>
+                      </div>
+                      <div className="icon-container3" >
+                       <FaMapMarkerAlt className="main-color3 fz-24" />
+                       <span className="tooltip-text">501, Aspect Global Ventures Pvt.Ltd <br /> Dalamal House, 206 Jamnalal Bajal Marg <br />UAE </span>
+                      </div>
                     </div> 
-                    <div
+                    
+                    {/* <div
                       className="map-container mt-2"
                       style={{ display: "flex" }}
                     >
@@ -656,7 +670,7 @@ const ContactUs = () => {
                           ))}
                         </ul>
                       </div>
-                    </div>                   
+                    </div> */}
                   </div>
                 </div>
               </div>
