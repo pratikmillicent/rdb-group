@@ -3308,6 +3308,15 @@ body.loaded {
   padding: 20px 10px 15px 10px;
   margin: 0 15px;
 }
+.navbar {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--foreground);
+  padding: 20px 10px 15px 10px;
+  margin: 0 15px;
+}
 
 .navbar .navbar-nav .nav-link .rolling-text {
   height: 30px;

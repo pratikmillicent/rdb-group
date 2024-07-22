@@ -55,8 +55,13 @@ function Navbar() {
       }`}
     >
       <div className="container">
-        <Link className="logo" href="/">
-          <img style={{ width: "175px" }} src="/logo.svg" alt="logo" />
+        <Link href="/">
+          <img
+            style={{ width: "175px" }}
+            src="/logo.svg"
+            alt="logo"
+            className="logo"
+          />
         </Link>
         <button
           className="navbar-toggler"
@@ -79,15 +84,15 @@ function Navbar() {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a
-                className="nav-link"
+              <Link
                 href="/about"
+                className="nav-link"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 <span className="rolling-text">About</span>
-              </a>
+              </Link>
             </li>
             <li
               className="nav-item dropdown"
@@ -97,7 +102,6 @@ function Navbar() {
               <a
                 className="nav-link dropdown-toggle"
                 data-toggle="dropdown"
-                // href="#"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -105,63 +109,63 @@ function Navbar() {
                 <span className="rolling-text">Business</span>
               </a>
               <div className="dropdown-menu">
-                <Link className="dropdown-item" href={`/`}>
+                <Link href="/" className="dropdown-item">
                   Properties
                 </Link>
-                <Link className="dropdown-item" href={`/`}>
+                <Link href="/" className="dropdown-item">
                   Realty
                 </Link>
-                <Link className="dropdown-item" href={`/`}>
+                <Link href="/" className="dropdown-item">
                   Fracto
                 </Link>
-                <Link className="dropdown-item" href={`/`}>
+                <Link href="/" className="dropdown-item">
                   Movies
                 </Link>
               </div>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
+              <Link
                 href="/news"
+                className="nav-link"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 <span className="rolling-text">News & Media</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
+              <Link
                 href="/blogs"
+                className="nav-link"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 <span className="rolling-text">Blogs</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
+              <Link
                 href="/careers"
+                className="nav-link"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 <span className="rolling-text">Careers</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link"
+              <Link
                 href="/contact-us"
+                className="nav-link"
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 <span className="rolling-text">Contact Us</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
