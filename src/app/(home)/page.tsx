@@ -1,8 +1,12 @@
+"use client";
 import Marq from "@/components/marq/Marq";
 import About from "./_components/About";
 import GroupGrid from "./_components/Group";
 import News from "./_components/News";
 import VideoGallary from "./_components/VideoGallary";
+import Testimonials from "./_components/Testimonials";
+import { ParallaxProvider } from "react-scroll-parallax";
+import SideImage from "./_components/SideImage";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -14,25 +18,29 @@ const marque_data = [
 
 export default function Home() {
   return (
-    <main className="mw-100">
-      <div>
-        <video
-          className="mw-100"
-          src="https://www.aspect.global/video/aspect_global_apr24.mp4"
-          autoPlay
-          muted
-          playsInline
-          loop
-          preload="auto"
-          poster="https://www.aspect.global/video/aspect_video.webp"
-        ></video>
+    <ParallaxProvider>
+      <main className="mw-100">
+        <div>
+          <video
+            className="mw-100"
+            src="https://www.aspect.global/video/aspect_global_apr24.mp4"
+            autoPlay
+            muted
+            playsInline
+            loop
+            preload="auto"
+            poster="https://www.aspect.global/video/aspect_video.webp"
+          ></video>
 
-        <Marq data={marque_data} />
-      </div>
-      <About />
-      <GroupGrid />
-      <News />
-      <VideoGallary />
-    </main>
+          <Marq data={marque_data} />
+        </div>
+        <About />
+        <SideImage />
+        <GroupGrid />
+        <News />
+        <Testimonials />
+        <VideoGallary />
+      </main>
+    </ParallaxProvider>
   );
 }
