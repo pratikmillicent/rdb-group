@@ -1,7 +1,7 @@
 // @ts-nocheck
 "use client";
 
-import { FaMapMarkerAlt } from "react-icons/fa";
+// import { FaMapMarkerAlt } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
 import { useEffect, useRef, useState } from "react";
 import "./map.css";
@@ -265,6 +265,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

@@ -14,7 +14,7 @@ const Heading: React.FC<HeadingProps> = ({
   return (
     <h2
       className={`${fontSize} fw-700 underline ${isSpace && "mb-80"}`}
-      style={{ width: "fit-content" }}
+      style={{ width: "fit-content " }}
     >
       {headTitle}
     </h2>
