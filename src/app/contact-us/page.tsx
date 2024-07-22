@@ -345,6 +345,7 @@
 
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
+import { useRef, useState,useEffect } from "react";
 
 const ContactUs = () => {
   const mapRef = useRef<HTMLDivElement | null>(null);
@@ -619,7 +620,7 @@ const ContactUs = () => {
                         alt=""
                         className="w-100"
                       />
-                    </div> */}
+                    </div> 
                     <div
                       className="map-container mt-2"
                       style={{ display: "flex" }}
