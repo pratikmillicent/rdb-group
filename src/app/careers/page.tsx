@@ -4,7 +4,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <img src="/assets/images/career/banner.png" style={{ height: "100vh" }} />
+      <img src="/assets/images2/career.jpg" style={{ height: "100vh" }} />
       <div className="container">
         <header className="work-header ">
           <div className="mt-60 ">
@@ -42,7 +42,7 @@ const page = () => {
               {data.map((data, i) => (
                 <div
                   key={i}
-                  className="apply_part w-100 positions-item justify-content-around text-light p-4"
+                  className="apply_part w-100 positions-item justify-content-around text-light p-4 box-3d"
                 >
                   <div className="w-100 align-items-center d-flex">
                     <p className="fw-bolder  text-light">{data.title}</p>

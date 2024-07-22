@@ -38,9 +38,9 @@ export default function Home() {
         <SideImage />
         <GroupGrid />
         <News />
-        <Testimonials />
         <VideoGallary />
       </main>
     </ParallaxProvider>
+
   );
 }
