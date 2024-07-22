@@ -1,8 +1,8 @@
 // // @ts-nocheck
 // "use client";
 
-// // import { FaMapMarkerAlt } from "react-icons/fa";
-// import     Heading from "@/components/heading/Heading";
+// import { FaMapMarkerAlt } from "react-icons/fa";
+// import Heading from "@/components/heading/Heading";
 // import { useEffect, useRef, useState } from "react";
 // import "./map.css";
 
@@ -347,6 +347,91 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
 
 const ContactUs = () => {
+  const mapRef = useRef<HTMLDivElement | null>(null);
+  // const [map, setMap] = useState<google.maps.Map | null>(null);
+  const [markers, setMarkers] = useState<google.maps.Marker[]>([]);
+  // const [activeMarker, setActiveMarker] = useState<google.maps.Marker | null>(
+  //   null
+  // );
+  // console.log("activeMarker", activeMarker);
+
+  // Updated countries array to include multiple states within India
+  const states = [
+    { name: "Maharashtra", lat: 19.7515, lng: 75.7139 },
+    { name: "Karnataka", lat: 15.3173, lng: 75.7139 },
+    { name: "Tamil Nadu", lat: 11.1271, lng: 78.6569 },
+    { name: "Gujarat", lat: 22.2587, lng: 71.1924 },
+    { name: "Rajasthan", lat: 27.0238, lng: 74.2179 },
+  ];
+
+  useEffect(() => {
+    if (!mapRef.current) return;
+
+    const mapOptions: google.maps.MapOptions = {
+      zoom: 5,
+      center: new google.maps.LatLng(20.5937, 78.9629),
+      mapTypeControl: false,
+    };
+
+    const mapInstance = new google.maps.Map(mapRef.current, mapOptions);
+    // setMap(mapInstance);
+
+    // const myIcon: any = (
+    //   <div>
+    //     <i className="fa-solid fa-location-dot"></i>
+    //   </div>
+    // );
+    const catIcon: google.maps.Icon = {
+      url: "/assets/images/pin.png",
+      size: new google.maps.Size(80, 40),
+      scaledSize: new google.maps.Size(40, 30),
+      origin: new google.maps.Point(-15, 0),
+    };
+
+    const newMarkers = states?.map((state) => {
+      const marker = new google.maps.Marker({
+        position: new google.maps.LatLng(state.lat, state.lng),
+        map: mapInstance,
+        icon: catIcon,
+        optimized: false,
+      });
+      return marker;
+    });
+
+    setMarkers(newMarkers);
+
+    const overlay = new google.maps.OverlayView();
+    overlay.draw = function () {
+      const panes = this.getPanes && this.getPanes();
+      if (panes && panes.markerLayer) {
+        panes.markerLayer.id = "markerLayer";
+      }
+    };
+    overlay.setMap(mapInstance);
+  }, [mapRef]);
+
+  const handleMouseEnter = (index: number) => {
+    if (markers[index]) {
+      // setActiveMarker(markers[index]);
+      const markerLayer = document.getElementById("markerLayer");
+      if (markerLayer) {
+        const images = markerLayer.getElementsByTagName("img");
+        images[index].style.animation = "bounce 1s infinite alternate";
+      }
+    }
+  };
+
+  const handleMouseLeave = (index: number) => {
+    if (markers[index]) {
+      // setActiveMarker(null);
+      const markerLayer = document.getElementById("markerLayer");
+      if (markerLayer) {
+        const images = markerLayer.getElementsByTagName("img");
+        images[index].style.animation = "";
+      }
+    }
+  };
+
   return (
     <>
     <img src="/assets/images2/contact.jpg" style={{ height: "100vh" }} />
@@ -534,17 +619,41 @@ const ContactUs = () => {
                         alt=""
                         className="w-100"
                       />
-                      <div className="icon-container1">
-                       <FaMapMarkerAlt className="main-color3 fz-24" />
-                       <span className="tooltip-text">501, Aspect Global Ventures Pvt.Ltd <br /> Dalamal House, 206 Jamnalal Bajal Marg <br />Nariman Point Mumbai </span>
-                      </div>
-                      <div className="icon-container2" >
-                       <FaMapMarkerAlt className="main-color3 fz-24" />
-                       <span className="tooltip-text">1224, Aspect Global Ventures Pvt.Ltd <br /> Dalamal House, 206 Jamnalal Bajal Marg <br />China</span>
-                      </div>
-                      <div className="icon-container3" >
-                       <FaMapMarkerAlt className="main-color3 fz-24" />
-                       <span className="tooltip-text">501, Aspect Global Ventures Pvt.Ltd <br /> Dalamal House, 206 Jamnalal Bajal Marg <br />UAE </span>
+                    </div> */}
+                    <div
+                      className="map-container mt-2"
+                      style={{ display: "flex" }}
+                    >
+                      <div
+                        id="map"
+                        ref={mapRef}
+                        style={{ width: "100%", height: "100%" }}
+                      ></div>
+                      <div
+                        className="country-list p-3"
+                        style={{
+                          width: "30%",
+                          border: "1px solid #ddd",
+                          borderRadius: "5px",
+                          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                        }}
+                      >
+                        <ul className="list-group">
+                          {states.map((country, index) => (
+                            <li
+                              key={country.name}
+                              className="list-group-item"
+                              onMouseOver={() => handleMouseEnter(index)}
+                              onMouseOut={() => handleMouseLeave(index)}
+                              style={{
+                                cursor: "pointer",
+                                transition: "background-color 0.3s",
+                              }}
+                            >
+                              {country.name}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>                   
                   </div>
