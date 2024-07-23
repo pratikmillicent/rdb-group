@@ -23,11 +23,12 @@ function CoreValue2() {
                   <div className="item mb-30 wow fadeIn" data-wow-delay=".6s">
                     <div className="img">
                       {/* <img src={item.name} alt="" /> */}
-
+                      <i className={` ${item.icon} fs-1 main-color4`}></i>
                       <h6>{item.name}</h6>
+
                       {/* {item.name} */}
                     </div>
-                    <i className={` ${item.icon} fs-1 main-color4`}></i>
+                    {/* <h5>RD Brother</h5> */}
                   </div>
                 </div>
               ))}
@@ -46,8 +47,48 @@ function CoreValue2() {
 export default CoreValue2;
 
 const coreValueImage = [
-  { icon: "fas fa-lightbulb", name: "INNOVATION" },
-  { icon: "fas fa-puzzle-piece", name: "COMMITMENT" },
-  { icon: "fas fa-handshake", name: "INTEGRITY" },
-  { icon: "fas fa-medal", name: "QUALITY" },
+  {
+    icon: "fas fa-lightbulb",
+    name: "INNOVATION",
+    description:
+      "We strive to think outside the box and bring new ideas to life.",
+    color: "#FFD700",
+  },
+  {
+    icon: "fas fa-puzzle-piece",
+    name: "COMMITMENT",
+    description: "Our dedication to our work and to our clients is unwavering.",
+    color: "#FF5733",
+  },
+  {
+    icon: "fas fa-handshake",
+    name: "INTEGRITY",
+    description: "We conduct our business with honesty and transparency.",
+    color: "#28A745",
+  },
+  {
+    icon: "fas fa-medal",
+    name: "QUALITY",
+    description: "We ensure the highest standards in everything we do.",
+    color: "#C0C0C0",
+  },
+
+  {
+    icon: "fas fa-users",
+    name: "TEAMWORK",
+    description: "Collaborating effectively to achieve common goals.",
+    color: "#800080",
+  },
+  {
+    icon: "fas fa-bullseye",
+    name: "FOCUS",
+    description: "Concentrating on delivering the best outcomes.",
+    color: "#FF4500",
+  },
+  {
+    icon: "fas fa-balance-scale",
+    name: "FAIRNESS",
+    description: "Treating everyone with respect and equality.",
+    color: "#8B0000",
+  },
 ];

@@ -8467,14 +8467,15 @@ header.in-box {
 }
 
 .team-crev .swiper-slide .item .main-marq.team-name {
-  background: #c9f31d;
+  background: var(--golden);
+  border-bottom: 0;
   left: 0;
 }
 
 .team-crev .swiper-slide .img {
   position: relative;
   border-radius: 10px 10px 0 0;
-  border: 2px solid #c9f31d;
+  border: 2px solid var(--golden);
   border-bottom: 0;
   overflow: hidden;
 }
