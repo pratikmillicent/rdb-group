@@ -84,11 +84,9 @@ function News() {
 
   return (
     <section
-      className="blog-modern section-padding"
-      style={{ paddingBottom: "60px" }}
-    >
+      className="blog-modern section-padding" >
       <div className="container">
-        <div className="sec-lg-head mb-80">
+        <div className="sec-lg-head mb-30">
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">

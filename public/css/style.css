@@ -422,7 +422,7 @@ figure {
 }
 
 .main-colorbg3 {
-  background-color: var(--navy);
+  background-color: var(--golden);
 }
 
 .main-color4 {
@@ -542,7 +542,8 @@ img {
 }
 
 .butn.butn-bord:hover {
-  background: var(--foreground);
+  border-color: var(--white);
+  background: var(--golden);
   color: var(--white);
 }
 
@@ -3346,7 +3347,7 @@ body.loaded {
   font-size: 13px;
   font-weight: 600;
   color: var(--foreground);
-  padding: 20px 10px 15px 10px;
+  /* padding: 20px 10px 15px 10px; */
   /* margin: 0 15px; */
 }
 
@@ -5681,7 +5682,7 @@ body.loaded {
 .tooltip-text {
   visibility: hidden;
   width: 120px;
-  background-color: navy;
+  background-color: var(--golden);
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -5711,9 +5712,6 @@ body.loaded {
 } 
 
 .box-3d {
-  position: relative;
-  /* background: #fff; */
-  /* border-radius: 8px; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   perspective: 1000px; /* Needed for 3D transforms */
@@ -5725,20 +5723,6 @@ body.loaded {
   transform: rotateY(10deg) rotateX(10deg) scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-.box-3d::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-  transition: opacity 0.3s ease;
-  opacity: 0;
-  z-index: 1;
-}
-
 
 /* Numbers
 -----------------------------------------------------------------*/
@@ -9995,6 +9979,11 @@ header.in-box {
     border-bottom: 0;
   }
 
+  .nav-link.active {
+    color: #281010;
+    font-weight: bold;
+  }
+
   .navbar .navbar-nav .mega-menu {
     width: auto;
     position: static;
@@ -10254,7 +10243,7 @@ header.in-box {
   }
 
   .call-action-img .sec-lg-head {
-    padding: 80px 0;
+    padding: 60px 0;
   }
 
   .call-action-img .fz-50 {
