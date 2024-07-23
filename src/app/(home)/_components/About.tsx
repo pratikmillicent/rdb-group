@@ -152,7 +152,7 @@ function About() {
           <div className="col-lg-5">
             <div className="cont md-mb50">
               <div className="mb-50">
-                <h6 className="sub-title mb-15">What we do ?</h6>
+                <h6 className="sub-title mb-15 fw-500">What we do ?</h6>
                 <h3>We want to bring business & the digital world together.</h3>
               </div>
               <div className="item d-flex align-items-center pb-20 mb-20 bord-thin-bottom">

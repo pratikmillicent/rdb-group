@@ -21,7 +21,7 @@ function About() {
             poster="https://www.aspect.global/video/aspect_video.webp"
           ></video>
         </div>
-        <div className="py-5">
+        <div className="section-padding">
           <Intro />
         </div>
 

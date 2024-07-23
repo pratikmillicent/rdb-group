@@ -389,6 +389,10 @@ figure {
   margin-top: 0;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .btn:hover,
 .btn:focus,
 .btn:active {
@@ -1179,7 +1183,7 @@ img {
 }
 
 .main-marq .strok .item h4 {
-  color: transparent !important;
+  color: #ebe2e2b5 !important;
   -webkit-text-stroke: 0.5px var(--foreground);
 }
 
@@ -1211,12 +1215,12 @@ img {
 .main-marq .box .item h4 {
   white-space: nowrap;
   line-height: 1;
-  margin: 0;
+  margin-bottom: 60px;
 }
 
 .main-marq .box .item h4 .icon {
   font-family: "Sora", sans-serif;
-  margin-bottom: -15px;
+  /* margin-bottom: 30px; */
 }
 
 .main-marq .box .item h2 {
@@ -1641,7 +1645,7 @@ img.left {
 
 .section-padding {
   /* padding: 120px 0; */
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 .section-ptb {
@@ -3329,9 +3333,9 @@ body.loaded {
 
 .navbar .navbar-nav .nav-link {
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 13px;
-  font-weight: 600;
+  /* letter-spacing: 1px; */
+  font-size: 18px;
+  font-weight: 400;
   color: var(--foreground);
   padding: 20px 10px 15px 10px;
   margin: 0 15px;
@@ -3343,7 +3347,7 @@ body.loaded {
   font-weight: 600;
   color: var(--foreground);
   padding: 20px 10px 15px 10px;
-  margin: 0 15px;
+  /* margin: 0 15px; */
 }
 
 .navbar .navbar-nav .nav-link .rolling-text {

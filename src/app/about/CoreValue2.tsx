@@ -1,9 +1,9 @@
 import React from "react";
 function CoreValue2() {
   return (
-    <div className="clients section-padding pb-100 position-re">
+    <div className="clients section-padding pb-60 position-re">
       <div className="container">
-        <div className="row justify-content-center mb-80">
+        <div className="row justify-content-center mb-60">
           <div className="col-lg-6 text-center">
             <div className="text">
               <h3>We create experiences and turn ideas into reality.</h3>

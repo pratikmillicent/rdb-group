@@ -15,7 +15,7 @@ const Blog = () => {
       id: 1,
       image: "https://picsum.photos/1100/1100",
       heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "People Choice Awards - NAREDCO 2023",
+      description: "Top Emerging Developer - Times Of India 2023",
       date: "17-August-2023",
     },
     {
@@ -36,7 +36,7 @@ const Blog = () => {
       id: 4,
       image: "https://picsum.photos/1000/1000",
       heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "People Choice Awards - NAREDCO 2023",
+      description: "Top Emerging Developer - Times Of India 2023",
       date: "17-July-2024",
     },
     {
@@ -57,7 +57,7 @@ const Blog = () => {
       id: 7,
       image: "https://picsum.photos/1600/1600",
       heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "People Choice Awards - NAREDCO 2023",
+      description: "Top Emerging Developer - Times Of India 2023",
       date: "17-May-2024",
     },
     {
@@ -78,7 +78,7 @@ const Blog = () => {
       id: 10,
       image: "https://picsum.photos/1900/1900",
       heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "People Choice Awards - NAREDCO 2023",
+      description: "Top Emerging Developer - Times Of India 2023",
       date: "17-August-2023",
     },
     {
@@ -99,7 +99,7 @@ const Blog = () => {
       id: 13,
       image: "https://picsum.photos/1000/1000",
       heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "People Choice Awards - NAREDCO 2023",
+      description: "Top Emerging Developer - Times Of India 2023",
       date: "17-July-2024",
     },
     {
@@ -120,7 +120,7 @@ const Blog = () => {
       id: 16,
       image: "https://picsum.photos/1600/1600",
       heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "People Choice Awards - NAREDCO 2023",
+      description: "Top Emerging Developer - Times Of India 2023",
       date: "17-May-2024",
     },
     {

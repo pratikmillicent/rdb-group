@@ -24,11 +24,11 @@ function SideImage() {
           <div className="col-lg-6 offset-lg-6">
             <div className="cont">
               <div>
-                <h6 className="sub-title mb-15">Who we are ?</h6>
-                <h2 className="fz-50">We want to bring business & the digital world together.</h2>
+                <h6 className="sub-title mb-15 fw-500">Who we are ?</h6>
+                <h2 className="fz-36">We want to bring business & the digital world together.</h2>
                 <div className="">
                   <Link href="/dark/page-about" className="arrow mt-30">
-                    <span className="sub-title">Explore about us</span>
+                    <span className="sub-title fw-500">Explore about us</span>
                     <span className="circle">
                       <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +44,7 @@ function SideImage() {
           </div>
         </div>
       </div>
-      <div className="bg-img bg-left parallaxie d-flex align-items-center justify-content-center" data-background="/dark/assets/imgs/background/3.jpg">
+      <div className="bg-img bg-left parallaxie d-flex align-items-center justify-content-center" data-background="/assets/images2/about-img.jpg.jpg">
         <div className="vid-circle bg-white text-dark">
           <a href="https://youtu.be/AzwC6umvd1s" className="vid" onClick={openVideo}>
             <span className="icon">

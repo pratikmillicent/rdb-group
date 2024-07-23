@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="sub-bg">
       <div className="footer-container">
-        <div className="container pb-80 pt-80 ontop">
+        <div className="container pb-60 pt-60 ontop">
           <div className="row">
             <div className="col-lg-3">
               <div className="colum md-mb50">

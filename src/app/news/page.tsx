@@ -59,7 +59,7 @@ const News = () => {
       <div className="container">
         <section
           className="blog-modern section-padding"
-          style={{ paddingBottom: "40px" }}
+          style={{ paddingBottom: "0" }}
         >
           <div className="container">
             <div className="sec-lg-head mb-30">
@@ -94,14 +94,14 @@ const News = () => {
                           />
                         </div>
                         <div className="cont mt-30">
-                          <h6 className="fw-bold">
+                          <h6 className="fw-600">
                             <Link href="/dark/blog-post">
                               {item.description}
                             </Link>
                           </h6>
                           <Link
                             href="/dark/blog-post"
-                            className="mt-10 ls1 sub-title"
+                            className="mt-6 ls1 sub-title fw-500"
                           >
                             Read More{" "}
                             <i className="ml-5">
@@ -130,7 +130,7 @@ const News = () => {
         </section>
         <section
           className="blog-modern section-padding"
-          style={{ paddingBottom: "40px" }}
+          style={{ paddingBottom: "0px" }}
         >
           <div className="container">
             <div className="sec-lg-head mb-30">
@@ -175,7 +175,7 @@ const News = () => {
 
         <section
           className="blog-modern section-padding"
-          style={{ paddingBottom: "40px" }}
+          style={{ paddingBottom: "0px" }}
         >
           <div className="container">
             <div className="sec-lg-head mb-40">
