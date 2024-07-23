@@ -6,7 +6,7 @@ const page = () => {
     <>
       <img src="/assets/images2/career.jpg" style={{ height: "100vh" }} />
       <div className="container">
-        <header className="work-header ">
+        <div className="work-header ">
           <div className="mt-60 ">
             <div>
               <div className="caption">
@@ -15,7 +15,7 @@ const page = () => {
               </div>
             </div>
           </div>
-        </header>
+        </div>
         <div className="d-flex gap-3 mb-80">
           <div className="">
             <p className="text-dark fz-20 fw-bold mb-3">
