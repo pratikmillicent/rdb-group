@@ -108,7 +108,7 @@ main {
 .underline {
   /* border-top: 1px solid red; */
   position: relative;
-  color :  grey;
+  color: grey;
 }
 
 .underline:after {
@@ -275,7 +275,6 @@ main {
 .marker:hover .tooltip {
   display: block;
 }
-
 
 .lines.two:after {
   content: "";
@@ -3337,16 +3336,16 @@ body.loaded {
   font-size: 14px;
   font-weight: 400;
   color: var(--foreground);
-  padding: 20px 10px 15px 10px;
+
   margin: 0 15px;
 }
 .navbar {
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding: 15px 15px 10px 15px;
   font-size: 13px;
   font-weight: 600;
   color: var(--foreground);
-  padding: 20px 10px 15px 10px;
   /* margin: 0 15px; */
 }
 
@@ -5655,12 +5654,11 @@ body.loaded {
   min-height: 180px;
 }
 
-
 .icon-container1 {
   position: absolute;
   display: inline-block;
   top: 48%;
-    left: 66%;
+  left: 66%;
 }
 
 .icon-container2 {
@@ -5676,7 +5674,6 @@ body.loaded {
   top: 46%;
   left: 60%;
 }
- 
 
 .tooltip-text {
   visibility: hidden;
@@ -5703,12 +5700,12 @@ body.loaded {
 .icon-container2:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
-} 
+}
 
 .icon-container3:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
-} 
+}
 
 .box-3d {
   position: relative;
@@ -5727,18 +5724,21 @@ body.loaded {
 }
 
 .box-3d::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0)
+  );
   transition: opacity 0.3s ease;
   opacity: 0;
   z-index: 1;
 }
-
 
 /* Numbers
 -----------------------------------------------------------------*/
