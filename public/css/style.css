@@ -389,7 +389,7 @@ figure {
 }
 
 .active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .btn:hover,

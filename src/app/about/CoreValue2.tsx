@@ -1,3 +1,4 @@
+import Split from "@/utils/Split";
 import React from "react";
 function CoreValue2() {
   return (
@@ -21,14 +22,12 @@ function CoreValue2() {
                   key={Math.floor(Math.random() * 10000)}
                 >
                   <div className="item mb-30 wow fadeIn" data-wow-delay=".6s">
-                    <div className="img">
-                      {/* <img src={item.name} alt="" /> */}
+                    <div>
                       <i className={` ${item.icon} fs-1 main-color4`}></i>
-                      <h6>{item.name}</h6>
-
-                      {/* {item.name} */}
                     </div>
-                    {/* <h5>RD Brother</h5> */}
+                    <Split>
+                      <h4>{item?.name}</h4>
+                    </Split>
                   </div>
                 </div>
               ))}
