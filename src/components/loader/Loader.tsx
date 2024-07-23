@@ -32,13 +32,14 @@ function Loader() {
       <div className="loader-wrap-heading">
         <span>
           <h2 className="load-text">
-            <span>L</span>
-            <span>o</span>
-            <span>a</span>
-            <span>d</span>
-            <span>i</span>
-            <span>n</span>
-            <span>g</span>
+            <span>
+              <img
+                style={{ width: "305px" }}
+                src="/logo.svg"
+                alt="logo"
+                className="logo"
+              />
+            </span>
           </h2>
         </span>
       </div>

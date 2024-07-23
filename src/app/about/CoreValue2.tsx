@@ -85,10 +85,4 @@ const coreValueImage = [
     description: "Concentrating on delivering the best outcomes.",
     color: "#FF4500",
   },
-  {
-    icon: "fas fa-balance-scale",
-    name: "FAIRNESS",
-    description: "Treating everyone with respect and equality.",
-    color: "#8B0000",
-  },
 ];
