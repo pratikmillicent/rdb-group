@@ -1,7 +1,5 @@
-"use client";
 import Image from "next/image";
-import React, { useState } from "react";
-import Modal from "./Modal";
+import React from "react";
 
 interface DirectorData {
   id: number;
@@ -16,15 +14,6 @@ interface DirectorProps {
 }
 
 const Director: React.FC<DirectorProps> = ({ Data }) => {
-  const [showModal, setShowModal] = useState<Boolean>(false);
-  const [selectedDirector, setSelectedDirector] = useState<DirectorData | null>(null);
-
-  const handleReadMore = (director: DirectorData) => {
-    setSelectedDirector(director);
-    setShowModal(true);
-  };
-
-
   return (
     <div className="row">
       {Data?.map((item) => (
@@ -65,18 +54,13 @@ const Director: React.FC<DirectorProps> = ({ Data }) => {
               className="arrow mt-5 cursor-pointer"
               // onClick={() => handleReadMore(item.id)}
             >
-              <span className="fz-12 main-color3 mr-10 text-decoration-underline" onClick={() => handleReadMore(item)}>
+              <span className="fz-12 main-color3 mr-10 text-decoration-underline">
                 Read More
               </span>
             </div>
           </div>
         </div>
       ))}
-      {showModal && selectedDirector && (
-        <Modal onClose={() => setShowModal(false)} title={selectedDirector.name}>
-          <p>{selectedDirector.desc}</p>
-        </Modal>
-      )}
     </div>
   );
 };
