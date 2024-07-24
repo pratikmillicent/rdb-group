@@ -39,7 +39,7 @@ function GroupGrid() {
   return (
     <section className="portfolio section-padding">
       <div className="container">
-        <div className="sec-lg-head mb-80">
+        <div className="sec-lg-head mb-30">
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">

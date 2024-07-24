@@ -31,7 +31,7 @@ const page = () => {
               opportunities and where passion meets purpose.
             </p>
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
-            <div style={{ paddingTop: "30px" }}>
+            <div style={{ paddingTop: "60px" }}>
               <Heading headTitle="Open Positions" />
             </div>
             <p className="mt-5 text-dark">
