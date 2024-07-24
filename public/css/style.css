@@ -97,7 +97,9 @@ body.home-arch main:after {
 
 body.home-main-crev,
 body.digital-marketing {
-  font-family: "Epilogue", sans-serif;
+  /* font-family: "Epilogue" sans-serif; */
+  font-family: "Sora" sans-serif;
+
 }
 
 main {
@@ -3315,7 +3317,7 @@ body.loaded {
 .navbar.nav-scroll {
   /* background: var(--navy) !important; */
   /* border-color: rgba(0, 0, 0, 0.05); */
-  padding: 0;
+  padding: 10px;
   position: fixed;
   top: -80px;
   -webkit-transition: -webkit-transform 0.5s;
@@ -3336,7 +3338,7 @@ body.loaded {
   text-transform: uppercase;
   /* letter-spacing: 1px; */
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--foreground);
   padding: 20px 10px 15px 10px;
   margin: 0 15px;
@@ -3347,7 +3349,7 @@ body.loaded {
   font-size: 13px;
   font-weight: 600;
   color: var(--foreground);
-  /* padding: 20px 10px 15px 10px; */
+  padding: 20px 10px 15px 10px;
   /* margin: 0 15px; */
 }
 
