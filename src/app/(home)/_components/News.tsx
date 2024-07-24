@@ -83,8 +83,7 @@ function News() {
   }, []);
 
   return (
-    <section
-      className="blog-modern section-padding" >
+    <section className="blog-modern section-padding">
       <div className="container">
         <div className="sec-lg-head mb-30">
           <div className="row">

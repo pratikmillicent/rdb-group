@@ -1,5 +1,6 @@
 //@ts-nocheck
 
+import Heading from "@/components/heading/Heading";
 import React, { useEffect } from "react";
 
 function Intro() {
@@ -117,8 +118,8 @@ function Intro() {
             <div className="cont">
               <div className="text">
                 <h2 className="d-slideup wow">
-                  <span className="sideup-text">
-                    <span className="up-text">Overview</span>
+                  <span className="sideup-text py-2">
+                    <Heading headTitle="Overview" fontSize="fs-1" />
                   </span>
                 </h2>
               </div>
