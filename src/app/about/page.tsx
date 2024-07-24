@@ -8,17 +8,18 @@ import Director2 from "./Director2";
 function About() {
   return (
     <>
-      <main className="mw-100">
+      <main className="mw-100 ">
         <div>
           <video
-            className="mw-100"
-            src="https://www.aspect.global/video/aspect_global_apr24.mp4"
+            className="mw-100 w-100"
+            style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
+            src="/assets/video/AboutHero.mp4"
             autoPlay
             muted
             playsInline
             loop
             preload="auto"
-            poster="https://www.aspect.global/video/aspect_video.webp"
+            // poster="https://www.aspect.global/video/aspect_video.webp"
           ></video>
         </div>
         <div className="pb-60">

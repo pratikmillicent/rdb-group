@@ -22,14 +22,15 @@ export default function Home() {
       <main className="mw-100">
         <div>
           <video
-            className="mw-100"
-            src="https://www.aspect.global/video/aspect_global_apr24.mp4"
+            className="mw-100 w-100"
+            style={{ height: "calc(100dvh - 130px)", objectFit: "initial" }}
+            src="/assets/video/HeroVideo.mp4"
             autoPlay
             muted
             playsInline
             loop
             preload="auto"
-            poster="https://www.aspect.global/video/aspect_video.webp"
+            // poster="https://www.aspect.global/video/aspect_video.webp"
           ></video>
 
           <Marq data={marque_data} />
@@ -41,6 +42,5 @@ export default function Home() {
         <VideoGallary />
       </main>
     </ParallaxProvider>
-
   );
 }
