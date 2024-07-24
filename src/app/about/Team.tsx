@@ -166,19 +166,13 @@ const data = [
   },
   {
     id: 3,
-    image: "/assets/images2/person/person5.jfif",
+    image: "/assets/images2/person/testimonial3.jpg",
     name: "adrian parody",
     position: "Co-Founder",
   },
   {
     id: 4,
     image: "/assets/images2/person/testimonial2.jpg",
-    name: "adrian parody",
-    position: "Co-Founder",
-  },
-  {
-    id: 5,
-    image: "/assets/images2/person/testimonial3.jpg",
     name: "adrian parody",
     position: "Co-Founder",
   },

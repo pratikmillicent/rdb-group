@@ -1,7 +1,50 @@
-import React from "react";
+//@ts-nocheck
+
+import React, { useEffect } from "react";
 
 function Intro() {
-  function openAccordion(event: any) {
+  // function openAccordion(event: any) {
+  //   console.log("🚀 ~ openAccordion ~ event:", event);
+  //   document.querySelectorAll(".accordion-info").forEach((element) => {
+  //     let htmlElement = element as HTMLElement;
+  //     element.classList.remove("active");
+
+  //     // Ensure that the element exists before assigning a value
+  //     if (htmlElement) {
+  //       htmlElement.style.maxHeight = "0";
+  //       if (htmlElement.parentElement) {
+  //         htmlElement.parentElement.classList.remove("active");
+  //       }
+  //     }
+  //   });
+
+  //   const currentTarget = event.currentTarget as HTMLElement;
+
+  //   // Ensure that the parent element and next sibling exist before assigning values
+  //   if (currentTarget.parentElement) {
+  //     currentTarget.parentElement.classList.add("active");
+  //   }
+
+  //   const nextElementSibling = currentTarget.nextElementSibling as HTMLElement;
+
+  //   if (nextElementSibling) {
+  //     nextElementSibling.style.maxHeight = "300px";
+  //     nextElementSibling.classList.add("active");
+  //   }
+  // }
+  useEffect(() => {
+    // Open the first accordion item by default
+    const firstItem = document.querySelector(
+      ".accordion .item:first-child .accordion-info"
+    );
+    if (firstItem) {
+      firstItem.style.maxHeight = "300px";
+      firstItem.classList.add("active");
+      firstItem.parentElement.classList.add("active");
+    }
+  }, []);
+
+  const openAccordion = (event) => {
     document.querySelectorAll(".accordion-info").forEach((element) => {
       let htmlElement = element as HTMLElement;
       element.classList.remove("active");
@@ -28,10 +71,10 @@ function Intro() {
       nextElementSibling.style.maxHeight = "300px";
       nextElementSibling.classList.add("active");
     }
-  }
+  };
 
   return (
-    <section className="intro-corp section-padding pt-0">
+    <section className="intro-corp section-padding">
       <div className="container">
         <div className="row justify-content-around">
           {/* <div className="col-lg-5 valign md-mb50">
@@ -79,7 +122,7 @@ function Intro() {
                   </span>
                 </h2>
               </div>
-              <div className="accordion bord mt-40">
+              {/* <div className="accordion bord mt-40">
                 <div className="item mb-15 wow fadeInUp" data-wow-delay=".1s">
                   <div className="title" onClick={openAccordion}>
                     <h6 className="fz-18">Our Mission</h6>
@@ -104,6 +147,35 @@ function Intro() {
                       To be global powerhouse where tradition and innovation
                       unite, building a sustainble, impactful, and visionary
                       future for all stakeholder
+                    </p>
+                  </div>
+                </div>
+              </div> */}
+              <div className="accordion bord mt-40">
+                <div className="item mb-15 wow fadeInUp" data-wow-delay=".1s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">Our Mission</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">
+                      To embrace our roots while propelling forward, delivering
+                      value through ethical sustainable and pioneering
+                      solutions, and ensuring Aspect Global Ventures remains a
+                      symbol of trust quality, and progress for generations.
+                    </p>
+                  </div>
+                </div>
+                <div className="item mb-15 wow fadeInUp" data-wow-delay=".3s">
+                  <div className="title" onClick={openAccordion}>
+                    <h6 className="fz-18">Our Vision</h6>
+                    <span className="ico"></span>
+                  </div>
+                  <div className="accordion-info">
+                    <p className="fz-14">
+                      To be a global powerhouse where tradition and innovation
+                      unite, building a sustainable, impactful, and visionary
+                      future for all stakeholders.
                     </p>
                   </div>
                 </div>
