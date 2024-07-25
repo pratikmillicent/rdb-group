@@ -63,14 +63,14 @@ function GroupGrid() {
                 className={`col-lg-4 col-md-6 items info-overlay mb-30`}
                 key={item.id}
               >
-                <div className="item-img o-hidden">
+                <div className="item-img o-hidden outset-border">
                   <Link href="/" className="imago wow">
-                    <div className="inner wow">
+                    <div className="inner wow image-wrapper ">
                       <Image
                         width={1000}
                         height={1000}
                         src={item.image}
-                        alt="image"
+                        alt="image"                     
                       />
                     </div>
                   </Link>
