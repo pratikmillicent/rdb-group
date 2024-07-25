@@ -436,9 +436,9 @@ const ContactUs = () => {
   return (
     <>
       <img src="/assets/images2/contact.jpg" style={{ height: "100vh" }} />
-      <div className="container section-padding">
+      <div className="container mt-60">
         <div className="d-flex gap-3">
-          <div className="col-12 col-md-11 mt-30">
+          <div className="col-12 col-md-11">
             <Heading headTitle="Contact Us Now!" />
             {/* <div className="w-75 msg_box">
             <div className="">
@@ -466,11 +466,11 @@ const ContactUs = () => {
               </div>
             </div>
           </div> */}
-            <section className="contact-crev section-padding">
+            <section className="contact-crev mt-30">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-5">
-                    <div className="sec-lg-head mb-80">
+                    <div className="sec-lg-head mb-60">
                       <h6 className="dot-titl-non mb-10">Get In Touch</h6>
                       <h2 className="fz-50">
                         Let's get in <br /> touch with us.
@@ -482,7 +482,7 @@ const ContactUs = () => {
                       <div className="phone fz-30 fw-600 mt-30 ">
                         <a href="#0">+1 840 841 25 69</a>
                       </div>
-                      <ul className="rest social-text d-flex mt-60">
+                      <ul className="rest social-text d-flex mt-30">
                         <li className="mr-30">
                           <a href="#0">Facebook</a>
                         </li>
@@ -644,7 +644,7 @@ const ContactUs = () => {
                   style={{ marginBottom: "60px" }}
                 >
                   <div className="col-12 ">
-                    <div className="mt-30">
+                    <div className="">
                       <Heading headTitle="Global Presence" />
                       <div
                         className="w-75 position-relative"

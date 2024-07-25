@@ -178,7 +178,7 @@ const News = () => {
           style={{ paddingBottom: "0px" }}
         >
           <div className="container">
-            <div className="sec-lg-head mb-40">
+            <div className="sec-lg-head mb-30">
               <div className="row">
                 <div className="col-lg-8">
                   <Heading headTitle="PHOTOS GALLERY" fontSize="fs-1" />

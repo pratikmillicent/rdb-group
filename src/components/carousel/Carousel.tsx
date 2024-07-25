@@ -52,7 +52,7 @@ function Carousel({
 
   return (
     <section
-      className={`work-carsouel full-height valign section-padding light`}
+      className={`work-carsouel full-height valign light`}
     >
       <div className="container-fluid rest">
         <div className="row">
