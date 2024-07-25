@@ -34,7 +34,7 @@ const page = () => {
             <div style={{ paddingTop: "60px" }}>
               <Heading headTitle="Open Positions" />
             </div>
-            <p className="mt-5 text-dark">
+            <p className="mt-30 text-dark">
               Join us in shaping the future. Explore current openings across our
               global network.
             </p>

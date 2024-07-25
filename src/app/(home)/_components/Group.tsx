@@ -39,7 +39,7 @@ function GroupGrid() {
   return (
     <section className="portfolio section-padding">
       <div className="container">
-        <div className="sec-lg-head mb-30">
+        <div className="sec-lg-head mb-10">
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
@@ -57,10 +57,10 @@ function GroupGrid() {
           </div>
         </div>
         <div className="gallery">
-          <div className="row grid md-marg">
+          <div className="row grid pr-0">
             {data.map((item) => (
               <div
-                className={`col-lg-4 col-md-6 items info-overlay mb-50`}
+                className={`col-lg-4 col-md-6 items info-overlay mb-30`}
                 key={item.id}
               >
                 <div className="item-img o-hidden">

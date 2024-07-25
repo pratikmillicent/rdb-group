@@ -83,9 +83,9 @@ function News() {
   }, []);
 
   return (
-    <section className="blog-modern section-padding">
+    <section className="blog-modern pt-30">
       <div className="container">
-        <div className="sec-lg-head mb-30">
+        <div className="sec-lg-head mb-10">
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
@@ -150,10 +150,10 @@ function News() {
                       </h6>
                       <Link
                         href="/dark/blog-post"
-                        className="mt-20 ls1 sub-title"
+                        className="ls1 sub-title"
                       >
                         Read More{" "}
-                        <i className="ml-5">
+                        <i className="ml-2">
                           <svg
                             width="18"
                             height="18"
