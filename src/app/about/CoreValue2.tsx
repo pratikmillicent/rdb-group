@@ -7,7 +7,7 @@ function CoreValue2() {
         <div className="row justify-content-center mb-60">
           <div className="col-lg-6 text-center">
             <div className="text">
-              <h3>We create experiences and turn ideas into reality.</h3>
+              <h3>There’s no such thing as too young to be experienced</h3>
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import About from "./_components/About";
 import GroupGrid from "./_components/Group";
 import News from "./_components/News";
 import VideoGallary from "./_components/VideoGallary";
-import Testimonials from "./_components/Testimonials";
 import { ParallaxProvider } from "react-scroll-parallax";
 import SideImage from "./_components/SideImage";
 

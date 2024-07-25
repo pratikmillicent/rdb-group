@@ -11,7 +11,7 @@ const page = () => {
             <div>
               <div className="caption">
                 <h6 className="sub-title">INTRODUCTION</h6>
-                <h2>Working at Aspect</h2>
+                <h2>Working at R.D.Brothers property consultants LLP</h2>
               </div>
             </div>
           </div>
@@ -19,16 +19,14 @@ const page = () => {
         <div className="d-flex gap-3 mb-80">
           <div className="">
             <p className="text-dark fz-20 fw-bold mb-3">
-              Become part of a global conglomerate where opportunities are
-              boundless, growth is accelerated, and excellence is a way of life.
+              FASCINATING WORK, ENDLESS OPPORTUNITY
             </p>
             <p className="text-dark mb-3">
-              At Aspect, every day is a journey of discovery, innovation, and
-              collaboration. Joining our team means becoming part of a diverse
-              family that values everyone’s contributions and encourages
-              continuous growth. Here, we don’t just offer jobs; we build
-              careers, fostering an environment where aspirations meet
-              opportunities and where passion meets purpose.
+              We’re driven by technology and fueled by the multitude of
+              opportunities. Develop your skills, and grow with a group that
+              takes real challenges in real estate. Join these extraordinary
+              women and men as they push boundaries in this new age with new
+              ways.
             </p>
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
             <div style={{ paddingTop: "60px" }}>

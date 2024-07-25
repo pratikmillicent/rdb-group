@@ -20,10 +20,12 @@ function CallToAction({}) {
             <div className="col-11 d-flex align-items-center">
               <div className="valign">
                 <h2 className="fz-50 d-rotate wow">
-                  <span className="rotate-text">Have a project in mind?</span>
                   <span className="rotate-text">
-                    Let’s <span>get to work</span>.
+                    We create experiences and turn ideas into reality.
                   </span>
+                  {/* <span className="rotate-text">
+                    Let’s <span>get to work</span>.
+                  </span> */}
                 </h2>
               </div>
               <div className="ml-auto">
