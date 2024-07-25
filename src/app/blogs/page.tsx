@@ -169,9 +169,9 @@ const Blog = () => {
                         style={{ backgroundImage: `url(${item.image})` }}
                       >
                         <div className="blog-card-content">
-                          <h5 className="blog-card-title flex-wrap main-color4">
+                          <h6 className="blog-card-title flex-wrap main-color4">
                             {item.heading}
-                          </h5>
+                          </h6>
                           <div className="blogcard-body mb-2">
                             {item.description}
                           </div>
