@@ -517,6 +517,23 @@ img {
   border-radius: 40px;
 }
 
+/* Frame  */
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-frame {
+  position: absolute;
+  top: 20px; /* Adjust the offset from the top */
+  left: 20px; /* Adjust the offset from the left */
+  width: calc(100% + 20px); /* Match the image width and include the offset */
+  height: calc(100% + 20px); /* Match the image height and include the offset */
+  border: 10px solid #bea655; /* Light golden color for the frame */
+  pointer-events: none; /* Prevent the frame from blocking interaction with the image */
+}
+
 /* Buttons
 -----------------------------------------------------------------*/
 .butn {
