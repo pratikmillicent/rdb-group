@@ -1,0 +1,120 @@
+.blog-card {
+  color: hsl(0, 0%, 100%);
+  background-size: cover;
+  padding: 10rem 0 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.blog-card:hover,
+.blog-card:focus-within {
+  transform: scale(1.05);
+}
+
+.blog-card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)
+  );
+}
+
+.blog-card-title {
+  position: relative;
+  bottom: 70px;
+  background: linear-gradient(to right bottom, #444, #222, #000);
+
+  backdrop-filter: blur(1rem);
+  height: 60%;
+  z-index: 1;
+  padding: 10px;
+  display: flex;
+  opacity: 0.8;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.blog-card:hover .blog-card-title::after,
+.blog-card:focus-within .blog-card-title::after {
+  transform: scaleX(1);
+}
+
+.blog-card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  /* width: calc(100% + var(--padding)); */
+  left: calc(var(--padding) * -1);
+  bottom: -2px;
+  background: d;
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+@media (hover) {
+  .blog-card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+
+  .blog-card-content > *:not(.blog-card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+
+  .blog-card:hover .blog-card-content > *:not(.blog-card-title),
+  .blog-card:focus-within .blog-card-content > *:not(.blog-card-title) {
+    opacity: 1;
+    transition-delay: 700ms;
+  }
+
+  .blog-card:hover .blog-card-content,
+  .blog-card:focus-within .blog-card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+
+  .blog-card:focus-within .blog-card-content {
+    transition-duration: 0ms;
+  }
+
+  .blog-card-title::after {
+    transform: scaleX(0);
+  }
+}
+
+/* .button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(207, 19%, 9%);
+  background-color: d;
+  padding: 0.5em 1.25em;
+  border-radius: 0.25rem;
+} */
+
+/* .button:hover,
+.button:focus {
+  background-color: hsl(0, 0%, 100%);
+} */
+
+.blog-card-body {
+  color: rgb(255, 255, 255/0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}
