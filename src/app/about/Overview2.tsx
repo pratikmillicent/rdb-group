@@ -148,7 +148,7 @@ function Intro() {
                     </p>
                   </div>
                 </div>
-                <div className="item mb-15 wow fadeInUp" data-wow-delay=".3s">
+                <div className="item wow fadeInUp" data-wow-delay=".3s">
                   <div className="title" onClick={openAccordion}>
                     <h6 className="fz-18">Our Vision</h6>
                     <span className="ico"></span>
