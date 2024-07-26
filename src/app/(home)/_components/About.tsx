@@ -251,7 +251,8 @@ function About() {
             </div>
           </div>
           <div className="col-lg-5 offset-lg-1">
-            <div ref={parallax.ref}>
+            <div className='image-container' ref={parallax.ref}>
+              <div className='image-frame'></div>
               <img src={`/assets/images2/about-img.jpg`} alt="person image" />
             </div>
           </div>

@@ -92,6 +92,7 @@ const News = () => {
                               height: "320px",
                               objectFit: "cover",
                             }}
+                            className=""
                           />
                         </div>
                         <div className="cont mt-30">
@@ -156,7 +157,7 @@ const News = () => {
                       data-wow-delay=".1s"
                     >
                       <div className="item p-0">
-                        <div className="img">
+                        <div className="img outset-border">
                           <img
                             src={item.image}
                             alt=""
@@ -202,7 +203,7 @@ const News = () => {
                       data-wow-delay=".1s"
                     >
                       <div className="item p-0">
-                        <div className="img">
+                        <div className="img outset-border">
                           <img
                             src={item.image}
                             alt=""
