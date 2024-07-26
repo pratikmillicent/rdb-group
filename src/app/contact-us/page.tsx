@@ -343,9 +343,10 @@
 // export default ContactUs;
 
 "use client";
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
 import { useRef, useState, useEffect } from "react";
+import Link from "next/link";
 
 const ContactUs = () => {
   const mapRef = useRef<HTMLDivElement | null>(null);
@@ -480,20 +481,28 @@ const ContactUs = () => {
                         touch, we’d love to hear from you!
                       </p>
                       <div className="phone fz-30 fw-600 mt-30 ">
-                        <a href="#0">+1 840 841 25 69</a>
+                        <a href="#0">+91 9877737776</a>
                       </div>
-                      <ul className="rest social-text d-flex mt-30">
-                        <li className="mr-30">
-                          <a href="#0">Facebook</a>
+                      <ul className="rest social-text d-flex mt-30 ml-10">
+                        <li className="mr-40">
+                          <Link href="https://www.facebook.com/">
+                            <FaFacebook className="main-color3 fz-24 social-icon" />
+                          </Link>
                         </li>
-                        <li className="mr-30">
-                          <a href="#0">Twitter</a>
+                        <li className="mr-40">
+                          <Link href="https://x.com/">
+                            <FaTwitter className="main-color3 fz-24 social-icon" />
+                          </Link>
                         </li>
-                        <li className="mr-30">
-                          <a href="#0">LinkedIn</a>
+                        <li className="mr-40">
+                          <Link href="https://www.linkedin.com/">
+                            <FaLinkedin className="main-color3 fz-24 social-icon" />
+                          </Link>
                         </li>
                         <li>
-                          <a href="#0">Instagram</a>
+                          <Link href="https://www.instagram.com/">
+                            <FaInstagramSquare className="main-color3 fz-24 social-icon" />
+                          </Link>
                         </li>
                       </ul>
                     </div>

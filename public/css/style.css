@@ -95,11 +95,16 @@ body.home-arch main:after {
   z-index: 5;
 }
 
+/* body.home-main-crev,
+body.digital-marketing {
+  font-family: "Epilogue" sans-serif;
+  font-family: "Sora" sans-serif;
+} */
+
 body.home-main-crev,
 body.digital-marketing {
   /* font-family: "Epilogue" sans-serif; */
-  font-family: "Sora" sans-serif;
-
+  font-family: "Avenir" sans-serif;
 }
 
 main {
@@ -634,7 +639,7 @@ img {
 }
 
 .butn-circle:hover span {
-  color: #000;
+  color: var(--white);
 }
 
 .butn-circle:hover:after {
@@ -655,7 +660,8 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #c9f31d;
+  /* background: #c9f31d; */
+  background: var(--golden);
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -10908,17 +10914,45 @@ header.in-box {
   /* height: 500px; */
 }
 
-.inside-img {
+.upper-img {
   position: absolute;
-  top: -10px; /* Adjust the position as needed */
-  left: -10px; /* Adjust the position as needed */
-  width: 100%; /* Make sure it fits within the .border-img */
-  height: 100%; /* Make sure it fits within the .border-img */
-  overflow: hidden; /* Hide any overflowing content */
+  display: inline-block;
+  top: 20px; /* Adjust the position as needed */
+  left: 16px; /* Adjust the position as needed */
+  width: 50px;
+  height: 50px;
 }
 
-.inside-img img {
-  width: 100%;
-  height: auto; /* Keep the aspect ratio of the image */
-  object-fit: cover; /* Ensures the image covers the container */
+.lower-img {
+  position: absolute;
+  display: inline-block;
+  bottom: 20px; /* Adjust the position as needed */
+  right: 18px; /* Adjust the position as needed */
+  width: 50px;
+  height: 50px;
+}
+/* typography  */
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/rd-brother_fonts/AvenirLTStd-Black.woff2') format('woff2'),
+       url('/fonts/rd-brother_fonts/AvenirLTStd-Book.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/rd-brother_fonts/AvenirLTStd-Black.woff2') format('woff2'),
+       url('/fonts/rd-brother_fonts/AvenirLTStd-Book.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.social-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
 }
