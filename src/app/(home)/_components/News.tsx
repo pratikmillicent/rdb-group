@@ -131,7 +131,7 @@ function News() {
                   data-wow-delay=".1s"
                 >
                   <div className="item">
-                    <div className="img">
+                    <div className="img outset-border">
                       <img
                         src={item.cover}
                         alt=""
