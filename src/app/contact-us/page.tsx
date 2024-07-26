@@ -439,7 +439,9 @@ const ContactUs = () => {
       <div className="container mt-60">
         <div className="d-flex gap-3">
           <div className="col-12 col-md-11">
-            <Heading headTitle="Contact Us Now!" />
+            {/* <Heading headTitle="Contact Us Now!" /> */}
+            <div className="fz-35 fw-600">Contact Us Now</div>
+
             {/* <div className="w-75 msg_box">
             <div className="">
               <div className="">
@@ -563,7 +565,8 @@ const ContactUs = () => {
             </section>
             <div className="gap-3 section-padding">
               <div className="mt-30">
-                <Heading headTitle="Registered Offices:" />
+                {/* <Heading headTitle="Registered Offices:" /> */}
+                <div className="fz-35 fw-600">Registered Offices : </div>
                 <div className="row text-light msg_box">
                   <div className="col-12 col-md-4 mb-2">
                     <p className="text-dark fw-bold">
@@ -645,7 +648,8 @@ const ContactUs = () => {
                 >
                   <div className="col-12 ">
                     <div className="">
-                      <Heading headTitle="Global Presence" />
+                      {/* <Heading headTitle="Global Presence" /> */}
+                      <div className="fz-35 fw-600">Global Presence</div>
                       <div
                         className="w-75 position-relative"
                         style={{ margin: "60px auto" }}

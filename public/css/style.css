@@ -3315,7 +3315,7 @@ body.loaded {
 .navbar.nav-scroll {
   /* background: var(--navy) !important; */
   /* border-color: rgba(0, 0, 0, 0.05); */
-  padding: 10px;
+  /* padding: 10px; */
   position: fixed;
   top: -80px;
   -webkit-transition: -webkit-transform 0.5s;
@@ -3345,11 +3345,11 @@ body.loaded {
 .navbar {
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 15px 15px 10px 15px;
+  /* padding: 15px 15px 10px 15px; */
   font-size: 13px;
   font-weight: 600;
   color: var(--foreground);
-  padding: 20px 10px 15px 10px;
+  /* padding: 20px 10px 15px 10px; */
   /* margin: 0 15px; */
 }
 
@@ -4720,7 +4720,7 @@ body.loaded {
   top: 0;
   width: 8px;
   height: 150px;
-  background: #c9f31d;
+  background: var(--golden);
 }
 
 .intro-corp .imgs .img1:before {
@@ -8463,10 +8463,11 @@ header.in-box {
 .team-crev .swiper-slide .item .main-marq.team-position {
   background: var(--background);
   bottom: 40px;
-  left: 50%;
-  -webkit-transform: translateX(-50%) rotateZ(-5deg);
+  /* left: 50%; */
+  width: 100%;
+  /* -webkit-transform: translateX(-50%) rotateZ(-5deg);
   -ms-transform: translateX(-50%) rotate(-5deg);
-  transform: translateX(-50%) rotateZ(-5deg);
+  transform: translateX(-50%) rotateZ(-5deg); */
 }
 
 .team-crev .swiper-slide .item .main-marq.team-name {

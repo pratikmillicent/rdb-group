@@ -43,16 +43,16 @@ function GroupGrid() {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <h2 className="fz-60 fw-700 underline">Group Websites</h2>
+                <div className="fz-50 fw-600">Group Websites</div>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center">
-              <div className="text">
+              {/* <div className="text">
                 <p>
                   Ventures spanning across diverse sectors, a global footprint
                   and a commitment to excellence.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -53,7 +53,7 @@ function VideoGallary() {
         <div className="row">
           <div className="col-lg-8">
             <div className="position-re">
-              <h2 className="fz-60 fw-700 underline">Video Gallery</h2>
+              <div className="fz-50 fw-600">Video Gallery</div>
             </div>
           </div>
         </div>

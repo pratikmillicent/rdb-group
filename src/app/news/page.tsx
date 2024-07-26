@@ -65,7 +65,8 @@ const News = () => {
             <div className="sec-lg-head mb-30">
               <div className="row">
                 <div className="col-lg-8">
-                  <Heading headTitle="LATEST NEWS" fontSize="fs-1" />
+                  {/* <Heading headTitle="LATEST NEWS" fontSize="fs-1" /> */}
+                  <div className="fz-50 fw-600">LATEST NEWS</div>
                 </div>
               </div>
             </div>
@@ -136,7 +137,8 @@ const News = () => {
             <div className="sec-lg-head mb-30">
               <div className="row">
                 <div className="col-lg-8">
-                  <Heading headTitle="AWARDS" fontSize="fs-1" />
+                  {/* <Heading headTitle="AWARDS" fontSize="fs-1" /> */}
+                  <div className="fz-50 fw-600">AWARDS</div>
                 </div>
               </div>
             </div>
@@ -181,7 +183,8 @@ const News = () => {
             <div className="sec-lg-head mb-30">
               <div className="row">
                 <div className="col-lg-8">
-                  <Heading headTitle="PHOTOS GALLERY" fontSize="fs-1" />
+                  {/* <Heading headTitle="PHOTOS GALLERY" fontSize="fs-1" /> */}
+                  <div className="fz-50 fw-600">PHOTOS GALLERY</div>
                 </div>
               </div>
             </div>
@@ -222,7 +225,8 @@ const News = () => {
           <div className="sec-lg-head">
             <div className="row">
               <div className="col-lg-8">
-                <Heading headTitle="Video Gallery" fontSize="fs-1" />
+                {/* <Heading headTitle="Video Gallery" fontSize="fs-1" /> */}
+                <div className="fz-50 fw-600">Video Gallery</div>
               </div>
             </div>
           </div>

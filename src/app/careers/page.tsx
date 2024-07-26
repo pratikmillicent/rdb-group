@@ -30,7 +30,8 @@ const page = () => {
             </p>
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
             <div style={{ paddingTop: "60px" }}>
-              <Heading headTitle="Open Positions" />
+              {/* <Heading headTitle="Open Positions" /> */}
+              <div className="fz-35 fw-600">Open Positions</div>
             </div>
             <p className="mt-30 text-dark">
               Join us in shaping the future. Explore current openings across our

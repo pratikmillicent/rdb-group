@@ -35,7 +35,7 @@ function Loader() {
             <span>
               <img
                 style={{ width: "305px" }}
-                src="/logo.svg"
+                src="/rdb-group.svg"
                 alt="logo"
                 className="logo"
               />

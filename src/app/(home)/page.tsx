@@ -34,6 +34,7 @@ export default function Home() {
 
           <Marq data={marque_data} />
         </div>
+
         <About />
         <SideImage />
         <GroupGrid />

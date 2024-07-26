@@ -84,7 +84,7 @@ function Team() {
         <div className="row">
           <div className="col-12" style={{ position: "relative" }}>
             <div
-              className="sec-head-lg text-center text-u mb-80"
+              className="sec-head-lg text-center text-u mb-80 text-golden"
               id="sticky_item"
             >
               <h2>Team</h2>

@@ -89,7 +89,7 @@ function News() {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <h2 className="fz-60 fw-700 underline">Latest News</h2>
+                <div className="fz-50 fw-600">Latest News</div>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center">
@@ -148,10 +148,7 @@ function News() {
                       <h6>
                         <Link href="/dark/blog-post">{item.title}</Link>
                       </h6>
-                      <Link
-                        href="/dark/blog-post"
-                        className="ls1 sub-title"
-                      >
+                      <Link href="/dark/blog-post" className="ls1 sub-title">
                         Read More{" "}
                         <i className="ml-2">
                           <svg
