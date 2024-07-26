@@ -78,36 +78,18 @@ function Intro() {
     <section className="intro-corp section-padding">
       <div className="container">
         <div className="row justify-content-around">
-          {/* <div className="col-lg-5 valign md-mb50">
-            <div className="imgs mb-80">
-              <div className="img1 wow fadeInUp">
-                <img
-                  src="/assets/images2/person/overview.jpg"
-                  alt=""
-                  className="radius-10"
-                />
-              </div>
-              <div className="img2 wow fadeInLeft">
-                <img
-                  src="/assets/images2/person/overview1.jpg"
-                  alt=""
-                  className="radius-10"
-                />
-              </div>
-            </div>
-          </div> */}
           <div className="col-lg-5 valign md-mb50">
             <div className="imgs mb-80">
               <div className="img1 wow fadeInUp">
                 <img
-                  src="/assets/images2/person/overview.jpg"
+                  src="/assets/images2/vision.jpg"
                   alt=""
                   className="radius-10"
                 />
               </div>
               <div className="img2 wow fadeInLeft">
                 <img
-                  src="/assets/images2/person/overview1.jpg"
+                  src="/assets/images2/mission.jfif"
                   alt=""
                   className="radius-10"
                 />
@@ -160,23 +142,21 @@ function Intro() {
                   </div>
                   <div className="accordion-info">
                     <p className="fz-14">
-                      To embrace our roots while propelling forward, delivering
-                      value through ethical sustainable and pioneering
-                      solutions, and ensuring Aspect Global Ventures remains a
-                      symbol of trust quality, and progress for generations.
+                      To deliver professionalism and add a touch of Indian
+                      warmth to the way property is managed across India and
+                      overseas.
                     </p>
                   </div>
                 </div>
-                <div className="item mb-15 wow fadeInUp" data-wow-delay=".3s">
+                <div className="item wow fadeInUp" data-wow-delay=".3s">
                   <div className="title" onClick={openAccordion}>
                     <h6 className="fz-18">Our Vision</h6>
                     <span className="ico"></span>
                   </div>
                   <div className="accordion-info">
                     <p className="fz-14">
-                      To be a global powerhouse where tradition and innovation
-                      unite, building a sustainable, impactful, and visionary
-                      future for all stakeholders.
+                      Making Real Estate simple and effective through the use of
+                      defined processes and technology.
                     </p>
                   </div>
                 </div>

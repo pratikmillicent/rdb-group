@@ -99,12 +99,6 @@ body.home-arch main:after {
 body.digital-marketing {
   font-family: "Epilogue" sans-serif;
   font-family: "Sora" sans-serif;
-} */
-
-body.home-main-crev,
-body.digital-marketing {
-  /* font-family: "Epilogue" sans-serif; */
-  font-family: "Avenir" sans-serif;
 }
 
 main {
@@ -531,39 +525,50 @@ img {
 
 .image-frame {
   position: absolute;
-  top: 30px; /* Adjust the offset from the top */
-  left: 30px; /* Adjust the offset from the left */
-  width: calc(100% + 20px); /* Match the image width and include the offset */
-  height: calc(100% + 20px); /* Match the image height and include the offset */
-  border: 10px solid #bea655; /* Light golden color for the frame */
-  pointer-events: none; /* Prevent the frame from blocking interaction with the image */
+  top: 30px;
+  /* Adjust the offset from the top */
+  left: 30px;
+  /* Adjust the offset from the left */
+  width: calc(100% + 20px);
+  /* Match the image width and include the offset */
+  height: calc(100% + 20px);
+  /* Match the image height and include the offset */
+  border: 10px solid #bea655;
+  /* Light golden color for the frame */
+  pointer-events: none;
+  /* Prevent the frame from blocking interaction with the image */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .image-frame {
-    top: -5px; /* Smaller offset for smaller devices */
+    top: -5px;
+    /* Smaller offset for smaller devices */
     left: -5px;
     width: calc(100% + 10px);
     height: calc(100% + 10px);
-    border: 3px solid #D4AF37; /* Thinner border for smaller devices */
+    border: 3px solid #D4AF37;
+    /* Thinner border for smaller devices */
   }
 }
 
 @media (max-width: 480px) {
   .image-frame {
-    top: -3px; /* Even smaller offset */
+    top: -3px;
+    /* Even smaller offset */
     left: -3px;
     width: calc(100% + 6px);
     height: calc(100% + 6px);
-    border: 2px solid #D4AF37; /* Thinner border */
+    border: 2px solid #D4AF37;
+    /* Thinner border */
   }
 }
 
 .image-wrapper {
   position: relative;
   display: inline-block;
-  margin: 20px; /* Add some margin if needed */
+  margin: 20px;
+  /* Add some margin if needed */
 }
 
 .golden-background {
@@ -572,8 +577,10 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #D4AF37; /* Light golden color */
-  z-index: -1; /* Place the background behind the image */
+  background-color: #D4AF37;
+  /* Light golden color */
+  z-index: -1;
+  /* Place the background behind the image */
 }
 
 /* Buttons
@@ -10900,8 +10907,27 @@ header.in-box {
 
 /* ====================== [ End Responsive ] ====================== */
 
+/* --------------------------About - Director UI CSS ------------------------  */
+
+/* Animation for the info div */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.info-animation {
+  animation: fadeInUp 1s ease-out;
+}
+
 .outset-border {
-  border: 3px outset #f0ee52; 
+  border: 3px outset #f0ee52;
 }
 
 
@@ -10909,7 +10935,8 @@ header.in-box {
 
 .border-img {
   position: relative;
-  display: inline-block; /* Ensure it fits around the .inside-img */
+  display: inline-block;
+  /* Ensure it fits around the .inside-img */
   width: 350px;
   /* height: 500px; */
 }
