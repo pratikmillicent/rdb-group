@@ -6,6 +6,8 @@ import News from "./_components/News";
 import VideoGallary from "./_components/VideoGallary";
 import { ParallaxProvider } from "react-scroll-parallax";
 import SideImage from "./_components/SideImage";
+import NewGroupGrid from "./_components/NewGroup";
+import NewSideImage from "./_components/NewSideImage";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -36,8 +38,10 @@ export default function Home() {
         </div>
 
         <About />
-        <SideImage />
-        <GroupGrid />
+        {/* <SideImage /> */}
+        <NewSideImage />
+        {/* <GroupGrid /> */}
+        <NewGroupGrid />
         <News />
         <VideoGallary />
       </main>
