@@ -10,6 +10,8 @@ import Carroussel from "./_components/Carousel";
 import Carousel from "@/components/carousel/Carousel";
 import Card from "./_components/Card";
 import Carroussel3D from "./_components/Carousel";
+import NewGroupGrid from "./_components/NewGroup";
+import NewSideImage from "./_components/NewSideImage";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -72,7 +74,9 @@ export default function Home() {
         </div>
 
         <About />
-        {/* <SideImage /> */}
+        {/* {/* <SideImage /> */}
+        <NewSideImage />
+        {/* <GroupGrid /> */}
         <div></div>
         <Carroussel3D
           cards={cards}
@@ -82,7 +86,7 @@ export default function Home() {
           offset={2}
           showArrows={false}
         />
-        <GroupGrid />
+        <NewGroupGrid />
         <News />
         <VideoGallary />
       </main>
