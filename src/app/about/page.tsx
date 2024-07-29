@@ -4,6 +4,7 @@ import Team from "./Team";
 import CoreValue2 from "./CoreValue2";
 import CallToAction from "./CallToAction";
 import Director2 from "./Director2";
+import TeamSection from "./TeamSection";
 
 function About() {
   return (
@@ -29,6 +30,7 @@ function About() {
 
         <Director2 />
         <Team />
+        <TeamSection />
         <CoreValue2 />
         <CallToAction />
       </main>
