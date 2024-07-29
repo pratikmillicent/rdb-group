@@ -5,7 +5,7 @@ const NewSideImage: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState("mission");
 
   useEffect(() => {
-    parallaxie(`.bg-img.parallaxie`, 0.4);
+    parallaxie(`.bg-img.parallaxie`, -1);
   }, [selectedTab]);
 
   const tabStyle = (isSelected: boolean) => ({
@@ -22,11 +22,14 @@ const NewSideImage: React.FC = () => {
   });
 
   return (
-    <section className="sideimg-numbers section-padding pb-60 sub-g">
+    <section
+      className="sideimg-numbers section-padding pb-60 sub-g"
+      style={{ height: "100vh" }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <div className="cont mb-100">
+            <div className="cont mt-100">
               <div>
                 <h2 className="fz-36">Overview</h2>
                 <div className="d-flex gap-2 align-items-center">

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from 'swiper';
 import { Navigation } from "swiper";
 import { useEffect, useState } from "react";
 import ModalVideo from "@/components/modal-video/ModalVideo";
@@ -17,7 +18,12 @@ const News = () => {
   const [isVideoOpen, setIsVideoOpen] = useState<Video | null>(null);
 
   const swiperOptions = {
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
     slidesPerView: 3,
     loop: true,
     spaceBetween: 17,
@@ -84,7 +90,7 @@ const News = () => {
                       data-wow-delay=".1s"
                     >
                       <div className="item p-0">
-                        <div className="img">
+                        <div className="img img-container">
                           <img
                             src={item.image}
                             alt=""
@@ -95,7 +101,7 @@ const News = () => {
                             className=""
                           />
                         </div>
-                        <div className="cont mt-30">
+                        <div className="cont mt-30 ">
                           <h6 className="fw-600">
                             {/* <Link href={item.link}> */}
                               {item.description}
@@ -134,7 +140,7 @@ const News = () => {
           className="blog-modern section-padding"
           style={{ paddingBottom: "0px" }}
         >
-          <div className="container">
+          {/* <div className="container">
             <div className="sec-lg-head mb-30">
               <div className="row">
                 <div className="col-lg-8">
@@ -173,7 +179,36 @@ const News = () => {
                 </Swiper>
               )}
             </div>
-          </div>
+          </div> */}
+          <div className="container">
+            <div className="sec-lg-head mb-30">
+              <div className="row">
+                <div className="col-lg-8">
+                  <Heading headTitle="AWARDS" fontSize="fs-1" />
+                </div>
+              </div>
+            </div>
+            <div className="blog-carousel">
+              <Swiper {...swiperOptions} id="content-carousel-container-unq-blog" className="swiper-container">
+                {data1.map((item) => (
+                  <SwiperSlide key={item.id} className="wow fadeInUp" data-wow-delay=".1s">
+                    <div className="item p-0">
+                      <div className="img outset-border">
+                         <img
+                            src={item.image}
+                            alt=""
+                            style={{
+                            height: '320px',
+                            objectFit: 'cover',
+                             }}
+                          />
+                        </div>
+                    </div>
+                  </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+           </div>
         </section>
 
         <section

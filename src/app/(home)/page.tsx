@@ -60,7 +60,7 @@ export default function Home() {
         <div>
           <video
             className="mw-100 w-100"
-            style={{ height: "calc(100dvh - 130px)", objectFit: "initial" }}
+            style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
             src="/assets/video/HeroVideo.mp4"
             autoPlay
             muted
@@ -73,11 +73,11 @@ export default function Home() {
           {/* <Marq data={marque_data} /> */}
         </div>
 
-        <About />
+        {/* <About /> */}
         {/* {/* <SideImage /> */}
         <NewSideImage />
         {/* <GroupGrid /> */}
-        <div></div>
+        <NewGroupGrid />
         <Carroussel3D
           cards={cards}
           height="500px"
@@ -86,7 +86,6 @@ export default function Home() {
           offset={2}
           showArrows={false}
         />
-        <NewGroupGrid />
         <News />
         <VideoGallary />
       </main>
