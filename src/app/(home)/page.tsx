@@ -6,6 +6,10 @@ import News from "./_components/News";
 import VideoGallary from "./_components/VideoGallary";
 import { ParallaxProvider } from "react-scroll-parallax";
 import SideImage from "./_components/SideImage";
+import Carroussel from "./_components/Carousel";
+import Carousel from "@/components/carousel/Carousel";
+import Card from "./_components/Card";
+import Carroussel3D from "./_components/Carousel";
 import NewGroupGrid from "./_components/NewGroup";
 import NewSideImage from "./_components/NewSideImage";
 
@@ -18,6 +22,38 @@ const marque_data = [
 ];
 
 export default function Home() {
+  let cards = [
+    {
+      key: 1,
+      content: (
+        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/convertplus_thumbnail.jpg" />
+      ),
+    },
+    {
+      key: 2,
+      content: (
+        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png" />
+      ),
+    },
+    {
+      key: 3,
+      content: (
+        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png" />
+      ),
+    },
+    {
+      key: 4,
+      content: (
+        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png" />
+      ),
+    },
+    {
+      key: 5,
+      content: (
+        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg" />
+      ),
+    },
+  ];
   return (
     <ParallaxProvider>
       <main className="mw-100">
@@ -34,13 +70,22 @@ export default function Home() {
             // poster="https://www.aspect.global/video/aspect_video.webp"
           ></video>
 
-          <Marq data={marque_data} />
+          {/* <Marq data={marque_data} /> */}
         </div>
 
         <About />
-        {/* <SideImage /> */}
+        {/* {/* <SideImage /> */}
         <NewSideImage />
         {/* <GroupGrid /> */}
+        <div></div>
+        <Carroussel3D
+          cards={cards}
+          height="500px"
+          width="30%"
+          margin="0 auto"
+          offset={2}
+          showArrows={false}
+        />
         <NewGroupGrid />
         <News />
         <VideoGallary />
