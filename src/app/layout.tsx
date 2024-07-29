@@ -105,10 +105,10 @@ export default function RootLayout({
           src="/assets/js/ScrollSmoother.min.js"
         ></Script>
 
-        <Script
+        {/* <Script
           strategy="beforeInteractive"
           src="/assets/js/gsap.min.js"
-        ></Script>
+        ></Script> */}
       </body>
     </html>
   );

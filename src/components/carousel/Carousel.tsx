@@ -51,9 +51,7 @@ function Carousel({
   }, []);
 
   return (
-    <section
-      className={`work-carsouel full-height valign light`}
-    >
+    <section className={`work-carsouel full-height valign light`}>
       <div className="container-fluid rest">
         <div className="row">
           <div className="col-12">
@@ -92,7 +90,7 @@ function Carousel({
                       </span>
                     </div>
                     <div className="swiper-button-next ml-auto">
-                    <span className="right d-flex justify-content-center align-items-center">
+                      <span className="right d-flex justify-content-center align-items-center">
                         <svg
                           width="20"
                           height="20"
