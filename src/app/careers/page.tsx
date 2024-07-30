@@ -1,4 +1,7 @@
+"use client"
+
 import Heading from "@/components/heading/Heading";
+import ResumeUpload from "@/components/ResumeUpload";
 import React from "react";
 
 const page = () => {
@@ -63,6 +66,7 @@ const page = () => {
             </div>
           </div>
         </div>
+        <ResumeUpload />
       </div>
     </>
   );

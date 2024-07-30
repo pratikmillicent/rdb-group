@@ -5,6 +5,7 @@ import CoreValue2 from "./CoreValue2";
 import CallToAction from "./CallToAction";
 import Director2 from "./Director2";
 import TeamSection from "./TeamSection";
+import ResumeUpload from "../../components/ResumeUpload";
 
 function About() {
   return (
