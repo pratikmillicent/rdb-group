@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from 'swiper';
 import { Navigation } from "swiper";
 import { useEffect, useState } from "react";
 import ModalVideo from "@/components/modal-video/ModalVideo";
@@ -17,7 +18,12 @@ const News = () => {
   const [isVideoOpen, setIsVideoOpen] = useState<Video | null>(null);
 
   const swiperOptions = {
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
     slidesPerView: 3,
     loop: true,
     spaceBetween: 17,
@@ -84,7 +90,7 @@ const News = () => {
                       data-wow-delay=".1s"
                     >
                       <div className="item p-0">
-                        <div className="img">
+                        <div className="img img-container">
                           <img
                             src={item.image}
                             alt=""
@@ -95,14 +101,14 @@ const News = () => {
                             className=""
                           />
                         </div>
-                        <div className="cont mt-30">
+                        <div className="cont mt-30 ">
                           <h6 className="fw-600">
-                            <Link href="/dark/blog-post">
+                            {/* <Link href={item.link}> */}
                               {item.description}
-                            </Link>
+                            {/* </Link> */}
                           </h6>
                           <Link
-                            href="/dark/blog-post"
+                            href={item.link}
                             className="mt-6 ls1 sub-title fw-500"
                           >
                             Read More{" "}
@@ -134,7 +140,7 @@ const News = () => {
           className="blog-modern section-padding"
           style={{ paddingBottom: "0px" }}
         >
-          <div className="container">
+          {/* <div className="container">
             <div className="sec-lg-head mb-30">
               <div className="row">
                 <div className="col-lg-8">
@@ -173,7 +179,36 @@ const News = () => {
                 </Swiper>
               )}
             </div>
-          </div>
+          </div> */}
+          <div className="container">
+            <div className="sec-lg-head mb-30">
+              <div className="row">
+                <div className="col-lg-8">
+                  <Heading headTitle="AWARDS" fontSize="fs-1" />
+                </div>
+              </div>
+            </div>
+            <div className="blog-carousel">
+              <Swiper {...swiperOptions} id="content-carousel-container-unq-blog" className="swiper-container">
+                {data1.map((item) => (
+                  <SwiperSlide key={item.id} className="wow fadeInUp" data-wow-delay=".1s">
+                    <div className="item p-0">
+                      <div className="img outset-border">
+                         <img
+                            src={item.image}
+                            alt=""
+                            style={{
+                            height: '320px',
+                            objectFit: 'cover',
+                             }}
+                          />
+                        </div>
+                    </div>
+                  </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+           </div>
         </section>
 
         <section
@@ -286,25 +321,28 @@ export default News;
 const data = [
   {
     id: 1,
-    image: "https://picsum.photos/1100/1100",
-    description: "People Choice Awards - NAREDCO 2023",
+    image: "/assets/images2/news1.webp",
+    description: "Augmented Reality in Real Estate: Forecasting Market Trends in 2024",
+    link: "https://homecapital.in/augmented-reality-in-real-estate-forecasting-market-trends-in-2024/",
   },
   {
     id: 2,
-    image: "https://picsum.photos/1200/1200",
-    description: "Top Emerging Developer - Times Of India 2023",
+    image: "/assets/images2/news2.jpg",
+    description: "Best Place for Real Estate Investment in Mumbai...",
+    link: "https://www.hiranandani.com/is-thane-the-best-real-estate-investment-destination.aspx",
   },
   {
     id: 3,
-    image: "https://picsum.photos/1300/1300",
-    description: "Best Construction Quality Award - Reality Quaters 2023",
+    image: "/assets/images2/news3.webp",
+    description: "Why Hire Real Estate Agent: Benefits & Reasons | Spiffy Spools",
+    link: "https://www.spiffyspools.com/spiffy-speak/why-hire-real-estate-agent/",
   },
 ];
 
 const data1 = [
   {
     id: 1,
-    image: "/assets/images2/news-awards.jpg",
+    image: "/assets/images2/award1.jpg",
   },
   {
     id: 2,
@@ -312,7 +350,7 @@ const data1 = [
   },
   {
     id: 3,
-    image: "/assets/images2/news-awards.jpg",
+    image: "/assets/images2/award3.avif",
   },
   {
     id: 4,
@@ -323,19 +361,47 @@ const data1 = [
 const data2 = [
   {
     id: 1,
-    image: "https://picsum.photos/id/177/1200/1200",
+    image: "/assets/images2/proj1.jpg",
   },
   {
     id: 2,
-    image: "https://picsum.photos/id/177/1200/1200",
+    image: "/assets/images2/proj2.jpg",
   },
   {
     id: 3,
-    image: "https://picsum.photos/id/177/1200/1200",
+    image: "/assets/images2/proj3.jpg",
   },
   {
     id: 4,
-    image: "https://picsum.photos/id/177/1200/1200",
+    image: "/assets/images2/proj7.jpg",
+  },
+  {
+    id: 5,
+    image: "/assets/images2/proj8.jpg",
+  },
+  {
+    id: 6,
+    image: "/assets/images2/proj9.jpg",
+  },
+  {
+    id: 7,
+    image: "/assets/images2/proj10.jpg",
+  },
+  {
+    id: 8,
+    image: "/assets/images2/proj11.jpg",
+  },
+  {
+    id: 9,
+    image: "/assets/images2/proj12.jpg",
+  },
+  {
+    id: 4,
+    image: "/assets/images2/proj7.jpg",
+  },
+  {
+    id: 4,
+    image: "/assets/images2/proj7.jpg",
   },
 ];
 

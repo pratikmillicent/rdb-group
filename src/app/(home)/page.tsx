@@ -10,6 +10,8 @@ import Carroussel from "./_components/Carousel";
 import Carousel from "@/components/carousel/Carousel";
 import Card from "./_components/Card";
 import Carroussel3D from "./_components/Carousel";
+import NewGroupGrid from "./_components/NewGroup";
+import NewSideImage from "./_components/NewSideImage";
 import OurStory from "./_components/OurStory";
 import DirectorCard from "./_components/DirectorCard";
 
@@ -60,7 +62,7 @@ export default function Home() {
         <div>
           <video
             className="mw-100 w-100"
-            style={{ height: "calc(100dvh - 130px)", objectFit: "initial" }}
+            style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
             src="/assets/video/HeroVideo.mp4"
             autoPlay
             muted
@@ -73,9 +75,11 @@ export default function Home() {
           {/* <Marq data={marque_data} /> */}
         </div>
 
-        <About />
-        {/* <SideImage /> */}
-        <div></div>
+        {/* <About /> */}
+        {/* {/* <SideImage /> */}
+        <NewSideImage />
+        {/* <GroupGrid /> */}
+        <NewGroupGrid />
         <Carroussel3D
           cards={cards}
           height="500px"
