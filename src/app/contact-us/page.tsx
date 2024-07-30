@@ -343,6 +343,7 @@
 // export default ContactUs;
 
 "use client";
+import MapComponent from "./MapComponent"
 import { FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
 import { useRef, useState, useEffect } from "react";
@@ -385,6 +386,12 @@ const handleSubmit = (e) => {
     { name: "Tamil Nadu", lat: 11.1271, lng: 78.6569 },
     { name: "Gujarat", lat: 22.2587, lng: 71.1924 },
     { name: "Rajasthan", lat: 27.0238, lng: 74.2179 },
+  ];
+
+  const locations = [
+    { name: 'Maharshtra', coords: [19.7515, 75.7139] },
+    { name: 'Karnatka', coords: [15.3173, 75.7139] },
+    { name: 'Tamilnadu', coords: [11.1271, 78.6569] },
   ];
 
   useEffect(() => {
@@ -735,6 +742,10 @@ const handleSubmit = (e) => {
                     </div>
                   </div>
                 </div>
+    <div>
+      <h1>Map Example</h1>
+      <MapComponent locations={locations} />
+    </div>
               </div>
             </div>
           </div>

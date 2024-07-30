@@ -1,7 +1,5 @@
 "use client"
-
-import Heading from "@/components/heading/Heading";
-import ResumeUpload from "@/components/ResumeUpload";
+import ResumeUpload from "@/components/Resume-upload/ResumeUpload";
 import React from "react";
 
 const page = () => {

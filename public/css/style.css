@@ -108,14 +108,14 @@ main {
 
 .underline {
 <<<<<<< HEAD
-  /* border-top: 1px solid red; */
+  border-top: 1px solid red;
 position: relative;
 color: grey;
 =======border-top: 1px solid red;
 position: relative;
 color: grey;
 >>>>>>>cd740193354f9a2c10f56d6d881c3eba6d829319
-}
+}*/
 
 .underline:after {
   content: "";
@@ -5724,21 +5724,21 @@ body.loaded {
   position: absolute;
   display: inline-block;
   top: 48%;
-  left: 66%;
+  left: 68%;
 }
 
 .icon-container2 {
   position: absolute;
   display: inline-block;
-  top: 38%;
-  left: 70%;
+  top: 35%;
+  left: 75%;
 }
 
 .icon-container3 {
   position: absolute;
   display: inline-block;
-  top: 46%;
-  left: 60%;
+  top: 50%;
+  left: 55%;
 }
 
 .tooltip-text {
@@ -5815,6 +5815,8 @@ body.loaded {
 
 .sideimg-numbers {
   position: relative;
+  height: 90vh;
+  width: 100vw;
 }
 
 .sideimg-numbers .bg-right {

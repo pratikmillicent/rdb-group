@@ -11,7 +11,7 @@ import Carousel from "@/components/carousel/Carousel";
 import Card from "./_components/Card";
 import Carroussel3D from "./_components/Carousel";
 import NewGroupGrid from "./_components/NewGroup";
-import NewSideImage from "./_components/NewSideImage";
+import NewSideImage from "../about/NewSideImage";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -75,7 +75,7 @@ export default function Home() {
 
         {/* <About /> */}
         {/* {/* <SideImage /> */}
-        <NewSideImage />
+        {/* <NewSideImage /> */}
         {/* <GroupGrid /> */}
         <NewGroupGrid />
         <Carroussel3D

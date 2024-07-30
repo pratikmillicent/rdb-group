@@ -5,7 +5,7 @@ import CoreValue2 from "./CoreValue2";
 import CallToAction from "./CallToAction";
 import Director2 from "./Director2";
 import TeamSection from "./TeamSection";
-import ResumeUpload from "../../components/ResumeUpload";
+import NewSideImage from "./NewSideImage";
 
 function About() {
   return (
@@ -25,9 +25,10 @@ function About() {
           ></video>
         </div>
 
-        <div className="pb-60">
-          <Intro />
-        </div>
+        
+          {/* <Intro /> */}
+          <NewSideImage />
+        
 
         <Director2 />
         <Team />

@@ -1,6 +1,7 @@
 // @ts-nocheck
 
 import React from "react";
+import Splitting from 'splitting'
 
 class Split extends React.Component {
   target = React.createRef();
