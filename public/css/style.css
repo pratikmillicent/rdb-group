@@ -107,14 +107,11 @@ main {
 }
 
 .underline {
-<<<<<<< HEAD
-  /* border-top: 1px solid red; */
 position: relative;
 color: grey;
-=======border-top: 1px solid red;
+border-top: 1px solid red;
 position: relative;
 color: grey;
->>>>>>>cd740193354f9a2c10f56d6d881c3eba6d829319
 }
 
 .underline:after {
