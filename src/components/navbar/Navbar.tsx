@@ -57,8 +57,8 @@ function Navbar() {
       <div className="container">
         <Link href="/">
           <img
-            style={{ width: "175px" }}
-            src="/logo.svg"
+            style={{ width: "205px", height: "101px" }}
+            src="/rdb-group.svg"
             alt="logo"
             className="logo"
           />

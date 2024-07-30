@@ -139,7 +139,7 @@ function SideImage() {
           <div className="col-lg-6 offset-lg-6">
             <div className="cont">
               <div>
-                <h6 className="sub-title mb-15 fw-500">Who we are ?</h6>
+                {/* <h6 className="sub-title mb-15 fw-500">Who we are ?</h6> */}
                 <h2 className="fz-36">
                   We want to bring business & the digital world together.
                 </h2>

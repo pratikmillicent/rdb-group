@@ -153,7 +153,8 @@ const Blog = () => {
             <div className="sec-lg-head mb-35">
               <div className="row">
                 <div className="col-lg-8">
-                  <Heading headTitle="Blogs" fontSize="fs-1" />
+                  {/* <Heading headTitle="Blogs" fontSize="fs-1" /> */}
+                  <div className="fz-50 fw-600">Blogs</div>
                 </div>
               </div>
             </div>

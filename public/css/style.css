@@ -107,9 +107,14 @@ main {
 }
 
 .underline {
-  border-top: 1px solid red; 
-  position: relative;
-  color: grey;
+<<<<<<< HEAD
+  /* border-top: 1px solid red; */
+position: relative;
+color: grey;
+=======border-top: 1px solid red;
+position: relative;
+color: grey;
+>>>>>>>cd740193354f9a2c10f56d6d881c3eba6d829319
 }
 
 .underline:after {
@@ -120,9 +125,9 @@ main {
   position: absolute;
   left: 0;
   top: -10px;
-} */
+}
 
-.awd_line {
+*/ .awd_line {
   height: 3px;
   background-color: var(--navy);
   width: 14%;
@@ -547,7 +552,7 @@ img {
     left: -5px;
     width: calc(100% + 10px);
     height: calc(100% + 10px);
-    border: 3px solid #D4AF37;
+    border: 3px solid #d4af37;
     /* Thinner border for smaller devices */
   }
 }
@@ -559,7 +564,7 @@ img {
     left: -3px;
     width: calc(100% + 6px);
     height: calc(100% + 6px);
-    border: 2px solid #D4AF37;
+    border: 2px solid #d4af37;
     /* Thinner border */
   }
 }
@@ -577,7 +582,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #D4AF37;
+  background-color: #d4af37;
   /* Light golden color */
   z-index: -1;
   /* Place the background behind the image */
@@ -3288,6 +3293,7 @@ body.loaded {
 }
 
 .navbar {
+  height: 80px;
   background: var(--white);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 0;
@@ -3371,7 +3377,7 @@ body.loaded {
 .navbar.nav-scroll {
   /* background: var(--navy) !important; */
   /* border-color: rgba(0, 0, 0, 0.05); */
-  padding: 10px;
+  /* padding: 10px; */
   position: fixed;
   top: -80px;
   -webkit-transition: -webkit-transform 0.5s;
@@ -3401,11 +3407,11 @@ body.loaded {
 .navbar {
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 15px 15px 10px 15px;
+  /* padding: 15px 15px 10px 15px; */
   font-size: 13px;
   font-weight: 600;
   color: var(--foreground);
-  padding: 20px 10px 15px 10px;
+  /* padding: 20px 10px 15px 10px; */
   /* margin: 0 15px; */
 }
 
@@ -4776,7 +4782,7 @@ body.loaded {
   top: 0;
   width: 8px;
   height: 150px;
-  background: #c9f31d;
+  background: var(--golden);
 }
 
 .intro-corp .imgs .img1:before {
@@ -8508,10 +8514,11 @@ header.in-box {
 .team-crev .swiper-slide .item .main-marq.team-position {
   background: var(--background);
   bottom: 40px;
-  left: 50%;
-  -webkit-transform: translateX(-50%) rotateZ(-5deg);
+  /* left: 50%; */
+  width: 100%;
+  /* -webkit-transform: translateX(-50%) rotateZ(-5deg);
   -ms-transform: translateX(-50%) rotate(-5deg);
-  transform: translateX(-50%) rotateZ(-5deg);
+  transform: translateX(-50%) rotateZ(-5deg); */
 }
 
 .team-crev .swiper-slide .item .main-marq.team-name {
@@ -10930,7 +10937,6 @@ header.in-box {
   border: 3px outset #f0ee52;
 }
 
-
 /* frame border  */
 
 .border-img {
@@ -10943,17 +10949,60 @@ header.in-box {
 
 .upper-img {
   position: absolute;
-  top: -10px; /* Adjust the position as needed */
-  left: -10px; /* Adjust the position as needed */
-  width: 100%; /* Make sure it fits within the .border-img */
-  height: 100%; /* Make sure it fits within the .border-img */
-  overflow: hidden; /* Hide any overflowing content */
+  display: inline-block;
+  top: 20px;
+  /* Adjust the position as needed */
+  left: 16px;
+  /* Adjust the position as needed */
+  width: 50px;
+  height: 50px;
+}
+
+.lower-img {
+  position: absolute;
+  display: inline-block;
+  bottom: 20px;
+  /* Adjust the position as needed */
+  right: 18px;
+  /* Adjust the position as needed */
+  width: 50px;
+  height: 50px;
+}
+
+/* typography  */
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/rd-brother_fonts/AvenirLTStd-Black.woff2') format('woff2'),
+    url('/fonts/rd-brother_fonts/AvenirLTStd-Book.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/rd-brother_fonts/AvenirLTStd-Black.woff2') format('woff2'),
+    url('/fonts/rd-brother_fonts/AvenirLTStd-Book.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  top: -10px;
+  /* Adjust the position as needed */
+  left: -10px;
+  /* Adjust the position as needed */
+  width: 100%;
+  /* Make sure it fits within the .border-img */
+  height: 100%;
+  /* Make sure it fits within the .border-img */
+  overflow: hidden;
+  /* Hide any overflowing content */
 }
 
 .inside-img img {
   width: 100%;
-  height: auto; /* Keep the aspect ratio of the image */
-  object-fit: cover; /* Ensures the image covers the container */
+  height: auto;
+  /* Keep the aspect ratio of the image */
+  object-fit: cover;
+  /* Ensures the image covers the container */
 }
 
 /* __________________________________________________________________
@@ -10983,15 +11032,29 @@ header.in-box {
 
 .social-icon:hover {
   transform: scale(1.2);
-  transition: all ease 0.5s;
 }
+
+.inside-img img {
+  width: 100%;
+  height: auto;
+  /* Keep the aspect ratio of the image */
+  object-fit: cover;
+  /* Ensures the image covers the container */
+}
+
+.bg-attachment-local {
+  background-attachment: local !important;
+}
+
+/* transition: all ease 0.5s;
+} */
 
 /* ________ Team section ___________ */
 
 .team-section {
   display: flex;
   width: 100%;
-  height: 300px; 
+  height: 300px;
   margin-top: 60px;
 }
 
@@ -11004,10 +11067,11 @@ header.in-box {
   align-items: center;
   justify-content: center;
   max-width: 25%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-.team-column img, .team-details {
+.team-column img,
+.team-details {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -11034,7 +11098,9 @@ header.in-box {
   box-sizing: border-box;
 }
 
-.team-details h2, .team-details h3, .team-details p {
+.team-details h2,
+.team-details h3,
+.team-details p {
   margin: 0;
 }
 

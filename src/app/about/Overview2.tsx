@@ -101,39 +101,12 @@ function Intro() {
               <div className="text">
                 <h2 className="d-slideup wow">
                   <span className="sideup-text py-2">
-                    <Heading headTitle="Overview" fontSize="fs-1" />
+                    {/* <Heading headTitle="Overview" fontSize="fs-1" /> */}
+                    <div className="fz-50 fw-600"> Overview</div>
                   </span>
                 </h2>
               </div>
-              {/* <div className="accordion bord mt-40">
-                <div className="item mb-15 wow fadeInUp" data-wow-delay=".1s">
-                  <div className="title" onClick={openAccordion}>
-                    <h6 className="fz-18">Our Mission</h6>
-                    <span className="ico"></span>
-                  </div>
-                  <div className="accordion-info">
-                    <p className="fz-14">
-                      To embrance our roots while propelling forward, delevering
-                      value through ethical sustainable and pioneering
-                      solutions, and ensuring Aspect Global Ventures remains a
-                      symbol of trust quality , and progress for generations
-                    </p>
-                  </div>
-                </div>
-                <div className="item mb-15 wow fadeInUp" data-wow-delay=".3s">
-                  <div className="title" onClick={openAccordion}>
-                    <h6 className="fz-18">Our Vision</h6>
-                    <span className="ico"></span>
-                  </div>
-                  <div className="accordion-info">
-                    <p className="fz-14">
-                      To be global powerhouse where tradition and innovation
-                      unite, building a sustainble, impactful, and visionary
-                      future for all stakeholder
-                    </p>
-                  </div>
-                </div>
-              </div> */}
+
               <div className="accordion bord mt-40">
                 <div className="item mb-15 wow fadeInUp" data-wow-delay=".1s">
                   <div className="title" onClick={openAccordion}>

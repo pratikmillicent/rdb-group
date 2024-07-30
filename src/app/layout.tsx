@@ -13,9 +13,43 @@ import { Epilogue } from "next/font/google";
 import { useEffect } from "react";
 import Loader from "@/components/loader/Loader";
 
-const epilogue = Epilogue({
-  subsets: ["latin"],
-  display: "swap",
+// const epilogue = Epilogue({
+//   subsets: ["latin"],
+//   display: "swap",
+// });
+const Avenir = localFont({
+  src: [
+    {
+      path: "../../public/fonts/rd-brother_fonts/AvenirLTStd-Roman.woff2",
+      weight: "400",
+      style: "roman",
+    },
+    {
+      path: "../../public/fonts/rd-brother_fonts/AvenirLTStd-Medium.woff2",
+      weight: "400",
+      style: "medium",
+    },
+    {
+      path: "../../public/fonts/rd-brother_fonts/avenirltstd-light.woff2",
+      weight: "700",
+      style: "light",
+    },
+    {
+      path: "../../public/fonts/rd-brother_fonts/AvenirLTStd-Heavy.woff2",
+      weight: "700",
+      style: "heavy",
+    },
+    {
+      path: "../../public/fonts/rd-brother_fonts/AvenirLTStd-Book.woff2",
+      weight: "700",
+      style: "book",
+    },
+    {
+      path: "../../public/fonts/rd-brother_fonts/AvenirLTStd-Black.woff2",
+      weight: "700",
+      style: "black",
+    },
+  ],
 });
 
 // export const metadata: Metadata = {
@@ -39,7 +73,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/plugins.css" />
         <link rel="stylesheet" href="/css/style.css" />
       </head>
-      <body className={epilogue.className}>
+      <body className={Avenir.className}>
         <Navbar />
         {children}
         <Footer />
@@ -71,10 +105,10 @@ export default function RootLayout({
           src="/assets/js/ScrollSmoother.min.js"
         ></Script>
 
-        <Script
+        {/* <Script
           strategy="beforeInteractive"
           src="/assets/js/gsap.min.js"
-        ></Script>
+        ></Script> */}
       </body>
     </html>
   );
