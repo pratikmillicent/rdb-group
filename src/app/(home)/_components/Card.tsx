@@ -20,15 +20,7 @@ function Card({ imagen }) {
       onMouseLeave={() => setShown(false)}
       src={imagen}
       alt=""
-    >
-      {/* <img src={imagen} alt="" /> */}
-      {/* <h2>Title</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
-      </p> */}
-    </animated.img>
+    ></animated.img>
   );
 }
 

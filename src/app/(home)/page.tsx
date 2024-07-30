@@ -10,6 +10,8 @@ import Carroussel from "./_components/Carousel";
 import Carousel from "@/components/carousel/Carousel";
 import Card from "./_components/Card";
 import Carroussel3D from "./_components/Carousel";
+import OurStory from "./_components/OurStory";
+import DirectorCard from "./_components/DirectorCard";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -83,6 +85,13 @@ export default function Home() {
           showArrows={false}
         />
         <GroupGrid />
+        {/* director combine section with images    */}
+        {/* <OurStory /> */}
+
+        {/* director section  */}
+
+        <DirectorCard />
+
         <News />
         <VideoGallary />
       </main>
