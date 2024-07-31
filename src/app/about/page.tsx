@@ -5,6 +5,9 @@ import CoreValue2 from "./CoreValue2";
 import CallToAction from "./CallToAction";
 import Director2 from "./Director2";
 import TeamSection from "./TeamSection";
+import NewSideImage from "./NewSideImage";
+import VisionMission from "./VisionMission";
+import DirectorCard from "../(home)/_components/DirectorCard";
 
 function About() {
   return (
@@ -24,11 +27,12 @@ function About() {
           ></video>
         </div>
 
-        <div className="pb-60">
-          <Intro />
-        </div>
+        {/* <Intro /> */}
+        {/* <NewSideImage /> */}
+        <VisionMission />
+        {/* <Director2 /> */}
 
-        <Director2 />
+        <DirectorCard />
         <Team />
         <TeamSection />
         <CoreValue2 />

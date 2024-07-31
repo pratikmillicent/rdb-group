@@ -18,7 +18,7 @@ const data: DataItem[] = [
     image: "assets/images2/img1.jpg",
     number: "01.",
     type: "Properties",
-    title: "Luxury Glassware",
+    title: "Aspect Global Ventures Pvt.Ltd.",
     text: "We craft premium designs for agencies and global brands around the globe.",
   },
   {
@@ -26,7 +26,7 @@ const data: DataItem[] = [
     image: "assets/images2/img2.jpg",
     number: "02.",
     type: "Proptech",
-    title: "Brand Identity",
+    title: "Aspect Bullion & Refinery",
     text: "We craft premium designs for agencies and global brands around the globe.",
   },
   {
@@ -34,7 +34,7 @@ const data: DataItem[] = [
     image: "assets/images2/img3.jpg",
     number: "03.",
     type: "Realty",
-    title: "Luxury Glassware",
+    title: "Aspect Infrastructure",
     text: "We craft premium designs for agencies and global brands around the globe.",
   },
 
@@ -43,7 +43,7 @@ const data: DataItem[] = [
     image: "assets/images2/img1.jpg",
     number: "04.",
     type: "Movies",
-    title: "Luxury Glassware",
+    title: "Aspect Infrastructure",
     text: "We craft premium designs for agencies and global brands around the globe.",
   },
   {
@@ -51,7 +51,7 @@ const data: DataItem[] = [
     image: "assets/images2/img2.jpg",
     number: "05.",
     type: "Marketing",
-    title: "Brand Identity",
+    title: "Ecomix Concrete",
     text: "We craft premium designs for agencies and global brands around the globe.",
   },
   {
@@ -127,7 +127,7 @@ const NewGroupGrid: React.FC = () => {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <div className="fz-50 fw-600 container mt-0 mb-0 me-0">
+                <div className="fz-50 fw-600 ">
                   Groups Websites
                 </div>
               </div>

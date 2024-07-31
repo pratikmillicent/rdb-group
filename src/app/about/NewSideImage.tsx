@@ -4,9 +4,9 @@ import parallaxie from "@/common/parallaxie";
 const NewSideImage: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState("mission");
 
-  useEffect(() => {
-    parallaxie(`.bg-img.parallaxie`, -1);
-  }, [selectedTab]);
+  // useEffect(() => {
+  //   parallaxie(`.bg-img.parallaxie`, -1);
+  // }, [selectedTab]);
 
   const tabStyle = (isSelected: boolean) => ({
     backgroundColor: isSelected ? "#d4af5f" : "transparent",
@@ -24,12 +24,12 @@ const NewSideImage: React.FC = () => {
   return (
     <section
       className="sideimg-numbers section-padding pb-60 sub-g"
-      style={{ height: "100vh" }}
+      // style={{ height: "100vh" }}
     >
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <div className="cont mt-100">
+            <div className="cont mt-60">
               <div>
                 <h2 className="fz-36">Overview</h2>
                 <div className="d-flex gap-2 align-items-center">
@@ -46,6 +46,7 @@ const NewSideImage: React.FC = () => {
                     Our Vision
                   </button>
                 </div>
+                <div col-md-12 d-flex>
                 <div className="tab-content mt-30">
                   {selectedTab === "mission" && (
                     <p>
@@ -61,19 +62,27 @@ const NewSideImage: React.FC = () => {
                     </p>
                   )}
                 </div>
+                <div className="side-img col-md-6">
+                  <img className="bg-img bg-right"  
+                  src={selectedTab === "vision"
+                    ? "/assets/images2/our-vision.jpg"
+                    : "assets/images2/our-mission.jpg"} alt="" />
+                </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className="bg-img bg-right bg-attachment-local parallaxie"
         data-background={
           selectedTab === "vision"
             ? "/assets/images2/our-vision.jpg"
             : "assets/images2/our-mission.jpg"
         }
-      />
+      /> */}
+      
     </section>
   );
 };

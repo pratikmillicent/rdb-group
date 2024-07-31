@@ -343,12 +343,34 @@
 // export default ContactUs;
 
 "use client";
+import MapComponent from "./MapComponent"
 import { FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 
 const ContactUs = () => {
+
+ const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+ })
+
+ const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData((prevState) => ({
+    ...prevState,
+    [name]: value
+  }));
+};
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log(formData);
+};
+
   const mapRef = useRef<HTMLDivElement | null>(null);
   // const [map, setMap] = useState<google.maps.Map | null>(null);
   const [markers, setMarkers] = useState<google.maps.Marker[]>([]);
@@ -364,6 +386,12 @@ const ContactUs = () => {
     { name: "Tamil Nadu", lat: 11.1271, lng: 78.6569 },
     { name: "Gujarat", lat: 22.2587, lng: 71.1924 },
     { name: "Rajasthan", lat: 27.0238, lng: 74.2179 },
+  ];
+
+  const locations = [
+    { name: 'Maharshtra', coords: [19.7515, 75.7139] },
+    { name: 'Karnatka', coords: [15.3173, 75.7139] },
+    { name: 'Tamilnadu', coords: [11.1271, 78.6569] },
   ];
 
   useEffect(() => {
@@ -440,35 +468,7 @@ const ContactUs = () => {
       <div className="container mt-60">
         <div className="d-flex gap-3">
           <div className="col-12 col-md-11">
-            {/* <Heading headTitle="Contact Us Now!" /> */}
-            <div className="fz-35 fw-600">Contact Us Now</div>
-
-            {/* <div className="w-75 msg_box">
-            <div className="">
-              <div className="">
-                <p className="text-dark">Enter Full Name</p>
-                <input
-                  placeholder="ENTER YOUR NAME..."
-                  className="w-100 mb-2 p-2 inpt_box rounded border border-secondary"
-                ></input>
-                <p className="text-dark mt-20">Enter Phone Number</p>
-                <input
-                  placeholder="ENTER YOUR NUMBER..."
-                  className="w-100 mb-2 p-2 inpt_box rounded border border-secondary"
-                ></input>
-                <p className="text-dark mt-20">Enter Email Address</p>
-                <input
-                  placeholder="ENTER YOUR ADDRESS..."
-                  className="w-100 mb-2 p-2 inpt_box rounded border border-secondary"
-                ></input>
-              </div>
-              <div className="mt-20">
-                <button className="btn border-secondary cnt_btn1 p-2 text-white">
-                  Send
-                </button>
-              </div>
-            </div>
-          </div> */}
+            <Heading headTitle="Contact Us Now!" />
             <section className="contact-crev mt-30">
               <div className="container">
                 <div className="row">
@@ -513,8 +513,7 @@ const ContactUs = () => {
                     <div className="full-width">
                       <form
                         id="contact-form"
-                        method="post"
-                        action="contact.php"
+                        onSubmit={handleSubmit}
                       >
                         <div className="messages"></div>
                         <div className="controls row">
@@ -523,8 +522,11 @@ const ContactUs = () => {
                               <input
                                 id="form_name"
                                 type="text"
+                                value={formData.name}
                                 name="name"
+                                onChange={handleChange}
                                 placeholder="Name"
+                                required
                               />
                             </div>
                           </div>
@@ -533,8 +535,11 @@ const ContactUs = () => {
                               <input
                                 id="form_email"
                                 type="email"
+                                value={formData.email}
+                                onChange={handleChange}
                                 name="email"
                                 placeholder="Email"
+                                required
                               />
                             </div>
                           </div>
@@ -544,6 +549,8 @@ const ContactUs = () => {
                                 id="form_subject"
                                 type="text"
                                 name="subject"
+                                value={formData.subject}
+                                onChange={handleChange}
                                 placeholder="Subject"
                               />
                             </div>
@@ -553,10 +560,12 @@ const ContactUs = () => {
                               <textarea
                                 id="form_message"
                                 name="message"
+                                value={formData.message}
+                                onChange={handleChange}
                                 placeholder="Message"
                               ></textarea>
                             </div>
-                            <div className="mt-30">
+                            <div className="mt-30 mb-20">
                               <button
                                 type="submit"
                                 className="butn butn-md butn-bord radius-30"
@@ -733,6 +742,10 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </div>
+    <div>
+      <h1>Map Example</h1>
+      <MapComponent locations={locations} />
+    </div>
               </div>
             </div>
           </div>

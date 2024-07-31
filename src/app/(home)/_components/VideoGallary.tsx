@@ -48,7 +48,7 @@ function VideoGallary() {
   }
 
   return (
-    <div className="container mt-60">
+    <div className="container section-padding">
       <div className="sec-lg-head">
         <div className="row">
           <div className="col-lg-8">
