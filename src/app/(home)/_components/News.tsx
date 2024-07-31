@@ -83,7 +83,7 @@ function News() {
   }, []);
 
   return (
-    <section className="blog-modern pt-30">
+    <section className="blog-modern section-padding mt-0">
       <div className="container">
         <div className="sec-lg-head mb-10">
           <div className="row">
@@ -145,7 +145,7 @@ function News() {
                       </div>
                     </div>
                     <div className="cont mt-30">
-                      <h6>
+                      <h6 className="lh-sm">
                         <Link href="/dark/blog-post">{item.title}</Link>
                       </h6>
                       <Link href="/dark/blog-post" className="ls1 sub-title">

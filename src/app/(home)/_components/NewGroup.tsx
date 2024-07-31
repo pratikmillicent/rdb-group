@@ -127,7 +127,7 @@ const NewGroupGrid: React.FC = () => {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <div className="fz-50 fw-600 container mt-0 mb-0 me-0">
+                <div className="fz-50 fw-600 ">
                   Groups Websites
                 </div>
               </div>

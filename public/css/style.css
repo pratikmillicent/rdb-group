@@ -3293,7 +3293,7 @@ body.loaded {
 }
 
 .navbar {
-  height: 80px;
+  /* height: 80px; */
   background: var(--white);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 0;
@@ -9875,9 +9875,10 @@ header.in-box {
   }
 
   .justify-end {
-    -webkit-box-pack: start !important;
-    -ms-flex-pack: start !important;
-    justify-content: flex-start !important;
+    /* -webkit-box-pack: start !important; */
+    /* -ms-flex-pack: start !important; */
+    /* justify-content: flex-start !important; */
+    padding-bottom: 30px !important;
   }
 
   .justify-end .vew-all {
@@ -9947,8 +9948,8 @@ header.in-box {
   }
 
   .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
   }
 
   .navbar .navbar-collapse {
@@ -10195,7 +10196,7 @@ header.in-box {
   .portfolio-fixed .cont {
     opacity: 1 !important;
     margin-bottom: 80px;
-    padding: 0 15px;
+    /* padding: 0 15px; */
   }
 
   .portfolio-fixed .cont .img-hiden {

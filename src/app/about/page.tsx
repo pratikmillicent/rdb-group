@@ -6,6 +6,8 @@ import CallToAction from "./CallToAction";
 import Director2 from "./Director2";
 import TeamSection from "./TeamSection";
 import NewSideImage from "./NewSideImage";
+import VisionMission from "./VisionMission";
+
 
 function About() {
   return (
@@ -25,11 +27,9 @@ function About() {
           ></video>
         </div>
 
-        
-          {/* <Intro /> */}
-          <NewSideImage />
-        
-
+        {/* <Intro /> */}
+        {/* <NewSideImage /> */}
+        <VisionMission />
         <Director2 />
         <Team />
         <TeamSection />
