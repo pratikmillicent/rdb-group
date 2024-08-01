@@ -118,11 +118,13 @@ const NewGroupGrid: React.FC = () => {
       <div className="">
         <div className="sec-lg-head mb-10">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-12">
               <div className="position-re">
                 <div className="fz-50 fw-600 ">
-                 {/* <span className="text-golden">G</span>roups Websites */}
-                 <Heading headTitle="Group Website"/>
+                  {/* <span className="text-golden">G</span>roups Websites */}
+                  <div style={{ display: "flex", justifyContent: "center" }}>
+                    <Heading headTitle="Group Website" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -138,7 +140,7 @@ const NewGroupGrid: React.FC = () => {
                     <div
                       id={`tab-${index + 1}`}
                       className="img bg-img"
-                      style={{objectFit:"cover"}}
+                      style={{ objectFit: "cover" }}
                       data-background={`${item.image}`}
                       key={index}
                     />

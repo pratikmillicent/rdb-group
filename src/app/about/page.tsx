@@ -7,7 +7,7 @@ import Director2 from "./Director2";
 import TeamSection from "./TeamSection";
 import NewSideImage from "./NewSideImage";
 import VisionMission from "./VisionMission";
-
+import DirectorCard from "../(home)/_components/DirectorCard";
 
 function About() {
   return (
@@ -30,9 +30,11 @@ function About() {
         {/* <Intro /> */}
         {/* <NewSideImage /> */}
         <VisionMission />
-        <Director2 />
+        {/* <Director2 /> */}
+
+        <DirectorCard />
         <Team />
-        <TeamSection />
+        {/* <TeamSection /> */}
         <CoreValue2 />
         <CallToAction />
       </main>

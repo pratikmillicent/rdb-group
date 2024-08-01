@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import Styles from "./card.module.css";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
@@ -10,6 +12,7 @@ function Card({ imagen }: any) {
     boxShadow: show
       ? "0 20px 25px rgb(0 0 0 / 25%)"
       : "0 2px 10px rgb(0 0 0 / 8%)",
+    objectFit: "fill",
   });
   return (
     <animated.img
@@ -19,15 +22,7 @@ function Card({ imagen }: any) {
       onMouseLeave={() => setShown(false)}
       src={imagen}
       alt=""
-    >
-      {/* <img src={imagen} alt="" /> */}
-      {/* <h2>Title</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
-      </p> */}
-    </animated.img>
+    ></animated.img>
   );
 }
 

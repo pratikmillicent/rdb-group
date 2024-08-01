@@ -49,6 +49,7 @@ function Navbar() {
 
   return (
     <nav
+      // style={{ textTransform: "capitalize" }}
       ref={navRef}
       className={`navbar navbar-expand-lg ${
         path === "/" || path === "/about" ? "navbar-home" : ""
@@ -91,7 +92,7 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">About</span>
+                <span className="rolling-text text-capitalize fs-6">About</span>
               </Link>
             </li>
             <li
@@ -106,19 +107,21 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Business</span>
+                <span className="rolling-text text-capitalize fs-6">
+                  Business
+                </span>
               </a>
               <div className="dropdown-menu">
-                <Link href="/" className="dropdown-item">
-                  Properties
+                <Link href="/" className="dropdown-item ">
+                  <span className="text-capitalize fs-6">Properties</span>
                 </Link>
-                <Link href="/" className="dropdown-item">
+                <Link href="/" className="dropdown-item text-capitalize fs-6">
                   Realty
                 </Link>
-                <Link href="/" className="dropdown-item">
+                <Link href="/" className="dropdown-item text-capitalize fs-6">
                   Fracto
                 </Link>
-                <Link href="/" className="dropdown-item">
+                <Link href="/" className="dropdown-item text-capitalize fs-6">
                   Movies
                 </Link>
               </div>
@@ -131,7 +134,9 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">News & Media</span>
+                <span className="rolling-text text-capitalize fs-6">
+                  News & Media
+                </span>
               </Link>
             </li>
             <li className="nav-item">
@@ -142,7 +147,7 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Blogs</span>
+                <span className="rolling-text text-capitalize fs-6">Blogs</span>
               </Link>
             </li>
             <li className="nav-item">
@@ -153,7 +158,9 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Careers</span>
+                <span className="rolling-text text-capitalize fs-6">
+                  Careers
+                </span>
               </Link>
             </li>
             <li className="nav-item">
@@ -164,7 +171,9 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text">Contact Us</span>
+                <span className="rolling-text text-capitalize fs-6 ">
+                  Contact Us
+                </span>
               </Link>
             </li>
           </ul>
