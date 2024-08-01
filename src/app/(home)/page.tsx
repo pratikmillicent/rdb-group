@@ -15,6 +15,7 @@ import OurStory from "./_components/OurStory";
 import DirectorCard from "./_components/DirectorCard";
 import FrameSlider from "./_components/CardImagesCarousel";
 import CarouselEvent from "./_components/CardImagesCarousel";
+
 import NewSideImage from "../about/NewSideImage";
 import VisionMission from "../about/VisionMission";
 
@@ -31,31 +32,31 @@ export default function Home() {
     {
       key: 1,
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/convertplus_thumbnail.jpg" />
+        <Card imagen="https://atharvlifestyle.com/assets/images/EVENTS/73.webp" />
       ),
     },
     {
       key: 2,
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png" />
+        <Card imagen="https://atharvlifestyle.com/assets/images/EVENTS/63.webp" />
       ),
     },
     {
       key: 3,
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png" />
+        <Card imagen="https://media.istockphoto.com/id/1393885905/photo/real-estate-agent-showing-a-mature-couple-a-new-house.jpg?s=612x612&w=0&k=20&c=uSziAtn73HvrWJxE8UR1HZlLkfjfvruhvgxZOPFDDzM=" />
       ),
     },
     {
       key: 4,
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png" />
+        <Card imagen="https://media.istockphoto.com/id/1033661996/photo/two-businessmen-shaking-hands.webp?b=1&s=170667a&w=0&k=20&c=qn517_spE0VTbdC159vNLGDESuNhztqV1uIq5jmqq7U=" />
       ),
     },
     {
       key: 5,
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg" />
+        <Card imagen="https://plus.unsplash.com/premium_photo-1661333830959-1f6ca808c5b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1aWxkaW5nJTIwZXZlbnRzfGVufDB8fDB8fHww" />
       ),
     },
   ];
