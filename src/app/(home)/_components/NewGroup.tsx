@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import loadBackgroudImages from "@/common/loadBackgroudImages";
 import isInView from "@/common/isInView";
+import Heading from "@/components/heading/Heading";
 
 interface DataItem {
   id: number;
@@ -15,7 +16,7 @@ interface DataItem {
 const data: DataItem[] = [
   {
     id: 1,
-    image: "assets/images2/img1.jpg",
+    image: "assets/images2/news2.jpg",
     number: "01.",
     type: "Properties",
     title: "Aspect Global Ventures Pvt.Ltd.",
@@ -25,22 +26,22 @@ const data: DataItem[] = [
     id: 2,
     image: "assets/images2/img2.jpg",
     number: "02.",
-    type: "Proptech",
+    type: "Reality",
     title: "Aspect Bullion & Refinery",
     text: "We craft premium designs for agencies and global brands around the globe.",
   },
   {
     id: 3,
-    image: "assets/images2/img3.jpg",
+    image: "assets/images2/Fractal.jpg",
     number: "03.",
-    type: "Realty",
+    type: "Fracto",
     title: "Aspect Infrastructure",
     text: "We craft premium designs for agencies and global brands around the globe.",
   },
 
   {
     id: 4,
-    image: "assets/images2/img1.jpg",
+    image: "assets/images/home/movie.webp",
     number: "04.",
     type: "Movies",
     title: "Aspect Infrastructure",
@@ -48,16 +49,8 @@ const data: DataItem[] = [
   },
   {
     id: 5,
-    image: "assets/images2/img2.jpg",
+    image: "assets/images2/business.jpg",
     number: "05.",
-    type: "Marketing",
-    title: "Ecomix Concrete",
-    text: "We craft premium designs for agencies and global brands around the globe.",
-  },
-  {
-    id: 6,
-    image: "assets/images2/img3.jpg",
-    number: "06.",
     type: "Business",
     title: "Luxury Glassware",
     text: "We craft premium designs for agencies and global brands around the globe.",
@@ -73,7 +66,7 @@ const NewGroupGrid: React.FC = () => {
 
   const handleShowTabs = () => {
     isInView({
-      selector: ".portfolio-fixed .sub-bg .cont",
+      selector: ".portfolio-fixed .cont",
       isElements: true,
       callback(element: Element) {
         element.classList.add("current");
@@ -128,7 +121,8 @@ const NewGroupGrid: React.FC = () => {
             <div className="col-lg-8">
               <div className="position-re">
                 <div className="fz-50 fw-600 ">
-                  Groups Websites
+                 {/* <span className="text-golden">G</span>roups Websites */}
+                 <Heading headTitle="Group Website"/>
                 </div>
               </div>
             </div>
@@ -144,13 +138,14 @@ const NewGroupGrid: React.FC = () => {
                     <div
                       id={`tab-${index + 1}`}
                       className="img bg-img"
+                      style={{objectFit:"cover"}}
                       data-background={`${item.image}`}
                       key={index}
                     />
                   ))}
                 </div>
               </div>
-              <div className="col-lg-6 sub-bg right">
+              <div className="col-lg-6 right">
                 {data.map((item, index) => (
                   <div
                     className={`cont ${index === 0 ? "active" : ""}`}
@@ -160,10 +155,10 @@ const NewGroupGrid: React.FC = () => {
                     <div className="img-hiden">
                       <img src={`${item.image}`} alt="" />
                     </div>
-                    <span className="sub-title mb-15">
+                    <span className="sub-title mb-15 fz-24 fw-600 text-grey">
                       {item.number} {item.type}
                     </span>
-                    <h2 className="mb-15">{item.title}.</h2>
+                    {/* <h2 className="mb-15 text-grey">{item.title}.</h2> */}
                     <div className="row">
                       <div className="col-md-9">
                         <p>{item.text}.</p>

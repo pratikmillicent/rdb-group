@@ -583,8 +583,8 @@ const handleSubmit = (e) => {
             </section>
             <div className="gap-3 section-padding">
               <div className="mt-30">
-                {/* <Heading headTitle="Registered Offices:" /> */}
-                <div className="fz-35 fw-600">Registered Offices : </div>
+                <Heading headTitle="Registered Offices:" />
+                {/* <div className="fz-35 fw-600">Registered Offices : </div> */}
                 <div className="row text-light msg_box">
                   <div className="col-12 col-md-4 mb-2">
                     <p className="text-dark fw-bold">
@@ -666,8 +666,8 @@ const handleSubmit = (e) => {
                 >
                   <div className="col-12 ">
                     <div className="">
-                      {/* <Heading headTitle="Global Presence" /> */}
-                      <div className="fz-35 fw-600">Global Presence</div>
+                      <Heading headTitle="Global Presence" />
+                      {/* <div className="fz-35 fw-600">Global Presence</div> */}
                       <div
                         className="w-75 position-relative"
                         style={{ margin: "60px auto" }}

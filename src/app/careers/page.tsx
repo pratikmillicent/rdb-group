@@ -1,4 +1,5 @@
 "use client"
+import Heading from "@/components/heading/Heading";
 import ResumeUpload from "@/components/Resume-upload/ResumeUpload";
 import React from "react";
 
@@ -10,7 +11,7 @@ const page = () => {
         <div className="work-header ">
           <div className="mt-60 ">
             <div>
-              <div className="caption">
+              <div className="caption text-grey">
                 <h6 className="sub-title">INTRODUCTION</h6>
                 <h2>Working at R.D.Brothers property consultants LLP</h2>
               </div>
@@ -18,7 +19,7 @@ const page = () => {
           </div>
         </div>
         <div className="d-flex gap-3 mb-80">
-          <div className="">
+          <div className="text-grey">
             <p className="text-dark fz-20 fw-bold mb-3">
               FASCINATING WORK, ENDLESS OPPORTUNITY
             </p>
@@ -31,8 +32,8 @@ const page = () => {
             </p>
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
             <div style={{ paddingTop: "60px" }}>
-              {/* <Heading headTitle="Open Positions" /> */}
-              <div className="fz-35 fw-600">Open Positions</div>
+              <Heading headTitle="Open Positions" />
+              {/* <div className="fz-35 fw-600">Open Positions</div> */}
             </div>
             <p className="mt-30 text-dark">
               Join us in shaping the future. Explore current openings across our

@@ -8,15 +8,20 @@ interface HeadingProps {
 
 const Heading: React.FC<HeadingProps> = ({
   headTitle,
-  fontSize = "fs-2",
+  fontSize = "fs-1",
   isSpace,
 }) => {
+
+  const firstLetter = headTitle.charAt(0);
+  const restTitle = headTitle.slice(1)
+
   return (
     <h2
-      className={`${fontSize} fw-700 underline ${isSpace && "mb-80"}`}
+      className={`${fontSize} fw-700 ${isSpace && "mb-80"}`}
       style={{ width: "fit-content " }}
     >
-      {headTitle}
+      <span className="text-golden">{firstLetter}</span>
+      <span className="text-grey">{restTitle}</span>
     </h2>
     // <div className="position-re">
     // </div>

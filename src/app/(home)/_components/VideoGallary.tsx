@@ -1,5 +1,6 @@
 "use client";
 import Carousel from "@/components/carousel/Carousel";
+import Heading from "@/components/heading/Heading";
 import ModalVideo from "@/components/modal-video/ModalVideo";
 import React, { useState } from "react";
 
@@ -53,7 +54,8 @@ function VideoGallary() {
         <div className="row">
           <div className="col-lg-8">
             <div className="position-re">
-              <div className="fz-50 fw-600">Video Gallery</div>
+              {/* <div className="fz-50 fw-600">Video Gallery</div> */}
+              <Heading headTitle="Video Gallery" />
             </div>
           </div>
         </div>

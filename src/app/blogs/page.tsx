@@ -154,7 +154,8 @@ const Blog = () => {
               <div className="row">
                 <div className="col-lg-8">
                   {/* <Heading headTitle="Blogs" fontSize="fs-1" /> */}
-                  <div className="fz-50 fw-600">Blogs</div>
+                  {/* <div className="fz-50 fw-600">Blogs</div> */}
+                  <Heading headTitle="Blogs" />
                 </div>
               </div>
             </div>

@@ -90,7 +90,7 @@ const VisionMission = () => {
 
   const tabStyle = (isSelected) => ({
     backgroundColor: isSelected ? '#d4af5f' : 'transparent',
-    color: isSelected ? 'white' : 'black',
+    color: isSelected ? 'white' : 'grey',
     fontWeight: '600',
     padding: '10px 20px',
     cursor: 'pointer',
@@ -117,7 +117,7 @@ const VisionMission = () => {
         {/* Content Box */}
         <div className="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-col justify-content-center align-items-center">
           <div className="mb-4">
-            <h2 className='text-center'>Overview</h2>
+            <h2 className='text-center text-grey'>Overview</h2>
           </div>
           <div className="mb-4 d-flex flex-wrap">
             <button
