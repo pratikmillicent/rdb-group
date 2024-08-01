@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Heading from "@/components/heading/Heading";
 import "./blog.css";
+import Image from "next/image";
 
 const Blog = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
@@ -16,7 +17,8 @@ const Blog = () => {
       id: 1,
       // image: new URL("https://picsum.photos/1100/1100"),
       image: "/assets/images2/blog1.jpeg",
-      heading: " Housing Market Showed Signs of Life in January, as Buyers Began to Compete",
+      heading:
+        " Housing Market Showed Signs of Life in January, as Buyers Began to Compete",
       description: "Zillow Market Reports",
       date: "17-August-2023",
     },
@@ -143,7 +145,16 @@ const Blog = () => {
 
   return (
     <>
-      <img src="/assets/images/blog/banner.png" style={{ height: "100vh" }} />
+      {/* <img src="/assets/images/blog/banner.png" style={{ height: "100vh" }} /> */}
+      <Image
+        src="/assets/images/blog/banner.png"
+        className="circle-img"
+        alt="Landscape picture"
+        style={{ height: "100vh" }}
+        width={800}
+        height={500}
+      />
+
       <div className="container">
         <section
           className="blog-modern section-padding"

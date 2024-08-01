@@ -2,6 +2,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import { CarouselItem } from "react-bootstrap";
 import React from "react";
+import Image from "next/image";
 
 function DarkVariantExample() {
   const directionButtons = (direction) => {
@@ -39,7 +40,7 @@ function DarkVariantExample() {
         prevIcon={directionButtons("Previous")}
       >
         {carouselData.map((item, index) => (
-          <Carousel.Item>
+          <Carousel.Item key={index}>
             <div className="d-flex align-content-center gap-2">
               <div className="d-flex align-self-center gap-2">
                 <div
@@ -79,10 +80,18 @@ function DarkVariantExample() {
                     <div className="d-flex justify-content-center align-content-center gap-2">
                       {item.images.map((src, idx) => (
                         <div key={idx}>
-                          <img
+                          {/* <img
                             src={src}
                             alt=""
                             style={{ height: "180px", width: "100%" }}
+                          /> */}
+                          <Image
+                            src={src}
+                            // className="circle-img"
+                            style={{ height: "180px", width: "100%" }}
+                            alt="Landscape picture"
+                            width={800}
+                            height={500}
                           />
                         </div>
                       ))}

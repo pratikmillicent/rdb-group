@@ -1,11 +1,20 @@
-"use client"
+"use client";
 import ResumeUpload from "@/components/Resume-upload/ResumeUpload";
 import React from "react";
+import Image from "next/image";
 
 const page = () => {
   return (
     <>
-      <img src="/assets/images2/career.jpg" style={{ height: "100vh" }} />
+      {/* <img src="/assets/images2/career.jpg" style={{ height: "100vh" }} /> */}
+      <Image
+        src="/assets/images2/career.jpg"
+        className="circle-img"
+        alt="carrer page"
+        style={{ height: "100vh" }}
+        width={800}
+        height={500}
+      />
       <div className="container">
         <div className="work-header ">
           <div className="mt-60 ">

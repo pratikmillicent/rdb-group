@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
+import Image from "next/image";
 
 const data = [
   {
@@ -132,13 +133,23 @@ function News() {
                 >
                   <div className="item">
                     <div className="img outset-border">
-                      <img
+                      {/* <img
                         src={item.cover}
                         alt=""
                         style={{
                           height: "320px",
                           objectFit: "cover",
                         }}
+                      /> */}
+                      <Image
+                        src={item.cover}
+                        alt="Landscape picture"
+                        width={800}
+                        style={{
+                          height: "320px",
+                          objectFit: "cover",
+                        }}
+                        height={500}
                       />
                       <div className="date">
                         <Link href="/dark/blog-post">{item.date}</Link>

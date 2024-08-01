@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Heading from "@/components/heading/Heading";
+import Image from "next/image";
 
 const Blog = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
@@ -14,126 +15,126 @@ const Blog = () => {
     {
       id: 1,
       image: "https://picsum.photos/1100/1100",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "People Choice Awards - NAREDCO 2023",
       date: "17-August-2023",
     },
     {
       id: 2,
       image: "https://picsum.photos/1200/1200",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Top Emerging Developer - Times Of India 2023",
       date: "17-May-2024",
     },
     {
       id: 3,
       image: "https://picsum.photos/1300/1300",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Best Construction Quality Award - Reality Quaters 2023",
       date: "17-June-2024",
     },
     {
       id: 4,
       image: "https://picsum.photos/1000/1000",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "People Choice Awards - NAREDCO 2023",
       date: "17-July-2024",
     },
     {
       id: 5,
       image: "https://picsum.photos/1400/1400",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Top Emerging Developer - Times Of India 2023",
       date: "17-January-2024",
     },
     {
       id: 6,
       image: "https://picsum.photos/1500/1500",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Best Construction Quality Award - Reality Quaters 2023",
       date: "17-February-2024",
     },
     {
       id: 7,
       image: "https://picsum.photos/1600/1600",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "People Choice Awards - NAREDCO 2023",
       date: "17-May-2024",
     },
     {
       id: 8,
       image: "https://picsum.photos/1700/1700",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Top Emerging Developer - Times Of India 2023",
       date: "17-June-2024",
     },
     {
       id: 9,
       image: "https://picsum.photos/1800/1800",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Best Construction Quality Award - Reality Quaters 2023",
       date: "17-July-2024",
     },
     {
       id: 10,
       image: "https://picsum.photos/1900/1900",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "People Choice Awards - NAREDCO 2023",
       date: "17-August-2023",
     },
     {
       id: 11,
       image: "https://picsum.photos/1200/1200",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Top Emerging Developer - Times Of India 2023",
       date: "17-May-2024",
     },
     {
       id: 12,
       image: "https://picsum.photos/1300/1300",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Best Construction Quality Award - Reality Quaters 2023",
       date: "17-June-2024",
     },
     {
       id: 13,
       image: "https://picsum.photos/1000/1000",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "People Choice Awards - NAREDCO 2023",
       date: "17-July-2024",
     },
     {
       id: 14,
       image: "https://picsum.photos/1400/1400",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Top Emerging Developer - Times Of India 2023",
       date: "17-January-2024",
     },
     {
       id: 15,
       image: "https://picsum.photos/1500/1500",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Best Construction Quality Award - Reality Quaters 2023",
       date: "17-February-2024",
     },
     {
       id: 16,
       image: "https://picsum.photos/1600/1600",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "People Choice Awards - NAREDCO 2023",
       date: "17-May-2024",
     },
     {
       id: 17,
       image: "https://picsum.photos/1700/1700",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Top Emerging Developer - Times Of India 2023",
       date: "17-June-2024",
     },
     {
       id: 18,
       image: "https://picsum.photos/1800/1800",
-      heading:"Reasons fueling the rising demand for luxury flats in Mumbai",
+      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Best Construction Quality Award - Reality Quaters 2023",
       date: "17-July-2024",
     },
@@ -141,9 +142,20 @@ const Blog = () => {
 
   return (
     <>
-      <img src="/assets/images/blog/banner.png" style={{ height: "100vh" }} />
+      {/* <img src="/assets/images/blog/banner.png" style={{ height: "100vh" }} /> */}
+      <Image
+        src="/assets/images/blog/banner.png"
+        className="circle-img"
+        alt="Landscape picture"
+        style={{ height: "100vh" }}
+        width={800}
+        height={500}
+      />
       <div className="container">
-        <section className="blog-modern section-padding" style={{ paddingBottom: "60px" }}>
+        <section
+          className="blog-modern section-padding"
+          style={{ paddingBottom: "60px" }}
+        >
           <div className="container">
             <div className="sec-lg-head mb-80">
               <div className="row">
@@ -156,11 +168,20 @@ const Blog = () => {
               {loadSwiper && (
                 <div className="row">
                   {data.map((item) => (
-                    <div key={item.id} className="col-lg-4 col-md-6 col-sm-6 mb-30">
+                    <div
+                      key={item.id}
+                      className="col-lg-4 col-md-6 col-sm-6 mb-30"
+                    >
                       <div className="blog-item">
                         <div className="blog-img">
-                          <img src={item.image} alt={item.description} />
-                          
+                          {/* <img src={item.image} alt={item.description} /> */}
+                          <Image
+                            src={item.image}
+                            className="circle-img"
+                            alt={item.description}
+                            width={800}
+                            height={500}
+                          />
                         </div>
                         <div className="blog-content">
                           <h5 className="blog-title fz-22 fw-medium text-grey">
@@ -172,7 +193,10 @@ const Blog = () => {
                             {/* <Link href="/dark/blog-post">{item.description}</Link> */}
                             {item.description}
                           </h5>
-                          <Link href="/dark/blog-post" className="btn main-colorbg3 text-light">
+                          <Link
+                            href="/dark/blog-post"
+                            className="btn main-colorbg3 text-light"
+                          >
                             Read More
                             <svg
                               width="18"

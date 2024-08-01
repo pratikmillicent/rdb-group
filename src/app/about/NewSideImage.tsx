@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import parallaxie from "@/common/parallaxie";
+// import parallaxie from "@/common/parallaxie";
+import Image from "next/image";
 
 const NewSideImage: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState("mission");
@@ -47,27 +48,38 @@ const NewSideImage: React.FC = () => {
                   </button>
                 </div>
                 <div col-md-12 d-flex>
-                <div className="tab-content mt-30">
-                  {selectedTab === "mission" && (
-                    <p>
-                      To deliver professionalism and add a touch of Indian
-                      warmth to the way property is managed across India and
-                      overseas.
-                    </p>
-                  )}
-                  {selectedTab === "vision" && (
-                    <p>
-                      Making Real Estate simple and effective through the use of
-                      defined processes and technology.
-                    </p>
-                  )}
-                </div>
-                <div className="side-img col-md-6">
-                  <img className="bg-img bg-right"  
+                  <div className="tab-content mt-30">
+                    {selectedTab === "mission" && (
+                      <p>
+                        To deliver professionalism and add a touch of Indian
+                        warmth to the way property is managed across India and
+                        overseas.
+                      </p>
+                    )}
+                    {selectedTab === "vision" && (
+                      <p>
+                        Making Real Estate simple and effective through the use
+                        of defined processes and technology.
+                      </p>
+                    )}
+                  </div>
+                  <div className="side-img col-md-6">
+                    {/* <img className="bg-img bg-right"  
                   src={selectedTab === "vision"
                     ? "/assets/images2/our-vision.jpg"
-                    : "assets/images2/our-mission.jpg"} alt="" />
-                </div>
+                    : "assets/images2/our-mission.jpg"} alt="" /> */}
+                    <Image
+                      src={
+                        selectedTab === "vision"
+                          ? "/assets/images2/our-vision.jpg"
+                          : "assets/images2/our-mission.jpg"
+                      }
+                      // className="img-fluid"
+                      alt="mission-vision"
+                      width={800}
+                      height={500}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -82,7 +94,6 @@ const NewSideImage: React.FC = () => {
             : "assets/images2/our-mission.jpg"
         }
       /> */}
-      
     </section>
   );
 };

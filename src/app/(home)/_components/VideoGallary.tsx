@@ -2,6 +2,7 @@
 import Carousel from "@/components/carousel/Carousel";
 import ModalVideo from "@/components/modal-video/ModalVideo";
 import React, { useState } from "react";
+import Image from "next/image";
 
 interface Video {
   image: string;
@@ -84,7 +85,14 @@ function VideoGallary() {
                 />
                 <polygon points="70, 55 70, 145 145, 100" fill="#fff" />\
               </svg>
-              <img src={item.image} />
+              {/* <img src={item.image} /> */}
+              <Image
+                src={item.image}
+                className="circle-img"
+                alt="Landscape picture"
+                width={800}
+                height={500}
+              />
             </div>
             <div
               style={{

@@ -1,50 +1,51 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Image from "next/image";
 
 const teamMembers = [
     {
         name: 'Tom Knolltonns',
         title: 'Consultant',
         description: 'Lorem Ipsum aenean commodo dolig trium. Proin qual de suis erestopius.',
-        imgSrc: '/assets/images2/Main-team-1.jpg', 
+        imgSrc: '/assets/images2/Main-team-1.jpg',
         social: {
-          facebook: '#',
-          twitter: '#',
-          instagram: '#',
+            facebook: '#',
+            twitter: '#',
+            instagram: '#',
         },
     },
     {
         name: 'Juliet Alan',
         title: 'PR Manager',
         description: 'Lorem Ipsum aenean commodo dolig trium. Proin qual de suis erestopius.',
-        imgSrc: '/assets/images2/Main-team-2.jpg', 
+        imgSrc: '/assets/images2/Main-team-2.jpg',
         social: {
-          facebook: '#',
-          twitter: '#',
-          instagram: '#',
+            facebook: '#',
+            twitter: '#',
+            instagram: '#',
         },
     },
     {
         name: 'Bill Ewing',
         title: 'Photographer',
         description: 'Lorem Ipsum aenean commodo dolig trium. Proin qual de suis erestopius.',
-        imgSrc: '/assets/images2/Main-team-3.jpg', 
+        imgSrc: '/assets/images2/Main-team-3.jpg',
         social: {
-          facebook: '#',
-          twitter: '#',
-          instagram: '#',
+            facebook: '#',
+            twitter: '#',
+            instagram: '#',
         },
     },
     {
         name: 'Fiona Endley',
         title: 'Consultant',
         description: 'Lorem Ipsum aenean commodo dolig trium. Proin qual de suis erestopius.',
-        imgSrc: '/assets/images2/Main-team-4.jpg', 
+        imgSrc: '/assets/images2/Main-team-4.jpg',
         social: {
-          facebook: '#',
-          twitter: '#',
-          instagram: '#',
+            facebook: '#',
+            twitter: '#',
+            instagram: '#',
         },
     },
 ];
@@ -55,7 +56,14 @@ const TeamSection = () => {
     return (
         <div className="team-section">
             <div className="team-column">
-                <img src={teamMembers[0].imgSrc} alt={teamMembers[0].name} />
+                {/* <img src={teamMembers[0].imgSrc} alt={teamMembers[0].name} /> */}
+                <Image
+                    src={teamMembers[0].imgSrc}
+                    className="img-fluid"
+                    alt={teamMembers[0].name}
+                    width={800}
+                    height={500}
+                />
             </div>
             <div className="team-column details-column">
                 <div className="team-details">
@@ -75,7 +83,13 @@ const TeamSection = () => {
                     className="team-column"
                     onMouseEnter={() => setHoveredMember(index + 1)}
                 >
-                    <img src={member.imgSrc} alt={member.name} />
+                    {/* <img src={member.imgSrc} alt={member.name} /> */}
+                    <Image
+                        src={member.imgSrc}
+                        alt={member.name}
+                        width={800}
+                        height={500}
+                    />
                 </div>
             ))}
         </div>

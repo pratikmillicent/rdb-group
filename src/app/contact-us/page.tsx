@@ -343,33 +343,39 @@
 // export default ContactUs;
 
 "use client";
-import MapComponent from "./MapComponent"
-import { FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+import MapComponent from "./MapComponent";
+import {
+  FaMapMarkerAlt,
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagramSquare,
+} from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
- const [formData, setFormData] = useState({
-  name: "",
-  email: "",
-  subject: "",
-  message: "",
- })
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
- const handleChange = (e) => {
-  const { name, value } = e.target;
-  setFormData((prevState) => ({
-    ...prevState,
-    [name]: value
-  }));
-};
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-  console.log(formData);
-};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
 
   const mapRef = useRef<HTMLDivElement | null>(null);
   // const [map, setMap] = useState<google.maps.Map | null>(null);
@@ -389,9 +395,9 @@ const handleSubmit = (e) => {
   ];
 
   const locations = [
-    { name: 'Maharshtra', coords: [19.7515, 75.7139] },
-    { name: 'Karnatka', coords: [15.3173, 75.7139] },
-    { name: 'Tamilnadu', coords: [11.1271, 78.6569] },
+    { name: "Maharshtra", coords: [19.7515, 75.7139] },
+    { name: "Karnatka", coords: [15.3173, 75.7139] },
+    { name: "Tamilnadu", coords: [11.1271, 78.6569] },
   ];
 
   useEffect(() => {
@@ -438,7 +444,7 @@ const handleSubmit = (e) => {
       }
     };
     overlay.setMap(mapInstance);
-  }, [mapRef]);
+  }, [mapRef, states]);
 
   const handleMouseEnter = (index: number) => {
     if (markers[index]) {
@@ -464,7 +470,15 @@ const handleSubmit = (e) => {
 
   return (
     <>
-      <img src="/assets/images2/contact.jpg" style={{ height: "100vh" }} />
+      {/* <img src="/assets/images2/contact.jpg" style={{ height: "100vh" }} /> */}
+      <Image
+        src="/assets/images2/contact.jpg"
+        className="circle-img"
+        alt="carrer page"
+        style={{ height: "100vh" }}
+        width={800}
+        height={500}
+      />
       <div className="container mt-60">
         <div className="d-flex gap-3">
           <div className="col-12 col-md-11">
@@ -511,10 +525,7 @@ const handleSubmit = (e) => {
                   </div>
                   <div className="col-lg-6 offset-lg-1 valign">
                     <div className="full-width">
-                      <form
-                        id="contact-form"
-                        onSubmit={handleSubmit}
-                      >
+                      <form id="contact-form" onSubmit={handleSubmit}>
                         <div className="messages"></div>
                         <div className="controls row">
                           <div className="col-lg-6">
@@ -672,10 +683,18 @@ const handleSubmit = (e) => {
                         className="w-75 position-relative"
                         style={{ margin: "60px auto" }}
                       >
-                        <img
+                        {/* <img
                           src="/assets/images2/map.png"
                           alt=""
                           className="w-100"
+                        /> */}
+                        <Image
+                          src="/assets/images2/map.png"
+                          className="w-100"
+                          alt="map"
+                          style={{ height: "100vh" }}
+                          width={800}
+                          height={500}
                         />
                         <div className="icon-container1">
                           <FaMapMarkerAlt className="main-color3 fz-24" />
@@ -742,10 +761,10 @@ const handleSubmit = (e) => {
                     </div>
                   </div>
                 </div>
-    <div>
-      <h1>Map Example</h1>
-      <MapComponent locations={locations} />
-    </div>
+                <div>
+                  <h1>Map Example</h1>
+                  <MapComponent locations={locations} />
+                </div>
               </div>
             </div>
           </div>

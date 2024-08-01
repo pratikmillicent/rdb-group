@@ -138,6 +138,7 @@
 import React from "react";
 import Link from "next/link";
 import { useParallax } from "react-scroll-parallax";
+import Image from "next/image";
 
 function About() {
   const parallax = useParallax({
@@ -158,7 +159,13 @@ function About() {
               <div className="item d-flex align-items-center pb-20 mb-20 bord-thin-bottom">
                 <div>
                   <div className="icon-img-50 mr-60">
-                    <img src={`/assets/images2/icon1.png`} alt="icon1" />
+                    {/* <img src={`/assets/images2/icon1.png`} alt="icon1" /> */}
+                    <Image
+                      src={`/assets/images2/icon1.png`}
+                      alt="Landscape picture"
+                      width={800}
+                      height={500}
+                    />
                   </div>
                 </div>
                 <div>
@@ -189,7 +196,13 @@ function About() {
               <div className="item d-flex align-items-center pb-20 mb-20 bord-thin-bottom">
                 <div>
                   <div className="icon-img-50 mr-60">
-                    <img src={`/assets/images2/icon2.png`} alt="icon2" />
+                    {/* <img src={`/assets/images2/icon2.png`} alt="icon2" /> */}
+                    <Image
+                      src={`/assets/images2/icon2.png`}
+                      alt="Landscape picture"
+                      width={800}
+                      height={500}
+                    />
                   </div>
                 </div>
                 <div>
@@ -220,7 +233,13 @@ function About() {
               <div className="item d-flex align-items-center pb-20 bord-thin-bottom">
                 <div>
                   <div className="icon-img-50 mr-60">
-                    <img src={`/assets/images2/icon3.png`} alt="icon3" />
+                    {/* <img src={`/assets/images2/icon3.png`} alt="icon3" /> */}
+                    <Image
+                      src={`/assets/images2/icon3.png`}
+                      alt="Landscape picture"
+                      width={800}
+                      height={500}
+                    />
                   </div>
                 </div>
                 <div>
@@ -251,9 +270,15 @@ function About() {
             </div>
           </div>
           <div className="col-lg-5 offset-lg-1">
-            <div className='image-container' ref={parallax.ref}>
-              <div className='image-frame'></div>
-              <img src={`/assets/images2/about-img.jpg`} alt="person image" />
+            <div className="image-container" ref={parallax.ref}>
+              <div className="image-frame"></div>
+              {/* <img src={`/assets/images2/about-img.jpg`} alt="person image" /> */}
+              <Image
+                src={`/assets/images2/about-img.jpg`}
+                alt="Landscape picture"
+                width={800}
+                height={500}
+              />
             </div>
           </div>
         </div>

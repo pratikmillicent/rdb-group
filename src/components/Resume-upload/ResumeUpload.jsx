@@ -31,12 +31,12 @@
 //         e.preventDefault();
 //         console.log(formData);
 //       };
-    
+
 //   return (
 //     <div>
 //         <div className="container mt-60">
 //         <div className="d-flex gap-3">
-        
+
 //           <div className="col-12 col-md-11">
 //           <Heading headTitle="Join Our Team" />
 //           <p>Work at the most dynamic and successful agency</p>
@@ -55,7 +55,7 @@
 //                           <div className="col-lg-6">
 //                           <label htmlFor="form_name">Name</label>
 //                             <div className="form-group mb-30 mt-5">
-                                
+
 //                               <input
 //                                 id="form_name"
 //                                 type="text"
@@ -70,7 +70,7 @@
 //                           <div className="col-lg-6">
 //                           <label htmlFor="form_email">Email</label>
 //                             <div className="form-group mb-30 mt-5">
-                                
+
 //                               <input
 //                                 id="form_email"
 //                                 type="email"
@@ -133,6 +133,7 @@
 
 import React, { useState } from 'react';
 import Heading from '@/components/heading/Heading';
+import Image from "next/image";
 
 const ResumeUpload = () => {
   const [formData, setFormData] = useState({
@@ -170,9 +171,18 @@ const ResumeUpload = () => {
         <div className="col-lg-6 d-flex flex-column align-items-start">
           <Heading headTitle="Join Our Team" />
           <p>Work at the most dynamic and successful agency</p>
-          <img src="/assets/images2/resume-img.png" alt="Resume Illustration" 
-          style={{ maxHeight: '450px' }} className="img-fluid" />
-          
+          {/* <img src="/assets/images2/resume-img.png" alt="Resume Illustration"
+          style={{ maxHeight: '450px' }} className="img-fluid" /> */}
+
+          <Image
+            src="/assets/images2/resume-img.png" alt="Resume Illustration"
+            className="img-fluid"
+            style={{ maxHeight: '450px' }}
+
+            width={800}
+            height={500}
+          />
+
         </div>
         <div className="col-lg-6">
           <section className="contact-crev mt-30">

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -89,7 +90,14 @@ function Footer() {
               <div className="col-lg-4">
                 <div className="logo">
                   <Link href="#">
-                    <img src="/rdb-group.svg" alt="" />
+                    {/* <img src="/rdb-group.svg" alt="" /> */}
+                    <Image
+                      src="/rdb-group.svg"
+                      className="w-100"
+                      alt="rdb group"
+                      width={800}
+                      height={500}
+                    />
                   </Link>
                 </div>
               </div>

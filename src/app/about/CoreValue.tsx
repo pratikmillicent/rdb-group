@@ -1,15 +1,24 @@
 // src/CoreValuesImage.js
 import React from "react";
+import Image from "next/image";
 
 const CoreValuesImage = () => {
   const coreImage = "/assets/images2/Core.jpg";
   return (
     <div className="position-relative text-center text-white">
-      <img
+      {/* <img
         src={coreImage}
         alt="Core Values"
         className="img-fluid"
         style={{ height: "100vh", objectFit: "cover" }}
+      /> */}
+      <Image
+        src={coreImage}
+        className="img-fluid"
+        style={{ height: "100vh", objectFit: "cover" }}
+        alt="Landscape picture"
+        width={800}
+        height={500}
       />
       <div
         style={{

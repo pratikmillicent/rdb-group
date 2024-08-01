@@ -81,17 +81,32 @@ function Intro() {
           <div className="col-lg-5 valign md-mb50">
             <div className="imgs mb-80">
               <div className="img1 wow fadeInUp">
-                <img
+                {/* <img
                   src="/assets/images2/vision.jpg"
                   alt=""
                   className="radius-10"
+                /> */}
+                <Image
+                  src="/assets/images2/vision.jpg"
+                  // className="circle-img"
+                  className="radius-10"
+                  alt="Landscape picture"
+                  width={800}
+                  height={500}
                 />
               </div>
               <div className="img2 wow fadeInLeft">
-                <img
+                {/* <img
                   src="/assets/images2/mission.jfif"
                   alt=""
                   className="radius-10"
+                /> */}
+                <Image
+                  src="/assets/images2/mission.jfif"
+                  className="radius-10"
+                  alt="Landscape picture"
+                  width={800}
+                  height={500}
                 />
               </div>
             </div>

@@ -443,14 +443,15 @@
 //   },
 // ];
 
-"use client"
+"use client";
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import ModalVideo from "@/components/modal-video/ModalVideo";
-import Carousel from "@/components/carousel/Carousel";
+// import Carousel from "@/components/carousel/Carousel";
+import Image from "next/image";
 
 interface Video {
   image: string;
@@ -508,9 +509,21 @@ const News = () => {
 
   return (
     <>
-      <img src="/assets/images/news/banner.png" style={{ height: "100vh" }} alt="News Banner" />
+      {/* <img src="/assets/images/news/banner.png" style={{ height: "100vh" }} alt="News Banner" /> */}
+
+      <Image
+        src="/assets/images/news/banner.png"
+        className="w-100"
+        alt="News Banner"
+        style={{ height: "100vh" }}
+        width={800}
+        height={500}
+      />
       <div className="container">
-        <section className="blog-modern section-padding" style={{ paddingBottom: "60px" }}>
+        <section
+          className="blog-modern section-padding"
+          style={{ paddingBottom: "60px" }}
+        >
           <div className="container">
             <div className="sec-lg-head mb-30">
               <div className="row">
@@ -521,23 +534,40 @@ const News = () => {
             </div>
             <div className="blog-carsouel">
               {loadSwiper && (
-                <Swiper {...swiperOptions} id="content-carousel-container-unq-blog" className="swiper-container">
+                <Swiper
+                  {...swiperOptions}
+                  id="content-carousel-container-unq-blog"
+                  className="swiper-container"
+                >
                   {data.map((item) => (
-                    <SwiperSlide key={item.id} className="wow fadeInUp" data-wow-delay=".1s">
+                    <SwiperSlide
+                      key={item.id}
+                      className="wow fadeInUp"
+                      data-wow-delay=".1s"
+                    >
                       <div className="item p-0">
                         <div className="img img-container">
-                          <img
+                          {/* <img
                             src={item.image}
                             alt={item.description}
                             style={{ height: "320px", objectFit: "cover" }}
                             className=""
+                          /> */}
+                          <Image
+                            src={item.image}
+                            alt={item.description}
+                            // className="w-100"
+                            style={{ height: "320px", objectFit: "cover" }}
+                            width={800}
+                            height={500}
                           />
                         </div>
                         <div className="cont mt-30 ">
-                          <h6 className="fw-600">
-                            {item.description}
-                          </h6>
-                          <Link href={item.link} className="mt-6 ls1 sub-title fw-500">
+                          <h6 className="fw-600">{item.description}</h6>
+                          <Link
+                            href={item.link}
+                            className="mt-6 ls1 sub-title fw-500"
+                          >
                             Read More{" "}
                             <i className="ml-5">
                               <svg
@@ -578,7 +608,8 @@ const data = [
   {
     id: 1,
     image: "/assets/images2/news1.webp",
-    description: "Augmented Reality in Real Estate: Forecasting Market Trends in 2024",
+    description:
+      "Augmented Reality in Real Estate: Forecasting Market Trends in 2024",
     link: "https://homecapital.in/augmented-reality-in-real-estate-forecasting-market-trends-in-2024/",
   },
   {
@@ -590,7 +621,8 @@ const data = [
   {
     id: 3,
     image: "/assets/images2/news3.webp",
-    description: "Why Hire Real Estate Agent: Benefits & Reasons | Spiffy Spools",
+    description:
+      "Why Hire Real Estate Agent: Benefits & Reasons | Spiffy Spools",
     link: "https://www.spiffyspools.com/spiffy-speak/why-hire-real-estate-agent/",
   },
 ];

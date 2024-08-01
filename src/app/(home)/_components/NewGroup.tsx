@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Link from "next/link";
 import loadBackgroudImages from "@/common/loadBackgroudImages";
 import isInView from "@/common/isInView";
+import Image from "next/image";
 
 interface DataItem {
   id: number;
@@ -127,9 +128,7 @@ const NewGroupGrid: React.FC = () => {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <div className="fz-50 fw-600 ">
-                  Groups Websites
-                </div>
+                <div className="fz-50 fw-600 ">Groups Websites</div>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center"></div>
@@ -158,7 +157,13 @@ const NewGroupGrid: React.FC = () => {
                     key={index}
                   >
                     <div className="img-hiden">
-                      <img src={`${item.image}`} alt="" />
+                      {/* <img src={`${item.image}`} alt="" /> */}
+                      <Image
+                        src={item.image}
+                        alt="Landscape picture"
+                        width={800}
+                        height={500}
+                      />
                     </div>
                     <span className="sub-title mb-15">
                       {item.number} {item.type}

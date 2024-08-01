@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import parallaxie from "@/utils/parallax";
+import Image from "next/image";
 //= Scripts
 
 function CallToAction({}) {
@@ -50,11 +51,18 @@ function CallToAction({}) {
                     </span>
                     <span className="full-width">Get In Touch</span>
                   </div>
-                  <img
+                  {/* <img
                     src={`/assets/images/pin.png`}
                     alt=""
                     className="circle-star"
-                  />
+                  /> */}
+                  {/* <Image
+                    src={`/assets/images/pin.png`}
+                    className="circle-img"
+                    alt="Landscape picture"
+                    width={800}
+                    height={500}
+                  /> */}
                 </Link>
               </div>
             </div>

@@ -1,5 +1,5 @@
 "use client";
-import Intro from "./Overview2";
+// import Intro from "./Overview2";
 import Team from "./Team";
 import CoreValue2 from "./CoreValue2";
 import CallToAction from "./CallToAction";
@@ -8,6 +8,7 @@ import TeamSection from "./TeamSection";
 import NewSideImage from "./NewSideImage";
 import VisionMission from "./VisionMission";
 import DirectorCard from "../(home)/_components/DirectorCard";
+// import Image from "next/image";
 
 function About() {
   return (

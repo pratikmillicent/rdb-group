@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import Image from "next/image";
 
 const swiperOptions = {
   slidesPerView: 4,
@@ -96,7 +97,14 @@ function Team() {
                     <SwiperSlide key={item.id}>
                       <div className="item">
                         <div className="img">
-                          <img src={item.image} alt={item.name} />
+                          {/* <img src={item.image} alt={item.name} /> */}
+                          <Image
+                            src={item.image}
+                            className="img-fluid"
+                            alt="Landscape picture"
+                            width={800}
+                            height={500}
+                          />
                         </div>
                         <div className="info">
                           <div className="main-marq team-position">

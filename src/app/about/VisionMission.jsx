@@ -83,6 +83,7 @@
 
 import React, { useState } from 'react';
 import './VisionMission.css';
+import Image from "next/image";
 
 const VisionMission = () => {
   const [selectedTab, setSelectedTab] = useState('mission');
@@ -106,7 +107,7 @@ const VisionMission = () => {
       setAnimate(true);
       setTimeout(() => {
         setAnimate(false);
-      }, 500); 
+      }, 500);
     }
     setSelectedTab(tab);
   };
@@ -154,7 +155,7 @@ const VisionMission = () => {
         {/* Image Box */}
         <div className="col-12 col-md-6">
           <div className="ratio ratio-4x3">
-            <img
+            {/* <img
               className={`img-fluid h-100 ${animate ? 'fade-in' : ''}`}
               src={
                 selectedTab === 'vision'
@@ -162,6 +163,18 @@ const VisionMission = () => {
                   : '/assets/images2/our-mission.jpg'
               }
               alt={selectedTab}
+              style={{ objectFit: 'cover' }}
+            /> */}
+            <Image
+              src={
+                selectedTab === 'vision'
+                  ? '/assets/images2/our-vision.jpg'
+                  : '/assets/images2/our-mission.jpg'
+              }
+              className={`img-fluid h-100 ${animate ? 'fade-in' : ''}`}
+              alt={selectedTab}
+              width={800}
+              height={500}
               style={{ objectFit: 'cover' }}
             />
           </div>

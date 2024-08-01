@@ -1,6 +1,7 @@
 "use client";
 import React, { MouseEvent, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 function Navbar() {
@@ -57,11 +58,19 @@ function Navbar() {
     >
       <div className="container">
         <Link href="/">
-          <img
+          {/* <img
             style={{ width: "205px", height: "101px" }}
             src="/rdb-group.svg"
             alt="logo"
             className="logo"
+          /> */}
+          <Image
+            src="/rdb-group.svg"
+            // className="w-100"
+            style={{ width: "205px", height: "101px" }}
+            alt="logo"
+            width={800}
+            height={500}
           />
         </Link>
         <button
