@@ -2,6 +2,8 @@
 import Heading from "@/components/heading/Heading";
 import ResumeUpload from "@/components/Resume-upload/ResumeUpload";
 import React from "react";
+import CardList from "./components/CardList"
+
 
 const page = () => {
   return (
@@ -66,7 +68,9 @@ const page = () => {
             </div>
           </div>
         </div>
+        <CardList data={cardData} />
         <ResumeUpload />
+        
       </div>
     </>
   );
@@ -96,3 +100,54 @@ const data = [
       "20 - 25 years experience with BE Civil and similar experience with Developers",
   },
 ];
+
+const cardData = [
+  {
+    icon: "/assets/images2/setting.svg",
+    position: "Operations Manager",
+    location: "India",
+    description: "A talented Operations Manager to join our team.",
+  },
+  {
+    icon: "/assets/images2/mind.svg",
+    position: "Creative Director",
+    description: "A talented Creative Director to join our team.",
+  },
+  {
+    icon: "/assets/images2/zebra.svg",
+    position: "Chief Strategy Officer",
+    location: "China",
+    description: "A talented Chief Strategy Officer to join our team.",
+  },
+  {
+    icon: "/assets/images2/radio.svg",
+    position: "Sr. Software Engineer",
+    location: "India",
+    description: "A talented Sr. Software Engineer to join our team.",
+  },
+  {
+    icon: "/assets/images2/mind.svg",
+    position: "Project Manager",
+    location: "USA",
+    description: "A talented Sr. Software Engineer to join our team.",
+  },
+  {
+    icon: "/assets/images2/zebra.svg",
+    position: "Branch Manager",
+    location: "UAE",
+    description: "A talented Sr. Software Engineer to join our team.",
+  },
+  {
+    icon: "/assets/images2/mind.svg",
+    position: "Project Manager",
+    location: "Russia",
+    description: "A talented Sr. Software Engineer to join our team.",
+  },
+  {
+    icon: "/assets/images2/zebra.svg",
+    position: "Branch Manager",
+    location: "UK",
+    description: "A talented Sr. Software Engineer to join our team.",
+  },
+];
+

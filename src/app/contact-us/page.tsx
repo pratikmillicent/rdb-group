@@ -351,25 +351,25 @@ import Link from "next/link";
 
 const ContactUs = () => {
 
- const [formData, setFormData] = useState({
-  name: "",
-  email: "",
-  subject: "",
-  message: "",
- })
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  })
 
- const handleChange = (e) => {
-  const { name, value } = e.target;
-  setFormData((prevState) => ({
-    ...prevState,
-    [name]: value
-  }));
-};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  console.log(formData);
-};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
 
   const mapRef = useRef<HTMLDivElement | null>(null);
   // const [map, setMap] = useState<google.maps.Map | null>(null);
@@ -742,10 +742,10 @@ const handleSubmit = (e) => {
                     </div>
                   </div>
                 </div>
-    <div>
-      <h1>Map Example</h1>
-      <MapComponent locations={locations} />
-    </div>
+                <div>
+                  <Heading headTitle="Global Presence" />
+                  <MapComponent locations={locations} />
+                </div>
               </div>
             </div>
           </div>
