@@ -451,6 +451,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import ModalVideo from "@/components/modal-video/ModalVideo";
 import Carousel from "@/components/carousel/Carousel";
+import Heading from "@/components/heading/Heading";
 
 interface Video {
   image: string;
@@ -515,7 +516,8 @@ const News = () => {
             <div className="sec-lg-head mb-30">
               <div className="row">
                 <div className="col-lg-8">
-                  <div className="fz-50 fw-600">LATEST NEWS</div>
+                  {/* <div className="fz-50 fw-600">LATEST NEWS</div> */}
+                  <Heading headTitle="Latest News" />
                 </div>
               </div>
             </div>
@@ -533,8 +535,8 @@ const News = () => {
                             className=""
                           />
                         </div>
-                        <div className="cont mt-30 ">
-                          <h6 className="fw-600">
+                        <div className="cont mt-30 text-grey">
+                          <h6 className="fw-500">
                             {item.description}
                           </h6>
                           <Link href={item.link} className="mt-6 ls1 sub-title fw-500">

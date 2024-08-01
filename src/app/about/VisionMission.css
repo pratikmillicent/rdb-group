@@ -10,10 +10,10 @@
   }
   
   .fade-in {
-    animation: fadeIn 0.7s ease-in-out;
+    animation: fadeIn 2s ease-in;
   }
   
   .slide-in {
-    animation: slideIn 0.7s ease-in-out;
+    animation: slideIn 2s ease-in;
   }
   

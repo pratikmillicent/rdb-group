@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
+import Heading from "@/components/heading/Heading";
 
 const data = [
   {
@@ -89,7 +90,8 @@ function News() {
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <div className="fz-50 fw-600">Latest News</div>
+                {/* <div className="fz-50 fw-600">Latest News</div> */}
+                <Heading headTitle="Latest News"/>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center">
