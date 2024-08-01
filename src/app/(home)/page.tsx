@@ -14,6 +14,8 @@ import NewGroupGrid from "./_components/NewGroup";
 import NewSideImage from "./_components/NewSideImage";
 import OurStory from "./_components/OurStory";
 import DirectorCard from "./_components/DirectorCard";
+import FrameSlider from "./_components/CardImagesCarousel";
+import CarouselEvent from "./_components/CardImagesCarousel";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -83,7 +85,7 @@ export default function Home() {
         <Carroussel3D
           cards={cards}
           height="500px"
-          width="30%"
+          width="10%"
           margin="0 auto"
           offset={2}
           showArrows={false}
@@ -98,6 +100,7 @@ export default function Home() {
 
         <News />
         <VideoGallary />
+        <CarouselEvent />
       </main>
     </ParallaxProvider>
   );
