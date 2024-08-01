@@ -4,7 +4,7 @@ import React from "react";
 const DirectorCard = () => {
   return (
     <>
-      <div className="container">
+      <div className="container section-padding">
         <h3 className="d-flex justify-content-center pb-3">OUR LEADERS</h3>
 
         <div className="row">

@@ -39,7 +39,7 @@ function DarkVariantExample() {
         prevIcon={directionButtons("Previous")}
       >
         {carouselData.map((item, index) => (
-          <Carousel.Item>
+          <Carousel.Item key={index}>
             <div className="d-flex align-content-center gap-2">
               <div className="d-flex align-self-center gap-2">
                 <div

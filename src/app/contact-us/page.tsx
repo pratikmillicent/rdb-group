@@ -343,33 +343,38 @@
 // export default ContactUs;
 
 "use client";
-import MapComponent from "./MapComponent"
-import { FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
+import MapComponent from "./MapComponent";
+import {
+  FaMapMarkerAlt,
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagramSquare,
+} from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
- const [formData, setFormData] = useState({
-  name: "",
-  email: "",
-  subject: "",
-  message: "",
- })
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
- const handleChange = (e) => {
-  const { name, value } = e.target;
-  setFormData((prevState) => ({
-    ...prevState,
-    [name]: value
-  }));
-};
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-  console.log(formData);
-};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
 
   const mapRef = useRef<HTMLDivElement | null>(null);
   // const [map, setMap] = useState<google.maps.Map | null>(null);
@@ -389,9 +394,9 @@ const handleSubmit = (e) => {
   ];
 
   const locations = [
-    { name: 'Maharshtra', coords: [19.7515, 75.7139] },
-    { name: 'Karnatka', coords: [15.3173, 75.7139] },
-    { name: 'Tamilnadu', coords: [11.1271, 78.6569] },
+    { name: "Maharshtra", coords: [19.7515, 75.7139] },
+    { name: "Karnatka", coords: [15.3173, 75.7139] },
+    { name: "Tamilnadu", coords: [11.1271, 78.6569] },
   ];
 
   useEffect(() => {
@@ -511,10 +516,7 @@ const handleSubmit = (e) => {
                   </div>
                   <div className="col-lg-6 offset-lg-1 valign">
                     <div className="full-width">
-                      <form
-                        id="contact-form"
-                        onSubmit={handleSubmit}
-                      >
+                      <form id="contact-form" onSubmit={handleSubmit}>
                         <div className="messages"></div>
                         <div className="controls row">
                           <div className="col-lg-6">
@@ -742,10 +744,10 @@ const handleSubmit = (e) => {
                     </div>
                   </div>
                 </div>
-    <div>
-      <h1>Map Example</h1>
-      <MapComponent locations={locations} />
-    </div>
+                <div>
+                  <h1>Map Example</h1>
+                  <MapComponent locations={locations} />
+                </div>
               </div>
             </div>
           </div>
