@@ -48,14 +48,12 @@ function DarkVariantExample() {
                   style={{ height: "fit-content" }}
                 >
                   {item.date.split(" ").map((part, index) => (
-                    <>
-                      <div class="date bg-golden px-1 px-3 text-center">
-                        <div key={index} className=" d-block fs-4">
-                          {" "}
-                          {part}
-                        </div>
-                      </div>
-                    </>
+                    <div
+                      className="date bg-golden px-1 px-3 text-center"
+                      key={index}
+                    >
+                      <div className=" d-block fs-4"> {part}</div>
+                    </div>
                   ))}
                 </div>
                 <div

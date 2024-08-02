@@ -352,7 +352,7 @@ import {
   FaInstagramSquare,
 } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -386,13 +386,23 @@ const ContactUs = () => {
   // console.log("activeMarker", activeMarker);
 
   // Updated countries array to include multiple states within India
-  const states = [
-    { name: "Maharashtra", lat: 19.7515, lng: 75.7139 },
-    { name: "Karnataka", lat: 15.3173, lng: 75.7139 },
-    { name: "Tamil Nadu", lat: 11.1271, lng: 78.6569 },
-    { name: "Gujarat", lat: 22.2587, lng: 71.1924 },
-    { name: "Rajasthan", lat: 27.0238, lng: 74.2179 },
-  ];
+  // const states = [
+  //   { name: "Maharashtra", lat: 19.7515, lng: 75.7139 },
+  //   { name: "Karnataka", lat: 15.3173, lng: 75.7139 },
+  //   { name: "Tamil Nadu", lat: 11.1271, lng: 78.6569 },
+  //   { name: "Gujarat", lat: 22.2587, lng: 71.1924 },
+  //   { name: "Rajasthan", lat: 27.0238, lng: 74.2179 },
+  // ];
+  const memoizedStates = useMemo(
+    () => [
+      { name: "Maharashtra", lat: 19.7515, lng: 75.7139 },
+      { name: "Karnataka", lat: 15.3173, lng: 75.7139 },
+      { name: "Tamil Nadu", lat: 11.1271, lng: 78.6569 },
+      { name: "Gujarat", lat: 22.2587, lng: 71.1924 },
+      { name: "Rajasthan", lat: 27.0238, lng: 74.2179 },
+    ],
+    []
+  );
 
   const locations = [
     { name: "Maharshtra", coords: [19.7515, 75.7139] },
@@ -424,7 +434,7 @@ const ContactUs = () => {
       origin: new google.maps.Point(-15, 0),
     };
 
-    const newMarkers = states?.map((state) => {
+    const newMarkers = memoizedStates?.map((state) => {
       const marker = new google.maps.Marker({
         position: new google.maps.LatLng(state.lat, state.lng),
         map: mapInstance,
@@ -444,7 +454,7 @@ const ContactUs = () => {
       }
     };
     overlay.setMap(mapInstance);
-  }, [mapRef, states]);
+  }, [mapRef, memoizedStates]);
 
   const handleMouseEnter = (index: number) => {
     if (markers[index]) {

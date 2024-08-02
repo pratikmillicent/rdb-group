@@ -2,6 +2,7 @@
 
 import Heading from "@/components/heading/Heading";
 import React, { useEffect } from "react";
+import Image from "next/image";
 
 function Intro() {
   // function openAccordion(event: any) {

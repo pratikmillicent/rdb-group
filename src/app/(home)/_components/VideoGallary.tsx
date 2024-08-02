@@ -80,10 +80,10 @@ function VideoGallary() {
                   cy="100"
                   r="90"
                   fill="none"
-                  stroke-width="15"
+                  strokeWidth="15"
                   stroke="#fff"
                 />
-                <polygon points="70, 55 70, 145 145, 100" fill="#fff" />\
+                <polygon points="70, 55 70, 145 145, 100" fill="#fff" />
               </svg>
               {/* <img src={item.image} /> */}
               <Image

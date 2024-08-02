@@ -55,7 +55,7 @@ body.noise-img {
 
 body.noise-img:before {
   content: "";
-  background-image: url(../imgs/patterns/noise.png);
+  background-image: url(../assets/images/pin.jpg);
   background-size: 70px;
   background-repeat: repeat;
   position: absolute;
@@ -1085,7 +1085,7 @@ img {
 .progress-wrap::after {
   position: absolute;
   font-family: "Font Awesome 5 Free";
-  content: "\f077";
+  content: \f077;
   text-align: center;
   line-height: 44px;
   font-size: 13px;
@@ -3294,12 +3294,12 @@ body.loaded {
 /* ====================== [ End Overlay ] ====================== */
 /* Menu
 -----------------------------------------------------------------*/
-.navbar-home {
-  /* position: absolute;
+/* .navbar-home {
+  position: absolute;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.5) !important; */
-}
+  background: rgba(0, 0, 0, 0.5) !important;
+} */
 
 .navbar {
   height: 80px;
@@ -4801,7 +4801,8 @@ body.loaded {
   bottom: -30px;
   width: 200px;
   height: 200px;
-  background-image: url(../images/patterns/dots2.png);
+  /* background-image: url(../images/patterns/dots2.png); */
+  background-image: url(../assets/images/pin.jpg);
   background-repeat: repeat;
   z-index: -1;
 }
@@ -6713,7 +6714,7 @@ footer .bg-pattern {
 
 .workinter .lg-sec-head h2 {
   background: -webkit-linear-gradient(90deg, transparent, var(--white));
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
@@ -7546,7 +7547,8 @@ body.inter-center {
   width: 100%;
   height: 80%;
   background-color: #eff2f5;
-  background-image: url(../imgs/patterns/bg-pattern.png);
+  /* background-image: url(../imgs/patterns/bg-pattern.png); */
+  background-image: url(../assets/images/pin.jpg);
   background-size: auto;
   background-repeat: repeat;
   z-index: -1;
@@ -8716,7 +8718,8 @@ header.in-box {
   left: 0;
   width: 100%;
   height: 80%;
-  background-image: url(../imgs/svg-assets/left-quote.png);
+  /* background-image: url(../imgs/svg-assets/left-quote.png); */
+  background-image: url(../assets/images/pin.jpg);
   background-size: 50%;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -8993,7 +8996,8 @@ header.in-box {
   width: 100%;
   height: 80%;
   background-color: #eff2f5;
-  background-image: url(../imgs/patterns/bg-pattern.png);
+  /* background-image: url(../imgs/patterns/bg-pattern.png); */
+  background-image: url(../assets/images/pin.jpg);
   background-size: auto;
   background-repeat: repeat;
   z-index: -1;
@@ -9718,67 +9722,65 @@ header.in-box {
 
 @media only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px) {
-  .shop-cart {
+  /* .shop-cart {
     /* Force table to not be like tables anymore */
-    /* Hide table headers (but not display: none;, for accessibility) */
-  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+}
+*/ .shop-cart table {
+  width: 100%;
+}
 
-  .shop-cart table {
-    width: 100%;
-  }
+.shop-cart table,
+.shop-cart thead,
+.shop-cart tbody,
+.shop-cart th,
+.shop-cart td,
+.shop-cart tr {
+  display: block;
+}
 
-  .shop-cart table,
-  .shop-cart thead,
-  .shop-cart tbody,
-  .shop-cart th,
-  .shop-cart td,
-  .shop-cart tr {
-    display: block;
-  }
+.shop-cart thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
 
-  .shop-cart thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
+.shop-cart tr {
+  margin-bottom: 30px;
+  border: 1px solid #777;
+}
 
-  .shop-cart tr {
-    margin-bottom: 30px;
-    border: 1px solid #777;
-  }
+.shop-cart td {
+  /* Behave  like a "row" */
+  border: none;
+  border-bottom: 1px solid #999;
+  position: relative;
+  padding-left: 50%;
+}
 
-  .shop-cart td {
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #999;
-    position: relative;
-    padding-left: 50%;
-  }
+.shop-cart td:before {
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  white-space: nowrap;
+  /* Label the data */
+  content: attr(data-column);
+}
 
-  .shop-cart td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-    /* Label the data */
-    content: attr(data-column);
-  }
+.shop-cart td.remove {
+  text-align: left;
+}
 
-  .shop-cart td.remove {
-    text-align: left;
-  }
+.shop-cart .d-flex {
+  display: block !important;
+}
 
-  .shop-cart .d-flex {
-    display: block !important;
-  }
-
-  .shop-cart .ml-30 {
-    margin-left: 0 !important;
-    margin-top: 10px;
-  }
+.shop-cart .ml-30 {
+  margin-left: 0 !important;
+  margin-top: 10px;
 }
 
 .shop-cart .coupon input {

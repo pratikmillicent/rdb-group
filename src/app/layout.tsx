@@ -2,7 +2,6 @@
 "use client";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "@/app/globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import Cursor from "@/components/cursor/Cursor";
@@ -12,6 +11,10 @@ import Whatapps from "@/components/chat/Whatapps";
 import { Epilogue } from "next/font/google";
 import { useEffect } from "react";
 import Loader from "@/components/loader/Loader";
+// import "./css/plugins.css";
+import "@/app/globals.css";
+import "../../public/css/plugins.css";
+import "../../public/css/style.css";
 
 // const epilogue = Epilogue({
 //   subsets: ["latin"],
@@ -52,11 +55,6 @@ const Avenir = localFont({
   ],
 });
 
-// export const metadata: Metadata = {
-//   title: "RD Brothers Group",
-//   description: "RD Brothers Group",
-// };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -70,8 +68,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="/css/plugins.css" />
-        <link rel="stylesheet" href="/css/style.css" />
+        {/* <link rel="stylesheet" href="/css/plugins.css" />
+        <link rel="stylesheet" href="/css/style.css" /> */}
       </head>
       <body className={Avenir.className}>
         <Navbar />
@@ -104,11 +102,6 @@ export default function RootLayout({
           strategy="beforeInteractive"
           src="/assets/js/ScrollSmoother.min.js"
         ></Script>
-
-        {/* <Script
-          strategy="beforeInteractive"
-          src="/assets/js/gsap.min.js"
-        ></Script> */}
       </body>
     </html>
   );
