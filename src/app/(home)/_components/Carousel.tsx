@@ -20,7 +20,7 @@ export default function Carroussel3D(props) {
 
   return (
     <div
-    className="mt-60"
+    className="mt-30 mb-60"
       style={{ width: props.width, height: props.height, margin: props.margin }}
     >
       <Carousel

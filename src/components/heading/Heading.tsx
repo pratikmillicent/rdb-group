@@ -17,7 +17,7 @@ const Heading: React.FC<HeadingProps> = ({
 
   return (
     <h2
-      className={`${fontSize} fw-700 ${isSpace && "mb-80"}`}
+      className={`${fontSize} text-uppercase fw-700 mt-60 ${isSpace && "mb-80"}`}
       style={{ width: "fit-content " }}
     >
       <span className="text-golden">{firstLetter}</span>

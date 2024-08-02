@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
+import '../Animate.css'
 
 const locations = [
   "All Location",
@@ -8,7 +9,7 @@ const locations = [
   "UAE",
   "USA",
   "Russia",
-  "UK"
+  "UK",
 ];
 
 const CardList = ({ data }) => {
@@ -16,12 +17,21 @@ const CardList = ({ data }) => {
   const [animate, setAnimate] = useState(false);
 
   const handleLocationClick = (location) => {
+    setAnimate(true);
     setSelectedLocation(location);
   };
 
-  const filteredCards = selectedLocation === "All Location"
-    ? data
-    : data.filter(card => card.location === selectedLocation);
+  useEffect(()=>{
+    if(animate){
+      const timer = setTimeout (()=> setAnimate(false),500)
+      return ()=> clearTimeout (timer)
+    }
+  }, [animate])
+
+  const filteredCards =
+    selectedLocation === "All Location"
+      ? data
+      : data.filter(card => card.location === selectedLocation);
 
   return (
     <div className="container mt-60">
@@ -49,13 +59,20 @@ const CardList = ({ data }) => {
           See our open positions below!
         </p>
       </div>
-      <div className="d-flex align-items-center justify-content-center mb-20 text-grey fz-16 fw-600"
-        style={{ width: "fit-content", margin: "auto", borderBottom: "1px solid grey" }}
+      <div
+        className="d-flex align-items-center justify-content-center mb-20 text-grey fz-16 fw-600"
+        style={{
+          width: "fit-content",
+          margin: "auto",
+          borderBottom: "1px solid grey",
+        }}
       >
         {locations.map((city, index) => (
           <div
             key={index}
-            className={`mx-3 ${selectedLocation === city ? "text-golden fw-bold" : ""}`}
+            className={`mx-3 ${
+              selectedLocation === city ? "text-golden fw-bold" : ""
+            }`}
             style={{ cursor: "pointer" }}
             onClick={() => handleLocationClick(city)}
           >
@@ -65,7 +82,7 @@ const CardList = ({ data }) => {
       </div>
       <div className="row justify-content-center">
         {filteredCards.map((item, index) => (
-          <div className="col-lg-4 col-md-6 col-sm-12 mt-30 mb-4" key={index}>
+          <div className={`col-lg-4 col-md-6 col-sm-12 mt-30 mb-4 ${animate ? 'fade-in' : ""} `} key={index}>
             <Card
               icon={item.icon}
               position={item.position}

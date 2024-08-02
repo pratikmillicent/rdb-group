@@ -517,11 +517,11 @@ const News = () => {
       />
       <div className="container">
         <section
-          className="blog-modern section-padding"
+          className="blog-modern"
           style={{ paddingBottom: "60px" }}
         >
           <div className="container">
-            <div className="sec-lg-head mb-30">
+            <div className="sec-lg-head">
               <div className="row">
                 <div className="col-lg-8">
                   {/* <div className="fz-50 fw-600">LATEST NEWS</div> */}
@@ -542,7 +542,7 @@ const News = () => {
                       className="wow fadeInUp"
                       data-wow-delay=".1s"
                     >
-                      <div className="item p-0">
+                      <div className="item p-0 outset-borders">
                         <div className="img img-container">
                           <img
                             src={item.image}

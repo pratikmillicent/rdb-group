@@ -83,6 +83,7 @@
 
 import React, { useState } from 'react';
 import './VisionMission.css';
+import Heading from '@/components/heading/Heading';
 
 const VisionMission = () => {
   const [selectedTab, setSelectedTab] = useState('mission');
@@ -117,7 +118,8 @@ const VisionMission = () => {
         {/* Content Box */}
         <div className="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-col justify-content-center align-items-center">
           <div className="mb-4">
-            <h2 className='text-center text-grey'>Overview</h2>
+            {/* <h2 className='text-center text-grey'>Overview</h2> */}
+            <Heading headTitle='Overview'/>
           </div>
           <div className="mb-4 d-flex flex-wrap">
             <button

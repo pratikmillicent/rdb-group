@@ -114,7 +114,7 @@ const NewGroupGrid: React.FC = () => {
   };
 
   return (
-    <section className="portfolio section-padding">
+    <section className="portfolio">
       <div className="">
         <div className="sec-lg-head mb-10">
           <div className="row">

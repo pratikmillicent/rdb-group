@@ -85,7 +85,7 @@ function Footer() {
         </div>
         <div className="sub-footer pt-40 pb-40 bord-thin-top ontop">
           <div className="container">
-            <div className="row">
+            <div className="row d-flex align-items-center justify-content-center">
               <div className="col-lg-4">
                 <div className="logo">
                   <Link href="#">

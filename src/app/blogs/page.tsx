@@ -146,11 +146,11 @@ const Blog = () => {
       <img src="/assets/images/blog/banner.png" style={{ height: "100vh" }} />
       <div className="container">
         <section
-          className="blog-modern section-padding"
+          className="blog-modern"
           style={{ paddingBottom: "60px" }}
         >
           <div className="container">
-            <div className="sec-lg-head mb-35">
+            <div className="sec-lg-head">
               <div className="row">
                 <div className="col-lg-8">
                   {/* <Heading headTitle="Blogs" fontSize="fs-1" /> */}

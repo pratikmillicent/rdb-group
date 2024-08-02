@@ -11,7 +11,7 @@ const page = () => {
       <img src="/assets/images2/career.jpg" style={{ height: "100vh" }} />
       <div className="container">
         <div className="work-header ">
-          <div className="mt-60 ">
+          <div className="section-padding">
             <div>
               <div className="caption text-grey">
                 <h6 className="sub-title">INTRODUCTION</h6>
@@ -33,11 +33,11 @@ const page = () => {
               ways.
             </p>
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
-            <div style={{ paddingTop: "60px" }}>
+            <div>
               <Heading headTitle="Open Positions" />
               {/* <div className="fz-35 fw-600">Open Positions</div> */}
             </div>
-            <p className="mt-30 text-dark">
+            <p className="text-dark">
               Join us in shaping the future. Explore current openings across our
               global network.
             </p>
@@ -114,7 +114,7 @@ const cardData = [
     description: "A talented Creative Director to join our team.",
   },
   {
-    icon: "/assets/images2/zebra.svg",
+    icon: "/assets/images2/project-manager.png",
     position: "Chief Strategy Officer",
     location: "China",
     description: "A talented Chief Strategy Officer to join our team.",
@@ -132,7 +132,7 @@ const cardData = [
     description: "A talented Sr. Software Engineer to join our team.",
   },
   {
-    icon: "/assets/images2/zebra.svg",
+    icon: "/assets/images2/entrepreneur.png",
     position: "Branch Manager",
     location: "UAE",
     description: "A talented Sr. Software Engineer to join our team.",
@@ -144,7 +144,7 @@ const cardData = [
     description: "A talented Sr. Software Engineer to join our team.",
   },
   {
-    icon: "/assets/images2/zebra.svg",
+    icon: "/assets/images2/entrepreneur.png",
     position: "Branch Manager",
     location: "UK",
     description: "A talented Sr. Software Engineer to join our team.",
