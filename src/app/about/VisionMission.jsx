@@ -5,7 +5,7 @@ import './VisionMission.css';
 import Heading from '@/components/heading/Heading';
 
 const VisionMission = () => {
-  const [selectedTab, setSelectedTab] = useState('mission');
+  const [selectedTab, setSelectedTab] = useState('about');
   const [animate, setAnimate] = useState(false);
 
   const tabStyle = (isSelected) => ({
@@ -41,6 +41,13 @@ const VisionMission = () => {
           </div>
           <div className="mb-4 d-flex flex-wrap">
             <button
+              style={tabStyle(selectedTab === 'about')}
+              onClick={() => handleTabClick('about')}
+              className="me-2 mb-2"
+            >
+              Abouts us
+            </button>
+            <button
               style={tabStyle(selectedTab === 'mission')}
               onClick={() => handleTabClick('mission')}
               className="me-2 mb-2"
@@ -56,6 +63,12 @@ const VisionMission = () => {
             </button>
           </div>
           <div className={`tab-content p-5 text-center ${animate ? 'slide-in' : ''}`}>
+            {selectedTab === 'about' && (
+              <p>
+                With a team of over 40 dedicated professionals, averaging more than
+                7 years of experience each, we add a touch of Professionalism to everything we do.
+              </p>
+            )}
             {selectedTab === 'mission' && (
               <p>
                 To deliver professionalism and add a touch of Indian warmth to
@@ -76,11 +89,8 @@ const VisionMission = () => {
           <div className="ratio ratio-4x3">
 
             <Image
-              src={
-                selectedTab === 'vision'
-                  ? '/assets/images2/our-vision.jpg'
-                  : '/assets/images2/our-mission.jpg'
-              }
+
+              src={selectedTab === "vision" ? "/assets/images2/our-vision.jpg" : selectedTab === "mission" ? "/assets/images2/our-mission.jpg" : "/assets/images2/news3.webp"}
               className={`img-fluid h-100 ${animate ? 'fade-in' : ''}`}
               alt={selectedTab}
               width={800}
