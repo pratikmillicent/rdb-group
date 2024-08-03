@@ -6,7 +6,7 @@ function CoreValue2() {
       <div className="container">
         <div className="row justify-content-center mb-60">
           <div className="col-lg-6 text-center">
-            <div className="text">
+            <div className="text text-grey">
               <h3>There’s no such thing as too young to be experienced</h3>
             </div>
           </div>
@@ -26,7 +26,7 @@ function CoreValue2() {
                       <i className={` ${item.icon} fs-1 main-color4`}></i>
                     </div>
                     <Split>
-                      <h4>{item?.name}</h4>
+                      <h4 className="text-grey">{item?.name}</h4>
                     </Split>
                   </div>
                 </div>

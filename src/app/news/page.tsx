@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import ModalVideo from "@/components/modal-video/ModalVideo";
+import Heading from "@/components/heading/Heading";
+import CarouselEvent from "../(home)/_components/CardImagesCarousel";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -76,10 +78,11 @@ const News = () => {
           style={{ paddingBottom: "60px" }}
         >
           <div className="container">
-            <div className="sec-lg-head mb-30">
+            <div className="sec-lg-head">
               <div className="row">
                 <div className="col-lg-8">
-                  <div className="fz-50 fw-600">LATEST NEWS</div>
+                  {/* <div className="fz-50 fw-600">LATEST NEWS</div> */}
+                  <Heading headTitle="Latest News" />
                 </div>
               </div>
             </div>
@@ -138,6 +141,9 @@ const News = () => {
           </div>
         </section>
       </div>
+
+      <CarouselEvent />
+
       <ModalVideo isOpen={isVideoOpen} onClose={() => setIsVideoOpen(null)} />
     </>
   );

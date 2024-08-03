@@ -8,6 +8,7 @@ import Carroussel3D from "./_components/Carousel";
 import NewGroupGrid from "./_components/NewGroup";
 import CarouselEvent from "./_components/CardImagesCarousel";
 import VisionMission from "../about/VisionMission";
+import Heading from "@/components/heading/Heading";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -71,18 +72,27 @@ export default function Home() {
 
         <VisionMission />
         <NewGroupGrid />
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Heading headTitle="Events" />
+        </div>
+
         <Carroussel3D
           cards={cards}
           height="500px"
-          width="10%"
+          // width="40%"
           margin="0 auto"
-          offset={2}
+          offset={5}
           showArrows={false}
         />
 
         <News />
         <VideoGallary />
-        <CarouselEvent />
       </main>
     </ParallaxProvider>
   );

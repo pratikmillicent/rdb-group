@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import Link from "next/link";
-import loadBackgroudImages from "../../../common/loadBackgroudImages";
-import isInView from "../../../common/isInView";
+import loadBackgroudImages from "@/common/loadBackgroudImages";
+import isInView from "@/common/isInView";
+import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 
 interface DataItem {
@@ -16,7 +17,7 @@ interface DataItem {
 const data: DataItem[] = [
   {
     id: 1,
-    image: "assets/images2/img1.jpg",
+    image: "assets/images2/news2.jpg",
     number: "01.",
     type: "Properties",
     title: "Aspect Global Ventures Pvt.Ltd.",
@@ -26,22 +27,22 @@ const data: DataItem[] = [
     id: 2,
     image: "assets/images2/img2.jpg",
     number: "02.",
-    type: "Proptech",
+    type: "Reality",
     title: "Aspect Bullion & Refinery",
     text: "We craft premium designs for agencies and global brands around the globe.",
   },
   {
     id: 3,
-    image: "assets/images2/img3.jpg",
+    image: "assets/images2/Fractal.jpg",
     number: "03.",
-    type: "Realty",
+    type: "Fracto",
     title: "Aspect Infrastructure",
     text: "We craft premium designs for agencies and global brands around the globe.",
   },
 
   {
     id: 4,
-    image: "assets/images2/img1.jpg",
+    image: "assets/images/home/movie.webp",
     number: "04.",
     type: "Movies",
     title: "Aspect Infrastructure",
@@ -49,16 +50,8 @@ const data: DataItem[] = [
   },
   {
     id: 5,
-    image: "assets/images2/img2.jpg",
+    image: "assets/images2/business.jpg",
     number: "05.",
-    type: "Marketing",
-    title: "Ecomix Concrete",
-    text: "We craft premium designs for agencies and global brands around the globe.",
-  },
-  {
-    id: 6,
-    image: "assets/images2/img3.jpg",
-    number: "06.",
     type: "Business",
     title: "Luxury Glassware",
     text: "We craft premium designs for agencies and global brands around the globe.",
@@ -74,7 +67,7 @@ const NewGroupGrid: React.FC = () => {
 
   const handleShowTabs = () => {
     isInView({
-      selector: ".portfolio-fixed .sub-bg .cont",
+      selector: ".portfolio-fixed .cont",
       isElements: true,
       callback(element: Element) {
         element.classList.add("current");
@@ -124,13 +117,18 @@ const NewGroupGrid: React.FC = () => {
   };
 
   return (
-    <section className="portfolio section-padding">
+    <section className="portfolio">
       <div className="">
         <div className="sec-lg-head mb-10">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-12">
               <div className="position-re">
-                <div className="fz-50 fw-600 ">Groups Websites</div>
+                <div className="fz-50 fw-600 ">
+                  {/* <span className="text-golden">G</span>roups Websites */}
+                  <div style={{ display: "flex", justifyContent: "center" }}>
+                    <Heading headTitle="Group Websites" />
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center"></div>
@@ -145,6 +143,7 @@ const NewGroupGrid: React.FC = () => {
                     <div
                       id={`tab-${index + 1}`}
                       className="img bg-img"
+                      style={{ objectFit: "cover" }}
                       data-background={`${item.image}`}
                       key={index}
                     />
@@ -166,10 +165,10 @@ const NewGroupGrid: React.FC = () => {
                         height={500}
                       />
                     </div>
-                    <span className="sub-title mb-15">
+                    <span className="sub-title mb-15 fz-24 fw-600 text-grey">
                       {item.number} {item.type}
                     </span>
-                    <h2 className="mb-15">{item.title}.</h2>
+                    {/* <h2 className="mb-15 text-grey">{item.title}.</h2> */}
                     <div className="row">
                       <div className="col-md-9">
                         <p>{item.text}.</p>

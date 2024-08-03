@@ -1,3 +1,4 @@
+import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import React from "react";
 
@@ -5,7 +6,8 @@ const DirectorCard = () => {
   return (
     <>
       <div className="container">
-        <h3 className="d-flex justify-content-center pb-3">OUR LEADERS</h3>
+        {/* <h3 className="d-flex justify-content-center pb-3">OUR LEADERS</h3> */}
+        <Heading headTitle="Our Leaders"/>
 
         <div className="row">
           {DirectorCardData.map((data, key) => (
@@ -27,7 +29,7 @@ const DirectorCard = () => {
               </div>
 
               <div>
-                <h4 className="pt-3 pb-1 m-0">{data?.name}</h4>
+                <h4 className="pt-3 pb-1 m-0 text-grey">{data?.name}</h4>
                 <div className="fs-5">{data?.role}</div>
                 <hr className="bg-golden" />
                 <p className="fs-6 py-0">{data?.description}</p>

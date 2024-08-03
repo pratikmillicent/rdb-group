@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import "./blog.css";
+import Heading from "@/components/heading/Heading";
 
 const Blog = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
@@ -155,15 +156,14 @@ const Blog = () => {
       />
 
       <div className="container">
-        <section
-          className="blog-modern section-padding"
-          style={{ paddingBottom: "60px" }}
-        >
+        <section className="blog-modern" style={{ paddingBottom: "60px" }}>
           <div className="container">
-            <div className="sec-lg-head mb-35">
+            <div className="sec-lg-head">
               <div className="row">
                 <div className="col-lg-8">
-                  <div className="fz-50 fw-600">Blogs</div>
+                  {/* <Heading headTitle="Blogs" fontSize="fs-1" /> */}
+                  {/* <div className="fz-50 fw-600">Blogs</div> */}
+                  <Heading headTitle="Blogs" />
                 </div>
               </div>
             </div>

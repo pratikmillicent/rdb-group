@@ -1,6 +1,8 @@
 "use client";
+import Heading from "@/components/heading/Heading";
 import ResumeUpload from "@/components/Resume-upload/ResumeUpload";
 import React from "react";
+import CardList from "./components/CardList";
 import Image from "next/image";
 
 const page = () => {
@@ -16,9 +18,9 @@ const page = () => {
       />
       <div className="container">
         <div className="work-header ">
-          <div className="mt-60 ">
+          <div className="section-padding">
             <div>
-              <div className="caption">
+              <div className="caption text-grey">
                 <h6 className="sub-title">INTRODUCTION</h6>
                 <h2>Working at R.D.Brothers property consultants LLP</h2>
               </div>
@@ -26,7 +28,7 @@ const page = () => {
           </div>
         </div>
         <div className="d-flex gap-3 mb-80">
-          <div className="">
+          <div className="text-grey">
             <p className="text-dark fz-20 fw-bold mb-3">
               FASCINATING WORK, ENDLESS OPPORTUNITY
             </p>
@@ -37,10 +39,12 @@ const page = () => {
               women and men as they push boundaries in this new age with new
               ways.
             </p>
+            {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
             <div style={{ paddingTop: "60px" }}>
-              <div className="fz-35 fw-600">Open Positions</div>
+              <Heading headTitle="Open Positions" />
+              {/* <div className="fz-35 fw-600">Open Positions</div> */}
             </div>
-            <p className="mt-30 text-dark">
+            <p className="text-dark">
               Join us in shaping the future. Explore current openings across our
               global network.
             </p>
@@ -71,6 +75,7 @@ const page = () => {
             </div>
           </div>
         </div>
+        <CardList data={cardData} />
         <ResumeUpload />
       </div>
     </>
@@ -99,5 +104,55 @@ const data = [
     description: "Branch Manager(Food & Beverage)",
     qualifications:
       "20 - 25 years experience with BE Civil and similar experience with Developers",
+  },
+];
+
+const cardData = [
+  {
+    icon: "/assets/images2/setting.svg",
+    position: "Operations Manager",
+    location: "India",
+    description: "A talented Operations Manager to join our team.",
+  },
+  {
+    icon: "/assets/images2/mind.svg",
+    position: "Creative Director",
+    description: "A talented Creative Director to join our team.",
+  },
+  {
+    icon: "/assets/images2/project-manager.png",
+    position: "Chief Strategy Officer",
+    location: "China",
+    description: "A talented Chief Strategy Officer to join our team.",
+  },
+  {
+    icon: "/assets/images2/radio.svg",
+    position: "Sr. Software Engineer",
+    location: "India",
+    description: "A talented Sr. Software Engineer to join our team.",
+  },
+  {
+    icon: "/assets/images2/mind.svg",
+    position: "Project Manager",
+    location: "USA",
+    description: "A talented Sr. Software Engineer to join our team.",
+  },
+  {
+    icon: "/assets/images2/entrepreneur.png",
+    position: "Branch Manager",
+    location: "UAE",
+    description: "A talented Sr. Software Engineer to join our team.",
+  },
+  {
+    icon: "/assets/images2/mind.svg",
+    position: "Project Manager",
+    location: "Russia",
+    description: "A talented Sr. Software Engineer to join our team.",
+  },
+  {
+    icon: "/assets/images2/entrepreneur.png",
+    position: "Branch Manager",
+    location: "UK",
+    description: "A talented Sr. Software Engineer to join our team.",
   },
 ];

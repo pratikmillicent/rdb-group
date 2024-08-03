@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
+import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 
 const data = [
@@ -83,13 +84,14 @@ function News() {
   }, []);
 
   return (
-    <section className="blog-modern section-padding mt-0">
+    <section className="blog-modern">
       <div className="container">
         <div className="sec-lg-head mb-10">
           <div className="row">
             <div className="col-lg-8">
               <div className="position-re">
-                <div className="fz-50 fw-600">Latest News</div>
+                {/* <div className="fz-50 fw-600">Latest News</div> */}
+                <Heading headTitle="Latest News" />
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center">

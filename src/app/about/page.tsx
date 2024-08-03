@@ -28,7 +28,7 @@ function About() {
 
         <DirectorCard />
         <Team />
-        <TeamSection />
+        {/* <TeamSection /> */}
         <CoreValue2 />
         <CallToAction />
       </main>
