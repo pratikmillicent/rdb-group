@@ -17,15 +17,6 @@ const OurStory = () => {
             borderRadius: "15px 50px",
           }}
         >
-          {/* <img
-            src={`/assets/images2/Dhaval.jpg`}
-            style={{
-              height: "600px",
-              width: "300px",
-              borderRadius: "15px 0px 0px 15px",
-            }}
-            alt="icon2"
-          /> */}
           <Image
             src={`/assets/images2/Dhaval.jpg`}
             alt="Landscape picture"
@@ -48,15 +39,6 @@ const OurStory = () => {
             }}
             height={500}
           />
-          {/* <img
-            src={`/assets/images2/Raj.jpg`}
-            alt="icon2"
-            style={{
-              height: "600px",
-              width: "300px",
-              borderRadius: "0px 60px 15px 0px",
-            }}
-          /> */}
         </div>
       </div>
 

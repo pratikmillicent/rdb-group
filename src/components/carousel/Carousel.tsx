@@ -51,8 +51,7 @@ function Carousel({
   }, []);
 
   return (
-    // <section className={`work-carsouel full-height valign light`}>
-      <section className={`work-carsouel valign light`}>
+    <section className={`work-carsouel valign light`}>
       <div className="container-fluid rest">
         <div className="row">
           <div className="col-12">

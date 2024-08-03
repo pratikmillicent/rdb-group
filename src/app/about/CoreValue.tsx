@@ -1,4 +1,3 @@
-// src/CoreValuesImage.js
 import React from "react";
 import Image from "next/image";
 
@@ -6,12 +5,6 @@ const CoreValuesImage = () => {
   const coreImage = "/assets/images2/Core.jpg";
   return (
     <div className="position-relative text-center text-white">
-      {/* <img
-        src={coreImage}
-        alt="Core Values"
-        className="img-fluid"
-        style={{ height: "100vh", objectFit: "cover" }}
-      /> */}
       <Image
         src={coreImage}
         className="img-fluid"
@@ -33,7 +26,6 @@ const CoreValuesImage = () => {
         }}
       >
         <div className="position-absolute top-0 start-0 p-3">
-          {/* <i className="fa-regular fa-lightbulb"></i> */}
           <h2 className="main-color4 main-colorbg3 px-2 mx-2 rounded">
             Our Core Values
           </h2>
@@ -41,7 +33,6 @@ const CoreValuesImage = () => {
         <div
           className="main-colorbg3 position-absolute bottom-0 start-0 end-0 d-flex justify-content-around p-3"
           style={{
-            // backgroundColor: "#000",
             opacity: 0.8,
           }}
         >

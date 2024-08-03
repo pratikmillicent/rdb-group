@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -125,7 +124,7 @@ function News() {
               id="content-carousel-container-unq-blog"
               className="swiper-container"
             >
-              {data.map((item) => (
+              {data?.map((item) => (
                 <SwiperSlide
                   key={item.id}
                   className="wow fadeInUp"
@@ -133,14 +132,6 @@ function News() {
                 >
                   <div className="item">
                     <div className="img outset-border">
-                      {/* <img
-                        src={item.cover}
-                        alt=""
-                        style={{
-                          height: "320px",
-                          objectFit: "cover",
-                        }}
-                      /> */}
                       <Image
                         src={item.cover}
                         alt="Landscape picture"

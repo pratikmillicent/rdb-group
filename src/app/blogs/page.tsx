@@ -1,9 +1,9 @@
 "use client";
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Heading from "@/components/heading/Heading";
-import "./blog.css";
 import Image from "next/image";
+import "./blog.css";
 
 const Blog = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
@@ -145,7 +145,6 @@ const Blog = () => {
 
   return (
     <>
-      {/* <img src="/assets/images/blog/banner.png" style={{ height: "100vh" }} /> */}
       <Image
         src="/assets/images/blog/banner.png"
         className="circle-img"
@@ -164,7 +163,6 @@ const Blog = () => {
             <div className="sec-lg-head mb-35">
               <div className="row">
                 <div className="col-lg-8">
-                  {/* <Heading headTitle="Blogs" fontSize="fs-1" /> */}
                   <div className="fz-50 fw-600">Blogs</div>
                 </div>
               </div>

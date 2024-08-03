@@ -18,8 +18,6 @@ const Heading: React.FC<HeadingProps> = ({
     >
       {headTitle}
     </h2>
-    // <div className="position-re">
-    // </div>
   );
 };
 

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
+import { useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import Image from "next/image";
+import Link from 'next/link';
 
 const teamMembers = [
     {
@@ -56,7 +56,6 @@ const TeamSection = () => {
     return (
         <div className="team-section">
             <div className="team-column">
-                {/* <img src={teamMembers[0].imgSrc} alt={teamMembers[0].name} /> */}
                 <Image
                     src={teamMembers[0].imgSrc}
                     className="img-fluid"
@@ -83,7 +82,6 @@ const TeamSection = () => {
                     className="team-column"
                     onMouseEnter={() => setHoveredMember(index + 1)}
                 >
-                    {/* <img src={member.imgSrc} alt={member.name} /> */}
                     <Image
                         src={member.imgSrc}
                         alt={member.name}

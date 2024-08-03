@@ -1,28 +1,14 @@
 @charset "UTF-8";
 
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Geekfolio
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: UI-ThemeZ
-    Author URI: http://themeforest.net/user/UI-ThemeZ
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
-/* Variables
------------------------------------------------------------------*/
 :root {
   --background: #f1f3f5;
   --foreground: #1d1d1d;
-  --navy: #1f2d58;
+  --navy: rgb(23, 38, 57);
   --white: #fff;
   --grey: #3a3a3d;
   --golden: #d4af5f;
 }
 
-/* Typography
------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +20,10 @@
 
 .text-golden {
   color: var(--golden);
+}
+
+.bg-navy {
+  background-color: var(--navy);
 }
 
 .bg-golden {
@@ -124,7 +114,7 @@ main {
   top: -10px;
 }
 
-*/ .awd_line {
+.awd_line {
   height: 3px;
   background-color: var(--navy);
   width: 14%;
@@ -161,7 +151,6 @@ main {
   height: 80px;
 }
 
-/*career*/
 .career_line {
   background: var(--navy);
   height: 3px;
@@ -173,10 +162,8 @@ main {
   margin-top: 25px;
   position: relative;
   z-index: 2;
-  /* color: ;  */
 }
 
-/* contact us */
 .main_box {
   height: 600px;
 }
@@ -356,7 +343,6 @@ h6 {
 }
 
 p {
-  /* line-height: 1.8; */
   font-size: 18px;
   font-weight: 300;
   color: #696969;
@@ -518,8 +504,6 @@ img {
   border-radius: 40px;
 }
 
-/* Frame  */
-
 .image-container {
   position: relative;
   display: inline-block;
@@ -528,41 +512,30 @@ img {
 .image-frame {
   position: absolute;
   top: 30px;
-  /* Adjust the offset from the top */
   left: 30px;
-  /* Adjust the offset from the left */
   width: calc(100% + 20px);
-  /* Match the image width and include the offset */
   height: calc(100% + 20px);
-  /* Match the image height and include the offset */
   border: 10px solid #bea655;
-  /* Light golden color for the frame */
   pointer-events: none;
-  /* Prevent the frame from blocking interaction with the image */
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .image-frame {
     top: -5px;
-    /* Smaller offset for smaller devices */
     left: -5px;
     width: calc(100% + 10px);
     height: calc(100% + 10px);
     border: 3px solid #d4af37;
-    /* Thinner border for smaller devices */
   }
 }
 
 @media (max-width: 480px) {
   .image-frame {
     top: -3px;
-    /* Even smaller offset */
     left: -3px;
     width: calc(100% + 6px);
     height: calc(100% + 6px);
     border: 2px solid #d4af37;
-    /* Thinner border */
   }
 }
 
@@ -570,7 +543,6 @@ img {
   position: relative;
   display: inline-block;
   margin: 20px;
-  /* Add some margin if needed */
 }
 
 .golden-background {
@@ -580,13 +552,9 @@ img {
   width: 100%;
   height: 100%;
   background-color: #d4af37;
-  /* Light golden color */
   z-index: -1;
-  /* Place the background behind the image */
 }
 
-/* Buttons
------------------------------------------------------------------*/
 .butn {
   border: 1px solid transparent;
 }
@@ -669,7 +637,6 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  /* background: #c9f31d; */
   background: var(--golden);
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -860,8 +827,6 @@ img {
   }
 }
 
-/* Cursor
------------------------------------------------------------------*/
 .hover-this .hover-anim {
   pointer-events: none;
   -webkit-transition: -webkit-transform 0.2s linear;
@@ -1117,8 +1082,6 @@ img {
   transition: all 400ms linear;
 }
 
-/* Extra
------------------------------------------------------------------*/
 .d-rotate {
   -webkit-perspective: 1000px;
   perspective: 1000px;
@@ -1291,7 +1254,6 @@ img {
 
 .main-marq .box .item h4 .icon {
   font-family: "Sora", sans-serif;
-  /* margin-bottom: 30px; */
 }
 
 .main-marq .box .item h2 {
@@ -1568,7 +1530,6 @@ img {
   filter: blur(0px);
 }
 
-/* ====================== [ Start Helper Classes  ] ====================== */
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1715,7 +1676,6 @@ img.left {
 }
 
 .section-padding {
-  /* padding: 120px 0; */
   padding-top: 60px;
 }
 
@@ -1886,9 +1846,6 @@ img.left {
   box-shadow: 0px 8px 30px -4px rgba(0, 0, 0, 0.1);
 }
 
-/*-------------------------------------------------------
-           icon Size
--------------------------------------------------------*/
 .icon-img-20 {
   width: 20px;
 }
@@ -1929,9 +1886,6 @@ img.left {
   width: 120px;
 }
 
-/*-------------------------------------------------------
-           Z-index
--------------------------------------------------------*/
 .zindex-1 {
   z-index: 1;
 }
@@ -1960,9 +1914,6 @@ img.left {
   z-index: 99;
 }
 
-/*-------------------------------------------------------
-           opacity
--------------------------------------------------------*/
 .opacity-05 {
   opacity: 0.05 !important;
 }
@@ -2007,9 +1958,6 @@ img.left {
   opacity: 0.9 !important;
 }
 
-/*-------------------------------------------------------
-           text color
--------------------------------------------------------*/
 .text-white {
   color: var(--white);
 }
@@ -2034,9 +1982,6 @@ img.left {
   color: var(--white) !important;
 }
 
-/*-------------------------------------------------------
-          font-weight
--------------------------------------------------------*/
 .fw-100 {
   font-weight: 100 !important;
 }
@@ -2073,9 +2018,6 @@ img.left {
   font-weight: 900 !important;
 }
 
-/*-------------------------------------------------------
-            font-size
--------------------------------------------------------*/
 .fz-10 {
   font-size: 10px !important;
 }
@@ -2184,9 +2126,6 @@ img.left {
   font-size: 80px !important;
 }
 
-/*-------------------------------------------------------
-          line-height
--------------------------------------------------------*/
 .line-height-1 {
   line-height: 1;
 }
@@ -2291,9 +2230,6 @@ img.left {
   line-height: 120px;
 }
 
-/*-------------------------------------------------------
-          text-transform
--------------------------------------------------------*/
 .text-u {
   text-transform: uppercase !important;
 }
@@ -2322,9 +2258,6 @@ img.left {
   text-align: right;
 }
 
-/*-------------------------------------------------------
-           letter-spacing
--------------------------------------------------------*/
 .ls0 {
   letter-spacing: 0px !important;
 }
@@ -2385,9 +2318,6 @@ img.left {
   letter-spacing: 30px !important;
 }
 
-/*-------------------------------------------------------
-       margin-top  (0/100) +5
--------------------------------------------------------*/
 .mt-0 {
   margin-top: 0 !important;
 }
@@ -2476,9 +2406,6 @@ img.left {
   margin-top: 100px !important;
 }
 
-/*-------------------------------------------------------
-       margin-bottom  (0/100) +5
--------------------------------------------------------*/
 .mb-0 {
   margin-bottom: 0 !important;
 }
@@ -2567,9 +2494,6 @@ img.left {
   margin-bottom: 100px !important;
 }
 
-/*-------------------------------------------------------
-       margin-right  (0/100) +5
--------------------------------------------------------*/
 .mr-0 {
   margin-right: 0 !important;
 }
@@ -2658,9 +2582,6 @@ img.left {
   margin-right: 100px !important;
 }
 
-/*-------------------------------------------------------
-       margin-left  (0/100) +5
--------------------------------------------------------*/
 .m-auto {
   margin: auto;
 }
@@ -2767,9 +2688,6 @@ img.left {
   margin-right: -30px;
 }
 
-/*-------------------------------------------------------
-      margin left right  (0/50) +5
--------------------------------------------------------*/
 .margin-rl-5 {
   margin-right: 5px;
   margin-left: 5px;
@@ -2820,9 +2738,6 @@ img.left {
   margin-left: 50px;
 }
 
-/*-------------------------------------------------------
-      padding-top  (0/100) +5
--------------------------------------------------------*/
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -2907,9 +2822,6 @@ img.left {
   padding-top: 100px !important;
 }
 
-/*-------------------------------------------------------
-     padding-bottom  (0/100) +5
--------------------------------------------------------*/
 .pb-0 {
   padding-bottom: 0 !important;
 }
@@ -3014,9 +2926,6 @@ img.left {
   padding-left: 50px;
 }
 
-/*-------------------------------------------------------
-      padding left right  (0/50) +5
--------------------------------------------------------*/
 .padding-rl-5 {
   padding-right: 5px;
   padding-left: 5px;
@@ -3067,9 +2976,6 @@ img.left {
   padding-left: 50px;
 }
 
-/* ====================== [ End Helper Classes  ] ====================== */
-/* Preloader
------------------------------------------------------------------*/
 body.loaded {
   overflow: hidden !important;
   height: 100% !important;
@@ -3172,7 +3078,6 @@ body.loaded {
   }
 }
 
-/* ====================== [ Start Overlay ] ====================== */
 [data-overlay-dark],
 [data-overlay-light] {
   position: relative;
@@ -3291,16 +3196,6 @@ body.loaded {
   opacity: 1;
 }
 
-/* ====================== [ End Overlay ] ====================== */
-/* Menu
------------------------------------------------------------------*/
-/* .navbar-home {
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.5) !important;
-} */
-
 .navbar {
   height: 80px;
   background: var(--white);
@@ -3384,9 +3279,6 @@ body.loaded {
 }
 
 .navbar.nav-scroll {
-  /* background: var(--navy) !important; */
-  /* border-color: rgba(0, 0, 0, 0.05); */
-  /* padding: 10px; */
   position: fixed;
   top: -80px;
   -webkit-transition: -webkit-transform 0.5s;
@@ -3405,7 +3297,6 @@ body.loaded {
 
 .navbar .navbar-nav .nav-link {
   text-transform: uppercase;
-  /* letter-spacing: 1px; */
   font-size: 14px;
   font-weight: 500;
   color: var(--foreground);
@@ -3416,12 +3307,9 @@ body.loaded {
 .navbar {
   text-transform: uppercase;
   letter-spacing: 1px;
-  /* padding: 15px 15px 10px 15px; */
   font-size: 13px;
   font-weight: 600;
   color: var(--foreground);
-  /* padding: 20px 10px 15px 10px; */
-  /* margin: 0 15px; */
 }
 
 .navbar .navbar-nav .nav-link .rolling-text {
@@ -4155,8 +4043,6 @@ body.loaded {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Titles
------------------------------------------------------------------*/
 .sec-head h2 {
   font-size: 60px;
 }
@@ -4337,8 +4223,6 @@ body.loaded {
   text-decoration: underline;
 }
 
-/* About
------------------------------------------------------------------*/
 .about-intro .imgs {
   position: relative;
 }
@@ -4801,7 +4685,6 @@ body.loaded {
   bottom: -30px;
   width: 200px;
   height: 200px;
-  /* background-image: url(../images/patterns/dots2.png); */
   background-image: url(../assets/images/pin.jpg);
   background-repeat: repeat;
   z-index: -1;
@@ -4888,8 +4771,6 @@ body.loaded {
   background-position: center center;
 }
 
-/* Awards
------------------------------------------------------------------*/
 .awards-box .awrd-items .item {
   padding: 80px 30px;
   background: var(--background);
@@ -4982,8 +4863,6 @@ body.loaded {
   fill: var(--white);
 }
 
-/* Blogs
------------------------------------------------------------------*/
 .blog-list .item {
   padding: 40px;
   position: relative;
@@ -5476,8 +5355,6 @@ body.loaded {
   text-align: center;
 }
 
-/* Brands
------------------------------------------------------------------*/
 .brands .swiper-container {
   overflow: visible;
 }
@@ -5654,8 +5531,6 @@ body.loaded {
   opacity: 1;
 }
 
-/* Contact
------------------------------------------------------------------*/
 .call-action-img .sec-bg-img {
   height: 450px;
   width: 130%;
@@ -5787,10 +5662,8 @@ body.loaded {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   perspective: 1000px;
-  /* Needed for 3D transforms */
   overflow: hidden;
   transform-style: preserve-3d;
-  /* Ensure child elements are rendered in 3D space */
 }
 
 .box-3d:hover {
@@ -5815,8 +5688,6 @@ body.loaded {
   z-index: 1;
 }
 
-/* Numbers
------------------------------------------------------------------*/
 .numbers h2 {
   font-size: 120px;
 }
@@ -5912,8 +5783,6 @@ body.loaded {
   font-style: normal;
 }
 
-/* Features & list & tabs & accordin
------------------------------------------------------------------*/
 .list-arrow li .icon {
   width: 15px;
   margin-right: 10px;
@@ -6049,8 +5918,6 @@ body.loaded {
   line-height: 1;
 }
 
-/* Footer
------------------------------------------------------------------*/
 footer {
   position: relative;
 }
@@ -6121,8 +5988,6 @@ footer .bg-pattern {
   opacity: 0.5;
 }
 
-/* Pages Header
------------------------------------------------------------------*/
 .page-header {
   min-height: 60vh;
   position: relative;
@@ -6231,8 +6096,6 @@ footer .bg-pattern {
   min-height: 90vh;
 }
 
-/* Hero
------------------------------------------------------------------*/
 .marquee {
   position: relative;
   overflow: hidden;
@@ -6638,8 +6501,6 @@ footer .bg-pattern {
   position: relative;
 }
 
-/* Portfolio
------------------------------------------------------------------*/
 .works.thecontainer {
   width: 300vw;
   min-height: 100vh;
@@ -6714,7 +6575,6 @@ footer .bg-pattern {
 
 .workinter .lg-sec-head h2 {
   background: -webkit-linear-gradient(90deg, transparent, var(--white));
-  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
@@ -7491,8 +7351,6 @@ body.inter-center {
   object-fit: cover;
 }
 
-/* Pricing
------------------------------------------------------------------*/
 .price-hr .item {
   padding: 50px 30px;
 }
@@ -7532,8 +7390,6 @@ body.inter-center {
   top: calc(50% - 5px);
 }
 
-/* Process
------------------------------------------------------------------*/
 .process-corp {
   position: relative;
   overflow: hidden;
@@ -7547,7 +7403,6 @@ body.inter-center {
   width: 100%;
   height: 80%;
   background-color: #eff2f5;
-  /* background-image: url(../imgs/patterns/bg-pattern.png); */
   background-image: url(../assets/images/pin.jpg);
   background-size: auto;
   background-repeat: repeat;
@@ -7591,8 +7446,6 @@ body.inter-center {
   border: 0;
 }
 
-/* Services
------------------------------------------------------------------*/
 .services-crv .crle-item {
   position: relative;
 }
@@ -7921,8 +7774,6 @@ body.inter-center {
   background-position: 50% 50%;
 }
 
-/* Sliders
------------------------------------------------------------------*/
 .svg-animation.star line,
 .svg-animation.star path {
   -webkit-animation: starPathRotate;
@@ -8454,8 +8305,6 @@ header.in-box {
   bottom: 100px;
 }
 
-/* Team
------------------------------------------------------------------*/
 .team .item-join {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 40px;
@@ -8538,11 +8387,7 @@ header.in-box {
 .team-crev .swiper-slide .item .main-marq.team-position {
   background: var(--background);
   bottom: 40px;
-  /* left: 50%; */
   width: 100%;
-  /* -webkit-transform: translateX(-50%) rotateZ(-5deg);
-  -ms-transform: translateX(-50%) rotate(-5deg);
-  transform: translateX(-50%) rotateZ(-5deg); */
 }
 
 .team-crev .swiper-slide .item .main-marq.team-name {
@@ -8579,8 +8424,6 @@ header.in-box {
   transition: all 0.4s;
 }
 
-/* Testimonials
------------------------------------------------------------------*/
 .testimonials-crev {
   position: relative;
 }
@@ -8718,7 +8561,6 @@ header.in-box {
   left: 0;
   width: 100%;
   height: 80%;
-  /* background-image: url(../imgs/svg-assets/left-quote.png); */
   background-image: url(../assets/images/pin.jpg);
   background-size: 50%;
   background-position: right bottom;
@@ -8996,7 +8838,6 @@ header.in-box {
   width: 100%;
   height: 80%;
   background-color: #eff2f5;
-  /* background-image: url(../imgs/patterns/bg-pattern.png); */
   background-image: url(../assets/images/pin.jpg);
   background-size: auto;
   background-repeat: repeat;
@@ -9074,8 +8915,6 @@ header.in-box {
   background: #c9f31d;
 }
 
-/* Video
------------------------------------------------------------------*/
 .video-sec {
   position: relative;
   overflow: hidden;
@@ -9102,8 +8941,6 @@ header.in-box {
   border-radius: 50%;
 }
 
-/* Shop
------------------------------------------------------------------*/
 .main-shop .sidebar .title {
   margin-bottom: 30px;
   padding-bottom: 10px;
@@ -9213,8 +9050,6 @@ header.in-box {
   top: -5px;
   background: none;
   pointer-events: none;
-  /* -webkit-appearance: none;
-  -moz-appearance: none; */
 }
 
 .main-shop .sidebar .price-range input[type="range"]::-webkit-slider-thumb {
@@ -9722,11 +9557,8 @@ header.in-box {
 
 @media only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* .shop-cart {
-    /* Force table to not be like tables anymore */
-  /* Hide table headers (but not display: none;, for accessibility) */
 }
-*/ .shop-cart table {
+.shop-cart table {
   width: 100%;
 }
 
@@ -9751,7 +9583,6 @@ header.in-box {
 }
 
 .shop-cart td {
-  /* Behave  like a "row" */
   border: none;
   border-bottom: 1px solid #999;
   position: relative;
@@ -9759,14 +9590,11 @@ header.in-box {
 }
 
 .shop-cart td:before {
-  /* Now like a table header */
   position: absolute;
-  /* Top/left values mimic padding */
   left: 6px;
   width: 45%;
   padding-right: 10px;
   white-space: nowrap;
-  /* Label the data */
   content: attr(data-column);
 }
 
@@ -9827,7 +9655,6 @@ header.in-box {
   border-radius: 40px;
 }
 
-/* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 1300px) {
   body.home-arch main:after {
     display: none;
@@ -9920,9 +9747,6 @@ header.in-box {
   }
 
   .justify-end {
-    /* -webkit-box-pack: start !important; */
-    /* -ms-flex-pack: start !important; */
-    /* justify-content: flex-start !important; */
     padding-bottom: 30px !important;
   }
 
@@ -9992,11 +9816,6 @@ header.in-box {
     left: -50vw;
   }
 
-  .navbar {
-    /* padding-top: 15px;
-    padding-bottom: 15px; */
-  }
-
   .navbar .navbar-collapse {
     max-height: 440px;
     overflow: auto;
@@ -10019,7 +9838,6 @@ header.in-box {
 
   .navbar .logo {
     width: fit-content;
-    /* max-width: 80px !important; */
     margin-left: 30px;
   }
 
@@ -10241,7 +10059,6 @@ header.in-box {
   .portfolio-fixed .cont {
     opacity: 1 !important;
     margin-bottom: 80px;
-    /* padding: 0 15px; */
   }
 
   .portfolio-fixed .cont .img-hiden {
@@ -10957,14 +10774,8 @@ header.in-box {
   background-color: #d4af5f !important;
   color: #000 !important;
   transition: background-color 0.8s ease;
-  /* Add transition for background-color with 0.5s duration */
 }
 
-/* ====================== [ End Responsive ] ====================== */
-
-/* --------------------------About - Director UI CSS ------------------------  */
-
-/* Animation for the info div */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -10985,23 +10796,17 @@ header.in-box {
   border: 3px outset #f0ee52;
 }
 
-/* frame border  */
-
 .border-img {
   position: relative;
   display: inline-block;
-  /* Ensure it fits around the .inside-img */
   width: 350px;
-  /* height: 500px; */
 }
 
 .upper-img {
   position: absolute;
   display: inline-block;
   top: 20px;
-  /* Adjust the position as needed */
   left: 16px;
-  /* Adjust the position as needed */
   width: 50px;
   height: 50px;
 }
@@ -11010,14 +10815,10 @@ header.in-box {
   position: absolute;
   display: inline-block;
   bottom: 20px;
-  /* Adjust the position as needed */
   right: 18px;
-  /* Adjust the position as needed */
   width: 50px;
   height: 50px;
 }
-
-/* typography  */
 
 @font-face {
   font-family: "Avenir";
@@ -11034,36 +10835,23 @@ header.in-box {
   font-weight: bold;
   font-style: normal;
   top: -10px;
-  /* Adjust the position as needed */
   left: -10px;
-  /* Adjust the position as needed */
   width: 100%;
-  /* Make sure it fits within the .border-img */
   height: 100%;
-  /* Make sure it fits within the .border-img */
   overflow: hidden;
-  /* Hide any overflowing content */
 }
 
 .inside-img img {
   width: 100%;
   height: auto;
-  /* Keep the aspect ratio of the image */
   object-fit: cover;
-  /* Ensures the image covers the container */
 }
 
-/* __________________________________________________________________
- News Animation
-*/
-
-/* Style for the image container */
 .img-container {
   overflow: hidden;
   position: relative;
 }
 
-/* Initial style for the image */
 .img-container img {
   width: 100%;
   height: 100%;
@@ -11071,8 +10859,6 @@ header.in-box {
   transform: translateY(10px);
   opacity: 0.8;
 }
-
-/* Slide-up and fade-in effect on hover */
 .img-container:hover img {
   transform: translateY(0);
   opacity: 1;
@@ -11085,19 +10871,12 @@ header.in-box {
 .inside-img img {
   width: 100%;
   height: auto;
-  /* Keep the aspect ratio of the image */
   object-fit: cover;
-  /* Ensures the image covers the container */
 }
 
 .bg-attachment-local {
   background-attachment: local !important;
 }
-
-/* transition: all ease 0.5s;
-} */
-
-/* ________ Team section ___________ */
 
 .team-section {
   display: flex;

@@ -142,7 +142,6 @@ const Blog = () => {
 
   return (
     <>
-      {/* <img src="/assets/images/blog/banner.png" style={{ height: "100vh" }} /> */}
       <Image
         src="/assets/images/blog/banner.png"
         className="circle-img"
@@ -174,7 +173,6 @@ const Blog = () => {
                     >
                       <div className="blog-item">
                         <div className="blog-img">
-                          {/* <img src={item.image} alt={item.description} /> */}
                           <Image
                             src={item.image}
                             className="circle-img"
@@ -185,12 +183,10 @@ const Blog = () => {
                         </div>
                         <div className="blog-content">
                           <h5 className="blog-title fz-22 fw-medium text-grey">
-                            {/* <Link href="/dark/blog-post" className="text-grey">{item.heading}</Link> */}
                             {item.heading}
                           </h5>
                           <p className="blog-date fz-14">{item.date}</p>
                           <h5 className="blog-title fz-16">
-                            {/* <Link href="/dark/blog-post">{item.description}</Link> */}
                             {item.description}
                           </h5>
                           <Link

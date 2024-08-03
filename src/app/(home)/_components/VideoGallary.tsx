@@ -1,8 +1,6 @@
-"use client";
-import Carousel from "@/components/carousel/Carousel";
-import ModalVideo from "@/components/modal-video/ModalVideo";
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
+import Carousel from "../_components/Carousel";
 
 interface Video {
   image: string;
@@ -44,7 +42,7 @@ function VideoGallary() {
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
     item: Video
   ) {
-    event.preventDefault();
+    event?.preventDefault();
     setIsVideoOpen(item);
   }
 
@@ -62,7 +60,7 @@ function VideoGallary() {
       <Carousel
         data={data}
         component={(item: Video) => (
-          <div onClick={(e) => openVideo(e, item)}>
+          <div onClick={(e) => openVideo?.(e, item)}>
             <div style={{ position: "relative" }}>
               <svg
                 style={{
@@ -85,9 +83,8 @@ function VideoGallary() {
                 />
                 <polygon points="70, 55 70, 145 145, 100" fill="#fff" />
               </svg>
-              {/* <img src={item.image} /> */}
               <Image
-                src={item.image}
+                src={item?.image}
                 className="circle-img"
                 alt="Landscape picture"
                 width={800}
@@ -102,12 +99,11 @@ function VideoGallary() {
                 fontWeight: "600",
               }}
             >
-              {item.title}
+              {item?.title}
             </div>
           </div>
         )}
       />
-      <ModalVideo isOpen={isVideoOpen} onClose={() => setIsVideoOpen(null)} />
     </div>
   );
 }

@@ -90,7 +90,6 @@ function Footer() {
               <div className="col-lg-4">
                 <div className="logo">
                   <Link href="#">
-                    {/* <img src="/rdb-group.svg" alt="" /> */}
                     <Image
                       src="/rdb-group.svg"
                       className="w-100"

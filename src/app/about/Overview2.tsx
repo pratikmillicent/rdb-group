@@ -1,41 +1,11 @@
 //@ts-nocheck
 
 import Heading from "@/components/heading/Heading";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 
 function Intro() {
-  // function openAccordion(event: any) {
-  //   console.log("🚀 ~ openAccordion ~ event:", event);
-  //   document.querySelectorAll(".accordion-info").forEach((element) => {
-  //     let htmlElement = element as HTMLElement;
-  //     element.classList.remove("active");
-
-  //     // Ensure that the element exists before assigning a value
-  //     if (htmlElement) {
-  //       htmlElement.style.maxHeight = "0";
-  //       if (htmlElement.parentElement) {
-  //         htmlElement.parentElement.classList.remove("active");
-  //       }
-  //     }
-  //   });
-
-  //   const currentTarget = event.currentTarget as HTMLElement;
-
-  //   // Ensure that the parent element and next sibling exist before assigning values
-  //   if (currentTarget.parentElement) {
-  //     currentTarget.parentElement.classList.add("active");
-  //   }
-
-  //   const nextElementSibling = currentTarget.nextElementSibling as HTMLElement;
-
-  //   if (nextElementSibling) {
-  //     nextElementSibling.style.maxHeight = "300px";
-  //     nextElementSibling.classList.add("active");
-  //   }
-  // }
   useEffect(() => {
-    // Open the first accordion item by default
     const firstItem = document.querySelector(
       ".accordion .item:first-child .accordion-info"
     );
@@ -51,7 +21,6 @@ function Intro() {
       let htmlElement = element as HTMLElement;
       element.classList.remove("active");
 
-      // Ensure that the element exists before assigning a value
       if (htmlElement) {
         htmlElement.style.maxHeight = "0";
         if (htmlElement.parentElement) {
@@ -62,7 +31,6 @@ function Intro() {
 
     const currentTarget = event.currentTarget as HTMLElement;
 
-    // Ensure that the parent element and next sibling exist before assigning values
     if (currentTarget.parentElement) {
       currentTarget.parentElement.classList.add("active");
     }
@@ -82,14 +50,8 @@ function Intro() {
           <div className="col-lg-5 valign md-mb50">
             <div className="imgs mb-80">
               <div className="img1 wow fadeInUp">
-                {/* <img
-                  src="/assets/images2/vision.jpg"
-                  alt=""
-                  className="radius-10"
-                /> */}
                 <Image
                   src="/assets/images2/vision.jpg"
-                  // className="circle-img"
                   className="radius-10"
                   alt="Landscape picture"
                   width={800}
@@ -97,11 +59,6 @@ function Intro() {
                 />
               </div>
               <div className="img2 wow fadeInLeft">
-                {/* <img
-                  src="/assets/images2/mission.jfif"
-                  alt=""
-                  className="radius-10"
-                /> */}
                 <Image
                   src="/assets/images2/mission.jfif"
                   className="radius-10"
@@ -117,7 +74,6 @@ function Intro() {
               <div className="text">
                 <h2 className="d-slideup wow">
                   <span className="sideup-text py-2">
-                    {/* <Heading headTitle="Overview" fontSize="fs-1" /> */}
                     <div className="fz-50 fw-600"> Overview</div>
                   </span>
                 </h2>

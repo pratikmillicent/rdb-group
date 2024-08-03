@@ -6,7 +6,6 @@ import Image from "next/image";
 const page = () => {
   return (
     <>
-      {/* <img src="/assets/images2/career.jpg" style={{ height: "100vh" }} /> */}
       <Image
         src="/assets/images2/career.jpg"
         className="circle-img"
@@ -38,9 +37,7 @@ const page = () => {
               women and men as they push boundaries in this new age with new
               ways.
             </p>
-            {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
             <div style={{ paddingTop: "60px" }}>
-              {/* <Heading headTitle="Open Positions" /> */}
               <div className="fz-35 fw-600">Open Positions</div>
             </div>
             <p className="mt-30 text-dark">

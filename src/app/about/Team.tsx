@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
@@ -97,7 +97,6 @@ function Team() {
                     <SwiperSlide key={item.id}>
                       <div className="item">
                         <div className="img">
-                          {/* <img src={item.image} alt={item.name} /> */}
                           <Image
                             src={item.image}
                             className="img-fluid"

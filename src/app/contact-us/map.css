@@ -4,23 +4,6 @@
   position: relative;
 }
 
-/* .buttons {
-  position: absolute;
-  top: 4px;
-  right: 8px;
-  z-index: 100;
-} */
-
-/* .btn {
-  display: inline-block;
-  padding: 4px 8px;
-  background-color: #ccc;
-  border-radius: 2px;
-  border: 1px solid #999;
-  font-size: 16px;
-  cursor: pointer;
-} */
-
 .btn:hover {
   background-color: #999;
   transition: 250ms;

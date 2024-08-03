@@ -11,15 +11,9 @@ import Whatapps from "@/components/chat/Whatapps";
 import { Epilogue } from "next/font/google";
 import { useEffect } from "react";
 import Loader from "@/components/loader/Loader";
-// import "./css/plugins.css";
-import "@/app/globals.css";
 import "../../public/css/plugins.css";
 import "../../public/css/style.css";
 
-// const epilogue = Epilogue({
-//   subsets: ["latin"],
-//   display: "swap",
-// });
 const Avenir = localFont({
   src: [
     {
@@ -67,10 +61,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head>
-        {/* <link rel="stylesheet" href="/css/plugins.css" />
-        <link rel="stylesheet" href="/css/style.css" /> */}
-      </head>
+      <head></head>
       <body className={Avenir.className}>
         <Navbar />
         {children}
