@@ -23,8 +23,6 @@ const Heading: React.FC<HeadingProps> = ({
       <span className="text-golden">{firstLetter}</span>
       <span className="text-grey">{restTitle}</span>
     </h2>
-    // <div className="position-re">
-    // </div>
   );
 };
 

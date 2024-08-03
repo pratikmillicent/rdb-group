@@ -1,6 +1,5 @@
 import React from "react";
-//= Data
-// import data from '@/data/DigitalAgency/testimonials.json';
+import Image from "next/image";
 
 function Testimonials({}) {
   return (
@@ -57,10 +56,12 @@ function Testimonials({}) {
                         <div className="d-flex align-items-center">
                           <div>
                             <div className="img circle-80">
-                              <img
+                              <Image
                                 src={item.image}
-                                alt=""
                                 className="circle-img"
+                                alt="Landscape picture"
+                                width={800}
+                                height={500}
                               />
                             </div>
                           </div>
@@ -92,10 +93,12 @@ function Testimonials({}) {
                         <div className="d-flex align-items-center">
                           <div>
                             <div className="img circle-80">
-                              <img
+                              <Image
                                 src={`/dark/${item.image}`}
-                                alt=""
                                 className="circle-img"
+                                alt="Landscape picture"
+                                width={800}
+                                height={500}
                               />
                             </div>
                           </div>

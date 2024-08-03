@@ -1,7 +1,7 @@
 // @ts-nocheck
 import gsap from "gsap";
-import React, { useEffect } from "react";
-// import gsap from 'gsap';
+import { useEffect } from "react";
+import Image from "next/image";
 
 function Loader() {
   useEffect(() => {
@@ -35,11 +35,13 @@ function Loader() {
         <span>
           <h2 className="load-text">
             <span>
-              <img
-                style={{ width: "305px" }}
+              <Image
                 src="/rdb-group.svg"
+                className="w-100"
+                style={{ width: "305px" }}
                 alt="logo"
-                className="logo"
+                width={800}
+                height={500}
               />
             </span>
           </h2>

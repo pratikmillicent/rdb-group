@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import loadBackgroudImages from "@/common/loadBackgroudImages";
 import isInView from "@/common/isInView";
 import Heading from "@/components/heading/Heading";
+import Image from "next/image";
 
 interface DataItem {
   id: number;
@@ -103,7 +104,9 @@ const NewGroupGrid: React.FC = () => {
       leftSide.style.width = width + "px";
       leftSide.classList.add("is_stuck");
       document
-        .querySelector(`#tab-${document.querySelectorAll("[data-tab]").length}`)
+        .querySelector(
+          `#tab-${document?.querySelectorAll?.("[data-tab]")?.length}`
+        )
         ?.classList.add("current");
     } else {
       leftSide.style.position = "relative";
@@ -123,7 +126,7 @@ const NewGroupGrid: React.FC = () => {
                 <div className="fz-50 fw-600 ">
                   {/* <span className="text-golden">G</span>roups Websites */}
                   <div style={{ display: "flex", justifyContent: "center" }}>
-                    <Heading headTitle="Group Website" />
+                    <Heading headTitle="Group Websites" />
                   </div>
                 </div>
               </div>
@@ -136,7 +139,7 @@ const NewGroupGrid: React.FC = () => {
             <div className="row">
               <div className="col-lg-6 rest" style={{ position: "relative" }}>
                 <div className="left" id="sticky_item">
-                  {data.map((item, index) => (
+                  {data?.map((item, index) => (
                     <div
                       id={`tab-${index + 1}`}
                       className="img bg-img"
@@ -147,15 +150,20 @@ const NewGroupGrid: React.FC = () => {
                   ))}
                 </div>
               </div>
-              <div className="col-lg-6 right">
-                {data.map((item, index) => (
+              <div className="col-lg-6 sub-bg right">
+                {data?.map((item, index) => (
                   <div
                     className={`cont ${index === 0 ? "active" : ""}`}
                     data-tab={`tab-${index + 1}`}
                     key={index}
                   >
                     <div className="img-hiden">
-                      <img src={`${item.image}`} alt="" />
+                      <Image
+                        src={item.image}
+                        alt="Landscape picture"
+                        width={800}
+                        height={500}
+                      />
                     </div>
                     <span className="sub-title mb-15 fz-24 fw-600 text-grey">
                       {item.number} {item.type}

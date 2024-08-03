@@ -17,23 +17,27 @@ const OurStory = () => {
             borderRadius: "15px 50px",
           }}
         >
-          <img
+          <Image
             src={`/assets/images2/Dhaval.jpg`}
+            alt="Landscape picture"
+            width={800}
             style={{
               height: "600px",
               width: "300px",
               borderRadius: "15px 0px 0px 15px",
             }}
-            alt="icon2"
+            height={500}
           />
-          <img
+          <Image
             src={`/assets/images2/Raj.jpg`}
-            alt="icon2"
+            alt="Landscape picture"
+            width={800}
             style={{
               height: "600px",
               width: "300px",
-              borderRadius: "0px 60px 15px 0px",
+              borderRadius: "15px 0px 0px 15px",
             }}
+            height={500}
           />
         </div>
       </div>

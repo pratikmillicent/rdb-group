@@ -9,7 +9,7 @@ function Marq({ data }: { data: string[] }) {
             <div className="main-marq" style={{ color: "#FFF" }}>
               <div className="slide-har st1" style={{ padding: "12px 0" }}>
                 <div className="box non-strok">
-                  {data.map((item: string) => (
+                  {data?.map((item: string) => (
                     <span
                       key={item}
                       style={{
@@ -23,7 +23,7 @@ function Marq({ data }: { data: string[] }) {
                   ))}
                 </div>
                 <div className="box non-strok">
-                  {data.map((item: string) => (
+                  {data?.map((item: string) => (
                     <span
                       key={item}
                       style={{

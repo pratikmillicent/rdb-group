@@ -1,22 +1,12 @@
 "use client";
 import Marq from "@/components/marq/Marq";
-import About from "./_components/About";
-import GroupGrid from "./_components/Group";
 import News from "./_components/News";
 import VideoGallary from "./_components/VideoGallary";
 import { ParallaxProvider } from "react-scroll-parallax";
-import SideImage from "./_components/SideImage";
-import Carroussel from "./_components/Carousel";
-import Carousel from "@/components/carousel/Carousel";
 import Card from "./_components/Card";
 import Carroussel3D from "./_components/Carousel";
 import NewGroupGrid from "./_components/NewGroup";
-import OurStory from "./_components/OurStory";
-import DirectorCard from "./_components/DirectorCard";
-import FrameSlider from "./_components/CardImagesCarousel";
 import CarouselEvent from "./_components/CardImagesCarousel";
-
-import NewSideImage from "../about/NewSideImage";
 import VisionMission from "../about/VisionMission";
 import Heading from "@/components/heading/Heading";
 
@@ -61,6 +51,7 @@ export default function Home() {
       ),
     },
   ];
+
   return (
     <ParallaxProvider>
       <main className="mw-100">
@@ -74,17 +65,12 @@ export default function Home() {
             playsInline
             loop
             preload="auto"
-            // poster="https://www.aspect.global/video/aspect_video.webp"
           ></video>
 
           <Marq data={marque_data} />
         </div>
 
         <VisionMission />
-        {/* <About /> */}
-        {/* {/* <SideImage /> */}
-        {/* <NewSideImage /> */}
-        {/* <GroupGrid /> */}
         <NewGroupGrid />
 
         <div
@@ -104,11 +90,6 @@ export default function Home() {
           offset={5}
           showArrows={false}
         />
-        {/* <GroupGrid /> */}
-        {/* director combine section with images    */}
-        {/* <OurStory /> */}
-
-        {/* director section  */}
 
         <News />
         <VideoGallary />

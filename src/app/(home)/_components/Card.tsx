@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 import Styles from "./card.module.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
 function Card({ imagen }: any) {

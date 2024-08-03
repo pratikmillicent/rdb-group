@@ -1,14 +1,21 @@
-"use client"
+"use client";
 import Heading from "@/components/heading/Heading";
 import ResumeUpload from "@/components/Resume-upload/ResumeUpload";
 import React from "react";
-import CardList from "./components/CardList"
-
+import CardList from "./components/CardList";
+import Image from "next/image";
 
 const page = () => {
   return (
     <>
-      <img src="/assets/images2/career.jpg" style={{ height: "100vh" }} />
+      <Image
+        src="/assets/images2/career.jpg"
+        className="circle-img"
+        alt="carrer page"
+        style={{ height: "100vh" }}
+        width={800}
+        height={500}
+      />
       <div className="container">
         <div className="work-header ">
           <div className="section-padding">
@@ -33,7 +40,7 @@ const page = () => {
               ways.
             </p>
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
-            <div>
+            <div style={{ paddingTop: "60px" }}>
               <Heading headTitle="Open Positions" />
               {/* <div className="fz-35 fw-600">Open Positions</div> */}
             </div>
@@ -70,7 +77,6 @@ const page = () => {
         </div>
         <CardList data={cardData} />
         <ResumeUpload />
-        
       </div>
     </>
   );
@@ -150,4 +156,3 @@ const cardData = [
     description: "A talented Sr. Software Engineer to join our team.",
   },
 ];
-

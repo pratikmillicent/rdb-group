@@ -1,6 +1,5 @@
-"use client";
 import loadBackgroudImages from "@/utils/loadBackground";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Director2 = () => {
   const RajThakkar = (

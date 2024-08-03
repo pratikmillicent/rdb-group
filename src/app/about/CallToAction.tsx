@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import parallaxie from "@/utils/parallax";
-//= Scripts
 
 function CallToAction({}) {
   useEffect(() => {
@@ -23,9 +22,6 @@ function CallToAction({}) {
                   <span className="rotate-text">
                     We create experiences and turn ideas into reality.
                   </span>
-                  {/* <span className="rotate-text">
-                    Let’s <span>get to work</span>.
-                  </span> */}
                 </h2>
               </div>
               <div className="ml-auto">
@@ -50,11 +46,6 @@ function CallToAction({}) {
                     </span>
                     <span className="full-width">Get In Touch</span>
                   </div>
-                  <img
-                    src={`/assets/images/pin.png`}
-                    alt=""
-                    className="circle-star"
-                  />
                 </Link>
               </div>
             </div>
