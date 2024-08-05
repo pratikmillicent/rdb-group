@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
+import { transform } from "next/dist/build/swc";
 
 const data = [
   {
@@ -133,7 +134,8 @@ function News() {
                   data-wow-delay=".1s"
                 >
                   <div className="item">
-                    <div className="img outset-border">
+                    <div className="img"
+                    >
                       <Image
                         src={item.cover}
                         alt="Landscape picture"

@@ -68,7 +68,8 @@ export default function Home() {
         <div>
           <video
             className="mw-100 w-100"
-            style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
+            // borderBottom:"5px solid #d4af5f"
+            style={{ height: "calc(100dvh - 80px)", objectFit: "initial", boxShadow: "#d4af5f 0px 0px 20px 10px" }}
             src="/assets/video/HeroVideo.mp4"
             autoPlay
             muted
@@ -81,7 +82,10 @@ export default function Home() {
         </div>
 
         <VisionMission />
-        <NewGroupGrid />
+
+        <div style={{ padding: "20px 0" }}>
+          <NewGroupGrid />
+        </div>
 
         <div
           style={{
@@ -92,14 +96,16 @@ export default function Home() {
           <Heading headTitle="Events" />
         </div>
 
-        <Carroussel3D
-          cards={cards}
-          height="500px"
-          // width="40%"
-          margin="0 auto"
-          offset={5}
-          showArrows={false}
-        />
+        <div style={{ padding: "20px 0" }}>
+          <Carroussel3D
+            cards={cards}
+            height="500px"
+            // width="40%"
+            margin="0 auto"
+            offset={5}
+            showArrows={false}
+          />
+        </div>
 
         <News />
         <VideoGallary />

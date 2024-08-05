@@ -74,7 +74,7 @@ const News = () => {
       />
       <div className="container">
         <section
-          className="blog-modern section-padding"
+          className="blog-modern"
           style={{ paddingBottom: "60px" }}
         >
           <div className="container">
