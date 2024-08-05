@@ -17,7 +17,7 @@ interface DataItem {
 const data: DataItem[] = [
   {
     id: 1,
-    image: "assets/images2/news2.jpg",
+    image: "assets/images/home/properties.webp",
     number: "01.",
     type: "Properties",
     title: "Aspect Global Ventures Pvt.Ltd.",
@@ -25,7 +25,7 @@ const data: DataItem[] = [
   },
   {
     id: 2,
-    image: "assets/images2/img2.jpg",
+    image: "assets/images/home/img2.jpg",
     number: "02.",
     type: "Reality",
     title: "Aspect Bullion & Refinery",
@@ -33,7 +33,7 @@ const data: DataItem[] = [
   },
   {
     id: 3,
-    image: "assets/images2/Fractal.jpg",
+    image: "assets/images/home/Fractal.jpg",
     number: "03.",
     type: "Fracto",
     title: "Aspect Infrastructure",
@@ -50,7 +50,7 @@ const data: DataItem[] = [
   },
   {
     id: 5,
-    image: "assets/images2/business.jpg",
+    image: "assets/images/home/business.jpg",
     number: "05.",
     type: "Business",
     title: "Luxury Glassware",
@@ -92,12 +92,15 @@ const NewGroupGrid: React.FC = () => {
 
     if (!portfolio) return;
 
-    if (portfolio.top < 75 && portfolio.height / 6 < portfolio.bottom) {
+    if (
+      portfolio.top < 75 &&
+      portfolio.height / (data.length - 1) < portfolio.bottom
+    ) {
       leftSide.style.position = "fixed";
       leftSide.style.top = "0px";
       leftSide.style.width = width + "px";
       leftSide.classList.remove("is_stuck");
-    } else if (portfolio.height / 6 > portfolio.bottom) {
+    } else if (portfolio.height / (data.length - 1) > portfolio.bottom) {
       leftSide.style.position = "absolute";
       leftSide.style.top = "auto";
       leftSide.style.bottom = "0";

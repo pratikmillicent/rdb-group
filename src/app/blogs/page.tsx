@@ -17,15 +17,14 @@ const Blog = () => {
     {
       id: 1,
       // image: new URL("https://picsum.photos/1100/1100"),
-      image: "/assets/images2/blog1.jpeg",
-      heading:
-        " Housing Market Showed Signs of Life in January, as Buyers Began to Compete",
+      image: "/assets/images/blog/blog-banner.png",
+      heading: " Housing Market Showed Signs of Life in January, as Buyers Began to Compete",
       description: "Zillow Market Reports",
       date: "17-August-2023",
     },
     {
       id: 2,
-      image: "/assets/images2/blog2.jpeg",
+      image: "/assets/images/blog/blog2.jpeg",
       heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
       description: "Top Emerging Developer - Times Of India 2023",
       date: "17-May-2024",
@@ -147,7 +146,7 @@ const Blog = () => {
   return (
     <>
       <Image
-        src="/assets/images/blog/banner.png"
+        src="/assets/images/blog/blog-banner.png"
         className="circle-img"
         alt="Landscape picture"
         style={{ height: "100vh" }}

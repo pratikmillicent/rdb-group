@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import ModalVideo from "@/components/modal-video/ModalVideo";
 import Heading from "@/components/heading/Heading";
-import CarouselEvent from "../(home)/_components/CardImagesCarousel";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import CarouselEvent from "../(home)/components/CardImagesCarousel";
 
 interface Video {
   image: string;
@@ -168,5 +168,90 @@ const data = [
     description:
       "Why Hire Real Estate Agent: Benefits & Reasons | Spiffy Spools",
     link: "https://www.spiffyspools.com/spiffy-speak/why-hire-real-estate-agent/",
+  },
+];
+
+const data1 = [
+  {
+    id: 1,
+    image: "/assets/images/news/award1.jpg",
+  },
+  {
+    id: 2,
+    image: "/assets/images/news/news-awards.jpg",
+  },
+  {
+    id: 3,
+    image: "/assets/images/news/",
+  },
+  {
+    id: 4,
+    image: "/assets/images/news/news-awards.jpg",
+  },
+];
+
+const data2 = [
+  {
+    id: 1,
+    image: "/assets/images/news/proj1.jpg",
+  },
+  {
+    id: 2,
+    image: "/assets/images/news/proj2.jpg",
+  },
+  {
+    id: 3,
+    image: "/assets/images/news/proj3.jpg",
+  },
+  {
+    id: 4,
+    image: "/assets/images/news/proj7.jpg",
+  },
+  {
+    id: 5,
+    image: "/assets/images/news/proj8.jpg",
+  },
+  {
+    id: 6,
+    image: "/assets/images/news/proj9.jpg",
+  },
+  {
+    id: 7,
+    image: "/assets/images/news/proj10.jpg",
+  },
+  {
+    id: 8,
+    image: "/assets/images/news/proj11.jpg",
+  },
+  {
+    id: 9,
+    image: "/assets/images/news/proj12.jpg",
+  },
+];
+
+const videoData: Video[] = [
+  {
+    image: "/assets/images/home/business-update2.webp",
+    title: "Expanding Horizons with Strategic Acquisitions and Future Growth",
+    videoId: "AzwC6umvd1s",
+    channel: "youtube",
+  },
+  {
+    image: "/assets/images/home/business-update1.webp",
+    title: "Expanding Horizons with Strategic Acquisitions and Future Growth",
+    videoId: "AzwC6umvd1s",
+    channel: "youtube",
+  },
+  {
+    image: "/assets/images/home/business-update2.webp",
+    title: "Expanding Horizons with Strategic Acquisitions and Future Growth",
+    videoId: "AzwC6umvd1s",
+    channel: "youtube",
+  },
+  {
+    image: "/assets/images/home/business-update1.webp",
+    title: "Expanding Horizons with Strategic Acquisitions and Future Growth",
+    videoId: "AzwC6umvd1s",
+    channel: "youtube",
   },
 ];

@@ -136,27 +136,26 @@ const carouselData = [
     title: "RD Brother Lifestyle Empowers Agents with Free Maharera Training",
     images: [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK92UVfWmKFimBK90JD7wPOjectFATDhpJ_g&s",
-
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpEVj7-_LPKXkdXvEH40UXbPcTr43lXAnPYQ&s",
-      "assets/images2/contact.jpg",
+      "assets/images/contact/contact.jpg",
     ],
   },
   {
     date: "1 Aug 2023",
     title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
     images: [
-      "assets/images2/contact.jpg",
-      "assets/images2/contact.jpg",
-      "assets/images2/contact.jpg",
+      "assets/images/contact/contact.jpg",
+      "assets/images/contact/contact.jpg",
+      "assets/images/contact/contact.jpg",
     ],
   },
   {
     date: "1 Aug 2023",
     title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
     images: [
-      "assets/images2/contact.jpg",
-      "assets/images2/contact.jpg",
-      "assets/images2/contact.jpg",
+      "assets/images/contact/contact.jpg",
+      "assets/images/contact/contact.jpg",
+      "assets/images/contact/contact.jpg",
     ],
   },
   {

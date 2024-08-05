@@ -1,7 +1,6 @@
 // @ts-nocheck
 "use client";
-
-import MapComponent from "./MapComponent";
+import MapComponent from "./components/MapComponent";
 import {
   FaMapMarkerAlt,
   FaFacebook,
@@ -124,7 +123,7 @@ const ContactUs = () => {
   return (
     <>
       <Image
-        src="/assets/images2/contact.jpg"
+        src="/assets/images/contact/contact.jpg"
         className="circle-img"
         alt="carrer page"
         style={{ height: "100vh" }}
@@ -332,7 +331,7 @@ const ContactUs = () => {
                         style={{ margin: "60px auto" }}
                       >
                         <Image
-                          src="/assets/images2/map.png"
+                          src="/assets/images/contact/map.png"
                           className="w-100"
                           alt="map"
                           style={{ height: "100vh" }}
