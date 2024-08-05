@@ -1,7 +1,6 @@
-
 import { useState } from 'react';
 import Image from "next/image";
-import './VisionMission.css';
+import '../VisionMission.css';
 import Heading from '@/components/heading/Heading';
 
 const VisionMission = () => {
@@ -36,7 +35,6 @@ const VisionMission = () => {
       <div className="row">
         <div className="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-col justify-content-center align-items-center">
           <div className="mb-4">
-            {/* <h2 className='text-center text-grey'>Overview</h2> */}
             <Heading headTitle='Overview'/>
           </div>
           <div className="mb-4 d-flex flex-wrap">
@@ -71,10 +69,8 @@ const VisionMission = () => {
           </div>
         </div>
 
-        {/* Image Box */}
         <div className="col-12 col-md-6">
-          <div className="ratio ratio-4x3">
-
+          <div className="ratio ratio-4x3" style={{ position: 'relative' }}>
             <Image
               src={
                 selectedTab === 'vision'
@@ -83,9 +79,8 @@ const VisionMission = () => {
               }
               className={`img-fluid h-100 ${animate ? 'fade-in' : ''}`}
               alt={selectedTab}
-              width={800}
-              height={500}
-              style={{ objectFit: 'cover' }}
+              layout="fill"
+              objectFit="cover"
             />
           </div>
         </div>

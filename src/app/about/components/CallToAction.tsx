@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Link from "next/link";
+import Link from 'next/link'
 import parallaxie from "@/utils/parallax";
 
 function CallToAction({}) {
@@ -14,7 +14,7 @@ function CallToAction({}) {
           className="sec-bg-img bg-img parallaxie"
           data-background="assets/images/about/Core.jpg"
         ></div>
-        <div className="sec-lg-head section-padding">
+        <div className="sec-lg-head section-padding ">
           <div className="row ontop">
             <div className="col-11 d-flex align-items-center">
               <div className="valign">

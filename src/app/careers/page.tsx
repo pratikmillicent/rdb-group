@@ -9,7 +9,7 @@ const page = () => {
   return (
     <>
       <Image
-        src="/assets/images2/career.jpg"
+        src="/assets/images/career/career.jpg"
         className="circle-img"
         alt="carrer page"
         style={{ height: "100vh" }}

@@ -39,7 +39,7 @@ export default function Home() {
     {
       key: 2,
       content: (
-        <Card imagen="https://atharvlifestyle.com/assets/images/EVENTS/63.webp" />
+        <Card imagen="/assets/images/home/movie.webp" />
       ),
     },
     {
