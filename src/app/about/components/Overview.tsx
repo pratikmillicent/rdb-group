@@ -50,7 +50,6 @@ const Overview = () => {
                       <Image
                         width={1000}
                         height={1000}
-                        // src={item.image}
                         style={{
                           width: "100%",
                           height: "300px",
@@ -80,7 +79,6 @@ const Overview = () => {
                       <Image
                         width={1000}
                         height={1000}
-                        // src={item.image}
                         src={overview.mission}
                         alt="image"
                         style={{
@@ -99,7 +97,6 @@ const Overview = () => {
             </div>
           </div>
           <div className="col-12 col-md-6 py-2">
-            {/* <h5 className="main-color3 fw-bold">--- Our mission</h5> */}
             <Heading headTitle="Our mission" fontSize="fs-2" />
             <p className="main-color3">
               To embrance our roots while propelling forward, delevering value
@@ -110,7 +107,6 @@ const Overview = () => {
           </div>
         </div>
 
-        {/* overview part 2  */}
         {OverviewData.map((data, key) => (
           <div className="row  p-3 mb-5" key={data?.id}>
             <div className="col-12 col-md-8">

@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import { config } from "react-spring";
 
 export default function Carroussel3D(props) {
-  const table = props.cards.map((element, index) => {
-    return { ...element, onClick: () => setGoToSlide(index) };
+  const table = props?.cards?.map?.((element, index) => {
+    return { ...element, onClick: () => setGoToSlide?.(index) };
   });
 
   const [offsetRadius, setOffsetRadius] = useState(2);
@@ -14,17 +14,21 @@ export default function Carroussel3D(props) {
   const [cards] = useState(table);
 
   useEffect(() => {
-    setOffsetRadius(props.offset);
-    setShowArrows(props.showArrows);
-  }, [props.offset, props.showArrows]);
+    setOffsetRadius(props?.offset);
+    setShowArrows(props?.showArrows);
+  }, [props?.offset, props?.showArrows]);
 
   return (
     <div
-    className="mt-30 mb-60"
-      style={{ width: props.width, height: props.height, margin: props.margin }}
+      className="mt-60"
+      style={{
+        width: props?.width,
+        height: props?.height,
+        margin: props?.margin,
+      }}
     >
       <Carousel
-        slides={cards}
+        slides={cards ?? []}
         goToSlide={goToSlide}
         offsetRadius={offsetRadius}
         showNavigation={showArrows}

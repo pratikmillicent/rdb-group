@@ -10,9 +10,6 @@ export default function parallaxie(selector: any, speed = 0.8) {
   elementBg.style.backgroundSize = "cover";
   elementBg.style.backgroundRepeat = "no-repeat";
   elementBg.style.backgroundAttachment = "fixed";
-  //   elementBg.style.backgroundPosition = `center ${
-  //     startPosition !== undefined ? startPosition : position
-  //   }px`;
 
   window.addEventListener("scroll", () => {
     position = elementBg.getBoundingClientRect().top * speed;

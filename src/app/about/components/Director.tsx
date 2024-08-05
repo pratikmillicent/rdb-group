@@ -10,7 +10,7 @@ interface DirectorData {
 }
 
 interface DirectorProps {
-  Data: DirectorData[]; // Corrected prop type from string to array of DirectorData objects
+  Data: DirectorData[];
 }
 
 const Director: React.FC<DirectorProps> = ({ Data }) => {
@@ -34,7 +34,6 @@ const Director: React.FC<DirectorProps> = ({ Data }) => {
                       overflow: "hidden",
                     }}
                     src={item.image}
-                    // src={overview.vision}
                     alt="image"
                   />
                 </div>
@@ -50,10 +49,7 @@ const Director: React.FC<DirectorProps> = ({ Data }) => {
                 <div className="fz-12 main-color3">{item.desc}</div>
               </div>
             </div>
-            <div
-              className="arrow mt-5 cursor-pointer"
-              // onClick={() => handleReadMore(item.id)}
-            >
+            <div className="arrow mt-5 cursor-pointer">
               <span className="fz-12 main-color3 mr-10 text-decoration-underline">
                 Read More
               </span>
@@ -64,10 +60,5 @@ const Director: React.FC<DirectorProps> = ({ Data }) => {
     </div>
   );
 };
-
-// const handleReadMore = (id: number) => {
-//   console.log(`Read More clicked for item with id: ${id}`);
-//   // Implement the functionality here
-// };
 
 export default Director;

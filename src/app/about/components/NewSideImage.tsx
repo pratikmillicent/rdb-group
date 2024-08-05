@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from "react";
-import parallaxie from "@/common/parallaxie";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const NewSideImage: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState("mission");
-
-  // useEffect(() => {
-  //   parallaxie(`.bg-img.parallaxie`, -1);
-  // }, [selectedTab]);
-
   const tabStyle = (isSelected: boolean) => ({
     backgroundColor: isSelected ? "#d4af5f" : "transparent",
     color: isSelected ? "white" : "black",
@@ -22,10 +17,7 @@ const NewSideImage: React.FC = () => {
   });
 
   return (
-    <section
-      className="sideimg-numbers section-padding pb-60 sub-g"
-      // style={{ height: "100vh" }}
-    >
+    <section className="sideimg-numbers section-padding pb-60 sub-g">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
@@ -47,42 +39,39 @@ const NewSideImage: React.FC = () => {
                   </button>
                 </div>
                 <div col-md-12 d-flex>
-                <div className="tab-content mt-30">
-                  {selectedTab === "mission" && (
-                    <p>
-                      To deliver professionalism and add a touch of Indian
-                      warmth to the way property is managed across India and
-                      overseas.
-                    </p>
-                  )}
-                  {selectedTab === "vision" && (
-                    <p>
-                      Making Real Estate simple and effective through the use of
-                      defined processes and technology.
-                    </p>
-                  )}
-                </div>
-                <div className="side-img col-md-6">
-                  <img className="bg-img bg-right"  
-                  src={selectedTab === "vision"
-                    ? "/assets/images2/our-vision.jpg"
-                    : "assets/images2/our-mission.jpg"} alt="" />
-                </div>
+                  <div className="tab-content mt-30">
+                    {selectedTab === "mission" && (
+                      <p>
+                        To deliver professionalism and add a touch of Indian
+                        warmth to the way property is managed across India and
+                        overseas.
+                      </p>
+                    )}
+                    {selectedTab === "vision" && (
+                      <p>
+                        Making Real Estate simple and effective through the use
+                        of defined processes and technology.
+                      </p>
+                    )}
+                  </div>
+                  <div className="side-img col-md-6">
+                    <Image
+                      src={
+                        selectedTab === "vision"
+                          ? "/assets/images2/our-vision.jpg"
+                          : "assets/images2/our-mission.jpg"
+                      }
+                      alt="mission-vision"
+                      width={800}
+                      height={500}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <div
-        className="bg-img bg-right bg-attachment-local parallaxie"
-        data-background={
-          selectedTab === "vision"
-            ? "/assets/images2/our-vision.jpg"
-            : "assets/images2/our-mission.jpg"
-        }
-      /> */}
-      
     </section>
   );
 };

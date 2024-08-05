@@ -61,6 +61,7 @@ export default function Home() {
       ),
     },
   ];
+
   return (
     <ParallaxProvider>
       <main className="mw-100">
@@ -74,17 +75,12 @@ export default function Home() {
             playsInline
             loop
             preload="auto"
-            // poster="https://www.aspect.global/video/aspect_video.webp"
           ></video>
 
           <Marq data={marque_data} />
         </div>
 
         <VisionMission />
-        {/* <About /> */}
-        {/* {/* <SideImage /> */}
-        {/* <NewSideImage /> */}
-        {/* <GroupGrid /> */}
         <NewGroupGrid />
 
         <div
@@ -104,11 +100,6 @@ export default function Home() {
           offset={5}
           showArrows={false}
         />
-        {/* <GroupGrid /> */}
-        {/* director combine section with images    */}
-        {/* <OurStory /> */}
-
-        {/* director section  */}
 
         <News />
         <VideoGallary />

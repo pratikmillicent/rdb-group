@@ -48,7 +48,6 @@
   content: "";
   position: absolute;
   height: 4px;
-  /* width: calc(100% + var(--padding)); */
   left: calc(var(--padding) * -1);
   bottom: -2px;
   background: d;
@@ -87,21 +86,6 @@
     transform: scaleX(0);
   }
 }
-
-/* .button {
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  color: hsl(207, 19%, 9%);
-  background-color: d;
-  padding: 0.5em 1.25em;
-  border-radius: 0.25rem;
-} */
-
-/* .button:hover,
-.button:focus {
-  background-color: hsl(0, 0%, 100%);
-} */
 
 .blog-card-body {
   color: rgb(255, 255, 255/0.85);

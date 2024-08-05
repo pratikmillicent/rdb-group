@@ -1,9 +1,9 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import Heading from "@/components/heading/Heading";
+import Image from "next/image";
 
 const data = [
   {
@@ -91,7 +91,7 @@ function News() {
             <div className="col-lg-8">
               <div className="position-re">
                 {/* <div className="fz-50 fw-600">Latest News</div> */}
-                <Heading headTitle="Latest News"/>
+                <Heading headTitle="Latest News" />
               </div>
             </div>
             <div className="col-lg-4 d-flex align-items-center">
@@ -126,21 +126,23 @@ function News() {
               id="content-carousel-container-unq-blog"
               className="swiper-container"
             >
-              {data.map((item) => (
+              {data?.map((item) => (
                 <SwiperSlide
                   key={item.id}
                   className="wow fadeInUp"
                   data-wow-delay=".1s"
                 >
                   <div className="item">
-                    <div className="img">
-                      <img
+                    <div className="img outset-border">
+                      <Image
                         src={item.cover}
-                        alt="cover photo"
+                        alt="Landscape picture"
+                        width={800}
                         style={{
                           height: "320px",
                           objectFit: "cover",
                         }}
+                        height={500}
                       />
                       <div className="date">
                         <Link href="/dark/blog-post">{item.date}</Link>
