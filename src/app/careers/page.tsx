@@ -1,6 +1,6 @@
 "use client";
 import Heading from "@/components/heading/Heading";
-import ResumeUpload from "@/components/Resume-upload/ResumeUpload";
+import ResumeUpload from "./components/ResumeUpload";
 import React from "react";
 import CardList from "./components/CardList";
 import Image from "next/image";
@@ -27,7 +27,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="d-flex gap-3 mb-80">
+        <div className="d-flex gap-3 mb-60">
           <div className="text-grey">
             <p className="text-dark fz-20 fw-bold mb-3">
               FASCINATING WORK, ENDLESS OPPORTUNITY
@@ -109,48 +109,48 @@ const data = [
 
 const cardData = [
   {
-    icon: "/assets/images2/setting.svg",
+    icon: "/assets/images/career/setting.svg",
     position: "Operations Manager",
     location: "India",
     description: "A talented Operations Manager to join our team.",
   },
   {
-    icon: "/assets/images2/mind.svg",
+    icon: "/assets/images/career/mind.svg",
     position: "Creative Director",
     description: "A talented Creative Director to join our team.",
   },
   {
-    icon: "/assets/images2/project-manager.png",
+    icon: "/assets/images/career/project-manager.png",
     position: "Chief Strategy Officer",
     location: "China",
     description: "A talented Chief Strategy Officer to join our team.",
   },
   {
-    icon: "/assets/images2/radio.svg",
+    icon: "/assets/images/career/radio.svg",
     position: "Sr. Software Engineer",
     location: "India",
     description: "A talented Sr. Software Engineer to join our team.",
   },
   {
-    icon: "/assets/images2/mind.svg",
+    icon: "/assets/images/career/mind.svg",
     position: "Project Manager",
     location: "USA",
     description: "A talented Sr. Software Engineer to join our team.",
   },
   {
-    icon: "/assets/images2/entrepreneur.png",
+    icon: "/assets/images/career/entrepreneur.png",
     position: "Branch Manager",
     location: "UAE",
     description: "A talented Sr. Software Engineer to join our team.",
   },
   {
-    icon: "/assets/images2/mind.svg",
+    icon: "/assets/images/career/mind.svg",
     position: "Project Manager",
     location: "Russia",
     description: "A talented Sr. Software Engineer to join our team.",
   },
   {
-    icon: "/assets/images2/entrepreneur.png",
+    icon: "/assets/images/career/entrepreneur.png",
     position: "Branch Manager",
     location: "UK",
     description: "A talented Sr. Software Engineer to join our team.",

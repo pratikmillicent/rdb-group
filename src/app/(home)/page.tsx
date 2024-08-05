@@ -1,13 +1,23 @@
 "use client";
 import Marq from "@/components/marq/Marq";
-import News from "./_components/News";
-import VideoGallary from "./_components/VideoGallary";
+import About from "./components/About";
+import GroupGrid from "./components/Group";
+import News from "./components/News";
+import VideoGallary from "./components/VideoGallary";
 import { ParallaxProvider } from "react-scroll-parallax";
-import Card from "./_components/Card";
-import Carroussel3D from "./_components/Carousel";
-import NewGroupGrid from "./_components/NewGroup";
-import CarouselEvent from "./_components/CardImagesCarousel";
-import VisionMission from "../about/VisionMission";
+import SideImage from "./components/SideImage";
+import Carroussel from "./components/Carousel";
+import Carousel from "@/components/carousel/Carousel";
+import Card from "./components/Card";
+import Carroussel3D from "./components/Carousel";
+import NewGroupGrid from "./components/NewGroup";
+import OurStory from "./components/OurStory";
+import DirectorCard from "../about/components/DirectorCard";
+import FrameSlider from "./components/CardImagesCarousel";
+import CarouselEvent from "./components/CardImagesCarousel";
+
+import NewSideImage from "../about/components/NewSideImage";
+import VisionMission from "../about/components/VisionMission";
 import Heading from "@/components/heading/Heading";
 
 const marque_data = [

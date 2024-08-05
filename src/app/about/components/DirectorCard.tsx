@@ -1,5 +1,4 @@
 import Heading from "@/components/heading/Heading";
-import Image from "next/image";
 import React from "react";
 
 const DirectorCard = () => {

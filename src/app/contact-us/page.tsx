@@ -1,7 +1,6 @@
 // @ts-nocheck
 "use client";
-
-import MapComponent from "./MapComponent";
+import MapComponent from "./components/MapComponent";
 import {
   FaMapMarkerAlt,
   FaFacebook,

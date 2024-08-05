@@ -38,7 +38,7 @@ const CardList = ({ data }) => {
       <div
         className="bg-golden p-5"
         style={{
-          backgroundImage: `url(/assets/images2/career-head-logo.png)`,
+          backgroundImage: `url(/assets/images/career/career-head-logo.png)`,
           borderTopLeftRadius: "8px",
           borderTopRightRadius: "8px",
           backgroundSize: "contain",
