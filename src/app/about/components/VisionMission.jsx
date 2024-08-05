@@ -92,10 +92,10 @@ const VisionMission = () => {
             <Image
               src={
                 selectedTab === "vision"
-                  ? "/assets/images2/our-vision.jpg"
+                  ? "/assets/images/home/our-vision.jpg"
                   : selectedTab === "mission"
-                  ? "/assets/images2/our-mission.jpg"
-                  : "/assets/images2/news3.webp"
+                  ? "/assets/images/home/our-mission.jpg"
+                  : "/assets/images/home/news1.jpg"
               }
               className={`img-fluid h-100 ${animate ? "fade-in" : ""}`}
               alt={selectedTab}
