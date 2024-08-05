@@ -4,49 +4,28 @@ import { CarouselItem } from "react-bootstrap";
 import React from "react";
 import Image from "next/image";
 
-function DarkVariantExample() {
-  const directionButtons = (direction) => {
-    return (
-      <span
-        aria-hidden="true"
-        style={{
-          position: "absolute",
-          bottom: "0",
-          width: "fit-content",
-          height: "fit-content",
-          display: "block",
-          background: "red",
-          padding: "10px",
-          borderRadius: "10px",
-        }}
-        className={direction === "Next" ? "button-next" : "button-prev"}
-      >
-        {direction}
-      </span>
-    );
-  };
+function DarkVariantExample({ spliti }) {
+  console.log("innnn", { spliti });
 
   return (
     <div className="container">
-      <Carousel
+      <div
         indicators={false}
         interval={null}
         controls={false}
         //
-        nextIcon={directionButtons("Next")}
-        prevIcon={directionButtons("Previous")}
       >
-        {carouselData?.map((item, index) => (
-          <Carousel.Item key={index}>
+        {spliti?.map((item, index) => (
+          <div key={index}>
             <div className="d-flex align-content-center gap-2">
               <div className="d-flex align-self-center gap-2">
                 <div
-                  className="bg-golden rounded fw-semibold fs-5 align-self-center py-2  "
+                  className="bg-navy rounded fw-semibold fs-5 align-self-center py-2  "
                   style={{ height: "fit-content" }}
                 >
                   {item.date.split(" ")?.map((part, index) => (
                     <div
-                      className="date bg-golden px-1 px-3 text-center"
+                      className="date bg-navy text-light px-1 px-3 py-1 text-center"
                       key={index}
                     >
                       <div className=" d-block fs-4"> {part}</div>
@@ -63,7 +42,10 @@ function DarkVariantExample() {
                 >
                   {item.title.split("<br />")?.map((line, index) => (
                     <React.Fragment key={index}>
-                      <span className="fst-italic fw-bold fs-5"> {line}</span>
+                      <span className="fw-semibold ps-2 pe-4 fs-5">
+                        {" "}
+                        {line}
+                      </span>
                       <br />
                     </React.Fragment>
                   ))}
@@ -89,20 +71,61 @@ function DarkVariantExample() {
                 ))}
               </Carousel>
             </div>
-          </Carousel.Item>
+          </div>
         ))}
-      </Carousel>
+      </div>
     </div>
   );
 }
 
+function splitToNChunks(array, n) {
+  let result = [];
+  for (let i = n; i > 0; i--) {
+    result.push(array.splice(0, Math.ceil(array.length / i)));
+  }
+  return result;
+}
+
+const directionButtons = (direction) => {
+  return (
+    <span
+      aria-hidden="true"
+      style={{
+        position: "absolute",
+        bottom: "0",
+        width: "fit-content",
+        height: "fit-content",
+        display: "block",
+        background: "red",
+        padding: "10px",
+        paddingX: "40px",
+        borderRadius: "10px",
+      }}
+      className={direction === "Next" ? "button-next" : "button-prev"}
+    >
+      {direction}
+    </span>
+  );
+};
+
 const CarouselEvent = () => {
   return (
-    <div className="d-flex flex-column gap-2 py-5">
-      <DarkVariantExample />
-      <DarkVariantExample />
-      <DarkVariantExample />
-    </div>
+    <Carousel
+      interval={null}
+      controls
+      nextIcon={directionButtons("Next")}
+      prevIcon={directionButtons("Previous")}
+      className="d-flex flex-column gap-2 py-5"
+    >
+      {splitarr.map((spliti) => {
+        console.log("out of ", spliti);
+        return (
+          <CarouselItem>
+            <DarkVariantExample spliti={spliti} />
+          </CarouselItem>
+        );
+      })}
+    </Carousel>
   );
 };
 export default CarouselEvent;
@@ -136,4 +159,60 @@ const carouselData = [
       "assets/images2/contact.jpg",
     ],
   },
+  {
+    date: "1 Aug 2023",
+    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    images: [
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+    ],
+  },
+  {
+    date: "1 Aug 2023",
+    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    images: [
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+    ],
+  },
+  {
+    date: "1 Aug 2023",
+    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    images: [
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+    ],
+  },
+  {
+    date: "1 Aug 2023",
+    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    images: [
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+    ],
+  },
+  {
+    date: "1 Aug 2023",
+    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    images: [
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+    ],
+  },
+  {
+    date: "1 Aug 2023",
+    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    images: [
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+      "assets/images2/contact.jpg",
+    ],
+  },
 ];
+
+const splitarr = splitToNChunks(carouselData, 3);

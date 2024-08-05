@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 import Team from "./Team";
 import CoreValue2 from "./CoreValue2";

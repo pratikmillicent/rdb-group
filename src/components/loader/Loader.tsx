@@ -34,16 +34,15 @@ function Loader() {
       <div className="loader-wrap-heading">
         <span>
           <h2 className="load-text">
-            <span>
-              <Image
-                src="/rdb-group.svg"
-                className="w-100"
-                style={{ width: "305px" }}
-                alt="logo"
-                width={800}
-                height={500}
-              />
-            </span>
+            {/* <span>
+              <Image src="/rdb-group.svg" alt="logo" width={1} height={1} />
+            </span> */}
+            <img
+              style={{ width: "305px" }}
+              src="/rdb-group.svg"
+              alt="logo"
+              className="logo"
+            />
           </h2>
         </span>
       </div>

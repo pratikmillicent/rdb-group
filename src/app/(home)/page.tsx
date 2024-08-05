@@ -6,7 +6,6 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import Card from "./_components/Card";
 import Carroussel3D from "./_components/Carousel";
 import NewGroupGrid from "./_components/NewGroup";
-import CarouselEvent from "./_components/CardImagesCarousel";
 import VisionMission from "../about/VisionMission";
 import Heading from "@/components/heading/Heading";
 
