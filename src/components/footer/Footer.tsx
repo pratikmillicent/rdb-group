@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="sub-bg text-grey">
+    <footer className="bg-navy light-text">
       <div className="footer-container">
         <div className="container pb-60 pt-60 ontop">
           <div className="row">
@@ -13,8 +13,8 @@ function Footer() {
                 <div className="tit mb-20">
                   <h6>Address</h6>
                 </div>
-                <div className="text">
-                  <p>
+                <div className="light-text">
+                  <p className="light-text">
                     Gate No 8, Metro Station, 302-303, 3rd floor, 72 Empire,
                     WEH, Near, Western Express Hwy, Andheri East, Mumbai,
                     Maharashtra 400099
