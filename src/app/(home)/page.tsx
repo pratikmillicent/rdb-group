@@ -38,9 +38,7 @@ export default function Home() {
     },
     {
       key: 2,
-      content: (
-        <Card imagen="/assets/images/home/movie.webp" />
-      ),
+      content: <Card imagen="/assets/images/home/movie.webp" />,
     },
     {
       key: 3,
@@ -65,10 +63,18 @@ export default function Home() {
   return (
     <ParallaxProvider>
       <main className="mw-100">
-        <div>
+        <div
+          style={{
+            position: "relative",
+            height: "100vh",
+            // background:
+            //   "linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))",
+          }}
+        >
           <video
             className="mw-100 w-100"
-            style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
+            // style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
+            style={{ height: "100vh", objectFit: "initial" }}
             src="/assets/video/HeroVideo.mp4"
             autoPlay
             muted
@@ -76,13 +82,39 @@ export default function Home() {
             loop
             preload="auto"
           ></video>
-
-          <Marq data={marque_data} />
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              background:
+                "linear-gradient(117deg, rgba(23, 38, 57, 90%) 0%, rgba(1, 1, 1, 50%) 75%)",
+              zIndex: 1,
+              pointerEvents: "none",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100vh",
+              }}
+            >
+              <h3 className="text-white" style={{ marginBottom: "40px" }}>
+                Build on Experience
+              </h3>
+              <button className="block hero-button">Know more</button>
+            </div>
+          </div>
         </div>
+        <Marq data={marque_data} />
 
         <VisionMission />
         <NewGroupGrid />
-
         <div
           style={{
             display: "flex",
@@ -91,7 +123,6 @@ export default function Home() {
         >
           <Heading headTitle="Events" />
         </div>
-
         <Carroussel3D
           cards={cards}
           height="500px"
@@ -100,7 +131,6 @@ export default function Home() {
           offset={5}
           showArrows={false}
         />
-
         <News />
         <VideoGallary />
       </main>

@@ -2,6 +2,7 @@ import { MouseEvent, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { IoMenu } from "react-icons/io5";
 
 function Navbar() {
   const path = usePathname();
@@ -48,7 +49,7 @@ function Navbar() {
         <Link href="/">
           <Image
             src="/rdb-group.svg"
-            style={{ width: "205px", height: "101px" }}
+            style={{ width: "205px", height: "75px" }}
             alt="logo"
             width={800}
             height={500}
@@ -65,7 +66,8 @@ function Navbar() {
           onClick={toggleNavbar}
         >
           <span className="icon-bar">
-            <i className="fas fa-bars"></i>
+            {/* <i className="fas fa-bars"></i> */}
+            <IoMenu className="text-white" />
           </span>
         </button>
 

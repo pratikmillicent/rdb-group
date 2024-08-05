@@ -44,7 +44,7 @@ function Marq({ data }: { data: string[] }) {
     // </section>
     <section
       id="section-fun-facts"
-      className="p-5"
+      className="p-5 block"
       style={{ backgroundSize: "cover" }}
     >
       <div className="container" style={{ backgroundSize: "cover" }}>
