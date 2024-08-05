@@ -343,7 +343,7 @@
 // export default ContactUs;
 
 "use client";
-import MapComponent from "./MapComponent";
+import MapComponent from "./components/MapComponent";
 import {
   FaMapMarkerAlt,
   FaFacebook,
@@ -469,7 +469,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <img src="/assets/images2/contact.jpg" style={{ height: "100vh" }} />
+      <img src="/assets/images/contact/contact.jpg" style={{ height: "100vh" }} />
       <div className="container">
         <div className="d-flex gap-3">
           <div className="col-12 col-md-11">
@@ -674,7 +674,7 @@ const ContactUs = () => {
                         style={{ margin: "60px auto" }}
                       >
                         <img
-                          src="/assets/images2/map.png"
+                          src="/assets/images/contact/map.png"
                           alt=""
                           className="w-100"
                         />

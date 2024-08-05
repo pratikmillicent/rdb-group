@@ -1,13 +1,13 @@
 "use client";
-import Intro from "./Overview2";
-import Team from "./Team";
-import CoreValue2 from "./CoreValue2";
-import CallToAction from "./CallToAction";
-import Director2 from "./Director2";
-import TeamSection from "./TeamSection";
-import NewSideImage from "./NewSideImage";
-import VisionMission from "./VisionMission";
-import DirectorCard from "../(home)/_components/DirectorCard";
+import Intro from "./components/Overview2";
+import Team from "./components/Team";
+import CoreValue2 from "./components/CoreValue2";
+import CallToAction from "./components/CallToAction";
+import Director2 from "./components/Director2";
+import TeamSection from "./components/TeamSection";
+import NewSideImage from "./components/NewSideImage";
+import VisionMission from "./components/VisionMission";
+import DirectorCard from "./components/DirectorCard";
 
 function About() {
   return (

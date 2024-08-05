@@ -1,23 +1,23 @@
 "use client";
 import Marq from "@/components/marq/Marq";
-import About from "./_components/About";
-import GroupGrid from "./_components/Group";
-import News from "./_components/News";
-import VideoGallary from "./_components/VideoGallary";
+import About from "./components/About";
+import GroupGrid from "./components/Group";
+import News from "./components/News";
+import VideoGallary from "./components/VideoGallary";
 import { ParallaxProvider } from "react-scroll-parallax";
-import SideImage from "./_components/SideImage";
-import Carroussel from "./_components/Carousel";
+import SideImage from "./components/SideImage";
+import Carroussel from "./components/Carousel";
 import Carousel from "@/components/carousel/Carousel";
-import Card from "./_components/Card";
-import Carroussel3D from "./_components/Carousel";
-import NewGroupGrid from "./_components/NewGroup";
-import OurStory from "./_components/OurStory";
-import DirectorCard from "./_components/DirectorCard";
-import FrameSlider from "./_components/CardImagesCarousel";
-import CarouselEvent from "./_components/CardImagesCarousel";
+import Card from "./components/Card";
+import Carroussel3D from "./components/Carousel";
+import NewGroupGrid from "./components/NewGroup";
+import OurStory from "./components/OurStory";
+import DirectorCard from "../about/components/DirectorCard";
+import FrameSlider from "./components/CardImagesCarousel";
+import CarouselEvent from "./components/CardImagesCarousel";
 
-import NewSideImage from "../about/NewSideImage";
-import VisionMission from "../about/VisionMission";
+import NewSideImage from "../about/components/NewSideImage";
+import VisionMission from "../about/components/VisionMission";
 import Heading from "@/components/heading/Heading";
 
 const marque_data = [

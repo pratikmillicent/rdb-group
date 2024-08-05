@@ -2,7 +2,7 @@
 import React from "react";
 
 const CoreValuesImage = () => {
-  const coreImage = "/assets/images2/Core.jpg";
+  const coreImage = "/assets/images/about/Core.jpg";
   return (
     <div className="position-relative text-center text-white">
       <img

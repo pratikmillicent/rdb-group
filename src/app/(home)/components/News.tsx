@@ -133,10 +133,10 @@ function News() {
                   data-wow-delay=".1s"
                 >
                   <div className="item">
-                    <div className="img outset-border">
+                    <div className="img">
                       <img
                         src={item.cover}
-                        alt=""
+                        alt="cover photo"
                         style={{
                           height: "320px",
                           objectFit: "cover",

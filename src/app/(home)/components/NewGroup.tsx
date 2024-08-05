@@ -16,7 +16,7 @@ interface DataItem {
 const data: DataItem[] = [
   {
     id: 1,
-    image: "assets/images2/news2.jpg",
+    image: "assets/images/home/properties.webp",
     number: "01.",
     type: "Properties",
     title: "Aspect Global Ventures Pvt.Ltd.",
@@ -24,7 +24,7 @@ const data: DataItem[] = [
   },
   {
     id: 2,
-    image: "assets/images2/img2.jpg",
+    image: "assets/images/home/img2.jpg",
     number: "02.",
     type: "Reality",
     title: "Aspect Bullion & Refinery",
@@ -32,7 +32,7 @@ const data: DataItem[] = [
   },
   {
     id: 3,
-    image: "assets/images2/Fractal.jpg",
+    image: "assets/images/home/Fractal.jpg",
     number: "03.",
     type: "Fracto",
     title: "Aspect Infrastructure",
@@ -49,7 +49,7 @@ const data: DataItem[] = [
   },
   {
     id: 5,
-    image: "assets/images2/business.jpg",
+    image: "assets/images/home/business.jpg",
     number: "05.",
     type: "Business",
     title: "Luxury Glassware",

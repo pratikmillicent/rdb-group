@@ -452,7 +452,7 @@ import { Autoplay, Navigation } from "swiper";
 import ModalVideo from "@/components/modal-video/ModalVideo";
 import Carousel from "@/components/carousel/Carousel";
 import Heading from "@/components/heading/Heading";
-import CarouselEvent from "../(home)/_components/CardImagesCarousel";
+import CarouselEvent from "../(home)/components/CardImagesCarousel";
 
 interface Video {
   image: string;
@@ -622,58 +622,58 @@ const data = [
 const data1 = [
   {
     id: 1,
-    image: "/assets/images2/award1.jpg",
+    image: "/assets/images/news/award1.jpg",
   },
   {
     id: 2,
-    image: "/assets/images2/news-awards.jpg",
+    image: "/assets/images/news/news-awards.jpg",
   },
   {
     id: 3,
-    image: "/assets/images2/award3.avif",
+    image: "/assets/images/news/",
   },
   {
     id: 4,
-    image: "/assets/images2/news-awards.jpg",
+    image: "/assets/images/news/news-awards.jpg",
   },
 ];
 
 const data2 = [
   {
     id: 1,
-    image: "/assets/images2/proj1.jpg",
+    image: "/assets/images/news/proj1.jpg",
   },
   {
     id: 2,
-    image: "/assets/images2/proj2.jpg",
+    image: "/assets/images/news/proj2.jpg",
   },
   {
     id: 3,
-    image: "/assets/images2/proj3.jpg",
+    image: "/assets/images/news/proj3.jpg",
   },
   {
     id: 4,
-    image: "/assets/images2/proj7.jpg",
+    image: "/assets/images/news/proj7.jpg",
   },
   {
     id: 5,
-    image: "/assets/images2/proj8.jpg",
+    image: "/assets/images/news/proj8.jpg",
   },
   {
     id: 6,
-    image: "/assets/images2/proj9.jpg",
+    image: "/assets/images/news/proj9.jpg",
   },
   {
     id: 7,
-    image: "/assets/images2/proj10.jpg",
+    image: "/assets/images/news/proj10.jpg",
   },
   {
     id: 8,
-    image: "/assets/images2/proj11.jpg",
+    image: "/assets/images/news/proj11.jpg",
   },
   {
     id: 9,
-    image: "/assets/images2/proj12.jpg",
+    image: "/assets/images/news/proj12.jpg",
   },
 ];
 

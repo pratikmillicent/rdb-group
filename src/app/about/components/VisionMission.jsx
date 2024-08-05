@@ -82,7 +82,7 @@
 
 
 import React, { useState } from 'react';
-import './VisionMission.css';
+import '../VisionMission.css';
 import Heading from '@/components/heading/Heading';
 
 const VisionMission = () => {
@@ -160,8 +160,8 @@ const VisionMission = () => {
               className={`img-fluid h-100 ${animate ? 'fade-in' : ''}`}
               src={
                 selectedTab === 'vision'
-                  ? '/assets/images2/our-vision.jpg'
-                  : '/assets/images2/our-mission.jpg'
+                  ? '/assets/images/home/our-vision.jpg'
+                  : '/assets/images/home/our-mission.jpg'
               }
               alt={selectedTab}
               style={{ objectFit: 'cover' }}

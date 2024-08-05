@@ -1,9 +1,5 @@
 import React from "react";
-import bgImage from "/assets/images2/career-head-logo.png";
-import Setting from "/assets/images2/setting.svg";
-import Mind from "/assets/images2/mind.svg";
-import Zebra from "/assets/images2/zebra.svg";
-import Radio from "/assets/images2/radio.svg";
+import bgImage from "/assets/images/career/career-head-logo.png";
 import { Card } from "react-bootstrap";
 
 const data = [
