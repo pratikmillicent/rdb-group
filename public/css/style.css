@@ -3293,8 +3293,8 @@ body.loaded {
   -ms-transform: translateY(80px);
   transform: translateY(80px);
 
-  padding-top: 15px;
-  padding-bottom: 15px;
+  /* padding-top: 15px; */
+  /* padding-bottom: 15px; */
 
   background-color: white;
   /* border-radius: 8px; Adjust the radius as needed */
@@ -9933,6 +9933,12 @@ header.in-box {
 
   .navbar .navbar-nav .mega-menu .links {
     padding-left: 30px;
+  }
+
+  @media (max-width: 993px) {
+    .navbar-nav {
+      background-color: white !important; /* For small screens */
+    }
   }
 
   .hamenu .menu-links {

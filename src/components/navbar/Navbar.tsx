@@ -75,7 +75,7 @@ function Navbar() {
           className="collapse navbar-collapse justify-content-center"
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav">
+          <ul className="navbar-nav sm-[bg-white]">
             <li className="nav-item">
               <Link
                 href="/about"
