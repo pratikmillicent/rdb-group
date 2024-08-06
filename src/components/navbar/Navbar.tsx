@@ -66,8 +66,7 @@ function Navbar() {
           onClick={toggleNavbar}
         >
           <span className="icon-bar">
-            {/* <i className="fas fa-bars"></i> */}
-            <IoMenu className="text-white" />
+            <IoMenu className="text-black" />
           </span>
         </button>
 
@@ -75,7 +74,7 @@ function Navbar() {
           className="collapse navbar-collapse justify-content-center"
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav sm-[bg-white]">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <Link
                 href="/about"
@@ -84,7 +83,9 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text text-capitalize fs-6">About</span>
+                <span className="rolling-text text-capitalize  fs-6 ">
+                  About
+                </span>
               </Link>
             </li>
             <li

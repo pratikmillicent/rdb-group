@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState } from "react";
 import Image from "next/image";
-import '../VisionMission.css';
-import Heading from '@/components/heading/Heading';
+import "../VisionMission.css";
+import Heading from "@/components/heading/Heading";
 
 const VisionMission = () => {
   const [selectedTab, setSelectedTab] = useState("about");
   const [animate, setAnimate] = useState(false);
 
-  const tabStyle = (isSelected) => ({
+  const tabStyle = isSelected => ({
     backgroundColor: isSelected ? "#d4af5f" : "transparent",
     color: isSelected ? "white" : "grey",
     fontWeight: "600",
@@ -20,7 +20,7 @@ const VisionMission = () => {
     fontSize: "16px",
   });
 
-  const handleTabClick = (tab) => {
+  const handleTabClick = tab => {
     if (selectedTab !== tab) {
       setAnimate(true);
       setTimeout(() => {
@@ -35,7 +35,7 @@ const VisionMission = () => {
       <div className="row">
         <div className="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-col justify-content-center align-items-center">
           <div className="mb-4">
-            <Heading headTitle='Overview'/>
+            <Heading headTitle="Overview" />
           </div>
           <div className="mb-4 d-flex flex-wrap">
             <button
@@ -88,7 +88,7 @@ const VisionMission = () => {
         </div>
 
         <div className="col-12 col-md-6">
-          <div className="ratio ratio-4x3" style={{ position: 'relative' }}>
+          <div className="ratio ratio-4x3" style={{ position: "relative" }}>
             <Image
               src={
                 selectedTab === "vision"
@@ -99,8 +99,9 @@ const VisionMission = () => {
               }
               className={`img-fluid h-100 ${animate ? "fade-in" : ""}`}
               alt={selectedTab}
-              layout="fill"
-              objectFit="cover"
+              // layout="fill"
+              fill
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>

@@ -64,24 +64,21 @@ export default function Home() {
     <ParallaxProvider>
       <main className="mw-100">
         <div
-          style={{
-            position: "relative",
-            height: "100vh",
-            // background:
-            //   "linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))",
-          }}
+          className="hero-responsive"
+          // style={{
+          //   position: "relative",
+          //   height: "100vh",
+          //   overflow: "hidden",
+          // }}
         >
           <video
-            className="mw-100 w-100"
-            // style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
-            style={{ height: "100vh", objectFit: "initial" }}
             src="/assets/video/HeroVideo.mp4"
             autoPlay
             muted
             playsInline
             loop
             preload="auto"
-          ></video>
+          />
           <div
             style={{
               position: "absolute",
@@ -101,7 +98,8 @@ export default function Home() {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                height: "100vh",
+                height: "100%",
+                padding: "0 20px",
               }}
             >
               <h3 className="text-white" style={{ marginBottom: "40px" }}>
@@ -112,7 +110,6 @@ export default function Home() {
           </div>
         </div>
         <Marq data={marque_data} />
-
         <VisionMission />
         <NewGroupGrid />
         <div
@@ -126,7 +123,6 @@ export default function Home() {
         <Carroussel3D
           cards={cards}
           height="500px"
-          // width="40%"
           margin="0 auto"
           offset={5}
           showArrows={false}
