@@ -90,7 +90,7 @@ export default function Home() {
 
           {/* <Marq data={marque_data} /> */}
           <DashboardCount data={data} />
-          />
+        
           <div
             style={{
               position: "absolute",
