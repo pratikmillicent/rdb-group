@@ -141,7 +141,7 @@ const News = () => {
         </section>
       </div>
 
-      <CarouselEvent />
+      <CarouselEvent data={data} />
     </>
   );
 };
