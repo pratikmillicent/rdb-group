@@ -30,7 +30,9 @@ const DirectorCard = () => {
                 <h4 className="pt-3 pb-1 m-0 text-grey">{data?.name}</h4>
                 <div className="fs-5">{data?.role}</div>
                 <hr className="bg-golden" />
-                <p className="fs-6 py-0 text-start lh-lg text-wrap">{data?.description}</p>
+                <p className="fs-6 py-0 lh-lg text-wrap"
+                style={{textAlign:"justify"}}
+                >{data?.description}</p>
               </div>
             </div>
           ))}

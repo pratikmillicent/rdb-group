@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState, CSSProperties } from 'react';
 import Image from "next/image";
 import '../VisionMission.css';
 import Heading from '@/components/heading/Heading';
 
-const VisionMission = () => {
-  const [selectedTab, setSelectedTab] = useState("about");
-  const [animate, setAnimate] = useState(false);
+const VisionMission: React.FC = () => {
+  const [selectedTab, setSelectedTab] = useState<string>("about");
+  const [animate, setAnimate] = useState<boolean>(false);
 
-  const tabStyle = (isSelected) => ({
+  const tabStyle = (isSelected: boolean): CSSProperties => ({
     backgroundColor: isSelected ? "#d4af5f" : "transparent",
     color: isSelected ? "white" : "grey",
     fontWeight: "600",
@@ -18,9 +18,10 @@ const VisionMission = () => {
     transition: "background-color 0.3s, color 0.3s",
     borderRadius: "6px",
     fontSize: "16px",
+    margin: "5px",
   });
 
-  const handleTabClick = (tab) => {
+  const handleTabClick = (tab: string) => {
     if (selectedTab !== tab) {
       setAnimate(true);
       setTimeout(() => {
@@ -33,17 +34,17 @@ const VisionMission = () => {
   return (
     <section>
       <div className="row">
-        <div className="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-col justify-content-center align-items-center">
+        <div className="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center">
           <div className="mb-4">
-            <Heading headTitle='Overview'/>
+            <Heading headTitle='Overview' />
           </div>
-          <div className="mb-4 d-flex flex-wrap">
+          <div className="mb-4 d-flex flex-wrap justify-content-center">
             <button
               style={tabStyle(selectedTab === "about")}
               onClick={() => handleTabClick("about")}
               className="me-2 mb-2"
             >
-              Abouts us
+              About us
             </button>
             <button
               style={tabStyle(selectedTab === "mission")}
@@ -61,9 +62,8 @@ const VisionMission = () => {
             </button>
           </div>
           <div
-            className={`tab-content p-5 text-center ${
-              animate ? "slide-in" : ""
-            }`}
+            className={`tab-content p-0 text-center ${animate ? "slide-in" : ""}`}
+            style={{ margin: 0 }}
           >
             {selectedTab === "about" && (
               <p>
@@ -87,21 +87,47 @@ const VisionMission = () => {
           </div>
         </div>
 
-        <div className="col-12 col-md-6">
-          <div className="ratio ratio-4x3" style={{ position: 'relative' }}>
+        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center d-none d-sm-none d-md-block d-lg-block d-xl-block"
+          style={{ height: "100vh" }}
+        >
+          {/* <div
+            className="ratio ratio-4x3"
+            style={{ position: 'relative', width: '100%', height: '100%', margin: 0, padding: 0 }}
+          >
             <Image
               src={
                 selectedTab === "vision"
                   ? "/assets/images/home/our-vision.jpg"
                   : selectedTab === "mission"
-                  ? "/assets/images/home/our-mission.jpg"
-                  : "/assets/images/home/news1.jpg"
+                    ? "/assets/images/home/our-mission.jpg"
+                    : "/assets/images/home/news1.jpg"
               }
-              className={`img-fluid h-100 ${animate ? "fade-in" : ""}`}
+              className={`img-fluid ${animate ? "fade-in" : ""}`}
               alt={selectedTab}
               layout="fill"
               objectFit="cover"
+              style={{ margin: 0, padding: 0 }}
             />
+          </div> */}
+
+          <div className="">
+            <div
+              className="ratio ratio-4x3"
+              style={{ position: 'relative', width: '100%', height: '100%', margin: 0, padding: 0 }}
+            >
+              <div
+                className="sec-bg-img bg-img parallaxie"
+                style={{ height: "100vh" }}
+                data-background={
+                  selectedTab === "vision"
+                    ? "/assets/images/home/our-vision.jpg"
+                    : selectedTab === "mission"
+                      ? "/assets/images/home/our-mission.jpg"
+                      : "/assets/images/home/news1.jpg"
+                }
+              ></div>
+
+            </div>
           </div>
         </div>
       </div>
