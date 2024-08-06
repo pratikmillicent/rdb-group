@@ -92,7 +92,10 @@ const NewGroupGrid: React.FC = () => {
 
     if (!portfolio) return;
 
-    if (portfolio.top < 75 && portfolio.height / (data.length - 1) < portfolio.bottom) {
+    if (
+      portfolio.top < 75 &&
+      portfolio.height / (data.length - 1) < portfolio.bottom
+    ) {
       leftSide.style.position = "fixed";
       leftSide.style.top = "0px";
       leftSide.style.width = width + "px";

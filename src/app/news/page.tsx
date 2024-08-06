@@ -81,7 +81,6 @@ const News = () => {
             <div className="sec-lg-head">
               <div className="row">
                 <div className="col-lg-8">
-                  {/* <div className="fz-50 fw-600">LATEST NEWS</div> */}
                   <Heading headTitle="Latest News" />
                 </div>
               </div>
@@ -142,9 +141,7 @@ const News = () => {
         </section>
       </div>
 
-      <CarouselEvent />
-
-      <ModalVideo isOpen={isVideoOpen} onClose={() => setIsVideoOpen(null)} />
+      <CarouselEvent data={data} />
     </>
   );
 };

@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 import Intro from "./components/Overview2";
 import Team from "./components/Team";

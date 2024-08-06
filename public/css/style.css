@@ -3197,13 +3197,11 @@ body.loaded {
 }
 
 .navbar {
+  color: white;
   height: 80px;
-  /* background: var(--white); */
-  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); */
   padding: 0;
   margin: 0;
   width: 100%;
-  /* border-bottom: 2px solid transparent; */
   z-index: 999;
   top: 0;
   position: absolute;
@@ -3216,7 +3214,6 @@ body.loaded {
   top: 30px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  /* border-radius: 40px; */
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   min-height: auto;
@@ -3292,7 +3289,8 @@ body.loaded {
   -webkit-transform: translateY(80px);
   -ms-transform: translateY(80px);
   transform: translateY(80px);
-
+  /* color: white; */
+  color: black !important;
   /* padding-top: 15px; */
   /* padding-bottom: 15px; */
   background-color: white;
@@ -3308,8 +3306,8 @@ body.loaded {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
-  color: var(--foreground);
-
+  color: inherit;
+  /* color: var(--white) !important; */
   margin: 0 15px;
 }
 
@@ -3318,7 +3316,7 @@ body.loaded {
   letter-spacing: 1px;
   font-size: 13px;
   font-weight: 600;
-  color: var(--foreground);
+  /* color: var(--foreground); */
 }
 
 .navbar .navbar-nav .nav-link .rolling-text {
@@ -3563,7 +3561,7 @@ body.loaded {
   width: 100%;
   z-index: 999999;
   padding: 25px 0;
-  color: var(--white);
+  color: var(--white) !important;
   -webkit-transition: all 0.7s;
   -o-transition: all 0.7s;
   transition: all 0.7s;
@@ -9937,6 +9935,7 @@ header.in-box {
   @media (max-width: 993px) {
     .navbar-nav {
       background-color: white !important; /* For small screens */
+      color: black !important;
     }
   }
 
@@ -11069,5 +11068,44 @@ header.in-box {
 @media (max-width: 567px) {
   .hero-responsive {
     height: 70vh;
+  }
+}
+
+/* Default styles for larger screens (e.g., tablets and desktops) */
+.de_count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 16.6667%; /* 6 items per row on larger screens */
+    max-width: 16.6667%;
+  }
+}
+
+/* Styles for mobile screens */
+@media (max-width: 767px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-lg-2,
+  .col-md-4,
+  .col-6 {
+    flex: 0 0 50%; /* 2 items per row on small screens */
+    max-width: 50%;
+  }
+
+  .mb-4 {
+    margin-bottom: 1.5rem; /* Adjust spacing for mobile */
   }
 }

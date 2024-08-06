@@ -1,5 +1,12 @@
 import Split from "@/utils/Split";
 import React from "react";
+import { FaLightbulb } from "react-icons/fa";
+import { FaPuzzlePiece } from "react-icons/fa";
+import { FaHandshake } from "react-icons/fa";
+import { FaMedal } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa6";
+import { FaBullseye } from "react-icons/fa6";
+
 function CoreValue2() {
   return (
     <div className="clients section-padding pb-60 position-re">
@@ -22,8 +29,9 @@ function CoreValue2() {
                   key={Math.floor(Math.random() * 10000)}
                 >
                   <div className="item mb-30 wow fadeIn" data-wow-delay=".6s">
-                    <div>
-                      <i className={` ${item.icon} fs-1 main-color4`}></i>
+                    <div className="fs-1 text-golden">
+                      {/* <i className={` ${item.icon} fs-1 main-color4`}></i> */}
+                      {<>{item?.icon}</>}
                     </div>
                     <Split>
                       <h4 className="text-grey">{item?.name}</h4>
@@ -47,39 +55,40 @@ export default CoreValue2;
 
 const coreValueImage = [
   {
-    icon: "fas fa-lightbulb",
+    icon: <FaLightbulb />,
     name: "INNOVATION",
     description:
       "We strive to think outside the box and bring new ideas to life.",
     color: "#FFD700",
   },
   {
-    icon: "fas fa-puzzle-piece",
+    icon: <FaPuzzlePiece />,
+
     name: "COMMITMENT",
     description: "Our dedication to our work and to our clients is unwavering.",
     color: "#FF5733",
   },
   {
-    icon: "fas fa-handshake",
+    icon: <FaHandshake />,
     name: "INTEGRITY",
     description: "We conduct our business with honesty and transparency.",
     color: "#28A745",
   },
   {
-    icon: "fas fa-medal",
+    icon: <FaMedal />,
     name: "QUALITY",
     description: "We ensure the highest standards in everything we do.",
     color: "#C0C0C0",
   },
 
   {
-    icon: "fas fa-users",
+    icon: <FaUsers />,
     name: "TEAMWORK",
     description: "Collaborating effectively to achieve common goals.",
     color: "#800080",
   },
   {
-    icon: "fas fa-bullseye",
+    icon: <FaBullseye />,
     name: "FOCUS",
     description: "Concentrating on delivering the best outcomes.",
     color: "#FF4500",
