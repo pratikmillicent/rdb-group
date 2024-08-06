@@ -73,22 +73,21 @@ export default function Home() {
   return (
     <ParallaxProvider>
       <main className="mw-100">
-        <div>
+        <div className="hero-responsive">
           <video
             className="mw-100 w-100"
             // borderBottom:"5px solid #d4af5f"
-            style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
+            // style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
             src="/assets/video/HeroVideo.mp4"
             autoPlay
             muted
             playsInline
             loop
             preload="auto"
-          ></video>
+          />
 
           {/* <Marq data={marque_data} /> */}
-          <DashboardCount data={data} />
-        
+
           <div
             style={{
               position: "absolute",
@@ -119,6 +118,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <DashboardCount data={data} />
 
         <VisionMission />
 

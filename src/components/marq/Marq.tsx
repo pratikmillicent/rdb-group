@@ -50,7 +50,7 @@ function Marq({ data }: { data: string[] }) {
       <div className="container">
         <div className="row text-center">
           <div
-            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
+            className="col-lg-4 col-sm-6  col-6 mb-4 wow fadeInUp animated"
             data-wow-delay="0s"
           >
             <div className="de_count">
@@ -67,7 +67,7 @@ function Marq({ data }: { data: string[] }) {
             </div>
           </div>
           <div
-            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
+            className="col-lg-4 col-sm-6 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay=".25s"
           >
             <div className="de_count">
@@ -81,7 +81,7 @@ function Marq({ data }: { data: string[] }) {
             </div>
           </div>
           <div
-            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
+            className="col-lg-4 col-sm-6 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay=".4s"
           >
             <div className="de_count">
@@ -95,7 +95,7 @@ function Marq({ data }: { data: string[] }) {
             </div>
           </div>
           <div
-            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
+            className="col-lg-4 col-sm-6 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay=".6s"
           >
             <div className="de_count">
@@ -109,7 +109,7 @@ function Marq({ data }: { data: string[] }) {
             </div>
           </div>
           <div
-            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
+            className="col-lg-4 col-sm-6 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay=".8s"
           >
             <div className="de_count">
@@ -123,7 +123,7 @@ function Marq({ data }: { data: string[] }) {
             </div>
           </div>
           <div
-            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
+            className="col-lg-4 col-sm-6 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay="1s"
           >
             <div className="de_count">
