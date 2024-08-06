@@ -4,11 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
+import { transform } from "next/dist/build/swc";
 
 const data = [
   {
     id: 1,
-    title: "Creative advertising in our life became a info noise",
+    title: "tising in our life became a info noise",
     cover: "/assets/images/home/news2.jpg",
     author: "Admin",
     date: "august 6, 2021",
@@ -126,14 +127,14 @@ function News() {
               id="content-carousel-container-unq-blog"
               className="swiper-container"
             >
-              {data?.map((item) => (
+              {data?.map(item => (
                 <SwiperSlide
                   key={item.id}
                   className="wow fadeInUp"
                   data-wow-delay=".1s"
                 >
-                  <div className="item">
-                    <div className="img outset-border">
+                  <div className="item ">
+                    <div className="img news-div">
                       <Image
                         src={item.cover}
                         alt="Landscape picture"
@@ -148,7 +149,7 @@ function News() {
                         <Link href="/dark/blog-post">{item.date}</Link>
                       </div>
                     </div>
-                    <div className="cont mt-30">
+                    <div className="cont mt-30 ps-4">
                       <h6 className="lh-sm">
                         <Link href="/dark/blog-post">{item.title}</Link>
                       </h6>

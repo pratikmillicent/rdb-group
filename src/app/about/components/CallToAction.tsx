@@ -14,8 +14,8 @@ function CallToAction({}) {
           className="sec-bg-img bg-img parallaxie"
           data-background="assets/images/about/Core.jpg"
         ></div>
-        <div className="sec-lg-head section-padding ">
-          <div className="row ontop">
+        <div className="sec-lg-head section-padding">
+          <div className="row ontop pb-60">
             <div className="col-11 d-flex align-items-center">
               <div className="valign">
                 <h2 className="fz-50 d-rotate wow">

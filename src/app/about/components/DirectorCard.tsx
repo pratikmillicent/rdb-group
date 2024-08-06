@@ -6,12 +6,11 @@ const DirectorCard = () => {
   return (
     <>
       <div className="container">
-        {/* <h3 className="d-flex justify-content-center pb-3">OUR LEADERS</h3> */}
         <Heading headTitle="Our Leaders"/>
 
         <div className="row">
           {DirectorCardData.map((data, key) => (
-            <div className="col-sm-12 col-lg-6 pb-4" key={data?.id}>
+            <div key={key} className="col-sm-12 col-lg-6 pb-4">
               <div className="my-container">
                 <Image
                   src={data?.image}
@@ -20,8 +19,7 @@ const DirectorCard = () => {
                   height={500}
                   style={{
                     borderRadius: "50px 0px 50px 0px",
-                    height: "450px",
-
+                    height: "450px",                   
                     objectFit: "fill",
                   }}
                   className="w-75"
@@ -32,7 +30,9 @@ const DirectorCard = () => {
                 <h4 className="pt-3 pb-1 m-0 text-grey">{data?.name}</h4>
                 <div className="fs-5">{data?.role}</div>
                 <hr className="bg-golden" />
-                <p className="fs-6 py-0">{data?.description}</p>
+                <p className="fs-6 py-0 lh-lg text-wrap"
+                style={{textAlign:"justify"}}
+                >{data?.description}</p>
               </div>
             </div>
           ))}
