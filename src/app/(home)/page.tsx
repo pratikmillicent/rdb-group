@@ -43,7 +43,7 @@ export default function Home() {
     {
       key: 1,
       content: (
-        <Card imagen="https://atharvlifestyle.com/assets/images/EVENTS/73.webp" />
+        <Card imagen="https://plus.unsplash.com/premium_photo-1661333830959-1f6ca808c5b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1aWxkaW5nJTIwZXZlbnRzfGVufDB8fDB8fHww" />
       ),
     },
     {
@@ -64,12 +64,12 @@ export default function Home() {
         <Card imagen="https://media.istockphoto.com/id/1033661996/photo/two-businessmen-shaking-hands.webp?b=1&s=170667a&w=0&k=20&c=qn517_spE0VTbdC159vNLGDESuNhztqV1uIq5jmqq7U=" />
       ),
     },
-    {
-      key: 5,
-      content: (
-        <Card imagen="https://plus.unsplash.com/premium_photo-1661333830959-1f6ca808c5b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1aWxkaW5nJTIwZXZlbnRzfGVufDB8fDB8fHww" />
-      ),
-    },
+    // {
+    //   key: 5,
+    //   content: (
+    //     <Card imagen="https://plus.unsplash.com/premium_photo-1661333830959-1f6ca808c5b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1aWxkaW5nJTIwZXZlbnRzfGVufDB8fDB8fHww" />
+    //   ),
+    // },
   ];
 
   return (
@@ -87,10 +87,8 @@ export default function Home() {
             loop
             preload="auto"
           ></video>
-
-          {/* <Marq data={marque_data} /> */}
           <DashboardCount data={data} />
-        
+
           <div
             style={{
               position: "absolute",
