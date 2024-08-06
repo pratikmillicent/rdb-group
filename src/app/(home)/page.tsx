@@ -90,6 +90,36 @@ export default function Home() {
 
           {/* <Marq data={marque_data} /> */}
           <DashboardCount data={data} />
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              background:
+                "linear-gradient(117deg, rgba(23, 38, 57, 90%) 0%, rgba(1, 1, 1, 50%) 75%)",
+              zIndex: 1,
+              pointerEvents: "none",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100%",
+                padding: "0 20px",
+              }}
+            >
+              <h3 className="text-white" style={{ marginBottom: "40px" }}>
+                Build on Experience
+              </h3>
+              <button className="block hero-button">Know more</button>
+            </div>
+          </div>
         </div>
 
         <VisionMission />

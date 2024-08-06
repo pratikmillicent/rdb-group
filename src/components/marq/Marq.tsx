@@ -44,22 +44,16 @@ function Marq({ data }: { data: string[] }) {
     // </section>
     <section
       id="section-fun-facts"
-      className="p-5"
+      className="p-5 block"
       style={{ backgroundSize: "cover" }}
     >
-      <div className="container" style={{ backgroundSize: "cover" }}>
-        <div className="row text-center" style={{ backgroundSize: "cover" }}>
+      <div className="container">
+        <div className="row text-center">
           <div
-            className="col-lg-2 col-md-3 wow fadeInUp mb-sm-30 animated"
+            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay="0s"
-            style={{
-              backgroundSize: "cover",
-              visibility: "visible",
-              animationDelay: "0s",
-              animationName: "fadeInUp",
-            }}
           >
-            <div className="de_count" style={{ backgroundSize: "cover" }}>
+            <div className="de_count">
               <h3>
                 <span
                   className="fz-40 main-color3"
@@ -73,16 +67,10 @@ function Marq({ data }: { data: string[] }) {
             </div>
           </div>
           <div
-            className="col-lg-2 col-md-3 wow fadeInUp mb-sm-30 animated"
+            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay=".25s"
-            style={{
-              backgroundSize: "cover",
-              visibility: "visible",
-              animationDelay: "0.25s",
-              animationName: "fadeInUp",
-            }}
           >
-            <div className="de_count" style={{ backgroundSize: "cover" }}>
+            <div className="de_count">
               <h3 className="fz-40 main-color3">
                 <span className="timer" data-to={16} data-speed={3000}>
                   16
@@ -93,16 +81,10 @@ function Marq({ data }: { data: string[] }) {
             </div>
           </div>
           <div
-            className="col-lg-2 col-md-3 wow fadeInUp mb-sm-30 animated"
+            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay=".4s"
-            style={{
-              backgroundSize: "cover",
-              visibility: "visible",
-              animationDelay: "0.4s",
-              animationName: "fadeInUp",
-            }}
           >
-            <div className="de_count" style={{ backgroundSize: "cover" }}>
+            <div className="de_count">
               <h3 className="fz-40 main-color3">
                 <span className="timer" data-to={4} data-speed={3000}>
                   4
@@ -113,16 +95,10 @@ function Marq({ data }: { data: string[] }) {
             </div>
           </div>
           <div
-            className="col-lg-2 col-md-3 wow fadeInUp mb-sm-30 animated"
+            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay=".6s"
-            style={{
-              backgroundSize: "cover",
-              visibility: "visible",
-              animationDelay: "0.6s",
-              animationName: "fadeInUp",
-            }}
           >
-            <div className="de_count" style={{ backgroundSize: "cover" }}>
+            <div className="de_count">
               <h3 className="fz-40 main-color3">
                 <span className="timer" data-to={52} data-speed={3000}>
                   52
@@ -133,16 +109,10 @@ function Marq({ data }: { data: string[] }) {
             </div>
           </div>
           <div
-            className="col-lg-2 col-md-3 wow fadeInUp mb-sm-30 animated"
+            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay=".8s"
-            style={{
-              backgroundSize: "cover",
-              visibility: "visible",
-              animationDelay: "0.8s",
-              animationName: "fadeInUp",
-            }}
           >
-            <div className="de_count" style={{ backgroundSize: "cover" }}>
+            <div className="de_count">
               <h3 className="fz-40 main-color3">
                 <span className="timer" data-to={100} data-speed={3000}>
                   100
@@ -153,16 +123,10 @@ function Marq({ data }: { data: string[] }) {
             </div>
           </div>
           <div
-            className="col-lg-2 col-md-3 wow fadeInUp mb-sm-30 animated"
+            className="col-lg-2 col-md-4 col-6 mb-4 wow fadeInUp animated"
             data-wow-delay="1s"
-            style={{
-              backgroundSize: "cover",
-              visibility: "visible",
-              animationDelay: "1s",
-              animationName: "fadeInUp",
-            }}
           >
-            <div className="de_count" style={{ backgroundSize: "cover" }}>
+            <div className="de_count">
               <h3 className="fz-40 main-color3">
                 <span className="timer" data-to={2} data-speed={3000}>
                   2

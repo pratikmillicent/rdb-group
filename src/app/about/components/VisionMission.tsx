@@ -1,7 +1,7 @@
-import { useState, CSSProperties } from 'react';
+import { useState, CSSProperties } from "react";
 import Image from "next/image";
-import '../VisionMission.css';
-import Heading from '@/components/heading/Heading';
+import "../VisionMission.css";
+import Heading from "@/components/heading/Heading";
 
 const VisionMission: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<string>("about");
