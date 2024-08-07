@@ -53,7 +53,7 @@ function DashboardCount({ data }: DashboardCountProps) {
           {data.map((item, index) => (
             <div
               key={index}
-              className="col-6 col-md-4 col-lg mb-4  wow fadeInUp mb-sm-30 animated"
+              className="col-6 col-md-4 col-lg wow fadeInUp mb-sm-30 animated"
               data-wow-delay={`${index * 0.25}s`}
               style={{
                 backgroundSize: "cover",
@@ -63,9 +63,9 @@ function DashboardCount({ data }: DashboardCountProps) {
               }}
             >
               <div className="de_count" style={{ backgroundSize: "cover" }}>
-                <h3>
+                <h3 className="main-color3">
                   <span
-                    className="fz-40 main-color3"
+                    className="fz-40"
                     ref={(el) => {
                       countersRef.current[index] = el;
                     }}

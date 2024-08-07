@@ -8,6 +8,7 @@ import TeamSection from "./components/TeamSection";
 import NewSideImage from "./components/NewSideImage";
 // import VisionMission from "./components/VisionMission";
 import DirectorCard from "./components/DirectorCard";
+import VisionMission from "./components/VisionMission";
 
 function About() {
   return (
@@ -15,7 +16,7 @@ function About() {
       <main className="mw-100 ">
         <div>
           <video
-            className="mw-100 w-100"
+            className="mw-100 w-100 block"
             style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
             src="/assets/video/AboutHero.mp4"
             autoPlay
@@ -26,7 +27,7 @@ function About() {
           ></video>
         </div>
 
-        {/* <VisionMission /> */}
+        <VisionMission />
 
         <DirectorCard />
         <Team />
