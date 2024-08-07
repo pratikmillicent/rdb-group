@@ -7,6 +7,7 @@ import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import CarouselEvent from "../(home)/components/CardImagesCarousel";
+
 interface Video {
   image: string;
   title: string;

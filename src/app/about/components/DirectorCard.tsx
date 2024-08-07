@@ -22,7 +22,7 @@ const DirectorCard = () => {
                     height: "450px",                   
                     objectFit: "fill",
                   }}
-                  className="w-100"
+                  className="w-75"
                 />
               </div>
 

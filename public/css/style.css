@@ -11064,14 +11064,11 @@ header.in-box {
   left: 0;
   z-index: 0;
 }
-.news-banner {
-  height: 100vh;
-}
-.blog-banner {
-  height: 100vh;
-  /* object-fit: cover; */
-}
-.career-banner {
+
+.news-banner,
+.blog-banner,
+.career-banner,
+.contact-banner {
   height: 100vh;
 }
 
@@ -11088,14 +11085,45 @@ header.in-box {
   .career-banner {
     height: 70vh;
   }
+  .contact-banner {
+    height: 70vh;
+  }
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  z-index: 10;
-}
+/* Default styles for larger screens (e.g., tablets and desktops) */
+/* .de_count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
 
-.button-next,
-.button-prev {
-  font-size: 1.5rem;
-}
+/* @media (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 16.6667%; /* 6 items per row on larger screens */
+/* max-width: 16.6667%;
+  }
+} */
+
+/* Styles for mobile screens */
+/* @media (max-width: 767px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+
+/* .col-lg-2,
+  .col-md-4,
+  .col-6 {
+    flex: 0 0 50%; /* 2 items per row on small screens */
+/* max-width: 50%;
+  } */
+/* 
+  .mb-4 {
+    margin-bottom: 1.5rem; /* Adjust spacing for mobile */
+/* } */
