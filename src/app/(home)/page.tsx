@@ -1,4 +1,6 @@
 "use client";
+export const dynamic = "force-dynamic";
+
 import { ParallaxProvider } from "react-scroll-parallax";
 import Card from "./components/Card";
 import Carroussel3D from "./components/Carousel";

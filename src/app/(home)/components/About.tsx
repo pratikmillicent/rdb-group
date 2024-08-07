@@ -6,7 +6,7 @@ import { useParallax } from "react-scroll-parallax";
 import Image from "next/image";
 
 function About() {
-  const parallax = useParallax({
+  const parallax = useParallax<HTMLDivElement>({
     speed: 10,
     translateY: [40, -40],
   });

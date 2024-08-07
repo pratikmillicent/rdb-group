@@ -1,4 +1,6 @@
 "use client";
+export const dynamic = "force-dynamic";
+
 import CallToAction from "./components/CallToAction";
 import CoreValue2 from "./components/CoreValue2";
 import Team from "./components/Team";

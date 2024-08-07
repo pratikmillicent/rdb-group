@@ -8,11 +8,11 @@ function Intro() {
   useEffect(() => {
     const firstItem = document.querySelector(
       ".accordion .item:first-child .accordion-info"
-    );
+    ) as HTMLElement;
     if (firstItem) {
       firstItem.style.maxHeight = "300px";
       firstItem.classList.add("active");
-      firstItem.parentElement.classList.add("active");
+      firstItem.parentElement?.classList.add("active");
     }
   }, []);
 

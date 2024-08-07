@@ -3,8 +3,8 @@
 import React from "react";
 import Splitting from "splitting";
 
-class Split extends React.Component {
-  target = React.createRef();
+class Split extends React.Component<any, any> {
+  target = React.createRef<any>();
 
   split = () => {
     if (this.target.current) {

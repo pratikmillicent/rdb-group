@@ -34,92 +34,6 @@ const ContactUs = () => {
     console.log(formData);
   };
 
-  const mapRef = useRef<HTMLDivElement | null>(null);
-  const [markers, setMarkers] = useState<google.maps.Marker[]>([]);
-
-  const memoizedStates = useMemo(
-    () => [
-      { name: "Maharashtra", lat: 19.7515, lng: 75.7139 },
-      { name: "Karnataka", lat: 15.3173, lng: 75.7139 },
-      { name: "Tamil Nadu", lat: 11.1271, lng: 78.6569 },
-      { name: "Gujarat", lat: 22.2587, lng: 71.1924 },
-      { name: "Rajasthan", lat: 27.0238, lng: 74.2179 },
-    ],
-    []
-  );
-
-  const locations = [
-    { name: "Maharshtra", coords: [19.7515, 75.7139] },
-    { name: "Karnatka", coords: [15.3173, 75.7139] },
-    { name: "Tamilnadu", coords: [11.1271, 78.6569] },
-  ];
-
-  useEffect(() => {
-    if (!mapRef.current) return;
-
-    const mapOptions: google.maps.MapOptions = {
-      zoom: 5,
-      center: new google.maps.LatLng(20.5937, 78.9629),
-      mapTypeControl: false,
-    };
-
-    const mapInstance = new google.maps.Map(mapRef.current, mapOptions);
-    // setMap(mapInstance);
-
-    // const myIcon: any = (
-    //   <div>
-    //     <i className="fa-solid fa-location-dot"></i>
-    //   </div>
-    // );
-    const catIcon: google.maps.Icon = {
-      url: "/assets/images/pin.png",
-      size: new google.maps.Size(80, 40),
-      scaledSize: new google.maps.Size(40, 30),
-      origin: new google.maps.Point(-15, 0),
-    };
-
-    const newMarkers = memoizedStates?.map((state) => {
-      const marker = new google.maps.Marker({
-        position: new google.maps.LatLng(state.lat, state.lng),
-        map: mapInstance,
-        icon: catIcon,
-        optimized: false,
-      });
-      return marker;
-    });
-
-    setMarkers(newMarkers);
-
-    const overlay = new google.maps.OverlayView();
-    overlay.draw = function () {
-      const panes = this.getPanes && this.getPanes();
-      if (panes && panes.markerLayer) {
-        panes.markerLayer.id = "markerLayer";
-      }
-    };
-    overlay.setMap(mapInstance);
-  }, [mapRef, memoizedStates]);
-
-  const handleMouseEnter = (index: number) => {
-    if (markers[index]) {
-      const markerLayer = document.getElementById("markerLayer");
-      if (markerLayer) {
-        const images = markerLayer.getElementsByTagName("img");
-        images[index].style.animation = "bounce 1s infinite alternate";
-      }
-    }
-  };
-
-  const handleMouseLeave = (index: number) => {
-    if (markers[index]) {
-      const markerLayer = document.getElementById("markerLayer");
-      if (markerLayer) {
-        const images = markerLayer.getElementsByTagName("img");
-        images[index].style.animation = "";
-      }
-    }
-  };
-
   return (
     <>
       <Image
@@ -365,10 +279,6 @@ const ContactUs = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div>
-                  <Heading headTitle="Global Presence" />
-                  <MapComponent locations={locations} />
                 </div>
               </div>
             </div>
