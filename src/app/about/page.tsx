@@ -39,5 +39,3 @@ function About() {
 }
 
 export default About;
-
-// asdfg
