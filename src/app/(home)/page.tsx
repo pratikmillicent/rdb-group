@@ -20,6 +20,7 @@ import NewSideImage from "../about/components/NewSideImage";
 import VisionMission from "../about/components/VisionMission";
 import Heading from "@/components/heading/Heading";
 import DashboardCount from "@/components/DashboardCount";
+import SectionImage from "./components/SectionImage";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -31,11 +32,11 @@ const marque_data = [
 
 const data = [
   { value: 4500, label: "Home Protected" },
-  { value: 16, suffix: "k", label: "People Saved" },
-  { value: 4, suffix: "m", label: "Money Saved" },
-  { value: 52, suffix: "k", label: "Contract Signed" },
+  { value: 16, suffix: "K", label: "People Saved" },
+  { value: 4, suffix: "M", label: "Money Saved" },
+  { value: 52, suffix: "K", label: "Contract Signed" },
   { value: 100, suffix: "+", label: "Countries" },
-  { value: 2, suffix: "k", label: "Staff Member" },
+  { value: 2, suffix: "K", label: "Staff Member" },
 ];
 
 export default function Home() {
@@ -120,7 +121,8 @@ export default function Home() {
         </div>
         <DashboardCount data={data} />
 
-        <VisionMission />
+        {/* <VisionMission /> */}
+        <SectionImage />
 
         <div style={{ padding: "20px 0" }}>
           <NewGroupGrid />
