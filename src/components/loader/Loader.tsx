@@ -42,8 +42,7 @@ function Loader() {
             <span>
               <Image
                 src="/rdb-group.svg"
-                className="w-100"
-                style={{ width: "305px" }}
+                style={{ width: "185px", height: "200px" }}
                 alt="logo"
                 width={800}
                 height={500}

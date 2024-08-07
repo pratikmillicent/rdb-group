@@ -17,7 +17,7 @@ import FrameSlider from "./components/CardImagesCarousel";
 import CarouselEvent from "./components/CardImagesCarousel";
 
 import NewSideImage from "../about/components/NewSideImage";
-import VisionMission from "../about/components/VisionMission";
+// import VisionMission from "../about/components/VisionMission";
 import Heading from "@/components/heading/Heading";
 import DashboardCount from "@/components/DashboardCount";
 
@@ -120,7 +120,7 @@ export default function Home() {
         </div>
         <DashboardCount data={data} />
 
-        <VisionMission />
+        {/* <VisionMission /> */}
 
         <div style={{ padding: "20px 0" }}>
           <NewGroupGrid />

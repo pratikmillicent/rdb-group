@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useState, CSSProperties } from "react";
 import Image from "next/image";
 import "../VisionMission.css";
@@ -36,7 +38,7 @@ const VisionMission: React.FC = () => {
       <div className="row">
         <div className="col-12 col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center">
           <div className="mb-4">
-            <Heading headTitle='Overview' />
+            <Heading headTitle="Overview" />
           </div>
           <div className="mb-4 d-flex flex-wrap justify-content-center">
             <button
@@ -62,7 +64,9 @@ const VisionMission: React.FC = () => {
             </button>
           </div>
           <div
-            className={`tab-content p-0 text-center ${animate ? "slide-in" : ""}`}
+            className={`tab-content p-0 text-center ${
+              animate ? "slide-in" : ""
+            }`}
             style={{ margin: 0 }}
           >
             {selectedTab === "about" && (
@@ -87,7 +91,8 @@ const VisionMission: React.FC = () => {
           </div>
         </div>
 
-        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center d-none d-sm-none d-md-block d-lg-block d-xl-block"
+        <div
+          className="col-12 col-md-6 d-flex justify-content-center align-items-center d-none d-sm-none d-md-block d-lg-block d-xl-block"
           style={{ height: "100vh" }}
         >
           {/* <div
@@ -113,7 +118,13 @@ const VisionMission: React.FC = () => {
           <div className="">
             <div
               className="ratio ratio-4x3"
-              style={{ position: 'relative', width: '100%', height: '100%', margin: 0, padding: 0 }}
+              style={{
+                position: "relative",
+                width: "100%",
+                height: "100%",
+                margin: 0,
+                padding: 0,
+              }}
             >
               <div
                 className="sec-bg-img bg-img parallaxie"
@@ -122,11 +133,10 @@ const VisionMission: React.FC = () => {
                   selectedTab === "vision"
                     ? "/assets/images/home/our-vision.jpg"
                     : selectedTab === "mission"
-                      ? "/assets/images/home/our-mission.jpg"
-                      : "/assets/images/home/news1.jpg"
+                    ? "/assets/images/home/our-mission.jpg"
+                    : "/assets/images/home/news1.jpg"
                 }
               ></div>
-
             </div>
           </div>
         </div>

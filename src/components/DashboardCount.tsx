@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
 import { CountUp } from "countup.js";
+import React, { useEffect, useRef } from "react";
 
 interface DashboardData {
   value: number;
@@ -66,7 +66,7 @@ function DashboardCount({ data }: DashboardCountProps) {
                 <h3>
                   <span
                     className="fz-40 main-color3"
-                    ref={el => {
+                    ref={(el) => {
                       countersRef.current[index] = el;
                     }}
                     data-to={item.value}

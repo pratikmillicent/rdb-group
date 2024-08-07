@@ -6,7 +6,7 @@ import CallToAction from "./components/CallToAction";
 import Director2 from "./components/Director2";
 import TeamSection from "./components/TeamSection";
 import NewSideImage from "./components/NewSideImage";
-import VisionMission from "./components/VisionMission";
+// import VisionMission from "./components/VisionMission";
 import DirectorCard from "./components/DirectorCard";
 
 function About() {
@@ -26,7 +26,7 @@ function About() {
           ></video>
         </div>
 
-        <VisionMission />
+        {/* <VisionMission /> */}
 
         <DirectorCard />
         <Team />
