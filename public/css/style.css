@@ -3186,13 +3186,14 @@ body.loaded {
   opacity: 1;
 }
 
-.navbar-home {
+.navbar.navbar-home {
   position: absolute;
   color: white;
+  background: transparent;
 }
 
 .navbar {
-  /* color: white; */
+  background: white;
   height: 80px;
   padding: 0;
   margin: 0;

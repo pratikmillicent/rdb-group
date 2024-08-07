@@ -1,12 +1,7 @@
 "use client";
-import Intro from "./components/Overview2";
-import Team from "./components/Team";
-import CoreValue2 from "./components/CoreValue2";
 import CallToAction from "./components/CallToAction";
-import Director2 from "./components/Director2";
-import TeamSection from "./components/TeamSection";
-import NewSideImage from "./components/NewSideImage";
-// import VisionMission from "./components/VisionMission";
+import CoreValue2 from "./components/CoreValue2";
+import Team from "./components/Team";
 import DirectorCard from "./components/DirectorCard";
 import VisionMission from "./components/VisionMission";
 
@@ -16,7 +11,7 @@ function About() {
       <main className="mw-100 ">
         <div>
           <video
-            className="mw-100 w-100 block"
+            className="mw-100 w-100 d-block"
             style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
             src="/assets/video/AboutHero.mp4"
             autoPlay

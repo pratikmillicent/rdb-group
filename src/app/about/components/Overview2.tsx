@@ -1,4 +1,4 @@
-//@ts-nocheck
+//check
 
 import Heading from "@/components/heading/Heading";
 import { useEffect } from "react";

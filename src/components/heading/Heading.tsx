@@ -11,13 +11,14 @@ const Heading: React.FC<HeadingProps> = ({
   fontSize = "fs-1",
   isSpace,
 }) => {
-
   const firstLetter = headTitle.charAt(0);
-  const restTitle = headTitle.slice(1)
+  const restTitle = headTitle.slice(1);
 
   return (
     <h2
-      className={`${fontSize} text-uppercase fw-700 mt-60 ${isSpace && "mb-80"}`}
+      className={`${fontSize} text-uppercase fw-700 mt-60 ${
+        isSpace && "mb-80"
+      }`}
       style={{ width: "fit-content " }}
     >
       <span className="text-golden">{firstLetter}</span>

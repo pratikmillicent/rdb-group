@@ -1,4 +1,4 @@
-// @ts-nocheck
+// check
 "use client";
 import MapComponent from "./components/MapComponent";
 import {
@@ -21,15 +21,15 @@ const ContactUs = () => {
     message: "",
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
   };
@@ -78,7 +78,7 @@ const ContactUs = () => {
       origin: new google.maps.Point(-15, 0),
     };
 
-    const newMarkers = memoizedStates?.map(state => {
+    const newMarkers = memoizedStates?.map((state) => {
       const marker = new google.maps.Marker({
         position: new google.maps.LatLng(state.lat, state.lng),
         map: mapInstance,

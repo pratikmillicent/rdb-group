@@ -1,15 +1,13 @@
-// @ts-nocheck
-import Carousel from "react-bootstrap/Carousel";
-import { CarouselItem, Col, Row } from "react-bootstrap";
-import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Heading from "@/components/heading/Heading";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper";
-import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import { CarouselItem, Col, Row } from "react-bootstrap";
+import Carousel from "react-bootstrap/Carousel";
+import { BsCaretLeft, BsCaretRight } from "react-icons/bs";
 import { FaArrowLeftLong, FaArrowRight } from "react-icons/fa6";
+import { Autoplay, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-function DarkVariantExample({ spliti, data }) {
+function DarkVariantExample({ spliti, data }: any) {
   const [loadSwiper, setLoadSwiper] = useState(false);
 
   useEffect(() => {
@@ -49,12 +47,12 @@ function DarkVariantExample({ spliti, data }) {
 
   return (
     <div className="container">
-      {spliti?.map((item, index) => (
+      {spliti?.map((item: any, index: any) => (
         <Row key={index}>
           <Col lg={3} className="p-0 d-none d-md-flex">
             <div className="d-flex align-self-center  gap-4">
               <div
-                className="bg-navy rounded fw-semibold fs-5 align-self-center py-2  "
+                className="bg-navy fw-semibold fs-5 align-self-center py-2  "
                 style={{ height: "fit-content" }}
               >
                 {item.date.split(" ")?.map((part, index) => (
@@ -62,21 +60,21 @@ function DarkVariantExample({ spliti, data }) {
                     className="date bg-navy text-light px-1 px-3 py-1 text-center"
                     key={index}
                   >
-                    <div className=" d-block fs-4"> {part}</div>
+                    <div className=" d-block fs-5"> {part}</div>
                   </div>
                 ))}
               </div>
               <div
-                className="fw-semibold fs-6 align-self-center "
+                className="fw-semibold fs-1 align-self-center "
                 style={{
                   height: "fit-content",
-                  width: "200px",
+                  width: "160px",
                   display: "block",
                 }}
               >
                 {item.title.split("<br />")?.map((line, index) => (
                   <React.Fragment key={index}>
-                    <span className="fw-semibold fs-5"> {line}</span>
+                    <span className="fw-semibold fs-6"> {line}</span>
                     <br />
                   </React.Fragment>
                 ))}
@@ -86,7 +84,7 @@ function DarkVariantExample({ spliti, data }) {
           <Col className="d-inline d-md-none">
             <div>
               {/* {item?.date?.map((part, index) => ( */}
-              <div className="p-2" key={index}>
+              <div className="p-2 fs-5" key={index}>
                 {item?.date}
               </div>
               {/* ))} */}
@@ -95,7 +93,7 @@ function DarkVariantExample({ spliti, data }) {
             <span>
               {item.title.split("<br />")?.map((line, index) => (
                 <React.Fragment key={index}>
-                  <span className="fw-semibold fs-5 px-2">{line}</span>
+                  <span className="fw-bold fs-5 px-2">{line}</span>
                   <br />
                 </React.Fragment>
               ))}
@@ -111,7 +109,7 @@ function DarkVariantExample({ spliti, data }) {
                     id="content-carousel-container-unq-blog"
                     className="swiper-container"
                   >
-                    {data.map(item => (
+                    {data.map((item) => (
                       <SwiperSlide
                         key={item.id}
                         className="wow fadeInUp"
@@ -122,16 +120,11 @@ function DarkVariantExample({ spliti, data }) {
                             <Image
                               src={item.image}
                               alt={item.description}
-                              style={{ height: "200px", width: "100%" }}
+                              style={{ height: "160px", width: "100%" }}
                               width={800}
                               height={500}
                             />
                           </div>
-                          {/* <div className="cont mt-30 ">
-                            <div className="fw-semibold">
-                              {item.description}
-                            </div>
-                          </div> */}
                         </div>
                       </SwiperSlide>
                     ))}
@@ -147,14 +140,14 @@ function DarkVariantExample({ spliti, data }) {
 }
 
 function splitToNChunks(array, n) {
-  let result = [];
+  let result: any[] = [];
   for (let i = n; i > 0; i--) {
     result.push(array.splice(0, Math.ceil(array.length / i)));
   }
   return result;
 }
 
-const directionButtons = direction => {
+const directionButtons = (direction) => {
   return (
     <span
       aria-hidden="true"
@@ -163,11 +156,9 @@ const directionButtons = direction => {
         bottom: "0",
         width: "fit-content",
         height: "fit-content",
-        display: "block",
         color: "black",
         fontWeight: "bold",
-        padding: "10px",
-        paddingX: "40px",
+        padding: "10px 40px",
         borderRadius: "6px",
         display: "flex",
         justifyContent: "center",
@@ -186,11 +177,12 @@ const directionButtons = direction => {
 const CarouselEvent = ({ data }) => {
   return (
     <Carousel
-      indicators={false}
       interval={null}
       controls={true}
-      nextIcon={directionButtons(<FaArrowRight />)}
-      prevIcon={directionButtons(<FaArrowLeftLong />)}
+      indicators={true}
+      variant="dark"
+      nextIcon={directionButtons(<BsCaretRight />)}
+      prevIcon={directionButtons(<BsCaretLeft />)}
       className="d-flex flex-column gap-2  py-5 mb-3 ms-3 me-3"
     >
       {splitarr.map((spliti, index) => {
