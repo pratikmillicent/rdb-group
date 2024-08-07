@@ -20,7 +20,6 @@ import NewSideImage from "../about/components/NewSideImage";
 import VisionMission from "../about/components/VisionMission";
 import Heading from "@/components/heading/Heading";
 import DashboardCount from "@/components/DashboardCount";
-import SectionImage from "./components/SectionImage";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -121,8 +120,7 @@ export default function Home() {
         </div>
         <DashboardCount data={data} />
 
-        {/* <VisionMission /> */}
-        <SectionImage />
+        <VisionMission />
 
         <div style={{ padding: "20px 0" }}>
           <NewGroupGrid />

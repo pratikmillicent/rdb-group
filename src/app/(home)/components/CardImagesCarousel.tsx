@@ -165,12 +165,16 @@ const directionButtons = direction => {
         height: "fit-content",
         display: "block",
         color: "black",
+        fontWeight: "bold",
         padding: "10px",
         paddingX: "40px",
-        borderRadius: "10px",
+        borderRadius: "6px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        border: "1px solid #d4af5f",
+        backgroundColor: "white",
+        fontSize: "18px",
       }}
       className={direction === "Next" ? "button-next" : "button-prev"}
     >

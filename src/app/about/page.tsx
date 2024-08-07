@@ -7,18 +7,15 @@ import CallToAction from "./components/CallToAction";
 // import TeamSection from "./components/TeamSection";
 // import NewSideImage from "./components/NewSideImage";
 import DirectorCard from "./components/DirectorCard";
-import { ParallaxProvider } from "react-scroll-parallax";
-import SectionImage from "../(home)/components/SectionImage"
 
 function About() {
   return (
     <>
-      <ParallaxProvider>
-        <main className="mw-100 ">
-          <div>
+      <main className="mw-100">
+        <div className="about-banner">
+          <div className="video-container">
             <video
-              className="mw-100 w-100"
-              style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
+              className="responsive-video"
               src="/assets/video/AboutHero.mp4"
               autoPlay
               muted
@@ -27,6 +24,7 @@ function About() {
               preload="auto"
             ></video>
           </div>
+        </div>
 
           <SectionImage />
           <DirectorCard />
