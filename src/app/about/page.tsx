@@ -1,12 +1,11 @@
 "use client";
-import Intro from "./components/Overview2";
+// import Intro from "./components/Overview2";
 import Team from "./components/Team";
 import CoreValue2 from "./components/CoreValue2";
 import CallToAction from "./components/CallToAction";
-import Director2 from "./components/Director2";
-import TeamSection from "./components/TeamSection";
-import NewSideImage from "./components/NewSideImage";
-import VisionMission from "./components/VisionMission";
+// import Director2 from "./components/Director2";
+// import TeamSection from "./components/TeamSection";
+// import NewSideImage from "./components/NewSideImage";
 import DirectorCard from "./components/DirectorCard";
 import { ParallaxProvider } from "react-scroll-parallax";
 import SectionImage from "../(home)/components/SectionImage"
@@ -29,7 +28,6 @@ function About() {
             ></video>
           </div>
 
-          {/* <VisionMission /> */}
           <SectionImage />
           <DirectorCard />
           <Team />
