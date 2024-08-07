@@ -7,6 +7,7 @@ import Heading from "@/components/heading/Heading";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import Link from "next/link";
+import { FaArrowLeftLong, FaArrowRight } from "react-icons/fa6";
 
 function DarkVariantExample({ spliti, data }) {
   const [loadSwiper, setLoadSwiper] = useState(false);
@@ -94,7 +95,7 @@ function DarkVariantExample({ spliti, data }) {
             <span>
               {item.title.split("<br />")?.map((line, index) => (
                 <React.Fragment key={index}>
-                  <span className="fw-semibold fs-5 px-2"> {line}</span>
+                  <span className="fw-semibold fs-5 px-2">{line}</span>
                   <br />
                 </React.Fragment>
               ))}
@@ -110,7 +111,7 @@ function DarkVariantExample({ spliti, data }) {
                     id="content-carousel-container-unq-blog"
                     className="swiper-container"
                   >
-                    {data.map((item) => (
+                    {data.map(item => (
                       <SwiperSlide
                         key={item.id}
                         className="wow fadeInUp"
@@ -153,7 +154,7 @@ function splitToNChunks(array, n) {
   return result;
 }
 
-const directionButtons = (direction) => {
+const directionButtons = direction => {
   return (
     <span
       aria-hidden="true"
@@ -163,10 +164,13 @@ const directionButtons = (direction) => {
         width: "fit-content",
         height: "fit-content",
         display: "block",
-        background: "red",
+        color: "black",
         padding: "10px",
         paddingX: "40px",
         borderRadius: "10px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
       className={direction === "Next" ? "button-next" : "button-prev"}
     >
@@ -181,14 +185,14 @@ const CarouselEvent = ({ data }) => {
       indicators={false}
       interval={null}
       controls={true}
-      nextIcon={directionButtons("Next")}
-      prevIcon={directionButtons("Previous")}
-      className="d-flex flex-column gap-2 py-5"
+      nextIcon={directionButtons(<FaArrowRight />)}
+      prevIcon={directionButtons(<FaArrowLeftLong />)}
+      className="d-flex flex-column gap-2  py-5 mb-3 ms-3 me-3"
     >
-      {splitarr.map((spliti) => {
-        console.log("out of ", spliti);
+      {splitarr.map((spliti, index) => {
+        // console.log("out of ", spliti);
         return (
-          <CarouselItem>
+          <CarouselItem key={index}>
             <DarkVariantExample spliti={spliti} data={data} />
           </CarouselItem>
         );

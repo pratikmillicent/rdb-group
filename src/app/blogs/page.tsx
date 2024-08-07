@@ -18,7 +18,8 @@ const Blog = () => {
       id: 1,
       // image: new URL("https://picsum.photos/1100/1100"),
       image: "/assets/images/blog/blog-banner.png",
-      heading: " Housing Market Showed Signs of Life in January, as Buyers Began to Compete",
+      heading:
+        " Housing Market Showed Signs of Life in January, as Buyers Began to Compete",
       description: "Zillow Market Reports",
       date: "17-August-2023",
     },
@@ -147,9 +148,9 @@ const Blog = () => {
     <>
       <Image
         src="/assets/images/blog/blog-banner.png"
-        className="circle-img"
+        className="circle-img blog-banner"
         alt="Landscape picture"
-        style={{ height: "100vh" }}
+        // style={{ height: "100vh" }}
         width={800}
         height={500}
       />
@@ -169,7 +170,7 @@ const Blog = () => {
             <div className="blog-carsouel">
               {loadSwiper && (
                 <div className="row">
-                  {data.map((item) => (
+                  {data.map(item => (
                     <div
                       key={item.id}
                       className="col-lg-4 col-md-6 col-sm-6 mb-30"
