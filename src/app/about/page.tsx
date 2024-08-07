@@ -8,32 +8,36 @@ import TeamSection from "./components/TeamSection";
 import NewSideImage from "./components/NewSideImage";
 import VisionMission from "./components/VisionMission";
 import DirectorCard from "./components/DirectorCard";
+import { ParallaxProvider } from "react-scroll-parallax";
+import SectionImage from "../(home)/components/SectionImage"
 
 function About() {
   return (
     <>
-      <main className="mw-100 ">
-        <div>
-          <video
-            className="mw-100 w-100"
-            style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
-            src="/assets/video/AboutHero.mp4"
-            autoPlay
-            muted
-            playsInline
-            loop
-            preload="auto"
-          ></video>
-        </div>
+      <ParallaxProvider>
+        <main className="mw-100 ">
+          <div>
+            <video
+              className="mw-100 w-100"
+              style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
+              src="/assets/video/AboutHero.mp4"
+              autoPlay
+              muted
+              playsInline
+              loop
+              preload="auto"
+            ></video>
+          </div>
 
-        <VisionMission />
-
-        <DirectorCard />
-        <Team />
-        {/* <TeamSection /> */}
-        <CoreValue2 />
-        <CallToAction />
-      </main>
+          {/* <VisionMission /> */}
+          <SectionImage />
+          <DirectorCard />
+          <Team />
+          {/* <TeamSection /> */}
+          <CoreValue2 />
+          <CallToAction />
+        </main>
+      </ParallaxProvider>
     </>
   );
 }

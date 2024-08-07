@@ -7,7 +7,6 @@ import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import CarouselEvent from "../(home)/components/CardImagesCarousel";
-
 interface Video {
   image: string;
   title: string;
@@ -66,17 +65,14 @@ const News = () => {
     <>
       <Image
         src="/assets/images/news/banner.png"
-        className="w-100"
+        className="w-100 news-banner"
         alt="News Banner"
-        style={{ height: "100vh" }}
+        // style={{ height: "100vh" }}
         width={800}
         height={500}
       />
       <div className="container">
-        <section
-          className="blog-modern"
-          style={{ paddingBottom: "60px" }}
-        >
+        <section className="blog-modern" style={{ paddingBottom: "60px" }}>
           <div className="container">
             <div className="sec-lg-head">
               <div className="row">
@@ -92,7 +88,7 @@ const News = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {data.map((item) => (
+                  {data.map(item => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"

@@ -20,6 +20,7 @@ import NewSideImage from "../about/components/NewSideImage";
 import VisionMission from "../about/components/VisionMission";
 import Heading from "@/components/heading/Heading";
 import DashboardCount from "@/components/DashboardCount";
+import SectionImage from "./components/SectionImage";
 
 const marque_data = [
   "From the streets to the summit, our Tigers triumph! Let's raise a roar as we bring the trophy home.",
@@ -31,11 +32,11 @@ const marque_data = [
 
 const data = [
   { value: 4500, label: "Home Protected" },
-  { value: 16, suffix: "k", label: "People Saved" },
-  { value: 4, suffix: "m", label: "Money Saved" },
-  { value: 52, suffix: "k", label: "Contract Signed" },
+  { value: 16, suffix: "K", label: "People Saved" },
+  { value: 4, suffix: "M", label: "Money Saved" },
+  { value: 52, suffix: "K", label: "Contract Signed" },
   { value: 100, suffix: "+", label: "Countries" },
-  { value: 2, suffix: "k", label: "Staff Member" },
+  { value: 2, suffix: "K", label: "Staff Member" },
 ];
 
 export default function Home() {
@@ -43,7 +44,7 @@ export default function Home() {
     {
       key: 1,
       content: (
-        <Card imagen="https://atharvlifestyle.com/assets/images/EVENTS/73.webp" />
+        <Card imagen="https://plus.unsplash.com/premium_photo-1661333830959-1f6ca808c5b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1aWxkaW5nJTIwZXZlbnRzfGVufDB8fDB8fHww" />
       ),
     },
     {
@@ -62,12 +63,12 @@ export default function Home() {
         <Card imagen="https://media.istockphoto.com/id/1033661996/photo/two-businessmen-shaking-hands.webp?b=1&s=170667a&w=0&k=20&c=qn517_spE0VTbdC159vNLGDESuNhztqV1uIq5jmqq7U=" />
       ),
     },
-    {
-      key: 5,
-      content: (
-        <Card imagen="https://plus.unsplash.com/premium_photo-1661333830959-1f6ca808c5b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1aWxkaW5nJTIwZXZlbnRzfGVufDB8fDB8fHww" />
-      ),
-    },
+    // {
+    //   key: 5,
+    //   content: (
+    //     <Card imagen="https://plus.unsplash.com/premium_photo-1661333830959-1f6ca808c5b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1aWxkaW5nJTIwZXZlbnRzfGVufDB8fDB8fHww" />
+    //   ),
+    // },
   ];
 
   return (
@@ -120,7 +121,8 @@ export default function Home() {
         </div>
         <DashboardCount data={data} />
 
-        <VisionMission />
+        {/* <VisionMission /> */}
+        <SectionImage />
 
         <div style={{ padding: "20px 0" }}>
           <NewGroupGrid />
