@@ -7,6 +7,8 @@
   --white: #fff;
   --grey: #3a3a3d;
   --golden: #d4af5f;
+
+  --nav-height: 80px;
 }
 
 * {
@@ -3197,14 +3199,13 @@ body.loaded {
 }
 
 .navbar {
-  color: white;
+  /* color: white; */
   height: 80px;
   padding: 0;
   margin: 0;
   width: 100%;
   z-index: 999;
-  top: 0;
-  position: absolute;
+  /* position: absolute; */
   transition: background-color 0.3s ease, border-radius 0.3s ease;
 }
 
@@ -3212,7 +3213,8 @@ body.loaded {
   width: calc(100% - 80px);
   left: 40px;
   top: 30px;
-  background: rgba(255, 255, 255, 0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
+  background-color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
@@ -3295,7 +3297,8 @@ body.loaded {
   /* padding-bottom: 15px; */
   background-color: white;
   /* border-radius: 8px; Adjust the radius as needed */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Optional: add a subtle shadow */
 }
 
 .navbar .icon-bar {
@@ -9565,6 +9568,7 @@ header.in-box {
 @media only screen and (max-width: 760px),
   (min-device-width: 768px) and (max-device-width: 1024px) {
 }
+
 .shop-cart table {
   width: 100%;
 }
@@ -9831,6 +9835,7 @@ header.in-box {
   .navbar .navbar-collapse::-webkit-scrollbar {
     display: none;
   }
+
   /* 
   .navbar.nav-scroll {
     padding-top: 15px;
@@ -9934,7 +9939,8 @@ header.in-box {
 
   @media (max-width: 993px) {
     .navbar-nav {
-      background-color: white !important; /* For small screens */
+      background-color: white !important;
+      /* For small screens */
       color: black !important;
     }
   }
@@ -10873,6 +10879,7 @@ header.in-box {
   transform: translateY(10px);
   opacity: 0.8;
 }
+
 .img-container:hover img {
   transform: translateY(0);
   opacity: 1;
@@ -11013,18 +11020,22 @@ header.in-box {
     border-width: 0;
     border-color: transparent transparent transparent transparent;
   }
+
   25% {
     border-width: 2px 0 0 0;
     border-color: var(--golden) transparent transparent transparent;
   }
+
   50% {
     border-width: 2px 2px 0 0;
     border-color: var(--golden) var(--golden) transparent transparent;
   }
+
   75% {
     border-width: 2px 2px 2px 0;
     border-color: var(--golden) var(--golden) var(--golden) transparent;
   }
+
   100% {
     border-width: 2px;
     border-color: var(--golden) var(--golden) var(--golden) var(--golden);
@@ -11045,6 +11056,7 @@ header.in-box {
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
+
 .about-circle-crev {
   height: "70vh";
 }
@@ -11052,7 +11064,8 @@ header.in-box {
 .hero-responsive {
   position: relative;
   overflow: hidden;
-  height: 100vh; /* Default height for larger screens */
+  height: 100vh;
+  /* Default height for larger screens */
 }
 
 .hero-responsive video {
@@ -11076,6 +11089,7 @@ header.in-box {
   .hero-responsive {
     height: 70vh;
   }
+
   .news-banner {
     height: 70vh;
   }

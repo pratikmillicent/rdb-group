@@ -41,9 +41,7 @@ function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`navbar navbar-expand-lg ${
-        path === "/" || path === "/about" ? "navbar-home" : ""
-      }`}
+      className={`navbar navbar-expand-lg ${path === "/" ? "navbar-home" : ""}`}
     >
       <div className="container">
         <Link href="/">
