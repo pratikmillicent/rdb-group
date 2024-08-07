@@ -7,6 +7,7 @@ import CallToAction from "./components/CallToAction";
 // import TeamSection from "./components/TeamSection";
 // import NewSideImage from "./components/NewSideImage";
 import DirectorCard from "./components/DirectorCard";
+import SectionImage from "../(home)/components/SectionImage"
 
 function About() {
   return (
@@ -33,7 +34,7 @@ function About() {
           <CoreValue2 />
           <CallToAction />
         </main>
-      </ParallaxProvider>
+      
     </>
   );
 }
