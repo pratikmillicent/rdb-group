@@ -1,15 +1,17 @@
 "use client";
-export const dynamic = "force-dynamic";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 import Card from "./components/Card";
-import Carroussel3D from "./components/Carousel";
+const Carroussel3D = dynamic(() => import("./components/Carousel"), {
+  ssr: false,
+});
 import NewGroupGrid from "./components/NewGroup";
 import News from "./components/News";
 import VideoGallary from "./components/VideoGallary";
 import DashboardCount from "@/components/DashboardCount";
 import Heading from "@/components/heading/Heading";
 import VisionMission from "../about/components/VisionMission";
+import dynamic from "next/dynamic";
 
 const data = [
   { value: 4500, label: "Home Protected" },
@@ -111,11 +113,11 @@ export default function Home() {
           <Heading headTitle="Events" />
         </div>
 
-        <div style={{ padding: "0" }}>
+        <div className="d-none d-md-block" style={{ padding: "0" }}>
           <Carroussel3D
             cards={cards}
             height="450px"
-            // width="40%"
+            width="1000px"
             margin="0 auto"
             offset={5}
             showArrows={false}
