@@ -1,16 +1,20 @@
 "use client";
-export const dynamic = "force-dynamic";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 import Card from "./components/Card";
-import Carroussel3D from "./components/Carousel";
+const Carroussel3D = dynamic(() => import("./components/Carousel"), {
+  ssr: false,
+});
 import NewGroupGrid from "./components/NewGroup";
 import News from "./components/News";
 import VideoGallary from "./components/VideoGallary";
 import DashboardCount from "@/components/DashboardCount";
 import Heading from "@/components/heading/Heading";
 import VisionMission from "../about/components/VisionMission";
-import SectionImage from "./components/SectionImage"
+import dynamic from "next/dynamic";
+import SectionImage from "./components/SectionImage";
+import MobileCarousel from "./components/MobileCarousel";
+import useMediaQuery from "./components/useMediaQuery";
 
 const data = [
   { value: 4500, label: "Home Protected" },
@@ -48,6 +52,9 @@ export default function Home() {
       ),
     },
   ];
+
+  const isMediumScreen = useMediaQuery("(min-width: 768px)");
+  const isSmallScreen = useMediaQuery("(max-width: 767px)");
 
   return (
     <ParallaxProvider>
@@ -97,7 +104,6 @@ export default function Home() {
         </div>
         <DashboardCount data={data} />
 
-        {/* <VisionMission /> */}
         <SectionImage />
 
         <div style={{ padding: "20px 0" }}>
@@ -114,14 +120,18 @@ export default function Home() {
         </div>
 
         <div style={{ padding: "0" }}>
-          <Carroussel3D
-            cards={cards}
-            height="450px"
-            // width="40%"
-            margin="0 auto"
-            offset={5}
-            showArrows={false}
-          />
+          {isMediumScreen ? (
+            <Carroussel3D
+              cards={cards}
+              height="450px"
+              // width="40%"
+              margin="0 auto"
+              offset={5}
+              showArrows={false}
+            />
+          ) : isSmallScreen ? (
+            <MobileCarousel />
+          ) : null}
         </div>
 
         <News />

@@ -90,14 +90,14 @@ const News = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {data.map((item) => (
+                  {data.map(item => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
                       data-wow-delay=".1s"
                     >
                       <div className="item p-0">
-                        <div className="img img-container">
+                        <div className="img img-container ">
                           <Image
                             src={item.image}
                             alt={item.description}
@@ -154,7 +154,7 @@ const News = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {award_data.map((item) => (
+                  {award_data.map(item => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"

@@ -1,4 +1,4 @@
-import { MouseEvent, useEffect, useRef } from "react";
+import { MouseEvent, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -7,10 +7,20 @@ import { IoMenu } from "react-icons/io5";
 function Navbar() {
   const path = usePathname();
   const navRef = useRef<HTMLDivElement>(null);
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside as any);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside as any);
+    };
   }, []);
 
   function handleScroll() {
@@ -32,10 +42,23 @@ function Navbar() {
       ?.classList.remove("show");
   }
 
+  // function toggleNavbar() {
+  //   document
+  //     .querySelector(".navbar .navbar-collapse")?.classList.toggle("show");
+  // }
+
   function toggleNavbar() {
-    document
-      .querySelector(".navbar .navbar-collapse")
-      ?.classList.toggle("show");
+    setIsNavbarOpen(prev => !prev);
+  }
+
+  function handleClickOutside(event: MouseEvent) {
+    if (navRef.current && !navRef.current.contains(event.target as Node)) {
+      setIsNavbarOpen(false);
+    }
+  }
+
+  function handleLinkClick() {
+    setIsNavbarOpen(false);
   }
 
   return (
@@ -47,7 +70,7 @@ function Navbar() {
         <Link href="/">
           <Image
             src="/rdb-group.svg"
-            style={{ width: "205px", height: "75px" }}
+            style={{ width: "205px", height: "100px" }}
             alt="logo"
             width={800}
             height={500}
@@ -57,10 +80,12 @@ function Navbar() {
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
+          // data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          // aria-expanded="false"
+
           aria-label="Toggle navigation"
+          aria-expanded={isNavbarOpen}
           onClick={toggleNavbar}
         >
           <span className="icon-bar">
@@ -69,7 +94,7 @@ function Navbar() {
         </button>
 
         <div
-          className="collapse navbar-collapse justify-content-center"
+          className={`collapse navbar-collapse  ${isNavbarOpen ? "show" : ""}`}
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav">
@@ -80,6 +105,7 @@ function Navbar() {
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
+                onClick={handleLinkClick}
               >
                 <span className="rolling-text text-capitalize  fs-6 ">
                   About
@@ -106,13 +132,25 @@ function Navbar() {
                 <Link href="/" className="dropdown-item ">
                   <span className="text-capitalize fs-6">Properties</span>
                 </Link>
-                <Link href="/" className="dropdown-item text-capitalize fs-6">
+                <Link
+                  href="/"
+                  className="dropdown-item text-capitalize fs-6"
+                  onClick={handleLinkClick}
+                >
                   Realty
                 </Link>
-                <Link href="/" className="dropdown-item text-capitalize fs-6">
+                <Link
+                  href="/"
+                  className="dropdown-item text-capitalize fs-6"
+                  onClick={handleLinkClick}
+                >
                   Fracto
                 </Link>
-                <Link href="/" className="dropdown-item text-capitalize fs-6">
+                <Link
+                  href="/"
+                  className="dropdown-item text-capitalize fs-6"
+                  onClick={handleLinkClick}
+                >
                   Movies
                 </Link>
               </div>
@@ -124,6 +162,7 @@ function Navbar() {
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
+                onClick={handleLinkClick}
               >
                 <span className="rolling-text text-capitalize fs-6">
                   News & Media
@@ -137,6 +176,7 @@ function Navbar() {
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
+                onClick={handleLinkClick}
               >
                 <span className="rolling-text text-capitalize fs-6">Blogs</span>
               </Link>
@@ -148,6 +188,7 @@ function Navbar() {
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
+                onClick={handleLinkClick}
               >
                 <span className="rolling-text text-capitalize fs-6">
                   Careers
@@ -161,6 +202,7 @@ function Navbar() {
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
+                onClick={handleLinkClick}
               >
                 <span className="rolling-text text-capitalize fs-6 ">
                   Contact Us

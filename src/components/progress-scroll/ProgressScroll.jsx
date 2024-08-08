@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import scrollToTop from "@/utils/scrollToTop";
 
@@ -20,7 +19,6 @@ const ProgressScroll = () => {
         </svg>
       </div>
     </>
-
   );
 };
 

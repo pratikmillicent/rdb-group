@@ -1,5 +1,4 @@
 "use client";
-export const dynamic = "force-dynamic";
 
 import CallToAction from "./components/CallToAction";
 import CoreValue2 from "./components/CoreValue2";
@@ -12,10 +11,13 @@ function About() {
   return (
     <>
       <main className="mw-100 ">
-        <div>
+        <div className="hero-responsive">
           <video
-            className="mw-100 w-100 d-block"
-            style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
+            className="mw-100 w-100 d-block "
+            style={{
+              //  height: "calc(100dvh - 80px)",
+              objectFit: "initial",
+            }}
             src="/assets/video/AboutHero.mp4"
             autoPlay
             muted
