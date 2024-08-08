@@ -10,6 +10,7 @@ import VideoGallary from "./components/VideoGallary";
 import DashboardCount from "@/components/DashboardCount";
 import Heading from "@/components/heading/Heading";
 import VisionMission from "../about/components/VisionMission";
+import SectionImage from "./components/SectionImage"
 
 const data = [
   { value: 4500, label: "Home Protected" },
@@ -96,7 +97,8 @@ export default function Home() {
         </div>
         <DashboardCount data={data} />
 
-        <VisionMission />
+        {/* <VisionMission /> */}
+        <SectionImage />
 
         <div style={{ padding: "20px 0" }}>
           <NewGroupGrid />

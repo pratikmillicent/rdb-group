@@ -6,6 +6,7 @@ import CoreValue2 from "./components/CoreValue2";
 import Team from "./components/Team";
 import DirectorCard from "./components/DirectorCard";
 import VisionMission from "./components/VisionMission";
+import SectionImage from "../(home)/components/SectionImage";
 
 function About() {
   return (
@@ -24,7 +25,8 @@ function About() {
           ></video>
         </div>
 
-        <VisionMission />
+        {/* <VisionMission /> */}
+        <SectionImage />
 
         <DirectorCard />
         <Team />
