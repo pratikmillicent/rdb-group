@@ -1,4 +1,4 @@
-// @ts-nocheck
+// check
 "use client";
 import type { Metadata } from "next";
 import localFont from "next/font/local";

@@ -2,11 +2,13 @@ import { useState, useEffect, CSSProperties } from "react";
 import Image from "next/image";
 import Heading from "@/components/heading/Heading";
 import Parallax from "parallax-js";
-import "./VisionMission2.css"
+import "./VisionMission2.css";
 
 const VisionMission: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<string>("about");
-  const [imageSrc, setImageSrc] = useState<string>("/assets/images/home/news1.jpg");
+  const [imageSrc, setImageSrc] = useState<string>(
+    "/assets/images/home/news1.jpg"
+  );
   const [displayText, setDisplayText] = useState<string>(
     "With a team of over 40 dedicated professionals, averaging more than 7 years of experience each, we add a touch of Professionalism to everything we do."
   );
@@ -51,8 +53,13 @@ const VisionMission: React.FC = () => {
 
   useEffect(() => {
     // Initialize the parallax effect
-    if (typeof window !== "undefined" && document.querySelector(".parallaxie")) {
-      const parallaxInstance = new Parallax(document.querySelector(".parallaxie")!);
+    if (
+      typeof window !== "undefined" &&
+      document.querySelector(".parallaxie")
+    ) {
+      const parallaxInstance = new Parallax(
+        document.querySelector(".parallaxie")!
+      );
       return () => parallaxInstance.destroy();
     }
   }, [selectedTab]);
@@ -91,9 +98,7 @@ const VisionMission: React.FC = () => {
             <p>{displayText}</p>
           </div>
         </div>
-        <div
-          className="col-12 col-md-6 d-flex justify-content-center align-items-center image-section"
-        >
+        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center image-section">
           <div className="parallax-container w-100 h-100">
             <div
               className="ratio ratio-4x3 parallaxie"

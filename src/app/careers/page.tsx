@@ -75,7 +75,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <CardList data={cardData} />
+        {/* <CardList data={cardData} /> */}
         <ResumeUpload />
       </div>
     </>
