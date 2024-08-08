@@ -176,7 +176,7 @@ const News = () => {
                 </Swiper>
               )}
             </div>
-          </div>
+          </div>          
         </section>
 
         <Awards />

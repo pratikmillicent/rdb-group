@@ -60,7 +60,7 @@ const Awards = () => {
     return (
         <>
             <Swiper
-                className="pb-60 row"
+                className="pb-60"
                 spaceBetween={20}
                 slidesPerView={3}
                 slidesPerGroup={3}
@@ -74,11 +74,11 @@ const Awards = () => {
                 {Awards_data.map((item, index) => (
                     <SwiperSlide key={index}>
                         <div
-                            className="card"
+                            className="award-card"
                             style={{ backgroundImage: `url(${item.image})` }}
                         >
-                            <div className="card-content d-flex align-items-center justify-content-center flex-column">
-                                <h2 className="card-title">{item.events}</h2>
+                            <div className="award-card-content d-flex align-items-center justify-content-center flex-column">
+                                <h2 className="award-card-title">{item.events}</h2>
                                 <p className="class-body">{item.description}</p>
                                 <Link href="#"><FaArrowRight /></Link>
                             </div>

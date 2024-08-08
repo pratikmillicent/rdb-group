@@ -150,11 +150,12 @@ function SectionImage() {
   return (
     <section className="container-fluid">
       <div className="row min-vh-100">
-        <div className="col-md-6 d-flex flex-column justify-content-center p-4"
-        style={{backgroundImage: "linear-gradient(black, navy)"}}
+        <div className="col-md-6 d-flex flex-column justify-content-center p-4 bg-navy"
+        style={{}}
         >
-          <div className="mb-4 d-flex justify-content-center align-items-center">
-            <Heading headTitle="Overview" />
+          <div className="mb-4 d-flex justify-content-center align-items-center text-golden fz-40 fw-700">
+            {/* <Heading headTitle="Overview" className="text-golden"/> */}
+            Overview
           </div>
           <div className="mb-4 d-flex flex-wrap justify-content-center">
             <button
