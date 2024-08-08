@@ -48,7 +48,7 @@ function Navbar() {
   // }
 
   function toggleNavbar() {
-    setIsNavbarOpen(prev => !prev);
+    setIsNavbarOpen((prev) => !prev);
   }
 
   function handleClickOutside(event: MouseEvent) {
@@ -89,7 +89,7 @@ function Navbar() {
           onClick={toggleNavbar}
         >
           <span className="icon-bar">
-            <IoMenu className="text-black" />
+            <IoMenu className="text-white" />
           </span>
         </button>
 

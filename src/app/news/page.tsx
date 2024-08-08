@@ -7,7 +7,7 @@ import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import CarouselEvent from "../(home)/components/CardImagesCarousel";
-import Awards from "./components/Awards"
+import Awards from "./components/Awards";
 
 interface Video {
   image: string;
@@ -90,7 +90,7 @@ const News = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {data.map(item => (
+                  {data.map((item) => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
@@ -136,47 +136,6 @@ const News = () => {
               )}
             </div>
           </div>
-        </section>
-
-        <section className="blog-modern" style={{ paddingBottom: "60px" }}>
-          <div className="container">
-            <div className="sec-lg-head">
-              <div className="row">
-                <div className="col-lg-8">
-                  <Heading headTitle="Awards" />
-                </div>
-              </div>
-            </div>
-            <div className="blog-carsouel">
-              {loadSwiper && (
-                <Swiper
-                  {...swiperOptions}
-                  id="content-carousel-container-unq-blog"
-                  className="swiper-container"
-                >
-                  {award_data.map(item => (
-                    <SwiperSlide
-                      key={item.id}
-                      className="wow fadeInUp"
-                      data-wow-delay=".1s"
-                    >
-                      <div className="item p-0">
-                        <div className="img img-container">
-                          <Image
-                            src={item.image}
-                            alt={item.image}
-                            style={{ height: "320px", objectFit: "cover" }}
-                            width={800}
-                            height={500}
-                          />
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              )}
-            </div>
-          </div>          
         </section>
 
         <Awards />

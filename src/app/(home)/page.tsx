@@ -1,20 +1,19 @@
 "use client";
 
+import DashboardCount from "@/components/DashboardCount";
+import Heading from "@/components/heading/Heading";
+import dynamic from "next/dynamic";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Card from "./components/Card";
+import MobileCarousel from "./components/MobileCarousel";
+import NewGroupGrid from "./components/NewGroup";
+import News from "./components/News";
+import SectionImage from "./components/SectionImage";
+import useMediaQuery from "./components/useMediaQuery";
+import VideoGallary from "./components/VideoGallary";
 const Carroussel3D = dynamic(() => import("./components/Carousel"), {
   ssr: false,
 });
-import NewGroupGrid from "./components/NewGroup";
-import News from "./components/News";
-import VideoGallary from "./components/VideoGallary";
-import DashboardCount from "@/components/DashboardCount";
-import Heading from "@/components/heading/Heading";
-import VisionMission from "../about/components/VisionMission";
-import dynamic from "next/dynamic";
-import SectionImage from "./components/SectionImage";
-import MobileCarousel from "./components/MobileCarousel";
-import useMediaQuery from "./components/useMediaQuery";
 
 const data = [
   { value: 4500, label: "Home Protected" },
