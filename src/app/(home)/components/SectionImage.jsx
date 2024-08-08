@@ -104,7 +104,6 @@ import parallaxie from "@/common/parallaxie";
 import React, { useState, useEffect } from "react";
 import Heading from "@/components/heading/Heading";
 import "../SectionImage.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const images = {
   about: "/assets/images/home/about3.jpg",
@@ -151,7 +150,9 @@ function SectionImage() {
   return (
     <section className="container-fluid">
       <div className="row min-vh-100">
-        <div className="col-md-6 d-flex flex-column justify-content-center p-4">
+        <div className="col-md-6 d-flex flex-column justify-content-center p-4"
+        style={{backgroundImage: "linear-gradient(black, navy)"}}
+        >
           <div className="mb-4 d-flex justify-content-center align-items-center">
             <Heading headTitle="Overview" />
           </div>

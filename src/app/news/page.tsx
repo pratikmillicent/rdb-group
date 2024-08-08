@@ -7,6 +7,7 @@ import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import CarouselEvent from "../(home)/components/CardImagesCarousel";
+import Awards from "./components/Awards"
 
 interface Video {
   image: string;
@@ -177,6 +178,8 @@ const News = () => {
             </div>
           </div>
         </section>
+
+        <Awards />
 
         <CarouselEvent data={data} />
       </div>
