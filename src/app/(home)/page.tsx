@@ -13,6 +13,8 @@ import Heading from "@/components/heading/Heading";
 import VisionMission from "../about/components/VisionMission";
 import dynamic from "next/dynamic";
 import SectionImage from "./components/SectionImage";
+import MobileCarousel from "./components/MobileCarousel";
+import useMediaQuery from "./components/useMediaQuery";
 
 const data = [
   { value: 4500, label: "Home Protected" },
@@ -50,6 +52,9 @@ export default function Home() {
       ),
     },
   ];
+
+  const isMediumScreen = useMediaQuery("(min-width: 768px)");
+  const isSmallScreen = useMediaQuery("(max-width: 767px)");
 
   return (
     <ParallaxProvider>
@@ -123,6 +128,23 @@ export default function Home() {
             offset={5}
             showArrows={false}
           />
+
+          <MobileCarousel />
+        </div> */}
+
+        <div style={{ padding: "0" }}>
+          {isMediumScreen ? (
+            <Carroussel3D
+              cards={cards}
+              height="450px"
+              // width="40%"
+              margin="0 auto"
+              offset={5}
+              showArrows={false}
+            />
+          ) : isSmallScreen ? (
+            <MobileCarousel />
+          ) : null}
         </div>
 
         <News />

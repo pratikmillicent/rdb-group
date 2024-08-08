@@ -9,7 +9,7 @@ import { transform } from "next/dist/build/swc";
 const data = [
   {
     id: 1,
-    title: "tising in our life became a info noise",
+    title: "Tising in our life became a info noise",
     cover: "/assets/images/home/news2.jpg",
     author: "Admin",
     date: "august 6, 2021",
