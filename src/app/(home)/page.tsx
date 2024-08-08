@@ -119,19 +119,6 @@ export default function Home() {
           <Heading headTitle="Events" />
         </div>
 
-        <div className="d-none d-md-block" style={{ padding: "0" }}>
-          <Carroussel3D
-            cards={cards}
-            height="450px"
-            width="1000px"
-            margin="0 auto"
-            offset={5}
-            showArrows={false}
-          />
-
-          <MobileCarousel />
-        </div> */}
-
         <div style={{ padding: "0" }}>
           {isMediumScreen ? (
             <Carroussel3D
