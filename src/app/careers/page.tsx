@@ -8,14 +8,42 @@ import Image from "next/image";
 const page = () => {
   return (
     <>
-      <Image
-        src="/assets/images/career/career.jpg"
-        className="circle-img career-banner"
-        alt="carrer page"
-        // style={{ height: "100vh" }}
-        width={800}
-        height={500}
-      />
+      <div style={{ position: "relative" }}>
+        <Image
+          src="/assets/images/career/career.jpg"
+          className="circle-img career-banner banner"
+          alt="carrer page"
+          // style={{ height: "100vh" }}
+          width={800}
+          height={500}
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background:
+              "linear-gradient(117deg, rgba(23, 38, 57, 90%) 0%, rgba(1, 1, 1, 50%) 75%)",
+            zIndex: 1,
+            pointerEvents: "none",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+              padding: "0 20px",
+            }}
+          >
+            <h3 className="banner-heading">Careers</h3>
+          </div>
+        </div>
+      </div>
       <div className="container">
         <div className="work-header ">
           <div className="section-padding">

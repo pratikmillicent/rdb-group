@@ -146,14 +146,42 @@ const Blog = () => {
 
   return (
     <>
-      <Image
-        src="/assets/images/blog/blog-banner.png"
-        className="circle-img blog-banner"
-        alt="Landscape picture"
-        // style={{ height: "100vh" }}
-        width={800}
-        height={500}
-      />
+      <div style={{ position: "relative" }}>
+        <Image
+          src="/assets/images/blog/blog-banner.png"
+          className="circle-img blog-banner banner"
+          alt="Landscape picture"
+          // style={{ height: "100vh" }}
+          width={800}
+          height={500}
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background:
+              "linear-gradient(117deg, rgba(23, 38, 57, 90%) 0%, rgba(1, 1, 1, 50%) 75%)",
+            zIndex: 1,
+            pointerEvents: "none",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+              padding: "0 20px",
+            }}
+          >
+            <h3 className="banner-heading">Blogs</h3>
+          </div>
+        </div>
+      </div>
 
       <div className="container">
         <section className="blog-modern" style={{ paddingBottom: "60px" }}>

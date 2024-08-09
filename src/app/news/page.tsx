@@ -97,15 +97,7 @@ const News = () => {
               padding: "0 20px",
             }}
           >
-            <h3
-              className="text-white"
-              style={{
-                textDecoration: "underline",
-                textDecorationColor: "var(--navy)",
-              }}
-            >
-              News & Media
-            </h3>
+            <h3 className="banner-heading">News & Media</h3>
           </div>
         </div>
       </div>
@@ -126,7 +118,7 @@ const News = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {data.map((item) => (
+                  {data.map(item => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
