@@ -78,6 +78,20 @@ const Awards = () => {
         autoplay={false}
         loop={false}
         pagination={{ clickable: true }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+        }}
       >
         {Awards_data.map((item, index) => (
           <SwiperSlide key={index}>
