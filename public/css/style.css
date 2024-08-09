@@ -3190,14 +3190,15 @@ body.loaded {
   height: calc(100vh - var(--nav-height));
 }
 
-.navbar.navbar-home {
+/* .navbar.navbar-home {
+  
+} */
+
+.navbar {
   position: absolute;
   color: white;
   background: transparent;
-}
-
-.navbar {
-  background: white;
+  /* background: white; */
   height: 80px;
   padding: 0;
   margin: 0;
@@ -3223,7 +3224,7 @@ body.loaded {
 }
 
 .navbar.nav-crev.nav-scroll {
-  background: var(--background);
+  background: var(--navy);
   border-color: rgba(0, 0, 0, 0.1);
   padding: 0;
   position: fixed;
@@ -3290,10 +3291,10 @@ body.loaded {
   -ms-transform: translateY(80px);
   transform: translateY(80px);
   /* color: white; */
-  color: black !important;
+  color: var(--white);
   /* padding-top: 15px; */
   /* padding-bottom: 15px; */
-  background-color: white;
+  background-color: var(--navy);
   /* border-radius: 8px; Adjust the radius as needed */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /* Optional: add a subtle shadow */
@@ -11007,6 +11008,10 @@ header.in-box {
 
 .news-div:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.banner {
+  max-height: calc(90vh - var(--nav-height));
 }
 
 .hero-button {

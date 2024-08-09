@@ -10,7 +10,7 @@ import SectionImage from "../(home)/components/SectionImage";
 function About() {
   return (
     <>
-      <main className="mw-100 ">
+      <main className="mw-100">
         <div className="hero-responsive">
           <video
             className="mw-100 w-100 d-block "

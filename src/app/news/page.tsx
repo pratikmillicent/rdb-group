@@ -65,14 +65,50 @@ const News = () => {
 
   return (
     <>
-      <Image
-        src="/assets/images/news/banner.png"
-        className="w-100 news-banner"
-        alt="News Banner"
-        // style={{ height: "100vh" }}
-        width={800}
-        height={500}
-      />
+      <div style={{ position: "relative" }}>
+        <Image
+          src="/assets/images/news/banner.png"
+          className="w-100 news-banner banner"
+          alt="News Banner"
+          // style={{ height: "100vh" }}
+          width={800}
+          height={500}
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background:
+              "linear-gradient(117deg, rgba(23, 38, 57, 90%) 0%, rgba(1, 1, 1, 50%) 75%)",
+            zIndex: 1,
+            pointerEvents: "none",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+              padding: "0 20px",
+            }}
+          >
+            <h3
+              className="text-white"
+              style={{
+                textDecoration: "underline",
+                textDecorationColor: "var(--navy)",
+              }}
+            >
+              News & Media
+            </h3>
+          </div>
+        </div>
+      </div>
       <div className="container">
         <section className="blog-modern" style={{}}>
           <div className="container">
