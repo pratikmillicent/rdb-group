@@ -102,7 +102,7 @@ const Awards = () => {
               <div className="award-card-content d-flex align-items-center justify-content-center flex-column">
                 <h2 className="award-card-title">{item.events}</h2>
                 <p className="class-body">{item.description}</p>
-                <Link href="#">
+                <Link href="#" className="fz-30 fw-500">
                   <FaArrowRight />
                 </Link>
               </div>
