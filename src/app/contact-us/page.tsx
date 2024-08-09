@@ -21,29 +21,57 @@ const ContactUs = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
+    setFormData(prevState => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     console.log(formData);
   };
 
   return (
     <>
-      <Image
-        src="/assets/images/contact/contact.jpg"
-        className="circle-img contact-banner"
-        alt="carrer page"
-        // style={{ height: "100vh" }}
-        width={800}
-        height={500}
-      />
+      <div style={{ position: "relative" }}>
+        <Image
+          src="/assets/images/contact/contact.jpg"
+          className="circle-img contact-banner banner"
+          alt="carrer page"
+          // style={{ height: "100vh" }}
+          width={800}
+          height={500}
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background:
+              "linear-gradient(117deg, rgba(23, 38, 57, 90%) 0%, rgba(1, 1, 1, 50%) 75%)",
+            zIndex: 1,
+            pointerEvents: "none",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+              padding: "0 20px",
+            }}
+          >
+            <h3 className="banner-heading">Contact us</h3>
+          </div>
+        </div>
+      </div>
       <div className="container mt-60">
         <div className="d-flex gap-3">
           <div className="col-12 col-md-11">
