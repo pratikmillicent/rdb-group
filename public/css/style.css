@@ -11107,6 +11107,11 @@ header.in-box {
   height: 100vh;
 }
 
+/* .logo-responsive  Image{
+  width: "205px" !important;
+  height: "100px " !important;
+} */
+
 @media (max-width: 567px) {
   .hero-responsive {
     height: 70vh;
