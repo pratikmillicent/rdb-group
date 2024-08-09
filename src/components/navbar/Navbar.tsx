@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { IoMenu } from "react-icons/io5";
+import useMediaQuery from "@/app/(home)/components/useMediaQuery";
 
 function Navbar() {
   const path = usePathname();
