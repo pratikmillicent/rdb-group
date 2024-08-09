@@ -9,7 +9,6 @@ import Image from "next/image";
 interface DataItem {
   id: number;
   image: string;
-  number: string;
   type: string;
   title: string;
   text: string;
@@ -19,7 +18,6 @@ const data: DataItem[] = [
   {
     id: 1,
     image: "assets/images/home/properties.webp",
-    number: "01.",
     type: "Properties",
     title: "Aspect Global Ventures Pvt.Ltd.",
     text: "We craft premium designs for agencies and global brands around the globe.",
@@ -27,7 +25,6 @@ const data: DataItem[] = [
   {
     id: 2,
     image: "assets/images/home/img2.jpg",
-    number: "02.",
     type: "Reality",
     title: "Aspect Bullion & Refinery",
     text: "We craft premium designs for agencies and global brands around the globe.",
@@ -35,7 +32,6 @@ const data: DataItem[] = [
   {
     id: 3,
     image: "assets/images/home/Fractal.jpg",
-    number: "03.",
     type: "Fracto",
     title: "Aspect Infrastructure",
     text: "We craft premium designs for agencies and global brands around the globe.",
@@ -44,7 +40,6 @@ const data: DataItem[] = [
   {
     id: 4,
     image: "assets/images/home/movie.webp",
-    number: "04.",
     type: "Movies",
     title: "Aspect Infrastructure",
     text: "We craft premium designs for agencies and global brands around the globe.",
@@ -52,7 +47,6 @@ const data: DataItem[] = [
   {
     id: 5,
     image: "assets/images/home/business.jpg",
-    number: "05.",
     type: "Business",
     title: "Luxury Glassware",
     text: "We craft premium designs for agencies and global brands around the globe.",
@@ -147,7 +141,10 @@ const NewGroupGrid: React.FC = () => {
                     <div
                       id={`tab-${index + 1}`}
                       className="img bg-img"
-                      style={{ objectFit: "cover" }}
+                      style={{
+                        backgroundSize: "100% 100%",
+                        filter: "brightness(0.5)",
+                      }}
                       data-background={`${item.image}`}
                       key={index}
                     />
@@ -169,8 +166,11 @@ const NewGroupGrid: React.FC = () => {
                         height={500}
                       />
                     </div>
-                    <span className="sub-title mb-15 fz-24 fw-600 text-grey">
-                      {item.number} {item.type}
+                    <span
+                      className="sub-title mb-15 fz-30 fw-600"
+                      style={{ color: "var(--navy)" }}
+                    >
+                      {item.type}
                     </span>
                     {/* <h2 className="mb-15 text-grey">{item.title}.</h2> */}
                     <div className="row">

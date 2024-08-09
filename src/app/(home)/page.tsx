@@ -123,7 +123,7 @@ export default function Home() {
             <Carroussel3D
               cards={cards}
               height="450px"
-              // width="40%"
+              width="1000px"
               margin="0 auto"
               offset={5}
               showArrows={false}
