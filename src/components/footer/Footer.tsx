@@ -31,7 +31,7 @@ function Footer() {
                 </div>
                 <div className="text">
                   <div className="mb-10">
-                    <Link href="mail:info@rdbrothers.com">
+                    <Link href="mailto:info@rdbrothers.com">
                       info@rdbrothers.com
                     </Link>
                   </div>
@@ -88,8 +88,8 @@ function Footer() {
         </div>
         <div className="sub-footer pt-40 pb-40 bord-thin-top ontop">
           <div className="container">
-            <div className="row d-flex align-items-center justify-content-center">
-              <div className="col-lg-4">
+            <div className="row d-flex align-items-center justify-content-center text-center text-lg-left">
+              <div className="col-lg-4 mb-4 mb-lg-0">
                 <div className="logo">
                   <Link href="#">
                     <Image
@@ -102,36 +102,34 @@ function Footer() {
                   </Link>
                 </div>
               </div>
-              <div className="col-lg-4">
-              <ul className="d-flex align-items-center justify-content-center">
-              <li className="mr-20">
-                <Link href="https://www.facebook.com/">
-                  <FaFacebook className="fz-24 social-icon" />
-                </Link>
-              </li>
-              <li className="mr-20">
-                <Link href="https://x.com/">
-                  <FaTwitter className="fz-24 social-icon" />
-                </Link>
-              </li>
-              <li className="mr-20">
-                <Link href="https://www.linkedin.com/">
-                  <FaLinkedin className="fz-24 social-icon" />
-                </Link>
-              </li>
-              <li>
-                <Link href="https://www.instagram.com/">
-                  <FaInstagramSquare className="fz-24 social-icon" />
-                </Link>
-              </li>
-            </ul>
+              <div className="col-lg-4 mb-4 mb-lg-0">
+                <ul className="d-flex align-items-center justify-content-center">
+                  <li className="mr-20">
+                    <Link href="https://www.facebook.com/">
+                      <FaFacebook className="fz-24 social-icon" />
+                    </Link>
+                  </li>
+                  <li className="mr-20">
+                    <Link href="https://x.com/">
+                      <FaTwitter className="fz-24 social-icon" />
+                    </Link>
+                  </li>
+                  <li className="mr-20">
+                    <Link href="https://www.linkedin.com/">
+                      <FaLinkedin className="fz-24 social-icon" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://www.instagram.com/">
+                      <FaInstagramSquare className="fz-24 social-icon" />
+                    </Link>
+                  </li>
+                </ul>
               </div>
               <div className="col-lg-4">
-                <div className="copyright d-flex">
-                  <div className="ml-auto">
-                    <div className="fz-13">
-                      Copyright © 2024 All rights reserved
-                    </div>
+                <div className="copyright d-flex justify-content-center justify-content-lg-end">
+                  <div className="fz-13">
+                    Copyright © 2024 All rights reserved
                   </div>
                 </div>
               </div>

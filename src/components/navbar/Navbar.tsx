@@ -220,7 +220,7 @@ function Navbar() {
             </li>
           </ul>
           
-            <ul className="d-flex align-items-center justify-content-center mt-15 ml-90">
+            <ul className="d-none d-md-flex align-items-center justify-content-center mt-15 ml-90">
               <li className="mr-20">
                 <Link href="https://www.facebook.com/">
                   <FaFacebook className="fz-24 social-icon" />
