@@ -6,7 +6,7 @@ const DirectorCard = () => {
   return (
     <>
       <div className="container">
-        <Heading headTitle="Our Leaders"/>
+        <Heading headTitle="Our Leaders" />
 
         <div className="row">
           {DirectorCardData.map((data, key) => (
@@ -14,15 +14,15 @@ const DirectorCard = () => {
               <div className="my-container">
                 <Image
                   src={data?.image}
-                  alt="Landscape picture"
+                  alt={data.name}
                   width={800}
                   height={500}
                   style={{
-                    borderRadius: "50px 0px 50px 0px",
-                    height: "450px",                   
-                    objectFit: "fill",
+                    borderRadius: "50%", // Creates a circular
+                    width: "300px",
+                    height: "300px", // Maintains the aspect ratio
+                    objectFit: "unset", // Scales the image to fill the container without distortion
                   }}
-                  className="w-75"
                 />
               </div>
 
@@ -30,9 +30,12 @@ const DirectorCard = () => {
                 <h4 className="pt-3 pb-1 m-0 text-grey">{data?.name}</h4>
                 <div className="fs-5">{data?.role}</div>
                 <hr className="bg-golden" />
-                <p className="fs-6 py-0 lh-lg text-wrap"
-                style={{textAlign:"justify"}}
-                >{data?.description}</p>
+                <p
+                  className="fs-6 py-0 lh-lg text-wrap"
+                  style={{ textAlign: "justify" }}
+                >
+                  {data?.description}
+                </p>
               </div>
             </div>
           ))}
@@ -47,8 +50,7 @@ export default DirectorCard;
 const DirectorCardData = [
   {
     id: 1,
-    image:
-      "https://anarock.com/_next/image?url=https%3A%2F%2Fwebsitemedia.anarock.com%2Fmedia%2FAnuj_93dcf74d9a.webp&w=1080&q=75",
+    image: "/assets/images2/Dhaval.jpg",
     name: "Dhaval Thakkar",
     role: "Founder & Ceo",
     description:
@@ -56,8 +58,7 @@ const DirectorCardData = [
   },
   {
     id: 2,
-    image:
-      "https://anarock.com/_next/image?url=https%3A%2F%2Fwebsitemedia.anarock.com%2Fmedia%2FRobin_47b7a3e2f2.webp&w=1080&q=75",
+    image: "/assets/images2/Raj.jpg",
     name: "Raj Thakkar",
     role: "Founder ",
     description:
