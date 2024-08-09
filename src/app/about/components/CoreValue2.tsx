@@ -65,9 +65,11 @@ function CoreValue2() {
           <div className="col-lg-11">
             <div className="row md-marg">
               {coreValueImage.map((item: any, i: any) => (
-                <div className="col-md-4 col-6 brand box-bg" key={i}>
+                <div className="col-md-4 col-6 brand box-bg card-hover" key={i}>
                   <div className="item mb-30 wow fadeIn" data-wow-delay=".6s">
-                    <div className="fs-1 text-golden">{<>{item?.icon}</>}</div>
+                    <div className="fz-50 text-golden icon-container">
+                      <div className="animate-bounce">{<>{item?.icon}</>}</div>
+                    </div>
                     <h4 className="text-grey">{item?.name}</h4>
                   </div>
                 </div>
