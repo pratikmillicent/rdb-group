@@ -67,18 +67,6 @@
     position: relative;
 }
 
-.class-body::after {
-    /* content: " ";
-    position: absolute;
-    height: 1px;
-    width: calc(100% + var(--padding));
-    background-color: var(--clr-accent-400);
-    background-color: rgb(167, 216, 138);
-    bottom: -2px;
-    left: calc(-1 * var(--padding));
-    transform-origin: left;
-    transition: transform 500ms ease; */
-}
 
 
 @media (hover) {

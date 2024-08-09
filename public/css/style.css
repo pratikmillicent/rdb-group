@@ -10851,6 +10851,8 @@ header.in-box {
 
 .social-icon:hover {
   transform: scale(1.2);
+  color: var(--golden);
+  transition: all 500ms;
 }
 
 .inside-img img {

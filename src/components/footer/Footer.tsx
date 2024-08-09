@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -100,7 +102,31 @@ function Footer() {
                   </Link>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-4">
+              <ul className="d-flex align-items-center justify-content-center">
+              <li className="mr-20">
+                <Link href="https://www.facebook.com/">
+                  <FaFacebook className="fz-24 social-icon" />
+                </Link>
+              </li>
+              <li className="mr-20">
+                <Link href="https://x.com/">
+                  <FaTwitter className="fz-24 social-icon" />
+                </Link>
+              </li>
+              <li className="mr-20">
+                <Link href="https://www.linkedin.com/">
+                  <FaLinkedin className="fz-24 social-icon" />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.instagram.com/">
+                  <FaInstagramSquare className="fz-24 social-icon" />
+                </Link>
+              </li>
+            </ul>
+              </div>
+              <div className="col-lg-4">
                 <div className="copyright d-flex">
                   <div className="ml-auto">
                     <div className="fz-13">

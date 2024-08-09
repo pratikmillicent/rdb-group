@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { IoMenu } from "react-icons/io5";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
 
 function Navbar() {
   const path = usePathname();
@@ -210,6 +212,30 @@ function Navbar() {
               </Link>
             </li>
           </ul>
+          
+            <ul className="d-flex align-items-center justify-content-center mt-15 ml-90">
+              <li className="mr-20">
+                <Link href="https://www.facebook.com/">
+                  <FaFacebook className="fz-24 social-icon" />
+                </Link>
+              </li>
+              <li className="mr-20">
+                <Link href="https://x.com/">
+                  <FaTwitter className="fz-24 social-icon" />
+                </Link>
+              </li>
+              <li className="mr-20">
+                <Link href="https://www.linkedin.com/">
+                  <FaLinkedin className="fz-24 social-icon" />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.instagram.com/">
+                  <FaInstagramSquare className="fz-24 social-icon" />
+                </Link>
+              </li>
+            </ul>
+         
         </div>
       </div>
     </nav>
