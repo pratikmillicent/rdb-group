@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { IoMenu } from "react-icons/io5";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
+import useMediaQuery from "@/app/(home)/components/useMediaQuery";
 
 function Navbar() {
   const path = usePathname();
@@ -50,7 +51,7 @@ function Navbar() {
   // }
 
   function toggleNavbar() {
-    setIsNavbarOpen((prev) => !prev);
+    setIsNavbarOpen(prev => !prev);
   }
 
   function handleClickOutside(event: MouseEvent) {
@@ -63,6 +64,8 @@ function Navbar() {
     setIsNavbarOpen(false);
   }
 
+  const isSmallScreen = useMediaQuery("(max-width: 767px)");
+
   return (
     <nav
       ref={navRef}
@@ -72,7 +75,11 @@ function Navbar() {
         <Link href="/">
           <Image
             src="/rdb-group.svg"
-            style={{ width: "205px", height: "100px" }}
+            style={{
+              height: isSmallScreen ? "80px" : "100px",
+              width: "205px",
+            }}
+            className="logo-responsive"
             alt="logo"
             width={800}
             height={500}
