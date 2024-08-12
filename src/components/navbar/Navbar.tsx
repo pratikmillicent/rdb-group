@@ -222,22 +222,22 @@ function Navbar() {
           
             <ul className="d-none d-md-flex align-items-center justify-content-center mt-15 ml-90">
               <li className="mr-20">
-                <Link href="https://www.facebook.com/">
+                <Link href="https://www.facebook.com/" target="_blank">
                   <FaFacebook className="fz-24 social-icon" />
                 </Link>
               </li>
               <li className="mr-20">
-                <Link href="https://x.com/">
+                <Link href="https://x.com/" target="_blank">
                   <FaTwitter className="fz-24 social-icon" />
                 </Link>
               </li>
               <li className="mr-20">
-                <Link href="https://www.linkedin.com/">
+                <Link href="https://www.linkedin.com/" target="_blank">
                   <FaLinkedin className="fz-24 social-icon" />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.instagram.com/">
+                <Link href="https://www.instagram.com/" target="_blank">
                   <FaInstagramSquare className="fz-24 social-icon" />
                 </Link>
               </li>

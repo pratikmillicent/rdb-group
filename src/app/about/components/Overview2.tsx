@@ -1,6 +1,5 @@
 //check
 
-import Heading from "@/components/heading/Heading";
 import { useEffect } from "react";
 import Image from "next/image";
 

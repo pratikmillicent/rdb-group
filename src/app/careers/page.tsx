@@ -2,7 +2,6 @@
 import Heading from "@/components/heading/Heading";
 import ResumeUpload from "./components/ResumeUpload";
 import React from "react";
-import CardList from "./components/CardList";
 import Image from "next/image";
 
 const page = () => {

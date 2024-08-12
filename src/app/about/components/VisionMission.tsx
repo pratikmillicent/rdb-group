@@ -1,5 +1,4 @@
 import { useState, CSSProperties } from "react";
-import Image from "next/image";
 import "../VisionMission.css";
 import Heading from "@/components/heading/Heading";
 

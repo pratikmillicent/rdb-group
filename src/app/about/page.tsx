@@ -4,7 +4,6 @@ import CallToAction from "./components/CallToAction";
 import CoreValue2 from "./components/CoreValue2";
 import Team from "./components/Team";
 import DirectorCard from "./components/DirectorCard";
-import VisionMission from "./components/VisionMission";
 import SectionImage from "../(home)/components/SectionImage";
 
 function About() {

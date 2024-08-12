@@ -123,7 +123,7 @@ function SectionImage() {
     border: "none",
     outline: "none",
     transition: "background-color 0.3s, color 0.3s",
-    borderRadius: "6px",
+    borderRadius: "50px",
     fontSize: "16px",
     margin: "5px",
   });
@@ -134,8 +134,8 @@ function SectionImage() {
       setTimeout(() => {
         setAnimate(false);
         setSelectedTab(tab);
-        setCurrentImage(images[tab]); // Update the image source
-      }, 500);
+        setCurrentImage(images[tab]);
+      }, 100);
     } else {
       setSelectedTab(tab);
     }
