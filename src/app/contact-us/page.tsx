@@ -1,6 +1,5 @@
 // check
 "use client";
-import MapComponent from "./components/MapComponent";
 import {
   FaMapMarkerAlt,
   FaFacebook,
@@ -9,7 +8,7 @@ import {
   FaInstagramSquare,
 } from "react-icons/fa";
 import Heading from "@/components/heading/Heading";
-import { useRef, useState, useEffect, useMemo } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 

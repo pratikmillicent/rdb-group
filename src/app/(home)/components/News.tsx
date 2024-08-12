@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
-import { transform } from "next/dist/build/swc";
 
 const data = [
   {
