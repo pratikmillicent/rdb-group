@@ -59,7 +59,7 @@ const Awards_data = [
 
 const Awards = () => {
   return (
-    <>
+    <div className="px-2">
       <div className="sec-lg-head">
         <div className="row">
           <div className="col-lg-8">
@@ -73,7 +73,7 @@ const Awards = () => {
         slidesPerView={3}
         slidesPerGroup={3}
         onSlideChange={() => console.log("Slide changed")}
-        onSwiper={(swiper) => console.log(swiper)}
+        onSwiper={swiper => console.log(swiper)}
         modules={[Navigation, Pagination]}
         autoplay={false}
         loop={false}
@@ -110,7 +110,7 @@ const Awards = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 };
 

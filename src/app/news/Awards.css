@@ -1,132 +1,131 @@
 :root {
-    --clr-neutral-900: hsl(207, 19%, 9%);
-    --clr-neutral-100: hsl(0, 0%, 100%);
-    --clr-accent-400: hsl(142, 90%, 61%);
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-accent-400: hsl(142, 90%, 61%);
 }
 
-
-
 .award-card {
-    color: var(--clr-neutral-100);
-    /* background-size: cover; */
-    padding: 6rem 0 0;
-    max-width: 350px;
-    border: none;
-    border-radius: 0;
-    overflow: hidden;
-    transition: transform 500ms ease;
+  color: var(--clr-neutral-100);
+  /* background-size: cover; */
+  padding: 6rem 0 0;
+  /* max-width: 350px; */
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  transition: transform 500ms ease;
 }
 
 .award-card:hover,
 .award-card:focus-within {
-    transform: scale(1.05);
-    color: #f0c05a;
-    background: linear-gradient(hsla(0, 0%, 0%, 0),
-            hsla(0, 0%, 0%, 0.3) 20%,
-            hsl(0 0% 0%/1));
+  transform: scale(1.05);
+  color: #f0c05a;
+  background: linear-gradient(
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0.3) 20%,
+    hsl(0 0% 0%/1)
+  );
 }
 
 .award-card-content {
-    --padding: 1.5rem;
-    padding: var(--padding);
-    background: linear-gradient(hsl(0 0% 0%/0),
-            hsl(20 0% 0%/0.3) 20%,
-            hsl(0 0% 0%/1));
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+    hsl(0 0% 0%/0),
+    hsl(20 0% 0%/0.3) 20%,
+    hsl(0 0% 0%/1)
+  );
 }
 
 .award-card-title {
-    position: relative;
-    bottom: 28px;
-    font-size: 30px;
-    text-align: center;
-    width: max-content;
-    max-width: 100%;
-    margin-bottom: 3rem;
-    letter-spacing: .5px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, .75);
+  position: relative;
+  bottom: 28px;
+  font-size: 30px;
+  text-align: center;
+  width: max-content;
+  max-width: 100%;
+  margin-bottom: 3rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
 }
 
 .award-card-title::after {
-    content: " ";
-    position: absolute;
-    height: 1px;
-    /* width: calc(100% + var(--padding)); */
-    width: 290px;
-    background-color: var(--golden);
-    bottom: -2px;
-    /* left: calc(-1 * var(--padding)); */
-    left: 5px;
-    transform-origin: left;
-    transition: transform 500ms ease;
+  content: " ";
+  position: absolute;
+  height: 1px;
+  /* width: calc(100% + var(--padding)); */
+  width: 290px;
+  background-color: var(--golden);
+  bottom: -2px;
+  /* left: calc(-1 * var(--padding)); */
+  left: 5px;
+  transform-origin: left;
+  transition: transform 500ms ease;
 }
 
 .class-body {
-    color: white;
-    text-align: center;
-    position: relative;
+  color: white;
+  text-align: center;
+  position: relative;
 }
 
-
-
 @media (hover) {
-    .award-card-content {
-        transform: translateY(65%);
-        transition: transform 500ms ease;
-    }
+  .award-card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
 
-    .award-card-content>*:not(.award-card-title) {
-        opacity: 0;
-        transition: opacity 500ms linear;
-    }
+  .award-card-content > *:not(.award-card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
 
-    .award-card:hover .award-card-title::after,
-    .award-card:focus-within .award-card-title::after {
-        transform: scaleX(1);
-    }
+  .award-card:hover .award-card-title::after,
+  .award-card:focus-within .award-card-title::after {
+    transform: scaleX(1);
+  }
 
-    .award-card:hover .award-card-content,
-    .award-card:focus-within .award-card-content {
-        transition-delay: 500ms;
-        transform: translateY(0);
-    }
+  .award-card:hover .award-card-content,
+  .award-card:focus-within .award-card-content {
+    transition-delay: 500ms;
+    transform: translateY(0);
+  }
 
-    .award-card:focus-within .award-card-content {
-        transition-duration: 0ms;
-    }
+  .award-card:focus-within .award-card-content {
+    transition-duration: 0ms;
+  }
 
-    .award-card:hover .award-card-content>*:not(.award-card-title),
-    .award-card:focus-within .award-card-content>*:not(.award-card-title) {
-        opacity: 1;
-        transition-delay: 1000ms;
-    }
+  .award-card:hover .award-card-content > *:not(.award-card-title),
+  .award-card:focus-within .award-card-content > *:not(.award-card-title) {
+    opacity: 1;
+    transition-delay: 1000ms;
+  }
 
-    .award-card:focus-within .award-card-content>*:not(.award-card-title) {
-        transition-delay: 500ms;
-    }
+  .award-card:focus-within .award-card-content > *:not(.award-card-title) {
+    transition-delay: 500ms;
+  }
 
-    .award-card-title::after {
-        transform: scaleX(0);
-    }
+  .award-card-title::after {
+    transform: scaleX(0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-        transition-delay: 0ms !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
 }
 
 .swiper-pagination {
-    bottom: -px !important;
-    /* Adjust this value to position pagination below the slider */
-    text-align: center;
-    --swiper-theme-color: black;
-    /* Customize pagination color */
+  bottom: -px !important;
+  /* Adjust this value to position pagination below the slider */
+  text-align: center;
+  --swiper-theme-color: black;
+  /* Customize pagination color */
 }
