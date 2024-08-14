@@ -864,6 +864,7 @@ img {
 .rolling-text {
   display: inline-block;
   overflow: hidden;
+  text-wrap: nowrap;
   line-height: 50px;
   height: 50px;
 }

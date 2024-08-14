@@ -11,18 +11,18 @@ const Heading: React.FC<HeadingProps> = ({
   fontSize = "fs-1",
   isSpace,
 }) => {
-  const firstLetter = headTitle.charAt(0);
-  const restTitle = headTitle.slice(1);
-
   return (
     <h2
-      className={`${fontSize} text-uppercase fw-700 mt-60 ${
-        isSpace && "mb-80"
-      }`}
-      style={{ width: "fit-content " }}
+      className={`${fontSize} mt-60 ${isSpace && "mb-80"} mb-40`}
+      style={{
+        color: "var(--navy)",
+        textDecoration: "underline",
+        textDecorationColor: "var(--golden)",
+        textUnderlineOffset: "20px",
+        letterSpacing: "-1px",
+      }}
     >
-      <span className="text-golden">{firstLetter}</span>
-      <span className="text-grey">{restTitle}</span>
+      {headTitle}
     </h2>
   );
 };
