@@ -11,6 +11,7 @@ import Heading from "@/components/heading/Heading";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Container, Row, Col } from "react-bootstrap";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -262,11 +263,11 @@ const ContactUs = () => {
                     <p>info@aspectglobal</p>
                   </div>
                 </div>
-                <div style={{ marginBottom: "60px" }}>
+                {/* <div style={{ marginBottom: "60px" }}>
                   <div className="col-12 ">
                     <div className="">
                       <Heading headTitle="Global Presence" />
-                      {/* <div className="fz-35 fw-600">Global Presence</div> */}
+                    
                       <div
                         className="w-75 position-relative"
                         style={{ margin: "60px auto" }}
@@ -306,7 +307,57 @@ const ContactUs = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
+
+                <section style={{ marginBottom: "60px" }}>
+                  <Container>
+                    <Row>
+                      <Col xs={12}>
+                        <div className="text-center mb-4">
+                          <Heading headTitle="Global Presence" />
+                        </div>
+                        <div
+                          className="position-relative"
+                          style={{ margin: "60px auto" }}
+                        >
+                          <Image
+                            src="/assets/images/contact/map.png"
+                            alt="map"
+                            layout="responsive"
+                            width={800}
+                            height={500}
+                            style={{ height: "auto" }} // Make sure height is responsive
+                            className="w-100"
+                          />
+                          <div className="icon-container1 position-absolute">
+                            <FaMapMarkerAlt className="main-color3 fz-24" />
+                            <span className="tooltip-text">
+                              501, Aspect Global Ventures Pvt.Ltd <br />
+                              Dalamal House, 206 Jamnalal Bajal Marg <br />
+                              Nariman Point Mumbai
+                            </span>
+                          </div>
+                          <div className="icon-container2 position-absolute">
+                            <FaMapMarkerAlt className="main-color3 fz-24" />
+                            <span className="tooltip-text">
+                              1224, Aspect Global Ventures Pvt.Ltd <br />
+                              Dalamal House, 206 Jamnalal Bajal Marg <br />
+                              China
+                            </span>
+                          </div>
+                          <div className="icon-container3 position-absolute">
+                            <FaMapMarkerAlt className="main-color3 fz-24" />
+                            <span className="tooltip-text">
+                              501, Aspect Global Ventures Pvt.Ltd <br />
+                              Dalamal House, 206 Jamnalal Bajal Marg <br />
+                              UAE
+                            </span>
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Container>
+                </section>
               </div>
             </div>
           </div>
