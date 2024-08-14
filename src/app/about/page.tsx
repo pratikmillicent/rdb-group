@@ -32,8 +32,8 @@ function About() {
         <DirectorCard />
         <Team />
         {/* <TeamSection /> */}
-        <CoreValue2 />
-        <CallToAction />
+        {/* <CoreValue2 /> */}
+        {/* <CallToAction /> */}
       </main>
     </>
   );

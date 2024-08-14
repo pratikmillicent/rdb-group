@@ -27,12 +27,20 @@ const DirectorCard = () => {
               </div>
 
               <div>
-                <h4 className="pt-3 pb-1 m-0 text-grey">{data?.name}</h4>
+                <h4 className="pt-3 pb-1 m-0">{data?.name}</h4>
                 <div className="fs-5">{data?.role}</div>
-                <hr className="bg-golden" />
+                <hr
+                  className="bg-golden"
+                  style={{
+                    border: "none",
+                    height: "3px",
+                    color: "var(--golden)",
+                    backgroundColor: "var(--golden)",
+                  }}
+                />
                 <p
                   className="fs-6 py-0 lh-lg text-wrap"
-                  style={{ textAlign: "justify" }}
+                  style={{ textAlign: "justify", fontWeight: "400" }}
                 >
                   {data?.description}
                 </p>

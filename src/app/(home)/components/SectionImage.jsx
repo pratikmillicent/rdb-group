@@ -115,7 +115,7 @@ function SectionImage() {
   const [animate, setAnimate] = useState(false);
 
   const tabStyle = (isSelected) => ({
-    backgroundColor: isSelected ? "#d4af5f" : "transparent",
+    backgroundColor: isSelected ? "var(--golden)" : "transparent",
     color: isSelected ? "white" : "white",
     fontWeight: "600",
     padding: "10px 20px",
@@ -149,10 +149,13 @@ function SectionImage() {
     <section className="container-fluid">
       <div className="row screen-height">
         <div
-          className="col-md-6 d-flex flex-column justify-content-center p-4 bg-navy"
+          className="col-md-6 d-flex flex-column align-items-center p-4 bg-navy"
           style={{}}
         >
-          <div className="mb-4 d-flex justify-content-center align-items-center text-golden fz-40 fw-700">
+          <div
+            className="mb-4 d-flex justify-content-center align-items-center text-white fz-40 fw-700"
+            style={{ marginTop: "60px" }}
+          >
             {/* <Heading headTitle="Overview" className="text-golden"/> */}
             Overview
           </div>
@@ -183,7 +186,7 @@ function SectionImage() {
             className={`tab-content text-center ${animate ? "slide-in" : ""}`}
           >
             {selectedTab === "about" && (
-              <p className="text-white">
+              <p className="text-white" style={{ padding: "0 40px" }}>
                 With a team of over 40 dedicated professionals, averaging more
                 than 7 years of experience each, we add a touch of
                 Professionalism to everything we do.
@@ -211,7 +214,7 @@ function SectionImage() {
           <div
             className="back-image bg-img parallaxie"
             data-background={currentImage}
-            data-overlay-dark="5"
+            // data-overlay-dark="5"
             data-parallaxie={{
               speed: "-0.4",
               size: "auto",

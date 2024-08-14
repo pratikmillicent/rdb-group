@@ -8,7 +8,7 @@ interface HeadingProps {
 
 const Heading: React.FC<HeadingProps> = ({
   headTitle,
-  fontSize = "fs-1",
+  fontSize = "fs-2",
   isSpace,
 }) => {
   return (

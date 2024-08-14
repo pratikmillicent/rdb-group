@@ -321,7 +321,7 @@ const ContactUs = () => {
                           style={{ margin: "60px auto" }}
                         >
                           <Image
-                            src="/assets/images/contact/map.png"
+                            src="/assets/images/contact/map.svg"
                             alt="map"
                             layout="responsive"
                             width={800}

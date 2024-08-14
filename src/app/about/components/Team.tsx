@@ -82,7 +82,10 @@ function Team() {
   }
 
   return (
-    <section className="team-crev section-padding pb-0 bord-thin-bottom">
+    <section
+      className="team-crev pb-0 bord-thin-bottom"
+      style={{ paddingTop: "80px" }}
+    >
       <div className="container-fluid rest">
         <div className="row">
           <div className="col-12" style={{ position: "relative" }}>
