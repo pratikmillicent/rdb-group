@@ -20,15 +20,15 @@ const ContactUs = () => {
     message: "",
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
   };
@@ -273,9 +273,9 @@ const ContactUs = () => {
                       >
                         <Image
                           src="/assets/images/contact/map.png"
-                          className="w-100"
+                          className=""
                           alt="map"
-                          style={{ height: "100vh" }}
+                          style={{ height: "100%" }}
                           width={800}
                           height={500}
                         />
