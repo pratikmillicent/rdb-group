@@ -21,15 +21,15 @@ const ContactUs = () => {
     message: "",
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
   };
@@ -75,13 +75,13 @@ const ContactUs = () => {
       <div className="container mt-60">
         <div className="d-flex gap-3">
           <div className="col-12 col-md-11">
-            <Heading headTitle="Contact Us Now!" />
+            <Heading headTitle="Contact Us!" />
             <section className="contact-crev mt-30">
               <div className="container">
                 <div className="row">
-                  <div className="col-lg-5">
+                  <div className="col-lg-5" style={{ paddingLeft: 0 }}>
                     <div className="sec-lg-head mb-60">
-                      <h6 className="dot-titl-non mb-10">Get In Touch</h6>
+                      {/* <h6 className="dot-titl-non mb-10">Get In Touch</h6> */}
                       <h2 className="fz-50">
                         Let's get in <br /> touch with us.
                       </h2>
@@ -124,6 +124,7 @@ const ContactUs = () => {
                           <div className="col-lg-6">
                             <div className="form-group mb-30">
                               <input
+                                style={{ background: "white" }}
                                 id="form_name"
                                 type="text"
                                 value={formData.name}
@@ -137,6 +138,7 @@ const ContactUs = () => {
                           <div className="col-lg-6">
                             <div className="form-group mb-30">
                               <input
+                                style={{ background: "white" }}
                                 id="form_email"
                                 type="email"
                                 value={formData.email}
@@ -150,6 +152,7 @@ const ContactUs = () => {
                           <div className="col-12">
                             <div className="form-group mb-30">
                               <input
+                                style={{ background: "white" }}
                                 id="form_subject"
                                 type="text"
                                 name="subject"
@@ -162,6 +165,7 @@ const ContactUs = () => {
                           <div className="col-12">
                             <div className="form-group">
                               <textarea
+                                style={{ background: "white" }}
                                 id="form_message"
                                 name="message"
                                 value={formData.message}

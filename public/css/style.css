@@ -39,6 +39,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-family: "Sora", sans-serif;
   overflow-x: hidden !important;
+
+  background-color: #e5e5f7;
+  /* opacity: 0.8; */
+  background-image: radial-gradient(var(--navy) 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
 }
 
 body.noise-img {
@@ -573,8 +578,8 @@ img {
 
 .butn.butn-bord {
   border-color: var(--foreground);
-  background: transparent;
-  color: var(--foreground);
+  background: var(--navy);
+  color: var(--white);
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
