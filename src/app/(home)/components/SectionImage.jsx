@@ -214,7 +214,7 @@ function SectionImage() {
           <div
             className="back-image bg-img parallaxie"
             data-background={currentImage}
-            // data-overlay-dark="5"
+            data-overlay-dark="3"
             data-parallaxie={{
               speed: "-0.4",
               size: "auto",

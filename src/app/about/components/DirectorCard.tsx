@@ -36,6 +36,7 @@ const DirectorCard = () => {
                     height: "3px",
                     color: "var(--golden)",
                     backgroundColor: "var(--golden)",
+                    opacity: 1,
                   }}
                 />
                 <p
