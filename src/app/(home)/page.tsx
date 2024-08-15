@@ -97,7 +97,9 @@ export default function Home() {
               <h3 className="text-white" style={{ marginBottom: "40px" }}>
                 Build on Experience
               </h3>
-              <button className="block hero-button">Know more</button>
+              <a href="/about" className="block hero-button">
+                Know more
+              </a>
             </div>
           </div>
         </div>

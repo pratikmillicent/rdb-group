@@ -1,53 +1,74 @@
-import { useEffect } from "react";
-import Link from 'next/link'
+import { useEffect, useState } from "react";
 import parallaxie from "@/utils/parallax";
+import { FaHandshake, FaMedal, FaUsers } from "react-icons/fa6";
 
 function CallToAction({}) {
+  const [active, setActive] = useState(0);
   useEffect(() => {
     parallaxie(`.sec-bg-img.parallaxie`, 0.4);
-  }, []);
+  }, [active]);
 
   return (
     <section className="call-action-img">
-      <div className="container">
+      <div className="">
         <div
           className="sec-bg-img bg-img parallaxie"
-          data-background="assets/images/about/Core.jpg"
-        ></div>
-        <div className="sec-lg-head section-padding">
-          <div className="row ontop pb-60">
-            <div className="col-11 d-flex align-items-center">
-              <div className="valign">
-                <h2 className="fz-50 d-rotate wow">
-                  <span className="">
-                    We create experiences and turn ideas into reality.
-                  </span>
-                </h2>
-              </div>
-              <div className="ml-auto">
-                <Link
-                  href="/dark/page-contact"
-                  className="butn-circle d-flex align-items-center text-center m-auto"
-                >
-                  <div className="full-width">
-                    <span>
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span className="full-width">Get In Touch</span>
-                  </div>
-                </Link>
-              </div>
+          data-background={
+            active === 0
+              ? "/assets/images/about/professionalism.webp"
+              : active === 1
+              ? "assets/images/about/trust.webp"
+              : "assets/images/about/experties.webp"
+          }
+        >
+          <div
+            style={{
+              bottom: 0,
+              position: "absolute",
+              width: "100vw",
+              background: "var(--navy)",
+              opacity: 0.8,
+              display: "flex",
+              alignItems: "stretch",
+              justifyContent: "space-evenly",
+              color: "white",
+              textAlign: "center",
+            }}
+          >
+            <div
+              className="fz-50"
+              style={{ padding: "20px 0" }}
+              onMouseEnter={() => setActive(0)}
+            >
+              <FaMedal className={active == 0 ? "animate-bounce" : ""} />
+              <h1 className="fz-20">Professionalism</h1>
+              <p style={{ color: "inherit" }}>
+                is not just what you do, but how you do it.
+              </p>
+            </div>
+            <div style={{ width: "2px", background: "white" }}></div>
+            <div
+              className="fz-50"
+              style={{ padding: "20px 0" }}
+              onMouseEnter={() => setActive(1)}
+            >
+              <FaHandshake className={active == 1 ? "animate-bounce" : ""} />
+              <h1 className="fz-20">Trust & Transparency</h1>
+              <p style={{ color: "inherit" }}>
+                is a currency more valuable than money.
+              </p>
+            </div>
+            <div style={{ width: "2px", background: "white" }}></div>
+            <div
+              className="fz-50"
+              style={{ padding: "20px 0" }}
+              onMouseEnter={() => setActive(2)}
+            >
+              <FaUsers className={active == 2 ? "animate-bounce" : ""} />
+              <h1 className="fz-20">Experties</h1>
+              <p style={{ color: "inherit" }}>
+                is knowing that learning never stops.
+              </p>
             </div>
           </div>
         </div>

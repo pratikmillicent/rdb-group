@@ -5542,10 +5542,12 @@ body.loaded {
 }
 
 .call-action-img .sec-bg-img {
-  height: 450px;
+  height: 100vh;
+  filter: brightness(.8);
   width: 130%;
   position: relative;
-  margin-bottom: -200px;
+  -webkit-transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out;
 }
 
 .call-action-img .sec-lg-head {
@@ -11031,8 +11033,13 @@ header.in-box {
   color: white;
   border: none;
   cursor: pointer;
+  pointer-events: auto;
   font-size: 16px;
   transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  color: white;
 }
 
 .about-circle-crev {
@@ -11099,11 +11106,11 @@ header.in-box {
   }
 }
 
-.card-hover .animate-bounce {
+.animate-bounce {
   transition: transform 0.3s ease-in-out;
 }
 
-.card-hover:hover .animate-bounce {
+.animate-bounce {
   animation: bounce 1s infinite;
 }
 
