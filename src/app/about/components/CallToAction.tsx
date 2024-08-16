@@ -22,6 +22,7 @@ function CallToAction({}) {
           }
         >
           <div
+            className="call-to-action-content"
             style={{
               bottom: 0,
               position: "absolute",

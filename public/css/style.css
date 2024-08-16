@@ -10705,7 +10705,13 @@ header.in-box {
 
   .call-action-img .sec-bg-img {
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
+    height: 100%;
+  }
+
+  .call-to-action-content {
+    position: relative !important;
+    flex-direction: column !important;
   }
 
   .call-action-img .sec-lg-head .col-11.d-flex {
