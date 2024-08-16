@@ -1,3 +1,30 @@
+@media only screen and (max-width: 768px) {
+ .team-section2 {
+  display: flex !important;
+  flex-direction: column;
+  gap: 20px !important;
+ }
+
+ .team-section2>div {
+  display: flex !important;
+  flex-direction: column !important;
+  max-height: 100% !important;
+ }
+
+ .team-section2>div>img {
+  width: 100%;
+ }
+
+ .team-section2>div>.details {
+  padding: 10px !important;
+  opacity: 1 !important;
+ }
+
+ .team-section2>div>.details {
+  position: unset !important;
+ }
+}
+
 .team-section2 {
  display: grid;
  gap: 10px;
@@ -28,20 +55,14 @@
  position: relative;
 }
 
-.team-section2>div>* {
- /* width: 100%; */
-}
-
 .team-section2>div>.details {
  transition: all ease 300ms;
- /* visibility: hidden; */
  opacity: 0;
  position: absolute;
  left: 0;
 }
 
 .team-section2>div.grid-visible>.details {
- /* visibility: visible; */
  opacity: 1;
  left: 50%;
 }

@@ -117,6 +117,7 @@ function TeamSection2() {
       <div className={`team-section2 grid-${grid1}`}>
         {teamMembers1.map((member, i) => (
           <div
+            key={i}
             className={`${grid1 === i + 1 && "grid-visible"}`}
             onMouseEnter={() => setGrid1(i + 1)}
           >
@@ -152,6 +153,7 @@ function TeamSection2() {
       <div className={`team-section2 grid-${grid2}`}>
         {teamMembers2.map((member, i) => (
           <div
+            key={i}
             className={`${grid2 === i + 1 && "grid-visible"}`}
             onMouseEnter={() => setGrid2(i + 1)}
           >
