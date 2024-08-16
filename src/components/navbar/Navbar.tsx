@@ -51,7 +51,7 @@ function Navbar() {
   // }
 
   function toggleNavbar() {
-    setIsNavbarOpen(prev => !prev);
+    setIsNavbarOpen((prev) => !prev);
   }
 
   function handleClickOutside(event: MouseEvent) {
@@ -142,7 +142,7 @@ function Navbar() {
                   <span className="text-capitalize fs-6">Properties</span>
                 </Link>
                 <Link
-                  href="/"
+                  href="/realty"
                   className="dropdown-item text-capitalize fs-6"
                   onClick={handleLinkClick}
                 >
@@ -219,30 +219,29 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          
-            <ul className="d-none d-md-flex align-items-center justify-content-center mt-15 ml-90">
-              <li className="mr-20">
-                <Link href="https://www.facebook.com/" target="_blank">
-                  <FaFacebook className="fz-24 social-icon" />
-                </Link>
-              </li>
-              <li className="mr-20">
-                <Link href="https://x.com/" target="_blank">
-                  <FaTwitter className="fz-24 social-icon" />
-                </Link>
-              </li>
-              <li className="mr-20">
-                <Link href="https://www.linkedin.com/" target="_blank">
-                  <FaLinkedin className="fz-24 social-icon" />
-                </Link>
-              </li>
-              <li>
-                <Link href="https://www.instagram.com/" target="_blank">
-                  <FaInstagramSquare className="fz-24 social-icon" />
-                </Link>
-              </li>
-            </ul>
-         
+
+          <ul className="d-none d-md-flex align-items-center justify-content-center mt-15 ml-90">
+            <li className="mr-20">
+              <Link href="https://www.facebook.com/" target="_blank">
+                <FaFacebook className="fz-24 social-icon" />
+              </Link>
+            </li>
+            <li className="mr-20">
+              <Link href="https://x.com/" target="_blank">
+                <FaTwitter className="fz-24 social-icon" />
+              </Link>
+            </li>
+            <li className="mr-20">
+              <Link href="https://www.linkedin.com/" target="_blank">
+                <FaLinkedin className="fz-24 social-icon" />
+              </Link>
+            </li>
+            <li>
+              <Link href="https://www.instagram.com/" target="_blank">
+                <FaInstagramSquare className="fz-24 social-icon" />
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
