@@ -40,6 +40,7 @@ const page = () => {
             }}
           >
             <h3 className="banner-heading">Careers</h3>
+            <div className="border-line"></div>
           </div>
         </div>
       </div>

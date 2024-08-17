@@ -179,6 +179,7 @@ const Blog = () => {
             }}
           >
             <h3 className="banner-heading">Blogs</h3>
+            <div className="border-line"></div>
           </div>
         </div>
       </div>

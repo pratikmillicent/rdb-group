@@ -11,6 +11,8 @@ import Heading from "@/components/heading/Heading";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { IoLogoYoutube } from "react-icons/io5";
 import { Container, Row, Col } from "react-bootstrap";
 
 const ContactUs = () => {
@@ -69,6 +71,7 @@ const ContactUs = () => {
             }}
           >
             <h3 className="banner-heading">Contact us</h3>
+            <div className="border-line"></div>
           </div>
         </div>
       </div>
@@ -93,24 +96,53 @@ const ContactUs = () => {
                         <a href="#0">+91 9877737776</a>
                       </div>
                       <ul className="rest social-text d-flex mt-30 ml-10">
-                        <li className="mr-40">
-                          <Link href="https://www.facebook.com/">
-                            <FaFacebook className="main-color3 fz-24 social-icon" />
+                        <li className="mr-20">
+                          <Link
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                          >
+                            <FaInstagramSquare
+                              className="fz-24 social-media-icon"
+                              style={{ color: "#E1306C" }}
+                            />
                           </Link>
                         </li>
-                        <li className="mr-40">
-                          <Link href="https://x.com/">
-                            <FaTwitter className="main-color3 fz-24 social-icon" />
+                        <li className="mr-20">
+                          <Link
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                          >
+                            <FaFacebook
+                              className="fz-24 social-icon"
+                              style={{ color: "#1877F2" }}
+                            />
                           </Link>
                         </li>
-                        <li className="mr-40">
-                          <Link href="https://www.linkedin.com/">
-                            <FaLinkedin className="main-color3 fz-24 social-icon" />
+                        <li className="mr-20">
+                          <Link href="https://x.com/" target="_blank">
+                            <FaSquareXTwitter
+                              className="fz-24 social-icon"
+                              style={{ color: "#000" }}
+                            />
                           </Link>
                         </li>
-                        <li>
-                          <Link href="https://www.instagram.com/">
-                            <FaInstagramSquare className="main-color3 fz-24 social-icon" />
+                        <li className="mr-20">
+                          <Link
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                          >
+                            <FaLinkedin
+                              className="fz-24 social-icon"
+                              style={{ color: "#0077B5" }}
+                            />
+                          </Link>
+                        </li>
+                        <li className="mr-20">
+                          <Link href="https://www.youtube.com/" target="_blank">
+                            <IoLogoYoutube
+                              className="fz-24 social-icon"
+                              style={{ color: "red" }}
+                            />
                           </Link>
                         </li>
                       </ul>
@@ -313,7 +345,7 @@ const ContactUs = () => {
                   </div>
                 </div> */}
 
-                <section style={{ marginBottom: "60px" }}>
+                {/* <section style={{ marginBottom: "60px" }}>
                   <Container>
                     <Row>
                       <Col xs={12}>
@@ -361,7 +393,7 @@ const ContactUs = () => {
                       </Col>
                     </Row>
                   </Container>
-                </section>
+                </section> */}
               </div>
             </div>
           </div>

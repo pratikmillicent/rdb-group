@@ -98,6 +98,7 @@ const News = () => {
             }}
           >
             <h3 className="banner-heading">News & Media</h3>
+            <div className="border-line"></div>
           </div>
         </div>
       </div>

@@ -84,7 +84,7 @@ function Team() {
   return (
     <section
       className="team-crev pb-0 bord-thin-bottom"
-      style={{ paddingTop: "80px" }}
+      style={{ marginBottom: "10px" }}
     >
       <div className="container-fluid rest">
         <div className="row">

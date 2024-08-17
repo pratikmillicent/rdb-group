@@ -6,6 +6,7 @@ import CallToAction from "./components/CallToAction";
 import DirectorCard from "./components/DirectorCard";
 import SectionImage from "../(home)/components/SectionImage";
 import TeamSection2 from "./components/TeamSection2";
+import Team from "./components/Team";
 
 function About() {
   return (
@@ -49,6 +50,7 @@ function About() {
             }}
           >
             <h3 className="banner-heading">About Us</h3>
+            <div className="border-line"></div>
           </div>
         </div>
       </div>
@@ -57,10 +59,10 @@ function About() {
       <SectionImage />
 
       <DirectorCard />
-      {/* <Team /> */}
+      <Team />
       {/* <TeamSection /> */}
       {/* <CoreValue2 /> */}
-      <TeamSection2 />
+      {/* <TeamSection2 /> */}
       <CallToAction />
     </main>
   );

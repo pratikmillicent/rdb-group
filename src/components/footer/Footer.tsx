@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { IoLogoYoutube } from "react-icons/io5";
 
 function Footer() {
   return (
@@ -105,23 +107,43 @@ function Footer() {
               <div className="col-lg-4 mb-4 mb-lg-0">
                 <ul className="d-flex align-items-center justify-content-center">
                   <li className="mr-20">
-                    <Link href="https://www.facebook.com/">
-                      <FaFacebook className="fz-24 social-icon" />
+                    <Link href="https://www.instagram.com/" target="_blank">
+                      <FaInstagramSquare
+                        className="fz-24 social-media-icon"
+                        style={{ color: "#E1306C" }}
+                      />
                     </Link>
                   </li>
                   <li className="mr-20">
-                    <Link href="https://x.com/">
-                      <FaTwitter className="fz-24 social-icon" />
+                    <Link href="https://www.facebook.com/" target="_blank">
+                      <FaFacebook
+                        className="fz-24 social-icon"
+                        style={{ color: "#1877F2" }}
+                      />
                     </Link>
                   </li>
                   <li className="mr-20">
-                    <Link href="https://www.linkedin.com/">
-                      <FaLinkedin className="fz-24 social-icon" />
+                    <Link href="https://x.com/" target="_blank">
+                      <FaSquareXTwitter
+                        className="fz-24 social-icon"
+                        style={{ color: "#000" }}
+                      />
                     </Link>
                   </li>
-                  <li>
-                    <Link href="https://www.instagram.com/">
-                      <FaInstagramSquare className="fz-24 social-icon" />
+                  <li className="mr-20">
+                    <Link href="https://www.linkedin.com/" target="_blank">
+                      <FaLinkedin
+                        className="fz-24 social-icon"
+                        style={{ color: "#0077B5" }}
+                      />
+                    </Link>
+                  </li>
+                  <li className="mr-20">
+                    <Link href="https://www.youtube.com/" target="_blank">
+                      <IoLogoYoutube
+                        className="fz-24 social-icon"
+                        style={{ color: "red" }}
+                      />
                     </Link>
                   </li>
                 </ul>

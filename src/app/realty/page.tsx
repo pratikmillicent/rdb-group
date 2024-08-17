@@ -2,12 +2,14 @@
 "use client";
 import React, { useEffect } from "react";
 import FrameSlider from "./RealtySlideShow";
+import OngoingProject from "./OngoingProject";
+import gsap from "gsap";
 // import Layout from "./showcase";
 
 const Realty = () => {
   return (
     <>
-      <main className="mw-100 bg-dark">
+      <main className="bg-dark main-bg">
         <FrameSlider data={data} />
       </main>
     </>
