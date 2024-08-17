@@ -40,9 +40,9 @@ body {
   font-family: "Sora", sans-serif;
   overflow-x: hidden !important;
 
-  background-color: #e5e5f7;
+  /* background-color: #e5e5f7; */
   /* opacity: 0.8; */
-  background-image: radial-gradient(var(--navy) 0.5px, #e5e5f7 0.5px);
+  /* background-image: radial-gradient(var(--navy) 0.5px, #e5e5f7 0.5px); */
   background-size: 10px 10px;
 }
 
