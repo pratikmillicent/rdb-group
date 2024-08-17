@@ -142,7 +142,7 @@ function Navbar() {
                   <span className="text-capitalize fs-6">Properties</span>
                 </Link>
                 <Link
-                  href="/"
+                  href="/realty"
                   className="dropdown-item text-capitalize fs-6"
                   onClick={handleLinkClick}
                 >

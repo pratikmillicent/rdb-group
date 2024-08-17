@@ -278,9 +278,9 @@ const ContactUs = () => {
                       >
                         <Image
                           src="/assets/images/contact/map.png"
-                          className="w-100"
+                          className=""
                           alt="map"
-                          style={{ height: "100vh" }}
+                          style={{ height: "100%" }}
                           width={800}
                           height={500}
                         />

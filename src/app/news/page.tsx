@@ -122,10 +122,10 @@ const News = () => {
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
-                      data-wow-delay=".1s"
+                      data-wow-delay=".100s"
                     >
                       <div className="item p-0">
-                        <div className="img img-container ">
+                        <div className="img img-container">
                           <Image
                             src={item.image}
                             alt={item.description}
