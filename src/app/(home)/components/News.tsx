@@ -88,13 +88,13 @@ function News() {
       <div className="container">
         <div className="sec-lg-head mb-10">
           <div className="row">
-            <div className="col-lg-8">
-              <div className="position-re">
+            <div className="col-lg-11">
+              <div>
                 {/* <div className="fz-50 fw-600">Latest News</div> */}
                 <Heading headTitle="Latest News" />
               </div>
             </div>
-            <div className="col-lg-4 d-flex align-items-center">
+            <div className="col-lg-1 d-flex align-items-center text-nowrap">
               <div className="full-width d-flex justify-content-end justify-end">
                 <div className="vew-all wow fadeIn">
                   <Link href="/news">
@@ -126,7 +126,7 @@ function News() {
               id="content-carousel-container-unq-blog"
               className="swiper-container"
             >
-              {data?.map(item => (
+              {data?.map((item) => (
                 <SwiperSlide
                   key={item.id}
                   className="wow fadeInUp"

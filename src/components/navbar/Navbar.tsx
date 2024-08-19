@@ -119,7 +119,7 @@ function Navbar() {
                 aria-expanded="false"
                 onClick={handleLinkClick}
               >
-                <span className="rolling-text text-capitalize  fs-6 ">
+                <span className="rolling-text text-capitalize  fz-14 ">
                   About
                 </span>
               </Link>
@@ -136,31 +136,31 @@ function Navbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="rolling-text text-capitalize fs-6">
+                <span className="rolling-text text-capitalize fz-14">
                   Business
                 </span>
               </a>
               <div className="dropdown-menu">
                 <Link href="/" className="dropdown-item ">
-                  <span className="text-capitalize fs-6">Properties</span>
+                  <span className="text-capitalize fz-14">Properties</span>
                 </Link>
                 <Link
                   href="/realty"
-                  className="dropdown-item text-capitalize fs-6"
+                  className="dropdown-item text-capitalize fz-14"
                   onClick={handleLinkClick}
                 >
                   Realty
                 </Link>
                 <Link
                   href="/"
-                  className="dropdown-item text-capitalize fs-6"
+                  className="dropdown-item text-capitalize fz-14"
                   onClick={handleLinkClick}
                 >
                   Fracto
                 </Link>
                 <Link
                   href="/"
-                  className="dropdown-item text-capitalize fs-6"
+                  className="dropdown-item text-capitalize fz-14"
                   onClick={handleLinkClick}
                 >
                   Movies
@@ -176,7 +176,7 @@ function Navbar() {
                 aria-expanded="false"
                 onClick={handleLinkClick}
               >
-                <span className="rolling-text text-capitalize fs-6">
+                <span className="rolling-text text-capitalize fz-14">
                   News & Media
                 </span>
               </Link>
@@ -190,7 +190,9 @@ function Navbar() {
                 aria-expanded="false"
                 onClick={handleLinkClick}
               >
-                <span className="rolling-text text-capitalize fs-6">Blogs</span>
+                <span className="rolling-text text-capitalize fz-14">
+                  Blogs
+                </span>
               </Link>
             </li>
             <li className="nav-item">
@@ -202,7 +204,7 @@ function Navbar() {
                 aria-expanded="false"
                 onClick={handleLinkClick}
               >
-                <span className="rolling-text text-capitalize fs-6">
+                <span className="rolling-text text-capitalize fz-14">
                   Careers
                 </span>
               </Link>
@@ -216,7 +218,7 @@ function Navbar() {
                 aria-expanded="false"
                 onClick={handleLinkClick}
               >
-                <span className="rolling-text text-capitalize fs-6 ">
+                <span className="rolling-text text-capitalize fz-14 ">
                   Contact Us
                 </span>
               </Link>

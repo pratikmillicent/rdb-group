@@ -18,15 +18,15 @@ const DirectorCard = () => {
                   width={800}
                   height={500}
                   style={{
-                    borderRadius: "50%", // Creates a circular
-                    width: "300px",
-                    height: "300px", // Maintains the aspect ratio
-                    objectFit: "unset", // Scales the image to fill the container without distortion
+                    // borderRadius: "50%", // Creates a circular
+                    width: "100%",
+                    height: "400px", // Maintains the aspect ratio
+                    objectFit: "contain", // Scales the image to fill the container without distortion
                   }}
                 />
               </div>
 
-              <div>
+              <div className="d-flex justify-content-center align-items-center flex-column">
                 <h4 className="pt-3 pb-1 m-0">{data?.name}</h4>
                 <div className="fs-5">{data?.role}</div>
                 <hr

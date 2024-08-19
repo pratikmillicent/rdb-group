@@ -107,7 +107,7 @@ const News = () => {
           <div className="container">
             <div className="sec-lg-head">
               <div className="row">
-                <div className="col-lg-8">
+                <div className="col-lg-12">
                   <Heading headTitle="Latest News" />
                 </div>
               </div>

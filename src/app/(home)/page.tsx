@@ -94,9 +94,17 @@ export default function Home() {
                 padding: "0 20px",
               }}
             >
-              <h3 className="text-white" style={{ marginBottom: "40px" }}>
+              <h1
+                className="text-white"
+                style={{
+                  fontSize: "48px",
+                  marginBottom: "20px",
+                  lineHeight: "56px",
+                  letterSpacing: "-1px",
+                }}
+              >
                 Build on Experience
-              </h3>
+              </h1>
               <a href="/about" className="block hero-button">
                 Know more
               </a>

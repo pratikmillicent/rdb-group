@@ -25,7 +25,7 @@
 .blog-card-title {
   position: relative;
   bottom: 70px;
-  background: linear-gradient(to right bottom, #444, #222, #000);
+  /* background: linear-gradient(to right bottom, #444, #222, #000); */
 
   backdrop-filter: blur(1rem);
   height: 60%;

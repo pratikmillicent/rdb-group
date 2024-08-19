@@ -62,7 +62,7 @@ const Awards = () => {
     <div className="px-2">
       <div className="sec-lg-head">
         <div className="row">
-          <div className="col-lg-8">
+          <div className="col-lg-12">
             <Heading headTitle="Awards" />
           </div>
         </div>

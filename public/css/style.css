@@ -11196,7 +11196,17 @@ header.in-box {
 }
 
 .border-line {
-  width: 100px;
+  width: 10%;
+  height: 3px;
+  border-top: solid 2px var(--golden) !important;
+  border-left: none;
+  border-right: none;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.banner-border-line {
+  width: 12px;
   height: 3px;
   border-top: solid 2px var(--golden) !important;
   border-left: none;

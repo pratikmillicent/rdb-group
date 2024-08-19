@@ -50,7 +50,18 @@ function About() {
             }}
           >
             <h3 className="banner-heading">About Us</h3>
-            <div className="border-line"></div>
+            <div
+              style={{
+                width: "70px",
+                height: "3px",
+                borderTop: "solid 2px var(--golden) !important",
+                borderLeft: "none",
+                borderRight: "none",
+                display: "block",
+                margin: "0 auto",
+                marginBottom: "30px",
+              }}
+            ></div>
           </div>
         </div>
       </div>

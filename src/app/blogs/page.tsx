@@ -72,13 +72,13 @@ const Blog = () => {
       description: "Top Emerging Developer - Times Of India 2023",
       date: "17-June-2024",
     },
-    {
-      id: 9,
-      image: new URL("https://picsum.photos/1800/1800"),
-      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "Best Construction Quality - Reality Quaters 2023",
-      date: "17-July-2024",
-    },
+    // {
+    //   id: 9,
+    //   image: new URL("https://picsum.photos/1800/1800"),
+    //   heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
+    //   description: "Best Construction Quality - Reality Quaters 2023",
+    //   date: "17-July-2024",
+    // },
     {
       id: 10,
       image: new URL("https://picsum.photos/1900/1900"),
@@ -107,41 +107,41 @@ const Blog = () => {
       description: "Top Emerging Developer - Times Of India 2023",
       date: "17-July-2024",
     },
-    {
-      id: 14,
-      image: new URL("https://picsum.photos/1400/1400"),
-      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "Top Emerging Developer - Times Of India 2023",
-      date: "17-January-2024",
-    },
-    {
-      id: 15,
-      image: new URL("https://picsum.photos/1500/1500"),
-      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "Best Construction Quality - Reality Quaters 2023",
-      date: "17-February-2024",
-    },
-    {
-      id: 16,
-      image: new URL("https://picsum.photos/1600/1600"),
-      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "Top Emerging Developer - Times Of India 2023",
-      date: "17-May-2024",
-    },
-    {
-      id: 17,
-      image: new URL("https://picsum.photos/1700/1700"),
-      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "Top Emerging Developer - Times Of India 2023",
-      date: "17-June-2024",
-    },
-    {
-      id: 18,
-      image: new URL("https://picsum.photos/1800/1800"),
-      heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
-      description: "Best Construction Quality - Reality Quaters 2023",
-      date: "17-July-2024",
-    },
+    // {
+    //   id: 14,
+    //   image: new URL("https://picsum.photos/1400/1400"),
+    //   heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
+    //   description: "Top Emerging Developer - Times Of India 2023",
+    //   date: "17-January-2024",
+    // },
+    // {
+    //   id: 15,
+    //   image: new URL("https://picsum.photos/1500/1500"),
+    //   heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
+    //   description: "Best Construction Quality - Reality Quaters 2023",
+    //   date: "17-February-2024",
+    // },
+    // {
+    //   id: 16,
+    //   image: new URL("https://picsum.photos/1600/1600"),
+    //   heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
+    //   description: "Top Emerging Developer - Times Of India 2023",
+    //   date: "17-May-2024",
+    // },
+    // {
+    //   id: 17,
+    //   image: new URL("https://picsum.photos/1700/1700"),
+    //   heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
+    //   description: "Top Emerging Developer - Times Of India 2023",
+    //   date: "17-June-2024",
+    // },
+    // {
+    //   id: 18,
+    //   image: new URL("https://picsum.photos/1800/1800"),
+    //   heading: "Reasons fueling the rising demand for luxury flats in Mumbai",
+    //   description: "Best Construction Quality - Reality Quaters 2023",
+    //   date: "17-July-2024",
+    // },
   ];
 
   return (
@@ -179,7 +179,18 @@ const Blog = () => {
             }}
           >
             <h3 className="banner-heading">Blogs</h3>
-            <div className="border-line"></div>
+            <div
+              style={{
+                width: "30px",
+                height: "3px",
+                borderTop: "solid 2px var(--golden) !important",
+                borderLeft: "none",
+                borderRight: "none",
+                display: "block",
+                margin: "0 auto",
+                marginBottom: "30px",
+              }}
+            ></div>
           </div>
         </div>
       </div>
@@ -209,7 +220,7 @@ const Blog = () => {
                         style={{ backgroundImage: `url(${item.image})` }}
                       >
                         <div className="blog-card-content">
-                          <h6 className="blog-card-title flex-wrap main-color4">
+                          <h6 className="blog-card-title flex-wrap text-black bg-golden">
                             {item.heading}
                           </h6>
                           <div className="blogcard-body mb-2">

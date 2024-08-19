@@ -40,7 +40,18 @@ const page = () => {
             }}
           >
             <h3 className="banner-heading">Careers</h3>
-            <div className="border-line"></div>
+            <div
+              style={{
+                width: "50px",
+                height: "3px",
+                borderTop: "solid 2px var(--golden) !important",
+                borderLeft: "none",
+                borderRight: "none",
+                display: "block",
+                margin: "0 auto",
+                marginBottom: "30px",
+              }}
+            ></div>
           </div>
         </div>
       </div>
