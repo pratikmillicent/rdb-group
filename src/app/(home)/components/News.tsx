@@ -87,14 +87,22 @@ function News() {
     <section className="blog-modern">
       <div className="container">
         <div className="sec-lg-head mb-10">
-          <div className="row">
-            <div className="col-lg-11">
+          <div className="row" style={{ position: "relative" }}>
+            <div className="col-lg-12">
               <div>
                 {/* <div className="fz-50 fw-600">Latest News</div> */}
                 <Heading headTitle="Latest News" width="70px" />
               </div>
             </div>
-            <div className="col-lg-1 d-flex align-items-center text-nowrap">
+            <div
+              style={{
+                position: "absolute",
+                right: 0,
+                top: "50%",
+                transform: "translateY(-50%)",
+              }}
+              className="col-lg-1 d-flex align-items-center text-nowrap"
+            >
               <div className="full-width d-flex justify-content-end justify-end">
                 <div className="vew-all wow fadeIn">
                   <Link href="/news">
