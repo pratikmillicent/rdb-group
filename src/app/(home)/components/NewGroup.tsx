@@ -124,7 +124,7 @@ const NewGroupGrid: React.FC = () => {
                 <div className="fz-50 fw-600 ">
                   {/* <span className="text-golden">G</span>roups Websites */}
                   <div style={{ display: "flex", justifyContent: "center" }}>
-                    <Heading headTitle="Group Websites" />
+                    <Heading headTitle="Group Websites" width="80px" />
                   </div>
                 </div>
               </div>

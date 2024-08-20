@@ -4,10 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 import { FaArrowRight } from "react-icons/fa";
 import "../Awards.css";
 import Heading from "@/components/heading/Heading";
+import { GrChapterNext, GrChapterPrevious } from "react-icons/gr";
+
 
 const Awards_data = [
   {
@@ -59,7 +61,7 @@ const Awards_data = [
 
 const Awards = () => {
   return (
-    <div className="px-2">
+    <div className="px-2 my-4">
       <div className="sec-lg-head">
         <div className="row">
           <div className="col-lg-12">
@@ -73,11 +75,15 @@ const Awards = () => {
         slidesPerView={3}
         slidesPerGroup={3}
         onSlideChange={() => console.log("Slide changed")}
-        onSwiper={swiper => console.log(swiper)}
-        modules={[Navigation, Pagination]}
+        onSwiper={(swiper) => console.log(swiper)}
+        modules={[Navigation, Autoplay]}
         autoplay={false}
         loop={false}
-        pagination={{ clickable: true }}
+        pagination={{ clickable: false }}
+        navigation={{
+          nextEl: ".award-swiper-button-next",
+          prevEl: ".award-swiper-button-prev",
+        }}
         breakpoints={{
           0: {
             slidesPerView: 1,
@@ -109,7 +115,12 @@ const Awards = () => {
             </div>
           </SwiperSlide>
         ))}
+        {/* <div className=""> */}
+        <div className="award-swiper-button-prev"><GrChapterPrevious /></div>
+        <div className="award-swiper-button-next"><GrChapterNext /></div>
+        {/* </div> */}
       </Swiper>
+
     </div>
   );
 };

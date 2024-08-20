@@ -52,10 +52,10 @@ function VideoGallary() {
     <div className="container">
       <div className="sec-lg-head">
         <div className="row">
-          <div className="col-lg-8">
+          <div className="col-lg-12">
             <div className="position-re">
               {/* <div className="fz-50 fw-600">Video Gallery</div> */}
-              <Heading headTitle="Video Gallery" />
+              <Heading headTitle="Video Gallery" width="70px" />
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ const DirectorCard = () => {
   return (
     <>
       <div className="container">
-        <Heading headTitle="Our Leaders" />
+        <Heading headTitle="Our Leaders" width="80px" />
 
         <div className="row">
           {DirectorCardData.map((data, key) => (

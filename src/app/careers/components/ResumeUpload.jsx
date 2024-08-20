@@ -36,7 +36,7 @@ const ResumeUpload = () => {
     <div className="container mt-60">
       <div className="row">
         <div className="col-lg-6 d-flex flex-column align-items-start">
-          <Heading headTitle="Join Our Team" />
+          <Heading headTitle="Join Our Team" width="90px" />
           <p>Work at the most dynamic and successful agency</p>
 
           <Image

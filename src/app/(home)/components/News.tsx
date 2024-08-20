@@ -91,7 +91,7 @@ function News() {
             <div className="col-lg-11">
               <div>
                 {/* <div className="fz-50 fw-600">Latest News</div> */}
-                <Heading headTitle="Latest News" />
+                <Heading headTitle="Latest News" width="70px" />
               </div>
             </div>
             <div className="col-lg-1 d-flex align-items-center text-nowrap">

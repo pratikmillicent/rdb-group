@@ -28,21 +28,26 @@ const News = () => {
       pauseOnMouseEnter: true,
     },
     slidesPerView: 3,
+    slidesPerGroup: 3,
     loop: true,
     spaceBetween: 17,
     speed: 1000,
     breakpoints: {
       0: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
       },
       640: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       768: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
       },
       1024: {
         slidesPerView: 3,
+        slidesPerGroup: 3,
       },
     },
     navigation: {
@@ -103,12 +108,12 @@ const News = () => {
         </div>
       </div>
       <div className="container">
-        <section className="blog-modern" style={{}}>
+        <section className="blog-modern">
           <div className="container">
             <div className="sec-lg-head">
               <div className="row">
                 <div className="col-lg-12">
-                  <Heading headTitle="Latest News" />
+                  <Heading headTitle="Latest News" width="70px" />
                 </div>
               </div>
             </div>
@@ -125,7 +130,7 @@ const News = () => {
                       className="wow fadeInUp"
                       data-wow-delay=".100s"
                     >
-                      <div className="item p-0">
+                      <div className="item py-5 my-3">
                         <div className="img img-container">
                           <Image
                             src={item.image}
@@ -135,7 +140,7 @@ const News = () => {
                             height={500}
                           />
                         </div>
-                        <div className="cont mt-30 ">
+                        <div className="cont mt-30">
                           <h6 className="fw-600">{item.description}</h6>
                           <Link
                             href={item.link}
@@ -161,6 +166,10 @@ const News = () => {
                       </div>
                     </SwiperSlide>
                   ))}
+                  <div className="button-container">
+                    <div className="swiper-button-prev mb-3"></div>
+                    <div className="swiper-button-next mb-3"></div>
+                  </div>
                 </Swiper>
               )}
             </div>

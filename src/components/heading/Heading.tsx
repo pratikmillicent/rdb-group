@@ -5,6 +5,7 @@ interface HeadingProps {
   fontSize?: string;
   isSpace?: boolean;
   isColor?: boolean;
+  width?: string;
 }
 
 const Heading: React.FC<HeadingProps> = ({
@@ -12,6 +13,7 @@ const Heading: React.FC<HeadingProps> = ({
   fontSize = "fs-2",
   isSpace,
   isColor,
+  width,
 }) => {
   return (
     <div style={{ textAlign: "center" }} className="w-100">
@@ -29,7 +31,10 @@ const Heading: React.FC<HeadingProps> = ({
       >
         {headTitle}
       </h2>
-      <div className="border-line"></div>
+      <div
+        className="border-line"
+        style={{ width: width ? width : "50px" }}
+      ></div>
     </div>
   );
 };
