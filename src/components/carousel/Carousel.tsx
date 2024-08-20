@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
+import { FaLongArrowAltRight, FaLongArrowAltLeft } from "react-icons/fa";
 
 const swiperOptions = {
   modules: [Navigation, Pagination],
@@ -74,7 +75,7 @@ function Carousel({
                 <div className="container">
                   <div className="d-flex">
                     <div className="swiper-button-prev">
-                      <span className="left d-flex justify-content-center align-items-center">
+                      {/* <span className="left d-flex justify-content-center align-items-center">
                         <svg
                           width="20"
                           height="20"
@@ -87,10 +88,11 @@ function Carousel({
                             fill="currentColor"
                           ></path>
                         </svg>
-                      </span>
+                      </span> */}
+                      <FaLongArrowAltLeft />
                     </div>
                     <div className="swiper-button-next ml-auto">
-                      <span className="right d-flex justify-content-center align-items-center">
+                      {/* <span className="right d-flex justify-content-center align-items-center">
                         <svg
                           width="20"
                           height="20"
@@ -103,7 +105,8 @@ function Carousel({
                             fill="currentColor"
                           ></path>
                         </svg>
-                      </span>
+                      </span> */}
+                      <FaLongArrowAltRight />
                     </div>
                   </div>
                   <div className="swiper-pagination"></div>

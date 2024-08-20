@@ -130,7 +130,7 @@ const News = () => {
                       className="wow fadeInUp"
                       data-wow-delay=".100s"
                     >
-                      <div className="item py-5 my-3">
+                      <div className="item pb-5 mb-3">
                         <div className="img img-container">
                           <Image
                             src={item.image}

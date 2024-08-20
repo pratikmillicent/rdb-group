@@ -70,7 +70,7 @@ const Awards = () => {
         </div>
       </div>
       <Swiper
-        className="pb-60"
+        className="pb-60 "
         spaceBetween={20}
         slidesPerView={3}
         slidesPerGroup={3}

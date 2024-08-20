@@ -11,19 +11,23 @@ const DirectorCard = () => {
         <div className="row">
           {DirectorCardData.map((data, key) => (
             <div key={key} className="col-sm-12 col-lg-6 pb-4">
-              <div className="my-container">
-                <Image
-                  src={data?.image}
-                  alt={data.name}
-                  width={800}
-                  height={500}
-                  style={{
-                    // borderRadius: "50%", // Creates a circular
-                    width: "100%",
-                    height: "400px", // Maintains the aspect ratio
-                    objectFit: "contain", // Scales the image to fill the container without distortion
-                  }}
-                />
+              <div className="item ">
+                <div className="img news-div">
+                  <div className="my-container">
+                    <Image
+                      src={data?.image}
+                      alt={data.name}
+                      width={800}
+                      height={500}
+                      style={{
+                        // borderRadius: "50%", // Creates a circular
+                        width: "100%",
+                        height: "400px", // Maintains the aspect ratio
+                        objectFit: "contain", // Scales the image to fill the container without distortion
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
 
               <div className="d-flex justify-content-center align-items-center flex-column">
