@@ -11218,7 +11218,7 @@ header.in-box {
 
 /* NEWS - latest news  */
 
-.swiper-button-prev,
+/* .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
   bottom: 0;
@@ -11266,7 +11266,6 @@ header.in-box {
 .award-swiper-button-next {
   position: absolute;
   bottom: 0;
-  /* top: 580px !important; */
   width: fit-content;
   height: fit-content;
   color: black !important;
@@ -11281,12 +11280,6 @@ header.in-box {
   font-size: 20px !important;
 }
 
-/* .award-swiper-button-prev:hover,
-.award-swiper-button-next:hover {
-  background-color: white;
-  transform: scale(1.1);
-} */
-
 .award-swiper-button-prev::after,
 .award-swiper-button-next::after {
   font-family: "Font Awesome 5 Free";
@@ -11300,4 +11293,4 @@ header.in-box {
 
 .award-swiper-button-next {
   right: 21px !important;
-}
+} */
