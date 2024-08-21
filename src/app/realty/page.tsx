@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import FrameSlider from "./RealtySlideShow";
 import OngoingProject from "./OngoingProject";
 import gsap from "gsap";
+import SectionImage from "../(home)/components/SectionImage";
 // import Layout from "./showcase";
 
 const Realty = () => {
@@ -11,6 +12,8 @@ const Realty = () => {
     <>
       <main className="bg-dark main-bg">
         <FrameSlider data={data} />
+        <SectionImage />
+        <OngoingProject />
       </main>
     </>
   );
