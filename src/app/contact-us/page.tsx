@@ -113,7 +113,7 @@ const ContactUs = () => {
                             target="_blank"
                           >
                             <FaInstagramSquare
-                              className="fz-24 social-media-icon"
+                              className="fz-24 social-icon"
                               style={{ color: "#E1306C" }}
                             />
                           </Link>

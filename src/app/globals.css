@@ -29,7 +29,7 @@ body {
   display: none;
 }
 
-.swiper-controls.arrow-out
+/* .swiper-controls.arrow-out
   .swiper-button-prev:hover
   .left.left:not(.light .swiper-controls.arrow-out .left),
 .swiper-controls.arrow-out
@@ -42,9 +42,9 @@ body {
   .swiper-button-next:hover
   .right:not(.light .swiper-controls.arrow-out .right) {
   background: rgba(255, 255, 255, 0.05);
-}
+} */
 
-.swiper-controls.arrow-out .left:not(.light .swiper-controls.arrow-out .left),
+/* .swiper-controls.arrow-out .left:not(.light .swiper-controls.arrow-out .left),
 .swiper-controls.arrow-out
   .right:not(.light .swiper-controls.arrow-out .right) {
   width: 50px;
@@ -54,7 +54,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   color: #fff;
-}
+} */
 
 .swiper-controls.arrow-out .left {
   -webkit-transform: rotate(180deg);
