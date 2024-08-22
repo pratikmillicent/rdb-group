@@ -88,7 +88,7 @@ const page = () => {
               global network.
             </p>
             <div className="w-100">
-              {data.map((data, i) => (
+              {CarrerData.map((data, i) => (
                 <div
                   key={i}
                   className="apply_part w-100 positions-item justify-content-around text-light p-4 box-3d"
@@ -123,7 +123,7 @@ const page = () => {
 
 export default page;
 
-const data = [
+export const CarrerData = [
   {
     title: "PMC",
     position: "Project Manager",
