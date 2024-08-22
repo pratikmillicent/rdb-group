@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { Navigation, Pagination } from "swiper";
 import { SwiperSlide, Swiper } from "swiper/react";
+import { ImArrowRight, ImArrowLeft } from "react-icons/im";
 
 const swiperOptions = {
-  modules: [Navigation, Pagination],
+  modules: [Navigation],
   slidesPerView: 1,
   loop: true,
   spaceBetween: 30,
   speed: 1000,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
   navigation: {
     nextEl: ".testim-controls .swiper-button-next",
     prevEl: ".testim-controls .swiper-button-prev",
   },
 };
+
 const OngoingProject = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
 
@@ -45,7 +47,7 @@ const OngoingProject = () => {
                               <div className="col-md-4">
                                 <div className="author-info valign">
                                   <div className="full-width">
-                                    <div className="img circle-120 m-auto mb-30">
+                                    <div className="img circle-120 m-auto mb-30 px-2">
                                       <img
                                         src={item.picture}
                                         alt=""
@@ -58,15 +60,17 @@ const OngoingProject = () => {
                                         {item.position}
                                       </p>
                                     </div>
-                                    <div className="arrow main-bg"></div>
+                                    <div className="arrow bg-dark"></div>
                                   </div>
                                 </div>
                               </div>
                               <div className="col-md-8">
                                 <div className="cont">
-                                  <div className="mb-30 icon-img-80 opacity-1">
+                                  <div className="mb-30 icon-img-80 bg-golden">
                                     <img
-                                      src={"/assets/images/carrer.jpg"}
+                                      src={
+                                        "/assets/images2/person/RDbrotherlogo.svg"
+                                      }
                                       alt=""
                                     />
                                   </div>
@@ -77,45 +81,6 @@ const OngoingProject = () => {
                           </div>
                         </SwiperSlide>
                       ))}
-                      <div className="button-container">
-                        <div
-                          style={{
-                            position: "absolute",
-                            bottom: "0",
-                            width: "fit-content",
-                            height: "fit-content",
-                            color: "black !important",
-                            fontWeight: "bold",
-                            padding: "10px 40px",
-                            borderRadius: "6px",
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            border: "1px solid #d4af5f",
-                            backgroundColor: "white",
-                            fontSize: "20px !important",
-                          }}
-                        ></div>
-                        <div
-                          className="bg-light"
-                          // style={{
-                          //   position: "absolute",
-                          //   // bottom: "0",
-                          //   width: "fit-content",
-                          //   height: "fit-content",
-                          //   color: "black !important",
-                          //   fontWeight: "bold",
-                          //   padding: "10px 40px",
-                          //   borderRadius: "6px",
-                          //   display: "flex",
-                          //   justifyContent: "center",
-                          //   alignItems: "center",
-                          //   border: "1px solid #d4af5f",
-                          //   backgroundColor: "white",
-                          //   fontSize: "20px !important",
-                          // }}
-                        ></div>
-                      </div>
                     </Swiper>
                   )}
                 </div>
@@ -124,15 +89,53 @@ const OngoingProject = () => {
                     <div className="col-md-8 offset-md-4">
                       <div className="arrows-carsouel testim-controls">
                         <div className="swiper-controls">
-                          <div className="swiper-button-prev">
+                          <div
+                            className="swiper-button-prev"
+                            style={{
+                              position: "absolute",
+                              top: "50%",
+                              transform: "translateY(-50%)",
+                              backgroundColor: "#1d1d1d",
+                              borderRadius: "50%",
+                              width: "50px",
+                              height: "50px",
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              cursor: "pointer",
+                              border: "2px solid #d4af5f",
+                              left: "-60px", // Adjust positioning
+                            }}
+                          >
                             <span className="left">
-                              <img src={"/assets/images/carrer.jpg"} alt="" />
+                              <ImArrowRight
+                                style={{ fontSize: "25px", color: "#d4af5f" }}
+                              />
                             </span>
                           </div>
                           <div className="swiper-pagination"></div>
-                          <div className="swiper-button-next">
+                          <div
+                            className="swiper-button-next"
+                            style={{
+                              position: "absolute",
+                              top: "50%",
+                              transform: "translateY(-50%)",
+                              backgroundColor: "#1d1d1d",
+                              borderRadius: "50%",
+                              width: "50px",
+                              height: "50px",
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              cursor: "pointer",
+                              border: "2px solid #d4af5f",
+                              right: "-60px", // Adjust positioning
+                            }}
+                          >
                             <span className="right">
-                              <img src={"/assets/images/carrer.jpg"} alt="" />
+                              <ImArrowRight
+                                style={{ fontSize: "25px", color: "#d4af5f" }}
+                              />
                             </span>
                           </div>
                         </div>
@@ -154,7 +157,8 @@ export default OngoingProject;
 const data = [
   {
     id: 1,
-    picture: "/dark/assets/imgs/testim/1.jpg",
+    picture:
+      "https://geekfolio-nextjs.themescamp.com/dark/assets/imgs/arch/works/4.jpg",
     name: "Leonard Heiser",
     position: "Customer",
     content:
@@ -162,7 +166,8 @@ const data = [
   },
   {
     id: 2,
-    picture: "/dark/assets/imgs/testim/2.jpg",
+    picture:
+      "https://geekfolio-nextjs.themescamp.com/dark/assets/imgs/arch/works/3.jpg",
     name: "Leonard Heiser",
     position: "Customer",
     content:
@@ -170,7 +175,8 @@ const data = [
   },
   {
     id: 3,
-    picture: "/dark/assets/imgs/testim/3.jpg",
+    picture:
+      "https://geekfolio-nextjs.themescamp.com/dark/assets/imgs/arch/works/1.jpg",
     name: "Leonard Heiser",
     position: "Customer",
     content:
@@ -178,7 +184,8 @@ const data = [
   },
   {
     id: 4,
-    picture: "/dark/assets/imgs/testim/4.jpg",
+    picture:
+      "https://geekfolio-nextjs.themescamp.com/dark/assets/imgs/arch/works/2.jpg",
     name: "Leonard Heiser",
     position: "Customer",
     content:

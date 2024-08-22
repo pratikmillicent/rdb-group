@@ -19,17 +19,21 @@
 .award-card:focus-within {
   transform: scale(1.05);
   color: var(--golden);
-  background: linear-gradient(hsla(0, 0%, 0%, 0),
-      hsla(0, 0%, 0%, 0.3) 20%,
-      hsl(0 0% 0%/1));
+  background: linear-gradient(
+    hsla(0, 0%, 0%, 0),
+    hsla(0, 0%, 0%, 0.3) 20%,
+    hsl(0 0% 0%/1)
+  );
 }
 
 .award-card-content {
   --padding: 1.5rem;
   padding: var(--padding);
-  background: linear-gradient(hsl(0 0% 0%/0),
-      hsl(20 0% 0%/0.3) 20%,
-      hsl(0 0% 0%/1));
+  background: linear-gradient(
+    hsl(0 0% 0%/0),
+    hsl(20 0% 0%/0.3) 20%,
+    hsl(0 0% 0%/1)
+  );
 }
 
 .award-card-title {
@@ -71,7 +75,7 @@
     transition: transform 500ms ease;
   }
 
-  .award-card-content>*:not(.award-card-title) {
+  .award-card-content > *:not(.award-card-title) {
     opacity: 0;
     transition: opacity 500ms linear;
   }
@@ -91,13 +95,13 @@
     transition-duration: 0ms;
   }
 
-  .award-card:hover .award-card-content>*:not(.award-card-title),
-  .award-card:focus-within .award-card-content>*:not(.award-card-title) {
+  .award-card:hover .award-card-content > *:not(.award-card-title),
+  .award-card:focus-within .award-card-content > *:not(.award-card-title) {
     opacity: 1;
     transition-delay: 1000ms;
   }
 
-  .award-card:focus-within .award-card-content>*:not(.award-card-title) {
+  .award-card:focus-within .award-card-content > *:not(.award-card-title) {
     transition-delay: 500ms;
   }
 
@@ -107,7 +111,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
@@ -125,4 +128,8 @@
   text-align: center;
   --swiper-theme-color: black;
   /* Customize pagination color */
+}
+
+.animate-click {
+  transform: scale(1.2);
 }
