@@ -30,6 +30,11 @@ const OngoingProject = () => {
     <div>
       <section className={`testim-clasic section-padding`}>
         <div className="container">
+          <div className="col-lg-4">
+            <h6>
+              <span className="fz-14">01 . </span> Ongoing Project
+            </h6>
+          </div>
           <div className="row">
             <div className="col-lg-12">
               <div className="testim">

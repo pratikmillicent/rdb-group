@@ -11,8 +11,8 @@ const DirectorCard = () => {
         <div className="row">
           {DirectorCardData.map((data, key) => (
             <div key={key} className="col-sm-12 col-lg-6 pb-4">
-              <div className="item ">
-                <div className="img news-div">
+              <div>
+                <div>
                   <div className="my-container">
                     <Image
                       src={data?.image}
