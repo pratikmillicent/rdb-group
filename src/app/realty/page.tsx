@@ -5,7 +5,7 @@ import FrameSlider from "./RealtySlideShow";
 import OngoingProject from "./OngoingProject";
 import gsap from "gsap";
 import SectionImage from "../(home)/components/SectionImage";
-// import Layout from "./showcase";
+import CompletedProjects from "./CompletedProject";
 
 const Realty = () => {
   return (
@@ -14,6 +14,7 @@ const Realty = () => {
         <FrameSlider data={data} />
         <SectionImage />
         <OngoingProject />
+        <CompletedProjects />
       </main>
     </>
   );
