@@ -54,7 +54,7 @@ function Navbar() {
   // }
 
   function toggleNavbar() {
-    setIsNavbarOpen((prev) => !prev);
+    setIsNavbarOpen(prev => !prev);
   }
 
   function handleClickOutside(event: MouseEvent) {
@@ -159,7 +159,7 @@ function Navbar() {
                   Fracto
                 </Link>
                 <Link
-                  href="/"
+                  href="/movies"
                   className="dropdown-item text-capitalize fz-14"
                   onClick={handleLinkClick}
                 >
