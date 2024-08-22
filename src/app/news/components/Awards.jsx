@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -60,6 +60,22 @@ const Awards_data = [
 ];
 
 const Awards = () => {
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handlePrevClick = () => {
+    setActiveButton("prev");
+    setTimeout(() => {
+      setActiveButton(null);
+    }, 300);
+  };
+
+  const handleNextClick = () => {
+    setActiveButton("next");
+    setTimeout(() => {
+      setActiveButton(null);
+    }, 300);
+  };
+
   return (
     <div className="px-2 my-4">
       <div className="sec-lg-head">
@@ -70,7 +86,7 @@ const Awards = () => {
         </div>
       </div>
       <Swiper
-        className="pb-60 "
+        className="pb-60"
         spaceBetween={20}
         slidesPerView={3}
         slidesPerGroup={3}
@@ -103,26 +119,55 @@ const Awards = () => {
           <SwiperSlide key={index}>
             <div
               className="award-card"
-              style={{ backgroundImage: `url(${item.image})` }}
+              style={{
+                backgroundImage: `url(${item.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                borderRadius: "10px",
+                padding: "20px",
+                color: "white",
+                textAlign: "center",
+                minHeight: "300px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
             >
               <div className="award-card-content d-flex align-items-center justify-content-center flex-column">
-                <h2 className="award-card-title">{item.events}</h2>
-                <p className="class-body">{item.description}</p>
-                <Link href="#" className="fz-30 fw-500">
+                <h2 className="award-card-title" style={{ fontSize: "24px", marginBottom: "10px" }}>
+                  {item.events}
+                </h2>
+                <p className="class-body" style={{ fontSize: "16px", marginBottom: "20px" }}>
+                  {item.description}
+                </p>
+                <Link href="#" className="fz-30 fw-500" style={{ fontSize: "30px", fontWeight: "500" }}>
                   <FaArrowRight />
                 </Link>
               </div>
             </div>
           </SwiperSlide>
         ))}
-        {/* <div className=""> */}
-        <div className="award-swiper-button-prev"><GrChapterPrevious /></div>
-        <div className="award-swiper-button-next"><GrChapterNext /></div>
-        {/* </div> */}
       </Swiper>
-
+      <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
+        <div
+          className={`award-swiper-button-prev ${activeButton === "prev" ? "animate-click" : ""}`}
+          style={{ cursor: "pointer", marginRight: "20px", transition: "transform 0.3s ease" }}
+          onClick={handlePrevClick}
+        >
+          <GrChapterPrevious size={30} />
+        </div>
+        <div
+          className={`award-swiper-button-next ${activeButton === "next" ? "animate-click" : ""}`}
+          style={{ cursor: "pointer", transition: "transform 0.3s ease" }}
+          onClick={handleNextClick}
+        >
+          <GrChapterNext size={30} />
+        </div>
+      </div>
     </div>
   );
 };
+
+
 
 export default Awards;

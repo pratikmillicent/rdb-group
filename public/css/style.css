@@ -1774,9 +1774,10 @@ img.left {
 }
 
 .circle-120 {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
+  
   overflow: hidden;
 }
 
@@ -8658,7 +8659,7 @@ header.in-box {
 
 .testim-clasic .item .author-info {
   position: relative;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid var(--golden);
   height: 100%;
   text-align: center;
 }
@@ -8674,7 +8675,7 @@ header.in-box {
 .testim-clasic .item .author-info .arrow:before {
   content: "";
   width: 94px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--golden);
   position: absolute;
   bottom: 50%;
   right: -7px;
@@ -8686,7 +8687,7 @@ header.in-box {
 .testim-clasic .item .author-info .arrow:after {
   content: "";
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--golden);
   position: absolute;
   bottom: 0;
   right: 0;
