@@ -57,11 +57,7 @@ export default function Home() {
 
   const isMediumScreen = useMediaQuery("(min-width: 768px)");
   const isSmallScreen = useMediaQuery("(max-width: 767px)");
-  const [ref, inView] = useInView({});
-
-  useEffect(() => {
-    // alert(inView);
-  }, [inView]);
+  const [ref, inView] = useInView({ once: true });
 
   return (
     <ParallaxProvider>
