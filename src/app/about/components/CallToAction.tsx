@@ -27,21 +27,23 @@ function CallToAction({}) {
               bottom: 0,
               position: "absolute",
               width: "100vw",
-              background: "var(--navy)",
+              background: "var(--white)",
               opacity: 0.8,
               display: "flex",
               alignItems: "stretch",
               justifyContent: "space-evenly",
-              color: "white",
+              color: "var(--navy)",
               textAlign: "center",
             }}
           >
             <div
               className="fz-50"
               style={{ padding: "20px 0" }}
-              onMouseEnter={() => setActive(0)}
+              // onMouseEnter={() => setActive(0)}
             >
-              <FaMedal className={active == 0 ? "animate-bounce" : ""} />
+              <FaMedal
+              // className={active == 0 ? "animate-bounce" : ""}
+              />
               <h1 className="fz-20">Professionalism</h1>
               <p style={{ color: "inherit" }}>
                 is not just what you do, but how you do it.
@@ -51,9 +53,11 @@ function CallToAction({}) {
             <div
               className="fz-50"
               style={{ padding: "20px 0" }}
-              onMouseEnter={() => setActive(1)}
+              // onMouseEnter={() => setActive(1)}
             >
-              <FaHandshake className={active == 1 ? "animate-bounce" : ""} />
+              <FaHandshake
+              // className={active == 1 ? "animate-bounce" : ""}
+              />
               <h1 className="fz-20">Trust & Transparency</h1>
               <p style={{ color: "inherit" }}>
                 is a currency more valuable than money.
@@ -63,9 +67,11 @@ function CallToAction({}) {
             <div
               className="fz-50"
               style={{ padding: "20px 0" }}
-              onMouseEnter={() => setActive(2)}
+              // onMouseEnter={() => setActive(2)}
             >
-              <FaUsers className={active == 2 ? "animate-bounce" : ""} />
+              <FaUsers
+              // className={active == 2 ? "animate-bounce" : ""}
+              />
               <h1 className="fz-20">Experties</h1>
               <p style={{ color: "inherit" }}>
                 is knowing that learning never stops.
