@@ -1,6 +1,7 @@
 "use client";
 
-import DashboardCount from "@/components/DashboardCount";
+// import DashboardCount from "@/components/DashboardCount";
+const DashboardCount = lazy(() => import("@/components/DashboardCount"));
 import Heading from "@/components/heading/Heading";
 import dynamic from "next/dynamic";
 import { ParallaxProvider } from "react-scroll-parallax";
@@ -11,6 +12,8 @@ import News from "./components/News";
 import SectionImage from "./components/SectionImage";
 import useMediaQuery from "./components/useMediaQuery";
 import VideoGallary from "./components/VideoGallary";
+import { lazy, useEffect } from "react";
+import { useInView } from "react-spring";
 const Carroussel3D = dynamic(() => import("./components/Carousel"), {
   ssr: false,
 });
@@ -54,6 +57,11 @@ export default function Home() {
 
   const isMediumScreen = useMediaQuery("(min-width: 768px)");
   const isSmallScreen = useMediaQuery("(max-width: 767px)");
+  const [ref, inView] = useInView({});
+
+  useEffect(() => {
+    // alert(inView);
+  }, [inView]);
 
   return (
     <ParallaxProvider>
@@ -111,7 +119,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <DashboardCount data={data} />
+
+        <div style={{ marginTop: "10px" }} ref={ref}>
+          {inView && <DashboardCount data={data} />}
+        </div>
 
         <SectionImage />
 

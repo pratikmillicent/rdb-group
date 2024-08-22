@@ -15,6 +15,7 @@
     "leaflet": "^1.9.4",
     "next": "^14.2.5",
     "parallax-js": "^3.1.0",
+    "rdbgroup": "file:",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",

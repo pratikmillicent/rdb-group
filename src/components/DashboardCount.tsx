@@ -16,7 +16,7 @@ function DashboardCount({ data }: DashboardCountProps) {
 
   useEffect(() => {
     const options = {
-      duration: 13,
+      duration: 3,
     };
 
     countersRef.current.forEach((counter, index) => {
