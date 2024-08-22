@@ -7,16 +7,20 @@ import gsap from "gsap";
 import SectionImage from "../(home)/components/SectionImage";
 import CompletedProjects from "./CompletedProject";
 import UpcomingProject from "./UpcomingProject";
+import Careers from "./Carrer";
+import ResumeUpload from "../careers/components/ResumeUpload";
 
 const Realty = () => {
   return (
     <>
-      <main className="bg-dark main-bg">
+      <main className="bg-navy text-white">
         <FrameSlider data={data} />
         <SectionImage />
         <OngoingProject />
         <CompletedProjects />
         <UpcomingProject />
+        <Careers border />
+        <ResumeUpload />
       </main>
     </>
   );

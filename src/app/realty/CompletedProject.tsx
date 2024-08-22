@@ -13,7 +13,7 @@ function CompletedProjects() {
             </div>
             <div className="col-lg-5 offset-lg-3">
               <div className="text">
-                <h3 className="lg-text text-u">Our Projects</h3>
+                <h3 className="lg-text text-golden">Our Projects</h3>
               </div>
             </div>
           </div>
