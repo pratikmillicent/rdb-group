@@ -6,7 +6,6 @@ import OngoingProject from "./OngoingProject";
 import gsap from "gsap";
 import SectionImage from "../(home)/components/SectionImage";
 import CompletedProjects from "./CompletedProject";
-import UpcomingProject from "./UpcomingProject";
 
 const Realty = () => {
   return (
@@ -16,7 +15,6 @@ const Realty = () => {
         <SectionImage />
         <OngoingProject />
         <CompletedProjects />
-        {/* <UpcomingProject /> */}
       </main>
     </>
   );
