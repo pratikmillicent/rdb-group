@@ -166,12 +166,13 @@ const NewGroupGrid: React.FC = () => {
                         height={500}
                       />
                     </div>
-                    <span
+                    {/* <span
                       className="sub-title mb-15 fz-30 fw-600"
                       style={{ color: "var(--navy)" }}
                     >
                       {item.type}
-                    </span>
+                    </span> */}
+                    <Heading textAlign="left" headTitle={item.type} />
                     {/* <h2 className="mb-15 text-grey">{item.title}.</h2> */}
                     <div className="row">
                       <div className="col-md-9">
