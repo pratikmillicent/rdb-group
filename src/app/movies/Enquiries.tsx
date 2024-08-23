@@ -81,7 +81,6 @@ const Enquiries = () => {
                   <option value="property1">Property 1 </option>
                   <option value="property2">Property 2 </option>
                   <option value="property3">Property 3 </option>
-                  {/* Add more properties as needed */}
                 </Form.Control>
               </Form.Group>
               <Form.Group controlId="formMessage">

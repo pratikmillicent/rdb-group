@@ -16,10 +16,13 @@ const page = () => {
       <Mission />
       <OurProjects />
       <Movieteam />
-      <Awards />
+      <div className="container">
+        <Awards />
+      </div>
+
       <LatestNews />
-      {/* enquries */}
-      <Enquiries />
+
+      {/* <Enquiries /> */}
       <Contact />
     </>
   );

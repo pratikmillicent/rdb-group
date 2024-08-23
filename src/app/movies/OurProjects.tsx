@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import PrevNext from "@/utils/PrevNext";
 
 const LatestNews = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
-
+  const latestPrevRef = useRef(null);
+  const latestNextRef = useRef(null);
   useEffect(() => {
     setLoadSwiper(true);
   }, []);
 
   const swiperOptions = {
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
     autoplay: {
       delay: 1000,
       disableOnInteraction: false,
@@ -43,8 +45,16 @@ const LatestNews = () => {
       },
     },
     navigation: {
-      nextEl: ".blog-modern .swiper-button-next",
-      prevEl: ".blog-modern .swiper-button-prev",
+      // nextEl: ".blog-modern .swiper-button-next",
+      // prevEl: ".blog-modern .swiper-button-prev",
+      prevEl: latestPrevRef.current,
+      nextEl: latestNextRef.current,
+    },
+    onSwiper: swiper => {
+      setTimeout(() => {
+        swiper.navigation.init();
+        swiper.navigation.update();
+      }, 0);
     },
   };
   return (
@@ -102,7 +112,7 @@ const LatestNews = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                <div className="button-container">
+                {/* <div className="button-container">
                   <div
                     className="swiper-button-prev mb-3"
                     style={{
@@ -125,7 +135,8 @@ const LatestNews = () => {
                       border: "2px solid #f0f0f0", // Matching light border for buttons
                     }}
                   ></div>
-                </div>
+                </div> */}
+                <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} />
               </Swiper>
             )}
           </div>
