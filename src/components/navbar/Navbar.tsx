@@ -3,10 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { IoMenu } from "react-icons/io5";
-import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { IoLogoYoutube } from "react-icons/io5";
 
 import useMediaQuery from "@/app/(home)/components/useMediaQuery";
 
@@ -225,46 +221,69 @@ function Navbar() {
             </li>
           </ul>
 
-          <ul className="d-none d-md-flex align-items-center justify-content-center mt-15 ml-auto">
-            <li className="mr-20">
-              <Link href="https://www.instagram.com/" target="_blank">
-                <FaInstagramSquare
-                  className="fz-24 social-icon"
-                  style={{ color: "#E1306C" }}
-                />
-              </Link>
+          <ul className="d-none d-md-flex align-items-center justify-content-center pt-3">
+            <li className="mx-2">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="d-inline-flex align-items-center"
+                style={{ color: "white" }}
+              >
+                <i
+                  className="fab fa-instagram fa-2x"
+                  style={{
+                    background:
+                      "linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                ></i>
+              </a>
             </li>
-            <li className="mr-20">
-              <Link href="https://www.facebook.com/" target="_blank">
-                <FaFacebook
-                  className="fz-24 social-icon"
-                  style={{ color: "#1877F2" }}
-                />
-              </Link>
+            <li className="mx-2">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="d-inline-flex align-items-center"
+                style={{ color: "#3b5998" }} // Facebook color
+              >
+                <i className="fab fa-facebook fa-2x"></i>
+              </a>
             </li>
-            <li className="mr-20">
-              <Link href="https://x.com/" target="_blank">
-                <FaSquareXTwitter
-                  className="fz-24 social-icon"
-                  style={{ color: "#000" }}
-                />
-              </Link>
+            <li className="mx-2">
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="d-inline-flex align-items-center"
+                style={{ color: "#000000" }} // Twitter color
+              >
+                <i className="fab fa-x-twitter fa-2x"></i>
+              </a>
             </li>
-            <li className="mr-20">
-              <Link href="https://www.linkedin.com/" target="_blank">
-                <FaLinkedin
-                  className="fz-24 social-icon"
-                  style={{ color: "#0077B5" }}
-                />
-              </Link>
+            <li className="mx-2">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="d-inline-flex align-items-center"
+                style={{ color: "#0A66C2" }} // LinkedIn color
+              >
+                <i className="fab fa-linkedin fa-2x"></i>
+              </a>
             </li>
-            <li className="mr-20">
-              <Link href="https://www.youtube.com/" target="_blank">
-                <IoLogoYoutube
-                  className="fz-24 social-icon"
-                  style={{ color: "red" }}
-                />
-              </Link>
+            <li className="mx-2">
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="d-inline-flex align-items-center"
+                style={{ color: "#FF0000" }} // YouTube color
+              >
+                <i className="fab fa-youtube fa-2x"></i>
+              </a>
             </li>
           </ul>
         </div>

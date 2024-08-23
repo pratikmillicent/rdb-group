@@ -3,6 +3,7 @@ import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import React from "react";
 import SectionImage from "../(home)/components/SectionImage";
+import Cre from "./Cre";
 
 const page = () => {
   return (
@@ -63,6 +64,7 @@ const page = () => {
           <p className=" mb-4"></p>
         </div>
         <SectionImage />
+        <Cre />
       </div>
     </>
   );

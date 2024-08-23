@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import Loader from "@/components/loader/Loader";
 import "../../public/css/plugins.css";
 import "../../public/css/style.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // const Avenir = localFont({
 //   src: [
