@@ -24,7 +24,7 @@ const Realty = () => {
         <OngoingProject />
         <CompletedProjects />
         <UpcomingProject /> */}
-        <Careers border />
+        <Careers paddingTop={false} border />
         <ResumeUpload />
 
         {/* <FractoAdvantage /> */}

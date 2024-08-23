@@ -70,6 +70,8 @@ const Project = () => {
     },
   };
 
+  const [active, setActive] = useState(0);
+
   return (
     <div>
       <section className="blog-modern">
@@ -79,6 +81,51 @@ const Project = () => {
               <div className="col-lg-12">
                 <Heading headTitle="Projects" width="70px" />
               </div>
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "12px",
+              fontSize: "18px",
+              fontWeight: "500",
+              color: "var(--navy)",
+              marginBottom: "12px",
+            }}
+          >
+            <div
+              onClick={() => setActive(0)}
+              style={{
+                textDecoration: active === 0 ? "underline" : "none",
+                textDecorationColor: "var(--navy)",
+                textUnderlineOffset: "4px",
+                cursor: "pointer",
+              }}
+            >
+              Completed
+            </div>
+            <div
+              onClick={() => setActive(1)}
+              style={{
+                textDecoration: active === 1 ? "underline" : "none",
+                textDecorationColor: "var(--navy)",
+                textUnderlineOffset: "4px",
+                cursor: "pointer",
+              }}
+            >
+              Upcoming
+            </div>
+            <div
+              onClick={() => setActive(2)}
+              style={{
+                textDecoration: active === 2 ? "underline" : "none",
+                textDecorationColor: "var(--navy)",
+                textUnderlineOffset: "4px",
+                cursor: "pointer",
+              }}
+            >
+              Sustainability
             </div>
           </div>
           <div className="blog-carsouel">

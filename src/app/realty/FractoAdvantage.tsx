@@ -5,8 +5,10 @@ function FractoAdvantage({ lightMode }) {
   function openTab(event: any) {
     document
       .querySelectorAll(".tab-content")
+      // @ts-ignore
       .forEach((element) => (element.style.display = "none"));
     const tabId = event.currentTarget.getAttribute("data-tab");
+    // @ts-ignore
     document.querySelector(`.tab-content#${tabId}`).style.display = "block";
   }
 

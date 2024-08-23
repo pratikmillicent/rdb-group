@@ -1,13 +1,35 @@
 import Heading from "@/components/heading/Heading";
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { CarrerData } from "../careers/page";
+// import { CarrerData } from "../careers/page";
 
-const Careers = ({ border }) => {
+const CarrerData = [
+  {
+    title: "PMC",
+    position: "Project Manager",
+    description: "Manager various sites of projects",
+    qualifications: "B.E-Civil with 3 to 4 years of similar experience",
+  },
+  {
+    title: "Redevelopment Project",
+    position: "Project Head",
+    description: "Manager complete project of SRA/Redevelopment",
+    qualifications:
+      "20 - 25 years experience with BE Civil and similar experience with Developers",
+  },
+  {
+    title: "Brunch & Cake - Aspect Hospitality",
+    position: "Branch Manager",
+    description: "Branch Manager(Food & Beverage)",
+    qualifications:
+      "20 - 25 years experience with BE Civil and similar experience with Developers",
+  },
+];
+
+const Careers = ({ border, paddingTop = true }) => {
   return (
     <div className="container">
       <h1>
-        <div style={{ paddingTop: "60px" }}>
+        <div style={{ paddingTop: paddingTop ? "60px" : "0" }}>
           <Heading headTitle="Open Positions" width="90px" />
           {/* <div className="fz-35 fw-600">Open Positions</div> */}
         </div>

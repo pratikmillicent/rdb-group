@@ -123,7 +123,7 @@ const page = () => {
 
 export default page;
 
-export const CarrerData = [
+const CarrerData = [
   {
     title: "PMC",
     position: "Project Manager",
@@ -143,55 +143,5 @@ export const CarrerData = [
     description: "Branch Manager(Food & Beverage)",
     qualifications:
       "20 - 25 years experience with BE Civil and similar experience with Developers",
-  },
-];
-
-const cardData = [
-  {
-    icon: "/assets/images/career/setting.svg",
-    position: "Operations Manager",
-    location: "India",
-    description: "A talented Operations Manager to join our team.",
-  },
-  {
-    icon: "/assets/images/career/mind.svg",
-    position: "Creative Director",
-    description: "A talented Creative Director to join our team.",
-  },
-  {
-    icon: "/assets/images/career/project-manager.png",
-    position: "Chief Strategy Officer",
-    location: "China",
-    description: "A talented Chief Strategy Officer to join our team.",
-  },
-  {
-    icon: "/assets/images/career/radio.svg",
-    position: "Sr. Software Engineer",
-    location: "India",
-    description: "A talented Sr. Software Engineer to join our team.",
-  },
-  {
-    icon: "/assets/images/career/mind.svg",
-    position: "Project Manager",
-    location: "USA",
-    description: "A talented Sr. Software Engineer to join our team.",
-  },
-  {
-    icon: "/assets/images/career/entrepreneur.png",
-    position: "Branch Manager",
-    location: "UAE",
-    description: "A talented Sr. Software Engineer to join our team.",
-  },
-  {
-    icon: "/assets/images/career/mind.svg",
-    position: "Project Manager",
-    location: "Russia",
-    description: "A talented Sr. Software Engineer to join our team.",
-  },
-  {
-    icon: "/assets/images/career/entrepreneur.png",
-    position: "Branch Manager",
-    location: "UK",
-    description: "A talented Sr. Software Engineer to join our team.",
   },
 ];
