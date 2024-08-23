@@ -395,21 +395,21 @@ const upcomingProjectsData = [
   {
     id: 1,
     image:
-      "https://www.commercialproperty.review/wp-content/uploads/2020/12/The-World-Towers-Apartments-Worli-South-Mumbai.jpg",
+      "https://www.piramalmahalaxmi.net/wp-content/uploads/2019/07/PMCENTRALTOWER-1024x877.jpg",
     description: "Skyline Tower in South Mumbai - Expected Completion in 2025",
     link: "https://www.example.com/skyline-tower-south-mumbai",
   },
   {
     id: 2,
     image:
-      "https://img.staticmb.com/mbimages/project/Photo_h300_w450/2019/05/20/Project-Photo-11-Lodha-Supremus-Mumbai-5029261_345_1366_300_450.jpg",
+      "https://static.squareyards.com/resources/images/mumbai/project-image/raiaskaran-tech-park-project-project-large-image1.jpg",
     description: "Tech Park in Andheri - Expected Completion in 2024",
     link: "https://www.example.com/tech-park-andheri",
   },
   {
     id: 3,
     image:
-      "https://destinationcompress.s3.ap-south-1.amazonaws.com/acdb2987-80d1-4b05-9ad3-de30647a64ef.jpeg",
+      "https://www.adanirealty.com/-/media/Project/Realty/Residential/Pune/Atelier-Greens/Carousel-Images/3.jpg",
     description:
       "Eco-Friendly Residences in Pune - Expected Completion in 2026",
     link: "https://www.example.com/eco-friendly-residences-pune",
@@ -420,21 +420,20 @@ const sustainabilityProjectsData = [
   {
     id: 1,
     image:
-      "https://www.commercialproperty.review/wp-content/uploads/2020/12/The-World-Towers-Apartments-Worli-South-Mumbai.jpg",
+      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-40-Omkar-1973-Mumbai-5019920_345_1366_310_462.jpg",
     description: "Green Residential Towers in Worli - LEED Certified",
     link: "https://www.example.com/green-residential-towers-worli",
   },
   {
     id: 2,
-    image:
-      "https://img.staticmb.com/mbimages/project/Photo_h300_w450/2019/05/20/Project-Photo-11-Lodha-Supremus-Mumbai-5029261_345_1366_300_450.jpg",
+    image: "https://www.ghar.tv/projectimages/168/photo-518.jpg",
     description: "Solar-Powered Office Complex in Andheri",
     link: "https://www.example.com/solar-powered-office-complex-andheri",
   },
   {
     id: 3,
     image:
-      "https://destinationcompress.s3.ap-south-1.amazonaws.com/acdb2987-80d1-4b05-9ad3-de30647a64ef.jpeg",
+      "https://admin.purplerealtors.in/admin/upload/Gallery/new_21387487501638337746.jpg",
     description: "Zero-Waste Community in Pune",
     link: "https://www.example.com/zero-waste-community-pune",
   },
