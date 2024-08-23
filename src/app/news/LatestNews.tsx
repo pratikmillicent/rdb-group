@@ -1,22 +1,18 @@
-import React from "react";
-import Link from "next/link";
+import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import ModalVideo from "@/components/modal-video/ModalVideo";
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import Link from "next/link";
 import CarouselEvent from "../(home)/components/CardImagesCarousel";
+import PrevNext from "@/utils/PrevNext";
 
-interface Video {
-  image: string;
-  title: string;
-  videoId: string;
-  channel: string;
-}
 const LatestNews = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
-  const [isVideoOpen, setIsVideoOpen] = useState<Video | null>(null);
+  const [isVideoOpen, setIsVideoOpen] = useState(null);
+  const latestPrevRef = useRef(null);
+  const latestNextRef = useRef(null);
 
   useEffect(() => {
     setLoadSwiper(true);
@@ -34,6 +30,10 @@ const LatestNews = () => {
     loop: true,
     spaceBetween: 17,
     speed: 1000,
+    navigation: {
+      prevEl: latestPrevRef.current,
+      nextEl: latestNextRef.current,
+    },
     breakpoints: {
       0: {
         slidesPerView: 1,
@@ -52,11 +52,14 @@ const LatestNews = () => {
         slidesPerGroup: 3,
       },
     },
-    navigation: {
-      nextEl: ".blog-modern .swiper-button-next",
-      prevEl: ".blog-modern .swiper-button-prev",
+    onSwiper: (swiper) => {
+      setTimeout(() => {
+        swiper.navigation.init();
+        swiper.navigation.update();
+      }, 0);
     },
   };
+
   return (
     <div>
       <section className="blog-modern">
@@ -134,30 +137,9 @@ const LatestNews = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                <div className="button-container">
-                  <div
-                    className="swiper-button-prev mb-3"
-                    style={{
-                      color: "#000",
-                      backgroundColor: "#eaa636",
-                      padding: "30px",
-                      borderRadius: "50%",
-                      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                    }}
-                  ></div>
-                  <div
-                    className="swiper-button-next mb-3"
-                    style={{
-                      color: "#000",
-                      backgroundColor: "#eaa636",
-                      padding: "30px",
-                      borderRadius: "50%",
-                      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                    }}
-                  ></div>
-                </div>
               </Swiper>
             )}
+            <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} />
           </div>
         </div>
       </section>

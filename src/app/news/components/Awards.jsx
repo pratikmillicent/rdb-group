@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -9,6 +9,7 @@ import { FaArrowRight } from "react-icons/fa";
 import "../Awards.css";
 import Heading from "@/components/heading/Heading";
 import { GrChapterNext, GrChapterPrevious } from "react-icons/gr";
+import PrevNext from "@/utils/PrevNext";
 
 
 const Awards_data = [
@@ -61,6 +62,8 @@ const Awards_data = [
 
 const Awards = () => {
   const [activeButton, setActiveButton] = useState(null);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   const handlePrevClick = () => {
     setActiveButton("prev");
@@ -76,6 +79,18 @@ const Awards = () => {
     }, 300);
   };
 
+  useEffect(() => {
+    // Ensuring that Swiper navigation is updated after refs are set
+    if (prevRef.current && nextRef.current) {
+      const swiperInstance = document.querySelector(".swiper-container")?.swiper;
+      if (swiperInstance) {
+        swiperInstance.params.navigation.prevEl = prevRef.current;
+        swiperInstance.params.navigation.nextEl = nextRef.current;
+        swiperInstance.navigation.update();
+      }
+    }
+  }, [prevRef, nextRef]);
+
   return (
     <div className="px-2 my-4">
       <div className="sec-lg-head">
@@ -86,19 +101,17 @@ const Awards = () => {
         </div>
       </div>
       <Swiper
-        className="pb-60"
+        className="pb-20 swiper-container"
         spaceBetween={20}
         slidesPerView={3}
         slidesPerGroup={3}
-        onSlideChange={() => console.log("Slide changed")}
-        onSwiper={(swiper) => console.log(swiper)}
         modules={[Navigation, Autoplay]}
         autoplay={false}
         loop={false}
         pagination={{ clickable: false }}
         navigation={{
-          nextEl: ".award-swiper-button-next",
-          prevEl: ".award-swiper-button-prev",
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
         }}
         breakpoints={{
           0: {
@@ -124,13 +137,12 @@ const Awards = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 borderRadius: "10px",
-                padding: "20px",
                 color: "white",
                 textAlign: "center",
-                minHeight: "300px",
+                minHeight: "400px",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
+                justifyContent: "end",
               }}
             >
               <div className="award-card-content d-flex align-items-center justify-content-center flex-column">
@@ -148,26 +160,12 @@ const Awards = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
-        <div
-          className={`award-swiper-button-prev ${activeButton === "prev" ? "animate-click" : ""}`}
-          style={{ cursor: "pointer", marginRight: "20px", transition: "transform 0.3s ease" }}
-          onClick={handlePrevClick}
-        >
-          <GrChapterPrevious size={30} />
-        </div>
-        <div
-          className={`award-swiper-button-next ${activeButton === "next" ? "animate-click" : ""}`}
-          style={{ cursor: "pointer", transition: "transform 0.3s ease" }}
-          onClick={handleNextClick}
-        >
-          <GrChapterNext size={30} />
-        </div>
-      </div>
+      <PrevNext prevRef={prevRef} nextRef={nextRef} />
     </div>
   );
 };
 
-
-
 export default Awards;
+
+
+

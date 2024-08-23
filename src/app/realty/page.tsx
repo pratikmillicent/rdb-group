@@ -9,6 +9,7 @@ import CompletedProjects from "./CompletedProject";
 import UpcomingProject from "./UpcomingProject";
 import Careers from "./Carrer";
 import ResumeUpload from "../careers/components/ResumeUpload";
+import FractoAdvantage from "./FractoAdvantage";
 
 const Realty = () => {
   return (
@@ -21,6 +22,7 @@ const Realty = () => {
         <UpcomingProject />
         <Careers border />
         <ResumeUpload />
+        <FractoAdvantage />
       </main>
     </>
   );
