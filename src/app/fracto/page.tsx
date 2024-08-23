@@ -49,8 +49,8 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="">
+      <div className="">
+        <div className="container">
           <p className="lead my-4">
             Welcome to Fracto, where innovation meets real estate. Our mission
             is to revolutionize the way you buy, sell, and rent properties by

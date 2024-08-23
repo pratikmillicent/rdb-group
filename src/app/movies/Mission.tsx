@@ -4,9 +4,9 @@ import SectionImage from "../(home)/components/SectionImage";
 
 const Mission = () => {
   return (
-    <div className="container">
+    <div className="">
       <div className="section-padding"></div>
-      <Heading headTitle="Our Mission" width="100px" />
+      {/* <Heading headTitle="Our Mission" width="100px" /> */}
       <SectionImage />
     </div>
   );

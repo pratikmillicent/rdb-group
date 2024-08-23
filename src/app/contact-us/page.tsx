@@ -23,15 +23,15 @@ const ContactUs = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
+    setFormData(prevState => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     console.log(formData);
   };
@@ -106,7 +106,7 @@ const ContactUs = () => {
                       <div className="phone fz-30 fw-600 mt-30 ">
                         <a href="#0">+91 9877737776</a>
                       </div>
-                      <ul className="rest social-text d-flex mt-30 ml-10">
+                      {/* <ul className="rest social-text d-flex mt-30 ml-10">
                         <li className="mr-20">
                           <Link
                             href="https://www.instagram.com/"
@@ -155,6 +155,71 @@ const ContactUs = () => {
                               style={{ color: "red" }}
                             />
                           </Link>
+                        </li>
+                      </ul> */}
+                      <ul className="d-none d-md-flex align-items-center  pt-3">
+                        <li className="mx-2">
+                          <a
+                            href="https://www.instagram.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="d-inline-flex align-items-center"
+                            style={{ color: "white" }}
+                          >
+                            <i
+                              className="fab fa-instagram fa-2x"
+                              style={{
+                                background:
+                                  "linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4)",
+                                WebkitBackgroundClip: "text",
+                                WebkitTextFillColor: "transparent",
+                              }}
+                            ></i>
+                          </a>
+                        </li>
+                        <li className="mx-2">
+                          <a
+                            href="https://www.facebook.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="d-inline-flex align-items-center"
+                            style={{ color: "#3b5998" }} // Facebook color
+                          >
+                            <i className="fab fa-facebook fa-2x"></i>
+                          </a>
+                        </li>
+                        <li className="mx-2">
+                          <a
+                            href="https://x.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="d-inline-flex align-items-center"
+                            style={{ color: "#000000" }} // Twitter color
+                          >
+                            <i className="fab fa-x-twitter fa-2x"></i>
+                          </a>
+                        </li>
+                        <li className="mx-2">
+                          <a
+                            href="https://www.linkedin.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="d-inline-flex align-items-center"
+                            style={{ color: "#0A66C2" }} // LinkedIn color
+                          >
+                            <i className="fab fa-linkedin fa-2x"></i>
+                          </a>
+                        </li>
+                        <li className="mx-2">
+                          <a
+                            href="https://www.youtube.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="d-inline-flex align-items-center"
+                            style={{ color: "#FF0000" }} // YouTube color
+                          >
+                            <i className="fab fa-youtube fa-2x"></i>
+                          </a>
                         </li>
                       </ul>
                     </div>
