@@ -152,7 +152,7 @@ function Navbar() {
                   Realty
                 </Link>
                 <Link
-                  href="/"
+                  href="/fracto"
                   className="dropdown-item text-capitalize fz-14"
                   onClick={handleLinkClick}
                 >
