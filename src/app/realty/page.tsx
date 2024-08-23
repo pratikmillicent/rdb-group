@@ -10,19 +10,24 @@ import UpcomingProject from "./UpcomingProject";
 import Careers from "./Carrer";
 import ResumeUpload from "../careers/components/ResumeUpload";
 import FractoAdvantage from "./FractoAdvantage";
+import Project from "./Project";
 
 const Realty = () => {
   return (
     <>
-      <main className="bg-navy text-white">
+      <main className="bg- text-black">
         <FrameSlider data={data} />
         <SectionImage />
+        <Project />
+
+        {/* 
         <OngoingProject />
         <CompletedProjects />
-        <UpcomingProject />
+        <UpcomingProject /> */}
         <Careers border />
         <ResumeUpload />
-        <FractoAdvantage />
+
+        {/* <FractoAdvantage /> */}
       </main>
     </>
   );
