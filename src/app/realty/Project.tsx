@@ -136,7 +136,7 @@ const Project = () => {
                 bottom: -4,
                 height: "2px",
                 width: "3.5em",
-                background: "var(--navy)",
+                background: "var(--golden)",
                 transition: "all ease .5s",
               }}
             ></div>
