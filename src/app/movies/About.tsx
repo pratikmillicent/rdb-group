@@ -35,8 +35,8 @@ const About = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading"></h3>
-            {/* <div
+            <h3 className="banner-heading">Movies</h3>
+            <div
               style={{
                 width: "50px",
                 height: "3px",
@@ -47,7 +47,7 @@ const About = () => {
                 margin: "0 auto",
                 marginBottom: "30px",
               }}
-            ></div> */}
+            ></div>
           </div>
         </div>
       </div>
