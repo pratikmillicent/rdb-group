@@ -86,6 +86,7 @@ const Project = () => {
 
           <div
             style={{
+              position: "relative",
               display: "flex",
               gap: "12px",
               fontSize: "18px",
@@ -97,9 +98,9 @@ const Project = () => {
             <div
               onClick={() => setActive(0)}
               style={{
-                textDecoration: active === 0 ? "underline" : "none",
-                textDecorationColor: "var(--navy)",
-                textUnderlineOffset: "4px",
+                // textDecoration: active === 0 ? "underline" : "none",
+                // textDecorationColor: "var(--navy)",
+                // textUnderlineOffset: "4px",
                 cursor: "pointer",
               }}
             >
@@ -108,9 +109,9 @@ const Project = () => {
             <div
               onClick={() => setActive(1)}
               style={{
-                textDecoration: active === 1 ? "underline" : "none",
-                textDecorationColor: "var(--navy)",
-                textUnderlineOffset: "4px",
+                // textDecoration: active === 1 ? "underline" : "none",
+                // textDecorationColor: "var(--navy)",
+                // textUnderlineOffset: "4px",
                 cursor: "pointer",
               }}
             >
@@ -119,14 +120,26 @@ const Project = () => {
             <div
               onClick={() => setActive(2)}
               style={{
-                textDecoration: active === 2 ? "underline" : "none",
-                textDecorationColor: "var(--navy)",
-                textUnderlineOffset: "4px",
+                // textDecoration: active === 2 ? "underline" : "none",
+                // textDecorationColor: "var(--navy)",
+                // textUnderlineOffset: "4px",
                 cursor: "pointer",
               }}
             >
               Sustainability
             </div>
+
+            <div
+              style={{
+                position: "absolute",
+                left: active === 0 ? "10px" : active === 1 ? "108px" : "208px",
+                bottom: -4,
+                height: "2px",
+                width: "3.5em",
+                background: "var(--golden)",
+                transition: "all ease .5s",
+              }}
+            ></div>
           </div>
 
           {active == 0 && (
