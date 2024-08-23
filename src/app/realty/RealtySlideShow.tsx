@@ -50,7 +50,7 @@ function ParallaxSlider({ data }) {
     <header className="slider showcase-full">
       {loadSwiper && (
         <Swiper {...swiperOptions} className="swiper-container parallax-slider">
-          {data.map((item) => (
+          {data.map(item => (
             <SwiperSlide key={item.id}>
               <div
                 className="bg-img valign"
