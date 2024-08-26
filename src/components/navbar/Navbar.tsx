@@ -223,11 +223,11 @@ function Navbar() {
 
           <ul className="d-none d-md-flex align-items-center justify-content-center pt-3">
             <li className="mx-2">
-              <a
+              <Link
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="d-inline-flex align-items-center"
+                className="d-inline-flex align-items-center text-decoration-none"
                 style={{ color: "white" }}
               >
                 <i
@@ -239,25 +239,25 @@ function Navbar() {
                     WebkitTextFillColor: "transparent",
                   }}
                 ></i>
-              </a>
+              </Link>
             </li>
             <li className="mx-2">
-              <a
+              <Link
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="d-inline-flex align-items-center"
+                className="d-inline-flex align-items-center text-decoration-none"
                 style={{ color: "#3b5998" }} // Facebook color
               >
                 <i className="fab fa-facebook fa-2x"></i>
-              </a>
+              </Link>
             </li>
             <li className="mx-2">
               <a
                 href="https://x.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="d-inline-flex align-items-center"
+                className="d-inline-flex align-items-center text-decoration-none"
                 style={{ color: "#000000" }} // Twitter color
               >
                 <i className="fab fa-x-twitter fa-2x"></i>
@@ -268,7 +268,7 @@ function Navbar() {
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="d-inline-flex align-items-center"
+                className="d-inline-flex align-items-center text-decoration-none"
                 style={{ color: "#0A66C2" }} // LinkedIn color
               >
                 <i className="fab fa-linkedin fa-2x"></i>
@@ -279,7 +279,7 @@ function Navbar() {
                 href="https://www.youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="d-inline-flex align-items-center"
+                className="d-inline-flex align-items-center text-decoration-none"
                 style={{ color: "#FF0000" }} // YouTube color
               >
                 <i className="fab fa-youtube fa-2x"></i>

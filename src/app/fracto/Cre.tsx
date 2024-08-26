@@ -1,20 +1,31 @@
 // Cre.js
 import React, { useState } from "react";
-import "./Cre.css"; // Correctly import your custom CSS
+import "./Fracto.css"; // Ensure this CSS file is correctly imported
 import Heading from "@/components/heading/Heading";
 import { FaPlus } from "react-icons/fa";
 import { FiMinus } from "react-icons/fi";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowUp } from "react-icons/md";
 
 const AccordionItem = ({ id, title, content, isOpen, onClick }) => {
   return (
-    <div className="accordion-item p-2">
-      <div className="accordion-header" onClick={() => onClick(id)}>
+    <div
+      className={isOpen ? "border-0 " : "border rounded"}
+      style={{ marginBottom: "15px" }}
+    >
+      <div
+        className={`accordion-header ${
+          isOpen ? "bg-golden text-white rounded" : ""
+        }`}
+        onClick={() => onClick(id)}
+      >
         <h5 className="accordion-title">{title}</h5>
-        <span className="accordion-toggle" style={{ color: "#eaa636" }}>
-          {isOpen ? <FiMinus /> : <FaPlus />}
+        <span className="accordion-toggle">
+          {isOpen ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
         </span>
       </div>
-      <div className={`accordion-body ${isOpen ? "open" : "closed"}`}>
+
+      <div className={`accordionBody ${isOpen ? "open" : "closed"}`}>
         <p>{content}</p>
       </div>
     </div>
@@ -22,16 +33,16 @@ const AccordionItem = ({ id, title, content, isOpen, onClick }) => {
 };
 
 const Cre = () => {
-  const [openId, setOpenId] = useState("1");
+  const [openId, setOpenId] = useState(1);
 
   const handleToggle = id => {
     setOpenId(openId === id ? null : id);
   };
 
   return (
-    <div className="cre-container">
-      <Heading headTitle="Why CRE" />
-      <div className="accordion">
+    <div className="cre-container container">
+      <Heading headTitle="Why CRE" width="90px" />
+      <div className="accordion ">
         <AccordionItem
           id="1"
           title="High Return on Investment"

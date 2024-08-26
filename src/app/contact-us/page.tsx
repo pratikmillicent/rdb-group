@@ -103,8 +103,10 @@ const ContactUs = () => {
                         If you would like to work with us or just want to get in
                         touch, we’d love to hear from you!
                       </p>
-                      <div className="phone fz-30 fw-600 mt-30 ">
-                        <a href="#0">+91 9877737776</a>
+                      <div className="phone fz-30 fw-600 mt-30">
+                        <a href="#0" className="text-decoration-none">
+                          +91 9877737776
+                        </a>
                       </div>
                       {/* <ul className="rest social-text d-flex mt-30 ml-10">
                         <li className="mr-20">
@@ -163,7 +165,7 @@ const ContactUs = () => {
                             href="https://www.instagram.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="d-inline-flex align-items-center"
+                            className="d-inline-flex align-items-center text-decoration-none"
                             style={{ color: "white" }}
                           >
                             <i
@@ -182,7 +184,7 @@ const ContactUs = () => {
                             href="https://www.facebook.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="d-inline-flex align-items-center"
+                            className="d-inline-flex align-items-center text-decoration-none"
                             style={{ color: "#3b5998" }} // Facebook color
                           >
                             <i className="fab fa-facebook fa-2x"></i>
@@ -193,7 +195,7 @@ const ContactUs = () => {
                             href="https://x.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="d-inline-flex align-items-center"
+                            className="d-inline-flex align-items-center text-decoration-none"
                             style={{ color: "#000000" }} // Twitter color
                           >
                             <i className="fab fa-x-twitter fa-2x"></i>
@@ -204,7 +206,7 @@ const ContactUs = () => {
                             href="https://www.linkedin.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="d-inline-flex align-items-center"
+                            className="d-inline-flex align-items-center text-decoration-none"
                             style={{ color: "#0A66C2" }} // LinkedIn color
                           >
                             <i className="fab fa-linkedin fa-2x"></i>
@@ -215,7 +217,7 @@ const ContactUs = () => {
                             href="https://www.youtube.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="d-inline-flex align-items-center"
+                            className="d-inline-flex align-items-center text-decoration-none"
                             style={{ color: "#FF0000" }} // YouTube color
                           >
                             <i className="fab fa-youtube fa-2x"></i>

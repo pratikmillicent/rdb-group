@@ -1,0 +1,117 @@
+/* Cre.css */
+.cre-container {
+  /* background-color: #f6f6f6; */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px !important;
+  margin: 0 auto;
+}
+
+.accordion {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid var(--golden);
+  padding: 20px;
+}
+/* 
+.accordion-item {
+  border-bottom: 1px solid var(--golden);
+
+} */
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.accordion-title {
+  font-weight: bold;
+  font-size: 16px;
+  /* color: #333; */
+  margin: 0;
+}
+
+.accordion-toggle {
+  font-size: 15px;
+  padding: 3px 8px;
+  background: var(--golden);
+  border-radius: 3px;
+}
+
+.accordionBody {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordionBody.open {
+  max-height: 200px; /* Adjust this value based on your content */
+  padding-top: 10px;
+}
+
+.accordionBody.closed {
+  max-height: 0;
+  padding-top: 0;
+}
+
+.accordionBody p {
+  margin: 0;
+  padding-left: 4px;
+  font-size: 16px;
+  color: #111111;
+}
+
+/* how it works css section stated */
+
+.timeline-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.timeline-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.timeline-icon {
+  background-color: #eaa636;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  margin-left: 20px;
+  flex-grow: 1;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #666;
+}
