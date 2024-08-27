@@ -11291,3 +11291,8 @@ header.in-box {
   margin-bottom: 20px;
   color: var(--golden);
 }
+
+
+.heading-text{
+  font-size: 48px;
+}

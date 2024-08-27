@@ -99,9 +99,8 @@ export default function Home() {
               }}
             >
               <h1
-                className="text-white"
+                className="text-white vh-10 heading-text"
                 style={{
-                  fontSize: "48px",
                   marginBottom: "20px",
                   lineHeight: "56px",
                   letterSpacing: "-1px",

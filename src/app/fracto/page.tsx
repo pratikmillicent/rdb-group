@@ -65,7 +65,7 @@ const page = () => {
             offering a user-friendly platform, comprehensive market insights,
             and personalized support every step of the way.
           </p>
-          <p className=" mb-4"></p>
+          <p className="mb-4"></p>
         </div>
         <SectionImage />
         <Advantage />
