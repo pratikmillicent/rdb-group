@@ -106,7 +106,7 @@ export default function Home() {
                   letterSpacing: "-1px",
                 }}
               >
-                Build on Experience
+                Crafted with Experience, built with trust
               </h1>
               <a href="/about" className="block hero-button">
                 Know more

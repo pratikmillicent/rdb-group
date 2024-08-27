@@ -61,31 +61,33 @@ const page = () => {
             <div>
               <div className="caption text-grey">
                 <h6 className="sub-title">INTRODUCTION</h6>
-                <h2>Working at R.D.Brothers property consultants LLP</h2>
+                <h2>Become part of a team that strives for Excellence!</h2>
               </div>
             </div>
           </div>
         </div>
         <div className="d-flex gap-3 mb-60">
           <div className="text-grey">
-            <p className="text-dark fz-20 fw-bold mb-3">
+            {/* <p className="text-dark fz-20 fw-bold mb-3">
               FASCINATING WORK, ENDLESS OPPORTUNITY
-            </p>
+            </p> */}
             <p className="text-dark mb-3">
-              We’re driven by technology and fueled by the multitude of
-              opportunities. Develop your skills, and grow with a group that
-              takes real challenges in real estate. Join these extraordinary
-              women and men as they push boundaries in this new age with new
-              ways.
+              At RD Brothers, we believe that excellence is achieved through a
+              great team. Our people are our biggest asset, fueling innovation
+              and excellence with their passion, expertise, and dedication. Join
+              us in a dynamic work environment where client exposure, skill
+              enhancement, growth opportunities, and collaboration are at the
+              forefront of our culture.
             </p>
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
             <div style={{ paddingTop: "60px" }}>
-              <Heading headTitle="Open Positions" width="90px" />
+              <Heading headTitle="Current Openings" width="90px" />
               {/* <div className="fz-35 fw-600">Open Positions</div> */}
             </div>
             <p className="text-dark">
-              Join us in shaping the future. Explore current openings across our
-              global network.
+              At RD Brothers, the growth of your career is as important to us as
+              the success of our business. We're committed to creating an
+              empowering workplace where everyone can thrive and succeed.
             </p>
             <div className="w-100">
               {CarrerData.map((data, i) => (

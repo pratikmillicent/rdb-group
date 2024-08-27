@@ -187,29 +187,34 @@ function SectionImage() {
           >
             {selectedTab === "about" && (
               <p className="text-white" style={{ padding: "0 40px" }}>
-                With a team of over 40 dedicated professionals, averaging more
-                than 7 years of experience each, we add a touch of
-                Professionalism to everything we do.
+
+
+
+                We are a global company dedicated to meeting the diverse needs of various industries through
+                a curated range of offerings. With 20 years of experience and a strong global presence, our
+                portfolio includes expertise in Properties, Realty, Proptech, and Movie Production. Each of
+                these sectors is driven by our commitment to excellence, innovation, and creating meaningful
+                value.
               </p>
             )}
             {selectedTab === "mission" && (
               <p className="text-white">
-                To deliver professionalism and add a touch of Indian warmth to
-                the way property is managed across India and overseas.
+                Our mission is to deliver exceptional value and innovation across diverse
+                industries and lead with a purpose.
               </p>
             )}
             {selectedTab === "vision" && (
               <p className="text-white">
-                Making Real Estate simple and effective through the use of
-                defined processes and technology.
+                To lead the global marketplace with diversified excellence, innovation, and purpose-driven
+                ventures.
+
               </p>
             )}
           </div>
         </div>
         <div
-          className={`col-md-6 position-relative p-0 ${
-            animate ? "slide-in" : ""
-          } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
+          className={`col-md-6 position-relative p-0 ${animate ? "slide-in" : ""
+            } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
         >
           <div
             className="back-image bg-img parallaxie"
