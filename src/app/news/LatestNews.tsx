@@ -52,7 +52,7 @@ const LatestNews = () => {
         slidesPerGroup: 3,
       },
     },
-    onSwiper: (swiper) => {
+    onSwiper: swiper => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();

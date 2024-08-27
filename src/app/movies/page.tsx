@@ -10,13 +10,15 @@ import OurProjects from "./OurProjects";
 import Enquiries from "./Enquiries";
 import Contact from "../fracto/Contact";
 import TeamSection2 from "../about/components/TeamSection2";
+import Project from "../realty/Project";
 
 const page = () => {
   return (
     <>
       <About />
       <Mission />
-      <OurProjects />
+      {/* <OurProjects /> */}
+      <Project />
       {/* <Movieteam /> */}
       <TeamSection2 />
       <div className="container">

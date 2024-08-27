@@ -5948,7 +5948,7 @@ body.loaded {
 }
 
 .approach-carso .swiper-slide:hover {
-  border-color: var(--golden)
+  border-color: var(--golden);
 }
 
 .approach-carso .item .stroke {
@@ -11351,4 +11351,9 @@ header.in-box {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--golden);
+}
+
+.card-text {
+  font-size: 22px;
+  font-weight: 600;
 }

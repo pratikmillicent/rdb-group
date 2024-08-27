@@ -134,7 +134,7 @@ function News() {
               id="content-carousel-container-unq-blog"
               className="swiper-container"
             >
-              {data?.map((item) => (
+              {data?.map(item => (
                 <SwiperSlide
                   key={item.id}
                   className="wow fadeInUp"
@@ -156,8 +156,8 @@ function News() {
                         <Link href="/dark/blog-post">{item.date}</Link>
                       </div>
                     </div>
-                    <div className="cont mt-30 ps-4">
-                      <h6 className="lh-sm">
+                    <div className="cont mt-30">
+                      <h6 className="lh-sm card-text">
                         <Link href="/dark/blog-post">{item.title}</Link>
                       </h6>
                       <Link href="/dark/blog-post" className="ls1 sub-title">
