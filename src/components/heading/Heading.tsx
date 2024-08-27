@@ -11,7 +11,7 @@ interface HeadingProps {
 
 const Heading: React.FC<HeadingProps> = ({
   headTitle,
-  fontSize = "fs-2",
+  fontSize = "fs-1",
   isSpace,
   isColor,
   width = "50px",
@@ -20,9 +20,8 @@ const Heading: React.FC<HeadingProps> = ({
   return (
     <div style={{ textAlign }} className="w-100">
       <h2
-        className={`${fontSize} mt-60 ${isSpace && "mb-80"} ${
-          isColor && "text-white"
-        }`}
+        style={{ fontSize: "36px" }}
+        className={`mt-60 ${isSpace && "mb-80"} ${isColor && "text-white"}`}
         // style={{
         //   color: "var(--navy)",
         //   textDecoration: "underline",

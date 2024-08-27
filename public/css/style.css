@@ -5924,7 +5924,7 @@ body.loaded {
 }
 
 .approach-carso .swiper-slide:hover {
-  border-color: #f08f74;
+  border-color: var(--golden)
 }
 
 .approach-carso .item .stroke {

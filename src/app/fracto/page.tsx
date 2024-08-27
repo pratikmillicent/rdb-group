@@ -1,5 +1,4 @@
 "use client";
-import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import React from "react";
 import SectionImage from "../(home)/components/SectionImage";
@@ -7,6 +6,8 @@ import Cre from "./Cre";
 import HowItWorks from "./HowItWorks";
 import Ourbrand from "./Ourbrand";
 import Contact from "./Contact";
+import Advantage from "./Advantage";
+import Investment from "./InvestmentOption";
 
 const page = () => {
   return (
@@ -67,10 +68,12 @@ const page = () => {
           <p className=" mb-4"></p>
         </div>
         <SectionImage />
+        <Advantage />
         <Cre />
         <HowItWorks />
         <Ourbrand />
         <Contact />
+        <Investment />
       </div>
     </>
   );
