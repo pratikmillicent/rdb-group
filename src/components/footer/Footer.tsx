@@ -111,7 +111,7 @@ function Footer() {
                       href="https://www.instagram.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="d-inline-flex align-items-center"
+                      className="d-inline-flex align-items-center text-decoration-none"
                       style={{ color: "white" }}
                     >
                       <i
@@ -130,7 +130,7 @@ function Footer() {
                       href="https://www.facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="d-inline-flex align-items-center"
+                      className="d-inline-flex align-items-center text-decoration-none"
                       style={{ color: "#3b5998" }} // Facebook color
                     >
                       <i className="fab fa-facebook fa-2x"></i>
@@ -141,7 +141,7 @@ function Footer() {
                       href="https://x.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="d-inline-flex align-items-center"
+                      className="d-inline-flex align-items-center text-decoration-none"
                       style={{ color: "#000000" }} // Twitter color
                     >
                       <i className="fab fa-x-twitter fa-2x"></i>
@@ -152,7 +152,7 @@ function Footer() {
                       href="https://www.linkedin.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="d-inline-flex align-items-center"
+                      className="d-inline-flex align-items-center text-decoration-none"
                       style={{ color: "#0A66C2" }} // LinkedIn color
                     >
                       <i className="fab fa-linkedin fa-2x"></i>
@@ -163,7 +163,7 @@ function Footer() {
                       href="https://www.youtube.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="d-inline-flex align-items-center"
+                      className="d-inline-flex align-items-center text-decoration-none"
                       style={{ color: "#FF0000" }} // YouTube color
                     >
                       <i className="fab fa-youtube fa-2x"></i>

@@ -4,6 +4,9 @@ import Image from "next/image";
 import React from "react";
 import SectionImage from "../(home)/components/SectionImage";
 import Cre from "./Cre";
+import HowItWorks from "./HowItWorks";
+import Ourbrand from "./Ourbrand";
+import Contact from "./Contact";
 
 const page = () => {
   return (
@@ -65,6 +68,9 @@ const page = () => {
         </div>
         <SectionImage />
         <Cre />
+        <HowItWorks />
+        <Ourbrand />
+        <Contact />
       </div>
     </>
   );
