@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { BsBuildingFillCheck } from "react-icons/bs";
+import Heading from "@/components/heading/Heading";
 
 const data = [
   {
@@ -33,6 +34,13 @@ function Advantage() {
   return (
     <section className="services main-bg ontop bord-thin-top bord-thin-bottom">
       <div className="container-fluid">
+        <div className="sec-lg-head">
+          <div className="row justify-content-center">
+            <div className="col-lg-6 text-center">
+              <Heading headTitle="Advantage" width="150px" />
+            </div>
+          </div>
+        </div>
         <div className="row">
           {data.map((item) => (
             <div className="item-bord col-lg-3 col-md-6" key={item.id}>
