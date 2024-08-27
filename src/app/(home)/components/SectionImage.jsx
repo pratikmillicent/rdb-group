@@ -149,12 +149,15 @@ function SectionImage() {
     <section className="container-fluid">
       <div className="row screen-height">
         <div
-          className="col-md-6 d-flex flex-column align-items-center p-4 bg-navy"
+          className="col-md-6 d-flex flex-column align-items-center justify-content-center p-4 bg-navy"
           style={{}}
         >
           <div
-            className="mb-4 d-flex justify-content-center align-items-center text-white fz-40 fw-700"
-            style={{ marginTop: "60px" }}
+            className="mb-4 d-flex justify-content-center align-items-center text-white fw-600"
+            style={{
+              fontSize: "36px",
+              lineHeight: "42px",
+            }}
           >
             {/* <Heading headTitle="Overview" className="text-golden"/> */}
             Overview
@@ -186,20 +189,44 @@ function SectionImage() {
             className={`tab-content text-center ${animate ? "slide-in" : ""}`}
           >
             {selectedTab === "about" && (
-              <p className="text-white" style={{ padding: "0 40px" }}>
+              <p
+                style={{
+                  padding: "0 40px",
+                  fontSize: "16px",
+                  fontWeight: 400,
+                  lineHeight: "29px",
+                  color: "white",
+                }}
+              >
                 With a team of over 40 dedicated professionals, averaging more
                 than 7 years of experience each, we add a touch of
                 Professionalism to everything we do.
               </p>
             )}
             {selectedTab === "mission" && (
-              <p className="text-white">
+              <p
+                style={{
+                  padding: "0 40px",
+                  fontSize: "16px",
+                  fontWeight: 400,
+                  lineHeight: "29px",
+                  color: "white",
+                }}
+              >
                 To deliver professionalism and add a touch of Indian warmth to
                 the way property is managed across India and overseas.
               </p>
             )}
             {selectedTab === "vision" && (
-              <p className="text-white">
+              <p
+                style={{
+                  padding: "0 40px",
+                  fontSize: "16px",
+                  fontWeight: 400,
+                  lineHeight: "29px",
+                  color: "white",
+                }}
+              >
                 Making Real Estate simple and effective through the use of
                 defined processes and technology.
               </p>

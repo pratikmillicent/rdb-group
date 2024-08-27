@@ -172,7 +172,11 @@ const NewGroupGrid: React.FC = () => {
                     >
                       {item.type}
                     </span> */}
-                    <Heading textAlign="left" headTitle={item.type} />
+                    <div className="d-flex justify-content-left align-items-left ">
+                      <div>
+                        <Heading headTitle={item.type} />
+                      </div>
+                    </div>
                     {/* <h2 className="mb-15 text-grey">{item.title}.</h2> */}
                     <div className="row">
                       <div className="col-md-9">

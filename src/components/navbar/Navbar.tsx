@@ -85,7 +85,7 @@ function Navbar() {
           />
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler border-0"
           type="button"
           data-toggle="collapse"
           // data-target="#navbarSupportedContent"
@@ -96,7 +96,7 @@ function Navbar() {
           aria-expanded={isNavbarOpen}
           onClick={toggleNavbar}
         >
-          <span className="icon-bar">
+          <span className="icon-bar d-flex justify-content-center align-items-center  border-0">
             <IoMenu className="text-white" />
           </span>
         </button>

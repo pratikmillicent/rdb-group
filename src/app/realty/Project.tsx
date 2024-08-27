@@ -62,7 +62,7 @@ const Project = () => {
         slidesPerGroup: 3,
       },
     },
-    onSwiper: (swiper) => {
+    onSwiper: swiper => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();
@@ -141,75 +141,53 @@ const Project = () => {
               }}
             ></div>
           </div>
-          <div className="blog-carsouel">
+          <div className="blog-carousel">
             {loadSwiper && (
               <Swiper
                 {...swiperOptions}
                 id="content-carousel-container-unq-blog"
                 className="swiper-container"
               >
-                {data.map((item) => (
+                {data.map(item => (
                   <SwiperSlide
                     key={item.id}
                     className="wow fadeInUp"
                     data-wow-delay=".100s"
                   >
-                    <div className="item pb-5 mb-3">
+                    <div className="pb-5 mb-3">
                       <div className="img img-container">
-                        <Image
-                          src={item.image}
-                          alt={item.description}
-                          style={{
-                            height: "320px",
-                            objectFit: "cover",
-                            width: "100%",
-                            borderRadius: "8px",
-                          }}
-                          width={800}
-                          height={500}
-                        />
+                        <div className="">
+                          <Image
+                            src={item.image}
+                            alt={item.description}
+                            style={{
+                              height: "320px",
+                              objectFit: "cover",
+                              width: "100%",
+                            }}
+                            width={800}
+                            height={500}
+                          />
+                        </div>
                       </div>
                       <div className="cont mt-30">
-                        <h6 className="fw-600">{item.description}</h6>
-                        <Link
-                          href={item.link}
-                          className="mt-6 ls1 sub-title fw-500"
+                        <h6
+                          className="fw-600"
                           style={{
-                            color: "#333",
-                            fontSize: "14px",
-                            textDecoration: "none",
-                            display: "inline-flex",
-                            alignItems: "center",
-                            gap: "5px",
+                            textAlign: "center",
+                            color: "#333", // Dark text color for better contrast
+                            marginTop: "15px",
                           }}
                         >
-                          Read More{" "}
-                          <i
-                            className="ml-5"
-                            style={{ display: "flex", alignItems: "center" }}
-                          >
-                            <svg
-                              width="18"
-                              height="18"
-                              viewBox="0 0 18 18"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                              style={{ transition: "transform 0.3s" }}
-                            >
-                              <path
-                                d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </i>
-                        </Link>
+                          {item.description}
+                        </h6>
                       </div>
                     </div>
                   </SwiperSlide>
                 ))}
+                <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} />
               </Swiper>
             )}
-            <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} />
           </div>
         </div>
       </section>
@@ -222,20 +200,26 @@ export default Project;
 const data = [
   {
     id: 1,
-    image: "/assets/images2/news1.webp",
+    // image: "/assets/images2/news1.webp",
+    image:
+      "https://www.equinoxindia.com/wp-content/uploads/images/sez-projects.jpg",
     description:
       "Augmented Reality in Real Estate: Forecasting Market Trends in 2024",
     link: "https://homecapital.in/augmented-reality-in-real-estate-forecasting-market-trends-in-2024/",
   },
   {
     id: 2,
-    image: "/assets/images2/news2.jpg",
+    // image: "/assets/images2/news2.jpg",
+    image:
+      "https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAzfHxyZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww",
     description: "Best Place for Real Estate Investment in Mumbai...",
     link: "https://www.hiranandani.com/is-thane-the-best-real-estate-investment-destination.aspx",
   },
   {
     id: 3,
-    image: "/assets/images2/news3.webp",
+    // image: "/assets/images2/news3.webp",
+    image:
+      "https://plus.unsplash.com/premium_photo-1689609950112-d66095626efb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8fDA%3D",
     description:
       "Why Hire Real Estate Agent: Benefits & Reasons | Spiffy Spools",
     link: "https://www.spiffyspools.com/spiffy-speak/why-hire-real-estate-agent/",

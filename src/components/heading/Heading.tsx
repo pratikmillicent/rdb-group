@@ -24,10 +24,9 @@ const Heading: React.FC<HeadingProps> = ({
           isColor && "text-white"
         }`}
         // style={{
-        //   color: "var(--navy)",
         //   textDecoration: "underline",
         //   textDecorationColor: "var(--golden)",
-        //   textUnderlineOffset: "20px",
+        //   textUnderlineOffset: "15px",
         //   letterSpacing: "-1px",
         // }}
       >

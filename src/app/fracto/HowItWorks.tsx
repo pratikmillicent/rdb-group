@@ -6,7 +6,6 @@ import {
   FaShoppingCart,
   FaSmile,
 } from "react-icons/fa";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Heading from "@/components/heading/Heading";
 
 const steps = [
