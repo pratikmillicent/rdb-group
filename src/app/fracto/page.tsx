@@ -1,9 +1,10 @@
 "use client";
-import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import React from "react";
 import SectionImage from "../(home)/components/SectionImage";
 import Cre from "./Cre";
+import Advantage from "./Advantage";
+import Investment from "./InvestmentOption";
 
 const page = () => {
   return (
@@ -49,7 +50,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="">
         <div className="">
           <p className="lead my-4">
             Welcome to Fracto, where innovation meets real estate. Our mission
@@ -64,7 +65,9 @@ const page = () => {
           <p className=" mb-4"></p>
         </div>
         <SectionImage />
+        <Advantage />
         <Cre />
+        <Investment />
       </div>
     </>
   );
