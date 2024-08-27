@@ -12,7 +12,7 @@ const Enquiries = () => {
     message: "",
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -20,7 +20,7 @@ const Enquiries = () => {
     });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
     console.log("Form data submitted:", formData);
@@ -31,7 +31,7 @@ const Enquiries = () => {
       <Container>
         <Row className="justify-content-center">
           <Col md={8} lg={6} xl={5}>
-            <Heading headTitle="Equires" width="90px" />
+            <Heading headTitle="Equires" width="40px" />
             <Form
               onSubmit={handleSubmit}
               className="bg-light p-4 rounded shadow-sm"
@@ -96,7 +96,7 @@ const Enquiries = () => {
                 />
               </Form.Group>
               <div className="d-flex align-items-center justify-content-center">
-                <Button variant="primary" type="submit" className="w-50 mt-3 ">
+                <Button type="submit" className="w-50 mt-3 bg-golden border-0">
                   Submit
                 </Button>
               </div>

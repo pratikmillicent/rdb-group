@@ -7,6 +7,8 @@ import Cre from "./Cre";
 import HowItWorks from "./HowItWorks";
 import Ourbrand from "./Ourbrand";
 import Contact from "./Contact";
+import Advantage from "./Advantage";
+import Investment from "./InvestmentOption";
 import About from "./About";
 
 const page = () => {
