@@ -37,7 +37,8 @@ const ResumeUpload = () => {
       <div className="row">
         <div className="col-lg-6 d-flex flex-column align-items-start">
           <Heading headTitle="Join Our Team" width="90px" />
-          <p>Work at the most dynamic and successful agency</p>
+          <p>Can't find a position that fits your profile? Submit your resume, and we will keep you in mind
+            for opportunities in the future.</p>
 
           <Image
             src="/assets/images2/resume-img.png"

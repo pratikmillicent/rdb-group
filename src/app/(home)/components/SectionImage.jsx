@@ -114,7 +114,7 @@ function SectionImage() {
   const [currentImage, setCurrentImage] = useState(images[selectedTab]);
   const [animate, setAnimate] = useState(false);
 
-  const tabStyle = isSelected => ({
+  const tabStyle = (isSelected) => ({
     backgroundColor: isSelected ? "var(--golden)" : "transparent",
     color: isSelected ? "white" : "white",
     fontWeight: "600",
@@ -128,7 +128,7 @@ function SectionImage() {
     margin: "5px",
   });
 
-  const handleTabClick = tab => {
+  const handleTabClick = (tab) => {
     if (selectedTab !== tab) {
       setAnimate(true);
       setTimeout(() => {
@@ -189,46 +189,26 @@ function SectionImage() {
             className={`tab-content text-center ${animate ? "slide-in" : ""}`}
           >
             {selectedTab === "about" && (
-              <p
-                style={{
-                  padding: "0 40px",
-                  fontSize: "16px",
-                  fontWeight: 400,
-                  lineHeight: "29px",
-                  color: "white",
-                }}
-              >
-                With a team of over 40 dedicated professionals, averaging more
-                than 7 years of experience each, we add a touch of
-                Professionalism to everything we do.
+              <p className="text-white" style={{ padding: "0 40px" }}>
+                We are a global company dedicated to meeting the diverse needs
+                of various industries through a curated range of offerings. With
+                20 years of experience and a strong global presence, our
+                portfolio includes expertise in Properties, Realty, Proptech,
+                and Movie Production. Each of these sectors is driven by our
+                commitment to excellence, innovation, and creating meaningful
+                value.
               </p>
             )}
             {selectedTab === "mission" && (
-              <p
-                style={{
-                  padding: "0 40px",
-                  fontSize: "16px",
-                  fontWeight: 400,
-                  lineHeight: "29px",
-                  color: "white",
-                }}
-              >
-                To deliver professionalism and add a touch of Indian warmth to
-                the way property is managed across India and overseas.
+              <p className="text-white">
+                Our mission is to deliver exceptional value and innovation
+                across diverse industries and lead with a purpose.
               </p>
             )}
             {selectedTab === "vision" && (
-              <p
-                style={{
-                  padding: "0 40px",
-                  fontSize: "16px",
-                  fontWeight: 400,
-                  lineHeight: "29px",
-                  color: "white",
-                }}
-              >
-                Making Real Estate simple and effective through the use of
-                defined processes and technology.
+              <p className="text-white">
+                To lead the global marketplace with diversified excellence,
+                innovation, and purpose-driven ventures.
               </p>
             )}
           </div>
