@@ -178,7 +178,7 @@ const Blog = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading">Blogs</h3>
+            <h3 className="banner-heading hero-heading">Blogs</h3>
             <div
               style={{
                 width: "30px",
@@ -210,7 +210,7 @@ const Blog = () => {
             <div className="blog-carsouel">
               {loadSwiper && (
                 <div className="row">
-                  {data.map((item) => (
+                  {data.map(item => (
                     <div
                       key={item.id}
                       className="col-lg-4 col-md-6 col-sm-6 mb-30"

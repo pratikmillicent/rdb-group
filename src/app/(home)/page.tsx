@@ -99,7 +99,7 @@ export default function Home() {
               }}
             >
               <h1
-                className="text-white"
+                className="text-white .hero-heading"
                 style={{
                   fontSize: "48px",
                   marginBottom: "20px",

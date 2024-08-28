@@ -62,7 +62,7 @@ function About() {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading">About Us</h3>
+            <h3 className="banner-heading hero-heading">About Us</h3>
             <div
               style={{
                 width: "70px",

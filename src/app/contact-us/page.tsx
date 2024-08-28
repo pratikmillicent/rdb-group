@@ -70,7 +70,7 @@ const ContactUs = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading">Contact us</h3>
+            <h3 className="banner-heading hero-heading">Contact us</h3>
             <div
               style={{
                 width: "90px",

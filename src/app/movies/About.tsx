@@ -35,7 +35,7 @@ const About = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading">Movies</h3>
+            <h3 className="banner-heading hero-heading">Movies</h3>
             <div
               style={{
                 width: "50px",

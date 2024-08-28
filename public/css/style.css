@@ -11352,8 +11352,12 @@ header.in-box {
   margin-bottom: 20px;
   color: var(--golden);
 }
-
 .card-text {
   font-size: 22px;
+  font-weight: 600;
+}
+.hero-heading {
+  font-size: 48px !important;
+  line-height: 56px;
   font-weight: 600;
 }

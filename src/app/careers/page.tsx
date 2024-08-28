@@ -39,7 +39,7 @@ const page = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading">Careers</h3>
+            <h3 className="banner-heading hero-heading">Careers</h3>
             <div
               style={{
                 width: "50px",

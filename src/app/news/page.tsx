@@ -60,7 +60,7 @@ const News = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading">News & Media</h3>
+            <h3 className="banner-heading hero-heading">News & Media</h3>
             <div className="border-line"></div>
           </div>
         </div>
