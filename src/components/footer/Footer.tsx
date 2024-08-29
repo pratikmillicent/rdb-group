@@ -14,11 +14,25 @@ function Footer() {
           <div className="row">
             <div className="col-lg-3">
               <div className="colum md-mb50">
-                <div className="tit mb-20">
+                <div
+                  className="tit mb-20"
+                  style={{
+                    fontSize: "16px",
+                    lineHeight: "19px",
+                    fontWeight: 600,
+                  }}
+                >
                   <h6>Address</h6>
                 </div>
                 <div className="light-text">
-                  <p className="light-text">
+                  <p
+                    className="light-text"
+                    style={{
+                      fontSize: "15px",
+                      lineHeight: "26px",
+                      fontWeight: 400,
+                    }}
+                  >
                     Gate No 8, Metro Station, 302-303, 3rd floor, 72 Empire,
                     WEH, Near, Western Express Hwy, Andheri East, Mumbai,
                     Maharashtra 400099
@@ -29,9 +43,24 @@ function Footer() {
             <div className="col-lg-4 offset-lg-1">
               <div className="colum md-mb50">
                 <div className="tit mb-20">
-                  <h6>Get in touch</h6>
+                  <h6
+                    style={{
+                      fontSize: "16px",
+                      lineHeight: "19px",
+                      fontWeight: 600,
+                    }}
+                  >
+                    Get in touch
+                  </h6>
                 </div>
-                <div className="text">
+                <div
+                  className="text"
+                  style={{
+                    fontSize: "15px",
+                    lineHeight: "26px",
+                    fontWeight: 400,
+                  }}
+                >
                   <div className="mb-10">
                     <Link href="mailto:info@rdbrothers.com">
                       info@rdbrothers.com
@@ -50,9 +79,24 @@ function Footer() {
             </div>
             <div className="col-lg-2 md-mb50">
               <div className="tit mb-20">
-                <h6>Search</h6>
+                <h6
+                  style={{
+                    fontSize: "16px",
+                    lineHeight: "19px",
+                    fontWeight: 600,
+                  }}
+                >
+                  Search
+                </h6>
               </div>
-              <ul className="rest social-text">
+              <ul
+                className="rest social-text"
+                style={{
+                  fontSize: "15px",
+                  lineHeight: "26px",
+                  fontWeight: 400,
+                }}
+              >
                 <li>
                   <Link href="/properties">Properties</Link>
                 </li>
@@ -69,9 +113,24 @@ function Footer() {
             </div>
             <div className="col-lg-2 md-mb50">
               <div className="tit mb-20">
-                <h6>Corporate</h6>
+                <h6
+                  style={{
+                    fontSize: "16px",
+                    lineHeight: "19px",
+                    fontWeight: 600,
+                  }}
+                >
+                  Corporate
+                </h6>
               </div>
-              <ul className="rest social-text">
+              <ul
+                className="rest social-text"
+                style={{
+                  fontSize: "15px",
+                  lineHeight: "26px",
+                  fontWeight: 400,
+                }}
+              >
                 <li>
                   <Link href="/about-us">About Us</Link>
                 </li>

@@ -178,7 +178,7 @@ const Blog = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading">Blogs</h3>
+            <h3 className="banner-heading hero-heading">Blogs</h3>
             <div
               style={{
                 width: "30px",

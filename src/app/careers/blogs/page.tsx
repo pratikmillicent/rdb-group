@@ -166,7 +166,7 @@ const Blog = () => {
             <div className="blog-carsouel">
               {loadSwiper && (
                 <div className="row">
-                  {data.map(item => (
+                  {data.map((item) => (
                     <div
                       key={item.id}
                       className="col-lg-4 col-md-6 col-sm-6 mb-30"
@@ -182,7 +182,7 @@ const Blog = () => {
                           />
                         </div>
                         <div className="blog-content">
-                          <h5 className="blog-title fz-22 fw-medium text-grey">
+                          <h5 className="blog-title fz-22 fw-medium text-white">
                             {item.heading}
                           </h5>
                           <p className="blog-date fz-14">{item.date}</p>

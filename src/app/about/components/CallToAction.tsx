@@ -74,7 +74,7 @@ function CallToAction({}) {
               <FaUsers
               // className={active == 2 ? "animate-bounce" : ""}
               />
-              <h1 className="fz-20">Experties</h1>
+              <h1 className="fz-20">Expertise</h1>
               <p style={{ color: "inherit" }}>
                 We believe continuous learning and adaptability are the key to
                 deliver excellence.

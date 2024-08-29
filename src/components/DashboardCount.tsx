@@ -17,6 +17,7 @@ function DashboardCount({ data }: DashboardCountProps) {
   useEffect(() => {
     const options = {
       duration: 3,
+      useGrouping: false,
     };
 
     countersRef.current.forEach((counter, index) => {
@@ -50,36 +51,39 @@ function DashboardCount({ data }: DashboardCountProps) {
     >
       <div className="container" style={{ backgroundSize: "cover" }}>
         <div className="row text-center" style={{ backgroundSize: "cover" }}>
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className="col-6 col-md-4 col-lg wow fadeInUp mb-sm-30 animated"
-              data-wow-delay={`${index * 0.25}s`}
-              style={{
-                backgroundSize: "cover",
-                visibility: "visible",
-                animationDelay: `${index * 0.25}s`,
-                animationName: "fadeInUp",
-              }}
-            >
-              <div className="de_count" style={{ backgroundSize: "cover" }}>
-                <h3 className="main-color3">
-                  <span
-                    className="fz-40"
-                    ref={(el) => {
-                      countersRef.current[index] = el;
-                    }}
-                    data-to={item.value}
-                  >
-                    {item.value}
-                  </span>
-
-                  {item.suffix && item.suffix}
-                </h3>
-                <div className="fs-7 text-golden">{item.label}</div>
+          {data.map((item, index) => {
+            const { value, suffix = "" } = item;
+            return (
+              <div
+                key={index}
+                className="col-6 col-md-4 col-lg wow fadeInUp mb-sm-30 animated"
+                data-wow-delay={`${index * 0.25}s`}
+                style={{
+                  backgroundSize: "cover",
+                  visibility: "visible",
+                  animationDelay: `${index * 0.25}s`,
+                  animationName: "fadeInUp",
+                }}
+              >
+                <div className="de_count" style={{ backgroundSize: "cover" }}>
+                  <h3 className="main-color3">
+                    <span
+                      className="fz-40"
+                      ref={(el) => {
+                        countersRef.current[index] = el;
+                      }}
+                      data-to={value}
+                    >
+                      {value}
+                    </span>
+                    {suffix}
+                    {/* {item.suffix && item.suffix} */}
+                  </h3>
+                  <div className="fs-7 text-golden ">{item.label}</div>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

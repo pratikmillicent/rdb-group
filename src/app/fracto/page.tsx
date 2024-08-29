@@ -43,7 +43,7 @@ const page = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading">Fracto</h3>
+            <h3 className="banner-heading hero-heading">Fracto</h3>
             <div
               className="border-line"
               style={{

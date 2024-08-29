@@ -39,7 +39,7 @@ const page = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading">Careers</h3>
+            <h3 className="banner-heading hero-heading">Careers</h3>
             <div
               style={{
                 width: "50px",
@@ -60,7 +60,7 @@ const page = () => {
           <div className="section-padding">
             <div>
               <div className="caption text-grey">
-                <h6 className="sub-title">INTRODUCTION</h6>
+                {/* <h6 className="sub-title">INTRODUCTION</h6> */}
                 <h2>Become part of a team that strives for Excellence!</h2>
               </div>
             </div>
@@ -79,6 +79,7 @@ const page = () => {
               enhancement, growth opportunities, and collaboration are at the
               forefront of our culture.
             </p>
+
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
             <div style={{ paddingTop: "60px" }}>
               <Heading headTitle="Current Openings" width="90px" />

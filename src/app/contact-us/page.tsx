@@ -23,15 +23,15 @@ const ContactUs = () => {
     message: "",
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
   };
@@ -70,7 +70,7 @@ const ContactUs = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading">Contact us</h3>
+            <h3 className="banner-heading hero-heading">Contact us</h3>
             <div
               style={{
                 width: "90px",
