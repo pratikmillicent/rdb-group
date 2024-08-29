@@ -5,17 +5,22 @@ import Mission from "./Mission";
 import Movieteam from "./Movieteam";
 import Awards from "../news/components/Awards";
 import LatestNews from "../news/LatestNews";
-import Contact from "./Contact";
+// import Contact from "./Contact";
 import OurProjects from "./OurProjects";
 import Enquiries from "./Enquiries";
+import Contact from "../fracto/Contact";
+import TeamSection2 from "../about/components/TeamSection2";
+import Project from "../realty/Project";
 
 const page = () => {
   return (
     <>
       <About />
       <Mission />
-      <OurProjects />
-      <Movieteam />
+      {/* <OurProjects /> */}
+      <Project />
+      {/* <Movieteam /> */}
+      <TeamSection2 />
       <div className="container">
         <Awards />
       </div>
@@ -23,6 +28,7 @@ const page = () => {
       <LatestNews />
 
       {/* <Enquiries /> */}
+      {/* <Contact /> */}
       <Contact />
     </>
   );

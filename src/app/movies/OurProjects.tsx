@@ -112,30 +112,6 @@ const LatestNews = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                {/* <div className="button-container">
-                  <div
-                    className="swiper-button-prev mb-3"
-                    style={{
-                      color: "#000",
-                      backgroundColor: "#eaa636",
-                      padding: "20px",
-                      borderRadius: "50%",
-                      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                      border: "2px solid #f0f0f0", // Matching light border for buttons
-                    }}
-                  ></div>
-                  <div
-                    className="swiper-button-next mb-3"
-                    style={{
-                      color: "#000",
-                      backgroundColor: "#eaa636",
-                      padding: "20px",
-                      borderRadius: "50%",
-                      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                      border: "2px solid #f0f0f0", // Matching light border for buttons
-                    }}
-                  ></div>
-                </div> */}
                 <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} />
               </Swiper>
             )}

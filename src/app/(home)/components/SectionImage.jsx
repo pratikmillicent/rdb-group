@@ -114,7 +114,7 @@ function SectionImage() {
   const [currentImage, setCurrentImage] = useState(images[selectedTab]);
   const [animate, setAnimate] = useState(false);
 
-  const tabStyle = isSelected => ({
+  const tabStyle = (isSelected) => ({
     backgroundColor: isSelected ? "var(--golden)" : "transparent",
     color: isSelected ? "white" : "white",
     fontWeight: "600",
@@ -128,7 +128,7 @@ function SectionImage() {
     margin: "5px",
   });
 
-  const handleTabClick = tab => {
+  const handleTabClick = (tab) => {
     if (selectedTab !== tab) {
       setAnimate(true);
       setTimeout(() => {

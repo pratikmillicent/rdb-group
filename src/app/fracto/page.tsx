@@ -1,4 +1,5 @@
 "use client";
+// import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import React from "react";
 import SectionImage from "../(home)/components/SectionImage";
@@ -8,6 +9,7 @@ import Ourbrand from "./Ourbrand";
 import Contact from "./Contact";
 import Advantage from "./Advantage";
 import Investment from "./InvestmentOption";
+import About from "./About";
 
 const page = () => {
   return (

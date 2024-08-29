@@ -11,12 +11,14 @@ import Careers from "./Carrer";
 import ResumeUpload from "../careers/components/ResumeUpload";
 import FractoAdvantage from "./FractoAdvantage";
 import Project from "./Project";
+import Experience from "../about/components/Experience";
 
 const Realty = () => {
   return (
     <>
       <main className="bg- text-black">
         <FrameSlider data={data} />
+        <Experience />
         <SectionImage />
         <Project />
 

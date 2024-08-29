@@ -18,6 +18,7 @@ function DashboardCount({ data }: DashboardCountProps) {
     const options = {
       duration: 3,
       useGrouping: false,
+      useGrouping: false,
     };
 
     countersRef.current.forEach((counter, index) => {
