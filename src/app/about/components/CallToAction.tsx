@@ -10,9 +10,9 @@ function CallToAction({}) {
 
   return (
     <section className="call-action-img">
-      <div className="">
+      <div className="w-100">
         <div
-          className="sec-bg-img bg-img parallaxie"
+          className="w-100 sec-bg-img bg-img parallaxie"
           data-background={
             active === 0
               ? "/assets/images/about/professionalism.webp"
@@ -38,7 +38,7 @@ function CallToAction({}) {
           >
             <div
               className="fz-50"
-              style={{ padding: "20px 0" }}
+              style={{ padding: "20px 10px", width: "calc(100% - 6px)" }}
               // onMouseEnter={() => setActive(0)}
             >
               <FaMedal
@@ -46,13 +46,14 @@ function CallToAction({}) {
               />
               <h1 className="fz-20">Professionalism</h1>
               <p style={{ color: "inherit" }}>
-                is not just what you do, but how you do it.
+                We believe that excellence is defined not only by what you do
+                but by how you do it.
               </p>
             </div>
             <div style={{ width: "2px", background: "white" }}></div>
             <div
               className="fz-50"
-              style={{ padding: "20px 0" }}
+              style={{ padding: "20px 10px", width: "calc(100% - 6px)" }}
               // onMouseEnter={() => setActive(1)}
             >
               <FaHandshake
@@ -60,13 +61,14 @@ function CallToAction({}) {
               />
               <h1 className="fz-20">Trust & Transparency</h1>
               <p style={{ color: "inherit" }}>
-                is a currency more valuable than money.
+                Trust is the most valuable currency for us than money, built on
+                the virtue of transparency.
               </p>
             </div>
             <div style={{ width: "2px", background: "white" }}></div>
             <div
               className="fz-50"
-              style={{ padding: "20px 0" }}
+              style={{ padding: "20px 10px", width: "calc(100% - 6px)" }}
               // onMouseEnter={() => setActive(2)}
             >
               <FaUsers
@@ -74,7 +76,23 @@ function CallToAction({}) {
               />
               <h1 className="fz-20">Experties</h1>
               <p style={{ color: "inherit" }}>
-                is knowing that learning never stops.
+                We believe continuous learning and adaptability are the key to
+                deliver excellence.
+              </p>
+            </div>
+            <div style={{ width: "2px", background: "white" }}></div>
+            <div
+              className="fz-50"
+              style={{ padding: "20px 10px", width: "calc(100% - 6px)" }}
+              // onMouseEnter={() => setActive(2)}
+            >
+              <FaUsers
+              // className={active == 2 ? "animate-bounce" : ""}
+              />
+              <h1 className="fz-20">Innovation & Impact</h1>
+              <p style={{ color: "inherit" }}>
+                As a group, we are dedicated to leading with innovation and
+                making a positive impact on society and the environment.
               </p>
             </div>
           </div>

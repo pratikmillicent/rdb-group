@@ -20,21 +20,21 @@ const data: DataItem[] = [
     image: "assets/images/home/properties.webp",
     type: "Properties",
     title: "Aspect Global Ventures Pvt.Ltd.",
-    text: "We craft premium designs for agencies and global brands around the globe.",
+    text: "Our Property business is at the forefront of providing comprehensive services designed to guide clients through market entry strategies, location advisory, property sourcing, transaction management, and investment sales. Whether you're buying, selling, leasing, or investing in real estate assets, we specialize in a wide range of sectors including residential, commercial, retail, educational, healthcare, banking, hospitality, and warehousing facilities. Our solution-oriented approach ensures that we create value at every stage of the property lifecycle. Our deep expertise and dedication to outstanding service make us a distinguished leader in the real estate industry.",
   },
   {
     id: 2,
     image: "assets/images/home/img2.jpg",
     type: "Reality",
     title: "Aspect Bullion & Refinery",
-    text: "We craft premium designs for agencies and global brands around the globe.",
+    text: "In the real estate domain, we are recognized for our unmatched expertise and premium services, particularly in luxury property development and land acquisition. Our focus on quality and innovation sets us apart, ensuring that we not only meet but exceed the expectations of our clients. We pride ourselves on delivering projects that embody luxury, functionality, and long-term value..",
   },
   {
     id: 3,
     image: "assets/images/home/Fractal.jpg",
-    type: "Fracto",
+    type: "Proptech",
     title: "Aspect Infrastructure",
-    text: "We craft premium designs for agencies and global brands around the globe.",
+    text: "As pioneers in the Proptech sector, we integrate technology with real estate to deliver cutting-edge solutions that enhance the way we buy, sell, and manage properties. Our Proptech initiatives are designed to streamline processes, improve transparency, and provide our clients with innovative tools that redefine the real estate experience.",
   },
 
   {
@@ -42,15 +42,15 @@ const data: DataItem[] = [
     image: "assets/images/home/movie.webp",
     type: "Movies",
     title: "Aspect Infrastructure",
-    text: "We craft premium designs for agencies and global brands around the globe.",
+    text: "Beyond our real estate endeavors, we have made a significant impact in the entertainment industry. Our movie production arm is known for producing blockbuster commercial films that seamlessly blend creativity with business acumen. We are passionate about storytelling and bringing unique cinematic experiences to audiences worldwide, ensuring that our films resonate both commercially and culturally.",
   },
-  {
-    id: 5,
-    image: "assets/images/home/business.jpg",
-    type: "Business",
-    title: "Luxury Glassware",
-    text: "We craft premium designs for agencies and global brands around the globe.",
-  },
+  // {
+  //   id: 5,
+  //   image: "assets/images/home/business.jpg",
+  //   type: "Business",
+  //   title: "Luxury Glassware",
+  //   text: "We craft premium designs for agencies and global brands around the globe.",
+  // },
 ];
 
 const NewGroupGrid: React.FC = () => {

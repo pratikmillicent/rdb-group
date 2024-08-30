@@ -11356,10 +11356,12 @@ header.in-box {
   margin-bottom: 20px;
   color: var(--golden);
 }
+
 .card-text {
   font-size: 22px;
   font-weight: 600;
 }
+
 .hero-heading {
   font-size: 48px !important;
   line-height: 56px;
@@ -11482,4 +11484,8 @@ header.in-box {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.heading-text {
+  font-size: 48px;
 }
