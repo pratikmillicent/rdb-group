@@ -11,7 +11,6 @@ import Heading from "@/components/heading/Heading";
 import { GrChapterNext, GrChapterPrevious } from "react-icons/gr";
 import PrevNext from "@/utils/PrevNext";
 
-
 const Awards_data = [
   {
     image: "/assets/images/news/GEA1.jpg",
@@ -82,7 +81,8 @@ const Awards = () => {
   useEffect(() => {
     // Ensuring that Swiper navigation is updated after refs are set
     if (prevRef.current && nextRef.current) {
-      const swiperInstance = document.querySelector(".swiper-container")?.swiper;
+      const swiperInstance =
+        document.querySelector(".swiper-container")?.swiper;
       if (swiperInstance) {
         swiperInstance.params.navigation.prevEl = prevRef.current;
         swiperInstance.params.navigation.nextEl = nextRef.current;
@@ -146,15 +146,21 @@ const Awards = () => {
               }}
             >
               <div className="award-card-content d-flex align-items-center justify-content-center flex-column">
-                <h2 className="award-card-title" style={{ fontSize: "24px", marginBottom: "10px" }}>
+                <h2
+                  className="award-card-title"
+                  style={{ fontSize: "24px", marginBottom: "10px" }}
+                >
                   {item.events}
                 </h2>
-                <p className="class-body" style={{ fontSize: "16px", marginBottom: "20px" }}>
+                <p
+                  className="class-body"
+                  style={{ fontSize: "16px", marginBottom: "20px" }}
+                >
                   {item.description}
                 </p>
-                <Link href="#" className="fz-30 fw-500" style={{ fontSize: "30px", fontWeight: "500" }}>
+                {/* <Link href="#" className="fz-30 fw-500" style={{ fontSize: "30px", fontWeight: "500" }}>
                   <FaArrowRight />
-                </Link>
+                </Link> */}
               </div>
             </div>
           </SwiperSlide>
@@ -166,6 +172,3 @@ const Awards = () => {
 };
 
 export default Awards;
-
-
-
