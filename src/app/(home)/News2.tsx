@@ -8,7 +8,9 @@ const data = [
   {
     id: 1,
     title: "Tising in our life became a info noise",
-    cover: "/assets/images/home/news2.jpg",
+    // cover: "/assets/images/home/news2.jpg",
+    cover:
+      "https://gdoc.io/uploads/Twitter_Real_Estate_Newspaper_2_1600_900_1artboards_.jpg",
     author: "Admin",
     date: "August 6, 2021",
     category: "Real Estate",
@@ -18,7 +20,19 @@ const data = [
   {
     id: 2,
     title: "We create some things success in future growth",
-    cover: "/assets/images/home/news1.jpg",
+    cover:
+      "https://images.squarespace-cdn.com/content/5c115fec9d5abbba78a23c93/1597936991711-BPDT1FFFWNAGVDCD0EP7/How+Is+Commercial+Real+Estate+Valued-01.jpg?format=1500w&content-type=image%2Fjpeg",
+    author: "Admin",
+    date: "August 6, 2021",
+    category: "Real Estate",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus similique corrupti atque at quo ipsa porro, voluptas eos eligendi a provident ex quaerat, asperiores libero facere dignissimos hic.",
+  },
+  {
+    id: 3,
+    title: "We create some things success in future growth",
+    cover:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6oK8Ovykk09mja3ilBvtk2Y6e-zIZYtURvA&s",
     author: "Admin",
     date: "August 6, 2021",
     category: "Real Estate",
@@ -116,6 +130,9 @@ function News2() {
                         <span className="text-grey news-firm">
                           Fynley Wilkinson
                         </span>
+                        <div className="bg-dark date-banner">
+                          <DateBanner />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -134,3 +151,33 @@ function News2() {
 }
 
 export default News2;
+
+const DateBanner = () => {
+  return (
+    <>
+      <div
+        className="date-wrapper bg-golden"
+        style={{
+          position: "absolute",
+          backgroundSize: "cover",
+          bottom: "445px",
+          left: "5px",
+          borderRadius: "5px",
+        }}
+      >
+        <div
+          className="date-box text-white bg-golden"
+          style={{ fontSize: "32px", fontWeight: 700 }}
+        >
+          10
+        </div>
+        <div
+          className="date-letter-box py-2 text-white"
+          style={{ backgroundColor: "#D29530", fontSize: "12px" }}
+        >
+          NOV
+        </div>
+      </div>
+    </>
+  );
+};

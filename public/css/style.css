@@ -11603,3 +11603,44 @@ header.in-box {
   line-height: 29px;
   color: var(--white);
 }
+
+.date-wrapper {
+  width: 54px;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  margin: 20px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 5px 5px 40px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 40px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.date-letter-box {
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+}
+
+/* .date-box {
+  font-size: 32px;
+  background: rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 8px;
+}
+
+.date-letter-box {
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  
+}
+
+.date-banner {
+  position: absolute;
+  bottom: 572px;
+  left: 4px;
+} */
