@@ -51,32 +51,35 @@ function About() {
             zIndex: 1,
             pointerEvents: "none",
           }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "100%",
-              padding: "0 20px",
-            }}
-          >
-            <h3 className="banner-heading hero-heading">About Us</h3>
-            <div
-              style={{
-                width: "70px",
-                height: "3px",
-                borderTop: "solid 2px var(--golden) !important",
-                borderLeft: "none",
-                borderRight: "none",
-                display: "block",
-                margin: "0 auto",
-                marginBottom: "30px",
-              }}
-            ></div>
-          </div>
-        </div>
+        ></div>
+      </div>
+
+      <div
+        className="bg-golden"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+          padding: "0 20px",
+        }}
+      >
+        <h3 className="banner-heading hero-heading text-black pt-4">
+          About Us
+        </h3>
+        <div
+          style={{
+            width: "70px",
+            height: "3px",
+            borderTop: "solid 2px var(--golden) !important",
+            borderLeft: "none",
+            borderRight: "none",
+            display: "block",
+            margin: "0 auto",
+            marginBottom: "30px",
+          }}
+        ></div>
       </div>
       {/* <VisionMission /> */}
       <Experience />
