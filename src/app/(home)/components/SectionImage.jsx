@@ -114,7 +114,7 @@ function SectionImage() {
   const [currentImage, setCurrentImage] = useState(images[selectedTab]);
   const [animate, setAnimate] = useState(false);
 
-  const tabStyle = (isSelected) => ({
+  const tabStyle = isSelected => ({
     backgroundColor: isSelected ? "var(--golden)" : "transparent",
     color: isSelected ? "white" : "white",
     fontWeight: "600",
@@ -128,7 +128,7 @@ function SectionImage() {
     margin: "5px",
   });
 
-  const handleTabClick = (tab) => {
+  const handleTabClick = tab => {
     if (selectedTab !== tab) {
       setAnimate(true);
       setTimeout(() => {
@@ -147,15 +147,12 @@ function SectionImage() {
 
   return (
     <section className="container-fluid">
-      <div className="row">
+      <div className="row screen-height">
         <div
           className="col-md-6 d-flex flex-column justify-content-center align-items-center bg-navy"
-          style={{ padding: '0px 100px' }}
+          style={{ padding: "0px 100px" }}
         >
-          <div
-            className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600"
-
-          >
+          <div className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600">
             RD Brothers
           </div>
           <div className="w-100 mb-2 d-flex flex-wrap justify-content-start">
@@ -181,32 +178,36 @@ function SectionImage() {
               Our Vision
             </button>
           </div>
-          <div
-            className={`tab-content ${animate ? "slide-in" : ""}`}
-          >
+          <div className={`tab-content ${animate ? "slide-in" : ""}`}>
             {selectedTab === "overview" && (
-              <p className="text-white fz-16 fw-400" >
-                Our attorneys are the cornerstone of our commitment to providing exceptional legal services. Each member of our team brings a wealth of experience, specialized knowledge, and a deep dedication to achieving the best outcomes for our clients. We pride ourselves on our collaborative approach, ensuring that every case benefits from the collective expertise of our diverse legal team.
+              <p className="text-white fz-16 fw-400">
+                Our attorneys are the cornerstone of our commitment to providing
+                exceptional legal services. Each member of our team brings a
+                wealth of experience, specialized knowledge, and a deep
+                dedication to achieving the best outcomes for our clients. We
+                pride ourselves on our collaborative approach, ensuring that
+                every case benefits from the collective expertise of our diverse
+                legal team.
               </p>
             )}
             {selectedTab === "mission" && (
-              <p className="text-white fz-16 fw-400" >
-                Our mission is to deliver exceptional value and innovation across diverse
-                industries and lead with a purpose.
+              <p className="text-white fz-16 fw-400">
+                Our mission is to deliver exceptional value and innovation
+                across diverse industries and lead with a purpose.
               </p>
             )}
             {selectedTab === "vision" && (
               <p className="text-white fz-16 fw-400">
-                To lead the global marketplace with diversified excellence, innovation, and purpose-driven
-                ventures.
-
+                To lead the global marketplace with diversified excellence,
+                innovation, and purpose-driven ventures.
               </p>
             )}
           </div>
         </div>
         <div
-          className={`col-md-6 position-relative p-0 ${animate ? "slide-in" : ""
-            } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
+          className={`col-md-6 position-relative p-0 ${
+            animate ? "slide-in" : ""
+          } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
         >
           <div
             className="back-image bg-img parallaxie"

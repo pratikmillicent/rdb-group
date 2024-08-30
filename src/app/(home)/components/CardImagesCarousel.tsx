@@ -110,7 +110,7 @@ function DarkVariantExample({ spliti, data }: any) {
                     id="content-carousel-container-unq-blog"
                     className="swiper-container"
                   >
-                    {data.map((item) => (
+                    {data.map(item => (
                       <SwiperSlide
                         key={item.id}
                         className="wow fadeInUp"
@@ -148,7 +148,7 @@ function splitToNChunks(array, n) {
   return result;
 }
 
-const directionButtons = (direction) => {
+const directionButtons = direction => {
   console.log("🚀 ~ directionButtons ~ direction:", direction);
   return (
     <span
@@ -185,7 +185,7 @@ const CarouselEvent = ({ data }) => {
     <Carousel
       interval={null}
       controls={true}
-      indicators={true}
+      indicators={false}
       variant="dark"
       nextIcon={directionButtons("Next")}
       prevIcon={directionButtons("Previous")}

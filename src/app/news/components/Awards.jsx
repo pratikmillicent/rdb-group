@@ -79,7 +79,6 @@ const Awards = () => {
   };
 
   useEffect(() => {
-    // Ensuring that Swiper navigation is updated after refs are set
     if (prevRef.current && nextRef.current) {
       const swiperInstance =
         document.querySelector(".swiper-container")?.swiper;
@@ -158,9 +157,6 @@ const Awards = () => {
                 >
                   {item.description}
                 </p>
-                {/* <Link href="#" className="fz-30 fw-500" style={{ fontSize: "30px", fontWeight: "500" }}>
-                  <FaArrowRight />
-                </Link> */}
               </div>
             </div>
           </SwiperSlide>
