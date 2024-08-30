@@ -2089,6 +2089,10 @@ img.left {
   font-size: 35px !important;
 }
 
+.fz-38 {
+  font-size: 38px !important;
+}
+
 .fz-40 {
   font-size: 40px !important;
 }
@@ -11360,4 +11364,122 @@ header.in-box {
   font-size: 48px !important;
   line-height: 56px;
   font-weight: 600;
+}
+
+.movie-about {
+  line-height: 57px;
+  color: var(--navy);
+  font-weight: 600;
+  /* margin-right: 10px; */
+}
+
+.studio-text {
+  font-size: 72px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.movie-about-text {
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--navy);
+  font-weight: 400;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .movie-about {
+    font-size: 32px;
+    line-height: 48px;
+    /* text-align: center; */
+    /* margin-right: 0; */
+  }
+
+  .studio-text {
+    font-size: 60px;
+    line-height: 60px;
+    /* text-align: center; */
+  }
+
+  .movie-about-text {
+    font-size: 14px;
+    line-height: 24px;
+    /* text-align: center; */
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-about {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .studio-text {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .movie-about-text {
+    /* font-size: 13px; */
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .movie-about {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .studio-text {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .movie-about-text {
+    /* font-size: 12px; */
+    line-height: 20px;
+  }
+}
+
+.movie-mission {
+  font-size: 48px;
+  line-height: 67px;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+
+.movie-mission-text {
+  font-size: 30px;
+  line-height: 50px;
+  color: var(--white);
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@keyframes scrolling {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.image-container {
+  height: 320px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }

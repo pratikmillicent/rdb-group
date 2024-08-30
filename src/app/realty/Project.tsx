@@ -6,7 +6,7 @@
 //   )
 // }
 
-// export default Project
+// export default Probject
 
 import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";

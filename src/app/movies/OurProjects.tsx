@@ -45,8 +45,6 @@ const LatestNews = () => {
       },
     },
     navigation: {
-      // nextEl: ".blog-modern .swiper-button-next",
-      // prevEl: ".blog-modern .swiper-button-prev",
       prevEl: latestPrevRef.current,
       nextEl: latestNextRef.current,
     },

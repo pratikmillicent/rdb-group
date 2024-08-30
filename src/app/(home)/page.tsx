@@ -14,6 +14,7 @@ import useMediaQuery from "./components/useMediaQuery";
 import VideoGallary from "./components/VideoGallary";
 import { lazy, useEffect } from "react";
 import { useInView } from "react-spring";
+import News2 from "./components/News2";
 const Carroussel3D = dynamic(() => import("./components/Carousel"), {
   ssr: false,
 });
@@ -150,7 +151,8 @@ export default function Home() {
           ) : null}
         </div>
 
-        <News />
+        {/* <News /> */}
+        <News2 />
         <VideoGallary />
       </main>
     </ParallaxProvider>
