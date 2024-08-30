@@ -5,6 +5,7 @@ import loadBackgroudImages from "@/common/loadBackgroudImages";
 import isInView from "@/common/isInView";
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
+import { FaBuilding } from "react-icons/fa";
 
 interface DataItem {
   id: number;
@@ -151,7 +152,10 @@ const NewGroupGrid: React.FC = () => {
                   ))}
                 </div>
               </div>
-              <div className="col-lg-6 sub-bg right">
+              <div
+                className="col-lg-6  right overflow-hidden bg-grey py-2"
+                style={{ padding: "0px 50px" }}
+              >
                 {data?.map((item, index) => (
                   <div
                     className={`cont ${index === 0 ? "active" : ""}`}
@@ -166,24 +170,30 @@ const NewGroupGrid: React.FC = () => {
                         height={500}
                       />
                     </div>
-                    {/* <span
-                      className="sub-title mb-15 fz-30 fw-600"
-                      style={{ color: "var(--navy)" }}
-                    >
-                      {item.type}
-                    </span> */}
-                    <div className="d-flex justify-content-left align-items-left ">
+                    <div className="d-flex justify-content-left align-items-left gap-5  py-2">
                       <div>
-                        <Heading headTitle={item.type} />
+                        <Heading
+                          headTitle={`RD Brother ${item.type}`}
+                          isMargin=""
+                        />
+                      </div>
+                      <div className="mt-5">
+                        <FaBuilding fontSize={35} color="var(--golden)" />
                       </div>
                     </div>
                     {/* <h2 className="mb-15 text-grey">{item.title}.</h2> */}
                     <div className="row">
-                      <div className="col-md-12">
-                        <p>{item.text}.</p>
-                        <div className="vew-all mt-50 ml-25">
+                      <div
+                        className="col-md-12 pb-4"
+                        style={{ lineHeight: "2.3" }}
+                      >
+                        <p className="text-black fz-16 fw-400">{item.text}.</p>
+                        <div
+                          className="vew-all mt-20 ml-25"
+                          style={{ marginBottom: "16px" }}
+                        >
                           <Link href="#">
-                            <span className="sub-title">
+                            <span className="text-black fz-17 fw-400">
                               Explore More
                               <span>
                                 <svg

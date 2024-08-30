@@ -69,7 +69,7 @@ const News = () => {
         <LatestNews />
 
         <Awards />
-
+        <Heading headTitle="Gallery" />
         <CarouselEvent data={data} />
       </div>
     </>

@@ -55,6 +55,8 @@ const JostFont = Jost({
   display: "swap",
 });
 
+console.log("JostFont", JostFont);
+
 export default function RootLayout({
   children,
 }: Readonly<{

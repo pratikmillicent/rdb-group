@@ -4,6 +4,7 @@ import { CarouselItem, Col, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import { BsCaretLeft, BsCaretRight } from "react-icons/bs";
 import { FaArrowLeftLong, FaArrowRight } from "react-icons/fa6";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -17,7 +18,7 @@ function DarkVariantExample({ spliti, data }: any) {
   const swiperOptions = {
     modules: [Navigation, Autoplay],
     autoplay: {
-      delay: 1000,
+      delay: 2500,
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
@@ -148,12 +149,14 @@ function splitToNChunks(array, n) {
 }
 
 const directionButtons = (direction) => {
+  console.log("🚀 ~ directionButtons ~ direction:", direction);
   return (
     <span
       aria-hidden="true"
       style={{
         position: "absolute",
-        bottom: "0",
+        // bottom: "0",
+        ...(direction === "Next" ? { right: "-80%" } : { left: "-80%" }),
         width: "fit-content",
         height: "fit-content",
         color: "black",
@@ -163,13 +166,16 @@ const directionButtons = (direction) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        border: "1px solid #d4af5f",
-        backgroundColor: "white",
-        fontSize: "18px",
+        // border: "1px solid #d4af5f",
+        // backgroundColor: "white",
       }}
       className={direction === "Next" ? "button-next" : "button-prev"}
     >
-      {direction}
+      {direction === "Next" ? (
+        <IoIosArrowForward fontSize={48} />
+      ) : (
+        <IoIosArrowBack fontSize={48} />
+      )}
     </span>
   );
 };
@@ -181,9 +187,9 @@ const CarouselEvent = ({ data }) => {
       controls={true}
       indicators={true}
       variant="dark"
-      nextIcon={directionButtons(<BsCaretRight />)}
-      prevIcon={directionButtons(<BsCaretLeft />)}
-      className="d-flex flex-column gap-2  py-5 mb-3 ms-3 me-3"
+      nextIcon={directionButtons("Next")}
+      prevIcon={directionButtons("Previous")}
+      className="d-flex flex-column gap-2  pt-5 mb-3 ms-3 me-3"
     >
       {splitarr.map((spliti, index) => {
         // console.log("out of ", spliti);

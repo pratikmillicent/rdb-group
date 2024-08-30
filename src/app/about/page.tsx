@@ -30,6 +30,7 @@ function About() {
           style={{
             //  height: "calc(100dvh - 80px)",
             objectFit: "initial",
+            height: "90%",
           }}
           src="/assets/video/AboutHero.mp4"
           autoPlay
@@ -45,38 +46,41 @@ function About() {
             top: 0,
             left: 0,
             width: "100%",
-            height: "100%",
+            height: "90%",
             background:
               "linear-gradient(117deg, rgba(23, 38, 57, 90%) 0%, rgba(1, 1, 1, 50%) 75%)",
             zIndex: 1,
             pointerEvents: "none",
           }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "100%",
-              padding: "0 20px",
-            }}
-          >
-            <h3 className="banner-heading hero-heading">About Us</h3>
-            <div
-              style={{
-                width: "70px",
-                height: "3px",
-                borderTop: "solid 2px var(--golden) !important",
-                borderLeft: "none",
-                borderRight: "none",
-                display: "block",
-                margin: "0 auto",
-                marginBottom: "30px",
-              }}
-            ></div>
-          </div>
-        </div>
+        ></div>
+      </div>
+
+      <div
+        className="bg-golden"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+          padding: "0 20px",
+        }}
+      >
+        <h3 className="banner-heading hero-heading text-black pt-4">
+          About Us
+        </h3>
+        <div
+          style={{
+            width: "70px",
+            height: "3px",
+            borderTop: "solid 2px var(--golden) !important",
+            borderLeft: "none",
+            borderRight: "none",
+            display: "block",
+            margin: "0 auto",
+            marginBottom: "30px",
+          }}
+        ></div>
       </div>
       {/* <VisionMission /> */}
       <Experience />

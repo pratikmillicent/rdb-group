@@ -29,6 +29,9 @@
 .bg-navy {
   background-color: var(--navy);
 }
+.bg-grey {
+  background-color: var(--background);
+}
 
 .bg-golden {
   background-color: var(--golden);
@@ -2087,6 +2090,9 @@ img.left {
 
 .fz-35 {
   font-size: 35px !important;
+}
+.fz-36 {
+  font-size: 36px !important;
 }
 
 .fz-40 {
@@ -11134,7 +11140,7 @@ header.in-box {
 .hero-responsive {
   position: relative;
   overflow: hidden;
-  height: 50vh;
+  height: 90vh;
   /* Default height for larger screens */
 }
 
@@ -11373,3 +11379,50 @@ header.in-box {
   line-height: 56px;
   font-size: 600;
 }
+
+.dashboard-wrapper {
+  padding: 60px 0px;
+}
+
+.news-firm {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.director-title {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 10px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--golden);
+  font-size: 12px;
+}
+
+.director-head {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  color: var(--white);
+}
+
+.director-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  color: var(--white);
+}
+
+/* .director-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding: 0px 70px;
+} */

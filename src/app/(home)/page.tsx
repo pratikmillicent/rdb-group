@@ -1,5 +1,4 @@
 "use client";
-
 // import DashboardCount from "@/components/DashboardCount";
 const DashboardCount = lazy(() => import("@/components/DashboardCount"));
 import Heading from "@/components/heading/Heading";
@@ -8,12 +7,13 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import Card from "./components/Card";
 import MobileCarousel from "./components/MobileCarousel";
 import NewGroupGrid from "./components/NewGroup";
-import News from "./components/News";
+// import News from "./components/News";
 import SectionImage from "./components/SectionImage";
 import useMediaQuery from "./components/useMediaQuery";
 import VideoGallary from "./components/VideoGallary";
 import { lazy, useEffect } from "react";
 import { useInView } from "react-spring";
+import News2 from "./News2";
 const Carroussel3D = dynamic(() => import("./components/Carousel"), {
   ssr: false,
 });
@@ -64,7 +64,7 @@ export default function Home() {
       <main className="mw-100">
         <div className="hero-responsive">
           <video
-            className="mw-100 w-100"
+            className="mw-100"
             // borderBottom:"5px solid #d4af5f"
             // style={{ height: "calc(100dvh - 80px)", objectFit: "initial" }}
             src="/assets/video/HeroVideo.mp4"
@@ -104,6 +104,7 @@ export default function Home() {
                   marginBottom: "20px",
                   lineHeight: "56px",
                   letterSpacing: "-1px",
+                  fontWeight: 600,
                 }}
               >
                 Crafted with Experience, Built with Trust
@@ -115,13 +116,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div style={{ marginTop: "10px" }} ref={ref}>
-          {inView && <DashboardCount data={data} />}
-        </div>
+        <div ref={ref}>{inView && <DashboardCount data={data} />}</div>
 
         <SectionImage />
 
-        <div style={{ padding: "20px 0" }}>
+        <div>
           <NewGroupGrid />
         </div>
 
@@ -138,7 +137,7 @@ export default function Home() {
           {isMediumScreen ? (
             <Carroussel3D
               cards={cards}
-              height="450px"
+              height="300px"
               width="1000px"
               margin="0 auto"
               offset={5}
@@ -149,7 +148,7 @@ export default function Home() {
           ) : null}
         </div>
 
-        <News />
+        <News2 />
         <VideoGallary />
       </main>
     </ParallaxProvider>

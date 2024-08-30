@@ -147,14 +147,14 @@ function SectionImage() {
 
   return (
     <section className="container-fluid">
-      <div className="row screen-height">
+      <div className="row">
         <div
-          className="col-md-6 d-flex flex-column align-items-center p-5 bg-navy"
-          style={{}}
+          className="col-md-6 d-flex flex-column justify-content-center align-items-center bg-navy"
+          style={{ padding: '0px 100px' }}
         >
           <div
-            className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-40 fw-700"
-            style={{ marginTop: "60px" }}
+            className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600"
+
           >
             RD Brothers
           </div>
@@ -185,18 +185,18 @@ function SectionImage() {
             className={`tab-content ${animate ? "slide-in" : ""}`}
           >
             {selectedTab === "overview" && (
-              <p className="text-white fz-16">
-                We are a global leader with a distinct vision to shape a sustainable future across the industries we serve. Our aim is to add value to your life through innovation, commitment to excellence, and integrity. With 20 years of experience and a strong global presence, our diverse portfolio encompasses Properties, Realty, Proptech, and Movie Production businesses as part of RD Group. We're more than just a large company; we're a dynamic force for change, creativity, and meaningful impact where it matters most.
+              <p className="text-white fz-16 fw-400" >
+                Our attorneys are the cornerstone of our commitment to providing exceptional legal services. Each member of our team brings a wealth of experience, specialized knowledge, and a deep dedication to achieving the best outcomes for our clients. We pride ourselves on our collaborative approach, ensuring that every case benefits from the collective expertise of our diverse legal team.
               </p>
             )}
             {selectedTab === "mission" && (
-              <p className="text-white fz-16" >
+              <p className="text-white fz-16 fw-400" >
                 Our mission is to deliver exceptional value and innovation across diverse
                 industries and lead with a purpose.
               </p>
             )}
             {selectedTab === "vision" && (
-              <p className="text-white fz-16">
+              <p className="text-white fz-16 fw-400">
                 To lead the global marketplace with diversified excellence, innovation, and purpose-driven
                 ventures.
 

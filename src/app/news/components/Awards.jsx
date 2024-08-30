@@ -152,9 +152,9 @@ const Awards = () => {
                 <p className="class-body" style={{ fontSize: "16px", marginBottom: "20px" }}>
                   {item.description}
                 </p>
-                <Link href="#" className="fz-30 fw-500" style={{ fontSize: "30px", fontWeight: "500" }}>
+                {/* <Link href="#" className=" fw-500" style={{ fontSize: "30px", fontWeight: "500" }}>
                   <FaArrowRight />
-                </Link>
+                </Link> */}
               </div>
             </div>
           </SwiperSlide>

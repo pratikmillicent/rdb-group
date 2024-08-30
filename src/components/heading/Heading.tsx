@@ -5,6 +5,7 @@ interface HeadingProps {
   fontSize?: string;
   isSpace?: boolean;
   isColor?: boolean;
+  isMargin?: string;
   textAlign?: "center" | "left" | "right";
 }
 
@@ -12,6 +13,7 @@ const Heading: React.FC<HeadingProps> = ({
   headTitle,
   isSpace,
   isColor,
+  isMargin = "mt-60",
   textAlign = "center",
 }) => {
   const spanRef = useRef<HTMLSpanElement>(null);
@@ -28,7 +30,9 @@ const Heading: React.FC<HeadingProps> = ({
     <div style={{ textAlign }} className="w-100">
       <h2
         style={{ fontSize: "36px" }}
-        className={`mt-60 ${isSpace && "mb-80"} ${isColor && "text-white"}`}
+        className={`${isMargin} ${isSpace && "mb-80"} ${
+          isColor && "text-white"
+        }`}
       >
         <span ref={spanRef}>{headTitle}</span>
       </h2>
