@@ -69,7 +69,7 @@ function DashboardCount({ data }: DashboardCountProps) {
                   <h3 className="main-color3">
                     <span
                       className="fz-40"
-                      ref={el => {
+                      ref={(el) => {
                         countersRef.current[index] = el;
                       }}
                       data-to={value}

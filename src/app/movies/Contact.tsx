@@ -20,15 +20,15 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
   };
@@ -36,7 +36,7 @@ const Contact = () => {
     <div className="container mt-60">
       <div className="d-flex gap-3">
         <div className="col-12 col-md-11">
-          <Heading headTitle="Contact Us!" width="70px" />
+          <Heading headTitle="Contact Us!" />
           <section className="contact-crev mt-30">
             <div className="container">
               <div className="row">
@@ -172,7 +172,7 @@ const Contact = () => {
           </section>
           <div className="gap-3 section-padding">
             <div className="mt-30">
-              <Heading headTitle="Registered Offices:" width="100px" />
+              <Heading headTitle="Registered Offices:" />
               <div className="row text-light msg_box">
                 <div className="col-12 col-md-4 mb-2">
                   <p className="text-grey fw-bold">

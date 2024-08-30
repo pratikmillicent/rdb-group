@@ -49,7 +49,7 @@ const Mission = () => {
         slidesPerGroup: 3,
       },
     },
-    onSwiper: swiper => {
+    onSwiper: (swiper) => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();
@@ -165,7 +165,7 @@ const Mission = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {release.map(item => (
+                  {release.map((item) => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
@@ -197,7 +197,7 @@ const Mission = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {upcoming.map(item => (
+                  {upcoming.map((item) => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
@@ -228,7 +228,7 @@ const Mission = () => {
 
 export default Mission;
 
-const release = [
+const release: IMovie[] = [
   {
     id: 1,
     image: "https://i.ytimg.com/vi/RiQJw0znUjw/maxresdefault.jpg",
@@ -242,10 +242,16 @@ const release = [
   },
 ];
 
-const upcoming = [
+const upcoming: IMovie[] = [
   // {
   //   id: 1,
   //   image: "https://theunbiasedguy.com/wp-content/uploads/2024/05/Jhamkudi.png",
   //   description: "Skyline Tower in South Mumbai - Expected Completion in 2025",
   // },
 ];
+
+interface IMovie {
+  id: number;
+  image: string;
+  description: string;
+}

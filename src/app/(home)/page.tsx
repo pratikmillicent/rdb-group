@@ -100,14 +100,14 @@ export default function Home() {
               }}
             >
               <h1
-                className="text-white vh-10 heading-text"
+                className="text-white vh-10 hero-heading"
                 style={{
                   marginBottom: "20px",
                   lineHeight: "56px",
                   letterSpacing: "-1px",
                 }}
               >
-                Crafted with Experience, built with trust
+                Crafted with Experience, Built with Trust
               </h1>
               <a href="/about" className="block hero-button">
                 Know more

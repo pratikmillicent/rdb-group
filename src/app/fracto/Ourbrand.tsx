@@ -44,7 +44,7 @@ const Ourbrand = () => {
   return (
     <div className="our-clients section-padding mb-2">
       <div className="container">
-        <Heading headTitle="Our Clients" width="100px" />
+        <Heading headTitle="Our Clients" />
         <div className="row justify-content-center">
           {clients.map((client, index) => (
             <div

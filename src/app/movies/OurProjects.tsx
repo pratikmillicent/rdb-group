@@ -48,7 +48,7 @@ const LatestNews = () => {
       prevEl: latestPrevRef.current,
       nextEl: latestNextRef.current,
     },
-    onSwiper: swiper => {
+    onSwiper: (swiper) => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();
@@ -62,7 +62,7 @@ const LatestNews = () => {
           <div className="sec-lg-head">
             <div className="row">
               <div className="col-lg-12">
-                <Heading headTitle="Our Projects" width="100px" />
+                <Heading headTitle="Our Projects" />
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const LatestNews = () => {
                 id="content-carousel-container-unq-blog"
                 className="swiper-container"
               >
-                {projects.map(item => (
+                {projects.map((item) => (
                   <SwiperSlide
                     key={item.id}
                     className="wow fadeInUp"

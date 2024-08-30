@@ -30,7 +30,7 @@ const Careers = ({ border, paddingTop = true }) => {
     <div className="container">
       <h1>
         <div style={{ paddingTop: paddingTop ? "60px" : "0" }}>
-          <Heading headTitle="Open Positions" width="90px" />
+          <Heading headTitle="Open Positions" />
           {/* <div className="fz-35 fw-600">Open Positions</div> */}
         </div>
       </h1>

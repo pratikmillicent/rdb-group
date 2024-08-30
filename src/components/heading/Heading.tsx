@@ -1,39 +1,43 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 interface HeadingProps {
   headTitle: string;
   fontSize?: string;
   isSpace?: boolean;
   isColor?: boolean;
-  width?: string;
   textAlign?: "center" | "left" | "right";
 }
 
 const Heading: React.FC<HeadingProps> = ({
   headTitle,
-  fontSize = "fs-1",
   isSpace,
   isColor,
-  width = "50px",
   textAlign = "center",
 }) => {
+  const spanRef = useRef<HTMLSpanElement>(null);
+  const [borderWidth, setBorderWidth] = useState<string>("0px");
+
+  useEffect(() => {
+    if (spanRef.current) {
+      const textWidth = spanRef.current.offsetWidth;
+      setBorderWidth(`${textWidth * 0.75}px`);
+    }
+  }, [headTitle]);
+
   return (
     <div style={{ textAlign }} className="w-100">
       <h2
         style={{ fontSize: "36px" }}
         className={`mt-60 ${isSpace && "mb-80"} ${isColor && "text-white"}`}
-        // style={{
-        //   textDecoration: "underline",
-        //   textDecorationColor: "var(--golden)",
-        //   textUnderlineOffset: "15px",
-        //   letterSpacing: "-1px",
-        // }}
       >
-        {headTitle}
+        <span ref={spanRef}>{headTitle}</span>
       </h2>
       <div
         className="border-line"
-        style={{ width, marginLeft: textAlign === "center" ? "auto" : "0" }}
+        style={{
+          width: borderWidth,
+          marginLeft: textAlign === "center" ? "auto" : "0",
+        }}
       ></div>
     </div>
   );

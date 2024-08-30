@@ -3,7 +3,7 @@
 // import Heading from "@/components/heading/Heading";
 
 // function SectionImage() {
-//   const [selectedTab, setSelectedTab] = useState("about");
+//   const [selectedTab, setSelectedTab] = useState("overview");
 //   const [animate, setAnimate] = useState(false);
 
 //   const tabStyle = (isSelected) => ({
@@ -42,8 +42,8 @@
 //         </div>
 //         <div className="mb-4 d-flex flex-wrap justify-content-center">
 //           <button
-//             style={tabStyle(selectedTab === "about")}
-//             onClick={() => handleTabClick("about")}
+//             style={tabStyle(selectedTab === "overview")}
+//             onClick={() => handleTabClick("overview")}
 //             className="me-2 mb-2"
 //           >
 //             About us
@@ -67,7 +67,7 @@
 //           className={`tab-content p-0 text-center ${animate ? "slide-in" : ""}`}
 //           style={{ margin: 0 }}
 //         >
-//           {selectedTab === "about" && (
+//           {selectedTab === "overview" && (
 //             <p>
 //               With a team of over 40 dedicated professionals, averaging more
 //               than 7 years of experience each, we add a touch of Professionalism
@@ -104,13 +104,13 @@ import React, { useState, useEffect } from "react";
 import "../SectionImage.css";
 
 const images = {
-  about: "/assets/images/home/about3.jpg",
+  overview: "/assets/images/home/about3.jpg",
   vision: "/assets/images/home/our-vision.jpg",
   mission: "/assets/images/home/our-mission.jpg",
 };
 
 function SectionImage() {
-  const [selectedTab, setSelectedTab] = useState("about");
+  const [selectedTab, setSelectedTab] = useState("overview");
   const [currentImage, setCurrentImage] = useState(images[selectedTab]);
   const [animate, setAnimate] = useState(false);
 
@@ -149,26 +149,22 @@ function SectionImage() {
     <section className="container-fluid">
       <div className="row screen-height">
         <div
-          className="col-md-6 d-flex flex-column align-items-center justify-content-center p-4 bg-navy"
+          className="col-md-6 d-flex flex-column align-items-center p-5 bg-navy"
           style={{}}
         >
           <div
-            className="mb-4 d-flex justify-content-center align-items-center text-white fw-600"
-            style={{
-              fontSize: "36px",
-              lineHeight: "42px",
-            }}
+            className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-40 fw-700"
+            style={{ marginTop: "60px" }}
           >
-            {/* <Heading headTitle="Overview" className="text-golden"/> */}
-            Overview
+            RD Brothers
           </div>
-          <div className="mb-4 d-flex flex-wrap justify-content-center">
+          <div className="w-100 mb-2 d-flex flex-wrap justify-content-start">
             <button
-              style={tabStyle(selectedTab === "about")}
-              onClick={() => handleTabClick("about")}
+              style={tabStyle(selectedTab === "overview")}
+              onClick={() => handleTabClick("overview")}
               className="btn me-2 mb-2"
             >
-              About us
+              Overview
             </button>
             <button
               style={tabStyle(selectedTab === "mission")}
@@ -186,37 +182,31 @@ function SectionImage() {
             </button>
           </div>
           <div
-            className={`tab-content text-center ${animate ? "slide-in" : ""}`}
+            className={`tab-content ${animate ? "slide-in" : ""}`}
           >
-            {selectedTab === "about" && (
-              <p className="text-white" style={{ padding: "0 40px" }}>
-                We are a global company dedicated to meeting the diverse needs
-                of various industries through a curated range of offerings. With
-                20 years of experience and a strong global presence, our
-                portfolio includes expertise in Properties, Realty, Proptech,
-                and Movie Production. Each of these sectors is driven by our
-                commitment to excellence, innovation, and creating meaningful
-                value.
+            {selectedTab === "overview" && (
+              <p className="text-white fz-16">
+                We are a global leader with a distinct vision to shape a sustainable future across the industries we serve. Our aim is to add value to your life through innovation, commitment to excellence, and integrity. With 20 years of experience and a strong global presence, our diverse portfolio encompasses Properties, Realty, Proptech, and Movie Production businesses as part of RD Group. We're more than just a large company; we're a dynamic force for change, creativity, and meaningful impact where it matters most.
               </p>
             )}
             {selectedTab === "mission" && (
-              <p className="text-white">
-                Our mission is to deliver exceptional value and innovation
-                across diverse industries and lead with a purpose.
+              <p className="text-white fz-16" >
+                Our mission is to deliver exceptional value and innovation across diverse
+                industries and lead with a purpose.
               </p>
             )}
             {selectedTab === "vision" && (
-              <p className="text-white">
-                To lead the global marketplace with diversified excellence,
-                innovation, and purpose-driven ventures.
+              <p className="text-white fz-16">
+                To lead the global marketplace with diversified excellence, innovation, and purpose-driven
+                ventures.
+
               </p>
             )}
           </div>
         </div>
         <div
-          className={`col-md-6 position-relative p-0 ${
-            animate ? "slide-in" : ""
-          } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
+          className={`col-md-6 position-relative p-0 ${animate ? "slide-in" : ""
+            } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
         >
           <div
             className="back-image bg-img parallaxie"
