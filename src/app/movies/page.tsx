@@ -11,25 +11,27 @@ import Enquiries from "./Enquiries";
 import Contact from "../fracto/Contact";
 import TeamSection2 from "../about/components/TeamSection2";
 import Project from "../realty/Project";
+import MovieSlider from "./MovieSlider";
 
 const page = () => {
   return (
     <>
-      <About />
+      <MovieSlider />
+      {/* <About /> */}
       <Mission />
       {/* <OurProjects /> */}
-      <Project />
+      {/* <Project /> */}
       {/* <Movieteam /> */}
-      <TeamSection2 />
-      <div className="container">
+      {/* <TeamSection2 /> */}
+      {/* <div className="container">
         <Awards />
-      </div>
+      </div> */}
 
-      <LatestNews />
+      {/* <LatestNews /> */}
 
       {/* <Enquiries /> */}
       {/* <Contact /> */}
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 };

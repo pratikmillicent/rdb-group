@@ -6,7 +6,7 @@
 //   )
 // }
 
-// export default Project
+// export default Probject
 
 import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -62,7 +62,7 @@ const Project = () => {
         slidesPerGroup: 3,
       },
     },
-    onSwiper: swiper => {
+    onSwiper: (swiper) => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();
@@ -79,7 +79,7 @@ const Project = () => {
           <div className="sec-lg-head">
             <div className="row">
               <div className="col-lg-12">
-                <Heading headTitle="Projects" width="70px" />
+                <Heading headTitle="Projects" />
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ const Project = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {completedProjectsData.map(item => (
+                  {completedProjectsData.map((item) => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
@@ -223,7 +223,7 @@ const Project = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {upcomingProjectsData.map(item => (
+                  {upcomingProjectsData.map((item) => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
@@ -295,7 +295,7 @@ const Project = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {sustainabilityProjectsData.map(item => (
+                  {sustainabilityProjectsData.map((item) => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"

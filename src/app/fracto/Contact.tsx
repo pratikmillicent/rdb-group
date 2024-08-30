@@ -9,15 +9,15 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
   };
@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <div className="container">
       <div className="">
-        <Heading headTitle="Contact Us" width="100px" />
+        <Heading headTitle="Contact Us" />
         <section className="contact-crev mt-30">
           <div className="container">
             <div className="row">

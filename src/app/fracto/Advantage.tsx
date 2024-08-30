@@ -37,7 +37,7 @@ function Advantage() {
         <div className="sec-lg-head">
           <div className="row justify-content-center">
             <div className="col-lg-6 text-center">
-              <Heading headTitle="Advantage" width="150px" />
+              <Heading headTitle="Advantage" />
             </div>
           </div>
         </div>

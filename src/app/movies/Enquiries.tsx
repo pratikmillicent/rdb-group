@@ -31,7 +31,7 @@ const Enquiries = () => {
       <Container>
         <Row className="justify-content-center">
           <Col md={8} lg={6} xl={5}>
-            <Heading headTitle="Equires" width="40px" />
+            <Heading headTitle="Equires" />
             <Form
               onSubmit={handleSubmit}
               className="bg-light p-4 rounded shadow-sm"

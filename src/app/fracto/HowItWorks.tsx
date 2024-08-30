@@ -53,7 +53,7 @@ function HowItWorks() {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-6 text-center">
-            <Heading headTitle="How It Works" width="130px" />
+            <Heading headTitle="How It Works" />
           </div>
         </div>
       </div>
