@@ -28,16 +28,16 @@ const News = () => {
 
   return (
     <>
-      <div style={{ position: "relative" }}>
+      <div>
         <Image
           src="/assets/images/news/banner.png"
-          className="w-100 news-banner banner"
+          className="w-100 d-block  news-banner banner hero-height"
           alt="News Banner"
           // style={{ height: "100vh" }}
           width={800}
           height={500}
         />
-        <div
+        {/* <div
           style={{
             position: "absolute",
             top: 0,
@@ -49,20 +49,13 @@ const News = () => {
             zIndex: 1,
             pointerEvents: "none",
           }}
-        ></div>
+        ></div> */}
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100%",
-          padding: "0 20px",
-        }}
-      >
-        <h3 className="banner-heading hero-heading text-dark">News & Media</h3>
-        <div className="border-line"></div>
+      <div className="bg-golden title-head">
+        <h3 className="banner-heading hero-heading text-dark pt-4">
+          News & Media
+        </h3>
+        <div className="title-center"></div>
       </div>
       <div className="container">
         <LatestNews />
