@@ -86,16 +86,15 @@ function About() {
       <Experience />
       <SectionImage />
       <DirectorCard />
-      <Team />
-
-      <div style={{ marginTop: "10px" }} ref={ref}>
-        {inView && <DashboardCount data={data} />}
-      </div>
 
       {/* <TeamSection /> */}
       {/* <CoreValue2 /> */}
       {/* <TeamSection2 /> */}
       <CallToAction />
+      <Team />
+      <div style={{ marginTop: "10px" }} ref={ref}>
+        {inView && <DashboardCount data={data} />}
+      </div>
     </main>
   );
 }

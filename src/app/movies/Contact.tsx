@@ -11,6 +11,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
+import SocialIcon from "@/components/social-icon/SocialIcon";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,15 +21,15 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
+    setFormData(prevState => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     console.log(formData);
   };
@@ -53,48 +54,7 @@ const Contact = () => {
                     <div className="phone fz-30 fw-600 mt-30 ">
                       <a href="#0">+91 9877737776</a>
                     </div>
-                    <ul className="rest social-text d-flex mt-30 ml-10">
-                      <li className="mr-20">
-                        <Link href="https://www.instagram.com/" target="_blank">
-                          <FaInstagramSquare
-                            className="fz-24 social-icon"
-                            style={{ color: "#E1306C" }}
-                          />
-                        </Link>
-                      </li>
-                      <li className="mr-20">
-                        <Link href="https://www.facebook.com/" target="_blank">
-                          <FaFacebook
-                            className="fz-24 social-icon"
-                            style={{ color: "#1877F2" }}
-                          />
-                        </Link>
-                      </li>
-                      <li className="mr-20">
-                        <Link href="https://x.com/" target="_blank">
-                          <FaSquareXTwitter
-                            className="fz-24 social-icon"
-                            style={{ color: "#000" }}
-                          />
-                        </Link>
-                      </li>
-                      <li className="mr-20">
-                        <Link href="https://www.linkedin.com/" target="_blank">
-                          <FaLinkedin
-                            className="fz-24 social-icon"
-                            style={{ color: "#0077B5" }}
-                          />
-                        </Link>
-                      </li>
-                      <li className="mr-20">
-                        <Link href="https://www.youtube.com/" target="_blank">
-                          <IoLogoYoutube
-                            className="fz-24 social-icon"
-                            style={{ color: "red" }}
-                          />
-                        </Link>
-                      </li>
-                    </ul>
+                    <SocialIcon />
                   </div>
                 </div>
                 <div className="col-lg-6 offset-lg-1 valign">

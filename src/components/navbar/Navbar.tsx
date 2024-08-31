@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { IoMenu } from "react-icons/io5";
-
 import useMediaQuery from "@/app/(home)/components/useMediaQuery";
+import SocialIcon from "../social-icon/SocialIcon";
 
 function Navbar() {
   const path = usePathname();
@@ -220,72 +220,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-
-          <ul className="d-none d-md-flex align-items-center justify-content-center pt-3">
-            <li className="mx-2">
-              <Link
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="d-inline-flex align-items-center text-decoration-none"
-                style={{ color: "white" }}
-              >
-                <i
-                  className="fab fa-instagram fa-2x"
-                  style={{
-                    background:
-                      "linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                ></i>
-              </Link>
-            </li>
-            <li className="mx-2">
-              <Link
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="d-inline-flex align-items-center text-decoration-none"
-                style={{ color: "#3b5998" }} // Facebook color
-              >
-                <i className="fab fa-facebook fa-2x"></i>
-              </Link>
-            </li>
-            <li className="mx-2">
-              <a
-                href="https://x.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="d-inline-flex align-items-center text-decoration-none"
-                style={{ color: "#000000" }} // Twitter color
-              >
-                <i className="fab fa-x-twitter fa-2x"></i>
-              </a>
-            </li>
-            <li className="mx-2">
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="d-inline-flex align-items-center text-decoration-none"
-                style={{ color: "#0A66C2" }} // LinkedIn color
-              >
-                <i className="fab fa-linkedin fa-2x"></i>
-              </a>
-            </li>
-            <li className="mx-2">
-              <a
-                href="https://www.youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="d-inline-flex align-items-center text-decoration-none"
-                style={{ color: "#FF0000" }} // YouTube color
-              >
-                <i className="fab fa-youtube fa-2x"></i>
-              </a>
-            </li>
-          </ul>
+          <SocialIcon />
         </div>
       </div>
     </nav>
