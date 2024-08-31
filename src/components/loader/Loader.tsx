@@ -7,7 +7,7 @@ function Loader() {
     requestAnimationFrame(() => {
       const svg = document.getElementById("svg");
       if (!svg) {
-        console.error("SVG element not found.");
+        console.error("SVG element n ot found.");
         return;
       }
 

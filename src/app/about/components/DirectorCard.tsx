@@ -7,18 +7,35 @@ const DirectorCard = () => {
     <>
       <div>
         <Heading headTitle="Our Leaders" />
-        <div className="bg-navy">
+        <div className="container">
           <div className="">
             <div
-              className="d-flex flex-column flex-md-row main-director"
-              style={{ height: "85vh" }}
+              className="d-flex flex-column flex-md-row main-director "
+              style={{ height: "70vh", width: "100%" }}
             >
-              <div className="w-100 w-md-50 d-flex flex-column align-items-center justify-content-center gap-2 pt-5 ">
+              <div className="d-flex  h-100 " style={{ width: "30%" }}>
+                <Image
+                  src="/assets/images2/Dhaval.jpg"
+                  alt="Dhaval Thakkar"
+                  width={800}
+                  height={500}
+                  className="img-fluid "
+                  style={{
+                    height: "80%",
+                    width: "85%",
+                    border: "4px solid var(--background)",
+                  }}
+                />
+              </div>
+              <div
+                className=" d-flex flex-column  gap-2"
+                style={{ width: "70%" }}
+              >
                 <div className="director-heading">
                   <h5 className="director-title">Founder & CEO</h5>
                   <h1 className="director-head">Dhaval Thakkar</h1>
                 </div>
-                <p className="director-p container" style={{ width: "80%" }}>
+                <p className="director-p">
                   Dhaval Thakkar is a dynamic and detail-oriented leader who
                   believes that innovation is the driving force behind growth
                   and success. With 15 years of expertise in the commercial and
@@ -33,40 +50,20 @@ const DirectorCard = () => {
                   technologies.
                 </p>
               </div>
-              <div className="w-100 w-md-50">
-                <Image
-                  src="/assets/images2/Dhaval.jpg"
-                  alt="Dhaval Thakkar"
-                  width={800}
-                  height={500}
-                  className="img-fluid"
-                  style={{ height: "100%" }}
-                />
-              </div>
             </div>
             <div
               className="d-flex flex-column flex-md-row main-director dirctor-row director-info"
-              style={{ height: "85vh" }}
+              style={{ height: "70vh", width: "100%" }}
             >
-              <div className="w-100 w-md-50">
-                <Image
-                  src="/assets/images2/Raj.jpg"
-                  alt="Raj Thakkar"
-                  width={800}
-                  height={500}
-                  className="img-fluid"
-                  style={{ height: "100%" }}
-                />
-              </div>
-              <div className="w-100 w-md-50  d-flex flex-column align-items-center justify-content-center gap-2">
-                <div
-                // className="director-heading w-100"
-                // style={{ paddingLeft: "67px" }}
-                >
-                  <h5 className="director-title">Founder & CEO</h5>
+              <div
+                className="w-100 w-md-50  d-flex flex-column  gap-2"
+                style={{ width: "70%" }}
+              >
+                <div className="director-heading">
+                  <h5 className="director-title">Founder</h5>
                   <h1 className="director-head">Raj Thakkar</h1>
                 </div>
-                <p className="director-p ps-5" style={{ width: "80%" }}>
+                <p className="director-p pe-5">
                   Raj Thakkar is a visionary leader with a forward-thinking
                   approach, dedicated to driving growth and innovation within
                   our organization. With over 21 years of extensive experience,
@@ -79,6 +76,23 @@ const DirectorCard = () => {
                   apart, as he values building genuine, transparent
                   relationships rooted in trust and mutual respect.
                 </p>
+              </div>
+              <div
+                className="d-flex justify-content-center h-100 "
+                style={{ width: "30%" }}
+              >
+                <Image
+                  src="/assets/images2/Raj.jpg"
+                  alt="Raj Thakkar"
+                  width={800}
+                  height={500}
+                  className="img-fluid"
+                  style={{
+                    height: "80%",
+                    width: "100%",
+                    border: "4px solid var(--background)",
+                  }}
+                />
               </div>
             </div>
           </div>

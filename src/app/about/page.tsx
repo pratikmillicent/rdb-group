@@ -23,15 +23,10 @@ const data = [
 function About() {
   const [ref, inView] = useInView({ once: true });
   return (
-    <main className="h-25">
+    <main className="">
       <div>
         <video
-          className="mw-100 w-100 d-block "
-          // style={{
-          //    height: "calc(100dvh - 80px)",
-          //   objectFit: "initial",
-          //   height: "90%",
-          // }}
+          className="mw-100 w-100 d-block hero-height"
           src="/assets/video/AboutHero.mp4"
           autoPlay
           muted
@@ -40,6 +35,7 @@ function About() {
           preload="auto"
         ></video>
       </div>
+
       {/* 
         <div
           style={{
@@ -56,32 +52,11 @@ function About() {
         ></div> */}
       {/* </div> */}
 
-      <div
-        className="bg-golden"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100%",
-          padding: "0 20px",
-        }}
-      >
+      <div className="bg-golden title-head">
         <h3 className="banner-heading hero-heading text-black pt-4">
           About Us
         </h3>
-        <div
-          style={{
-            width: "70px",
-            height: "3px",
-            borderTop: "solid 2px var(--golden) !important",
-            borderLeft: "none",
-            borderRight: "none",
-            display: "block",
-            margin: "0 auto",
-            marginBottom: "30px",
-          }}
-        ></div>
+        <div className="title-center"></div>
       </div>
       {/* <VisionMission /> */}
       <Experience />

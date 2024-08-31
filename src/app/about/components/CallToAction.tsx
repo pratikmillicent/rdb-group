@@ -175,7 +175,7 @@ function CallToAction({}) {
                   color: "white",
                 }}
               >
-                Our <br /> Core <br /> Values
+                Our <br /> Core Values
               </div>
               <div className="col-lg-4 col-md-6 col-12 p-0">
                 <div className="border cor-col px-5">
