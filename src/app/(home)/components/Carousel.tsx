@@ -17,6 +17,15 @@ export default function Carroussel3D(props: any) {
     setShowArrows(props.showArrows);
   }, [props.offset, props.showArrows]);
 
+  // Auto-scroll logic
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setGoToSlide((prev) => (prev + 1) % cards.length);
+    }, props.autoScrollInterval || 3000); // Auto-scroll interval in milliseconds
+
+    return () => clearInterval(interval); // Clean up the interval on unmount
+  }, [cards.length]);
+
   return (
     <div
       style={{
