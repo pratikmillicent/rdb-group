@@ -46,7 +46,7 @@ const SocialIcon = () => {
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="d-inline-flex align-items-center text-decoration-none "
+            className="d-inline-flex align-items-center text-decoration-none"
             // style={{ color: social.color }}
           >
             {/* <i
