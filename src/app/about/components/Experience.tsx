@@ -22,11 +22,15 @@ const Experience = () => {
           </div>
           <div className="col-md-4 d-flex flex-col justify-content-center">
             <p style={{ fontSize: "16px", color: "var(--navy)" }}>
-              We take pride in the depth and breadth of experience that our team
-              of lawyers brings to the table. With years of dedicated practice
-              in various areas of law, our attorneys have honed their skills,
-              developed specialized knowledge, and earned a reputation for
-              excellence in their respective fields.
+              We are a global leader with a distinct vision to shape a
+              sustainable future across the industries we serve. Our aim is to
+              add value to your life through innovation, commitment to
+              excellence and integrity. With 20 years of experience and a strong
+              global presence, our diverse portfolio encompasses Properties,
+              Realty, Proptech, and Movie Production businesses as part of RD
+              Group. We're more than just a large company; we're a dynamic force
+              for change, creativity, and meaningful impact where it matters
+              most.
             </p>
           </div>
         </div>
