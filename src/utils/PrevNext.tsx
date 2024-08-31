@@ -1,6 +1,5 @@
 import React from "react";
 import { BsCaretLeft, BsCaretRight } from "react-icons/bs";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const PrevNext = ({ prevRef, nextRef }) => {
   console.log("first", prevRef, "second", nextRef);
@@ -18,17 +17,17 @@ const PrevNext = ({ prevRef, nextRef }) => {
             height: "fit-content",
             color: "black",
             fontWeight: "bold",
-            // padding: "10px 40px",
+            padding: "10px 40px",
             borderRadius: "6px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            // border: "1px solid #d4af5f",
+            border: "1px solid #d4af5f",
             backgroundColor: "white",
             fontSize: "18px",
           }}
         >
-          <IoIosArrowBack fontSize={48} />
+          <BsCaretLeft />
         </div>
         <div
           ref={nextRef}
@@ -41,18 +40,17 @@ const PrevNext = ({ prevRef, nextRef }) => {
             height: "fit-content",
             color: "black",
             fontWeight: "bold",
-            // padding: "10px 20px",
-
+            padding: "10px 40px",
             borderRadius: "6px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            // border: "1px solid #d4af5f",
+            border: "1px solid #d4af5f",
             backgroundColor: "white",
             fontSize: "18px",
           }}
         >
-          <IoIosArrowForward fontSize={48} />
+          <BsCaretRight />
         </div>
       </div>
     </div>

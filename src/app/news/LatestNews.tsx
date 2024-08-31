@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CarouselEvent from "../(home)/components/CardImagesCarousel";
 import PrevNext from "@/utils/PrevNext";
+import News2 from "../(home)/News2";
 
 const LatestNews = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
@@ -64,14 +65,8 @@ const LatestNews = () => {
     <div>
       <section className="blog-modern">
         <div className="container">
-          <div className="sec-lg-head">
-            <div className="row">
-              <div className="col-lg-12">
-                <Heading headTitle="Latest News" />
-              </div>
-            </div>
-          </div>
-          <div className="blog-carsouel">
+          <div className="sec-lg-head"></div>
+          {/* <div className="blog-carsouel">
             {loadSwiper && (
               <Swiper
                 {...swiperOptions}
@@ -140,7 +135,9 @@ const LatestNews = () => {
               </Swiper>
             )}
             <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} />
-          </div>
+          </div> */}
+
+          <News2 />
         </div>
       </section>
     </div>

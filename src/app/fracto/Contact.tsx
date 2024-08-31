@@ -1,4 +1,5 @@
 import Heading from "@/components/heading/Heading";
+import SocialIcon from "@/components/social-icon/SocialIcon";
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -9,15 +10,15 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
+    setFormData(prevState => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     console.log(formData);
   };
@@ -44,7 +45,7 @@ const Contact = () => {
                     </a>
                   </div>
 
-                  <ul className="d-flex justify-content-center justify-content-lg-start align-items-center pt-3">
+                  {/* <ul className="d-flex justify-content-center justify-content-lg-start align-items-center pt-3">
                     <li className="mx-2">
                       <a
                         href="https://www.instagram.com"
@@ -108,7 +109,8 @@ const Contact = () => {
                         <i className="fab fa-youtube fa-2x"></i>
                       </a>
                     </li>
-                  </ul>
+                  </ul> */}
+                  <SocialIcon />
                 </div>
               </div>
               <div className="col-lg-6 col-md-12">

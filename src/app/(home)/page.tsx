@@ -196,7 +196,7 @@ export default function Home() {
           {isMediumScreen ? (
             <Carroussel3D
               cards={cards}
-              height="300px"
+              height="320px"
               width="1000px"
               margin="0 auto"
               offset={5}
