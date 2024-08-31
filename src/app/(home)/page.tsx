@@ -43,27 +43,27 @@ export default function Home() {
   const videoData = [
     {
       src: "/assets/video/video-3.mp4",
-      text: "  Crafted with experience, Built with Trust",
+      text: "Crafted with experience, Built with Trust",
       link: "/about",
     },
     {
       src: "/assets/video/video-1.mp4",
-      text: " Properties",
+      text: "Properties",
       link: "https://rdbrothers.com",
     },
     {
       src: "/assets/video/video-2.mp4",
-      text: " Realty",
+      text: "Realty",
       link: "/realty",
     },
     {
       src: "/assets/video/video-3.mp4",
-      text: " Fracto",
+      text: "Fracto",
       link: "/fracto",
     },
     {
       src: "/assets/video/video-4.mp4",
-      text: " Movies",
+      text: "Movies",
       link: "/movies",
     },
   ];
@@ -87,31 +87,35 @@ export default function Home() {
     setLinkHref(link);
     setDisplayedText(""); // Reset the displayed text for typing effect
     videoRef?.current?.play(); // Ensure the next video plays automatically
-    setTimeout(() => {
-      setHeadingText("" + text);
-    }, 500);
+    // setTimeout(() => {
+    //   setHeadingText("" + text);
+    // }, 500);
   }, [loopCount]);
 
   useEffect(() => {
-    let charIndex = 0;
+    const { src, text, link } = videoData[loopCount];
+    // let charIndex = 0;
     let typingTimeout;
 
-    const typeText = () => {
-      if (charIndex < headingText.length) {
-        setDisplayedText((prev) => prev + headingText.charAt(charIndex));
-        charIndex++;
-        typingTimeout = setTimeout(typeText, 100); // Adjust the typing speed here
-      }
+    const typeText = (text) => {
+      // if (charIndex < text.length) {
+      //   setDisplayedText((prev) => prev + text.charAt(charIndex));
+      //   charIndex++;
+      // }
+
+      setDisplayedText((prev) => prev + text.slice(0, 1));
+
+      typingTimeout = setTimeout(() => typeText(text.slice(1)), 100); // Adjust the typing speed here
     };
 
-    if (headingText) {
-      typeText();
+    if (text) {
+      typeText(text);
     }
 
     return () => {
       clearTimeout(typingTimeout); // Clear the timeout on effect cleanup
     };
-  }, [headingText]);
+  }, [loopCount]);
   console.log(loopCount, "loopCount");
 
   return (
