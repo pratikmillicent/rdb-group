@@ -562,6 +562,17 @@ img {
     height: calc(100% + 6px);
     border: 2px solid #d4af37;
   }
+  @media (max-width: 480px) {
+    .swiper-arrow-mobile {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .swiper-arrow-mobile {
+      display: none !important;
+    }
+  }
 
   .main-director {
     height: auto !important;
@@ -11644,3 +11655,35 @@ header.in-box {
   bottom: 572px;
   left: 4px;
 } */
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* .box {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaeaea;
+} */
+
+.small-container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container-box {
+  position: relative;
+}
+.container-box .arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+}
+.container-box .arrow.arrow-left {
+  left: 0;
+}
+.container-box .arrow.arrow-right {
+  right: 0;
+}

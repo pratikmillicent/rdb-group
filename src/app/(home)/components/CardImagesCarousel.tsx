@@ -169,7 +169,7 @@ const directionButtons = (direction) => {
         // border: "1px solid #d4af5f",
         // backgroundColor: "white",
       }}
-      className={direction === "Next" ? "button-next" : "button-prev"}
+      className={`${direction} === Next ? button-next : button-prev swiper-arrow-mobile`}
     >
       {direction === "Next" ? (
         <IoIosArrowForward fontSize={48} />
@@ -185,7 +185,7 @@ const CarouselEvent = ({ data }) => {
     <Carousel
       interval={null}
       controls={true}
-      indicators={true}
+      indicators={false}
       variant="dark"
       nextIcon={directionButtons("Next")}
       prevIcon={directionButtons("Previous")}

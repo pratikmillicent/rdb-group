@@ -173,7 +173,7 @@ const NewGroupGrid: React.FC = () => {
                     <div className="d-flex justify-content-left align-items-left gap-5  py-2">
                       <div>
                         <Heading
-                          headTitle={`RD Brother ${item.type}`}
+                          headTitle={`RD Brothers ${item.type}`}
                           isMargin=""
                         />
                       </div>

@@ -23,15 +23,15 @@ const data = [
 function About() {
   const [ref, inView] = useInView({ once: true });
   return (
-    <main className="mw-100">
-      <div className="hero-responsive">
+    <div className="h-25">
+      <div>
         <video
           className="mw-100 w-100 d-block "
-          style={{
-            //  height: "calc(100dvh - 80px)",
-            objectFit: "initial",
-            height: "90%",
-          }}
+          // style={{
+          //    height: "calc(100dvh - 80px)",
+          //   objectFit: "initial",
+          //   height: "90%",
+          // }}
           src="/assets/video/AboutHero.mp4"
           autoPlay
           muted
@@ -39,7 +39,8 @@ function About() {
           loop
           preload="auto"
         ></video>
-
+      </div>
+      {/* 
         <div
           style={{
             position: "absolute",
@@ -52,8 +53,8 @@ function About() {
             zIndex: 1,
             pointerEvents: "none",
           }}
-        ></div>
-      </div>
+        ></div> */}
+      {/* </div> */}
 
       <div
         className="bg-golden"
@@ -96,7 +97,7 @@ function About() {
       {/* <CoreValue2 /> */}
       {/* <TeamSection2 /> */}
       <CallToAction />
-    </main>
+    </div>
   );
 }
 
