@@ -75,12 +75,20 @@ function Carousel({
                   ))}
                 </Swiper>
               )}
-              <div className="swiper-controls work-controls arrow-out">
+              <div
+                className="swiper-controls work-controls arrow-out"
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  position: "absolute",
+                  bottom: "340px",
+                  zIndex: 2,
+                  width: "100%",
+                }}
+              >
                 <div className="container">
-                  <PrevNext
-                    nextRef={nextVideoGalleryRef}
-                    prevRef={prevVideoGalleryRef}
-                  />
+                  <PrevNext direction={"Next"} />
+
                   <div className="swiper-pagination"></div>
                 </div>
               </div>
