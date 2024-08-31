@@ -23,7 +23,7 @@ const data = [
 function About() {
   const [ref, inView] = useInView({ once: true });
   return (
-    <div className="h-25">
+    <main className="h-25">
       <div>
         <video
           className="mw-100 w-100 d-block "
@@ -92,15 +92,11 @@ function About() {
       {/* <CoreValue2 /> */}
       {/* <TeamSection2 /> */}
       <CallToAction />
-<<<<<<< HEAD
       <Team />
       <div style={{ marginTop: "10px" }} ref={ref}>
         {inView && <DashboardCount data={data} />}
       </div>
     </main>
-=======
-    </div>
->>>>>>> eb2907d8af7e3bbc0cf2e95196075a83b10b9fb2
   );
 }
 
