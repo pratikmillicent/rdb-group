@@ -1,20 +1,19 @@
 //@ts-nocheck
 "use client";
-// import DashboardCount from "@/components/DashboardCount";
-const DashboardCount = lazy(() => import("@/components/DashboardCount"));
-import Heading from "@/components/heading/Heading";
-import dynamic from "next/dynamic";
-import { ParallaxProvider } from "react-scroll-parallax";
-import Card from "./components/Card";
-import MobileCarousel from "./components/MobileCarousel";
-import NewGroupGrid from "./components/NewGroup";
-// import News from "./components/News";
-import SectionImage from "./components/SectionImage";
-import useMediaQuery from "./components/useMediaQuery";
-import VideoGallary from "./components/VideoGallary";
 import { lazy, useEffect, useRef, useState } from "react";
 import { useInView } from "react-spring";
+import dynamic from "next/dynamic";
+import { ParallaxProvider } from "react-scroll-parallax";
+import useMediaQuery from "./components/useMediaQuery";
+import SectionImage from "./components/SectionImage";
+import NewGroupGrid from "./components/NewGroup";
+import Heading from "@/components/heading/Heading";
 import News2 from "./News2";
+import VideoGallary from "./components/VideoGallary";
+import Card from "./components/Card";
+import MobileCarousel from "./components/MobileCarousel";
+
+const DashboardCount = lazy(() => import("@/components/DashboardCount"));
 const Carroussel3D = dynamic(() => import("./components/Carousel"), {
   ssr: false,
 });
@@ -39,8 +38,14 @@ export default function Home() {
   const [linkHref, setLinkHref] = useState("/about");
   const [displayedText, setDisplayedText] = useState("");
   const videoRef = useRef(null);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const videoData = [
+    {
+      src: "/assets/video/video-3.mp4",
+      text: "  Crafted with experience, Built with Trust",
+      link: "/about",
+    },
     {
       src: "/assets/video/video-1.mp4",
       text: " Properties",
@@ -64,23 +69,27 @@ export default function Home() {
   ];
 
   const handleVideoEnd = () => {
-    if (loopCount < videoData.length - 1) {
-      setLoopCount(loopCount + 1);
-    } else {
-      setLoopCount(0);
-    }
+    setIsTransitioning(true); // Start the transition
+
+    setTimeout(() => {
+      if (loopCount < videoData.length - 1) {
+        setLoopCount(loopCount + 1);
+      } else {
+        setLoopCount(0);
+      }
+      setIsTransitioning(false); // End the transition after source change
+    }, 500); // Duration of the fade-out effect
   };
 
   useEffect(() => {
     const { src, text, link } = videoData[loopCount];
     setVideoSrc(src);
-    // setHeadingText(text);
     setLinkHref(link);
     setDisplayedText(""); // Reset the displayed text for typing effect
     videoRef?.current?.play(); // Ensure the next video plays automatically
     setTimeout(() => {
       setHeadingText("" + text);
-    }, 1500);
+    }, 500);
   }, [loopCount]);
 
   useEffect(() => {
@@ -103,18 +112,19 @@ export default function Home() {
       clearTimeout(typingTimeout); // Clear the timeout on effect cleanup
     };
   }, [headingText]);
+  console.log(loopCount, "loopCount");
 
   return (
     <ParallaxProvider>
       <main className="mw-100">
         <div className="hero-responsive">
           <video
-            className="mw-100"
+            className={`mw-100 ${isTransitioning ? "fade-out" : "fade-in"}`}
             src={videoSrc}
             autoPlay
             muted
             playsInline
-            loop={false} // Disable infinite looping
+            loop={false}
             preload="auto"
             onEnded={handleVideoEnd}
             ref={videoRef}
@@ -144,17 +154,19 @@ export default function Home() {
               }}
             >
               <div className="d-flex align-items-center gap-3">
-                <h1
-                  className="text-white vh-10 hero-heading"
-                  style={{
-                    marginBottom: "20px",
-                    lineHeight: "56px",
-                    letterSpacing: "-1px",
-                    fontWeight: 400,
-                  }}
-                >
-                  R.D.BROTHERS
-                </h1>
+                {loopCount !== 0 && (
+                  <h1
+                    className="text-white vh-10 hero-heading"
+                    style={{
+                      marginBottom: "20px",
+                      lineHeight: "56px",
+                      letterSpacing: "-1px",
+                      fontWeight: 400,
+                    }}
+                  >
+                    R.D.BROTHERS
+                  </h1>
+                )}
                 <p
                   style={{
                     marginBottom: "20px",
@@ -162,7 +174,7 @@ export default function Home() {
                     letterSpacing: "-1px",
                     fontWeight: 400,
                     fontSize: "42px",
-                    color: "var(--golden)",
+                    color: loopCount !== 0 ? "var(--golden)" : "#fff",
                   }}
                 >
                   {displayedText}
@@ -240,3 +252,15 @@ let cards = [
     ),
   },
 ];
+
+// CSS for the video transition
+<style jsx>{`
+  .fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+  }
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+`}</style>;

@@ -118,7 +118,12 @@ const NewGroupGrid: React.FC = () => {
   return (
     <section className="portfolio">
       <div className="overflow-hidden">
-        <div className="sec-lg-head mb-10">
+        <div
+          style={{
+            background: "var(--background)",
+          }}
+          className="sec-lg-head"
+        >
           <div className="row">
             <div className="col-lg-12">
               <div className="position-re">
@@ -170,15 +175,17 @@ const NewGroupGrid: React.FC = () => {
                         height={500}
                       />
                     </div>
-                    <div className="d-flex justify-content-left align-items-left gap-5  py-2">
+                    <div className="d-flex justify-content-left align-items-left gap-3  pt-2">
                       <div>
                         <Heading
-                          headTitle={`RD Brothers ${item.type}`}
+                          headTitle={`R.D.Brothers ${item.type}`}
                           isMargin=""
+                          textAlign="center"
                         />
                       </div>
+
                       <div className="mt-5">
-                        <FaBuilding fontSize={35} color="var(--golden)" />
+                        <FaBuilding fontSize={28} color="var(--golden)" />
                       </div>
                     </div>
                     {/* <h2 className="mb-15 text-grey">{item.title}.</h2> */}
@@ -187,7 +194,14 @@ const NewGroupGrid: React.FC = () => {
                         className="col-md-12 pb-4"
                         style={{ lineHeight: "2.3" }}
                       >
-                        <p className="text-black fz-16 fw-400">{item.text}.</p>
+                        <p
+                          style={{
+                            textAlign: "justify",
+                          }}
+                          className="text-black fz-16 fw-400"
+                        >
+                          {item.text}.
+                        </p>
                         <div
                           className="vew-all mt-20 ml-25"
                           style={{ marginBottom: "16px" }}

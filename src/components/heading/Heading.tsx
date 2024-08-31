@@ -29,10 +29,9 @@ const Heading: React.FC<HeadingProps> = ({
   return (
     <div style={{ textAlign }} className="w-100">
       <h2
-        style={{ fontSize: "36px" }}
         className={`${isMargin} ${isSpace && "mb-80"} ${
           isColor && "text-white"
-        }`}
+        } fs-2`}
       >
         <span ref={spanRef}>{headTitle}</span>
       </h2>
