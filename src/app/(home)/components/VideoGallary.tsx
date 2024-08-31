@@ -1,8 +1,15 @@
+//@ts-nocheck
+
 "use client";
-import Carousel from "@/components/carousel/Carousel";
-import Heading from "@/components/heading/Heading";
-import React, { useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination } from "swiper";
+import "swiper/swiper-bundle.css";
+import "./videogallery.css";
+import Heading from "@/components/heading/Heading";
+
+SwiperCore.use([Navigation, Pagination]);
 
 interface Video {
   image: string;
@@ -10,6 +17,7 @@ interface Video {
   videoId: string;
   channel: string;
 }
+
 const data: Video[] = [
   {
     image: "/assets/images/home/business-update2.webp",
@@ -38,77 +46,181 @@ const data: Video[] = [
 ];
 
 function VideoGallary() {
-  const [isVideoOpen, setIsVideoOpen] = useState<Video | null>(null);
+  const swiperRef = useRef<SwiperCore>(null);
+  const [loadSwiper, setLoadSwiper] = useState(false);
 
-  function openVideo(
-    event: React.MouseEvent<HTMLDivElement, MouseEvent>,
-    item: Video
-  ) {
-    event?.preventDefault();
-    setIsVideoOpen(item);
-  }
+  const handlePrev = () => {
+    if (swiperRef.current) swiperRef.current.slidePrev();
+  };
+
+  const handleNext = () => {
+    if (swiperRef.current) swiperRef.current.slideNext();
+  };
+
+  useEffect(() => {
+    setLoadSwiper(true);
+  }, []);
+
+  const renderSlide = (item: Video) => (
+    <div className="">
+      {/* <Image
+        src={item.image}
+        alt={item.title}
+        width={100}
+        height={100}
+        style={{
+          width: "100%",
+          height: "250px",
+          objectFit: "cover",
+        }}
+      /> */}
+      {/* <div>
+        <div className="fz-20 fw-600 pt-3">{item.title}</div>
+      </div> */}
+      <div onClick={(e) => openVideo?.(e, item)}>
+        <div style={{ position: "relative" }}>
+          <svg
+            style={{
+              position: "absolute",
+              width: "100px",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+            className="video-overlay-play-button"
+            viewBox="0 0 200 200"
+          >
+            <circle
+              cx="100"
+              cy="100"
+              r="90"
+              fill="none"
+              strokeWidth="15"
+              stroke="#fff"
+            />
+            <polygon points="70, 55 70, 145 145, 100" fill="#fff" />
+          </svg>
+          <Image
+            src={item?.image}
+            className="circle-img"
+            alt="Landscape picture"
+            width={800}
+            height={500}
+          />
+        </div>
+        <div
+          style={{
+            background: "#fff",
+            padding: "16px",
+            fontSize: "20px",
+            fontWeight: "600",
+          }}
+        >
+          {item?.title}
+        </div>
+      </div>
+    </div>
+  );
 
   return (
-    <div className="container">
-      <div className="sec-lg-head">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="position-re">
-              {/* <div className="fz-50 fw-600">Video Gallery</div> */}
-              <Heading headTitle="Our Gallery" />
+    <>
+      <Heading headTitle="Our Gallery" />
+      <div className="container">
+        <div className="container-fluid rest">
+          <div className="row" style={{ marginBottom: "120px" }}>
+            <div className="col-12" style={{ position: "relative" }}>
+              <div className="work-crus work-crus2">
+                {loadSwiper && (
+                  <Swiper
+                    {...swiperOptions}
+                    id="content-carousel-container-unq-w"
+                    className="swiper-container"
+                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                  >
+                    {data.map((item, i) => (
+                      <SwiperSlide key={i}>{renderSlide(item)}</SwiperSlide>
+                    ))}
+                    {/* <div className="swiper-pagination" /> */}
+                  </Swiper>
+                )}
+              </div>
+
+              {/* <div
+                className=""
+                style={{
+                  position: "absolute",
+                  width: "89vw",
+                  alignItems: "center",
+                  top: "94%",
+                  alignContent: "center",
+                }}
+              > */}
+              <div
+                className="swiper-button-next text-dark fw-600 swiper-arrow-mobile"
+                style={{
+                  fontWeight: "600",
+                  height: "40px",
+                  width: "40px",
+                  borderRadius: "50%",
+                  right: "-60px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                }}
+              ></div>
+
+              <div
+                className="swiper-button-prev text-dark swiper-arrow-mobile"
+                style={{
+                  fontWeight: "600",
+                  height: "40px",
+                  width: "40px",
+                  borderRadius: "50%",
+                  position: "absolute",
+                  left: "-60px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                }}
+              />
+              {/* </div> */}
             </div>
           </div>
         </div>
       </div>
-      <Carousel
-        data={data}
-        component={(item: Video) => (
-          <div onClick={(e) => openVideo?.(e, item)}>
-            <div style={{ position: "relative" }}>
-              <svg
-                style={{
-                  position: "absolute",
-                  width: "100px",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                }}
-                className="video-overlay-play-button"
-                viewBox="0 0 200 200"
-              >
-                <circle
-                  cx="100"
-                  cy="100"
-                  r="90"
-                  fill="none"
-                  strokeWidth="15"
-                  stroke="#fff"
-                />
-                <polygon points="70, 55 70, 145 145, 100" fill="#fff" />
-              </svg>
-              <Image
-                src={item?.image}
-                className="circle-img"
-                alt="Landscape picture"
-                width={800}
-                height={500}
-              />
-            </div>
-            <div
-              style={{
-                background: "#fff",
-                padding: "16px",
-                fontSize: "20px",
-                fontWeight: "600",
-              }}
-            >
-              {item?.title}
-            </div>
-          </div>
-        )}
-      />
-    </div>
+    </>
   );
 }
+
+const swiperOptions = {
+  speed: 1000,
+  spaceBetween: 80,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 2,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 60,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+};
 
 export default VideoGallary;

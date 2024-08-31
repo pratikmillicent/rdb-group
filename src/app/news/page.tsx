@@ -49,21 +49,20 @@ const News = () => {
             zIndex: 1,
             pointerEvents: "none",
           }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "100%",
-              padding: "0 20px",
-            }}
-          >
-            <h3 className="banner-heading hero-heading">News & Media</h3>
-            <div className="border-line"></div>
-          </div>
-        </div>
+        ></div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+          padding: "0 20px",
+        }}
+      >
+        <h3 className="banner-heading hero-heading text-dark">News & Media</h3>
+        <div className="border-line"></div>
       </div>
       <div className="container">
         <LatestNews />

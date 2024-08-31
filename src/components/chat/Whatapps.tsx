@@ -22,8 +22,8 @@ const Whatapps = () => {
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          width="56"
-          height="56"
+          width="46"
+          height="46"
           viewBox="0 0 80 80"
         >
           {" "}
