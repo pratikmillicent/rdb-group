@@ -212,6 +212,7 @@ export default function Home() {
               width="1000px"
               margin="0 auto"
               offset={5}
+              autoScrollInterval={5000}
               showArrows={false}
             />
           ) : isSmallScreen ? (
@@ -229,27 +230,19 @@ export default function Home() {
 let cards = [
   {
     key: 1,
-    content: (
-      <Card imagen="https://plus.unsplash.com/premium_photo-1661333830959-1f6ca808c5b5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1aWxkaW5nJTIwZXZlbnRzfGVufDB8fDB8fHww" />
-    ),
+    content: <Card imagen="/assets/home/Events.jpg" />,
   },
   {
     key: 2,
-    content: (
-      <Card imagen="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29ycG9yYXRlfGVufDB8MHwwfHx8MA%3D%3D" />
-    ),
+    content: <Card imagen="https://fakeimg.pl/640x320" />,
   },
   {
     key: 3,
-    content: (
-      <Card imagen="https://media.istockphoto.com/id/1393885905/photo/real-estate-agent-showing-a-mature-couple-a-new-house.jpg?s=612x612&w=0&k=20&c=uSziAtn73HvrWJxE8UR1HZlLkfjfvruhvgxZOPFDDzM=" />
-    ),
+    content: <Card imagen="/assets/home/Events.jpg" />,
   },
   {
     key: 4,
-    content: (
-      <Card imagen="https://media.istockphoto.com/id/1033661996/photo/two-businessmen-shaking-hands.webp?b=1&s=170667a&w=0&k=20&c=qn517_spE0VTbdC159vNLGDESuNhztqV1uIq5jmqq7U=" />
-    ),
+    content: <Card imagen="https://fakeimg.pl/640x320" />,
   },
 ];
 

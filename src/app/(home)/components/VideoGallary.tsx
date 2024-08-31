@@ -63,20 +63,6 @@ function VideoGallary() {
 
   const renderSlide = (item: Video) => (
     <div className="">
-      {/* <Image
-        src={item.image}
-        alt={item.title}
-        width={100}
-        height={100}
-        style={{
-          width: "100%",
-          height: "250px",
-          objectFit: "cover",
-        }}
-      /> */}
-      {/* <div>
-        <div className="fz-20 fw-600 pt-3">{item.title}</div>
-      </div> */}
       <div onClick={(e) => openVideo?.(e, item)}>
         <div style={{ position: "relative" }}>
           <svg
@@ -105,10 +91,11 @@ function VideoGallary() {
             className="circle-img"
             alt="Landscape picture"
             width={800}
-            height={500}
+            height={300}
+            style={{ height: "250px" }}
           />
         </div>
-        <div
+        {/* <div
           style={{
             background: "#fff",
             padding: "16px",
@@ -117,7 +104,7 @@ function VideoGallary() {
           }}
         >
           {item?.title}
-        </div>
+        </div> */}
       </div>
     </div>
   );

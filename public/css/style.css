@@ -11525,50 +11525,15 @@ header.in-box {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: -1px;
-  color: var(--white);
+  color: var(--navy) !important;
 }
 
 .director-p {
   font-weight: 400;
   font-size: 16px;
   line-height: 29px;
-  color: var(--white);
-}
-
-/* .director-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 100%;
-  padding: 0px 70px;
-} */
-
-.director-title {
-  display: inline-block;
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  line-height: 10px;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  color: var(--golden);
-  font-size: 12px;
-}
-
-.director-head {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: -1px;
-  color: var(--white);
-}
-
-.director-p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 29px;
-  color: var(--white);
+  color: var(--navy) !important;
+  text-align: justify !important;
 }
 
 .core-head {
@@ -11603,6 +11568,43 @@ header.in-box {
 
 .cor-col:hover .core-icon {
   animation: bounce 1s infinite;
+  color: var(--white);
+}
+
+/* .director-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding: 0px 70px;
+} */
+
+.director-title {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 10px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--golden);
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.director-head {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  color: var(--white);
+}
+
+.director-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
   color: var(--white);
 }
 
@@ -11682,4 +11684,29 @@ header.in-box {
 
 .container-box .arrow.arrow-right {
   right: 0;
+}
+
+.hero-height {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.title-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.title-center {
+  width: 70px;
+  height: 3px;
+  border-top: solid 2px var(--golden) !important;
+  border-left: none;
+  border-right: none;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
