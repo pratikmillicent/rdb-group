@@ -185,11 +185,17 @@ function Footer() {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="social-icons icon-golden p-2 d-inline-flex align-items-center text-decoration-none"
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            textAlign: "center",
+                          }}
                         >
                           <i
                             className={`fab fa-${social.icon} `}
                             style={{
                               fontSize: "20px",
+                              margin: "auto",
                               // background: "#fff",
                             }}
                           ></i>
