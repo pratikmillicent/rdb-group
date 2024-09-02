@@ -171,6 +171,7 @@ function Footer() {
                 >
                   {socialIconData.map((social, index) => (
                     <div
+                      key={index}
                       className="social-media-icon"
                       // style={{
                       //   padding: "7px 5px",
