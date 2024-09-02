@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const socialIconData = [
   {
-    icon: "/assets/social-media/instagram.png",
+    icon: "/assets/social-media/instagram.svg",
     url: "https://www.instagram.com/rdbrothersproperty?igsh=MTRpbHowcHdlazlkMA",
     alt: "Instagram",
     color: "linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4)", // Instagram gradient
   },
   {
-    icon: "/assets/social-media/facebook.png",
+    icon: "/assets/social-media/facebook.svg",
     url: "https://www.facebook.com/RDBROTHERSPROPERTIES?mibextid=LQQJ4d",
     alt: "Facebook",
     color: "#3b5998", // Facebook color
@@ -21,13 +21,13 @@ const socialIconData = [
   //     color: "#000000", // X color
   //   },
   {
-    icon: "/assets/social-media/linkedin.png",
+    icon: "/assets/social-media/linkedin.svg",
     url: "https://www.linkedin.com/company/rd-brothers-property-consultant-llp/",
     alt: "LinkedIn",
     color: "#0A66C2", // LinkedIn color
   },
   {
-    icon: "/assets/social-media/youtube.png",
+    icon: "/assets/social-media/youtube.svg",
     url: "https://youtube.com/@r.d.brothersproperties?feature=shared",
     alt: "YouTube",
     color: "#FF0000", // YouTube color

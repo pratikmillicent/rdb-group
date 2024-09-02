@@ -51,12 +51,7 @@ const News = () => {
           }}
         ></div> */}
       </div>
-      <div className="bg-golden title-head">
-        <h3 className="banner-heading hero-heading text-dark pt-4">
-          News & Media
-        </h3>
-        <div className="title-center"></div>
-      </div>
+
       <div className="container">
         <LatestNews />
 
