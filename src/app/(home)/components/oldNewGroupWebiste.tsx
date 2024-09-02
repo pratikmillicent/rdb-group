@@ -5,7 +5,7 @@ import loadBackgroudImages from "@/common/loadBackgroudImages";
 import isInView from "@/common/isInView";
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
-import { FaBuilding } from "react-icons/fa6";
+import { FaBuilding } from "react-icons/fa";
 
 interface DataItem {
   id: number;
@@ -45,53 +45,16 @@ const data: DataItem[] = [
     title: "Aspect Infrastructure",
     text: "Beyond our real estate endeavors, we have made a significant impact in the entertainment industry. Our movie production arm is known for producing blockbuster commercial films that seamlessly blend creativity with business acumen. We are passionate about storytelling and bringing unique cinematic experiences to audiences worldwide, ensuring that our films resonate both commercially and culturally.",
   },
+  // {
+  //   id: 5,
+  //   image: "assets/images/home/business.jpg",
+  //   type: "Business",
+  //   title: "Luxury Glassware",
+  //   text: "We craft premium designs for agencies and global brands around the globe.",
+  // },
 ];
 
-// const data: DataItem[] = [
-//   {
-//     id: 1,
-//     image: "assets/images/home/properties.webp",
-//     number: "01.",
-//     type: "Properties",
-//     title: "Aspect Global Ventures Pvt.Ltd.",
-//     text: "We craft premium designs for agencies and global brands around the globe.",
-//   },
-//   {
-//     id: 2,
-//     image: "assets/images/home/img2.jpg",
-//     number: "02.",
-//     type: "Reality",
-//     title: "Aspect Bullion & Refinery",
-//     text: "We craft premium designs for agencies and global brands around the globe.",
-//   },
-//   {
-//     id: 3,
-//     image: "assets/images/home/Fractal.jpg",
-//     number: "03.",
-//     type: "Fracto",
-//     title: "Aspect Infrastructure",
-//     text: "We craft premium designs for agencies and global brands around the globe.",
-//   },
-
-//   {
-//     id: 4,
-//     image: "assets/images/home/movie.webp",
-//     number: "04.",
-//     type: "Movies",
-//     title: "Aspect Infrastructure",
-//     text: "We craft premium designs for agencies and global brands around the globe.",
-//   },
-//   {
-//     id: 5,
-//     image: "assets/images/home/business.jpg",
-//     number: "05.",
-//     type: "Business",
-//     title: "Luxury Glassware",
-//     text: "We craft premium designs for agencies and global brands around the globe.",
-//   },
-// ];
-
-const NewGroupGrid: React.FC = () => {
+const OldGroupGrid: React.FC = () => {
   useEffect(() => {
     loadBackgroudImages();
     window.addEventListener("scroll", handleShowTabs);
@@ -154,8 +117,13 @@ const NewGroupGrid: React.FC = () => {
 
   return (
     <section className="portfolio">
-      <div className="">
-        <div className="sec-lg-head mb-10">
+      <div className="overflow-hidden">
+        <div
+          style={{
+            background: "var(--background)",
+          }}
+          className="sec-lg-head"
+        >
           <div className="row">
             <div className="col-lg-12">
               <div className="position-re">
@@ -179,21 +147,27 @@ const NewGroupGrid: React.FC = () => {
                     <div
                       id={`tab-${index + 1}`}
                       className="img bg-img"
-                      style={{ objectFit: "cover" }}
+                      style={{
+                        backgroundSize: "100% 100%",
+                        filter: "brightness(0.5)",
+                      }}
                       data-background={`${item.image}`}
                       key={index}
                     />
                   ))}
                 </div>
               </div>
-              <div className="col-lg-6 sub-bg right">
+              <div
+                className="col-lg-6  right overflow-hidden bg-grey py-2"
+                style={{ padding: "0px 50px" }}
+              >
                 {data?.map((item, index) => (
                   <div
                     className={`cont ${index === 0 ? "active" : ""}`}
                     data-tab={`tab-${index + 1}`}
                     key={index}
                   >
-                    <div className="img-hiden">
+                    <div className="img-hiden bg-danger">
                       <Image
                         src={item.image}
                         alt="Landscape picture"
@@ -201,7 +175,6 @@ const NewGroupGrid: React.FC = () => {
                         height={500}
                       />
                     </div>
-
                     <div className="d-flex justify-content-left align-items-left gap-3  pt-2">
                       <div>
                         <Heading
@@ -219,7 +192,7 @@ const NewGroupGrid: React.FC = () => {
                     <div className="row">
                       <div
                         className="col-md-12 pb-4"
-                        // style={{ lineHeight: "2.3" }}
+                        style={{ lineHeight: "2.3" }}
                       >
                         <p
                           style={{
@@ -266,4 +239,4 @@ const NewGroupGrid: React.FC = () => {
   );
 };
 
-export default NewGroupGrid;
+export default OldGroupGrid;

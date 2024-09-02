@@ -12,6 +12,7 @@ import News2 from "./News2";
 import VideoGallary from "./components/VideoGallary";
 import Card from "./components/Card";
 import MobileCarousel from "./components/MobileCarousel";
+import OldGroupGrid from "./components/oldNewGroupWebiste";
 
 const DashboardCount = lazy(() => import("@/components/DashboardCount"));
 const Carroussel3D = dynamic(() => import("./components/Carousel"), {
@@ -198,6 +199,9 @@ export default function Home() {
         <div>
           <NewGroupGrid />
         </div>
+        {/* <div>
+          <OldGroupGrid />
+        </div> */}
 
         <div
           style={{
