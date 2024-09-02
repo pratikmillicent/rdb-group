@@ -35,6 +35,12 @@ export default function Carroussel3D(props: any) {
       }}
     >
       <Carousel
+        offsetFn={(offsetFromCenter) => {
+          console.log({ offsetFromCenter });
+          return {
+            opacity: offsetFromCenter ? 0.8 : 1,
+          };
+        }}
         slides={cards || []}
         goToSlide={goToSlide}
         offsetRadius={offsetRadius}

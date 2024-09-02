@@ -11758,3 +11758,31 @@ header.in-box {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
+.social-media-icon {
+  text-shadow: none;
+  color: #fff;
+  /* padding: 6px; */
+  /* padding: 12px 10px 0px 10px; */
+  /* width: 34px;
+  height: 34px; */
+  text-align: center;
+  font-size: 16px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin: 0 5px 0 5px;
+  background-color: var(--golden);
+}
+
+.social-icons:hover {
+  background-color: #fff !important;
+  border: #eceff3 !important;
+  color: var(--golden);
+  border-radius: 3px;
+  transition: 0.7s;
+}
+
+/* .icon-golden:hover {
+  color: var(--navy);
+} */

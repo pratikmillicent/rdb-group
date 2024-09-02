@@ -51,13 +51,6 @@ function About() {
           }}
         ></div> */}
       {/* </div> */}
-
-      <div className="bg-golden title-head">
-        <h3 className="banner-heading hero-heading text-black pt-4">
-          About Us
-        </h3>
-        <div className="title-center"></div>
-      </div>
       {/* <VisionMission /> */}
       <Experience />
       <SectionImage />
