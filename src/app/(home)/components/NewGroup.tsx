@@ -190,8 +190,8 @@ const NewGroupGrid: React.FC = () => {
                 {data?.map((item, index) => {
                   const isLastTwo = index >= data.length - 2;
                   const marginStyle = isLastTwo
-                    ? { marginTop: "150px", marginBottom: "150px" }
-                    : { marginBottom: "250px" };
+                    ? { marginTop: "100px", marginBottom: "100px" }
+                    : { marginBottom: "150px" };
 
                   return (
                     <div
