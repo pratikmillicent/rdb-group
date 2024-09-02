@@ -5219,13 +5219,15 @@ body.loaded {
 }
 
 .blog-list-half .item .cont .tags.colorbg a:hover {
-  background: #c9f31d;
+  /* background: #c9f31d; */
+  background: var(--golden);
   color: var(--background);
 }
 
 .blog-list-half.crev .item {
   overflow: visible;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  border: 1px solid var(--golden);
 }
 
 .blog-list-half.crev .item .img {
