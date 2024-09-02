@@ -114,7 +114,7 @@ const NewBlogs = () => {
           </div>
         </div>
       </section> */}
-      <section className="blog-list-half crev section-padding sub-bg">
+      <section className="blog-list-half crev sub-bg">
         <div className="container">
           <div className="row">
             {data.map((item, index) => (
