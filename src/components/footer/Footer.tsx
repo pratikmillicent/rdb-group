@@ -165,7 +165,39 @@ function Footer() {
                 </div>
               </div>
               <div className="col-lg-4 mb-4 mb-lg-0">
-                <SocialIcon />
+                <ul
+                  className="d-none d-md-flex align-items-center justify-content-center"
+                  style={{ marginBottom: "0.5rem" }}
+                >
+                  {socialIconData.map((social, index) => (
+                    <div
+                      className="social-media-icon"
+                      // style={{
+                      //   padding: "7px 5px",
+                      //   backgroundColor: "var(--golden)",
+                      //   color: "#fff",
+                      //   margin: "5px",
+                      // }}
+                    >
+                      <li key={index}>
+                        <a
+                          href={social.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="social-icons icon-golden p-2 d-inline-flex align-items-center text-decoration-none"
+                        >
+                          <i
+                            className={`fab fa-${social.icon} `}
+                            style={{
+                              fontSize: "20px",
+                              // background: "#fff",
+                            }}
+                          ></i>
+                        </a>
+                      </li>
+                    </div>
+                  ))}
+                </ul>
               </div>
               <div className="col-lg-4">
                 <div className="copyright d-flex justify-content-center justify-content-lg-end">
@@ -183,3 +215,26 @@ function Footer() {
 }
 
 export default Footer;
+
+const socialIconData = [
+  {
+    icon: "fab fa-instagram",
+    url: "https://www.instagram.com/rdbrothersproperty?igsh=MTRpbHowcHdlazlkMA",
+    alt: "Instagram",
+  },
+  {
+    icon: "fab fa-facebook",
+    url: "https://www.facebook.com/RDBROTHERSPROPERTIES?mibextid=LQQJ4d",
+    alt: "Facebook",
+  },
+  {
+    icon: "fab fa-linkedin",
+    url: "https://www.linkedin.com/company/rd-brothers-property-consultant-llp/",
+    alt: "LinkedIn",
+  },
+  {
+    icon: "fab fa-youtube",
+    url: "https://youtube.com/@r.d.brothersproperties?feature=shared",
+    alt: "YouTube",
+  },
+];

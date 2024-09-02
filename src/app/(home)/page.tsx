@@ -211,12 +211,12 @@ export default function Home() {
               height="320px"
               width="1000px"
               margin="0 auto"
-              offset={5}
+              offset={100}
               autoScrollInterval={5000}
               showArrows={false}
             />
           ) : isSmallScreen ? (
-            <MobileCarousel />
+            <MobileCarousel data={data} />
           ) : null}
         </div>
 
