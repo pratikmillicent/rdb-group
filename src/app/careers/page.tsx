@@ -72,7 +72,15 @@ const page = () => {
             {/* <p className="text-dark fz-20 fw-bold mb-3">
               FASCINATING WORK, ENDLESS OPPORTUNITY
             </p> */}
-            <p className="text-dark mb-3">
+            <p className="text-black fz-16 fw-400 mb-3">
+              {/* <p
+                          style={{
+                            textAlign: "justify",
+                          }}
+                          className="text-black fz-16 fw-400"
+                        >
+                          {item.text}.
+                        </p> */}
               At RD Brothers, we believe that excellence is achieved through a
               great team. Our people are our biggest asset, fueling innovation
               and excellence with their passion, expertise, and dedication. Join
@@ -86,7 +94,7 @@ const page = () => {
               <Heading headTitle="Current Openings" />
               {/* <div className="fz-35 fw-600">Open Positions</div> */}
             </div>
-            <p className="text-dark">
+            <p className="text-black fz-16 fw-400">
               At RD Brothers, the growth of your career is as important to us as
               the success of our business. We're committed to creating an
               empowering workplace where everyone can thrive and succeed.
