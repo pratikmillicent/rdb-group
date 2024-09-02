@@ -9,15 +9,18 @@ const OfficeAddress = () => {
   const branchOffice = [
     {
       branch: "Mumbai",
-      address: "08 W 36th St, New York, NY 10001",
+      address:
+        "Office No. 1, 2nd floor,Esspee Tower,Opp. Oberoi Sky City,Datta Pada Road,Off W.E. Highway,Borivali (E) Mumbai - 400066",
       phone: "+1 123-456-7890",
       email: "info@example.com",
       image:
         "https://www.madebydesignesia.com/themes/justica/images/misc/p1.jpg",
+      // image : "/assets/images/office/"
     },
     {
       branch: "Surat",
-      address: "08 W 36th St, New York, NY 10001",
+      address:
+        "304, Eco Futurz,Opp. Samarth Aquastic,Near Om Terrace,New City light Road,Surat - 395007",
       phone: "+1 123-456-7890",
       email: "info@example.com",
       image:
@@ -25,39 +28,40 @@ const OfficeAddress = () => {
     },
     {
       branch: "Vadodara",
-      address: "08 W 36th St, New York, NY 10001",
+      address:
+        "Office No. 420,Neptune Edge,Sarabhai Campus,Nr. Genda Circle, Vadiwadi,Vadodara - 390023",
       email: "info@example.com",
       phone: "+1 123-456-7890",
       image:
         "https://www.madebydesignesia.com/themes/justica/images/misc/p3.jpg",
     },
-    // {
-    //   branch: "Ahmedabad",
-    //   address:
-    //     "C 2/01,The First Commercial Complex,B/H Keshav Baug Party,Plot Near Shivalik High Street,Vastrapur, Ahmedabad - 380015",
-    //   phone: "+1 123-456-7890",
-    //   email: "info@example.com",
-    //   image:
-    //     "https://media.istockphoto.com/id/1424699305/photo/atal-bridge-at-the-sabarmati-riverfront-in-ahmedabad.jpg?s=1024x1024&w=is&k=20&c=EjMm973TK5V7COAOMum8WPRn68iZVGQo5phpHbEQDnw=",
-    // },
-    // {
-    //   branch: "Dubai",
-    //   address: "1102, Regal Towers,Business Bay",
-    //   phone: "+1 123-456-7890",
-    //   email: "info@example.com",
-    //   image:
-    //     "https://images.pexels.com/photos/162031/dubai-tower-arab-khalifa-162031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    // },
+    {
+      branch: "Ahmedabad",
+      address:
+        "C 2/01,The First Commercial Complex,B/H Keshav Baug Party,Plot Near Shivalik High Street,Vastrapur, Ahmedabad - 380015",
+      phone: "+1 123-456-7890",
+      email: "info@example.com",
+      image:
+        "https://www.madebydesignesia.com/themes/justica/images/misc/p1.jpg",
+    },
+    {
+      branch: "Dubai",
+      address: "1102, Regal Towers,Business Bay",
+      phone: "+1 123-456-7890",
+      email: "info@example.com",
+      image:
+        "https://www.madebydesignesia.com/themes/justica/images/misc/p2.jpg",
+    },
   ];
 
   return (
     <div>
       <div className="">
         <div className="d-flex justify-content-start">
-          {/* <Heading headTitle="Headquarter" /> */}
-          <div style={{ textAlign: "left" }} className="w-100">
+          <Heading headTitle="Our Headquarter" textAlign="left" />
+          {/* <div style={{ textAlign: "left" }} className="w-100">
             <h2 className="fs-2">
-              <span>Headquater</span>
+              <span>Headquarter office</span>
             </h2>
             <div
               className="border-line"
@@ -66,7 +70,7 @@ const OfficeAddress = () => {
                 marginLeft: "27px",
               }}
             ></div>
-          </div>
+          </div> */}
         </div>
 
         <div className="col-md-4" style={{ backgroundSize: "cover" }}>
@@ -76,15 +80,21 @@ const OfficeAddress = () => {
             }
             alt=""
             className="img-fluid mb30"
-            style={{ marginBottom: "30px" }}
+            style={{ marginBottom: "15px" }}
           />
-          <h3 className="fz-22" style={{ marginBottom: "25px" }}>
-            Andheri Headquater
+          <h3 className="fz-22" style={{ marginBottom: "15px" }}>
+            Andheri
           </h3>
           <address className="s1 d-flex flex-col gap-2 fz-15">
-            <span>
-              <i className="id-color fa fa-map-marker-alt fa-lg fz-12 me-3 text-golden"></i>
-              08 W 36th St, New York, NY 10001
+            <span className="d-flex">
+              <span>
+                {" "}
+                <i className="id-color fa fa-map-marker-alt fa-lg fz-12 me-3 text-golden"></i>
+              </span>
+              <span>
+                302/303, 3rd Floor, 72 Empire,WEH Metro Station, Gate No. 8,
+                Near Western Express Highway, Andheri East. Mumbai - 400 099.
+              </span>
             </span>
             <span>
               <i className="id-color fa fa-phone fa-lg fz-12 me-3 text-golden"></i>
@@ -103,13 +113,12 @@ const OfficeAddress = () => {
       </div>
 
       <div className="row">
-        <div className="mt-5 pt-2">
-          {/* <Heading headTitle="Branch" textAlign="left" /> */}
-          <div className="d-flex justify-content-start">
-            {/* <Heading headTitle="Headquarter" /> */}
+        <div className="">
+          <Heading headTitle="Our Branch" textAlign="left" />
+          {/* <div className="d-flex justify-content-start">
             <div style={{ textAlign: "left" }} className="w-100">
               <h2 className="fs-2">
-                <span>Branch</span>
+                <span>Branch office</span>
               </h2>
               <div
                 className="border-line"
@@ -119,7 +128,7 @@ const OfficeAddress = () => {
                 }}
               ></div>
             </div>
-          </div>
+          </div> */}
         </div>
         {branchOffice.map((item, index) => (
           //   <div className="col-4" key={index}>
@@ -180,22 +189,25 @@ const OfficeAddress = () => {
           //   </div>
           <div
             key={index}
-            className="col-md-4"
-            style={{ backgroundSize: "cover" }}
+            className="col-md-4 "
+            style={{ backgroundSize: "cover", marginBottom: "20px" }}
           >
             <img
               src={item.image}
               alt=""
               className="img-fluid mb30"
-              style={{ marginBottom: "30px" }}
+              style={{ marginBottom: "15px" }}
             />
-            <h3 className="fz-22" style={{ marginBottom: "25px" }}>
-              {item.branch} Office
+            <h3 className="fz-22" style={{ marginBottom: "15px" }}>
+              {item.branch}
             </h3>
             <address className="s1 d-flex flex-col gap-2 fz-15">
-              <span>
-                <i className="id-color fa fa-map-marker-alt fa-lg fz-12 me-3 text-golden"></i>
-                08 W 36th St, New York, NY 10001
+              <span className="d-flex">
+                <span>
+                  <i className="id-color fa fa-map-marker-alt fa-lg fz-12 me-3 text-golden"></i>
+                </span>
+
+                <span>{item.address}</span>
               </span>
               <span>
                 <i className="id-color fa fa-phone fa-lg fz-12 me-3 text-golden"></i>
