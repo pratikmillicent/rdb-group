@@ -37,49 +37,23 @@ const Blog = () => {
             zIndex: 1,
             pointerEvents: "none",
           }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "100%",
-              padding: "0 20px",
-            }}
-          >
-            <h3 className="banner-heading hero-heading">Blogs</h3>
-            <div
-              style={{
-                width: "30px",
-                height: "3px",
-                borderTop: "solid 2px var(--golden) !important",
-                borderLeft: "none",
-                borderRight: "none",
-                display: "block",
-                margin: "0 auto",
-                marginBottom: "30px",
-              }}
-            ></div>
-          </div>
-        </div>
+        ></div>
       </div>
-      <div className="container">
-        <section className="blog-modern" style={{ paddingBottom: "60px" }}>
-          <div className="container">
-            <div className="sec-lg-head">
-              <div className="row">
-                <div className="col-lg-12">
-                  {/* <Heading headTitle="Blogs" fontSize="fs-1" /> */}
-                  {/* <div className="fz-50 fw-600">Blogs</div> */}
-                  <Heading headTitle="Blogs" />
-                </div>
+      <section className="" style={{ paddingBottom: "60px" }}>
+        <div className="container">
+          <div className="sec-lg-head">
+            <div className="row">
+              <div className="col-lg-12">
+                {/* <Heading headTitle="Blogs" fontSize="fs-1" /> */}
+                {/* <div className="fz-50 fw-600">Blogs</div> */}
+                <Heading headTitle="Blogs" />
               </div>
             </div>
-            {/* <div className="blog-carsouel">
+          </div>
+          {/* <div className="blog-carsouel">
               {loadSwiper && (
                 <div className="row">
-                  {data.map(item => (
+                  {data.map((item) => (
                     <div
                       key={item.id}
                       className="col-lg-4 col-md-6 col-sm-6 mb-30"
@@ -122,10 +96,9 @@ const Blog = () => {
               )}
             </div> */}
 
-            <NewBlogs />
-          </div>
-        </section>
-      </div>
+          <NewBlogs />
+        </div>
+      </section>
     </>
   );
 };

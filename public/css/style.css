@@ -5186,7 +5186,7 @@ body.loaded {
 }
 
 .blog-list-half .item .img {
-  min-height: 300px;
+  /* min-height: 300px; */
   padding-right: 0;
 }
 
@@ -5220,6 +5220,7 @@ body.loaded {
 
 .blog-list-half .item .cont .tags.colorbg a:hover {
   /* background: #c9f31d; */
+  background: var(--golden);
   background: var(--golden);
   color: var(--background);
 }
