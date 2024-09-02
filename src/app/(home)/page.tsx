@@ -97,13 +97,13 @@ export default function Home() {
     // let charIndex = 0;
     let typingTimeout;
 
-    const typeText = (text) => {
+    const typeText = text => {
       // if (charIndex < text.length) {
       //   setDisplayedText((prev) => prev + text.charAt(charIndex));
       //   charIndex++;
       // }
 
-      setDisplayedText((prev) => prev + text.slice(0, 1));
+      setDisplayedText(prev => prev + text.slice(0, 1));
 
       typingTimeout = setTimeout(() => typeText(text.slice(1)), 100); // Adjust the typing speed here
     };

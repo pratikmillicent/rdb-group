@@ -15,6 +15,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import { Container, Row, Col } from "react-bootstrap";
 import SocialIcon from "@/components/social-icon/SocialIcon";
+import OfficeAddress from "./components/OfficeAddress";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -89,7 +90,7 @@ const ContactUs = () => {
       </div>
       <div className="container mt-60">
         <div className="d-flex gap-3">
-          <div className="col-12 col-md-11">
+          <div className="col-12">
             <Heading headTitle="Contact Us!" />
             <section className="contact-crev mt-30">
               <div className="container">
@@ -186,9 +187,9 @@ const ContactUs = () => {
               </div>
             </section>
             <div className="gap-3 section-padding">
-              <div className="mt-30">
+              <div className="mt-30 mb-60">
                 <Heading headTitle="Registered Offices:" />
-                <div className="row text-light msg_box">
+                {/* <div className="row text-light msg_box">
                   <div className="col-12 col-md-4 mb-2">
                     <p className="text-grey fw-bold">
                       Aspect Global Ventures Pvt.Ltd.:
@@ -262,102 +263,9 @@ const ContactUs = () => {
                     <p className="text-grey fw-bold">Email ID:</p>
                     <p>info@aspectglobal</p>
                   </div>
-                </div>
-                {/* <div style={{ marginBottom: "60px" }}>
-                  <div className="col-12 ">
-                    <div className="">
-                      <Heading headTitle="Global Presence" />
-                    
-                      <div
-                        className="w-75 position-relative"
-                        style={{ margin: "60px auto" }}
-                      >
-                        <Image
-                          src="/assets/images/contact/map.png"
-                          className=""
-                          alt="map"
-                          style={{ height: "100%" }}
-                          width={800}
-                          height={500}
-                        />
-                        <div className="icon-container1">
-                          <FaMapMarkerAlt className="main-color3 fz-24" />
-                          <span className="tooltip-text">
-                            501, Aspect Global Ventures Pvt.Ltd <br /> Dalamal
-                            House, 206 Jamnalal Bajal Marg <br />
-                            Nariman Point Mumbai{" "}
-                          </span>
-                        </div>
-                        <div className="icon-container2">
-                          <FaMapMarkerAlt className="main-color3 fz-24" />
-                          <span className="tooltip-text">
-                            1224, Aspect Global Ventures Pvt.Ltd <br /> Dalamal
-                            House, 206 Jamnalal Bajal Marg <br />
-                            China
-                          </span>
-                        </div>
-                        <div className="icon-container3">
-                          <FaMapMarkerAlt className="main-color3 fz-24" />
-                          <span className="tooltip-text">
-                            501, Aspect Global Ventures Pvt.Ltd <br /> Dalamal
-                            House, 206 Jamnalal Bajal Marg <br />
-                            UAE{" "}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div> */}
 
-                {/* <section style={{ marginBottom: "60px" }}>
-                  <Container>
-                    <Row>
-                      <Col xs={12}>
-                        <div className="text-center mb-4">
-                          <Heading headTitle="Global Presence" />
-                        </div>
-                        <div
-                          className="position-relative"
-                          style={{ margin: "60px auto" }}
-                        >
-                          <Image
-                            src="/assets/images/contact/map.svg"
-                            alt="map"
-                            layout="responsive"
-                            width={800}
-                            height={500}
-                            style={{ height: "auto" }} // Make sure height is responsive
-                            className="w-100"
-                          />
-                          <div className="icon-container1 position-absolute">
-                            <FaMapMarkerAlt className="main-color3 fz-24" />
-                            <span className="tooltip-text">
-                              501, Aspect Global Ventures Pvt.Ltd <br />
-                              Dalamal House, 206 Jamnalal Bajal Marg <br />
-                              Nariman Point Mumbai
-                            </span>
-                          </div>
-                          <div className="icon-container2 position-absolute">
-                            <FaMapMarkerAlt className="main-color3 fz-24" />
-                            <span className="tooltip-text">
-                              1224, Aspect Global Ventures Pvt.Ltd <br />
-                              Dalamal House, 206 Jamnalal Bajal Marg <br />
-                              China
-                            </span>
-                          </div>
-                          <div className="icon-container3 position-absolute">
-                            <FaMapMarkerAlt className="main-color3 fz-24" />
-                            <span className="tooltip-text">
-                              501, Aspect Global Ventures Pvt.Ltd <br />
-                              Dalamal House, 206 Jamnalal Bajal Marg <br />
-                              UAE
-                            </span>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                  </Container>
-                </section> */}
+                <OfficeAddress />
               </div>
             </div>
           </div>
