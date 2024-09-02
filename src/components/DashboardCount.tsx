@@ -1,5 +1,6 @@
 import { CountUp } from "countup.js";
 import React, { useEffect, useRef } from "react";
+import { useInView } from "react-spring";
 
 interface DashboardData {
   value: number;
@@ -12,6 +13,7 @@ interface DashboardCountProps {
 }
 
 function DashboardCount({ data }: DashboardCountProps) {
+  const [ref, inView] = useInView({ once: true, amount: "all" });
   const countersRef = useRef<(HTMLSpanElement | null)[]>([]);
 
   useEffect(() => {
@@ -20,28 +22,30 @@ function DashboardCount({ data }: DashboardCountProps) {
       useGrouping: false,
     };
 
-    countersRef.current.forEach((counter, index) => {
-      if (counter) {
-        const dataTo = counter.getAttribute("data-to");
-        console.log(`Element ${index}:`, counter, `data-to:`, dataTo); // Debugging line
-        if (dataTo) {
-          const countUp = new CountUp(counter, parseFloat(dataTo), options);
-          if (!countUp.error) {
-            countUp.start();
+    if (inView) {
+      countersRef.current.forEach((counter, index) => {
+        if (counter) {
+          const dataTo = counter.getAttribute("data-to");
+          console.log(`Element ${index}:`, counter, `data-to:`, dataTo); // Debugging line
+          if (dataTo) {
+            const countUp = new CountUp(counter, parseFloat(dataTo), options);
+            if (!countUp.error) {
+              countUp.start();
+            } else {
+              console.error(
+                `Error initializing CountUp for element ${index}:`,
+                countUp.error
+              );
+            }
           } else {
-            console.error(
-              `Error initializing CountUp for element ${index}:`,
-              countUp.error
-            );
+            console.warn(`data-to attribute missing for element ${index}`);
           }
         } else {
-          console.warn(`data-to attribute missing for element ${index}`);
+          console.warn(`Element ${index} is null`);
         }
-      } else {
-        console.warn(`Element ${index} is null`);
-      }
-    });
-  }, [data]);
+      });
+    }
+  }, [data, inView]);
 
   return (
     <section
@@ -55,6 +59,7 @@ function DashboardCount({ data }: DashboardCountProps) {
             const { value, suffix = "" } = item;
             return (
               <div
+                ref={ref}
                 key={index}
                 className="col-6 col-md-4 col-lg wow fadeInUp mb-sm-30 animated"
                 data-wow-delay={`${index * 0.25}s`}

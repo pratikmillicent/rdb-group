@@ -31,7 +31,6 @@ const data = [
 export default function Home() {
   const isMediumScreen = useMediaQuery("(min-width: 768px)");
   const isSmallScreen = useMediaQuery("(max-width: 767px)");
-  const [ref, inView] = useInView({ once: true });
 
   const [loopCount, setLoopCount] = useState(0);
   const [videoSrc, setVideoSrc] = useState("/assets/video/HeroVideo1.mp4");
@@ -98,13 +97,13 @@ export default function Home() {
     // let charIndex = 0;
     let typingTimeout;
 
-    const typeText = (text) => {
+    const typeText = text => {
       // if (charIndex < text.length) {
       //   setDisplayedText((prev) => prev + text.charAt(charIndex));
       //   charIndex++;
       // }
 
-      setDisplayedText((prev) => prev + text.slice(0, 1));
+      setDisplayedText(prev => prev + text.slice(0, 1));
 
       typingTimeout = setTimeout(() => typeText(text.slice(1)), 100); // Adjust the typing speed here
     };
@@ -192,7 +191,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div ref={ref}>{inView && <DashboardCount data={data} />}</div>
+        <DashboardCount data={data} />
 
         <SectionImage />
 
