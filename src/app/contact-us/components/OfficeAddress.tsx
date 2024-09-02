@@ -3,6 +3,7 @@ import React from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
+import Heading from "@/components/heading/Heading";
 
 const OfficeAddress = () => {
   const branchOffice = [
@@ -51,7 +52,75 @@ const OfficeAddress = () => {
 
   return (
     <div>
+      <div className="">
+        <div className="d-flex justify-content-start">
+          {/* <Heading headTitle="Headquarter" /> */}
+          <div style={{ textAlign: "left" }} className="w-100">
+            <h2 className="fs-2">
+              <span>Headquater</span>
+            </h2>
+            <div
+              className="border-line"
+              style={{
+                width: "10%",
+                marginLeft: "27px",
+              }}
+            ></div>
+          </div>
+        </div>
+
+        <div className="col-md-4" style={{ backgroundSize: "cover" }}>
+          <img
+            src={
+              "https://www.madebydesignesia.com/themes/justica/images/misc/p1.jpg"
+            }
+            alt=""
+            className="img-fluid mb30"
+            style={{ marginBottom: "30px" }}
+          />
+          <h3 className="fz-22" style={{ marginBottom: "25px" }}>
+            Andheri Headquater
+          </h3>
+          <address className="s1 d-flex flex-col gap-2 fz-15">
+            <span>
+              <i className="id-color fa fa-map-marker-alt fa-lg fz-12 me-3 text-golden"></i>
+              08 W 36th St, New York, NY 10001
+            </span>
+            <span>
+              <i className="id-color fa fa-phone fa-lg fz-12 me-3 text-golden"></i>
+              +1 333 9296
+            </span>
+            <span>
+              <i className="id-color far fa-envelope fz-12 fa-lg me-3 text-golden"></i>
+              <a href="mailto:contact@example.com">contact@example.com</a>
+            </span>
+            {/* <span>
+                <i className="id-color fa fa-file-pdf-o fa-lg"></i>
+                <a href="#">Download Brochure</a>
+              </span> */}
+          </address>
+        </div>
+      </div>
+
       <div className="row">
+        <div className="mt-5 pt-2">
+          {/* <Heading headTitle="Branch" textAlign="left" /> */}
+          <div className="d-flex justify-content-start">
+            {/* <Heading headTitle="Headquarter" /> */}
+            <div style={{ textAlign: "left" }} className="w-100">
+              <h2 className="fs-2">
+                <span>Branch</span>
+              </h2>
+              <div
+                className="border-line"
+                style={{
+                  width: "5%",
+                  marginLeft: "20px",
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
         {branchOffice.map((item, index) => (
           //   <div className="col-4" key={index}>
           //     <div
