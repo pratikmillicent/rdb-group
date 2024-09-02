@@ -37,32 +37,7 @@ const Blog = () => {
             zIndex: 1,
             pointerEvents: "none",
           }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "100%",
-              padding: "0 20px",
-            }}
-          >
-            <h3 className="banner-heading hero-heading">Blogs</h3>
-            <div
-              style={{
-                width: "30px",
-                height: "3px",
-                borderTop: "solid 2px var(--golden) !important",
-                borderLeft: "none",
-                borderRight: "none",
-                display: "block",
-                margin: "0 auto",
-                marginBottom: "30px",
-              }}
-            ></div>
-          </div>
-        </div>
+        ></div>
       </div>
       <div className="container">
         <section className="blog-modern" style={{ paddingBottom: "60px" }}>
@@ -79,7 +54,7 @@ const Blog = () => {
             {/* <div className="blog-carsouel">
               {loadSwiper && (
                 <div className="row">
-                  {data.map(item => (
+                  {data.map((item) => (
                     <div
                       key={item.id}
                       className="col-lg-4 col-md-6 col-sm-6 mb-30"
