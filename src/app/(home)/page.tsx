@@ -31,7 +31,6 @@ const data = [
 export default function Home() {
   const isMediumScreen = useMediaQuery("(min-width: 768px)");
   const isSmallScreen = useMediaQuery("(max-width: 767px)");
-  const [ref, inView] = useInView({ once: true });
 
   const [loopCount, setLoopCount] = useState(0);
   const [videoSrc, setVideoSrc] = useState("/assets/video/HeroVideo1.mp4");
@@ -192,7 +191,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div ref={ref}>{inView && <DashboardCount data={data} />}</div>
+        <DashboardCount data={data} />
 
         <SectionImage />
 
