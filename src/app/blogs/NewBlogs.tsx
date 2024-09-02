@@ -10,6 +10,7 @@ const NewBlogs = () => {
       title: "Free advertising for your online business.",
       image: "https://uithemez.com/i/geekfolio/dark/assets/imgs/blog/h1.jpg",
       tags: ["Marketing", "Design"],
+      author: "Admin",
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ const NewBlogs = () => {
       title: "Business meeting 2023 in San Francisco.",
       image: "https://uithemez.com/i/geekfolio/dark/assets/imgs/blog/h2.jpg",
       tags: ["Marketing", "Design"],
+      author: "Admin",
     },
     {
       id: 3,
@@ -24,6 +26,7 @@ const NewBlogs = () => {
       title: "Free advertising for your online business.",
       image: "https://uithemez.com/i/geekfolio/dark/assets/imgs/blog/h3.jpg",
       tags: ["Marketing", "Design"],
+      author: "Admin",
     },
     {
       id: 4,
@@ -31,6 +34,7 @@ const NewBlogs = () => {
       title: "Business meeting 2023 in San Francisco.",
       image: "https://uithemez.com/i/geekfolio/dark/assets/imgs/blog/h4.jpg",
       tags: ["Marketing", "Design"],
+      author: "Admin",
     },
     {
       id: 5,
@@ -38,6 +42,7 @@ const NewBlogs = () => {
       title: "Free advertising for your online business.",
       image: "https://uithemez.com/i/geekfolio/dark/assets/imgs/blog/h5.jpg",
       tags: ["Marketing", "Design"],
+      author: "Admin",
     },
     {
       id: 6,
@@ -45,6 +50,7 @@ const NewBlogs = () => {
       title: "Business meeting 2023 in San Francisco.",
       image: "https://uithemez.com/i/geekfolio/dark/assets/imgs/blog/h6.jpg",
       tags: ["Marketing", "Design"],
+      author: "Admin",
     },
   ];
   return (
@@ -133,9 +139,16 @@ const NewBlogs = () => {
                         <span className="date fz-12 ls1 text-u opacity-7 mb-15">
                           {item.date}
                         </span>
-                        <h5>
+                        <h5
+                          style={{
+                            lineHeight: 1.2,
+                          }}
+                        >
                           <Link href="/dark/blog-details">{item.title}</Link>
                         </h5>
+                        <p className="fz-12 ls1 text-u opacity-9 mb-15 ">
+                          by {item.author}
+                        </p>
                         <div className="tags colorbg mt-15">
                           {item.tags.map((tag, i) => (
                             <Link
