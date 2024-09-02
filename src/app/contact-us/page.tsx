@@ -110,7 +110,9 @@ const ContactUs = () => {
                           +91 9877737776
                         </a>
                       </div>
-                      <SocialIcon />
+                      <div className="d-flex justify-content-start">
+                        <SocialIcon />
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg-6 offset-lg-1 valign">
