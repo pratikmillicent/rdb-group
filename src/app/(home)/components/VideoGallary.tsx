@@ -150,7 +150,7 @@ function VideoGallary() {
                   width: "40px",
                   borderRadius: "50%",
                   right: "-60px",
-                  top: "50%",
+                  top: "59%",
                   transform: "translateY(-50%)",
                 }}
               ></div>
@@ -164,7 +164,7 @@ function VideoGallary() {
                   borderRadius: "50%",
                   position: "absolute",
                   left: "-60px",
-                  top: "50%",
+                  top: "59%",
                   transform: "translateY(-50%)",
                 }}
               />

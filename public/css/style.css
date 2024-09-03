@@ -11789,3 +11789,10 @@ header.in-box {
 /* .icon-golden:hover {
   color: var(--navy);
 } */
+
+.swiper-button-next:after {
+  font-size: 30px !important;
+}
+.swiper-button-prev:after {
+  font-size: 30px !important;
+}

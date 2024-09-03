@@ -230,7 +230,7 @@ const socialIconData = [
     alt: "Instagram",
   },
   {
-    icon: "fab fa-facebook",
+    icon: "fab fa-square-facebook",
     url: "https://www.facebook.com/RDBROTHERSPROPERTIES?mibextid=LQQJ4d",
     alt: "Facebook",
   },
@@ -240,7 +240,7 @@ const socialIconData = [
     alt: "LinkedIn",
   },
   {
-    icon: "fab fa-youtube",
+    icon: "fab fa-square-youtube",
     url: "https://youtube.com/@r.d.brothersproperties?feature=shared",
     alt: "YouTube",
   },
