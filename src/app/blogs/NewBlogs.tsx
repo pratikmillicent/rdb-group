@@ -146,9 +146,9 @@ const NewBlogs = () => {
                         >
                           <Link href="/dark/blog-details">{item.title}</Link>
                         </h5>
-                        <p className="fz-12 ls1 text-u opacity-9 mb-15 ">
-                          by {item.author}
-                        </p>
+                        <div className="fz-12 ls1 opacity-9 mb-15">
+                          ~ By <span className="fw-bold ">{item.author}</span>
+                        </div>
                         {/* <div className="tags colorbg mt-15">
                           {item.tags.map((tag, i) => (
                             <Link
