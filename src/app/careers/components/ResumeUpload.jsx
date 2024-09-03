@@ -37,7 +37,7 @@ const ResumeUpload = () => {
       <div className="row">
         <div className="col-lg-6 d-flex flex-column align-items-start">
           <Heading headTitle="Submit Your Resume" />
-          <p>
+          <p className="fz-16 fw-400">
             Can't find a position that fits your profile? Submit your resume,
             and we will keep you in mind for opportunities in the future.
           </p>
@@ -61,7 +61,7 @@ const ResumeUpload = () => {
                       <div className="messages"></div>
                       <div className="controls row">
                         <div className="col-lg-6">
-                          <label htmlFor="form_name">Name</label>
+                          <label htmlFor="form_name fz-16 fw-400">Name</label>
                           <div className="form-group mb-30 mt-5">
                             <input
                               style={{ background: "var(--white)" }}
@@ -76,7 +76,7 @@ const ResumeUpload = () => {
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <label htmlFor="form_email">Email</label>
+                          <label htmlFor="form_email fz-16 fw-400">Email</label>
                           <div className="form-group mb-30 mt-5">
                             <input
                               style={{ background: "var(--white)" }}
@@ -91,7 +91,7 @@ const ResumeUpload = () => {
                           </div>
                         </div>
                         <div className="col-12">
-                          <label htmlFor="form_resume">Resume</label>
+                          <label htmlFor="form_resume fz-16 fw-400">Resume</label>
                           <div className="form-group mb-30 mt-5">
                             <input
                               style={{ background: "var(--white)" }}
@@ -104,7 +104,7 @@ const ResumeUpload = () => {
                           </div>
                         </div>
                         <div className="col-12">
-                          <label htmlFor="form_coverLetter">Cover Letter</label>
+                          <label htmlFor="form_coverLetter fz-16 fw-400">Cover Letter</label>
                           <div className="form-group mt-5">
                             <textarea
                               style={{ background: "var(--white)" }}
@@ -119,7 +119,7 @@ const ResumeUpload = () => {
                           <div className="mt-30 mb-20">
                             <button
                               type="submit"
-                              className="butn butn-md butn-bord radius-30"
+                              className="butn butn-md butn-bord radius-30 fz-16 fw-400"
                             >
                               Submit
                             </button>

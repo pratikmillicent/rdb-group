@@ -6728,7 +6728,7 @@ footer .bg-pattern {
 }
 
 .portfolio-fixed .cont {
-  margin-bottom: 250px;
+  /* margin-bottom: 250px; */
   opacity: 0.1;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
