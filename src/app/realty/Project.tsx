@@ -104,7 +104,7 @@ const Project = () => {
                 cursor: "pointer",
               }}
             >
-              Completed
+              Ongoing
             </div>
             <div
               onClick={() => setActive(1)}
@@ -115,7 +115,7 @@ const Project = () => {
                 cursor: "pointer",
               }}
             >
-              Upcoming
+              Completed
             </div>
             <div
               onClick={() => setActive(2)}
@@ -126,7 +126,7 @@ const Project = () => {
                 cursor: "pointer",
               }}
             >
-              Sustainability
+              Upcomming
             </div>
 
             <div
