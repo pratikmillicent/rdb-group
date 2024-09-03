@@ -16,7 +16,7 @@ function CallToAction({}) {
           className="w-100 sec-bg-img bg-img parallaxie"
           data-background={
             active === 0
-              ? "/assets/images/about/professionalism.webp"
+              ? "/assets/images/about/Core.jpg"
               : active === 1
               ? "assets/images/about/trust.webp"
               : "assets/images/about/experties.webp"
@@ -164,7 +164,7 @@ function CallToAction({}) {
           <div className="">
             <div className="row text-center" style={{ color: "var(--golden)" }}>
               <div
-                className="col-lg-4 col-md-12 mb-4"
+                className="col-lg-4 col-md-12 bg-dark bg-opacity-50 text-white"
                 style={{
                   fontSize: "45px",
                   fontWeight: 500,
@@ -172,7 +172,6 @@ function CallToAction({}) {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "white",
                 }}
               >
                 Our <br /> Core Values

@@ -84,6 +84,7 @@ const page = () => {
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
             <div style={{ paddingTop: "60px" }}>
               <Heading headTitle="Current Openings" />
+
               {/* <div className="fz-35 fw-600">Open Positions</div> */}
             </div>
             <p className="text-dark">
@@ -98,7 +99,7 @@ const page = () => {
                   className="apply_part w-100 positions-item justify-content-around text-light p-4 box-3d"
                 >
                   <div className="w-100 align-items-center d-flex">
-                    <p className="fw-bolder  text-light">{data.title}</p>
+                    <p className="fw-bolder  text-golden">{data.title}</p>
                     <div className="ms-auto apply-btn">
                       <a className="mt-1 fw-bolder">APPLY NOW</a>
                     </div>

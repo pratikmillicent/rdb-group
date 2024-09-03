@@ -53,20 +53,46 @@ function DarkVariantExample({ spliti, data }: any) {
           <Col lg={3} className="p-0 d-none d-md-flex">
             <div className="d-flex align-self-center  gap-4">
               <div
-                className="bg-navy fw-semibold fs-5 align-self-center py-2  "
+                className="bg-navy fw-semibold fs-5 align-self-center py-2 px-3"
                 style={{ height: "fit-content" }}
               >
-                {item.date.split(" ")?.map((part, index) => (
-                  <div
-                    className="date bg-navy text-light px-1 px-3 py-1 text-center"
-                    key={index}
-                  >
-                    <div className=" d-block fs-5"> {part}</div>
-                  </div>
-                ))}
+                {item.date.split(" ")?.map((part, index) => {
+                  let styles = {};
+                  if (index === 0) {
+                    styles = {
+                      fontSize: "30px", // for '1'
+                      display: "block",
+                      fontWeight: "400",
+                      lineHeight: 1.2,
+                    };
+                  } else if (index === 1) {
+                    styles = {
+                      fontSize: "24px", // for 'Aug'
+                      display: "block",
+                      fontWeight: "300",
+                    };
+                  } else if (index === 2) {
+                    styles = {
+                      fontSize: "17px", // for '2023'
+                      display: "block",
+                      fontWeight: "300",
+                      marginTop: "-6px",
+                    };
+                  }
+
+                  return (
+                    <span
+                      className="date bg-navy text-light text-center"
+                      key={index}
+                      style={styles}
+                    >
+                      {part}
+                    </span>
+                  );
+                })}
               </div>
               <div
-                className="fw-semibold fs-1 align-self-center "
+                className="fw-semibold fs-1 align-self-center text-uppercase"
                 style={{
                   height: "fit-content",
                   width: "160px",
@@ -75,7 +101,14 @@ function DarkVariantExample({ spliti, data }: any) {
               >
                 {item.title.split("<br />")?.map((line, index) => (
                   <React.Fragment key={index}>
-                    <span className="fw-semibold fs-6"> {line}</span>
+                    <span
+                      className="fw-semibold fs-6 text-uppercase fz-20"
+                      style={{
+                        fontWeight: 500,
+                      }}
+                    >
+                      {line}
+                    </span>
                     <br />
                   </React.Fragment>
                 ))}
@@ -116,7 +149,7 @@ function DarkVariantExample({ spliti, data }: any) {
                         className="wow fadeInUp"
                         data-wow-delay=".1s"
                       >
-                        <div className="item p-0">
+                        <div className="item p-0 pt-1 mb-5">
                           <div className="w-100 h-100 py-1">
                             <Image
                               src={item.image}
@@ -207,7 +240,7 @@ export default CarouselEvent;
 const carouselData = [
   {
     date: "31 Oct 2022",
-    title: "RD Brother Lifestyle Empowers Agents with Free Maharera Training",
+    title: "Lorem, ipsum dolor sit loerm",
     // images: [
     //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK92UVfWmKFimBK90JD7wPOjectFATDhpJ_g&s",
     //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpEVj7-_LPKXkdXvEH40UXbPcTr43lXAnPYQ&s",
@@ -221,7 +254,7 @@ const carouselData = [
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    title: "Lorem, ipsum dolor sit loerm",
     images: [
       "assets/images/contact/contact.jpg",
       "assets/images/contact/contact.jpg",
@@ -230,7 +263,7 @@ const carouselData = [
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    title: "Lorem, ipsum dolor sit loerm ",
     images: [
       "assets/images/contact/contact.jpg",
       "assets/images/contact/contact.jpg",
@@ -239,7 +272,7 @@ const carouselData = [
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    title: "Lorem, ipsum dolor sit loerm ",
     images: [
       "assets/images/contact/contact.jpg",
       "assets/images/contact/contact.jpg",
@@ -248,7 +281,7 @@ const carouselData = [
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    title: "Lorem, ipsum dolor sit loerm ",
     images: [
       "assets/images/contact/contact.jpg",
       "assets/images/contact/contact.jpg",
@@ -257,7 +290,7 @@ const carouselData = [
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    title: "Lorem, ipsum dolor sit loerm ",
     images: [
       "assets/images/contact/contact.jpg",
       "assets/images/contact/contact.jpg",
@@ -266,7 +299,7 @@ const carouselData = [
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    title: "Lorem, ipsum dolor sit loerm ",
     images: [
       "assets/images/contact/contact.jpg",
       "assets/images/contact/contact.jpg",
@@ -275,7 +308,7 @@ const carouselData = [
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    title: "Lorem, ipsum dolor sit loerm ",
     images: [
       "assets/images/contact/contact.jpg",
       "assets/images/contact/contact.jpg",
@@ -284,7 +317,7 @@ const carouselData = [
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm amet consectetur elit. Autem",
+    title: "Lorem, ipsum dolor sit loerm ",
     images: [
       "assets/images/contact/contact.jpg",
       "assets/images/contact/contact.jpg",

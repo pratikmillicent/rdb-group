@@ -1,0 +1,43 @@
+/* .explore-more {
+  color: var(--foreground);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.explore-more:hover {
+  color: var(--golden);
+  transform: translateX(5px);
+  font-size: 15px !important;
+  border-bottom: 2px solid var(--golden);
+} */
+
+.explore-more {
+  color: var(--foreground);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-more::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--golden);
+  transition: width 0.5s ease;
+}
+
+.explore-more:hover::after {
+  width: 100%;
+}
+
+.explore-more:hover {
+  color: var(--golden);
+  transform: translateX(5px);
+  font-size: 16px !important;
+}

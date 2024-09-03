@@ -149,7 +149,7 @@ const NewBlogs = () => {
                         <p className="fz-12 ls1 text-u opacity-9 mb-15 ">
                           by {item.author}
                         </p>
-                        <div className="tags colorbg mt-15">
+                        {/* <div className="tags colorbg mt-15">
                           {item.tags.map((tag, i) => (
                             <Link
                               href="/dark/blog-list"
@@ -159,7 +159,7 @@ const NewBlogs = () => {
                               {tag}
                             </Link>
                           ))}
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>

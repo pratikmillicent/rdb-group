@@ -10882,7 +10882,7 @@ header.in-box {
 
 .positions-item:hover .apply-btn {
   background-color: var(--golden) !important;
-  color: #000 !important;
+  color: #fff !important;
   transition: background-color 0.8s ease;
 }
 
