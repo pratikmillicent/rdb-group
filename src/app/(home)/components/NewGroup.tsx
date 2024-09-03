@@ -217,11 +217,16 @@ const NewGroupGrid: React.FC = () => {
 
                       <div className=" pt-2">
                         <div className="">
-                          <h5 className="director-title mb-0 p-0">
-                            R.D.Brothers
-                          </h5>
-                          <div className="d-flex justify-content-between w-100 gap-3 mb-4 ">
-                            <h1 className="director-head  m-0">{item.type}</h1>
+                          <div className="d-flex align-items-center justify-content-between w-100 gap-3 mb-4 ">
+                            <div className="">
+                              <h5 className="director-title mb-0 p-0">
+                                R.D.Brothers
+                              </h5>
+                              <h1 className="director-head  m-0">
+                                {item.type}
+                              </h1>
+                            </div>
+
                             <Image
                               src={item.logo}
                               height={500}
