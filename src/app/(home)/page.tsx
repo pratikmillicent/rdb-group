@@ -43,7 +43,12 @@ export default function Home() {
   const videoData = [
     {
       src: "/assets/video/video-3.mp4",
-      text: "Crafted with experience, Built with Trust",
+      text: `Crafted with <span
+         style="
+              font-weight : 500
+            "> Experience </span>, Built with <span style="
+              font-weight : 500
+            "> Trust </span>`,
       link: "/about",
     },
     {
@@ -85,11 +90,10 @@ export default function Home() {
     const { src, text, link } = videoData[loopCount];
     setVideoSrc(src);
     setLinkHref(link);
-    setDisplayedText(""); // Reset the displayed text for typing effect
+    // setDisplayedText(""); // Reset the displayed text for typing effect
     videoRef?.current?.play(); // Ensure the next video plays automatically
-    // setTimeout(() => {
-    //   setHeadingText("" + text);
-    // }, 500);
+
+    setHeadingText(text);
   }, [loopCount]);
 
   useEffect(() => {
@@ -97,13 +101,13 @@ export default function Home() {
     // let charIndex = 0;
     let typingTimeout;
 
-    const typeText = text => {
+    const typeText = (text) => {
       // if (charIndex < text.length) {
       //   setDisplayedText((prev) => prev + text.charAt(charIndex));
       //   charIndex++;
       // }
 
-      setDisplayedText(prev => prev + text.slice(0, 1));
+      setDisplayedText((prev) => prev + text.slice(0, 1));
 
       typingTimeout = setTimeout(() => typeText(text.slice(1)), 100); // Adjust the typing speed here
     };
@@ -116,13 +120,15 @@ export default function Home() {
       clearTimeout(typingTimeout); // Clear the timeout on effect cleanup
     };
   }, [loopCount]);
-  console.log(loopCount, "loopCount");
 
   return (
     <ParallaxProvider>
       <main className="mw-100">
         <div className="hero-responsive">
           <video
+            style={{
+              fontWeight: 600,
+            }}
             className={`mw-100 ${isTransitioning ? "fade-out" : "fade-in"}`}
             src={videoSrc}
             autoPlay
@@ -151,10 +157,10 @@ export default function Home() {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
+                justifyContent: loopCount !== 0 ? "end" : "center",
+                alignItems: loopCount !== 0 ? "start" : "center",
                 height: "100%",
-                padding: "0 20px",
+                padding: "0 20px 20px 20px ",
               }}
             >
               <div className="d-flex align-items-center gap-3">
@@ -165,7 +171,8 @@ export default function Home() {
                       marginBottom: "20px",
                       lineHeight: "56px",
                       letterSpacing: "-1px",
-                      fontWeight: 400,
+                      fontWeight: 700,
+                      opacity: "0.7",
                     }}
                   >
                     R.D.BROTHERS
@@ -177,16 +184,23 @@ export default function Home() {
                     lineHeight: "56px",
                     letterSpacing: "-1px",
                     fontWeight: 400,
-                    fontSize: "42px",
+                    fontSize: "48px",
                     color: loopCount !== 0 ? "var(--golden)" : "#fff",
+                    transition: "all",
+                    opacity: "0.7",
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: headingText,
                   }}
                 >
-                  {displayedText}
+                  {/* {headingText} */}
                 </p>
               </div>
-              <a href={linkHref} className="block hero-button">
-                Know more
-              </a>
+              {loopCount !== 0 && (
+                <a href={linkHref} className="block hero-button">
+                  Know more
+                </a>
+              )}
             </div>
           </div>
         </div>

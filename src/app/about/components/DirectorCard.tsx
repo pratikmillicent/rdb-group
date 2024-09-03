@@ -20,7 +20,7 @@ const DirectorCard = () => {
                   }}
                 >
                   <Image
-                    src="/assets/images2/Dhaval.jpg"
+                    src="/assets/images2/Dhaval.png"
                     alt="Dhaval Thakkar"
                     width={800}
                     height={500}
@@ -97,7 +97,7 @@ const DirectorCard = () => {
                   }}
                 >
                   <Image
-                    src="/assets/images2/Raj.jpg"
+                    src="/assets/images2/Raj.png"
                     alt="Raj Thakkar"
                     width={800}
                     height={500}
