@@ -10,6 +10,7 @@ import CarouselEvent from "../(home)/components/CardImagesCarousel";
 import Awards from "./components/Awards";
 import LatestNews from "./LatestNews";
 import News2 from "../(home)/News2";
+import AwardGallery from "./components/Award2";
 
 const News = () => {
   // const [loadSwiper, setLoadSwiper] = useState(false);
@@ -81,7 +82,7 @@ const News = () => {
       <div className="container">
         <News2 />
 
-        <Awards />
+        <AwardGallery />
         <Heading headTitle="Gallery" />
         <CarouselEvent data={data} />
       </div>
