@@ -18,26 +18,37 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: all 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.explore-more::after {
+/* .explore-more::after {
   content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--golden);
-  transition: width 0.5s ease;
-}
+  background-color: var(--navy);
+  transition: width 0.7s ease;
+} */
 
 .explore-more:hover::after {
   width: 100%;
 }
 
 .explore-more:hover {
-  color: var(--golden);
-  transform: translateX(5px);
-  font-size: 16px !important;
+  color: var(--navy) !important;
+  /* transform: translateX(5px); */
+  /* font-size: 16px !important; */
+}
+
+.explore-more:hover .explore-arrow svg {
+  transform: scale(1.6);
+  transition: transform 0.5s ease-in-out !important;
+  /* transform: translate(4px, -4px); */
+}
+
+.explore-more:hover .explore-arrow::after svg {
+  transition: transform 0.5s ease-in-out !important;
+  transform: scale(0);
 }
