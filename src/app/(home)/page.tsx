@@ -54,22 +54,22 @@ export default function Home() {
     },
     {
       src: "/assets/video/video-1.mp4",
-      text: "Properties",
+      text: "PROPERTIES",
       link: "https://rdbrothers.com",
     },
     {
       src: "/assets/video/video-2.mp4",
-      text: "Realty",
+      text: "REALTY",
       link: "/realty",
     },
     {
       src: "/assets/video/video-3.mp4",
-      text: "Fracto",
+      text: "FRACTO",
       link: "/fracto",
     },
     {
       src: "/assets/video/video-4.mp4",
-      text: "Movies",
+      text: "MOVIES",
       link: "/movies",
     },
   ];
@@ -172,7 +172,7 @@ export default function Home() {
                       marginBottom: "20px",
                       lineHeight: "56px",
                       letterSpacing: "-1px",
-                      fontWeight: 700,
+                      fontWeight: 600,
                       opacity: "0.7",
                     }}
                   >
@@ -192,13 +192,14 @@ export default function Home() {
                   // />
                 )}
                 <p
+                  className=""
                   style={{
                     marginBottom: "20px",
                     lineHeight: "56px",
                     letterSpacing: "-1px",
-                    fontWeight: 400,
+                    fontWeight: 600,
                     fontSize: "48px",
-                    color: loopCount !== 0 ? "var(--golden)" : "#fff",
+                    color: loopCount !== 0 ? "#fff" : "#fff",
                     transition: "all",
                     opacity: "0.7",
                   }}
