@@ -33,7 +33,9 @@ const Heading: React.FC<HeadingProps> = ({
           isColor && "text-white"
         } fs-2`}
       >
-        <span ref={spanRef}>{headTitle}</span>
+        <span style={{ color: "var(--navy)" }} ref={spanRef}>
+          {headTitle}
+        </span>
       </h2>
       <div
         className="border-line"

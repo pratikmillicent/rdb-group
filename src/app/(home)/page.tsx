@@ -13,6 +13,7 @@ import VideoGallary from "./components/VideoGallary";
 import Card from "./components/Card";
 import MobileCarousel from "./components/MobileCarousel";
 import OldGroupGrid from "./components/oldNewGroupWebiste";
+import Image from "next/image";
 
 const DashboardCount = lazy(() => import("@/components/DashboardCount"));
 const Carroussel3D = dynamic(() => import("./components/Carousel"), {
@@ -177,6 +178,18 @@ export default function Home() {
                   >
                     R.D.BROTHERS
                   </h1>
+                  // <Image
+                  //   src="/rdb-group-white.svg"
+                  //   // src="/rdb-group.svg"
+                  //   style={{
+                  //     height: isSmallScreen ? "80px" : "250px",
+                  //     width: "205px",
+                  //   }}
+                  //   className="logo-responsive"
+                  //   alt="logo"
+                  //   width={800}
+                  //   height={500}
+                  // />
                 )}
                 <p
                   style={{
