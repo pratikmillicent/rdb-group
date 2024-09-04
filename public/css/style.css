@@ -403,7 +403,7 @@ figure {
 }
 
 .main-color {
-  color: #abd404 !important;
+  color: var(--golden) !important;
 }
 
 .main-colorbg {

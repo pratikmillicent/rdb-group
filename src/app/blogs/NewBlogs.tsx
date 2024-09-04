@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import BlogCard from "./BlogCard";
 
 const NewBlogs = () => {
   const data = [
@@ -122,49 +123,9 @@ const NewBlogs = () => {
       </section> */}
       <section className="blog-list-half crev sub-bg">
         <div className="container">
-          <div className="row">
+          <div className="row" style={{ rowGap: "40px" }}>
             {data.map((item, index) => (
-              <div className="col-lg-6" key={item.id}>
-                <div
-                  className={`item ${index !== data.length - 1 ? "mb-80" : ""}`}
-                >
-                  <div className="row rest">
-                    <div className="col-md-6">
-                      <div className="img">
-                        <img src={item?.image} alt="" />
-                      </div>
-                    </div>
-                    <div className="col-md-6 valign">
-                      <div className="cont">
-                        <span className="date fz-12 ls1 text-u opacity-7 mb-15">
-                          {item.date}
-                        </span>
-                        <h5
-                          style={{
-                            lineHeight: 1.2,
-                          }}
-                        >
-                          <Link href="/dark/blog-details">{item.title}</Link>
-                        </h5>
-                        <div className="fz-12 ls1 opacity-9 mb-15">
-                          ~ By <span className="fw-bold ">{item.author}</span>
-                        </div>
-                        {/* <div className="tags colorbg mt-15">
-                          {item.tags.map((tag, i) => (
-                            <Link
-                              href="/dark/blog-list"
-                              className="me-1"
-                              key={i}
-                            >
-                              {tag}
-                            </Link>
-                          ))}
-                        </div> */}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <BlogCard item={item} key={index} />
             ))}
           </div>
         </div>

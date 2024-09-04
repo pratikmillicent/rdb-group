@@ -8,15 +8,15 @@ export default function parallaxie(selector, speed = 0.8, startPosition) {
   let position = elementBg.getBoundingClientRect().top * speed;
 
   elementBg.style.backgroundImage = `url("${image}")`;
-  // elementBg.style.backgroundSize = 'cover';
+  elementBg.style.backgroundSize = "cover";
   elementBg.style.backgroundRepeat = "no-repeat";
   elementBg.style.backgroundAttachment = "fixed";
-  elementBg.style.backgroundPosition = `calc(50vw - 10px) ${
+  elementBg.style.backgroundPosition = `0 ${
     startPosition !== undefined ? startPosition : position
   }px`;
 
   window.addEventListener("scroll", () => {
     position = elementBg.getBoundingClientRect().top * speed;
-    elementBg.style.backgroundPosition = `calc(50vw - 10px) ${position}px`;
+    elementBg.style.backgroundPosition = `0 ${position}px`;
   });
 }
