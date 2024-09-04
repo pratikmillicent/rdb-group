@@ -35,14 +35,14 @@ function HeaderBlog() {
                     <div className="d-flex align-items-center">
                       <a href="#0" className="circle-60">
                         <img
-                          src="/assets/images/blog/blog1.jpeg"
+                          src="https://geekfolio-nextjs.themescamp.com/dark/assets/imgs/blog/author1.jpg"
                           alt=""
                           className="circle-img"
                         />
                       </a>
                       <a href="#0" className="ml-20">
                         <span className="opacity-7">Author</span>
-                        <h6 className="fz-16">ThemesCamp</h6>
+                        <h6 className="fz-16">Rajneesh</h6>
                       </a>
                     </div>
                   </div>
@@ -67,7 +67,7 @@ function HeaderBlog() {
       </div>
       <div
         className="background bg-img parallaxie mt-80"
-        data-background="/assets/images/blog/blog1.jpeg"
+        data-background="https://geekfolio-nextjs.themescamp.com/dark/assets/imgs/blog/b2.jpg"
       ></div>
     </header>
   );

@@ -189,7 +189,7 @@ function Post() {
             <div className="author-img mr-30">
               <div className="img">
                 <img
-                  src="/dark/assets/imgs/blog/author1.jpg"
+                  src="https://geekfolio-nextjs.themescamp.com/dark/assets/imgs/blog/author1.jpg"
                   alt=""
                   className="circle-img"
                 />
@@ -209,7 +209,7 @@ function Post() {
         <div className="next-prv-post flex mt-50">
           <div
             className="thumb-post bg-img"
-            data-background="/dark/assets/imgs/blog/b2.jpg"
+            data-background="https://geekfolio-nextjs.themescamp.com/dark/assets/imgs/blog/author1.jpg"
           >
             <Link href="/dark/blog-details">
               <span className="fz-12 text-u ls1 main-color mb-15">
@@ -222,7 +222,7 @@ function Post() {
           </div>
           <div
             className="thumb-post ml-auto text-right bg-img"
-            data-background="/dark/assets/imgs/blog/b3.jpg"
+            data-background="https://geekfolio-nextjs.themescamp.com/dark/assets/imgs/blog/author1.jpg"
           >
             <Link href="/dark/blog-details">
               <span className="fz-12 text-u ls1 main-color mb-15">
