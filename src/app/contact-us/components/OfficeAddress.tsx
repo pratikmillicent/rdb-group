@@ -58,7 +58,7 @@ const OfficeAddress = () => {
     <div>
       <div className="">
         <div className="d-flex justify-content-start">
-          <Heading headTitle="Our Headquarter" textAlign="left" />
+          <Heading headTitle="Our Headquarter" textAlign="left" isMargin="0" />
           {/* <div style={{ textAlign: "left" }} className="w-100">
             <h2 className="fs-2">
               <span>Headquarter office</span>

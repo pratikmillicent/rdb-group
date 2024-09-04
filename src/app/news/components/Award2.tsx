@@ -306,6 +306,7 @@ import Heading from "@/components/heading/Heading";
 import { GrChapterNext, GrChapterPrevious } from "react-icons/gr";
 import PrevNext from "@/utils/PrevNext";
 import { FaLessThanEqual } from "react-icons/fa6";
+import Image from "next/image";
 
 interface Video {
   image: string;
