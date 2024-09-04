@@ -146,11 +146,11 @@ function DarkVariantExample({ spliti, data }: any) {
                     {data.map(item => (
                       <SwiperSlide
                         key={item.id}
-                        className="wow fadeInUp"
+                        className="wow fadeInUp mb-2"
                         data-wow-delay=".1s"
                       >
-                        <div className="item p-0 pt-1 mb-5">
-                          <div className="w-100 h-100 py-1">
+                        <div className="item p-0 mb-5">
+                          <div className="w-100 h-100">
                             <Image
                               src={item.image}
                               alt={item.description}
@@ -222,7 +222,7 @@ const CarouselEvent = ({ data }) => {
       variant="dark"
       nextIcon={directionButtons("Next")}
       prevIcon={directionButtons("Previous")}
-      className="d-flex flex-column gap-2  pt-5 mb-3 ms-3 me-3"
+      className="d-flex flex-column gap-2  mb-3 ms-3 me-3"
     >
       {splitarr.map((spliti, index) => {
         // console.log("out of ", spliti);

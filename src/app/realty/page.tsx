@@ -12,6 +12,10 @@ import ResumeUpload from "../careers/components/ResumeUpload";
 import FractoAdvantage from "./FractoAdvantage";
 import Project from "./Project";
 import Experience from "../about/components/Experience";
+import DirectorCard from "../about/components/DirectorCard";
+import Sustainability from "./Sustainability";
+import ContactComponent from "../contact-us/components/ContactComponent";
+import MissionVision from "./MissionVision";
 
 const Realty = () => {
   return (
@@ -19,15 +23,20 @@ const Realty = () => {
       <main className="bg- text-black">
         <FrameSlider data={data} />
         <Experience />
-        <SectionImage />
+        {/* <SectionImage /> */}
+        <MissionVision />
+        <DirectorCard />
         <Project />
-
         {/* 
         <OngoingProject />
         <CompletedProjects />
         <UpcomingProject /> */}
-        <Careers paddingTop={false} border />
-        <ResumeUpload />
+        <Sustainability />
+        {/* <Careers paddingTop={false} border /> */}
+
+        {/* contact page-- contact and email */}
+        <ContactComponent />
+        {/* <ResumeUpload /> */}
 
         {/* <FractoAdvantage /> */}
       </main>

@@ -89,10 +89,10 @@ function News() {
         <div className="sec-lg-head mb-10">
           <div className="row" style={{ position: "relative" }}>
             <div className="col-lg-12">
-              <div>
-                {/* <div className="fz-50 fw-600">Latest News</div> */}
-                <Heading headTitle="Latest News" />
-              </div>
+              {/* <div> */}
+              {/* <div className="fz-50 fw-600">Latest News</div> */}
+              <Heading headTitle="Latest News" />
+              {/* </div> */}
             </div>
             <div
               style={{
@@ -134,7 +134,7 @@ function News() {
               id="content-carousel-container-unq-blog"
               className="swiper-container"
             >
-              {data?.map((item) => (
+              {data?.map(item => (
                 <SwiperSlide
                   key={item.id}
                   className="wow fadeInUp"

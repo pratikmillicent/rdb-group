@@ -43,11 +43,11 @@ const Blog = () => {
         <div className="container">
           <div className="sec-lg-head">
             <div className="row">
-              <div className="col-lg-12">
-                {/* <Heading headTitle="Blogs" fontSize="fs-1" /> */}
-                {/* <div className="fz-50 fw-600">Blogs</div> */}
-                <Heading headTitle="Blogs" />
-              </div>
+              {/* <div className="col-lg-12"> */}
+              {/* <Heading headTitle="Blogs" fontSize="fs-1" /> */}
+              {/* <div className="fz-50 fw-600">Blogs</div> */}
+              <Heading headTitle="Blogs" />
+              {/* </div> */}
             </div>
           </div>
           {/* <div className="blog-carsouel">

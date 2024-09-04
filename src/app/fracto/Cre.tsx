@@ -35,14 +35,14 @@ const AccordionItem = ({ id, title, content, isOpen, onClick }) => {
 const Cre = () => {
   const [openId, setOpenId] = useState(1);
 
-  const handleToggle = (id) => {
+  const handleToggle = id => {
     setOpenId(openId === id ? null : id);
   };
 
   return (
-    <div className="cre-container container">
-      <Heading headTitle="Why CRE" />
-      <div className="accordion ">
+    <div className=" container">
+      <Heading headTitle="CRE" />
+      {/* <div className="accordion ">
         <AccordionItem
           id="1"
           title="High Return on Investment"
@@ -71,7 +71,7 @@ const Cre = () => {
           isOpen={openId === 4}
           onClick={handleToggle}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

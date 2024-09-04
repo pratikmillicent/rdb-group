@@ -32,7 +32,7 @@ const data = [
 
 function Advantage() {
   return (
-    <section className="services main-bg ontop bord-thin-top bord-thin-bottom">
+    <section className="services main-bg ontop bord-thin-bottom">
       <div className="container-fluid">
         <div className="sec-lg-head">
           <div className="row justify-content-center">
@@ -42,7 +42,7 @@ function Advantage() {
           </div>
         </div>
         <div className="row">
-          {data.map((item) => (
+          {data.map(item => (
             <div className="item-bord col-lg-3 col-md-6" key={item.id}>
               <div className="icon-img-70 mb-40">
                 <i className={`${item?.image} fs-1 text-golden`}></i>
