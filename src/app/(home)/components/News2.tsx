@@ -104,7 +104,7 @@ function News2() {
   return (
     <section className="blog-modern">
       <div className="container">
-        <div className="sec-lg-head mb-10">
+        {/* <div className="sec-lg-head mb-10">
           <div className="row" style={{ position: "relative" }}>
             <div className="col-lg-12">
               <div>
@@ -112,7 +112,9 @@ function News2() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <Heading headTitle="Latest News" />
+
         <div className="blog-carsouel">
           {loadSwiper && (
             <Swiper
@@ -120,7 +122,7 @@ function News2() {
               id="content-carousel-container-unq-blog"
               className="swiper-container"
             >
-              {data?.map((item) => (
+              {data?.map(item => (
                 <SwiperSlide
                   key={item.id}
                   className="wow fadeInUp"

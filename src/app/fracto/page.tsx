@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import Advantage from "./Advantage";
 import Investment from "./InvestmentOption";
 import About from "./About";
+import ProjectFracto from "./ProjectFracto";
 
 const page = () => {
   return (
@@ -69,13 +70,15 @@ const page = () => {
           </p>
           <p className="mb-4"></p>
         </div>
-        <SectionImage />
-        <Advantage />
+        {/* <SectionImage /> */}
+        <ProjectFracto />
         <Cre />
+        <Advantage />
+
         <HowItWorks />
         <Ourbrand />
         <Contact />
-        <Investment />
+        {/* <Investment /> */}
       </div>
     </>
   );

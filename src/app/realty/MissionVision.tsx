@@ -1,13 +1,14 @@
 import Heading from "@/components/heading/Heading";
 import React from "react";
-import Team from "../about/components/Team";
 
-const Movieteam = () => {
+const MissionVision = () => {
   return (
     <div className="container">
-      <Heading headTitle="Teams" />
+      <Heading headTitle="vision and mission" />
+
+      <div className=""></div>
     </div>
   );
 };
 
-export default Movieteam;
+export default MissionVision;

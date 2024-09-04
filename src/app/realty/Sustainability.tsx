@@ -1,13 +1,14 @@
 import Heading from "@/components/heading/Heading";
 import React from "react";
-import Team from "../about/components/Team";
 
-const Movieteam = () => {
+const Sustainability = () => {
   return (
     <div className="container">
-      <Heading headTitle="Teams" />
+      <Heading headTitle="Sustainability" />
+
+      <div className=""></div>
     </div>
   );
 };
 
-export default Movieteam;
+export default Sustainability;

@@ -107,7 +107,7 @@ const page = () => {
                   className="apply_part w-100 positions-item justify-content-around text-light p-4 box-3d"
                 >
                   <div className="w-100 align-items-center d-flex">
-                    <p className="fw-bolder  text-golden">{data.title}</p>
+                    <p className="fw-bolder text-golden">{data.title}</p>
                     <div className="ms-auto apply-btn">
                       <a className="mt-1 fw-bolder">APPLY NOW</a>
                     </div>
@@ -128,6 +128,7 @@ const page = () => {
           </div>
         </div>
         {/* <CardList data={cardData} /> */}
+
         <ResumeUpload />
       </div>
     </>

@@ -1,10 +1,11 @@
+import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import React from "react";
 
 const About = () => {
   return (
     <div className="container">
-      <div className="section-padding d-flex flex-column flex-lg-row justify-content-center text-lg-start ">
+      {/* <div className="section-padding d-flex flex-column flex-lg-row justify-content-center text-lg-start ">
         <div
           className="d-flex flex-column justify-content-center  align-items-start align-items-lg-start mb-4 mb-lg-0"
           style={{ paddingRight: "80px" }}
@@ -36,7 +37,8 @@ const About = () => {
           Brothers seamlessly blends creativity with technical expertise to
           produce films that resonate with audiences across the globe.
         </div>
-      </div>
+      </div> */}
+      <Heading headTitle="About" />
     </div>
   );
 };

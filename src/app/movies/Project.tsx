@@ -4,8 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import PrevNext from "@/utils/PrevNext";
 import Link from "next/link";
+import Heading from "@/components/heading/Heading";
 
-const Mission = () => {
+const Project = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
 
   const latestPrevRef = useRef(null);
@@ -49,7 +50,7 @@ const Mission = () => {
         slidesPerGroup: 3,
       },
     },
-    onSwiper: (swiper) => {
+    onSwiper: swiper => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();
@@ -59,12 +60,13 @@ const Mission = () => {
   const [active, setActive] = useState(0);
   return (
     <div
-      className="overflow-hidden bg-navy"
+      className="overflow-hidden"
       style={{
         marginTop: "40px",
         paddingBottom: "40px",
       }}
     >
+      <Heading headTitle="Project" />
       {/* <div
         className="position-relative"
         style={{
@@ -123,7 +125,7 @@ const Mission = () => {
               gap: "12px",
               fontSize: "18px",
               fontWeight: "500",
-              color: "var(--white)",
+              color: "var(--navy)",
               marginBottom: "12px",
               marginTop: "12px",
             }}
@@ -165,7 +167,7 @@ const Mission = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {release.map((item) => (
+                  {release.map(item => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
@@ -197,7 +199,7 @@ const Mission = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {upcoming.map((item) => (
+                  {upcoming.map(item => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
@@ -226,7 +228,7 @@ const Mission = () => {
   );
 };
 
-export default Mission;
+export default Project;
 
 const release: IMovie[] = [
   {

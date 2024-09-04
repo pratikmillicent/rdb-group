@@ -16,6 +16,7 @@ import { IoLogoYoutube } from "react-icons/io5";
 import { Container, Row, Col } from "react-bootstrap";
 import SocialIcon from "@/components/social-icon/SocialIcon";
 import OfficeAddress from "./components/OfficeAddress";
+import ContactComponent from "./components/ContactComponent";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -91,13 +92,12 @@ const ContactUs = () => {
       <div className="container mt-60">
         <div className="d-flex gap-3">
           <div className="col-12">
-            <Heading headTitle="Contact Us!" />
-            <section className="contact-crev mt-30">
+            {/* <Heading headTitle="Contact Us!" /> */}
+            {/* <section className="contact-crev mt-30">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-5" style={{ paddingLeft: 0 }}>
                     <div className="sec-lg-head mb-60">
-                      {/* <h6 className="dot-titl-non mb-10">Get In Touch</h6> */}
                       <h2 className="fz-50">
                         Let's get in <br /> touch with us.
                       </h2>
@@ -187,7 +187,8 @@ const ContactUs = () => {
                   </div>
                 </div>
               </div>
-            </section>
+            </section> */}
+            <ContactComponent />
             <div className="gap-3 section-padding">
               <div className="mt-30 mb-60">
                 <Heading headTitle="Registered Offices" />
@@ -266,7 +267,6 @@ const ContactUs = () => {
                     <p>info@aspectglobal</p>
                   </div>
                 </div> */}
-
                 <OfficeAddress />
               </div>
             </div>

@@ -228,14 +228,14 @@ export default function Home() {
           <OldGroupGrid />
         </div> */}
 
-        <div
+        {/* <div
           style={{
             display: "flex",
             justifyContent: "center",
           }}
-        >
-          <Heading headTitle="Events" />
-        </div>
+        > */}
+        <Heading headTitle="Events" />
+        {/* </div> */}
 
         <div style={{ padding: "0" }}>
           {isMediumScreen ? (

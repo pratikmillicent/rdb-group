@@ -161,21 +161,21 @@ const NewGroupGrid: React.FC = () => {
   return (
     <section className="portfolio">
       <div className="">
-        <div className="sec-lg-head">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="position-re">
-                <div className="fz-50 fw-600 ">
-                  {/* <span className="text-golden">G</span>roups Websites */}
-                  <div style={{ display: "flex", justifyContent: "center" }}>
-                    <Heading headTitle="Our Business" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 d-flex align-items-center"></div>
-          </div>
-        </div>
+        {/* <div className="sec-lg-head"> */}
+        {/* <div className="row"> */}
+        {/* <div className="col-lg-12"> */}
+        {/* <div className="position-re"> */}
+        {/* <div className="fz-50 fw-600 "> */}
+        {/* <span className="text-golden">G</span>roups Websites */}
+        {/* <div style={{ display: "", justifyContent: "center" }}> */}
+        <Heading headTitle="Our Business" />
+        {/* </div> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* </div> */}
+        {/* <div className="col-lg-4 d-flex align-items-center"></div> */}
+        {/* </div> */}
+        {/* </div> */}
         <section className="portfolio-fixed">
           <div className="container-fluid rest">
             <div className="row">

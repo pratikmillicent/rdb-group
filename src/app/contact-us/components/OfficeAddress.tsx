@@ -57,9 +57,9 @@ const OfficeAddress = () => {
   return (
     <div>
       <div className="">
-        <div className="d-flex justify-content-start">
-          <Heading headTitle="Our Headquarter" textAlign="left" />
-          {/* <div style={{ textAlign: "left" }} className="w-100">
+        {/* <div className=""> */}
+        <Heading headTitle="Our Headquarter" textAlign="left" isMargin="0" />
+        {/* <div style={{ textAlign: "left" }} className="w-100">
             <h2 className="fs-2">
               <span>Headquarter office</span>
             </h2>
@@ -71,7 +71,7 @@ const OfficeAddress = () => {
               }}
             ></div>
           </div> */}
-        </div>
+        {/* </div> */}
 
         <div className="col-md-4" style={{ backgroundSize: "cover" }}>
           <img
@@ -79,7 +79,7 @@ const OfficeAddress = () => {
               "https://www.madebydesignesia.com/themes/justica/images/misc/p1.jpg"
             }
             alt=""
-            className="img-fluid mb30"
+            className="img-fluid"
             style={{ marginBottom: "15px" }}
           />
           <h3 className="fz-22" style={{ marginBottom: "15px" }}>
@@ -113,9 +113,9 @@ const OfficeAddress = () => {
       </div>
 
       <div className="row">
-        <div className="">
-          <Heading headTitle="Our Branch" textAlign="left" />
-          {/* <div className="d-flex justify-content-start">
+        {/* <div className=""> */}
+        <Heading headTitle="Our Branch" textAlign="left" />
+        {/* <div className="d-flex justify-content-start">
             <div style={{ textAlign: "left" }} className="w-100">
               <h2 className="fs-2">
                 <span>Branch office</span>
@@ -129,7 +129,7 @@ const OfficeAddress = () => {
               ></div>
             </div>
           </div> */}
-        </div>
+        {/* </div> */}
         {branchOffice.map((item, index) => (
           //   <div className="col-4" key={index}>
           //     <div

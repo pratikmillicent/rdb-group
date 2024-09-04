@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import About from "./About";
-import Mission from "./Mission";
+import Mission from "./Project";
 import Movieteam from "./Movieteam";
 import Awards from "../news/components/Awards";
 import LatestNews from "../news/LatestNews";
@@ -10,22 +10,32 @@ import OurProjects from "./OurProjects";
 import Enquiries from "./Enquiries";
 import Contact from "../fracto/Contact";
 import TeamSection2 from "../about/components/TeamSection2";
-import Project from "../realty/Project";
+
 import MovieSlider from "./MovieSlider";
+import Project from "./Project";
+import OurMission from "./OurMission";
+import AwardMovie from "./AwardMovie";
+import Review from "./Review";
+import ContactComponent from "../contact-us/components/ContactComponent";
 
 const page = () => {
   return (
     <>
       <MovieSlider />
-      {/* <About /> */}
-      <Mission />
+      <About />
+      <OurMission />
+      <Movieteam />
+      <Project />
+      <AwardMovie />
+      <Review />
+      <ContactComponent />
+
       {/* <OurProjects /> */}
       {/* <Project /> */}
-      {/* <Movieteam /> */}
+
       {/* <TeamSection2 /> */}
-      {/* <div className="container">
-        <Awards />
-      </div> */}
+
+      {/* <Awards /> */}
 
       {/* <LatestNews /> */}
 
