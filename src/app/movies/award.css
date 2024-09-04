@@ -1,0 +1,39 @@
+.award-item {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.award-item:hover {
+  transform: scale(1.05);
+  background-color: var(--background);
+}
+
+.award-id,
+.award-title,
+.award-year {
+  transition: color 0.3s ease;
+}
+
+.award-item:hover .award-id,
+.award-item:hover .award-title,
+.award-item:hover .award-year {
+  color: var(--golden-hover);
+}
+
+.award-title {
+  position: relative;
+}
+
+.award-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: var(--golden-hover);
+  transition: width 0.3s ease;
+}
+
+.award-item:hover .award-title::after {
+  width: 100%;
+}

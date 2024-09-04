@@ -30,12 +30,7 @@ const page = () => {
       <Review />
       <ContactComponent />
 
-      {/* <OurProjects /> */}
       {/* <Project /> */}
-
-      {/* <TeamSection2 /> */}
-
-      {/* <Awards /> */}
 
       {/* <LatestNews /> */}
 
