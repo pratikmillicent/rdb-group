@@ -8,7 +8,7 @@ const MissionVision = () => {
       <Heading headTitle="Vision and Mission" />
 
       <div className="row">
-        <div className="col-12 col-lg-6 mb-4">
+        <div className="col-12 col-lg-6 mb-4 text-center">
           <Image
             src="/assets/images2/our-mission-vision.jpg"
             alt="Dhaval Thakkar"
