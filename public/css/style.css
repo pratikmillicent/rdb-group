@@ -5083,7 +5083,7 @@ body.loaded {
 }
 
 .blog-modern .item {
-  padding-right: 60px;
+  /* padding-right: 60px; */
 }
 
 .blog-modern .item .img {
@@ -11170,7 +11170,7 @@ header.in-box {
   border: none;
   cursor: pointer;
   pointer-events: auto;
-  font-size: 12px;
+  font-size: 10px;
   transition: background-color 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 2px;

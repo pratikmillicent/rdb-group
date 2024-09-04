@@ -13,6 +13,7 @@ import VideoGallary from "./components/VideoGallary";
 import Card from "./components/Card";
 import MobileCarousel from "./components/MobileCarousel";
 import OldGroupGrid from "./components/oldNewGroupWebiste";
+import Image from "next/image";
 
 const DashboardCount = lazy(() => import("@/components/DashboardCount"));
 const Carroussel3D = dynamic(() => import("./components/Carousel"), {
@@ -53,22 +54,22 @@ export default function Home() {
     },
     {
       src: "/assets/video/video-1.mp4",
-      text: "Properties",
+      text: "PROPERTIES",
       link: "https://rdbrothers.com",
     },
     {
       src: "/assets/video/video-2.mp4",
-      text: "Realty",
+      text: "REALTY",
       link: "/realty",
     },
     {
       src: "/assets/video/video-3.mp4",
-      text: "Fracto",
+      text: "FRACTO",
       link: "/fracto",
     },
     {
       src: "/assets/video/video-4.mp4",
-      text: "Movies",
+      text: "MOVIES",
       link: "/movies",
     },
   ];
@@ -171,21 +172,34 @@ export default function Home() {
                       marginBottom: "20px",
                       lineHeight: "56px",
                       letterSpacing: "-1px",
-                      fontWeight: 700,
+                      fontWeight: 600,
                       opacity: "0.7",
                     }}
                   >
                     R.D.BROTHERS
                   </h1>
+                  // <Image
+                  //   src="/rdb-group-white.svg"
+                  //   // src="/rdb-group.svg"
+                  //   style={{
+                  //     height: isSmallScreen ? "80px" : "250px",
+                  //     width: "205px",
+                  //   }}
+                  //   className="logo-responsive"
+                  //   alt="logo"
+                  //   width={800}
+                  //   height={500}
+                  // />
                 )}
                 <p
+                  className=""
                   style={{
                     marginBottom: "20px",
                     lineHeight: "56px",
                     letterSpacing: "-1px",
-                    fontWeight: 400,
+                    fontWeight: 600,
                     fontSize: "48px",
-                    color: loopCount !== 0 ? "var(--golden)" : "#fff",
+                    color: loopCount !== 0 ? "#fff" : "#fff",
                     transition: "all",
                     opacity: "0.7",
                   }}
