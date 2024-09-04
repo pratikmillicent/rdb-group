@@ -9,7 +9,7 @@ const DirectorCard = () => {
         <Heading headTitle="Our Leaders" />
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-6 mb-4">
+            <div className="col-12 col-lg-6 mb-4">
               <div className="text-center">
                 <div
                   style={{
@@ -36,11 +36,11 @@ const DirectorCard = () => {
                   <div
                     style={{
                       position: "absolute",
-                      top: "0",
-                      left: "0",
+                      top: "-10px",
+                      left: "10px",
                       height: "100%",
                       width: "100%",
-                      border: "2px solid var(--golden)", // original border
+                      border: "3px solid var(--golden)", // original border
                       zIndex: "-1",
                     }}
                   ></div>
@@ -62,15 +62,31 @@ const DirectorCard = () => {
                       style={{ margin: "0", fontSize: "20px" }}
                     >
                       Dhaval Thakkar
+                      <br />
+                      <span
+                        style={{
+                          fontWeight: "400",
+                          fontSize: "18px",
+                        }}
+                      >
+                        Founder & CEO
+                      </span>
                     </h4>
                   </div>
                 </div>
               </div>
               <div className="mt-3">
-                <div className="director-heading text-center">
-                  <h1 className="director-head">Founder & CEO</h1>
-                </div>
-                <p className="director-p">
+                <p
+                  className="director-p our-leaders-sec-shadow"
+                  style={{
+                    padding: "108px 20px 20px 20px",
+                    background: "var(--background) !important",
+                    position: "relative",
+                    top: "-89px",
+                    zIndex: "-2",
+                    borderRadius: "0px 50px 0px 50px",
+                  }}
+                >
                   Dhaval Thakkar is a dynamic and detail-oriented leader who
                   believes that innovation is the driving force behind growth
                   and success. With 15 years of expertise in the commercial and
@@ -86,7 +102,7 @@ const DirectorCard = () => {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-md-6 mb-4">
+            <div className="col-12 col-lg-6 mb-4">
               <div className="text-center">
                 <div
                   style={{
@@ -114,11 +130,12 @@ const DirectorCard = () => {
                   <div
                     style={{
                       position: "absolute",
-                      top: "0",
-                      left: "0",
+                      top: "-10px",
+                      // right: "-10px",
+                      left: "-30px",
                       height: "100%",
                       width: "100%",
-                      border: "2px solid var(--golden)", // original border
+                      border: "3px solid var(--golden)", // original border
                       zIndex: "-1",
                     }}
                   ></div>
@@ -126,29 +143,51 @@ const DirectorCard = () => {
                     style={{
                       position: "absolute",
                       bottom: "10px",
-                      right: "-31.5%",
+                      left: "26.5%",
+                      // right: "-31.5%",
                       transform: "translateX(-50%)",
                       backgroundColor: "#eaa636E6", // Semi-transparent background
                       color: "#fff", // White text color
                       padding: "8px 10px",
-                      width: "70%",
-                      clipPath: "polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%)", // Trapezoid shape
+                      width: "60%",
+                      // clipPath: "polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%)", // Trapezoid shape
+                      clipPath: "polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%)", // Trapezoid shape
                     }}
                   >
                     <h4
-                      className="text-center"
+                      className="text-left"
+                      // className="text-right"
                       style={{ margin: "0", fontSize: "20px" }}
                     >
                       Raj Thakkar
+                      <br />
+                      <span
+                        style={{
+                          fontWeight: "400",
+                          fontSize: "18px",
+                        }}
+                      >
+                        Founder
+                      </span>
                     </h4>
                   </div>
                 </div>
               </div>
               <div className="mt-3">
-                <div className="director-heading text-center">
+                {/* <div className="director-heading text-center">
                   <h1 className="director-head">Founder</h1>
-                </div>
-                <p className="director-p">
+                </div> */}
+                <p
+                  className="director-p our-leaders-sec-shadow"
+                  style={{
+                    padding: "108px 20px 48px 20px",
+                    background: "var(--background) !important",
+                    position: "relative",
+                    top: "-89px",
+                    zIndex: "-2",
+                    borderRadius: "50px 0px 50px 0px",
+                  }}
+                >
                   Raj Thakkar is a visionary leader with a forward-thinking
                   approach, dedicated to driving growth and innovation within
                   our organization. With over 21 years of extensive experience,

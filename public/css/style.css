@@ -11655,7 +11655,7 @@ header.in-box {
 .director-p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 28px !important;
   color: var(--white);
 }
 
@@ -11795,4 +11795,8 @@ header.in-box {
 }
 .swiper-button-prev:after {
   font-size: 30px !important;
+}
+
+.our-leaders-sec-shadow {
+  box-shadow: 0 0.3rem 0.5rem var(--golden) !important;
 }
