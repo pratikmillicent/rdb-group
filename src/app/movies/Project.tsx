@@ -99,7 +99,7 @@ const Project = () => {
             <div
               style={{
                 position: "absolute",
-                left: active === 0 ? "10px" : active === 1 ? "108px" : "208px",
+                left: active === 0 ? "12px" : active === 1 ? "125px" : "208px",
                 bottom: -4,
                 height: "2px",
                 width: "3.5em",
