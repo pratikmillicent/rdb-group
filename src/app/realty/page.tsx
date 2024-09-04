@@ -25,7 +25,7 @@ const Realty = () => {
         <Experience />
         {/* <SectionImage /> */}
         <MissionVision />
-        <DirectorCard />
+        {/* <DirectorCard /> */}
         <Project />
         {/* 
         <OngoingProject />
