@@ -68,7 +68,7 @@ function ParallaxSlider({ data }) {
                           © {item.year} <br /> {item.type}
                         </h6>
                         <h1>
-                          <Link href="/dark/project-details1">
+                          <Link href="/realty">
                             <span data-swiper-parallax="-2000">
                               {item.title}
                             </span>

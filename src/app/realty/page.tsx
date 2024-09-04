@@ -21,7 +21,6 @@ const Realty = () => {
         <Experience />
         <SectionImage />
         <Project />
-
         {/* 
         <OngoingProject />
         <CompletedProjects />
