@@ -4,18 +4,19 @@ import Heading from "@/components/heading/Heading";
 
 const Cre = () => {
   return (
-    <div>
+    <div className="">
       <Heading headTitle="CRE" />
 
       <div
-        className="row position-relative"
+        className="row position-relative w-100 overflow-hidden p-0 m-0"
         style={{
           background: "var(--background)",
           paddingTop: "40px",
           paddingBottom: "40px",
+          width: "100vw",
         }}
       >
-        <div className="col-12 mb-5">
+        <div className="col-12 mb-5 overflow-hidden">
           <div className="d-flex flex-wrap justify-content-center align-items-start">
             <h1
               className="col-md-6 col-12 pb-5"
@@ -65,7 +66,7 @@ const Cre = () => {
         </div>
 
         <div
-          className="col-md-8 col-12 d-flex flex-wrap position-absolute cre-position"
+          className=" col-md-8 col-12 d-flex flex-wrap position-absolute cre-position overflow-hidden m-0"
           style={{
             right: "5%",
             top: "27%",
