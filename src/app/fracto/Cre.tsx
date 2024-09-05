@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Fracto.css"; // Ensure this CSS file is correctly imported
 import Heading from "@/components/heading/Heading";
 
@@ -15,16 +15,14 @@ const Cre = () => {
           paddingBottom: "40px",
         }}
       >
-        <div className="w-100 mb-5 pb-5">
-          <div className="d-flex justify-content-center  align-items-start">
+        <div className="col-12 mb-5">
+          <div className="d-flex flex-wrap justify-content-center align-items-start">
             <h1
-              className="pb-5"
+              className="col-md-6 col-12 pb-5"
               style={{
-                flex: 1,
-                fontSize: "56px",
+                fontSize: "clamp(2rem, 5vw, 56px)",
                 fontWeight: 300,
-                lineHeight: "67px",
-
+                lineHeight: "clamp(2.5rem, 6vw, 67px)",
                 marginBottom: "10px",
                 paddingLeft: "5%",
                 color: "var(--navy)",
@@ -36,17 +34,17 @@ const Cre = () => {
                   color: "var(--golden)",
                 }}
               >
-                {" "}
                 Real Estate
               </span>
             </h1>
             <h6
+              className="col-md-6 col-12"
               style={{
                 paddingLeft: "5%",
-                flex: 1,
                 fontSize: "18px",
                 fontWeight: 400,
                 paddingRight: "5%",
+                textAlign: "center",
               }}
             >
               Rd brothers provides a wide selection of financing options for
@@ -54,102 +52,62 @@ const Cre = () => {
             </h6>
           </div>
         </div>
-        <div className="col-md-5">
+
+        <div className="col-md-5 col-12">
           <img
             src="https://www.jpmorgan.com/content/dam/jpmorgan/images/cb/commercial-real-estate/cb-cre-banner-commercial-property-financing-solutions-490x870-vertical.jpg"
             alt="Commercial Property Financing Solutions"
             className="img-fluid"
+            style={{
+              borderBottom: "5px solid var(--golden)",
+            }}
           />
         </div>
-        {/* <div
-          className="position-absolute"
-          style={{
-            left: "50%",
-            top: "5%",
-            fontSize: "56px",
-            fontWeight: 300,
-            lineHeight: "67px",
-          }}
-        >
-          Commercial <br /> Real Estate
-        </div> */}
+
         <div
-          className="col-md-8 d-flex flex-wrap position-absolute "
+          className="col-md-8 col-12 d-flex flex-wrap position-absolute cre-position"
           style={{
             right: "5%",
-            top: "20%",
+            top: "27%",
           }}
         >
-          <div className="col-md-4 text-navy p-3 bg-transparent">
+          {[
+            {
+              title: "Term loans",
+              text: "  Lorem ipsum, dolor sit amet consectetur dolor sit amet consectetur adipisicing elit.laudantium ut hic laboriosam..  ",
+            },
+            {
+              title: "Subscription lending",
+              text: "  Lorem ipsum, dolor sit amet consectetur dolor sit amet consectetur adipisicing elit.laudantium ut hic laboriosam.. ",
+            },
+            {
+              title: "Refinancing",
+              text: "  Lorem ipsum, dolor sit amet consectetur dolor sit amet consectetur adipisicing elit.laudantium ut hic laboriosam..  ",
+            },
+            {
+              title: "Syndicated financing",
+              text: "  Lorem ipsum, dolor sit amet consectetur dolor sit amet consectetur adipisicing elit.laudantium ut hic laboriosam..  ",
+            },
+            {
+              title: "Construction loans",
+              text: "  Lorem ipsum, dolor sit amet consectetur dolor sit amet consectetur adipisicing elit.laudantium ut hic laboriosam.. ",
+            },
+          ].map((item, idx) => (
             <div
-              className=" p-4 h-100 bg-white"
-              style={{
-                borderBottom: "5px solid var(--golden)",
-              }}
+              key={idx}
+              className="col-md-4 col-sm-6 col-12 text-navy p-md-3 p-1"
             >
-              <h5>Term loans</h5>
-              <p>
-                Experience a straightforward process and exceptional customer
-                service when financing multifamily and other commercial
-              </p>
+              <div
+                className="p-md-4 p-2 h-100 bg-white card-border"
+                style={{
+                  borderBottom: "5px solid var(--golden)",
+                }}
+              >
+                <h5>{item.title}</h5>
+                <p className="cre-text">{item.text}</p>
+              </div>
             </div>
-          </div>
-          <div className="col-md-4  text-navy p-3 bg-transparent">
-            <div
-              className=" p-4 h-100 bg-white"
-              style={{
-                borderBottom: "5px solid var(--golden)",
-              }}
-            >
-              <h5>Subscription lending</h5>
-              <p>
-                JPMorgan Chase commercial real estate and subscription finance
-                specialists work side-by-side with our clients to provide credit
-              </p>
-            </div>
-          </div>
-          <div className="col-md-4  text-navy p-3 bg-transparent">
-            <div
-              className=" p-4 h-100 bg-white"
-              style={{
-                borderBottom: "5px solid var(--golden)",
-              }}
-            >
-              <h5>Refinancing</h5>
-              <p>
-                Whether it’s industrial, mixed-use, multifamily, office, or
-                retail property, we offer refinancing options through fixed- and
-              </p>
-            </div>
-          </div>
-          <div className="col-md-4  text-navy p-3 bg-transparent">
-            <div
-              className=" p-4 h-100 bg-white"
-              style={{
-                borderBottom: "5px solid var(--golden)",
-              }}
-            >
-              <h5>Syndicated financing</h5>
-              <p>
-                Our team has extensive knowledge and experience providing
-                syndicated loans for commercial real estate, including
-              </p>
-            </div>
-          </div>
-          <div className="col-md-4  text-navy p-3 bg-transparent">
-            <div
-              className=" p-4 h-100 bg-white"
-              style={{
-                borderBottom: "5px solid var(--golden)",
-              }}
-            >
-              <h5>Construction loans</h5>
-              <p>
-                We have short-term construction loans, construction-to-permanent
-                loans, and other commercial property financing available to fit
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
