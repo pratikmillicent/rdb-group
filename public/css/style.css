@@ -11800,3 +11800,87 @@ header.in-box {
 .our-leaders-sec-shadow {
   box-shadow: 0 0.3rem 0.5rem var(--golden) !important;
 }
+
+.film {
+  padding: 5% 0;
+  aspect-ratio: 16 / 9;
+  background: inherit;
+  background-image: linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, #fff);
+
+  background-repeat: no-repeat;
+  background-position: 0% 2%,
+    10% 2%,
+    20% 2%,
+    30% 2%,
+    40% 2%,
+    50% 2%,
+    60% 2%,
+    70% 2%,
+    80% 2%,
+    90% 2%,
+    100% 2%,
+    0% 98%,
+    10% 98%,
+    20% 98%,
+    30% 98%,
+    40% 98%,
+    50% 98%,
+    60% 98%,
+    70% 98%,
+    80% 98%,
+    90% 98%,
+    100% 98%;
+
+  background-size: 5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%,
+    5% 4%;
+}
+
+.film img {
+  filter: grayscale(90%);
+  transition: filter .5s ease-in;
+}
+
+.film:hover img {
+  filter: none;
+}

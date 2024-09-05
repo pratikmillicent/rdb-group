@@ -23,7 +23,7 @@ const Project = () => {
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
-    slidesPerView: 1.5,
+    slidesPerView: 2.5,
     centeredSlides: true,
     loop: true,
     spaceBetween: 30,
@@ -32,20 +32,20 @@ const Project = () => {
       prevEl: latestPrevRef.current,
       nextEl: latestNextRef.current,
     },
-    breakpoints: {
-      0: {
-        slidesPerView: 1.1,
-      },
-      640: {
-        slidesPerView: 1.3,
-      },
-      768: {
-        slidesPerView: 1.5,
-      },
-      1024: {
-        slidesPerView: 1.7,
-      },
-    },
+    // breakpoints: {
+    //   0: {
+    //     slidesPerView: 1.1,
+    //   },
+    //   640: {
+    //     slidesPerView: 1.3,
+    //   },
+    //   768: {
+    //     slidesPerView: 1.5,
+    //   },
+    //   1024: {
+    //     slidesPerView: 1.7,
+    //   },
+    // },
     onSwiper: (swiper) => {
       setTimeout(() => {
         swiper.navigation.init();
@@ -63,10 +63,10 @@ const Project = () => {
         paddingBottom: "40px",
       }}
     >
-      <Heading headTitle="Project" />
+      {/* <Heading headTitle="Project" /> */}
       <div className="">
         <section className="px-1">
-          <div
+          {/* <div
             style={{
               position: "relative",
               display: "flex",
@@ -107,38 +107,77 @@ const Project = () => {
                 transition: "all ease .5s",
               }}
             ></div>
-          </div>
+          </div> */}
           {active == 0 && (
-            <div className="blog-carsouel">
-              {loadSwiper && (
-                <Swiper
-                  {...swiperOptions}
-                  id="content-carousel-container-unq-blog"
-                  className="swiper-container"
-                >
-                  {release.map((item) => (
-                    <SwiperSlide key={item.id}>
-                      <div className="item pb-5 mb-3">
-                        <div className="img image-container">
-                          <Image
-                            className="w-100"
-                            style={
-                              {
-                                // objectFit: "cover",
-                                // objectPosition: "center center",
+            <div
+              style={{
+                background: "var(--navy)",
+                padding: "20px 0",
+              }}
+            >
+              <div
+                style={{
+                  background: "url(/assets/images/movie/bg-leaf2.svg)",
+                  backgroundRepeat: "no-repeat",
+                  height: "30vh",
+                  backgroundSize: "cover",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                {/* <img
+                  src="/assets/images/movie/bg-leaf.svg"
+                /> */}
+                <Heading
+                  headTitle="Our Projects"
+                  color="var(--golden)"
+                  isMargin="0"
+                />
+              </div>
+              <div className="blog-carsouel">
+                {loadSwiper && (
+                  <Swiper
+                    {...swiperOptions}
+                    id="content-carousel-container-unq-blog"
+                    className="swiper-container"
+                    style={{ background: "inherit" }}
+                  >
+                    {release.map((item) => (
+                      <SwiperSlide key={item.id}>
+                        <div className="item">
+                          <div className="img image-container film">
+                            {/* <div
+                            style={{
+                              position: "absolute",
+                              top: "5%",
+                              fontSize: "20px",
+                              padding: "20px",
+                              transition: "none",
+                            }}
+                          >
+                            comming soon
+                          </div> */}
+                            <Image
+                              // className="w-100"
+                              style={
+                                {
+                                  // filter: "grayscale(90%)",
+                                  // objectFit: "cover",
+                                  // objectPosition: "center center",
+                                }
                               }
-                            }
-                            src={item.image}
-                            alt={item.description}
-                            width={900}
-                            height={500}
-                          />
+                              src={item.image}
+                              alt={item.description}
+                              width={400}
+                              height={400}
+                            />
+                          </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              )}
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                )}
+              </div>
             </div>
           )}
 
