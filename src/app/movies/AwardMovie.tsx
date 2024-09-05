@@ -8,17 +8,20 @@ const AwardMovie = () => {
     {
       id: "01",
       title: "Best Documentary Film - Film Festival",
-      year: 2024,
+      year: 2025,
+      movie: "Jhamkudi",
     },
     {
       id: "02",
       title: "Best Cinematography - Paris Award",
       year: 2024,
+      movie: "Jhamkudi",
     },
     {
       id: "03",
       title: "Short Movie Awards - Yearly Movies",
       year: 2023,
+      movie: "Jhamkudi",
     },
     // {
     //   id: "04",
@@ -55,31 +58,51 @@ const AwardMovie = () => {
         <div className="col-md-7 col-12">
           {awardsData.map((item, index) => (
             <div
-              className="award-item d-flex align-items-start justify-content-between gap-3 p-3 border-bottom"
+              className="awards d-flex  align-items-center justify-content-start p-3 border-bottom"
               key={index}
             >
-              <div className="d-flex align-items-start gap-3">
+              {/* <div className="d-flex align-items-start gap-3">
                 <div className="award-id text-golden fz-16">({item.id})</div>
                 <div className="award-title text-uppercase fz-30 fw-500">
                   {item.title}
                 </div>
-              </div>
+              </div> */}
               <div
-                className="award-year text-uppercase fz-30 fw-500"
+                className=" text-golden"
                 style={{
-                  height: "100px",
-                  width: "200px",
+                  fontSize: "32px",
+                  marginRight: "12px",
                 }}
               >
+                {item.year}
+              </div>
+              <div className="award-item d-flex flex-col align-items-center text-uppercase fz-30 fw-500 gap-3">
                 {/* {item.year} */}
                 <img
                   src="https://silverscreen.qodeinteractive.com/wp-content/uploads/2017/04/h1-img-2.png"
                   alt="award"
-                  className="h-100 w-100"
+                  className="award-year"
                   style={{
                     objectFit: "contain",
+                    height: "114px",
+                    width: "150px",
                   }}
                 />
+                <div className="fz-15 pe-2">{item.movie}</div>
+              </div>
+              <div className="award-item d-flex flex-col align-items-center text-uppercase fz-30 fw-500 gap-3">
+                {/* {item.year} */}
+                <img
+                  src="https://silverscreen.qodeinteractive.com/wp-content/uploads/2017/04/h1-img-2.png"
+                  alt="award"
+                  className="award-year"
+                  style={{
+                    objectFit: "contain",
+                    height: "114px",
+                    width: "150px",
+                  }}
+                />
+                <div className="fz-15 pe-2">{item.movie}</div>
               </div>
             </div>
           ))}
