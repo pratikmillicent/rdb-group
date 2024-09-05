@@ -115,3 +115,33 @@
   margin: 0;
   color: #666;
 }
+
+/* cre sections start */
+/* Fracto.css */
+
+/* Global styles */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .cre-box {
+    top: 0 !important;
+    right: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .cre-box {
+    top: 0 !important;
+    right: 0 !important;
+  }
+  .card-border {
+    border: none !important;
+  }
+  .cre-position {
+    right: "0";
+    left: 5px !important;
+  }
+  .cre-text {
+    font-size: 14px !important;
+  }
+}
