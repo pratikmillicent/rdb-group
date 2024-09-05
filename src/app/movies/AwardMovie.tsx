@@ -12,7 +12,7 @@ const AwardMovie = () => {
     },
     {
       id: "02",
-      title: "Best Music Video - Paris Award",
+      title: "Best Cinematography - Paris Award",
       year: 2024,
     },
     {
@@ -20,16 +20,16 @@ const AwardMovie = () => {
       title: "Short Movie Awards - Yearly Movies",
       year: 2023,
     },
-    {
-      id: "04",
-      title: "Best Animated Short Film - Paris Award",
-      year: 2023,
-    },
-    {
-      id: "05",
-      title: "Best Cinematography - Paris Award",
-      year: 2023,
-    },
+    // {
+    //   id: "04",
+    //   title: "Best Animated Short Film - Paris Award",
+    //   year: 2023,
+    // },
+    // {
+    //   id: "05",
+    //   title: "Best Cinematography - Paris Award",
+    //   year: 2023,
+    // },
   ];
 
   return (
@@ -64,8 +64,22 @@ const AwardMovie = () => {
                   {item.title}
                 </div>
               </div>
-              <div className="award-year text-uppercase fz-30 fw-500">
-                {item.year}
+              <div
+                className="award-year text-uppercase fz-30 fw-500"
+                style={{
+                  height: "100px",
+                  width: "200px",
+                }}
+              >
+                {/* {item.year} */}
+                <img
+                  src="https://silverscreen.qodeinteractive.com/wp-content/uploads/2017/04/h1-img-2.png"
+                  alt="award"
+                  className="h-100 w-100"
+                  style={{
+                    objectFit: "contain",
+                  }}
+                />
               </div>
             </div>
           ))}

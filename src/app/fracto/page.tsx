@@ -57,7 +57,7 @@ const page = () => {
         </div>
       </div>
       <div className="">
-        <div className="container">
+        {/* <div className="container">
           <p className="lead my-4">
             Welcome to Fracto, where innovation meets real estate. Our mission
             is to revolutionize the way you buy, sell, and rent properties by
@@ -69,7 +69,7 @@ const page = () => {
             and personalized support every step of the way.
           </p>
           <p className="mb-4"></p>
-        </div>
+        </div> */}
         {/* <SectionImage /> */}
         <ProjectFracto />
         <Cre />
