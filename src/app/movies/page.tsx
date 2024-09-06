@@ -20,7 +20,7 @@ import ContactComponent from "../contact-us/components/ContactComponent";
 
 const page = () => {
   return (
-    <>
+    <div className="">
       <MovieSlider />
       <About />
       <OurMission />
@@ -37,7 +37,7 @@ const page = () => {
       {/* <Enquiries /> */}
       {/* <Contact /> */}
       {/* <Contact /> */}
-    </>
+    </div>
   );
 };
 

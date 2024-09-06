@@ -1,0 +1,53 @@
+.movie-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818; /* Dark background */
+  padding: 20px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 45%; /* Adjust width based on layout */
+  margin: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Specific positioning and z-index for overlapping effect */
+.top-left {
+  transform: translate(-30px, -30px);
+}
+
+.top-right {
+  transform: translate(30px, -30px);
+  z-index: 2;
+}
+
+.bottom-left {
+  transform: translate(-20px, 20px);
+  z-index: 1;
+}
+
+.bottom-right {
+  transform: translate(20px, 20px);
+  z-index: 3;
+}
+
+/* Add some hover effects if needed */
+.image-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
