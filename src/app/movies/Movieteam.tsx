@@ -52,7 +52,7 @@ function Team() {
       <section className="team-crev section-padding sub-bg">
         <div className="container">
           <div className="row md-marg">
-            {data.map((item) => (
+            {data.map(item => (
               <div className="col-lg-4" key={item.id}>
                 <div className="swiper-slide mb-50">
                   <div className="item">

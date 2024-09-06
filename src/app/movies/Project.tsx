@@ -46,7 +46,7 @@ const Project = () => {
     //     slidesPerView: 1.7,
     //   },
     // },
-    onSwiper: (swiper) => {
+    onSwiper: swiper => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();
@@ -65,7 +65,7 @@ const Project = () => {
     >
       {/* <Heading headTitle="Project" /> */}
       <div className="">
-        <section className="px-1">
+        <section className="">
           {/* <div
             style={{
               position: "relative",
@@ -142,7 +142,7 @@ const Project = () => {
                     className="swiper-container"
                     style={{ background: "inherit" }}
                   >
-                    {release.map((item) => (
+                    {release.map(item => (
                       <SwiperSlide key={item.id}>
                         <div className="item">
                           <div className="img image-container film">
@@ -189,7 +189,7 @@ const Project = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {upcoming.map((item) => (
+                  {upcoming.map(item => (
                     <SwiperSlide key={item.id}>
                       <div className="item pb-5 mb-3">
                         <div className="img image-container">
