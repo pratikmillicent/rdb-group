@@ -55,7 +55,8 @@
 }
 
 .awards-heading {
-  font-size: clamp(40px, 5vw, 65px); /* Responsive font size for headings */
+  font-size: clamp(40px, 5vw, 65px);
+  /* Responsive font size for headings */
   font-weight: 500;
   line-height: 1.3em;
   text-transform: uppercase;
@@ -69,11 +70,10 @@
 
 /* Responsive typography for awards */
 .fz-30 {
-  font-size: clamp(
-    20px,
-    3vw,
-    30px
-  ); /* Responsive font size for title and year */
+  font-size: clamp(20px,
+      3vw,
+      30px);
+  /* Responsive font size for title and year */
 }
 
 .fz-16 {
@@ -100,12 +100,14 @@
   .award-year {
     margin-top: 10px;
   }
+
   .award-item {
     flex-direction: unset !important;
   }
 }
 
 @media (max-width: 480px) {
+
   .award-title,
   .award-year {
     font-size: 18px !important;
