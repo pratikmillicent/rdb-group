@@ -166,25 +166,37 @@ export default Team;
 const data = [
   {
     id: 1,
-    image: "/assets/images/about/testimonial4.jpg",
+    image: "/assets/images/about/team-4.jpg",
     name: "adrian parody",
     position: "Co-Founder",
   },
   {
     id: 2,
-    image: "/assets/images/about/testimonial.jpg",
+    image: "/assets/images/about/team-0.jpg",
     name: "adrian parody",
     position: "Co-Founder",
   },
   {
     id: 3,
-    image: "/assets/images/about/testimonial3.jpg",
+    image: "/assets/images/about/team-3.jpg",
     name: "adrian parody",
     position: "Co-Founder",
   },
   {
     id: 4,
-    image: "/assets/images/about/testimonial2.jpg",
+    image: "/assets/images/about/team-2.jpg",
+    name: "adrian parody",
+    position: "Co-Founder",
+  },
+  {
+    id: 5,
+    image: "/assets/images/about/team-1.jpg",
+    name: "adrian parody",
+    position: "Co-Founder",
+  },
+  {
+    id: 6,
+    image: "/assets/images/about/team-5.jpg",
     name: "adrian parody",
     position: "Co-Founder",
   },
