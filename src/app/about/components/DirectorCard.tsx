@@ -87,18 +87,16 @@ const DirectorCard = () => {
                     borderRadius: "0px 50px 0px 50px",
                   }}
                 >
-                  <strong> Dhaval Thakkar </strong> is a dynamic and
-                  detail-oriented leader who believes that innovation is the
-                  driving force behind growth and success. With 15 years of
-                  expertise in the commercial and retail real estate sectors,
-                  Dhaval has been instrumental in steering our company toward
-                  remarkable expansion. Under his leadership, we have
-                  successfully delivered over 1.5 million square feet of prime
-                  real estate across 14 cities in India, marking our presence in
-                  key markets and setting new industry standards. Dhaval's
-                  approach to leadership is bold and progressive, characterized
-                  by a relentless pursuit of diversification and a deep
-                  commitment to integrating emerging technologies.
+                  <strong> Dhaval Thakkar </strong> is a dynamic leader with 15
+                  years of expertise in commercial and retail real estate. His
+                  innovative approach has driven significant expansion,
+                  delivering over 1.5 million square feet of prime real estate
+                  across 14 Indian cities. Known for his bold, forward-thinking
+                  leadership, Dhaval integrates emerging technologies and
+                  believes challenges as opportunities for value creation. He
+                  inspires his team with a focus on growth, collaboration, and
+                  excellence, shaping our company's success and redefining
+                  industry standards.
                 </p>
               </div>
             </div>
@@ -188,18 +186,16 @@ const DirectorCard = () => {
                     borderRadius: "50px 0px 50px 0px",
                   }}
                 >
-                  <strong> Raj Thakkar</strong> is a visionary leader with a
-                  forward-thinking approach, dedicated to driving growth and
-                  innovation within our organization. With over 21 years of
-                  extensive experience, Raj has played a pivotal role in guiding
-                  our company to new heights, consistently fostering
-                  collaboration, and empowering his team to excel. His
-                  leadership style is both bold and compassionate, known for its
-                  focus on delivering high-impact results while nurturing a
-                  positive and inclusive work environment. Raj’s personable and
-                  approachable nature sets him apart, as he values building
-                  genuine, transparent relationships rooted in trust and mutual
-                  respect.
+                  <strong> Raj Thakkar</strong> is a visionary leader with over
+                  21 years of experience, known for his forward-thinking
+                  approach and dedication to growth and innovation. His bold yet
+                  compassionate leadership has driven the company to new
+                  heights, delivering over 1.2 million square feet of impactful
+                  projects. Raj fosters collaboration and values long-term,
+                  transparent relationships, setting a high standard for
+                  excellence and strategic success. His commitment to
+                  anticipating market trends and implementing innovative
+                  solutions continues to propel the organization forward.
                 </p>
               </div>
             </div>

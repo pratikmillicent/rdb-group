@@ -21,12 +21,12 @@ const Carroussel3D = dynamic(() => import("./components/Carousel"), {
 });
 
 const data = [
-  { value: 4500, label: "Home Protected" },
-  { value: 16, suffix: "k", label: "People Saved" },
-  { value: 4, suffix: "m", label: "Money Saved" },
-  { value: 52, suffix: "k", label: "Contract Signed" },
-  { value: 100, suffix: "+", label: "Countries" },
-  { value: 2, suffix: "k", label: "Staff Member" },
+  { value: 4500, label: "Home Secured" },
+  { value: 16, suffix: "k", label: "Lives Impacted" },
+  { value: 4, suffix: "m", label: "Cost Savings Achived" },
+  { value: 52, suffix: "k", label: "Agreements Finalized" },
+  { value: 100, suffix: "+", label: "Global Presence" },
+  { value: 2, suffix: "k", label: "Team Members" },
 ];
 
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
 
   const videoData = [
     {
-      src: "/assets/video/video-3.mp4",
+      src: "/assets/video/video-5.mp4",
       text: `Crafted with <span
          style="
               font-weight : 500
@@ -54,22 +54,22 @@ export default function Home() {
     },
     {
       src: "/assets/video/video-1.mp4",
-      text: "PROPERTIES",
+      text: "Properties",
       link: "https://rdbrothers.com",
     },
     {
       src: "/assets/video/video-2.mp4",
-      text: "REALTY",
+      text: "Realty",
       link: "/realty",
     },
     {
       src: "/assets/video/video-3.mp4",
-      text: "FRACTO",
+      text: "Fracto",
       link: "/fracto",
     },
     {
       src: "/assets/video/video-4.mp4",
-      text: "MOVIES",
+      text: "Movies",
       link: "/movies",
     },
   ];
@@ -102,13 +102,13 @@ export default function Home() {
     // let charIndex = 0;
     let typingTimeout;
 
-    const typeText = text => {
+    const typeText = (text) => {
       // if (charIndex < text.length) {
       //   setDisplayedText((prev) => prev + text.charAt(charIndex));
       //   charIndex++;
       // }
 
-      setDisplayedText(prev => prev + text.slice(0, 1));
+      setDisplayedText((prev) => prev + text.slice(0, 1));
 
       typingTimeout = setTimeout(() => typeText(text.slice(1)), 100); // Adjust the typing speed here
     };
@@ -158,58 +158,42 @@ export default function Home() {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: loopCount !== 0 ? "end" : "center",
-                alignItems: loopCount !== 0 ? "start" : "center",
+                justifyContent: "center",
+                alignItems: "center",
                 height: "100%",
                 padding: "0 20px 20px 20px ",
               }}
             >
-              <div className="d-flex align-items-center gap-3">
-                {loopCount !== 0 && (
-                  <h1
-                    className="text-white vh-10 hero-heading"
-                    style={{
-                      marginBottom: "20px",
-                      lineHeight: "56px",
-                      letterSpacing: "-1px",
-                      fontWeight: 600,
-                      opacity: "0.7",
-                    }}
-                  >
-                    R.D.BROTHERS
-                  </h1>
-                  // <Image
-                  //   src="/rdb-group-white.svg"
-                  //   // src="/rdb-group.svg"
-                  //   style={{
-                  //     height: isSmallScreen ? "80px" : "250px",
-                  //     width: "205px",
-                  //   }}
-                  //   className="logo-responsive"
-                  //   alt="logo"
-                  //   width={800}
-                  //   height={500}
-                  // />
-                )}
-                <p
-                  className=""
+              {loopCount !== 0 && (
+                <img
+                  src="/rdb.svg"
                   style={{
-                    marginBottom: "20px",
-                    lineHeight: "56px",
-                    letterSpacing: "-1px",
-                    fontWeight: 600,
-                    fontSize: "48px",
-                    color: loopCount !== 0 ? "#fff" : "#fff",
-                    transition: "all",
-                    opacity: "0.7",
+                    width: "180px",
+                    height: "80px",
+                    objectFit: "cover",
                   }}
-                  dangerouslySetInnerHTML={{
-                    __html: headingText,
-                  }}
-                >
-                  {/* {headingText} */}
-                </p>
-              </div>
+                />
+              )}
+              {/* <div className="d-flex align-items-center gap-3"> */}
+              <p
+                className=""
+                style={{
+                  marginBottom: "20px",
+                  lineHeight: "56px",
+                  letterSpacing: "-1px",
+                  fontWeight: 600,
+                  fontSize: "48px",
+                  color: loopCount !== 0 ? "#fff" : "#fff",
+                  transition: "all",
+                  // opacity: "0.7",
+                }}
+                dangerouslySetInnerHTML={{
+                  __html: headingText,
+                }}
+              >
+                {/* {headingText} */}
+              </p>
+              {/* </div> */}
               {loopCount !== 0 && (
                 <a href={linkHref} className="block hero-button">
                   Know more

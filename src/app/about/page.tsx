@@ -12,12 +12,12 @@ import { useInView } from "react-spring";
 import { lazy } from "react";
 
 const data = [
-  { value: 4500, label: "Home Protected" },
-  { value: 16, suffix: "k", label: "People Saved" },
-  { value: 4, suffix: "m", label: "Money Saved" },
-  { value: 52, suffix: "k", label: "Contract Signed" },
-  { value: 100, suffix: "+", label: "Countries" },
-  { value: 2, suffix: "k", label: "Staff Member" },
+  { value: 4500, label: "Home Secured" },
+  { value: 16, suffix: "k", label: "Lives Impacted" },
+  { value: 4, suffix: "m", label: "Cost Savings Achived" },
+  { value: 52, suffix: "k", label: "Agreements Finalized" },
+  { value: 100, suffix: "+", label: "Global Presence" },
+  { value: 2, suffix: "k", label: "Team Members" },
 ];
 
 function About() {

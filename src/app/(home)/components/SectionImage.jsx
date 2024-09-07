@@ -114,7 +114,7 @@ function SectionImage() {
   const [currentImage, setCurrentImage] = useState(images[selectedTab]);
   const [animate, setAnimate] = useState(false);
 
-  const tabStyle = isSelected => ({
+  const tabStyle = (isSelected) => ({
     backgroundColor: isSelected ? "var(--golden)" : "transparent",
     color: isSelected ? "white" : "white",
     fontWeight: "600",
@@ -128,7 +128,7 @@ function SectionImage() {
     margin: "5px",
   });
 
-  const handleTabClick = tab => {
+  const handleTabClick = (tab) => {
     if (selectedTab !== tab) {
       setAnimate(true);
       setTimeout(() => {
@@ -146,7 +146,7 @@ function SectionImage() {
   }, [currentImage]);
 
   return (
-    <section className="container-fluid">
+    <section className="">
       <div className="row screen-height">
         <div
           className="col-md-6 d-flex flex-column justify-content-center align-items-center bg-navy"
@@ -181,24 +181,33 @@ function SectionImage() {
           <div className={`tab-content ${animate ? "slide-in" : ""}`}>
             {selectedTab === "overview" && (
               <p className="text-white fz-16 fw-400">
-                We are a global company dedicated to meeting the diverse needs of various industries through a curated range of offerings. With 20 years of experience and a strong global presence, our portfolio includes expertise in Properties, Realty, Proptech, and Movie Production. Each of these sectors is driven by our commitment to excellence, innovation, and creating meaningful value
+                We are a global company dedicated to meeting the diverse needs
+                of various industries through a curated range of offerings. With
+                20 years of experience and a strong global presence, our
+                portfolio includes expertise in Properties, Realty, Proptech,
+                and Movie Production. Each of these sectors is driven by our
+                commitment to excellence, innovation, and creating meaningful
+                value
               </p>
             )}
             {selectedTab === "mission" && (
               <p className="text-white fz-16 fw-400">
-                Our mission is to deliver exceptional value and innovation across diverse industries and lead with a purpose.
+                Our mission is to deliver exceptional value and innovation
+                across diverse industries and lead with a purpose.
               </p>
             )}
             {selectedTab === "vision" && (
               <p className="text-white fz-16 fw-400">
-                To lead the global marketplace with diversified excellence, innovation, and purpose-driven ventures.
+                To lead the global marketplace with diversified excellence,
+                innovation, and purpose-driven ventures.
               </p>
             )}
           </div>
         </div>
         <div
-          className={`col-md-6 position-relative p-0 ${animate ? "slide-in" : ""
-            } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
+          className={`col-md-6 position-relative p-0 ${
+            animate ? "slide-in" : ""
+          } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
         >
           <div
             className="back-image bg-img parallaxie"

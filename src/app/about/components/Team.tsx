@@ -101,7 +101,7 @@ function Team() {
                   {data.map((item) => (
                     <SwiperSlide key={item.id}>
                       <div className="item">
-                        <div className="img">
+                        <div className="img" style={{ height: "" }}>
                           <Image
                             src={item.image}
                             className="img-fluid"
