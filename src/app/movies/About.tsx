@@ -119,15 +119,13 @@ const About = () => {
                 }}
               ></p>
             </div>
+
             <div
               className=" text-white fz-20 fw-400 d-flex justify-content-center align-items-center mt-4 mt-lg-0 item mb-15 wow fadeInUp"
               style={{
                 width: "100%",
                 alignItems: "center",
                 textAlign: "justify",
-                // visibility: "visible",
-                // animationDelay: "0.3s",
-                // animationName: "fadeInUp",
               }}
             >
               RD Brothers is more than just a production house; it’s a visionary
@@ -139,9 +137,7 @@ const About = () => {
               expertise to produce films that resonate with audiences across the
               globe.
             </div>
-            <div className="d-flex flex-column justify-content-center  align-items-start align-items-lg-start mb-4 mb-lg-0">
-              {/* Optional content */}
-            </div>
+            <div className="d-flex flex-column justify-content-center align-items-start align-items-lg-start mb-4 mb-lg-0"></div>
           </div>
         </div>
       </div>

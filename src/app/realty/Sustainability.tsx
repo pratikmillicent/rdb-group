@@ -22,7 +22,10 @@ const Sustainability = () => {
         }}
       >
         <div className="container">
-          <div className="banner_content inherits pt-4 mt-4">
+          <div
+            className="banner_content inherits"
+            style={{ padding: "40px 0px" }}
+          >
             <div>
               <span className="fz-20 text-golden">
                 <span className="line"></span>Building for the future
@@ -90,7 +93,7 @@ const Sustainability = () => {
               <a
                 href="pdf/ESG-Report-2021.pdf"
                 target="_blank"
-                className="esg-btn hvr-sweep-to-right my-3 rounded"
+                className="esg-btn hvr-sweep-to-right rounded"
               >
                 Read More
               </a>
