@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import SectionImage from "../(home)/components/SectionImage";
-import Cre from "./Cre";
+import Advantage2 from "./Advantage2";
 import HowItWorks from "./HowItWorks";
 import Ourbrand from "./Ourbrand";
 import Contact from "./Contact";
@@ -11,7 +11,6 @@ import Advantage from "./Advantage";
 import Investment from "./InvestmentOption";
 import About from "./About";
 import ProjectFracto from "./ProjectFracto";
-import Cre2 from "./HowItWorks2";
 import HowItWorks2 from "./HowItWorks2";
 
 const page = () => {
@@ -75,10 +74,14 @@ const page = () => {
         {/* <SectionImage /> */}
         <ProjectFracto />
 
-        <Cre />
+        {/* <Cre2 /> */}
         <Advantage />
         <HowItWorks2 />
         {/* <HowItWorks /> */}
+        {/* <Cre /> */}
+        <Advantage2 />
+
+        <HowItWorks />
         <Ourbrand />
         <Contact />
         {/* <Investment /> */}

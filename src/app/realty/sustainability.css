@@ -97,7 +97,8 @@
 }
 
 .banner_text.sust_hght .banner_content .esg-btn:before {
-  background: #000;
+  background: #eaa636;
+  border-radius: 0.25rem;
 }
 
 .hvr-sweep-to-right:hover,
