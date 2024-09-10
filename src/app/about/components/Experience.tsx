@@ -17,20 +17,22 @@ const Experience = () => {
           <div className="col-md-4 mb-4 text-white d-flex flex-col justify-content-center ">
             <h6 className="h-letter pt-2">WELCOME</h6>
             <h4 className="exp-font">
-              Justica is Your Best Partner for Legal Solutions
+              Transforming real estate development with a focus on customer
+              excellence.
             </h4>
           </div>
           <div className="col-md-4 d-flex flex-col justify-content-center">
             <p style={{ fontSize: "16px", color: "var(--navy)" }}>
-              We are a global leader with a distinct vision to shape a
-              sustainable future across the industries we serve. Our aim is to
-              add value to your life through innovation, commitment to
-              excellence and integrity. With 20 years of experience and a strong
-              global presence, our diverse portfolio encompasses Properties,
-              Realty, Proptech, and Movie Production businesses as part of RD
-              Group. We're more than just a large company; we're a dynamic force
-              for change, creativity, and meaningful impact where it matters
-              most.
+              Envisioning the future by thinking ahead. Welcome to Ispace – a
+              company built on the principle of reimagining, transforming, and
+              meeting the dynamic needs of modern construction. With our
+              extensive experience and expertise in creating iconic life spaces
+              across the MMR region, we are committed to delivering lasting
+              value to our valued customers. Each landmark we develop reflects
+              our dedication to creating spaces that embody positivity,
+              functionality, and ample space. At Ispace, we see customer
+              expectations as a guide to crafting success stories that leave a
+              lasting mark on Mumbai’s skyline.
             </p>
           </div>
         </div>

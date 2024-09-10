@@ -18,6 +18,7 @@ import AwardMovie from "./AwardMovie";
 import Review from "./Review";
 import ContactComponent from "../contact-us/components/ContactComponent";
 import Movieteam2 from "./Movieteam2";
+import Gallery from "./Gallery";
 
 const page = () => {
   return (
@@ -25,10 +26,11 @@ const page = () => {
       <MovieSlider />
       <About />
       <OurMission />
-      {/* <Movieteam /> */}
-      <Movieteam2 />
+      <Movieteam />
+      {/* <Movieteam2 /> */}
       <Project />
       <AwardMovie />
+      <Gallery />
       <Review />
       <ContactComponent />
       {/* <Project /> */}

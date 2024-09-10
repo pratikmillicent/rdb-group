@@ -11,6 +11,8 @@ import Advantage from "./Advantage";
 import Investment from "./InvestmentOption";
 import About from "./About";
 import ProjectFracto from "./ProjectFracto";
+import Cre2 from "./HowItWorks2";
+import HowItWorks2 from "./HowItWorks2";
 
 const page = () => {
   return (
@@ -72,10 +74,11 @@ const page = () => {
         </div> */}
         {/* <SectionImage /> */}
         <ProjectFracto />
+
         <Cre />
         <Advantage />
-
-        <HowItWorks />
+        <HowItWorks2 />
+        {/* <HowItWorks /> */}
         <Ourbrand />
         <Contact />
         {/* <Investment /> */}

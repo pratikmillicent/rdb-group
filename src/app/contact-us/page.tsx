@@ -41,14 +41,17 @@ const ContactUs = () => {
 
   return (
     <>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative", height: "70vh" }}>
         <Image
-          src="/assets/images/contact/contact.jpg"
+          src="/assets/images/contact/Contact-Us-1.jpg"
           className="circle-img contact-banner banner"
           alt="carrer page"
-          // style={{ height: "100vh" }}
-          width={800}
-          height={500}
+          style={{ objectFit: "contain" }}
+          // width={800}
+          // height={500}
+          // objectFit="contain"
+          objectFit="cover"
+          fill
         />
         <div
           style={{
