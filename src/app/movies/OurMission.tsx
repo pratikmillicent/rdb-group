@@ -26,9 +26,10 @@ function About() {
             <div className="col-lg-6 valign">
               <div className="cont md-mb50">
                 <h4 className="text wow fadeIn" data-wow-delay=".5s">
-                  Bridging FinTech with the Film Industry Enabling Everyday
-                  Investors to Participate in the Film Industry Foster film
-                  producers amounts all of us
+                  We connect FinTech with film, empowering everyday investors to
+                  participate in and support cinematic projects. Our goal is to
+                  democratize film financing and uplift producers through
+                  innovation and collaboration.
                 </h4>
               </div>
             </div>

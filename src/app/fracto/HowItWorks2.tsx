@@ -1,5 +1,5 @@
 import React from "react";
-import "./cre2.css";
+import "./howtowork2.css";
 import Heading from "@/components/heading/Heading";
 
 const mediaItems = [

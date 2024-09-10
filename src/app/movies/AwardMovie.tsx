@@ -42,17 +42,19 @@ const AwardMovie = () => {
         <div className="col-md-5 col-12 mb-4">
           <div className="fz-18 text-golden">Awards Winning</div>
           <div
-            className="awards-heading"
+            className=""
             style={{
-              fontSize: "clamp(40px, 5vw, 65px)",
+              fontSize: "clamp(20px, 3vw, 30px)",
               fontWeight: 500,
               lineHeight: "1.3em",
               letterSpacing: "0px",
-              textTransform: "uppercase",
+              // textTransform: "uppercase",
               color: "var(--navy)",
             }}
           >
-            Our Awards and Recognitions
+            {/* Our Awards and Recognitions */}
+            Recognized with prestigious awards for outstanding contributions in
+            film making.
           </div>
         </div>
         <div className="col-md-7 col-12">

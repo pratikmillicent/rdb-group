@@ -12,6 +12,8 @@ import Investment from "./InvestmentOption";
 import About from "./About";
 import ProjectFracto from "./ProjectFracto";
 import HowItWorks2 from "./HowItWorks2";
+import Heading from "@/components/heading/Heading";
+import Cre from "./Cre";
 
 const page = () => {
   return (
@@ -47,41 +49,48 @@ const page = () => {
               padding: "0 20px",
             }}
           >
-            <h3 className="banner-heading hero-heading">Fracto</h3>
-            <div
-              className="border-line"
-              style={{
-                width: "50px",
-              }}
-            ></div>
+            {/* <h3 className="banner-heading hero-heading">
+              Invest in Opportunities. Unlock Real Estate Value.
+            </h3> */}
+            <Heading
+              headTitle="Invest in Opportunities. Unlock Real Estate Value."
+              color="white"
+            />
           </div>
         </div>
       </div>
       <div className="">
-        {/* <div className="container">
+        <div className="container">
           <p className="lead my-4">
-            Welcome to Fracto, where innovation meets real estate. Our mission
-            is to revolutionize the way you buy, sell, and rent properties by
-            leveraging cutting-edge technology and providing exceptional
-            service. At Fracto, we understand that the real estate journey is
-            not just about transactions, but about finding a place to call home
-            or making a sound investment. That's why we are committed to
-            offering a user-friendly platform, comprehensive market insights,
-            and personalized support every step of the way.
+            Strata was established with a bold vision: to democratize commercial
+            real estate investing and make it accessible to a wider range of
+            investors. Our mission is to break down the barriers to entry in
+            this traditionally exclusive market, enabling more people to
+            participate in high-value, institutional-grade real estate
+            opportunities. We leverage technology and innovation to simplify the
+            investment process, providing a transparent, hassle-free platform
+            where investors can diversify their portfolios with carefully
+            curated commercial properties. Our data-driven approach ensures that
+            each investment is backed by thorough market research, expert
+            analysis, and a commitment to delivering sustainable returns. At
+            Strata, we believe in unlocking the true potential of real estate by
+            offering fractional ownership, enabling investors to start small and
+            scale as they grow. Our end-to-end services—from property selection
+            and due diligence to asset management and exit strategies—are
+            designed to maximize value and minimize risk for our investors.
           </p>
-          <p className="mb-4"></p>
-        </div> */}
+        </div>
         {/* <SectionImage /> */}
         <ProjectFracto />
 
-        {/* <Cre2 /> */}
-        <Advantage />
+        <Cre />
+        {/* <Advantage /> */}
+        <Advantage2 />
         <HowItWorks2 />
         {/* <HowItWorks /> */}
         {/* <Cre /> */}
-        <Advantage2 />
 
-        <HowItWorks />
+        {/* <HowItWorks /> */}
         <Ourbrand />
         <Contact />
         {/* <Investment /> */}
