@@ -42,13 +42,13 @@ function Advantage() {
           </div>
         </div>
         <div className="row">
-          {data.map(item => (
+          {data.map((item) => (
             <div className="item-bord col-lg-3 col-md-6" key={item.id}>
               <div className="icon-img-70 mb-40">
                 <i className={`${item?.image} fs-1 text-golden`}></i>
               </div>
               <h6 className="mb-15">{item.title}</h6>
-              <p>{item.text}</p>
+              <p>{item.text}</p>x``
               <Link href="/dark/page-services" className="arrow mt-40">
                 <span className="circle">
                   <svg
