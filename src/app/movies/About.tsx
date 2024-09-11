@@ -10,37 +10,26 @@ const About = () => {
       <div
         className="bg-opacity-50"
         style={{
-          backgroundImage: `url(/assets/images/movie/about-bg-3.jpg)`,
+          backgroundImage: `url(/assets/images/movie/about-bg-4.jpeg)`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
           width: "100%",
-          minHeight: "80vh", // Ensures it takes full height
+          minHeight: "55vh", // 01
+          // minHeight: "80vh", // Ensures it takes full height
+          filter: "hue-rotate(45deg)",
         }}
       >
-        <div
-          className="d-flex align-items-center"
-          style={{ minHeight: "80vh" }}
-        >
-          <div className="container d-flex flex-column flex-lg-row justify-content-center text-lg-start">
-            <div className="d-flex justify-content-center justify-content-lg-start align-items-end">
-              <p
-                className="ms-3"
-                style={{
-                  height: "300px",
-                  width: "473px",
-                  borderRadius: "50%",
-                  overflow: "hidden",
-                }}
-              ></p>
-            </div>
-
+        <div className="d-flex align-items-center">
+          <div className="container d-flex flex-column flex-lg-row justify-content-center text-lg-start py-4">
             <div
-              className=" text-white fz-20 fw-400 d-flex justify-content-center align-items-center mt-4 mt-lg-0 item mb-15 wow fadeInUp"
+              className="text-black fz-18 fw-500 d-flex justify-content-center align-items-center  mt-lg-0 item wow fadeInUp"
               style={{
                 width: "100%",
                 alignItems: "center",
                 textAlign: "justify",
+                // fontFamily: "FontAwesome",
+                fontStyle: "italic", // 01
               }}
             >
               Welcome to Soul Sutra Studios, where the essence of storytelling
@@ -61,6 +50,17 @@ const About = () => {
               that each project reflects our passion for storytelling and
               innovation. Join us on this journey as we explore new horizons and
               bring to life stories that touch the heart and elevate the soul.
+            </div>
+            <div className="d-flex justify-content-center justify-content-lg-start align-items-end">
+              <p
+                className="ms-3"
+                style={{
+                  height: "300px",
+                  width: "473px",
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                }}
+              ></p>
             </div>
             <div className="d-flex flex-column justify-content-center align-items-start align-items-lg-start mb-4 mb-lg-0"></div>
           </div>
