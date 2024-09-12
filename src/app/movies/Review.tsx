@@ -49,7 +49,7 @@ function Review() {
   }, []);
 
   return (
-    <section className="testim-crv section-padding">
+    <section className="testim-crv section-padding pt-1">
       <Heading headTitle="Review" />
       <div className="container">
         <div className="row ">
@@ -146,7 +146,7 @@ function Review() {
                   id="content-carousel-container-unq-testim"
                   className="swiper-container"
                 >
-                  {data.map(item => (
+                  {data.map((item) => (
                     <SwiperSlide key={item.id}>
                       <div
                         className="item"

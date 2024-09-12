@@ -23,7 +23,7 @@ const About = () => {
         <div className="d-flex align-items-center">
           <div className="container d-flex flex-column flex-lg-row justify-content-center text-lg-start py-4">
             <div
-              className="text-black fz-18 fw-500 d-flex justify-content-center align-items-center  mt-lg-0 item wow fadeInUp"
+              className="text-navy fz-18 fw-600 d-flex justify-content-center align-items-center  mt-lg-0 item wow fadeInUp"
               style={{
                 width: "100%",
                 alignItems: "center",

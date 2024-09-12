@@ -36,9 +36,23 @@ const AwardMovie = () => {
   ];
 
   return (
-    <div className="container-fluid">
-      <Heading headTitle="Awards" />
-      <div className="row">
+    <div className="">
+      {/* <Heading headTitle="Awards" /> */}
+      <div
+        className="bg-navy"
+        style={{
+          background: "url(/assets/images/movie/bg-leaf2.svg)",
+          backgroundRepeat: "no-repeat",
+          height: "30vh",
+          backgroundSize: "contain",
+          display: "flex",
+          alignItems: "center",
+          // backgroundColor: "var(--navy)",
+        }}
+      >
+        <Heading headTitle="Awards" isMargin="0" />
+      </div>
+      <div className="row p-5">
         <div className="col-md-5 col-12 mb-4">
           <div className="fz-18 text-golden">Awards Winning</div>
           <div

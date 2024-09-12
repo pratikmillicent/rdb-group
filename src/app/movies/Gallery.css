@@ -1,0 +1,139 @@
+.grid-gallery {
+  --size: 100px;
+  display: grid;
+  grid-template-columns: repeat(6, var(--size));
+  grid-auto-rows: var(--size);
+  gap: 10px;
+  place-items: start center;
+  margin-bottom: var(--size);
+  background-image: linear-gradient(to right, var(--golden), var(--navy));
+}
+
+.grid-gallery img {
+  width: calc(var(--size) * 2);
+  height: calc(var(--size) * 2);
+  object-fit: cover;
+  grid-column: auto / span 2;
+  border-radius: 5px;
+  clip-path: path(
+    "M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z"
+  );
+}
+
+.grid-gallery img:nth-child(5n - 1) {
+  grid-column: 2 / span 2;
+}
+
+.grid-gallery:has(img:hover) img:not(:hover) {
+  filter: brightness(0.5) contrast(0.5);
+}
+
+.grid-gallery img {
+  /* ... */
+  transition: clip-path 0.25s, filter 0.75s;
+}
+
+.grid-gallery img:hover {
+  clip-path: path(
+    "M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z"
+  );
+  transition: clip-path 0.25s, filter 0.25s;
+  z-index: 1;
+}
+.grid-gallery a:focus {
+  outline: 1px dashed black;
+  outline-offset: -5px;
+}
+
+/* Gallery.css */
+
+.grid-gallery img {
+  cursor: pointer;
+}
+
+/* Set uniform height and width for landscape images inside the modal */
+.swiper-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Adjusts to the modal's height */
+}
+
+/* Ensure images have a uniform landscape size */
+.landscape-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 400px; /* Set a fixed height for landscape view */
+  object-fit: cover; /* Ensure images are not distorted */
+}
+
+/* Button 5 */
+.btn-5 {
+  position: relative;
+  color: #6d6875;
+  padding: 18px 55px;
+  font-weight: 600;
+  font-size: 18px;
+  border: 3px solid var(--golden);
+  border-radius: 30px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.btn-5::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  right: -22%;
+  transform: rotate(15.6deg);
+  border-left: 54px solid transparent;
+  border-right: 54px solid transparent;
+  border-bottom: 112px solid #fff;
+  z-index: 9;
+}
+
+.btn-5::after {
+  content: "";
+  position: absolute;
+  top: -170%;
+  right: -10%;
+  transform: rotate(14.57deg);
+  border-left: 54px solid transparent;
+  border-right: 54px solid transparent;
+  border-bottom: 112px solid #fff;
+}
+
+.btn-5 span {
+  position: absolute;
+  top: -70%;
+  left: -25%;
+  transform: rotate(13.42deg);
+  border-left: 54px solid transparent;
+  border-right: 54px solid transparent;
+  border-bottom: 112px solid #fff;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border: 1.5px solid var(--golden);
+  background-color: var(--golden);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Button 10 */
+.btn-10 {
+  color: var(--navy);
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  background: linear-gradient(90deg, var(--golden) 0%, var(--background) 100%);
+}
+
+/* .btn-10::after {
+  font-family: "Material Icons";
+  content: "\e8b6";
+  font-size: 22px;
+} */

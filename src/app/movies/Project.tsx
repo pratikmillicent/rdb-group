@@ -46,7 +46,7 @@ const Project = () => {
     //     slidesPerView: 1.7,
     //   },
     // },
-    onSwiper: swiper => {
+    onSwiper: (swiper: any) => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();
@@ -63,7 +63,7 @@ const Project = () => {
         paddingBottom: "40px",
       }}
     >
-      {/* <Heading headTitle="Project" /> */}
+      <Heading headTitle="Project" />
       <div className="">
         <section className="">
           {/* <div
@@ -115,25 +115,6 @@ const Project = () => {
                 padding: "20px 0",
               }}
             >
-              <div
-                style={{
-                  background: "url(/assets/images/movie/bg-leaf2.svg)",
-                  backgroundRepeat: "no-repeat",
-                  height: "30vh",
-                  backgroundSize: "cover",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                {/* <img
-                  src="/assets/images/movie/bg-leaf.svg"
-                /> */}
-                <Heading
-                  headTitle="Our Projects"
-                  color="var(--golden)"
-                  isMargin="0"
-                />
-              </div>
               <div className="blog-carsouel">
                 {loadSwiper && (
                   <Swiper
@@ -142,7 +123,7 @@ const Project = () => {
                     className="swiper-container"
                     style={{ background: "inherit" }}
                   >
-                    {release.map(item => (
+                    {release.map((item) => (
                       <SwiperSlide key={item.id}>
                         <div className="item">
                           <div className="img image-container film">
@@ -189,7 +170,7 @@ const Project = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {upcoming.map(item => (
+                  {upcoming.map((item) => (
                     <SwiperSlide key={item.id}>
                       <div className="item pb-5 mb-3">
                         <div className="img image-container">
