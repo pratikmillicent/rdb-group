@@ -26,8 +26,8 @@ const page = () => {
       <MovieSlider />
       <About />
       <OurMission />
-      <Movieteam />
-      {/* <Movieteam2 /> */}
+      {/* <Movieteam /> */}
+      <Movieteam2 />
       <Project />
       <AwardMovie />
       <Gallery />

@@ -94,7 +94,7 @@ const MissionVision = () => {
                   top: "80%",
                   right: "-15%",
                   // transform: "translate(-50%, -50%)",
-                  fontSize: "30px",
+                  // fontSize: "30px",
                   color: "var(--golden)",
                   fontSize: "100px",
                 }}
@@ -157,7 +157,7 @@ const MissionVision = () => {
                   top: "77%",
                   right: "-14%",
                   // transform: "translate(-50%, -50%)",
-                  fontSize: "30px",
+                  // fontSize: "30px",
                   color: "var(--golden)",
                   fontSize: "110px",
                 }}
