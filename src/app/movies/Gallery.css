@@ -3,10 +3,12 @@
   display: grid;
   grid-template-columns: repeat(6, var(--size));
   grid-auto-rows: var(--size);
-  gap: 10px;
+  gap: 30px;
   place-items: start center;
-  margin-bottom: var(--size);
-  background-image: linear-gradient(to right, var(--golden), var(--navy));
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-bottom: var(--size); */
+  /* background-image: linear-gradient(to right, var(--golden), var(--background)); */
 }
 
 .grid-gallery img {
@@ -18,6 +20,7 @@
   clip-path: path(
     "M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z"
   );
+  transform: scale(1.2);
 }
 
 .grid-gallery img:nth-child(5n - 1) {

@@ -72,6 +72,7 @@ function Movieteam2() {
                   style={{
                     width: "50px",
                     height: "50px",
+                    backgroundColor: "transparent !important",
                     lineHeight: "50px",
                     textAlign: "center",
                     border: " 1px solid rgba(255, 255, 255, 0.2)",
@@ -102,6 +103,7 @@ function Movieteam2() {
                   className=""
                   style={{
                     width: "50px",
+                    backgroundColor: "transparent !important",
                     height: "50px",
                     lineHeight: "50px",
                     textAlign: "center",
@@ -144,7 +146,7 @@ function Movieteam2() {
                   id="content-carousel-container-unq-testim"
                   className="swiper-container"
                 >
-                  {data.map(item => (
+                  {data.map((item) => (
                     <SwiperSlide key={item.id}>
                       {/* <div
                         className="item"

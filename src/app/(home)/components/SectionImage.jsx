@@ -149,8 +149,8 @@ function SectionImage() {
     <section className="">
       <div className="row screen-height">
         <div
-          className="col-md-6 d-flex flex-column justify-content-center align-items-center bg-navy"
-          style={{ padding: "0px 100px" }}
+          className="vision-container col-md-6 d-flex flex-column justify-content-center align-items-center bg-navy"
+        // style={{ padding: "0px 100px" }}
         >
           <div className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600">
             RD Brothers
@@ -180,7 +180,7 @@ function SectionImage() {
           </div>
           <div className={`tab-content ${animate ? "slide-in" : ""}`}>
             {selectedTab === "overview" && (
-              <p className="text-white fz-16 fw-400">
+              <p className="text-white fz-16 fw-400 w-100">
                 We are a global company dedicated to meeting the diverse needs
                 of various industries through a curated range of offerings. With
                 20 years of experience and a strong global presence, our
@@ -205,9 +205,8 @@ function SectionImage() {
           </div>
         </div>
         <div
-          className={`col-md-6 position-relative p-0 ${
-            animate ? "slide-in" : ""
-          } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
+          className={`col-md-6 position-relative p-0 ${animate ? "slide-in" : ""
+            } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
         >
           <div
             className="back-image bg-img parallaxie"

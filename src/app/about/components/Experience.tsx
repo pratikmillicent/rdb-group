@@ -22,7 +22,13 @@ const Experience = () => {
             </h4>
           </div>
           <div className="col-md-4 d-flex flex-col justify-content-center">
-            <p style={{ fontSize: "16px", color: "var(--navy)" }}>
+            <p
+              style={{
+                fontSize: "16px",
+                color: "var(--navy)",
+                textAlign: "justify",
+              }}
+            >
               Envisioning the future by thinking ahead. Welcome to Ispace – a
               company built on the principle of reimagining, transforming, and
               meeting the dynamic needs of modern construction. With our

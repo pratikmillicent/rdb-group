@@ -242,7 +242,7 @@ const NewGroupGrid: React.FC = () => {
                       </div>
 
                       <div className="row">
-                        <div className="col-md-12 pb-4">
+                        <div className="col-md-12 pb-4 ">
                           <p
                             style={{
                               textAlign: "justify",

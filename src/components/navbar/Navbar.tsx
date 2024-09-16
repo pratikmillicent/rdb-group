@@ -80,10 +80,16 @@ function Navbar() {
           style={{
             // padding: "0 45px",
             display: "flex",
-            alignItems: "center",
+            justifyContent: "end",
           }}
         >
-          <span className="">
+          <div
+            className=""
+            style={{
+              display: "flex",
+              justifyContent: "end",
+            }}
+          >
             <a href="#">
               <i
                 className="fa-brands fa-facebook-f"
@@ -145,15 +151,15 @@ function Navbar() {
                 }}
               ></i>
             </a>
-          </span>
-          <div style={{ marginLeft: "auto" }}>
+          </div>
+          {/* <div style={{ marginLeft: "auto" }}>
             <a href="#" style={{ marginRight: "18px", color: "#fff" }}>
               Privacy policy
             </a>
             <a href="#" style={{ marginRight: "18px", color: "#fff" }}>
               FAQ
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
       <nav

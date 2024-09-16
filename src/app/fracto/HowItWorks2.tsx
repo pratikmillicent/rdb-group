@@ -69,7 +69,7 @@ const HowItWorks2 = () => {
         </div>
         <div className="col-6 d-flex">
           {/* Mapping the first two items */}
-          {mediaItems.slice(0, 2).map(item => (
+          {mediaItems.slice(0, 2).map((item) => (
             <div
               key={item.id}
               className="col-6 "
@@ -81,7 +81,9 @@ const HowItWorks2 = () => {
                 <div className="flip-card-inner">
                   <div className="flip-card-front d-flex justify-content-center align-items-center">
                     <div className="">
-                      <h6 style={{ color: "var(--golden)" }}>{item.name}d</h6>
+                      <h6 style={{ color: "var(--golden)", fontWeight: 600 }}>
+                        {item.name}
+                      </h6>
                     </div>
                   </div>
                   <div className="flip-card-back">
@@ -105,13 +107,15 @@ const HowItWorks2 = () => {
       {/* Next rows with two boxes each */}
       <div className="row">
         {/* Mapping the rest of items */}
-        {mediaItems.slice(2).map(item => (
+        {mediaItems.slice(2).map((item) => (
           <div key={item.id} className="col-3 mb-4">
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front d-flex justify-content-center align-items-center">
                   <div className="">
-                    <h6 style={{ color: "var(--golden)" }}>{item.name}d</h6>
+                    <h6 style={{ color: "var(--golden)", fontWeight: 600 }}>
+                      {item.name}
+                    </h6>
                   </div>
                 </div>
                 <div className="flip-card-back ">

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import parallaxie from "@/utils/parallax";
 import { FaHandshake, FaMedal, FaUsers } from "react-icons/fa6";
 import { TbBulb } from "react-icons/tb";
+import "./callToAction.css";
 
 function CallToAction({}) {
   const [active, setActive] = useState(0);
@@ -10,7 +11,7 @@ function CallToAction({}) {
   }, [active]);
 
   return (
-    <section className="call-action-img section-padding">
+    <section className="call-action-img">
       <div className="w-100">
         <div
           className="w-100 sec-bg-img bg-img parallaxie"
@@ -164,7 +165,7 @@ function CallToAction({}) {
           <div className="">
             <div className="row text-center" style={{ color: "var(--golden)" }}>
               <div
-                className="col-lg-4 col-md-12 bg-dark bg-opacity-50 text-white"
+                className="core-value-container col-lg-4 col-md-12 bg-dark bg-opacity-50 text-white"
                 style={{
                   fontSize: "45px",
                   fontWeight: 500,
@@ -172,6 +173,7 @@ function CallToAction({}) {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  // padding: "50px 0px",
                 }}
               >
                 Our <br /> Core Values

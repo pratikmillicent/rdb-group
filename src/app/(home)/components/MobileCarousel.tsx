@@ -51,7 +51,7 @@ const MobileCarousel = () => {
             id="content-carousel-container-unq-blog"
             className="swiper-container"
           >
-            {data.map(item => (
+            {data.map((item) => (
               <SwiperSlide
                 key={item.id}
                 className="wow fadeInUp"
@@ -62,7 +62,7 @@ const MobileCarousel = () => {
                     <Image
                       src={item.image}
                       alt={item.image}
-                      style={{ height: "320px", objectFit: "cover" }}
+                      style={{ height: "320px", objectFit: "contain" }}
                       width={800}
                       height={500}
                     />

@@ -29,7 +29,7 @@ const About = () => {
                 alignItems: "center",
                 textAlign: "justify",
                 // fontFamily: "FontAwesome",
-                fontStyle: "italic", // 01
+                fontStyle: "italic",
               }}
             >
               Welcome to Soul Sutra Studios, where the essence of storytelling

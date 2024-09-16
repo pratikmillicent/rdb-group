@@ -7,13 +7,13 @@ import Footer from "@/components/footer/Footer";
 import Cursor from "@/components/cursor/Cursor";
 import ProgressScroll from "@/components/progress-scroll/ProgressScroll";
 import Script from "next/script";
-import Whatapps from "@/components/chat/Whatapps";
 import { Epilogue, Jost } from "next/font/google";
 import { useEffect } from "react";
 import Loader from "@/components/loader/Loader";
 import "../../public/css/plugins.css";
 import "../../public/css/style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import StickySocialMedia from "@/components/chat/stickySocialMedia";
 
 // const Avenir = localFont({
 //   src: [
@@ -77,7 +77,7 @@ export default function RootLayout({
 
         <Cursor />
         <ProgressScroll />
-        <Whatapps />
+        <StickySocialMedia />
 
         <Loader />
 
