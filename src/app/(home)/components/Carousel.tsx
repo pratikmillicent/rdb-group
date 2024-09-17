@@ -27,26 +27,32 @@ export default function Carroussel3D(props: any) {
   }, [cards.length]);
 
   return (
-    <div
-      style={{
-        width: props.width,
-        height: props.height,
-        margin: props.margin,
-      }}
-    >
-      <Carousel
-        offsetFn={(offsetFromCenter) => {
-          // console.log({ offsetFromCenter });
-          return {
-            opacity: offsetFromCenter ? 0.8 : 1,
-          };
+    <div>
+      {/* <div className="text-center mb-4 fz-16">
+        Explore our latest events, highlights, and activities.
+      </div> */}
+
+      <div
+        style={{
+          width: props.width,
+          height: props.height,
+          margin: props.margin,
         }}
-        slides={cards || []}
-        goToSlide={goToSlide}
-        offsetRadius={offsetRadius}
-        showNavigation={showArrows}
-        animationConfig={config.gentle}
-      />
+      >
+        <Carousel
+          offsetFn={(offsetFromCenter) => {
+            // console.log({ offsetFromCenter });
+            return {
+              opacity: offsetFromCenter ? 0.8 : 1,
+            };
+          }}
+          slides={cards || []}
+          goToSlide={goToSlide}
+          offsetRadius={offsetRadius}
+          showNavigation={showArrows}
+          animationConfig={config.gentle}
+        />
+      </div>
     </div>
   );
 }

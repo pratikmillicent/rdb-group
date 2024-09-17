@@ -23,7 +23,18 @@ const Carroussel3D = dynamic(() => import("./components/Carousel"), {
 const data = [
   { value: 1000, suffix: "+", label: "Developer Relationships" },
   { value: 5000, suffix: "+", label: "Channel partners" },
-  { value: 8, suffix: "cities+", label: "Market Presence" },
+  {
+    value: 8,
+    suffix: (
+      <>
+        cities+
+        <span style={{ fontSize: "17px", fontWeight: 500, marginLeft: "4px" }}>
+          GCC
+        </span>
+      </>
+    ),
+    label: "Market Presence",
+  },
   { value: 1000, suffix: "+", label: "Brands serviced" },
   { value: 50, suffix: "+", label: "Projects Launched" },
   // { value: 2, suffix: "k", label: "Team Members" },
@@ -166,11 +177,16 @@ export default function Home() {
             >
               {loopCount !== 0 && (
                 <img
-                  src="/rdb.svg"
+                  src="/rdb_1.svg"
+                  // style={{
+                  //   width: "105px",
+                  //   height: "119px",
+                  //   objectFit: "contain",
+                  // }}
                   style={{
-                    width: "180px",
-                    height: "80px",
-                    objectFit: "cover",
+                    height: isSmallScreen ? "80px" : "100px",
+                    width: "55px",
+                    objectFit: "contain",
                   }}
                 />
               )}

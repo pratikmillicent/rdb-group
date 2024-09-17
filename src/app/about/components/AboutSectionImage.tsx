@@ -9,7 +9,7 @@ const images = {
 };
 
 function AboutSectionImage() {
-  const [selectedTab, setSelectedTab] = useState("overview");
+  const [selectedTab, setSelectedTab] = useState("vision");
   const [currentImage, setCurrentImage] = useState(images[selectedTab]);
   const [animate, setAnimate] = useState(false);
 
@@ -62,13 +62,7 @@ function AboutSectionImage() {
             >
               Our Aspiration
             </button> */}
-            <button
-              style={tabStyle(selectedTab === "mission")}
-              onClick={() => handleTabClick("mission")}
-              className="btn me-2 mb-2"
-            >
-              Mission
-            </button>
+
             <button
               style={tabStyle(selectedTab === "vision")}
               onClick={() => handleTabClick("vision")}
@@ -76,11 +70,27 @@ function AboutSectionImage() {
             >
               Vision
             </button>
+            <button
+              style={tabStyle(selectedTab === "mission")}
+              onClick={() => handleTabClick("mission")}
+              className="btn me-2 mb-2"
+            >
+              Mission
+            </button>
           </div>
           <div className={`tab-content ${animate ? "slide-in" : ""}`}>
-            {selectedTab === "overview" && (
+            {/* {selectedTab === "overview" && (
               <p className="text-white fz-16 fw-400 w-100">
                 What drives us forward and defines our purpose for the future.
+              </p>
+            )} */}
+
+            {selectedTab === "vision" && (
+              <p className="text-white fz-16 fw-400">
+                Our vision is to streamline real estate with efficient processes
+                and cutting-edge technology, while leading the global
+                marketplace with excellence, innovation, and purpose-driven
+                ventures
               </p>
             )}
             {selectedTab === "mission" && (
@@ -90,14 +100,6 @@ function AboutSectionImage() {
                 deliver outstanding service across India and globally, while
                 driving innovation and excellence in every aspect of our
                 business.
-              </p>
-            )}
-            {selectedTab === "vision" && (
-              <p className="text-white fz-16 fw-400">
-                Our vision is to streamline real estate with efficient processes
-                and cutting-edge technology, while leading the global
-                marketplace with excellence, innovation, and purpose-driven
-                ventures
               </p>
             )}
           </div>
