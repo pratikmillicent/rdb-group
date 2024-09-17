@@ -13,7 +13,7 @@ import Loader from "@/components/loader/Loader";
 import "../../public/css/plugins.css";
 import "../../public/css/style.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import StickySocialMedia from "@/components/chat/stickySocialMedia";
+import StickySocialMedia from "@/components/chat/StickySocialMedia";
 
 // const Avenir = localFont({
 //   src: [

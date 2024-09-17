@@ -1,22 +1,52 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const StickySocialMedia = () => {
-  const handleWhatapps = () => {
-    window.location.href =
-      "https://api.whatsapp.com/send/?phone=919321711146&text=Hi,%20I%27m%20interested%20in%20Atharv%20lifestyle%27s%20elegant%20projects.%20Kindly%20share%20details";
-  };
+  const navRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const socialmediaBodyScroll = window.scrollY;
+      console.log("🚀 ~ socialmediaBodyScroll", socialmediaBodyScroll);
+
+      if (socialmediaBodyScroll > 50) {
+        setIsVisible(true); // Hide component when scroll is more than 45px
+      } else {
+        setIsVisible(false); // Show component otherwise
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  if (!isVisible) {
+    return null; // Return null when the component is hidden
+  }
+
+  function handleScroll() {
+    const socialmediaBodyScroll = window.scrollY;
+    console.log("🚀 ~ socialmediaBodyScroll", socialmediaBodyScroll);
+    const navbar = navRef.current;
+
+    // if (!navbar) return;
+    if (socialmediaBodyScroll > 45) navbar?.classList.add("socialmedia-show");
+    else navbar?.classList.remove("socialmedia-show");
+  }
   return (
     <>
       <div
+        ref={navRef}
         style={{
           position: "fixed",
           right: "3px",
-          bottom: "220px",
+          bottom: "140px",
           zIndex: "5",
         }}
         className="cursor-pointer"
-        onClick={handleWhatapps}
+        // onClick={}
       >
         <div
           className="p-2"
@@ -36,9 +66,9 @@ const StickySocialMedia = () => {
           >
             <a href="#">
               <i
-                className="fa-brands fa-facebook-f"
+                className="fa-brands fa-facebook-f py-2"
                 style={{
-                  fontSize: "16px",
+                  fontSize: "18px",
                   color: "var(--golden)",
 
                   margin: "8px",
@@ -47,9 +77,9 @@ const StickySocialMedia = () => {
             </a>
             <a href="#">
               <i
-                className="fa-brands fa-linkedin"
+                className="fa-brands fa-linkedin py-2"
                 style={{
-                  fontSize: "16px",
+                  fontSize: "18px",
                   color: "var(--golden)",
 
                   margin: "8px",
@@ -58,9 +88,9 @@ const StickySocialMedia = () => {
             </a>
             <a href="#">
               <i
-                className="fa-brands fa-instagram"
+                className="fa-brands fa-instagram py-2"
                 style={{
-                  fontSize: "16px",
+                  fontSize: "18px",
                   color: "var(--golden)",
 
                   margin: "8px",
@@ -69,9 +99,9 @@ const StickySocialMedia = () => {
             </a>
             <a href="#">
               <i
-                className="fa-brands fa-youtube"
+                className="fa-brands fa-youtube py-2"
                 style={{
-                  fontSize: "16px",
+                  fontSize: "18px",
                   color: "var(--golden)",
                   margin: "8px",
                 }}
@@ -79,9 +109,9 @@ const StickySocialMedia = () => {
             </a>
             <a href="#">
               <i
-                className="fa-brands fa-whatsapp"
+                className="fa-brands fa-whatsapp py-2"
                 style={{
-                  fontSize: "16px",
+                  fontSize: "18px",
                   color: "var(--golden)",
 
                   margin: "8px",
