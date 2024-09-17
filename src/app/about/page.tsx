@@ -10,6 +10,7 @@ import Team from "./components/Team";
 import Experience from "./components/Experience";
 import { useInView } from "react-spring";
 import { lazy } from "react";
+import AboutSectionImage from "./components/AboutSectionImage";
 
 const data = [
   { value: 4500, label: "Home Secured" },
@@ -76,7 +77,7 @@ function About() {
       {/* </div> */}
       {/* <VisionMission /> */}
       <Experience />
-      <SectionImage />
+      <AboutSectionImage />
       <DirectorCard />
 
       {/* <TeamSection /> */}

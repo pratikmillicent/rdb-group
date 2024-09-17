@@ -56,7 +56,7 @@ const OurMission = () => {
             style={{ position: "absolute", top: "23px", left: "33px" }}
           >
             <Image
-              src={"/assets/images/movie/about/recording2.gif"}
+              src={"/assets/images/movie/about/recording1.gif"}
               alt={"corner"}
               width={100}
               height={100}
@@ -79,27 +79,24 @@ const OurMission = () => {
 
         {/* Center text: SILVERSCREEN */}
         <div
-          className="center-text "
+          className="center-text fz-16"
           style={{
             zIndex: 9,
             // backgroundColor: "var(--navy)",
-            backgroundColor: "rgb(21, 21, 21)",
-            padding: "40px",
-            width: "50%",
+            margin: "40px",
+            // width: "100%",
+            // height: "100%",
             alignItems: "center",
             textAlign: "justify",
             // fontFamily: "FontAwesome",
           }}
         >
-          <p className="text-white fz-18">
+          <div className="text-white" style={{ fontFamily: "monospace" }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
             ab quasi accusamus laudantium odio non tempora consequatur porro
             optio ex quaerat consectetur eligendi ullam, quod, autem fugit dolor
             voluptate eum accusantium velit beatae cupiditate! Doloribus
-            repudiandae dicta eius commodi autem deleniti nulla perspiciatis
-            optio modi dolorum unde amet asperiores atque quo velit, quidem
-            minima aperiam illum consequatur vel impedit. Qui
-          </p>
+          </div>
         </div>
 
         {/* Scroll Down indicator */}

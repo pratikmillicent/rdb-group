@@ -22,14 +22,14 @@ import Gallery from "./Gallery";
 
 const page = () => {
   return (
-    <div className="">
+    <div className="w-100">
       <MovieSlider />
       <About />
       <OurMission />
       {/* <Movieteam /> */}
       <Movieteam2 />
       <Project />
-      <AwardMovie />
+      {/* <AwardMovie /> */}
       <Gallery />
       <Review />
       <ContactComponent />

@@ -21,12 +21,12 @@ const Carroussel3D = dynamic(() => import("./components/Carousel"), {
 });
 
 const data = [
-  { value: 4500, label: "Home Secured" },
-  { value: 16, suffix: "k", label: "Lives Impacted" },
-  { value: 4, suffix: "m", label: "Cost Savings Achived" },
-  { value: 52, suffix: "k", label: "Agreements Finalized" },
-  { value: 100, suffix: "+", label: "Global Presence" },
-  { value: 2, suffix: "k", label: "Team Members" },
+  { value: 1000, suffix: "+", label: "Developer Relationships" },
+  { value: 5000, suffix: "+", label: "Channel partners" },
+  { value: 8, suffix: "cities+", label: "Market Presence" },
+  { value: 1000, suffix: "+", label: "Brands serviced" },
+  { value: 50, suffix: "+", label: "Projects Launched" },
+  // { value: 2, suffix: "k", label: "Team Members" },
 ];
 
 export default function Home() {
@@ -219,7 +219,7 @@ export default function Home() {
             justifyContent: "center",
           }}
         > */}
-        <Heading headTitle="Events" />
+        <Heading headTitle="Spotlight" />
         {/* </div> */}
 
         <div style={{ padding: "0" }}>

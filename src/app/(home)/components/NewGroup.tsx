@@ -24,7 +24,7 @@ const data: DataItem[] = [
     logo: "assets/images/home/rdb-property.png",
     type: "Properties",
     title: "Aspect Global Ventures Pvt.Ltd.",
-    text: "Our Property business is at the forefront of providing comprehensive services designed to guide clients through market entry strategies, location advisory, property sourcing, transaction management, and investment sales. Whether you're buying, selling, leasing, or investing in real estate assets, we specialize in a wide range of sectors including residential, commercial, retail, educational, healthcare, banking, hospitality, and warehousing facilities. Our solution-oriented approach ensures that we create value at every stage of the property lifecycle. Our deep expertise and dedication to outstanding service make us a distinguished leader in the real estate industry.",
+    text: "Our property division offers a full spectrum of real estate services, helping clients navigate every step from market entry and location advisory to property sourcing, transaction management, and investment sales. Whether you're looking to buy, sell, lease, or invest, we cover diverse sectors including residential, commercial, retail, education, healthcare, banking, hospitality, and warehousing. With a solution-driven mindset, we deliver value at every stage of the property lifecycle. Our expertise and commitment to excellence have established us as a trusted leader in the real estate industry.",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const data: DataItem[] = [
     logo: "assets/images/home/rdb-realty.png",
     type: "Realty",
     title: "Aspect Bullion & Refinery",
-    text: "In the real estate domain, we are recognized for our unmatched expertise and premium services, particularly in luxury property development and land acquisition. Our focus on quality and innovation sets us apart, ensuring that we not only meet but exceed the expectations of our clients. We pride ourselves on delivering projects that embody luxury, functionality, and long-term value..",
+    text: "RD Brothers Realty is a premier real estate developer, dedicated to creating innovative and high-quality spaces that redefine modern living. With a focus on sustainable development and architectural excellence, we craft residential, commercial, and mixed-use properties that meet the evolving needs of our clients. Our projects are built on a foundation of trust, innovation, and precision, delivering exceptional value to homeowners, businesses, and investors alike. At RD Brothers Realty, we don't just build properties—we create thriving communities designed for a better tomorrow.",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const data: DataItem[] = [
     logo: "assets/images/home/rdb-movie.png",
     type: "Fracto",
     title: "Aspect Infrastructure",
-    text: "As pioneers in the Proptech sector, we integrate technology with real estate to deliver cutting-edge solutions that enhance the way we buy, sell, and manage properties. Our Proptech initiatives are designed to streamline processes, improve transparency, and provide our clients with innovative tools that redefine the real estate investment experience.",
+    text: "Fracto is a tech-enabled real estate investment platform that empowers investors to own and trade fractional shares of pre-leased, Grade-A commercial properties. Through our innovative platform, we provide access to premium real estate assets, allowing investors to diversify their portfolios and earn steady rental income from high-quality, professionally managed properties. With a seamless digital experience, transparent transactions, and expert insights, Fracto opens the door to a new era of real estate investing, where ownership is flexible, secure, and accessible to all.",
   },
 
   {
@@ -49,7 +49,7 @@ const data: DataItem[] = [
     logo: "assets/images/home/rdb-movie.png",
     type: "Movies",
     title: "Aspect Infrastructure",
-    text: "Beyond our real estate endeavors, we have made a significant impact in the entertainment industry. Our movie production arm is known for producing blockbuster commercial films that seamlessly blend creativity with business acumen. We are passionate about storytelling and bringing unique cinematic experiences to audiences worldwide, ensuring that our films resonate both commercially and culturally.",
+    text: "RD Brothers Movies is a dynamic movie production company dedicated to bringing compelling stories to life on the big screen. With a passion for creativity and cinematic excellence, we produce a diverse range of films that captivate audiences and leave a lasting impact. From concept development to post-production, our team of visionary filmmakers, writers, and producers collaborates to craft engaging narratives across various genres. Whether it’s a thought-provoking drama, an inspiring biopic, or a light-hearted comedy, RD Brothers Movies is committed to delivering high-quality films that entertain, inspire, and resonate globally.",
   },
 ];
 

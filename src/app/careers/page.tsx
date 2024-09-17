@@ -81,12 +81,11 @@ const page = () => {
                         >
                           {item.text}.
                         </p> */}
-              At RD Brothers, we believe that excellence is achieved through a
-              great team. Our people are our biggest asset, fueling innovation
-              and excellence with their passion, expertise, and dedication. Join
-              us in a dynamic work environment where client exposure, skill
-              enhancement, growth opportunities, and collaboration are at the
-              forefront of our culture.
+              Our greatest asset is our team. We’re dedicated to a dynamic
+              environment where innovation and expertise drive success. Enjoy
+              opportunities for growth, client exposure, and skill development
+              in a collaborative culture. Ready to make an impact in real
+              estate? Explore career opportunities with us.
             </p>
 
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}

@@ -1,6 +1,6 @@
 import parallaxie from "@/common/parallaxie";
 import React, { useState, useEffect } from "react";
-import "../SectionImage.css";
+import "../../(home)/SectionImage.css";
 
 const images = {
   overview: "/assets/images/home/about3.jpg",
@@ -8,7 +8,7 @@ const images = {
   mission: "/assets/images/home/our-mission.jpg",
 };
 
-function SectionImage() {
+function AboutSectionImage() {
   const [selectedTab, setSelectedTab] = useState("overview");
   const [currentImage, setCurrentImage] = useState(images[selectedTab]);
   const [animate, setAnimate] = useState(false);
@@ -49,32 +49,32 @@ function SectionImage() {
       <div className="row screen-height">
         <div
           className="vision-container col-md-6 d-flex flex-column justify-content-center align-items-center bg-navy"
-        // style={{ padding: "0px 100px" }}
+          // style={{ padding: "0px 100px" }}
         >
           <div className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600">
             RD Brothers
           </div>
           <div className="w-100 mb-2 d-flex flex-wrap justify-content-start">
-            <button
+            {/* <button
               style={tabStyle(selectedTab === "overview")}
               onClick={() => handleTabClick("overview")}
               className="btn me-2 mb-2"
             >
               Our Aspiration
-            </button>
+            </button> */}
             <button
               style={tabStyle(selectedTab === "mission")}
               onClick={() => handleTabClick("mission")}
               className="btn me-2 mb-2"
             >
-              Future Outlook
+              Mission
             </button>
             <button
               style={tabStyle(selectedTab === "vision")}
               onClick={() => handleTabClick("vision")}
               className="btn mb-2"
             >
-              What Drives Us
+              Vision
             </button>
           </div>
           <div className={`tab-content ${animate ? "slide-in" : ""}`}>
@@ -85,19 +85,27 @@ function SectionImage() {
             )}
             {selectedTab === "mission" && (
               <p className="text-white fz-16 fw-400">
-                Our long-term perspective on growth, innovation, and industry leadership.
+                Our vision is to elevate property management by blending
+                exceptional professionalism with Indian warmth. We aim to
+                deliver outstanding service across India and globally, while
+                driving innovation and excellence in every aspect of our
+                business.
               </p>
             )}
             {selectedTab === "vision" && (
               <p className="text-white fz-16 fw-400">
-                The core motivations that inspire our work and fuel our passion.
+                Our vision is to streamline real estate with efficient processes
+                and cutting-edge technology, while leading the global
+                marketplace with excellence, innovation, and purpose-driven
+                ventures
               </p>
             )}
           </div>
         </div>
         <div
-          className={`col-md-6 position-relative p-0 ${animate ? "slide-in" : ""
-            } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
+          className={`col-md-6 position-relative p-0 ${
+            animate ? "slide-in" : ""
+          } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
         >
           <div
             className="back-image bg-img parallaxie"
@@ -122,4 +130,4 @@ function SectionImage() {
   );
 }
 
-export default SectionImage;
+export default AboutSectionImage;

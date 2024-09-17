@@ -1,7 +1,7 @@
 .silverscreen-container {
   position: relative;
-  height: 70vh;
-  background-color: rgb(21, 21, 21);
+  height: 90vh;
+  background-color: var(--navy);
   /* background-color: var(--navy); */
   color: white;
   font-family: "Helvetica", sans-serif;
@@ -56,13 +56,13 @@
 
 .scroll-down {
   position: absolute;
-  bottom: 40px;
+  bottom: 8px;
   left: 55%;
   transform: translateX(-50%);
   font-size: 1rem;
   letter-spacing: 2px;
   color: #ffca28;
-  background-color: #000;
+  /* background-color: #000; */
   /* background-color: var(--navy); */
   z-index: 10;
   padding: 10px;
