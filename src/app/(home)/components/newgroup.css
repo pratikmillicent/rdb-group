@@ -60,3 +60,10 @@
     padding: 0px;
   }
 }
+/* Gallery  */
+
+@media only screen and (max-width: 576px) {
+  .ourbusiness-mobile {
+    margin-top: 153px !important;
+  }
+}

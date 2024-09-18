@@ -80,17 +80,17 @@ function SectionImage() {
           <div className={`tab-content ${animate ? "slide-in" : ""}`}>
             {selectedTab === "overview" && (
               <p className="text-white fz-16 fw-400 w-100">
-                What drives us forward and defines our purpose for the future.
+                We aspire to be a leading force in both real estate and the entertainment industry, continuously pushing the boundaries of innovation and creativity. Our goal is to deliver value by shaping transformative real estate projects and create films that captivate audiences worldwide. By bridging the gap between technology, finance, and creativity, we aim to revolutionize the sectors we are present by ensuring our work creates a lasting impact
               </p>
             )}
             {selectedTab === "mission" && (
               <p className="text-white fz-16 fw-400">
-                Our long-term perspective on growth, innovation, and industry leadership.
+                Looking ahead, we see immense potential for growth and diversification across our ventures. In real estate, we plan to expand our footprint by venturing into new markets and incorporating sustainable practices that align with global trends. On the entertainment front, we aim to produce more diverse films across genres while exploring innovative ways to engage audiences. Through strategic partnerships, technology integration, and a focus on delivering excellence, we are poised to remain ahead of industry trends.
               </p>
             )}
             {selectedTab === "vision" && (
-              <p className="text-white fz-16 fw-400">
-                The core motivations that inspire our work and fuel our passion.
+              <p className="text-white fz-16 fw-400 pb-5">
+                We are inspired by the power of innovation, the art of storytelling, and the ability to shape environments that influence people’s lives. Every project we undertake is driven by our belief in creating lasting value and making a meaningful difference in the industries we touch.
               </p>
             )}
           </div>
