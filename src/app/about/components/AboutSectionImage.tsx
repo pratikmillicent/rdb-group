@@ -46,10 +46,11 @@ function AboutSectionImage() {
 
   return (
     <section className="">
-      <div className="row screen-height">
+      <div className="row">
         <div
           className="vision-container col-md-6 d-flex flex-column justify-content-center align-items-center bg-navy"
           // style={{ padding: "0px 100px" }}
+          // style={{ margin: "0px 15px" }}
         >
           <div className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600">
             RD Brothers

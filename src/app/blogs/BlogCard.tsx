@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import { Col } from "react-bootstrap";
 
 function BlogCard({ item }) {
   return (
-    <div className="col col-lg-6" key={item.id}>
+    <Col lg={6} md={6} sm={12} key={item.id}>
       <div className={`item mb-30`}>
         <div className="row rest">
           <div className="col-md-6">
@@ -41,7 +42,7 @@ function BlogCard({ item }) {
           </div>
         </div>
       </div>
-    </div>
+    </Col>
   );
 }
 

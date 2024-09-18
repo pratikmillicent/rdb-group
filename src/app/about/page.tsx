@@ -57,32 +57,13 @@ function About() {
               height: "100%",
               padding: "0 20px",
             }}
-          >
-            {/* <h3 className="banner-heading hero-heading">Careers</h3>
-            <div
-              style={{
-                width: "50px",
-                height: "3px",
-                borderTop: "solid 2px var(--golden) !important",
-                borderLeft: "none",
-                borderRight: "none",
-                display: "block",
-                margin: "0 auto",
-                marginBottom: "30px",
-              }}
-            ></div> */}
-          </div>
+          ></div>
         </div>
       </div>
-      {/* </div> */}
-      {/* <VisionMission /> */}
-      <Experience />
-      <AboutSectionImage />
-      <DirectorCard />
 
-      {/* <TeamSection /> */}
-      {/* <CoreValue2 /> */}
-      {/* <TeamSection2 /> */}
+      <Experience />
+      {/* <AboutSectionImage /> */}
+      <DirectorCard />
       <CallToAction />
       <Team />
       <div style={{ marginTop: "10px" }} ref={ref}>

@@ -27,7 +27,7 @@ const data = [
     value: 8,
     suffix: (
       <>
-        cities+
+        <span style={{ marginLeft: "4px" }}> cities +</span>
         <span style={{ fontSize: "17px", fontWeight: 500, marginLeft: "4px" }}>
           GCC
         </span>
@@ -235,7 +235,7 @@ export default function Home() {
             justifyContent: "center",
           }}
         > */}
-        <Heading headTitle="Spotlight" />
+        <Heading headTitle="Spotlight" isMargin="0px" />
         {/* </div> */}
 
         <div style={{ padding: "0" }}>

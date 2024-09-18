@@ -83,7 +83,7 @@ function Team() {
 
   return (
     <section
-      className="team-crev pb-0 bord-thin-bottom"
+      className="team-crev pb-0 bord-thin-bottom px-2"
       style={{ marginBottom: "10px" }}
     >
       <div className="container-fluid rest">

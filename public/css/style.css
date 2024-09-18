@@ -8515,8 +8515,8 @@ header.in-box {
 }
 
 .team-crev .swiper-slide:nth-of-type(even) .img img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
@@ -10164,9 +10164,22 @@ header.in-box {
     padding: 0 15px 120px;
   }
 
+  @media only screen and (max-width: 576px) {
+    .portfolio-fixed .right {
+      margin: 0 !important;
+      padding-bottom: 0px !important;
+    }
+  }
+
   .portfolio-fixed .cont {
     opacity: 1 !important;
     margin-bottom: 80px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    .portfolio-fixed .cont {
+      margin: 0px !important;
+    }
   }
 
   .portfolio-fixed .cont .img-hiden {

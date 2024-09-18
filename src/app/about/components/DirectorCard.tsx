@@ -5,7 +5,7 @@ import Image from "next/image";
 const DirectorCard = () => {
   return (
     <>
-      <div>
+      <div className="px-2">
         <Heading headTitle="Our Leaders" />
         <div className="container">
           <div className="row">

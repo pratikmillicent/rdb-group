@@ -402,7 +402,7 @@ function AwardGallery() {
       <div className="container">
         <div className="container-fluid rest">
           <div className="row" style={{ marginBottom: "120px" }}>
-            <div className="col-12" style={{ position: "relative" }}>
+            <div className="col-12 p-0" style={{ position: "relative" }}>
               <div className="work-crus work-crus2">
                 {loadSwiper && (
                   <Swiper

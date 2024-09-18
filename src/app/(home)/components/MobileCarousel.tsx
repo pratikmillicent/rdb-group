@@ -43,7 +43,7 @@ const MobileCarousel = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container pe-0">
       <div className="blog-carsouel">
         {loadSwiper && (
           <Swiper
@@ -62,7 +62,7 @@ const MobileCarousel = () => {
                     <Image
                       src={item.image}
                       alt={item.image}
-                      style={{ height: "320px", objectFit: "contain" }}
+                      style={{ objectFit: "contain" }}
                       width={800}
                       height={500}
                     />

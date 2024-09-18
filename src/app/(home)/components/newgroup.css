@@ -52,3 +52,11 @@
   transition: transform 0.5s ease-in-out !important;
   transform: scale(0);
 }
+
+/* Gallery  */
+
+@media only screen and (max-width: 576px) {
+  .gallery-img {
+    padding: 0px;
+  }
+}

@@ -7,6 +7,7 @@ import { FaArrowLeftLong, FaArrowRight } from "react-icons/fa6";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./newgroup.css";
 
 function DarkVariantExample({ spliti, data }: any) {
   const [loadSwiper, setLoadSwiper] = useState(false);
@@ -47,7 +48,7 @@ function DarkVariantExample({ spliti, data }: any) {
   };
 
   return (
-    <div className="container">
+    <div className="container ">
       {spliti?.map((item: any, index: any) => (
         <Row key={index}>
           <Col lg={3} className="p-0 d-none d-md-flex">
@@ -115,6 +116,7 @@ function DarkVariantExample({ spliti, data }: any) {
               </div>
             </div>
           </Col>
+
           <Col className="d-inline d-md-none">
             <div>
               {/* {item?.date?.map((part, index) => ( */}
@@ -135,7 +137,7 @@ function DarkVariantExample({ spliti, data }: any) {
           </Col>
 
           <Col lg={9} className="p-0">
-            <div className="container">
+            <div className="container gallery-img">
               <div className="blog-carsouel">
                 {loadSwiper && (
                   <Swiper
@@ -143,7 +145,7 @@ function DarkVariantExample({ spliti, data }: any) {
                     id="content-carousel-container-unq-blog"
                     className="swiper-container"
                   >
-                    {data.map(item => (
+                    {data.map((item) => (
                       <SwiperSlide
                         key={item.id}
                         className="wow fadeInUp mb-2"
@@ -181,7 +183,7 @@ function splitToNChunks(array, n) {
   return result;
 }
 
-const directionButtons = direction => {
+const directionButtons = (direction) => {
   console.log("🚀 ~ directionButtons ~ direction:", direction);
   return (
     <span

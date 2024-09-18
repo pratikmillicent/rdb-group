@@ -192,7 +192,10 @@ const NewGroupGrid: React.FC = () => {
                   ))}
                 </div>
               </div>
-              <div className="col-lg-6 sub-bg right">
+              <div
+                className="col-lg-6 sub-bg right"
+                style={{ paddingLeft: "27px" }}
+              >
                 {data?.map((item, index) => {
                   const isLastTwo = index >= data.length - 2;
                   const marginStyle = isLastTwo

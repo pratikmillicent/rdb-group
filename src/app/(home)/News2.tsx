@@ -77,7 +77,7 @@ function News2() {
 
   return (
     <section className="blog-modern overflow-hidden">
-      <div className="container">
+      <div className="container  pe-0">
         <Heading headTitle="Latest News" />
 
         <div className="blog-carousel">
@@ -87,7 +87,7 @@ function News2() {
               id="content-carousel-container-unq-blog"
               className="swiper-container"
             >
-              {data?.map(item => (
+              {data?.map((item) => (
                 <SwiperSlide
                   key={item.id}
                   className="wow fadeInUp"
