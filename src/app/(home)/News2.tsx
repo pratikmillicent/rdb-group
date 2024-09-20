@@ -130,7 +130,7 @@ function News2() {
         </div>
 
         {/* Navigation Buttons */}
-        <div
+        {/* <div
           className="swiper-button-next text-dark fw-600 news-arrow-mobile-right"
           style={{
             fontWeight: "600",
@@ -157,7 +157,7 @@ function News2() {
             // top: "59%",
             transform: "translateY(-50%)",
           }}
-        />
+        /> */}
       </div>
     </section>
   );

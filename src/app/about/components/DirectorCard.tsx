@@ -50,7 +50,7 @@ const DirectorCard = () => {
                     style={{
                       position: "absolute",
                       bottom: "10px",
-                      left: "26.5%",
+                      left: "20.5%",
                       // right: "-31.5%",
                       transform: "translateX(-50%)",
                       backgroundColor: "#eaa636E6", // Semi-transparent background
@@ -85,14 +85,18 @@ const DirectorCard = () => {
                   <h1 className="director-head">Founder</h1>
                 </div> */}
                 <p
-                  className="director-p our-leaders-sec-shadow"
+                  className="director-p"
                   style={{
-                    padding: "108px 20px 48px 20px",
+                    padding: "108px 20px 72px 20px",
                     background: "var(--background) !important",
                     position: "relative",
                     top: "-89px",
                     zIndex: "-2",
                     borderRadius: "50px 0px 50px 0px",
+                    height: "calc(100% - 300px)",
+                    border: "3px solid var(--golden)",
+                    borderTop: "none",
+                    borderRight: "none",
                   }}
                 >
                   <strong> Raj Thakkar</strong> is a visionary leader with over
@@ -153,7 +157,7 @@ const DirectorCard = () => {
                     style={{
                       position: "absolute",
                       bottom: "10px",
-                      right: "-31.5%",
+                      right: "-38.5%",
                       transform: "translateX(-50%)",
                       backgroundColor: "#eaa636E6", // Semi-transparent background
                       color: "#fff", // White text color
@@ -182,7 +186,7 @@ const DirectorCard = () => {
               </div>
               <div className="mt-3">
                 <p
-                  className="director-p our-leaders-sec-shadow"
+                  className="director-p"
                   style={{
                     padding: "108px 20px 20px 20px",
                     background: "var(--background) !important",
@@ -190,6 +194,10 @@ const DirectorCard = () => {
                     top: "-89px",
                     zIndex: "-2",
                     borderRadius: "0px 50px 0px 50px",
+                    height: "calc(100% - 300px)",
+                    border: "3px solid var(--golden)",
+                    borderTop: "none",
+                    borderLeft: "none",
                   }}
                 >
                   <strong> Dhaval Thakkar </strong> is a dynamic leader with 15
