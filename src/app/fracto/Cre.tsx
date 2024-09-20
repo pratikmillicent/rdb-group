@@ -47,9 +47,20 @@ const Cre = () => {
         <div className="sec-lg-head">
           <div className="row justify-content-center">
             <div className="col-lg-6 text-center">
-              <Heading headTitle="CRE" />
+              <Heading headTitle="Why Commercial Real Estate?" />
             </div>
           </div>
+        </div>
+        <div className="">
+          <p className="lead  my-4">
+            Investing in commercial real estate has historically been one of the
+            most lucrative options, providing strong returns, long-term
+            stability, and portfolio diversification. Unlike other investment
+            avenues, CRE offers higher yields, rental income, and appreciation
+            potential while mitigating volatility. With Fracto, we make it
+            easier for individual investors to tap into this high-value asset
+            class, traditionally available only to institutional players
+          </p>
         </div>
         <div className="swiper4">
           {loadSwiper && (
