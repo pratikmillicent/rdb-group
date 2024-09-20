@@ -17,14 +17,14 @@ function SectionImage() {
     backgroundColor: isSelected ? "var(--golden)" : "transparent",
     color: isSelected ? "white" : "white",
     fontWeight: "600",
-    padding: "10px 20px",
+    // padding: "10px 20px",
     cursor: "pointer",
     border: "none",
     outline: "none",
     transition: "background-color 0.3s, color 0.3s",
     borderRadius: "50px",
-    fontSize: "16px",
-    margin: "5px",
+    fontSize: "10px",
+    // margin: "5px",
   });
 
   const handleTabClick = (tab) => {
@@ -58,21 +58,21 @@ function SectionImage() {
             <button
               style={tabStyle(selectedTab === "overview")}
               onClick={() => handleTabClick("overview")}
-              className="btn me-2 mb-2"
+              className="btn"
             >
               Our Aspiration
             </button>
             <button
               style={tabStyle(selectedTab === "mission")}
               onClick={() => handleTabClick("mission")}
-              className="btn me-2 mb-2"
+              className="btn"
             >
               Future Outlook
             </button>
             <button
               style={tabStyle(selectedTab === "vision")}
               onClick={() => handleTabClick("vision")}
-              className="btn mb-2"
+              className="btn"
             >
               What Drives Us
             </button>
