@@ -50,7 +50,7 @@ function DashboardCount({ data }: DashboardCountProps) {
   return (
     <section
       id="section-fun-facts"
-      className="p-5"
+      className="p-3 p-md-5"
       style={{ backgroundSize: "cover" }}
     >
       <div className="container" style={{ backgroundSize: "cover" }}>

@@ -45,7 +45,7 @@ function DashboardCount({ data }: DashboardCountProps) {
   return (
     <section
       id="section-fun-facts"
-      className="p-5"
+      className=""
       style={{ backgroundSize: "cover" }}
     >
       <div className="container" style={{ backgroundSize: "cover" }}>
@@ -76,7 +76,7 @@ function DashboardCount({ data }: DashboardCountProps) {
 
                   {item.suffix && item.suffix}
                 </h3>
-                <div className="fs-7 text-golden">{item.label}</div>
+                <div className="fs-7 text-golden">{item.label}ssssss</div>
               </div>
             </div>
           ))}

@@ -452,7 +452,7 @@ function AwardGallery() {
               </div>
 
               <div
-                className="swiper-button-next text-dark fw-600 swiper-arrow-mobile"
+                className="swiper-button-next text-dark fw-600 swiper-arrow-mobile d-none d-md-block "
                 style={{
                   fontWeight: "600",
                   height: "40px",
@@ -465,7 +465,7 @@ function AwardGallery() {
               />
 
               <div
-                className="swiper-button-prev text-dark swiper-arrow-mobile"
+                className="swiper-button-prev text-dark swiper-arrow-mobile d-none d-md-block "
                 style={{
                   fontWeight: "600",
                   height: "40px",
