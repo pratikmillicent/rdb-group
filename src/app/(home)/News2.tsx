@@ -55,16 +55,13 @@ const swiperOptions = {
     640: {
       slidesPerView: 2,
     },
-    768: {
-      slidesPerView: 2,
-    },
     1024: {
       slidesPerView: 3,
     },
   },
   navigation: {
-    nextEl: ".blog-modern .swiper-button-next",
-    prevEl: ".blog-modern .swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 };
 
@@ -76,10 +73,12 @@ function News2() {
   }, []);
 
   return (
-    <section className="blog-modern overflow-hidden">
+    <section
+      className="blog-modern overflow-hidden"
+      style={{ position: "relative" }}
+    >
       <div className="container">
         <Heading headTitle="Latest News" />
-
         <div className="blog-carousel">
           {loadSwiper && (
             <Swiper
@@ -93,9 +92,9 @@ function News2() {
                   className="wow fadeInUp"
                   data-wow-delay=".1s"
                 >
-                  <div className="max-w-sm rounded overflow-hidden  bg-white">
+                  <div className="max-w-sm rounded overflow-hidden bg-white position-relative">
                     {/* Image */}
-                    <div className="relative">
+                    <div className="">
                       <Image
                         src={item.cover}
                         alt={item.title}
@@ -108,15 +107,11 @@ function News2() {
                         }}
                       />
                     </div>
-
                     {/* Content */}
                     <div className="bg-grey" style={{ padding: "30px 40px" }}>
-                      <div className="fw-700 fz-10 text-golden">
-                        {/* {item.category} */}
-                        LAW FIRM
-                      </div>
+                      <div className="fw-700 fz-10 text-golden">LAW FIRM</div>
                       <div className="fw-600 fz-22 mb-2">{item.title}</div>
-                      <p className="fz-16 fw-400 ">{item.description}</p>
+                      <p className="fz-16 fw-400">{item.description}</p>
                       {/* Author */}
                       <div className="px-6 pt-4 pb-2">
                         <span className="text-grey news-firm">
@@ -133,10 +128,48 @@ function News2() {
             </Swiper>
           )}
         </div>
+
+        {/* Navigation Buttons */}
+        <div
+          className="swiper-button-next text-dark fw-600 news-arrow-mobile-right"
+          style={{
+            fontWeight: "600",
+            height: "40px",
+            width: "40px",
+            borderRadius: "50%",
+            // right: "-60px",
+            // top: "59%",
+            top: "18%",
+            transform: "translateY(-50%)",
+          }}
+        ></div>
+
+        <div
+          className="swiper-button-prev text-dark news-arrow-mobile-left"
+          style={{
+            fontWeight: "600",
+            height: "40px",
+            width: "40px",
+            borderRadius: "50%",
+            position: "absolute",
+            // left: "-60px",
+            top: "18%",
+            // top: "59%",
+            transform: "translateY(-50%)",
+          }}
+        />
       </div>
     </section>
   );
 }
+
+// const DateBanner = ({ date }) => {
+//   return (
+//     <div className="date-wrapper bg-golden">
+//       <span>{date}</span>
+//     </div>
+//   );
+// };
 
 export default News2;
 

@@ -13,21 +13,6 @@ import News2 from "../(home)/News2";
 import AwardGallery from "./components/Award2";
 
 const News = () => {
-  // const [loadSwiper, setLoadSwiper] = useState(false);
-  // const [isVideoOpen, setIsVideoOpen] = useState<Video | null>(null);
-
-  // useEffect(() => {
-  //   setLoadSwiper(true);
-  // }, []);
-
-  // function openVideo(
-  //   event: React.MouseEvent<HTMLDivElement, MouseEvent>,
-  //   item: Video
-  // ) {
-  //   event.preventDefault();
-  //   setIsVideoOpen(item);
-  // }
-
   return (
     <>
       <div style={{ position: "relative" }}>
@@ -35,7 +20,6 @@ const News = () => {
           src="/assets/images/news/banner.png"
           className="w-100 d-block  news-banner banner hero-height"
           alt="News Banner"
-          // style={{ height: "100vh" }}
           width={800}
           height={500}
         />
@@ -51,32 +35,7 @@ const News = () => {
             zIndex: 1,
             pointerEvents: "none",
           }}
-        >
-          {/* <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "100%",
-              padding: "0 20px",
-            }}
-          > */}
-          {/* <h3 className="banner-heading hero-heading">Careers</h3>
-            <div
-              style={{
-                width: "50px",
-                height: "3px",
-                borderTop: "solid 2px var(--golden) !important",
-                borderLeft: "none",
-                borderRight: "none",
-                display: "block",
-                margin: "0 auto",
-                marginBottom: "30px",
-              }}
-            ></div> */}
-          {/* </div> */}
-        </div>
+        ></div>
       </div>
 
       <div className="container">

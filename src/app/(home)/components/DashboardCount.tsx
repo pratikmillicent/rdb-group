@@ -22,7 +22,7 @@ function DashboardCount({ data }: DashboardCountProps) {
     countersRef.current.forEach((counter, index) => {
       if (counter) {
         const dataTo = counter.getAttribute("data-to");
-        console.log(`Element ${index}:`, counter, `data-to:`, dataTo); // Debugging line
+        // console.log(`Element ${index}:`, counter, `data-to:`, dataTo); // Debugging line
         if (dataTo) {
           const countUp = new CountUp(counter, parseFloat(dataTo), options);
           if (!countUp.error) {

@@ -15,6 +15,7 @@ import MobileCarousel from "./components/MobileCarousel";
 import OldGroupGrid from "./components/oldNewGroupWebiste";
 import Image from "next/image";
 import "./SectionImage.css";
+import NewMobile from "./components/NewMobile";
 
 const DashboardCount = lazy(() => import("@/components/DashboardCount"));
 const Carroussel3D = dynamic(() => import("./components/Carousel"), {
@@ -233,7 +234,9 @@ export default function Home() {
           {/* ) : null} */}
         </div>
 
+        {/* <NewMobile /> */}
         <News2 />
+        {/* <News2 /> */}
         <VideoGallary />
       </main>
     </ParallaxProvider>
