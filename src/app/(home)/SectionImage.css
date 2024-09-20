@@ -30,15 +30,28 @@
   padding: 0px 100px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1024px) {
   .vision-container {
     padding: 20px !important;
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .screen-height {
-    padding-left: 27px;
-    padding-right: 15px;
+@media only screen and (max-width: 767px) {
+  .carousel-desktop {
+    display: none !important;
   }
 }
+
+/* @media only screen and (max-width: 768px) {
+  .carousel-mobile {
+    display: none !important;
+  }
+}
+
+.section-container {
+  width: 100%;
+} */
+
+/* .spotlight-heading {
+  padding: 20px 0px !important;
+} */

@@ -564,17 +564,7 @@ img {
     border: 2px solid #d4af37;
   }
 
-  @media (max-width: 480px) {
-    .swiper-arrow-mobile {
-      display: none !important;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .swiper-arrow-mobile {
-      display: none !important;
-    }
-  }
+  
 
   .main-director {
     height: auto !important;

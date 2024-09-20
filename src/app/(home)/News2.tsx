@@ -77,7 +77,7 @@ function News2() {
 
   return (
     <section className="blog-modern overflow-hidden">
-      <div className="container  pe-0">
+      <div className="container">
         <Heading headTitle="Latest News" />
 
         <div className="blog-carousel">
@@ -133,10 +133,6 @@ function News2() {
             </Swiper>
           )}
         </div>
-
-        {/* Swiper Navigation Buttons */}
-        {/* <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div> */}
       </div>
     </section>
   );

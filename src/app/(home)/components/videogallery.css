@@ -4,3 +4,30 @@
 .swiper-button-prev:after {
   font-size: 30px;
 }
+
+@media (max-width: 480px) {
+  .swiper-arrow-mobile-left {
+    display: none !important;
+  }
+}
+@media (max-width: 1024px) {
+  .swiper-arrow-mobile-left {
+    left: -30px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-arrow-mobile-right {
+    display: none !important;
+  }
+}
+@media (max-width: 1024px) {
+  .swiper-arrow-mobile-right {
+    right: -36px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .swiper-arrow-mobile-right {
+    right: -24px !important;
+  }
+}

@@ -14,6 +14,7 @@ import Card from "./components/Card";
 import MobileCarousel from "./components/MobileCarousel";
 import OldGroupGrid from "./components/oldNewGroupWebiste";
 import Image from "next/image";
+import "./SectionImage.css";
 
 const DashboardCount = lazy(() => import("@/components/DashboardCount"));
 const Carroussel3D = dynamic(() => import("./components/Carousel"), {
@@ -37,12 +38,11 @@ const data = [
   },
   { value: 1000, suffix: "+", label: "Brands serviced" },
   { value: 50, suffix: "+", label: "Projects Launched" },
-  // { value: 2, suffix: "k", label: "Team Members" },
 ];
 
 export default function Home() {
   const isMediumScreen = useMediaQuery("(min-width: 768px)");
-  const isSmallScreen = useMediaQuery("(max-width: 767px)");
+  const isSmallScreen = useMediaQuery("(max-width: 768px)");
 
   const [loopCount, setLoopCount] = useState(0);
   const [videoSrc, setVideoSrc] = useState("/assets/video/HeroVideo1.mp4");
@@ -86,7 +86,7 @@ export default function Home() {
   ];
 
   const handleVideoEnd = () => {
-    setIsTransitioning(true); // Start the transition
+    setIsTransitioning(true);
 
     setTimeout(() => {
       if (loopCount < videoData.length - 1) {
@@ -94,34 +94,27 @@ export default function Home() {
       } else {
         setLoopCount(0);
       }
-      setIsTransitioning(false); // End the transition after source change
-    }, 500); // Duration of the fade-out effect
+      setIsTransitioning(false);
+    }, 500);
   };
 
   useEffect(() => {
     const { src, text, link } = videoData[loopCount];
     setVideoSrc(src);
     setLinkHref(link);
-    // setDisplayedText(""); // Reset the displayed text for typing effect
-    videoRef?.current?.play(); // Ensure the next video plays automatically
+    videoRef?.current?.play();
 
     setHeadingText(text);
   }, [loopCount]);
 
   useEffect(() => {
     const { src, text, link } = videoData[loopCount];
-    // let charIndex = 0;
     let typingTimeout;
 
     const typeText = (text) => {
-      // if (charIndex < text.length) {
-      //   setDisplayedText((prev) => prev + text.charAt(charIndex));
-      //   charIndex++;
-      // }
-
       setDisplayedText((prev) => prev + text.slice(0, 1));
 
-      typingTimeout = setTimeout(() => typeText(text.slice(1)), 100); // Adjust the typing speed here
+      typingTimeout = setTimeout(() => typeText(text.slice(1)), 100);
     };
 
     if (text) {
@@ -129,7 +122,7 @@ export default function Home() {
     }
 
     return () => {
-      clearTimeout(typingTimeout); // Clear the timeout on effect cleanup
+      clearTimeout(typingTimeout);
     };
   }, [loopCount]);
 
@@ -178,11 +171,6 @@ export default function Home() {
               {loopCount !== 0 && (
                 <img
                   src="/rdb_1.svg"
-                  // style={{
-                  //   width: "105px",
-                  //   height: "119px",
-                  //   objectFit: "contain",
-                  // }}
                   style={{
                     height: isSmallScreen ? "80px" : "100px",
                     width: "55px",
@@ -190,7 +178,7 @@ export default function Home() {
                   }}
                 />
               )}
-              {/* <div className="d-flex align-items-center gap-3"> */}
+
               <p
                 className=""
                 style={{
@@ -201,15 +189,11 @@ export default function Home() {
                   fontSize: "48px",
                   color: loopCount !== 0 ? "#fff" : "#fff",
                   transition: "all",
-                  // opacity: "0.7",
                 }}
                 dangerouslySetInnerHTML={{
                   __html: headingText,
                 }}
-              >
-                {/* {headingText} */}
-              </p>
-              {/* </div> */}
+              ></p>
               {loopCount !== 0 && (
                 <a href={linkHref} className="block hero-button">
                   Know more
@@ -225,21 +209,13 @@ export default function Home() {
 
         <NewGroupGrid />
 
-        {/* <div>
-          <OldGroupGrid />
-        </div> */}
-
-        {/* <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-          }}
-        > */}
-        <Heading headTitle="Spotlight" isMargin="0px" />
-        {/* </div> */}
+        <div className="spotlight-heading">
+          <Heading headTitle="Spotlight" />
+        </div>
 
         <div style={{ padding: "0" }}>
-          {isMediumScreen ? (
+          {/* {isMediumScreen ? ( */}
+          <div className="carousel-desktop d-none d-lg-block">
             <Carroussel3D
               cards={cards}
               height="320px"
@@ -249,9 +225,12 @@ export default function Home() {
               autoScrollInterval={5000}
               showArrows={false}
             />
-          ) : isSmallScreen ? (
+          </div>
+          <div className="d-lg-none">
             <MobileCarousel data={data} />
-          ) : null}
+          </div>
+          {/* ) : isSmallScreen ? ( */}
+          {/* ) : null} */}
         </div>
 
         <News2 />

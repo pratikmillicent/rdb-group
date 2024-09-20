@@ -5,7 +5,6 @@ import loadBackgroudImages from "@/common/loadBackgroudImages";
 import isInView from "@/common/isInView";
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
-import { FaBuilding } from "react-icons/fa6";
 import "./newgroup.css";
 
 interface DataItem {
@@ -52,50 +51,6 @@ const data: DataItem[] = [
     text: "RD Brothers Movies is a dynamic movie production company dedicated to bringing compelling stories to life on the big screen. With a passion for creativity and cinematic excellence, we produce a diverse range of films that captivate audiences and leave a lasting impact. From concept development to post-production, our team of visionary filmmakers, writers, and producers collaborates to craft engaging narratives across various genres. Whether it’s a thought-provoking drama, an inspiring biopic, or a light-hearted comedy, RD Brothers Movies is committed to delivering high-quality films that entertain, inspire, and resonate globally",
   },
 ];
-
-// const data: DataItem[] = [
-//   {
-//     id: 1,
-//     image: "assets/images/home/properties.webp",
-//     number: "01.",
-//     type: "Properties",
-//     title: "Aspect Global Ventures Pvt.Ltd.",
-//     text: "We craft premium designs for agencies and global brands around the globe.",
-//   },
-//   {
-//     id: 2,
-//     image: "assets/images/home/img2.jpg",
-//     number: "02.",
-//     type: "Reality",
-//     title: "Aspect Bullion & Refinery",
-//     text: "We craft premium designs for agencies and global brands around the globe.",
-//   },
-//   {
-//     id: 3,
-//     image: "assets/images/home/Fractal.jpg",
-//     number: "03.",
-//     type: "Fracto",
-//     title: "Aspect Infrastructure",
-//     text: "We craft premium designs for agencies and global brands around the globe.",
-//   },
-
-//   {
-//     id: 4,
-//     image: "assets/images/home/movie.webp",
-//     number: "04.",
-//     type: "Movies",
-//     title: "Aspect Infrastructure",
-//     text: "We craft premium designs for agencies and global brands around the globe.",
-//   },
-//   {
-//     id: 5,
-//     image: "assets/images/home/business.jpg",
-//     number: "05.",
-//     type: "Business",
-//     title: "Luxury Glassware",
-//     text: "We craft premium designs for agencies and global brands around the globe.",
-//   },
-// ];
 
 const NewGroupGrid: React.FC = () => {
   useEffect(() => {
@@ -159,26 +114,13 @@ const NewGroupGrid: React.FC = () => {
   };
 
   return (
-    <section className="portfolio">
+    <div className="portfolio">
       <div className="ourbusiness-mobile">
-        {/* <div className="sec-lg-head"> */}
-        {/* <div className="row"> */}
-        {/* <div className="col-lg-12"> */}
-        {/* <div className="position-re"> */}
-        {/* <div className="fz-50 fw-600 "> */}
-        {/* <span className="text-golden">G</span>roups Websites */}
-        {/* <div style={{ display: "", justifyContent: "center" }}> */}
         <Heading headTitle="Our Business" />
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* <div className="col-lg-4 d-flex align-items-center"></div> */}
-        {/* </div> */}
-        {/* </div> */}
+
         <section className="portfolio-fixed">
-          <div className="container-fluid rest">
-            <div className="row">
+          <div className=" rest">
+            <div className="row" style={{ width: "100vw" }}>
               <div className="col-lg-6 rest" style={{ position: "relative" }}>
                 <div className="left" id="sticky_item">
                   {data?.map((item, index) => (
@@ -192,10 +134,7 @@ const NewGroupGrid: React.FC = () => {
                   ))}
                 </div>
               </div>
-              <div
-                className="col-lg-6 sub-bg right"
-                style={{ paddingLeft: "27px" }}
-              >
+              <div className="col-lg-6 sub-bg right">
                 {data?.map((item, index) => {
                   const isLastTwo = index >= data.length - 2;
                   const marginStyle = isLastTwo
@@ -229,17 +168,6 @@ const NewGroupGrid: React.FC = () => {
                                 {item.type}
                               </h1>
                             </div>
-
-                            {/* <Image
-                              src={item.logo}
-                              height={500}
-                              width={500}
-                              alt={item.type}
-                              style={{
-                                height: "70px",
-                                width: "200px",
-                              }}
-                            /> */}
                           </div>
                         </div>
                       </div>
@@ -258,25 +186,6 @@ const NewGroupGrid: React.FC = () => {
                             className=" mt-20"
                             style={{ marginBottom: "16px" }}
                           >
-                            {/* <Link href="#">
-                              <span className="text-black fz-17 fw-400">
-                                Explore More
-                                <span>
-                                  <svg
-                                    width="18"
-                                    height="18"
-                                    viewBox="0 0 18 18"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z"
-                                      fill="currentColor"
-                                    ></path>
-                                  </svg>
-                                </span>
-                              </span>
-                            </Link> */}
                             <Link href="#">
                               <span className="explore-more text-golden fz-17 fw-400">
                                 <span>Explore More</span>
@@ -307,7 +216,7 @@ const NewGroupGrid: React.FC = () => {
           </div>
         </section>
       </div>
-    </section>
+    </div>
   );
 };
 

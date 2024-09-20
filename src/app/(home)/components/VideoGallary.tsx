@@ -115,7 +115,7 @@ function VideoGallary() {
       <div className="container">
         <div className="container-fluid rest">
           <div className="row" style={{ marginBottom: "120px" }}>
-            <div className="col-12 pe-0" style={{ position: "relative" }}>
+            <div className="col-12" style={{ position: "relative" }}>
               <div className="work-crus work-crus2">
                 {loadSwiper && (
                   <Swiper
@@ -143,7 +143,7 @@ function VideoGallary() {
                 }}
               > */}
               <div
-                className="swiper-button-next text-dark fw-600 swiper-arrow-mobile"
+                className="swiper-button-next text-dark fw-600 swiper-arrow-mobile-right"
                 style={{
                   fontWeight: "600",
                   height: "40px",
@@ -156,7 +156,7 @@ function VideoGallary() {
               ></div>
 
               <div
-                className="swiper-button-prev text-dark swiper-arrow-mobile"
+                className="swiper-button-prev text-dark swiper-arrow-mobile-left"
                 style={{
                   fontWeight: "600",
                   height: "40px",

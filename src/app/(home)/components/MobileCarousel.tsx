@@ -43,7 +43,7 @@ const MobileCarousel = () => {
   }, []);
 
   return (
-    <div className="container pe-0">
+    <div className="container">
       <div className="blog-carsouel">
         {loadSwiper && (
           <Swiper

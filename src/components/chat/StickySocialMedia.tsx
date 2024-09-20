@@ -7,8 +7,6 @@ const StickySocialMedia = () => {
   useEffect(() => {
     const handleScroll = () => {
       const socialmediaBodyScroll = window.scrollY;
-      console.log("🚀 ~ socialmediaBodyScroll", socialmediaBodyScroll);
-
       if (socialmediaBodyScroll > 50) {
         setIsVisible(true); // Hide component when scroll is more than 45px
       } else {

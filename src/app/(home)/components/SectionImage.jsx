@@ -45,8 +45,8 @@ function SectionImage() {
   }, [currentImage]);
 
   return (
-    <section className="">
-      <div className="row screen-height">
+    <>
+      <div className="section-container d-md-flex flex-md-row" style={{ width: "100vw" }}>
         <div
           className="vision-container col-md-6 d-flex flex-column justify-content-center align-items-center bg-navy"
         // style={{ padding: "0px 100px" }}
@@ -118,7 +118,7 @@ function SectionImage() {
           />
         </div>
       </div>
-    </section>
+    </>
   );
 }
 
