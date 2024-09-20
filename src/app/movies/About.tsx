@@ -38,9 +38,10 @@ const About = () => {
                       border: "3px solid var(--golden)",
                       borderTop: "none",
                       borderRight: "none",
+                      fontSize: 'large'
                     }}
                   >
-                    <strong>
+                    <strong style={{textAlign: 'center',fontStyle: 'italic'}}>
                       {" "}
                       Vision
                       <br />
@@ -57,7 +58,7 @@ const About = () => {
                   <p
                     className="director-p"
                     style={{
-                      padding: "72px 20px 72px 20px",
+                      padding: "72px 20px 45px 20px",
                       background: "var(--background) !important",
                       position: "relative",
                       top: "-89px",
@@ -67,9 +68,10 @@ const About = () => {
                       border: "3px solid var(--golden)",
                       borderTop: "none",
                       borderLeft: "none",
+                      fontSize:'large'
                     }}
                   >
-                    <strong>
+                    <strong style={{fontStyle: 'italic'}}>
                       {" "}
                       Mission
                       <br />
