@@ -18,18 +18,6 @@ const MissionVision = () => {
         }}
       >
         <div className="col-12 col-lg-6 mb-4 text-center">
-          {/* <Image
-            src="/assets/images2/our-mission.svg"
-            // src="https://megaone.acrothemes.com/agency-hotspot/images/slider-img.png"
-            alt="Dhaval Thakkar"
-            width={400}
-            height={400}
-            // style={{
-            //   height: "427px",
-            //   width: "507px",
-            //   borderRadius: "8px",
-            // }}
-          /> */}
           <div className="">
             <MissionVisonSvg />
           </div>
@@ -41,20 +29,14 @@ const MissionVision = () => {
               style={{
                 height: "300px",
                 width: "300px",
-                // border: "1px solid var(--navy)",
                 top: "68%",
-                left: "13%",
+                left: "61%",
                 transform: "translate(-50%, -50%)",
-                // borderRadius: "100%",
-                // background: "#fff",
-                // background: "transparent",
-                // background: "#eaa636",
 
                 border: "2px solid var(--golden)",
 
                 zIndex: 2,
-                // color: "#eaa636",
-                // color: "var(--navy)",
+
                 fontSize: "16px",
 
                 color: "var(--golden)",
@@ -77,17 +59,7 @@ const MissionVision = () => {
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </div>
-              {/* <IoIosEye
-                style={{
-                  position: "absolute",
-                  top: "77%",
-                  right: "-15%",
-                  // transform: "translate(-50%, -50%)",
-                  fontSize: "30px",
-                  color: "var(--golden)",
-                  fontSize: "110px",
-                }}
-              /> */}
+
               <TbTargetArrow
                 style={{
                   position: "absolute",
@@ -105,19 +77,14 @@ const MissionVision = () => {
               style={{
                 height: "300px",
                 width: "300px",
-                left: "61%",
+                left: "6%",
                 top: "35%",
-                // border: "1px solid var(--golden)",
-                // border: "1px solid #fff",
 
                 transform: "translate(-50%, -50%)",
-                // borderRadius: "100%",
-                // background: "#eaa636",
-                // background: "rgba(23, 38, 57,0.7)",
+
                 color: "var(--golden)",
                 border: "2px solid var(--golden)",
 
-                // overflow: "hidden",
                 fontSize: "16px",
                 textAlign: "center",
               }}
@@ -140,24 +107,13 @@ const MissionVision = () => {
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </div>
-              {/* <TbTargetArrow
-                style={{
-                  position: "absolute",
-                  top: "80%",
-                  right: "-15%",
-                  // transform: "translate(-50%, -50%)",
-                  fontSize: "30px",
-                  color: "var(--golden)",
-                  fontSize: "100px",
-                }}
-              /> */}
+
               <IoIosEye
                 style={{
                   position: "absolute",
                   top: "77%",
                   right: "-14%",
-                  // transform: "translate(-50%, -50%)",
-                  // fontSize: "30px",
+
                   color: "var(--golden)",
                   fontSize: "110px",
                 }}

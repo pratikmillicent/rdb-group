@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 
@@ -43,7 +43,12 @@ const data = [
 ];
 
 const swiperOptions = {
-  modules: [Navigation],
+  modules: [Navigation, Autoplay],
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
   slidesPerView: 3,
   loop: true,
   spaceBetween: 10,

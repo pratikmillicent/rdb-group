@@ -42,13 +42,23 @@
   }
 }
 
-/* @media only screen and (max-width: 768px) {
-  .carousel-mobile {
-    display: none !important;
+@media only screen and (max-width: 576px) {
+  .mobile-value {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .mobile-responsive {
+    font-size: 10px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .section-mobile {
+    font-size: 10px !important;
   }
 }
 
-.section-container {
+/* .section-container {
   width: 100%;
 } */
 

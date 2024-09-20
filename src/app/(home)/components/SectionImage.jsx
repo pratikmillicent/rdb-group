@@ -17,14 +17,14 @@ function SectionImage() {
     backgroundColor: isSelected ? "var(--golden)" : "transparent",
     color: isSelected ? "white" : "white",
     fontWeight: "600",
-    padding: "10px 20px",
+    // padding: "10px 20px",
     cursor: "pointer",
     border: "none",
     outline: "none",
     transition: "background-color 0.3s, color 0.3s",
     borderRadius: "50px",
-    fontSize: "16px",
-    margin: "5px",
+    fontSize: "14px",
+    // margin: "5px",
   });
 
   const handleTabClick = (tab) => {
@@ -54,25 +54,25 @@ function SectionImage() {
           <div className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600">
             RD Brothers
           </div>
-          <div className="w-100 mb-2 d-flex flex-wrap justify-content-start">
+          <div className="w-100 mb-4 d-flex flex-wrap justify-content-start">
             <button
               style={tabStyle(selectedTab === "overview")}
               onClick={() => handleTabClick("overview")}
-              className="btn me-2 mb-2"
+              className="btn section-mobile"
             >
               Our Aspiration
             </button>
             <button
               style={tabStyle(selectedTab === "mission")}
               onClick={() => handleTabClick("mission")}
-              className="btn me-2 mb-2"
+              className="btn section-mobile"
             >
               Future Outlook
             </button>
             <button
               style={tabStyle(selectedTab === "vision")}
               onClick={() => handleTabClick("vision")}
-              className="btn mb-2"
+              className="btn section-mobile"
             >
               What Drives Us
             </button>
