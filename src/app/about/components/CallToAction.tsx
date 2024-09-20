@@ -11,8 +11,11 @@ function CallToAction({}) {
   }, [active]);
 
   return (
-    <section className="call-action-img">
-      <div className="w-100">
+    <section
+      className="call-action-img"
+      style={{ maxWidth: "100dvw", overflow: "hidden" }}
+    >
+      <div>
         <div
           className="w-100 sec-bg-img bg-img parallaxie"
           data-background={
@@ -163,7 +166,7 @@ function CallToAction({}) {
           </div> */}
 
           <div className="">
-            <div className="row text-center" style={{ color: "var(--golden)" }}>
+            <div className=" text-center" style={{ color: "var(--golden)" }}>
               <div
                 className="core-value-container col-lg-4 col-md-12 bg-dark bg-opacity-50 text-white"
                 style={{
@@ -174,6 +177,8 @@ function CallToAction({}) {
                   alignItems: "center",
                   justifyContent: "center",
                   // padding: "50px 0px",
+                  maxWidth: "100dvw",
+                  overflow: "hidden",
                 }}
               >
                 Our <br /> Core Values
