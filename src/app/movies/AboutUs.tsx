@@ -46,13 +46,16 @@ import Heading from "@/components/heading/Heading";
 const AboutUs = () => {
   return (
     <div>
-      <div className="silverscreen-container" style={{display:'flex' , flexDirection:'column', marginTop: '60px'}} >
-          <Heading headTitle="About Us" color="white" />
+      <div
+        className="silverscreen-container"
+        style={{ display: "flex", flexDirection: "column", marginTop: "60px" }}
+      >
+        <Heading headTitle="About Us" color="white" />
         {/* Top left corner: REC and timer */}
         <div className="top-left">
           <span
             className="rec-mobile"
-            style={{ position: "absolute", top: "50px", left: "43px" }}
+            style={{ position: "absolute", top: "25px", left: "50px" }}
           >
             <Image
               src={"/assets/images/movie/about/recording1.gif"}
@@ -81,10 +84,10 @@ const AboutUs = () => {
           className="fz-16"
           style={{
             zIndex: 9,
-            display:'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+
             // backgroundColor: "var(--navy)",
             // margin: "40px",
             width: "70%",
@@ -92,16 +95,15 @@ const AboutUs = () => {
             alignItems: "center",
             textAlign: "justify",
             // fontFamily: "FontAwesome",
-            marginLeft: 'auto',
-            marginRight: 'auto'
+            marginLeft: "auto",
+            marginRight: "auto",
           }}
         >
           <div
             className="text-white text-mobile"
-            style={{ fontFamily: "monospace" , display:'flex', width: '100%'}}
+            style={{ fontFamily: "monospace", display: "flex", width: "100%" }}
           >
             RD Movies, the entertainment arm of RD Brothers, has made a
-           
             remarkable impact in the film industry by producing critically
             acclaimed and commercially successful films. With a blend of
             creative storytelling and sharp business acumen, we aim to deliver
@@ -113,10 +115,35 @@ const AboutUs = () => {
             unique, compelling narratives for audiences worldwide.
           </div>
 
-     
-          <Heading headTitle="About Us" color="white" />
+          <div
+            style={{
+              // display: "flex",
+              justifyContent: "space-between",
+              fontFamily: "monospace",
+              marginTop: "50px",
+            }}
+          >
+            <strong style={{ textAlign: "center", fontStyle: "italic" }}>
+              Vision&nbsp;
+            </strong>
+            To promote meaningful filmmaking, delivering captivating stories
+            that connect with audiences on a cultural and commercial level,
+            while fostering innovation in film production.
+          </div>
+          <div
+            style={{
+              // display: "flex",
+              justifyContent: "space-between",
+              fontFamily: "monospace",
+              marginTop: "50px",
+            }}
+          >
+            <strong style={{ fontStyle: "italic" }}> Mission&nbsp;</strong>To
+            create impactful cinematic experiences that blend creativity with
+            business acumen, ensuring our films captivate audiences worldwide
+            and contribute to the growth of the entertainment industry.
+          </div>
         </div>
-        
 
         {/* Scroll Down indicator */}
         <div className="scroll-down">

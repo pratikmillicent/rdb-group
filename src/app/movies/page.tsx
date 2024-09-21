@@ -25,7 +25,7 @@ const page = () => {
     <div className="w-100">
       <MovieSlider />
       <AboutUs />
-      <About />
+      {/* <About /> */}
       {/* <Movieteam /> */}
 
       {/* <Movieteam2 /> */}
