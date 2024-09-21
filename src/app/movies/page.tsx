@@ -24,8 +24,8 @@ const page = () => {
   return (
     <div className="w-100">
       <MovieSlider />
-      <About />
       <OurMission />
+      <About />
       {/* <Movieteam /> */}
       <Movieteam2 />
       <Project />

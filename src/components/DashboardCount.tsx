@@ -1,6 +1,7 @@
 import { CountUp } from "countup.js";
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-spring";
+import "../app/(home)/SectionImage.css";
 
 interface DashboardData {
   value: number;
@@ -73,7 +74,7 @@ function DashboardCount({ data }: DashboardCountProps) {
                 <div className="de_count" style={{ backgroundSize: "cover" }}>
                   <h3 className="main-color3">
                     <span
-                      className="fz-40"
+                      className="fz-40 mobile-value"
                       ref={(el) => {
                         countersRef.current[index] = el;
                       }}
@@ -84,7 +85,9 @@ function DashboardCount({ data }: DashboardCountProps) {
                     {suffix}
                     {/* {item.suffix && item.suffix} */}
                   </h3>
-                  <div className="fs-7 text-golden ">{item.label}</div>
+                  <div className="fs-7 text-golden mobile-responsive ">
+                    {item.label}
+                  </div>
                 </div>
               </div>
             );

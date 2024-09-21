@@ -46,7 +46,7 @@ import Heading from "@/components/heading/Heading";
 const OurMission = () => {
   return (
     <div>
-      <Heading headTitle="Our mission" />
+      <Heading headTitle="About Us" />
 
       <div className="silverscreen-container">
         {/* Top left corner: REC and timer */}
@@ -83,7 +83,7 @@ const OurMission = () => {
           style={{
             zIndex: 9,
             // backgroundColor: "var(--navy)",
-            margin: "40px",
+            // margin: "40px",
             // width: "100%",
             // height: "100%",
             alignItems: "center",
@@ -92,10 +92,15 @@ const OurMission = () => {
           }}
         >
           <div className="text-white" style={{ fontFamily: "monospace" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ab quasi accusamus laudantium odio non tempora consequatur porro
-            optio ex quaerat consectetur eligendi ullam, quod, autem fugit dolor
-            voluptate eum accusantium velit beatae cupiditate! Doloribus
+            RD Movies, the entertainment arm of RD Brothers, has made a remarkable impact in the film industry by producing critically
+            acclaimed and commercially successful films. With a blend of
+            creative storytelling and sharp business acumen, we aim to deliver
+            cinematic experiences that resonate both culturally and
+            commercially. Our production house is responsible for blockbuster
+            films like Kutch Express as well as ventures into new genres with
+            our latest horror comedy release, Jhamkuddi. At RD Movies, we are
+            more than just filmmakers—we are storytellers committed to creating
+            unique, compelling narratives for audiences worldwide.
           </div>
         </div>
 

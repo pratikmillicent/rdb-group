@@ -14,6 +14,8 @@ import ProjectFracto from "./ProjectFracto";
 import HowItWorks2 from "./HowItWorks2";
 import Heading from "@/components/heading/Heading";
 import Cre from "./Cre";
+import Vision from "./Vision";
+import Mission from "./Mission";
 
 const page = () => {
   return (
@@ -62,25 +64,22 @@ const page = () => {
       <div className="">
         <div className="container">
           <p className="lead my-4">
-            Strata was established with a bold vision: to democratize commercial
-            real estate investing and make it accessible to a wider range of
-            investors. Our mission is to break down the barriers to entry in
-            this traditionally exclusive market, enabling more people to
-            participate in high-value, institutional-grade real estate
-            opportunities. We leverage technology and innovation to simplify the
-            investment process, providing a transparent, hassle-free platform
-            where investors can diversify their portfolios with carefully
-            curated commercial properties. Our data-driven approach ensures that
-            each investment is backed by thorough market research, expert
-            analysis, and a commitment to delivering sustainable returns. At
-            Strata, we believe in unlocking the true potential of real estate by
-            offering fractional ownership, enabling investors to start small and
-            scale as they grow. Our end-to-end services—from property selection
-            and due diligence to asset management and exit strategies—are
-            designed to maximize value and minimize risk for our investors.
+            At Fracto, we are trailblazers in the Proptech sector, merging the
+            world of real estate with advanced technology to transform how
+            properties are bought, sold, and managed. Our mission is to break
+            down the barriers that traditionally restrict access to high-value
+            real estate investments, empowering a broader range of investors to
+            participate. Through cutting-edge digital platforms, we offer
+            streamlined processes that provide transparency, efficiency, and
+            superior tools to enhance the real estate investment journey. By
+            leveraging data-driven insights and innovative technology, we are
+            committed to delivering an experience that simplifies
+            decision-making and maximizes value for our clients.
           </p>
         </div>
         {/* <SectionImage /> */}
+        <Vision />
+        <Mission />
         <ProjectFracto />
 
         <Cre />

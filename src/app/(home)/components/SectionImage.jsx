@@ -23,7 +23,7 @@ function SectionImage() {
     outline: "none",
     transition: "background-color 0.3s, color 0.3s",
     borderRadius: "50px",
-    fontSize: "10px",
+    fontSize: "14px",
     // margin: "5px",
   });
 
@@ -54,25 +54,25 @@ function SectionImage() {
           <div className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600">
             RD Brothers
           </div>
-          <div className="w-100 mb-2 d-flex flex-wrap justify-content-start">
+          <div className="w-100 mb-4 d-flex flex-wrap justify-content-start">
             <button
               style={tabStyle(selectedTab === "overview")}
               onClick={() => handleTabClick("overview")}
-              className="btn"
+              className="btn section-mobile"
             >
               Our Aspiration
             </button>
             <button
               style={tabStyle(selectedTab === "mission")}
               onClick={() => handleTabClick("mission")}
-              className="btn"
+              className="btn section-mobile"
             >
               Future Outlook
             </button>
             <button
               style={tabStyle(selectedTab === "vision")}
               onClick={() => handleTabClick("vision")}
-              className="btn"
+              className="btn section-mobile"
             >
               What Drives Us
             </button>

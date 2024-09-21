@@ -15,8 +15,8 @@ import { ImProfile } from "react-icons/im";
 
 const swiperOptions = {
   speed: 1000,
-  slidesPerView: 4,
-  spaceBetween: 0,
+  slidesPerView: 5,
+  spaceBetween: 20,
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -30,7 +30,7 @@ const swiperOptions = {
       slidesPerView: 3,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 5,
     },
   },
 };
@@ -47,19 +47,30 @@ const Cre = () => {
         <div className="sec-lg-head">
           <div className="row justify-content-center">
             <div className="col-lg-6 text-center">
-              <Heading headTitle="CRE" />
+              <Heading headTitle="Why Commercial Real Estate?" />
             </div>
           </div>
+        </div>
+        <div className="">
+          <p className="lead  my-4">
+            Investing in commercial real estate has historically been one of the
+            most lucrative options, providing strong returns, long-term
+            stability, and portfolio diversification. Unlike other investment
+            avenues, CRE offers higher yields, rental income, and appreciation
+            potential while mitigating volatility. With Fracto, we make it
+            easier for individual investors to tap into this high-value asset
+            class, traditionally available only to institutional players
+          </p>
         </div>
         <div className="swiper4">
           {loadSwiper && (
             <Swiper
               {...swiperOptions}
               id="content-carousel-container-unq-approch"
-              className="swiper-container d-flex justify-content-center"
+              className="swiper-container  d-flex justify-content-center"
             >
               {data.map((item) => (
-                <SwiperSlide key={item.id}>
+                <SwiperSlide className="px-3" key={item.id}>
                   <div className="item text-center">
                     <h4 className="">{item.title}</h4>
 
@@ -119,6 +130,12 @@ const data = [
   },
   {
     id: 4,
+    title: "Portfolio Diversification",
+    text: "Consider investing in land for future development or as a long-term appreciation strategy.",
+    icon: <ImProfile />,
+  },
+  {
+    id: 5,
     title: "Portfolio Diversification",
     text: "Consider investing in land for future development or as a long-term appreciation strategy.",
     icon: <ImProfile />,
