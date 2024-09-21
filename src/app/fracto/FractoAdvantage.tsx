@@ -95,7 +95,7 @@ const FractoAdvantage = () => {
             {/* Works */}
           </h3>
           <p
-            className="d-flex justify-content-center text-center px-5"
+            className="d-flex justify-content-center text-left px-5"
             style={{
               color: "var(--navy)",
             }}
