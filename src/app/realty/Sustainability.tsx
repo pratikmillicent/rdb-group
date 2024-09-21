@@ -19,6 +19,9 @@ const Sustainability = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
           width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <div className="container">
@@ -45,13 +48,16 @@ const Sustainability = () => {
                   textAlign: "justify",
                 }}
               >
-                At DLF, we embrace our unique position as industry pioneers to
-                re-write the Indian real estate narrative. We take pride in
-                enacting, exemplifying, and exceeding the highest environmental
-                standards which address the most pressing challenges faced by
-                our nation.{" "}
+                We are committed to sustainable development practices that
+                enhance both the environment and the communities we serve. Our
+                approach to real estate emphasizes eco-friendly construction,
+                energy-efficient designs, and responsible resource management.
+                We strive to create spaces that are sustainable, ensuring that
+                our projects contribute positively to the environment and stand
+                the test of time. We believe that it’s this investment that will
+                last as legacy for generations to come.
               </p>
-              <p
+              {/* <p
                 className="text-white sustainability-para"
                 style={{
                   fontSize: "15px",
@@ -70,7 +76,7 @@ const Sustainability = () => {
                 our stakeholders with respect to shared environmental
                 obligations. We operate with the intention of placing Indian
                 industry at the global forefront of green innovation.
-              </p>
+              </p> */}
 
               {/* <div className="extra_sustain display">
                 <h5>Our practices</h5>
@@ -90,13 +96,13 @@ const Sustainability = () => {
                 </p>
               </div> */}
 
-              <a
+              {/* <a
                 href="pdf/ESG-Report-2021.pdf"
                 target="_blank"
                 className="esg-btn hvr-sweep-to-right rounded"
               >
                 Read More
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
