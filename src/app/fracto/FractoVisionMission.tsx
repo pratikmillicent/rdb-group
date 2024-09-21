@@ -1,0 +1,133 @@
+import parallaxie from "@/common/parallaxie";
+import React, { useState, useEffect } from "react";
+import "@/app/(home)/SectionImage.css";
+
+const images = {
+  overview: "/assets/images/home/about3.jpg",
+  vision: "/assets/images/home/our-vision.jpg",
+  mission: "/assets/images/home/our-mission.jpg",
+};
+
+function FractoSectionImage() {
+  const [selectedTab, setSelectedTab] = useState("vision");
+  const [currentImage, setCurrentImage] = useState(images[selectedTab]);
+  const [animate, setAnimate] = useState(false);
+
+  const tabStyle = (isSelected) => ({
+    backgroundColor: isSelected ? "var(--golden)" : "transparent",
+    color: isSelected ? "white" : "white",
+    fontWeight: "600",
+    padding: "10px 20px",
+    cursor: "pointer",
+    border: "none",
+    outline: "none",
+    transition: "background-color 0.3s, color 0.3s",
+    borderRadius: "50px",
+    fontSize: "16px",
+    margin: "5px",
+  });
+
+  const handleTabClick = (tab) => {
+    if (selectedTab !== tab) {
+      setAnimate(true);
+      setTimeout(() => {
+        setAnimate(false);
+        setSelectedTab(tab);
+        setCurrentImage(images[tab]);
+      }, 100);
+    } else {
+      setSelectedTab(tab);
+    }
+  };
+
+  useEffect(() => {
+    parallaxie(".back-image.parallaxie", 0.35);
+  }, [currentImage]);
+
+  return (
+    <section className="">
+      <div className="row">
+        <div
+          className="vision-container col-md-6 d-flex flex-column pt-40 align-items-center bg-navy"
+          // style={{ padding: "0px 100px" }}
+          // style={{ margin: "0px 15px" }}
+        >
+          <div className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600">
+            RD Brothers Fracto
+          </div>
+          <div className="w-100 mb-2 d-flex flex-wrap justify-content-start">
+            {/* <button
+              style={tabStyle(selectedTab === "overview")}
+              onClick={() => handleTabClick("overview")}
+              className="btn me-2 mb-2"
+            >
+              Our Aspiration
+            </button> */}
+
+            <button
+              style={tabStyle(selectedTab === "vision")}
+              onClick={() => handleTabClick("vision")}
+              className="btn mb-2"
+            >
+              Vision
+            </button>
+            <button
+              style={tabStyle(selectedTab === "mission")}
+              onClick={() => handleTabClick("mission")}
+              className="btn me-2 mb-2"
+            >
+              Mission
+            </button>
+          </div>
+          <div className={`tab-content ${animate ? "slide-in" : ""}`}>
+            {/* {selectedTab === "overview" && (
+              <p className="text-white fz-16 fw-400 w-100">
+                What drives us forward and defines our purpose for the future.
+              </p>
+            )} */}
+
+            {selectedTab === "vision" && (
+              <p className="text-white fz-16 fw-400">
+                To become India's leading real estate investment platform by
+                simplifying access to high-yield opportunities and creating
+                long-term value for our investors and stakeholders.
+              </p>
+            )}
+            {selectedTab === "mission" && (
+              <p className="text-white fz-16 fw-400">
+                To transform real estate investing by leveraging technology and
+                data, creating a seamless, transparent, and accessible platform
+                that empowers investors and redefines the investment landscape.
+              </p>
+            )}
+          </div>
+        </div>
+        <div
+          className={`col-md-6 position-relative p-0 ${
+            animate ? "slide-in" : ""
+          } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
+        >
+          <div
+            className="back-image bg-img parallaxie"
+            data-background={currentImage}
+            // data-overlay-dark="3"
+            data-parallaxie={{
+              speed: "-0.4",
+              size: "auto",
+            }}
+            style={{
+              // backgroundSize: "cover",
+              // backgroundPosition: "center",
+              height: "100%",
+              // width: "100%",
+              // backgroundPosition: "center",
+              backgroundSize: "50vw 100%",
+            }}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default FractoSectionImage;
