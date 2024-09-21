@@ -13,18 +13,18 @@ import TeamSection2 from "../about/components/TeamSection2";
 
 import MovieSlider from "./MovieSlider";
 import Project from "./Project";
-import OurMission from "./OurMission";
 import AwardMovie from "./AwardMovie";
 import Review from "./Review";
 import ContactComponent from "../contact-us/components/ContactComponent";
 import Movieteam2 from "./Movieteam2";
 import Gallery from "./Gallery";
+import AboutUs from "./AboutUs";
 
 const page = () => {
   return (
     <div className="w-100">
       <MovieSlider />
-      <OurMission />
+      <AboutUs />
       <About />
       {/* <Movieteam /> */}
       <Movieteam2 />
