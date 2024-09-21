@@ -15,8 +15,8 @@ import { ImProfile } from "react-icons/im";
 
 const swiperOptions = {
   speed: 1000,
-  slidesPerView: 4,
-  spaceBetween: 0,
+  slidesPerView: 5,
+  spaceBetween: 20,
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -30,7 +30,7 @@ const swiperOptions = {
       slidesPerView: 3,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 5,
     },
   },
 };
@@ -67,10 +67,10 @@ const Cre = () => {
             <Swiper
               {...swiperOptions}
               id="content-carousel-container-unq-approch"
-              className="swiper-container d-flex justify-content-center"
+              className="swiper-container  d-flex justify-content-center"
             >
               {data.map((item) => (
-                <SwiperSlide key={item.id}>
+                <SwiperSlide className="px-3" key={item.id}>
                   <div className="item text-center">
                     <h4 className="">{item.title}</h4>
 
@@ -130,6 +130,12 @@ const data = [
   },
   {
     id: 4,
+    title: "Portfolio Diversification",
+    text: "Consider investing in land for future development or as a long-term appreciation strategy.",
+    icon: <ImProfile />,
+  },
+  {
+    id: 5,
     title: "Portfolio Diversification",
     text: "Consider investing in land for future development or as a long-term appreciation strategy.",
     icon: <ImProfile />,
