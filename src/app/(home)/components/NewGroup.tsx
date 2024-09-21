@@ -60,22 +60,25 @@ const NewGroupGrid: React.FC = () => {
   }, []);
 
   const handleShowTabs = () => {
-    isInView({
-      selector: ".portfolio-fixed .cont",
-      isElements: true,
-      callback(element: Element) {
-        element.classList.add("current");
-        document
-          .querySelector("#" + element.getAttribute("data-tab"))
-          ?.classList.add("current");
+    isInView(
+      {
+        selector: ".portfolio-fixed .cont",
+        isElements: true,
+        callback(element: Element) {
+          element.classList.add("current");
+          document
+            .querySelector("#" + element.getAttribute("data-tab"))
+            ?.classList.add("current");
+        },
+        whenOutOfView(element: Element) {
+          element.classList.remove("current");
+          document
+            .querySelector("#" + element.getAttribute("data-tab"))
+            ?.classList.remove("current");
+        },
       },
-      whenOutOfView(element: Element) {
-        element.classList.remove("current");
-        document
-          .querySelector("#" + element.getAttribute("data-tab"))
-          ?.classList.remove("current");
-      },
-    });
+      "-200px"
+    );
 
     const leftSide = document.getElementById("sticky_item");
     if (!leftSide) return;
