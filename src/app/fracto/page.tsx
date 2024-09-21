@@ -134,7 +134,7 @@ const page = () => {
         <Cre />
         <FractoAdvantage />
         {/* <Advantage /> */}
-        {/* <Advantage2 /> */}
+        <Advantage2 />
         {/* <HowItWorks /> */}
         {/* <Cre /> */}
 
