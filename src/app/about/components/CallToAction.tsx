@@ -167,22 +167,6 @@ function CallToAction({}) {
 
           <div className="">
             <div className="row text-center" style={{ color: "var(--golden)" }}>
-              <div
-                className="core-value-container col-lg-4 col-md-12 bg-dark bg-opacity-50 text-white"
-                style={{
-                  fontSize: "45px",
-                  fontWeight: 500,
-                  lineHeight: "54px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  // padding: "50px 0px",
-                  maxWidth: "100dvw",
-                  overflow: "hidden",
-                }}
-              >
-                Our <br /> Core Values
-              </div>
               <div className="col-lg-4 col-md-6 col-12 p-0">
                 <div className="border cor-col px-5">
                   <FaMedal className="core-icon" />
@@ -218,6 +202,23 @@ function CallToAction({}) {
                     making a positive impact on society and the environment.
                   </p>
                 </div>
+              </div>
+
+              <div
+                className="core-value-container col-lg-4 col-md-12 bg-dark bg-opacity-50 text-white"
+                style={{
+                  fontSize: "45px",
+                  fontWeight: 500,
+                  lineHeight: "54px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  // padding: "50px 0px",
+                  maxWidth: "100dvw",
+                  overflow: "hidden",
+                }}
+              >
+                Our <br /> Core Values
               </div>
             </div>
           </div>
