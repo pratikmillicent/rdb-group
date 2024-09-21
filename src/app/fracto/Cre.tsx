@@ -112,32 +112,32 @@ export default Cre;
 const data = [
   {
     id: 1,
-    title: "Stable Asset Class",
-    text: "Investing in residential real estate provides steady rental income and potential for property value growth.",
+    title: "Transparency",
+    text: "Every investment is backed by extensive market research and financial analysis, ensuring clarity at every step.",
     icon: <FaMoneyBillTrendUp />,
   },
   {
     id: 2,
-    title: "Monthly Cashflow",
-    text: "Explore opportunities in commercial real estate for higher returns and diverse investment portfolios.",
+    title: "Accessibility",
+    text: "We break down the barriers to CRE investing, allowing even first-time investors to participate in premium opportunities.",
     icon: <GiTakeMyMoney />,
   },
   {
     id: 3,
-    title: "Capital Appreciation",
-    text: "Invest in REITs to gain exposure to real estate markets without owning physical properties.",
+    title: "Diversification",
+    text: "With our carefully curated properties, you can diversify your portfolio across various commercial sectors.",
     icon: <GiMoebiusTriangle />,
   },
   {
     id: 4,
-    title: "Portfolio Diversification",
-    text: "Consider investing in land for future development or as a long-term appreciation strategy.",
+    title: "Technology-Driven",
+    text: "Our platform offers a seamless, user-friendly experience that allows you to manage your investments effortlessly.",
     icon: <ImProfile />,
   },
   {
     id: 5,
-    title: "Portfolio Diversification",
-    text: "Consider investing in land for future development or as a long-term appreciation strategy.",
-    icon: <ImProfile />,
+    title: "Expert Insights",
+    text: "Our data-driven strategy ensures that every investment aligns with market trends and delivers sustainable returns.",
+    icon: <GiMoebiusTriangle />,
   },
 ];
