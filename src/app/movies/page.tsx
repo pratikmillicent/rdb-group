@@ -19,6 +19,7 @@ import Review from "./Review";
 import ContactComponent from "../contact-us/components/ContactComponent";
 import Movieteam2 from "./Movieteam2";
 import Gallery from "./Gallery";
+import MobileMovieTeam from "./MobileMovieTeam";
 
 const page = () => {
   return (
@@ -26,20 +27,16 @@ const page = () => {
       <MovieSlider />
       <OurMission />
       <About />
-      {/* <Movieteam /> */}
-
-      {/* <Movieteam2 /> */}
+      <div className="d-none d-md-block">
+        <Movieteam2 />
+      </div>
+      <div className="d-block d-md-none">
+        <MobileMovieTeam />
+      </div>
 
       <Project />
-      {/* <AwardMovie /> */}
-      {/* <Gallery /> */}
       <Review />
       <ContactComponent />
-      {/* <Project /> */}
-      {/* <LatestNews /> */}
-      {/* <Enquiries /> */}
-      {/* <Contact /> */}
-      {/* <Contact /> */}
     </div>
   );
 };
