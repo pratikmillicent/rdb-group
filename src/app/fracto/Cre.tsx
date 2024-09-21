@@ -16,7 +16,7 @@ import { ImProfile } from "react-icons/im";
 const swiperOptions = {
   speed: 1000,
   slidesPerView: 5,
-  spaceBetween: 20,
+  spaceBetween: 0,
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -51,7 +51,7 @@ const Cre = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        {/* <div className="">
           <p className="lead  my-4">
             Investing in commercial real estate has historically been one of the
             most lucrative options, providing strong returns, long-term
@@ -61,7 +61,7 @@ const Cre = () => {
             easier for individual investors to tap into this high-value asset
             class, traditionally available only to institutional players
           </p>
-        </div>
+        </div> */}
         <div className="swiper4">
           {loadSwiper && (
             <Swiper
@@ -72,13 +72,15 @@ const Cre = () => {
               {data.map((item) => (
                 <SwiperSlide className="px-3" key={item.id}>
                   <div className="item text-center">
-                    <h4 className="">{item.title}</h4>
+                    {item.title.split(" ").map((text) => {
+                      return <h4 className="">{text}</h4>;
+                    })}
 
                     <h2 className="fz-60 stroke num-font mt-30 text-golden">
                       {item.icon}
                     </h2>
 
-                    <p className="fz-16 mt-30">{item.text}</p>
+                    {/* <p className="fz-16 mt-30">{item.text}</p> */}
                     <Link href="/dark/page-about" className="mt-15">
                       <span>
                         <svg
@@ -112,32 +114,32 @@ export default Cre;
 const data = [
   {
     id: 1,
-    title: "Stable Asset Class",
-    text: "Investing in residential real estate provides steady rental income and potential for property value growth.",
+    title: "High Returns",
+    // text: "Investing in residential real estate provides steady rental income and potential for property value growth.",
     icon: <FaMoneyBillTrendUp />,
   },
   {
     id: 2,
-    title: "Monthly Cashflow",
-    text: "Explore opportunities in commercial real estate for higher returns and diverse investment portfolios.",
+    title: "Stable Income",
+    // text: "Explore opportunities in commercial real estate for higher returns and diverse investment portfolios.",
     icon: <GiTakeMyMoney />,
   },
   {
     id: 3,
-    title: "Capital Appreciation",
-    text: "Invest in REITs to gain exposure to real estate markets without owning physical properties.",
+    title: "Portfolio Diversification",
+    // text: "Invest in REITs to gain exposure to real estate markets without owning physical properties.",
     icon: <GiMoebiusTriangle />,
   },
   {
     id: 4,
-    title: "Portfolio Diversification",
-    text: "Consider investing in land for future development or as a long-term appreciation strategy.",
+    title: "Capital Appreciation",
+    // text: "Consider investing in land for future development or as a long-term appreciation strategy.",
     icon: <ImProfile />,
   },
-  {
-    id: 5,
-    title: "Portfolio Diversification",
-    text: "Consider investing in land for future development or as a long-term appreciation strategy.",
-    icon: <ImProfile />,
-  },
+  // {
+  //   id: 5,
+  //   title: "Portfolio Diversification",
+  //   // text: "Consider investing in land for future development or as a long-term appreciation strategy.",
+  //   icon: <ImProfile />,
+  // },
 ];
