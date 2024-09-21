@@ -16,6 +16,7 @@ import DirectorCard from "../about/components/DirectorCard";
 import Sustainability from "./Sustainability";
 import ContactComponent from "../contact-us/components/ContactComponent";
 import MissionVision from "./MissionVision";
+import MissionVisionMobile from "./MissionVisionMobile";
 
 const Realty = () => {
   return (
@@ -24,7 +25,13 @@ const Realty = () => {
         <FrameSlider data={data} />
         <Experience />
         {/* <SectionImage /> */}
-        <MissionVision />
+        <div className="d-none d-md-block">
+          <MissionVision />
+        </div>
+        <div className="d-block d-md-none">
+          <MissionVisionMobile />
+        </div>
+
         {/* <DirectorCard /> */}
         <Project />
         {/* 

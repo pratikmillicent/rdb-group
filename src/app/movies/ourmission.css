@@ -14,6 +14,11 @@
   position: absolute;
   font-size: 0.8rem;
   letter-spacing: 1px;
+  width: 20%;
+}
+
+.bottom-right {
+  width: 12% !important;
 }
 
 .top-left {
@@ -27,7 +32,7 @@
 
 .top-right {
   top: 20px;
-  right: -92px;
+  right: 20px;
 }
 
 .bottom-left {
@@ -37,7 +42,7 @@
 
 .bottom-right {
   bottom: 20px;
-  right: -52px;
+  right: 20px;
 }
 
 .center-text {
@@ -89,4 +94,75 @@
   background-size: 100% 100%;
   z-index: 1;
   pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .text-mobile {
+    font-size: 9.5px !important;
+  }
+}
+@media (max-width: 576px) {
+  .rec-mobile {
+    position: absolute !important;
+    top: 5px !important;
+    left: 8px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .rec-mobile {
+    position: absolute !important;
+    top: 5px !important;
+    left: 8px !important;
+  }
+}
+
+/* // project file css  */
+
+@media screen and (max-width: 576px) {
+  .project-container {
+    padding: 15px;
+  }
+}
+
+.movie-gallery-container {
+  height: 320px;
+  width: 100%;
+  /* border-radius: 8px; */
+  overflow: hidden;
+}
+
+.movie-gallery-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* style={{
+  // filter: "grayscale(90%)",
+  objectFit: "cover",
+  objectPosition: "center center",
+}} */
+
+.project-images {
+  filter: grayscale(90%);
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media screen and (max-width: 576px) {
+  .project-images {
+    filter: grayscale(90%);
+    object-fit: contain;
+    object-position: center center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .movie-gallery-container {
+    height: 260px;
+    width: 100%;
+    /* border-radius: 8px; */
+    overflow: hidden;
+  }
 }

@@ -52,8 +52,8 @@ const OurMission = () => {
         {/* Top left corner: REC and timer */}
         <div className="top-left">
           <span
-            className=""
-            style={{ position: "absolute", top: "23px", left: "33px" }}
+            className="rec-mobile"
+            style={{ position: "absolute", top: "50px", left: "43px" }}
           >
             <Image
               src={"/assets/images/movie/about/recording1.gif"}
@@ -71,9 +71,9 @@ const OurMission = () => {
             alt={"corner"}
             width={100}
             height={100}
-            style={{
-              width: "60%",
-            }}
+            // style={{
+            //   width: "60%",
+            // }}
           />
         </div>
 
@@ -91,8 +91,12 @@ const OurMission = () => {
             // fontFamily: "FontAwesome",
           }}
         >
-          <div className="text-white" style={{ fontFamily: "monospace" }}>
-            RD Movies, the entertainment arm of RD Brothers, has made a remarkable impact in the film industry by producing critically
+          <div
+            className="text-white text-mobile"
+            style={{ fontFamily: "monospace" }}
+          >
+            RD Movies, the entertainment arm of RD Brothers, has made a
+            remarkable impact in the film industry by producing critically
             acclaimed and commercially successful films. With a blend of
             creative storytelling and sharp business acumen, we aim to deliver
             cinematic experiences that resonate both culturally and
@@ -112,9 +116,9 @@ const OurMission = () => {
             alt={"corner"}
             width={100}
             height={100}
-            style={{
-              width: "60%",
-            }}
+            // style={{
+            //   width: "60%",
+            // }}
           />
           {/* <div className="scroll-arrow"></div> */}
         </div>
@@ -127,9 +131,9 @@ const OurMission = () => {
             alt={"corner"}
             width={100}
             height={100}
-            style={{
-              width: "60%",
-            }}
+            // style={{
+            //   width: "60%",
+            // }}
           />
         </div>
 
@@ -141,7 +145,7 @@ const OurMission = () => {
             alt={"corner"}
             width={100}
             height={100}
-            style={{ width: "60%" }}
+            // style={{ width: "60%" }}
           />
         </div>
 
@@ -154,7 +158,7 @@ const OurMission = () => {
             width={100}
             height={100}
             style={{
-              width: "60%",
+              // width: "60%",
 
               objectFit: "cover",
             }}

@@ -2,9 +2,11 @@ import Image from "next/image";
 import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
-import PrevNext from "@/utils/PrevNext";
-import Link from "next/link";
+// import PrevNext from "@/utils/PrevNext";
+// import Link from "next/link";
 import Heading from "@/components/heading/Heading";
+import { Col, Row } from "react-bootstrap";
+import "./ourmission.css";
 
 const Project = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
@@ -17,7 +19,7 @@ const Project = () => {
   }, []);
 
   const swiperOptions = {
-    modules: [Navigation, Autoplay],
+    modules: [Navigation],
     autoplay: {
       delay: 1000,
       disableOnInteraction: false,
@@ -32,20 +34,17 @@ const Project = () => {
       prevEl: latestPrevRef.current,
       nextEl: latestNextRef.current,
     },
-    // breakpoints: {
-    //   0: {
-    //     slidesPerView: 1.1,
-    //   },
-    //   640: {
-    //     slidesPerView: 1.3,
-    //   },
-    //   768: {
-    //     slidesPerView: 1.5,
-    //   },
-    //   1024: {
-    //     slidesPerView: 1.7,
-    //   },
-    // },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
     onSwiper: (swiper: any) => {
       setTimeout(() => {
         swiper.navigation.init();
@@ -58,56 +57,14 @@ const Project = () => {
   return (
     <div
       className="overflow-hidden"
-      style={{
-        marginTop: "40px",
-        paddingBottom: "40px",
-      }}
+      // style={{
+      //   marginTop: "40px",
+      //   paddingBottom: "40px",
+      // }}
     >
       <Heading headTitle="Project" />
-      <div className="">
+      <div className="project-container">
         <section className="">
-          {/* <div
-            style={{
-              position: "relative",
-              display: "flex",
-              gap: "12px",
-              fontSize: "20px",
-              fontWeight: "500",
-              color: "var(--navy)",
-              marginBottom: "24px",
-              marginTop: "12px",
-              left: "41%",
-            }}
-          >
-            <div
-              onClick={() => setActive(0)}
-              style={{
-                cursor: "pointer",
-              }}
-            >
-              RELEASED
-            </div>
-            <div
-              onClick={() => setActive(1)}
-              style={{
-                cursor: "pointer",
-              }}
-            >
-              UPCOMING
-            </div>
-
-            <div
-              style={{
-                position: "absolute",
-                left: active === 0 ? "12px" : active === 1 ? "125px" : "208px",
-                bottom: -4,
-                height: "2px",
-                width: "3.5em",
-                background: "var(--golden)",
-                transition: "all ease .5s",
-              }}
-            ></div>
-          </div> */}
           {active == 0 && (
             <div
               style={{
@@ -115,7 +72,7 @@ const Project = () => {
                 padding: "20px 0",
               }}
             >
-              <div className="blog-carsouel">
+              {/* <div className="blog-carsouel">
                 {loadSwiper && (
                   <Swiper
                     {...swiperOptions}
@@ -123,37 +80,61 @@ const Project = () => {
                     className="swiper-container"
                     style={{ background: "inherit" }}
                   >
+                    <Row>
+                      <Swiper>
+                        {release.map((item) => (
+                          <SwiperSlide key={item.id}>
+                            <Col lg={12}>
+                              <div className="item">
+                                <div className="img image-container film">
+                                  <Image
+                                    style={{
+                                      // filter: "grayscale(90%)",
+                                      objectFit: "cover",
+                                      objectPosition: "center center",
+                                    }}
+                                    src={item.image}
+                                    alt={item.description}
+                                    width={400}
+                                    height={400}
+                                  />
+                                </div>
+                              </div>
+                            </Col>
+                          </SwiperSlide>
+                        ))}
+                      </Swiper>
+                    </Row>
+                  </Swiper>
+                )}
+              </div> */}
+              <div className="blog-carousel">
+                {loadSwiper && (
+                  <Swiper
+                    {...swiperOptions}
+                    id="content-carousel-container-unq-blog"
+                    className="swiper-container"
+                  >
                     {release.map((item) => (
                       <SwiperSlide key={item.id}>
-                        <div className="item">
-                          <div className="img image-container film">
-                            {/* <div
-                            style={{
-                              position: "absolute",
-                              top: "5%",
-                              fontSize: "20px",
-                              padding: "20px",
-                              transition: "none",
-                            }}
-                          >
-                            comming soon
-                          </div> */}
-                            <Image
-                              // className="w-100"
-                              style={
-                                {
-                                  // filter: "grayscale(90%)",
-                                  // objectFit: "cover",
-                                  // objectPosition: "center center",
-                                }
-                              }
-                              src={item.image}
-                              alt={item.description}
-                              width={400}
-                              height={400}
-                            />
+                        <Col lg={12}>
+                          <div className="item">
+                            <div className="img movie-gallery-container film">
+                              <Image
+                                className="project-images"
+                                // style={{
+                                //   // filter: "grayscale(90%)",
+                                //   objectFit: "cover",
+                                //   objectPosition: "center center",
+                                // }}
+                                src={item.image}
+                                alt={item.description}
+                                width={400}
+                                height={400}
+                              />
+                            </div>
                           </div>
-                        </div>
+                        </Col>
                       </SwiperSlide>
                     ))}
                   </Swiper>
@@ -173,7 +154,7 @@ const Project = () => {
                   {upcoming.map((item) => (
                     <SwiperSlide key={item.id}>
                       <div className="item pb-5 mb-3">
-                        <div className="img image-container">
+                        <div className="img movie-gallery-container">
                           <Image
                             src={item.image}
                             alt={item.description}
