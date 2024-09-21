@@ -100,10 +100,8 @@ const FractoAdvantage = () => {
               color: "var(--navy)",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            beatae voluptatibus minima sed nobis non at! Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Explicabo beatae voluptatibus
-            minima sed nobis non at!
+            At Fracto, we offer a unique advantage by combining innovation with
+            deep market expertise. Here’s why investing with us is different:
           </p>
         </div>
         <div className="col-6 d-flex">
