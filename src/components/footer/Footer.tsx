@@ -244,4 +244,9 @@ const socialIconData = [
     url: "https://youtube.com/@r.d.brothersproperties?feature=shared",
     alt: "YouTube",
   },
+  {
+    icon: "fab fa-whatsapp",
+    url: "https://youtube.com/@r.d.brothersproperties?feature=shared",
+    alt: "YouTube",
+  },
 ];

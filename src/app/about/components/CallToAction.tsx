@@ -166,7 +166,7 @@ function CallToAction({}) {
           </div> */}
 
           <div className="">
-            <div className=" text-center" style={{ color: "var(--golden)" }}>
+            <div className="row text-center" style={{ color: "var(--golden)" }}>
               <div
                 className="core-value-container col-lg-4 col-md-12 bg-dark bg-opacity-50 text-white"
                 style={{
