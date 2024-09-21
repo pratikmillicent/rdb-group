@@ -24,7 +24,7 @@ const ContactComponent = () => {
   };
   return (
     <div>
-      <Heading headTitle="Contact Us!" />
+      <Heading headTitle="Enquiry/Contact Us!" />
       <section className="contact-crev mt-30">
         <div className="container">
           <div className="row">

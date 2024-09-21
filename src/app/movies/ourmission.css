@@ -1,6 +1,7 @@
 .silverscreen-container {
   position: relative;
-  height: 90vh;
+  /* height: 120vh; */
+  padding-bottom: 120px;
   background-color: var(--navy);
   /* background-color: var(--navy); */
   color: white;
@@ -14,11 +15,29 @@
   position: absolute;
   font-size: 0.8rem;
   letter-spacing: 1px;
+
+  width: 10%;
+}
+@media (max-width: 768px) {
+  .top-left,
+.top-right,
+.bottom-left,
+.bottom-right{
   width: 20%;
 }
 
 .bottom-right {
   width: 12% !important;
+}
+
+.scroll-down{
+  width: 50%;
+}
+}
+
+
+.bottom-right {
+  width: 6% ;
 }
 
 .top-left {
@@ -62,7 +81,7 @@
 .scroll-down {
   position: absolute;
   bottom: 8px;
-  left: 55%;
+  left: 50%;
   transform: translateX(-50%);
   font-size: 1rem;
   letter-spacing: 2px;

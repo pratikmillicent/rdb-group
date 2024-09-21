@@ -86,7 +86,10 @@ const page = () => {
         {/* <Mission /> */}
         <FractoSectionImage />
 
-        <div style={{ display: "flex", margin: "60px" }} className="container">
+        <div
+          style={{ display: "flex", margin: "60px auto" }}
+          className="container"
+        >
           <div style={{ flex: "1", paddingRight: "40px" }}>
             <Heading headTitle="Our Founder" textAlign="left" />
             <p>

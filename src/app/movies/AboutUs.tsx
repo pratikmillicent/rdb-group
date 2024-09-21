@@ -43,17 +43,19 @@ import "./ourmission.css";
 import Image from "next/image";
 import Heading from "@/components/heading/Heading";
 
-const OurMission = () => {
+const AboutUs = () => {
   return (
     <div>
-      <Heading headTitle="About Us" />
-
-      <div className="silverscreen-container">
+      <div
+        className="silverscreen-container"
+        style={{ display: "flex", flexDirection: "column", marginTop: "60px" }}
+      >
+        <Heading headTitle="About Us" color="white" />
         {/* Top left corner: REC and timer */}
         <div className="top-left">
           <span
             className="rec-mobile"
-            style={{ position: "absolute", top: "50px", left: "43px" }}
+            style={{ position: "absolute", top: "25px", left: "50px" }}
           >
             <Image
               src={"/assets/images/movie/about/recording1.gif"}
@@ -79,21 +81,27 @@ const OurMission = () => {
 
         {/* Center text: SILVERSCREEN */}
         <div
-          className="center-text fz-16"
+          className="fz-16"
           style={{
             zIndex: 9,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+
             // backgroundColor: "var(--navy)",
             // margin: "40px",
-            // width: "100%",
+            width: "70%",
             // height: "100%",
             alignItems: "center",
             textAlign: "justify",
             // fontFamily: "FontAwesome",
+            marginLeft: "auto",
+            marginRight: "auto",
           }}
         >
           <div
             className="text-white text-mobile"
-            style={{ fontFamily: "monospace" }}
+            style={{ fontFamily: "monospace", display: "flex", width: "100%" }}
           >
             RD Movies, the entertainment arm of RD Brothers, has made a
             remarkable impact in the film industry by producing critically
@@ -105,6 +113,35 @@ const OurMission = () => {
             our latest horror comedy release, Jhamkuddi. At RD Movies, we are
             more than just filmmakers—we are storytellers committed to creating
             unique, compelling narratives for audiences worldwide.
+          </div>
+
+          <div
+            style={{
+              // display: "flex",
+              justifyContent: "space-between",
+              fontFamily: "monospace",
+              marginTop: "50px",
+            }}
+          >
+            <strong style={{ textAlign: "center", fontStyle: "italic" }}>
+              Vision&nbsp;
+            </strong>
+            To promote meaningful filmmaking, delivering captivating stories
+            that connect with audiences on a cultural and commercial level,
+            while fostering innovation in film production.
+          </div>
+          <div
+            style={{
+              // display: "flex",
+              justifyContent: "space-between",
+              fontFamily: "monospace",
+              marginTop: "50px",
+            }}
+          >
+            <strong style={{ fontStyle: "italic" }}> Mission&nbsp;</strong>To
+            create impactful cinematic experiences that blend creativity with
+            business acumen, ensuring our films captivate audiences worldwide
+            and contribute to the growth of the entertainment industry.
           </div>
         </div>
 
@@ -172,4 +209,4 @@ const OurMission = () => {
   );
 };
 
-export default OurMission;
+export default AboutUs;
