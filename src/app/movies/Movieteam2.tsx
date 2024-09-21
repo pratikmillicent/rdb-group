@@ -39,14 +39,7 @@ function Movieteam2() {
       <Heading headTitle="Team" />
       <div className="">
         <div className="row ">
-          <div
-            className="col-lg-3 bg-navy"
-            // style={{
-            //   background: "url(/assets/images/movie/film_projector.jpg)",
-            //   backgroundSize: "100% 100%",
-            //   backgroundRepeat: "no-repeat",
-            // }}
-          >
+          <div className="col-lg-3 bg-navy">
             <h1
               className=""
               style={{
@@ -66,7 +59,7 @@ function Movieteam2() {
                 marginLeft: "30px",
               }}
             >
-              <div className="swiper-button-prev">
+              <div className="swiper-button-prev d-none d-md-block">
                 <span
                   className=""
                   style={{
@@ -98,7 +91,7 @@ function Movieteam2() {
                   </svg>
                 </span>
               </div>
-              <div className="swiper-button-next ml-50">
+              <div className=" d-none d-md-block swiper-button-next ml-50">
                 <span
                   className=""
                   style={{
@@ -148,32 +141,6 @@ function Movieteam2() {
                 >
                   {data.map((item) => (
                     <SwiperSlide key={item.id}>
-                      {/* <div
-                        className="item"
-                        style={{
-                        
-                          background: "#fff",
-                    
-                        }}
-                      >
-                        
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <div className="img">
-                              <img
-                                src={item.image}
-                                alt=""
-                                className="circle-img"
-                                style={{
-                                  height: "200px",
-                                  width: "200px",
-                                }}
-                              />
-                            </div>
-                            <h6 className="fz-16">{item.author}</h6>
-                          </div>
-                        </div>
-                      </div> */}
                       <div className="">
                         <div className="">
                           <img

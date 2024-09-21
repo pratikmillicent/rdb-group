@@ -16,6 +16,7 @@ import DirectorCard from "../about/components/DirectorCard";
 import Sustainability from "./Sustainability";
 import ContactComponent from "../contact-us/components/ContactComponent";
 import MissionVision from "./MissionVision";
+import MissionVisionMobile from "./MissionVisionMobile";
 import Heading from "@/components/heading/Heading";
 
 const Realty = () => {
@@ -41,7 +42,15 @@ const Realty = () => {
           </p>
         </div>
         {/* <SectionImage /> */}
-        <MissionVision />
+        <div className="d-none d-md-block">
+          <MissionVision />
+        </div>
+        <div className="d-block d-md-none">
+          <MissionVisionMobile />
+        </div>
+
+        {/* <DirectorCard /> */}
+        {/* <MissionVision /> */}
         <DirectorCard />
         <Project />
         {/* 

@@ -51,8 +51,8 @@ const AboutUs = () => {
         {/* Top left corner: REC and timer */}
         <div className="top-left">
           <span
-            className=""
-            style={{ position: "absolute", top: "23px", left: "33px" }}
+            className="rec-mobile"
+            style={{ position: "absolute", top: "50px", left: "43px" }}
           >
             <Image
               src={"/assets/images/movie/about/recording1.gif"}
@@ -70,9 +70,9 @@ const AboutUs = () => {
             alt={"corner"}
             width={100}
             height={100}
-            style={{
-              width: "60%",
-            }}
+            // style={{
+            //   width: "60%",
+            // }}
           />
         </div>
 
@@ -96,8 +96,12 @@ const AboutUs = () => {
             marginRight: 'auto'
           }}
         >
-          <div className="text-white" style={{ fontFamily: "monospace" , display:'flex', width: '100%'}}>
+          <div
+            className="text-white text-mobile"
+            style={{ fontFamily: "monospace" , display:'flex', width: '100%'}}
+          >
             RD Movies, the entertainment arm of RD Brothers, has made a
+           
             remarkable impact in the film industry by producing critically
             acclaimed and commercially successful films. With a blend of
             creative storytelling and sharp business acumen, we aim to deliver
@@ -122,9 +126,9 @@ const AboutUs = () => {
             alt={"corner"}
             width={100}
             height={100}
-            style={{
-              width: "60%",
-            }}
+            // style={{
+            //   width: "60%",
+            // }}
           />
           {/* <div className="scroll-arrow"></div> */}
         </div>
@@ -137,9 +141,9 @@ const AboutUs = () => {
             alt={"corner"}
             width={100}
             height={100}
-            style={{
-              width: "60%",
-            }}
+            // style={{
+            //   width: "60%",
+            // }}
           />
         </div>
 
@@ -151,7 +155,7 @@ const AboutUs = () => {
             alt={"corner"}
             width={100}
             height={100}
-            style={{ width: "60%" }}
+            // style={{ width: "60%" }}
           />
         </div>
 
@@ -164,7 +168,7 @@ const AboutUs = () => {
             width={100}
             height={100}
             style={{
-              width: "60%",
+              // width: "60%",
 
               objectFit: "cover",
             }}

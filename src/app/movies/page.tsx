@@ -27,10 +27,12 @@ const page = () => {
       <AboutUs />
       <About />
       {/* <Movieteam /> */}
-      <Movieteam2 />
+
+      {/* <Movieteam2 /> */}
+
       <Project />
       {/* <AwardMovie /> */}
-      <Gallery />
+      {/* <Gallery /> */}
       <Review />
       <ContactComponent />
       {/* <Project /> */}
