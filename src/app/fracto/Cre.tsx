@@ -73,7 +73,11 @@ const Cre = () => {
                 <SwiperSlide className="px-3" key={item.id}>
                   <div className="item text-center">
                     {item.title.split(" ").map((text) => {
-                      return <h4 className="">{text}</h4>;
+                      return (
+                        <h4 key={text} className="">
+                          {text}
+                        </h4>
+                      );
                     })}
 
                     <h2 className="fz-60 stroke num-font mt-30 text-golden">
