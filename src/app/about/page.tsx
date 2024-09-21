@@ -62,7 +62,7 @@ function About() {
       </div>
 
       <Experience />
-      {/* <AboutSectionImage /> */}
+      <AboutSectionImage />
       <DirectorCard />
       <CallToAction />
       <Team />

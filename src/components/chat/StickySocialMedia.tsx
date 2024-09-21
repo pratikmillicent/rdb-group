@@ -62,7 +62,7 @@ const StickySocialMedia = () => {
               alignItems: "center",
             }}
           >
-            <a href="#">
+            <a href="https://www.facebook.com/RDBROTHERSPROPERTIES?mibextid=LQQJ4d">
               <i
                 className="fa-brands fa-facebook-f py-2"
                 style={{
@@ -73,7 +73,7 @@ const StickySocialMedia = () => {
                 }}
               ></i>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/rd-brothers-property-consultant-llp">
               <i
                 className="fa-brands fa-linkedin py-2"
                 style={{
@@ -84,7 +84,7 @@ const StickySocialMedia = () => {
                 }}
               ></i>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/rdbrothersproperty?igsh=MTRpbHowcHdlazlkMA">
               <i
                 className="fa-brands fa-instagram py-2"
                 style={{
@@ -95,7 +95,7 @@ const StickySocialMedia = () => {
                 }}
               ></i>
             </a>
-            <a href="#">
+            <a href="https://youtube.com/@r.d.brothersproperties?feature=shared">
               <i
                 className="fa-brands fa-youtube py-2"
                 style={{

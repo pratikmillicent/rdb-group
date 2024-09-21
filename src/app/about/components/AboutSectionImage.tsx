@@ -48,7 +48,7 @@ function AboutSectionImage() {
     <section className="">
       <div className="row">
         <div
-          className="vision-container col-md-6 d-flex flex-column justify-content-center align-items-center bg-navy"
+          className="vision-container col-md-6 d-flex flex-column pt-40 align-items-center bg-navy"
           // style={{ padding: "0px 100px" }}
           // style={{ margin: "0px 15px" }}
         >

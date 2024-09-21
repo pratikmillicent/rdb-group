@@ -2,49 +2,88 @@ import React from "react";
 import "./howtowork2.css";
 import Heading from "@/components/heading/Heading";
 
+// const mediaItems = [
+//   {
+//     id: 1,
+//     name: "Discover",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+//   },
+//   {
+//     id: 2,
+//     name: "Choose",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+//   },
+//   {
+//     id: 3,
+//     name: "Customize",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+//   },
+//   {
+//     id: 4,
+//     name: "Order",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+//   },
+//   {
+//     id: 5,
+//     name: "Enjoy",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+//   },
+//   {
+//     id: 6,
+//     name: "Customize",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+//   },
+// ];
+
 const mediaItems = [
   {
     id: 1,
-    name: "Discover",
+    name: "Transparency",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+      "Every investment is backed by extensive market research and financial analysis, ensuring clarity at every step.",
   },
   {
     id: 2,
-    name: "Choose",
+    name: "Accessibility",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+      "We break down the barriers to CRE investing, allowing even first-time investors to participate in premium opportunities.",
   },
   {
     id: 3,
-    name: "Customize",
+    name: "Technology-Driven",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+      "Our platform offers a seamless, user-friendly experience that allows you to manage your investments effortlessly.",
   },
   {
     id: 4,
-    name: "Order",
+    name: "End to end management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+      "We manage the asset from acquisition to exit. Investors enjoy a hands-off investment experience.",
   },
-  {
-    id: 5,
-    name: "Enjoy",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
-  },
-  {
-    id: 6,
-    name: "Customize",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
-  },
+  // {
+  //   id: 5,
+  //   name: "Enjoy",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Customize",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
+  // },
 ];
 
-const HowItWorks2 = () => {
+const FractoAdvantage = () => {
   return (
     <div className="container">
-      <Heading headTitle="How It Works" />
+      <Heading headTitle="Fracto Advantage" />
       <div className="row mb-4">
         {/* First row with col-6 */}
 
@@ -138,4 +177,4 @@ const HowItWorks2 = () => {
   );
 };
 
-export default HowItWorks2;
+export default FractoAdvantage;

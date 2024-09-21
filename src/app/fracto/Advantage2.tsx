@@ -5,7 +5,7 @@ import Heading from "@/components/heading/Heading";
 const Advantage = () => {
   return (
     <div className="">
-      <Heading headTitle="Advantage" />
+      <Heading headTitle="How it works?" />
 
       <div
         className="row position-relative w-100 overflow-hidden p-0 m-0"
@@ -74,19 +74,19 @@ const Advantage = () => {
         >
           {[
             {
-              title: "Property Valuation",
+              title: "Explore Opportunities",
               text: "Accurate valuation services to help you understand the true value of your property.",
             },
             {
-              title: "Investment Opportunities",
+              title: "Choose Your Investment",
               text: "Explore lucrative real estate investment opportunities with high.",
             },
             {
-              title: "Legal Assistance",
+              title: "Invest Seamlessly",
               text: "Get expert legal advice to navigate the complexities of real estate transactions.",
             },
             {
-              title: "Property Management",
+              title: "Earn Returns",
               text: "Comprehensive property management services to maximize .",
             },
             // {

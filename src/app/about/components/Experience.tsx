@@ -15,7 +15,7 @@ const Experience = () => {
             </div>
           </div>
           <div className="col-md-4 mb-4 text-white d-flex flex-col justify-content-center ">
-            <h6 className="h-letter pt-2">WELCOME</h6>
+            <h6 className="h-letter pt-2">About Us</h6>
             <h4 className="exp-font">
               Transforming real estate development with a focus on customer
               excellence.
@@ -29,15 +29,17 @@ const Experience = () => {
                 textAlign: "justify",
               }}
             >
-              We are a global leader with a distinct vision to shape a
-              sustainable future across the industries we serve. Our aim is to
-              add value to your life through innovation, commitment to
-              excellence and integrity. With 20 years of experience and a strong
-              global presence, our diverse portfolio encompasses Properties,
-              Realty, Proptech, and Movie Production businesses as part of RD
-              Group. We're more than just a large company; we're a dynamic force
-              for change, creativity, and meaningful impact where it matters
-              most.
+              In the real estate domain, we are renowned for our exceptional
+              expertise and services, especially in luxury property development
+              and strategic land acquisition. With a commitment to quality and
+              innovation, we consistently strive to exceed our clients'
+              expectations, delivering projects that epitomize sophistication
+              and functionality. Our focus extends beyond mere construction; we
+              create spaces that offer enduring value, blending aesthetic appeal
+              with practical design. Each project is thoughtfully crafted to
+              reflect our dedication to excellence, ensuring long-term
+              satisfaction and a seamless blend of luxury living with modern
+              convenience for discerning clients.
             </p>
           </div>
         </div>
