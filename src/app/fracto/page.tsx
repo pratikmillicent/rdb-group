@@ -11,12 +11,12 @@ import Advantage from "./Advantage";
 import Investment from "./InvestmentOption";
 import About from "./About";
 import ProjectFracto from "./ProjectFracto";
-import HowItWorks2 from "./HowItWorks2";
 import Heading from "@/components/heading/Heading";
 import Cre from "./Cre";
 import Vision from "./Vision";
 import Mission from "./Mission";
 import FractoSectionImage from "./FractoVisionMission";
+import FractoAdvantage from "./FractoAdvantage";
 
 const page = () => {
   return (
@@ -132,9 +132,9 @@ const page = () => {
         <ProjectFracto />
 
         <Cre />
+        <FractoAdvantage />
         {/* <Advantage /> */}
-        <Advantage2 />
-        <HowItWorks2 />
+        {/* <Advantage2 /> */}
         {/* <HowItWorks /> */}
         {/* <Cre /> */}
 
