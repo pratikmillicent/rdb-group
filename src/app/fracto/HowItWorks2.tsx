@@ -43,59 +43,50 @@ const mediaItems = [
 
 const HowItWorks2 = () => {
   return (
-    <div className="container">
-      <Heading headTitle="How It Works" />
-      <div className="row mb-4">
-        {/* First row with col-6 */}
-
-        <div className="col-6 d-flex justify-content-center align-items-center flex-col">
-          <h3
-            className="d-flex justify-content-center"
-            style={{ color: "var(--navy)" }}
-          >
-            {/* Works */}
-          </h3>
-          <p
-            className="d-flex justify-content-center text-center px-5"
-            style={{
-              color: "var(--navy)",
-            }}
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            beatae voluptatibus minima sed nobis non at! Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Explicabo beatae voluptatibus
-            minima sed nobis non at!
-          </p>
+    <>
+      <div className="container">
+        <Heading headTitle="How It Works" />
+        
+        {/* First section with heading and description */}
+        <div className="row mb-4">
+          <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mb-4">
+            {/* <h3 className="d-flex justify-content-center">Works</h3> */}
+            <p className="text-center px-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo beatae voluptatibus minima sed nobis non at!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo beatae voluptatibus minima sed nobis non at!
+            </p>
+          </div>
+          
+          <div className="col-12 col-md-6 d-flex gap-2">
+            {/* Mapping the first two items */}
+            {mediaItems.slice(0, 2).map((item) => (
+              <div key={item.id} className="mb-3">
+                <div className="flip-card">
+                  <div className="flip-card-inner">
+                    <div className="flip-card-front d-flex justify-content-center align-items-center">
+                      <h6>{item.name}</h6>
+                    </div>
+                    <div className="flip-card-back">
+                      <p style={{ color: "white", textAlign: "left", padding: "15px" }}>{item.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="col-6 d-flex">
-          {/* Mapping the first two items */}
-          {mediaItems.slice(0, 2).map((item) => (
-            <div
-              key={item.id}
-              className="col-6 "
-              style={{
-                marginRight: "15px",
-              }}
-            >
+
+        {/* Remaining rows with responsive boxes */}
+        <div className="col-12 col-md-6 d-flex gap-2 flex-wrap flex-md-nowrap">
+          {mediaItems.slice(2).map((item) => (
+            <div key={item.id} className="mb-4">
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front d-flex justify-content-center align-items-center">
-                    <div className="">
-                      <h6 style={{ color: "var(--golden)", fontWeight: 600 }}>
-                        {item.name}
-                      </h6>
-                    </div>
+                    <h6>{item.name}</h6>
                   </div>
                   <div className="flip-card-back">
-                    <p
-                      style={{
-                        color: "white",
-                        textAlign: "left",
-                        padding: "15px",
-                      }}
-                    >
-                      {item.description}
-                    </p>
+                    <p style={{ color: "white", textAlign: "left", padding: "15px" }}>{item.description}</p>
                   </div>
                 </div>
               </div>
@@ -103,38 +94,7 @@ const HowItWorks2 = () => {
           ))}
         </div>
       </div>
-
-      {/* Next rows with two boxes each */}
-      <div className="row">
-        {/* Mapping the rest of items */}
-        {mediaItems.slice(2).map((item) => (
-          <div key={item.id} className="col-3 mb-4">
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front d-flex justify-content-center align-items-center">
-                  <div className="">
-                    <h6 style={{ color: "var(--golden)", fontWeight: 600 }}>
-                      {item.name}
-                    </h6>
-                  </div>
-                </div>
-                <div className="flip-card-back ">
-                  <p
-                    style={{
-                      color: "white",
-                      textAlign: "left",
-                      padding: "15px",
-                    }}
-                  >
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+    </>
   );
 };
 

@@ -11284,7 +11284,7 @@ header.in-box {
 }
 
 .border-line {
-  width: 10%;
+  /* width: 10%; */
   height: 3px;
   border-top: solid 2px var(--golden) !important;
   border-left: none;

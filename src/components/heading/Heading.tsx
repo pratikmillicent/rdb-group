@@ -27,16 +27,19 @@ const Heading: React.FC<HeadingProps> = ({
   }, [headTitle]);
 
   return (
-    <div style={{ textAlign }} className="w-100">
-      <h2 className={`${isMargin} ${isSpace && "mb-80"} fs-2`}>
+    <div style={{ textAlign, width:'fit-content', margin: '0 auto' }} className="position-relative">
+      <h2 className={`${isMargin} ${isSpace && "mb-80"} mb-30 fs-2`}>
         <span style={{ color }} ref={spanRef}>
           {headTitle}
         </span>
       </h2>
       <div
-        className="border-line"
+        className="border-line position-absolute "
         style={{
-          width: borderWidth,
+          // width: borderWidth,
+          left:'12.5%',
+          right:'12.5%',
+          top:'100%',
           marginLeft: textAlign === "center" ? "auto" : "0",
         }}
       ></div>
