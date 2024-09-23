@@ -18,6 +18,7 @@ import Mission from "./Mission";
 import FractoSectionImage from "./FractoVisionMission";
 import FractoAdvantage from "./FractoAdvantage";
 import "./howtowork2.css";
+import FractoAdvantageMobile from "./FractoAdvantageMobile";
 
 const page = () => {
   return (
@@ -79,10 +80,9 @@ const page = () => {
             value and reduce risk.
           </p>
         </div>
-        <SectionImage />
-        <Vision />
-        <Mission />
         <FractoSectionImage />
+        {/* <Vision />
+        <Mission /> */}
 
         <div
           style={{ display: "flex", margin: "60px auto", gap: "40px" }}
@@ -132,6 +132,12 @@ const page = () => {
         </div>
         <ProjectFracto />
         <Cre />
+        <div className="d-block d-lg-none">
+          <FractoAdvantageMobile />
+        </div>
+        <div className="d-none d-lg-block">
+          <FractoAdvantage />
+        </div>
         <Advantage2 />
         <Ourbrand />
         <Contact />

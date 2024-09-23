@@ -1,6 +1,6 @@
 import parallaxie from "@/common/parallaxie";
 import React, { useState, useEffect } from "react";
-import "@/app/(home)/SectionImage.css";
+import "./../(home)/SectionImage.css";
 
 const images = {
   overview: "/assets/images/home/about3.jpg",
