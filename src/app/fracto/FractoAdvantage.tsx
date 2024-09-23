@@ -104,18 +104,35 @@ const FractoAdvantage = () => {
             deep market expertise. Here’s why investing with us is different:
           </p>
         </div>
-
-        {/* Remaining rows with responsive boxes */}
-        <div className="col-12 col-md-6 d-flex gap-2 flex-wrap flex-md-nowrap">
-          {mediaItems.slice(2).map((item) => (
-            <div key={item.id} className="mb-4">
+        <div className="col-6 d-flex">
+          {/* Mapping the first two items */}
+          {mediaItems.slice(0, 2).map((item) => (
+            <div
+              key={item.id}
+              className="col-6 "
+              style={{
+                marginRight: "15px",
+              }}
+            >
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front d-flex justify-content-center align-items-center">
-                    <h6>{item.name}</h6>
+                    <div className="">
+                      <h6 style={{ color: "var(--golden)", fontWeight: 600 }}>
+                        {item.name}
+                      </h6>
+                    </div>
                   </div>
                   <div className="flip-card-back">
-                    <p style={{ color: "white", textAlign: "left", padding: "15px" }}>{item.description}</p>
+                    <p
+                      style={{
+                        color: "white",
+                        textAlign: "left",
+                        padding: "15px",
+                      }}
+                    >
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -123,7 +140,38 @@ const FractoAdvantage = () => {
           ))}
         </div>
       </div>
-    </>
+
+      {/* Next rows with two boxes each */}
+      <div className="row">
+        {/* Mapping the rest of items */}
+        {mediaItems.slice(2).map((item) => (
+          <div key={item.id} className="col-3 mb-4">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front d-flex justify-content-center align-items-center">
+                  <div className="">
+                    <h6 style={{ color: "var(--golden)", fontWeight: 600 }}>
+                      {item.name}
+                    </h6>
+                  </div>
+                </div>
+                <div className="flip-card-back ">
+                  <p
+                    style={{
+                      color: "white",
+                      textAlign: "left",
+                      padding: "15px",
+                    }}
+                  >
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
