@@ -77,9 +77,9 @@ export default function RootLayout({
 
         <Cursor />
         <ProgressScroll />
-        <StickySocialMedia />
+        {/* <StickySocialMedia /> */}
 
-        <Loader />
+        {/* <Loader /> */}
 
         <Script
           strategy="beforeInteractive"

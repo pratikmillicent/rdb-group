@@ -4,7 +4,7 @@ import { Col } from "react-bootstrap";
 
 function BlogCard({ item }) {
   return (
-    <Col lg={6} md={6} sm={12} key={item.id}>
+    <Col lg={6} md={6} sm={12} key={item.id} className="p-0 p-md-2">
       <div className={`item mb-30`}>
         <div className="row rest">
           <div className="col-md-6">
@@ -27,17 +27,6 @@ function BlogCard({ item }) {
               <div className="fz-12 ls1 opacity-9 mb-15">
                 ~ By <span className="fw-bold ">{item.author}</span>
               </div>
-              {/* <div className="tags colorbg mt-15">
-                          {item.tags.map((tag, i) => (
-                            <Link
-                              href="/dark/blog-list"
-                              className="me-1"
-                              key={i}
-                            >
-                              {tag}
-                            </Link>
-                          ))}
-                        </div> */}
             </div>
           </div>
         </div>

@@ -52,7 +52,7 @@ function SectionImage() {
       >
         <div
           className="vision-container col-md-6 d-flex flex-column pt-40 align-items-center bg-navy"
-          // style={{ padding: "0px 100px" }}
+        // style={{ padding: "0px 100px" }}
         >
           <div className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600">
             RD Brothers
@@ -118,9 +118,8 @@ function SectionImage() {
           </div>
         </div>
         <div
-          className={`col-md-6 position-relative p-0 ${
-            animate ? "slide-in" : ""
-          } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
+          className={`col-md-6 position-relative p-0 ${animate ? "slide-in" : ""
+            } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
         >
           <div
             className="back-image bg-img parallaxie"

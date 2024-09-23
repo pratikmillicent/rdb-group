@@ -9,7 +9,7 @@ const DirectorCard = () => {
         <Heading headTitle="Our Leaders" />
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-6 mb-4">
+            <div className=" p-0 px-md-2 col-12 col-lg-6 mb-4">
               <div className="text-center">
                 <div
                   style={{
@@ -117,7 +117,7 @@ const DirectorCard = () => {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-lg-6 mb-4">
+            <div className="p-0 px-md-2 col-12 col-lg-6 mb-4">
               <div className="text-center">
                 <div
                   style={{

@@ -61,3 +61,18 @@
 .card-body {
   padding: 20px;
 }
+
+@media (max-width: 900px) {
+  .founder-mobile {
+    flex-direction: column-reverse !important;
+  }
+}
+@media (max-width: 576px) {
+  .frame-mobile {
+    right: -10px !important;
+  }
+}
+
+.mobile-justify {
+  text-align: justify !important;
+}

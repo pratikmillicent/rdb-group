@@ -58,7 +58,10 @@ const page = () => {
 
       <div className="container">
         <div className="work-header ">
-          <div className="section-padding">
+          <div
+            className="pt-3 section-padding"
+            style={{ paddingTop: "30px !important" }}
+          >
             <div>
               <div className="caption text-grey">
                 {/* <h6 className="sub-title">INTRODUCTION</h6> */}
@@ -89,7 +92,7 @@ const page = () => {
             </p>
 
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
-            <div style={{ paddingTop: "60px" }}>
+            <div>
               <Heading headTitle="Current Openings" />
 
               {/* <div className="fz-35 fw-600">Open Positions</div> */}

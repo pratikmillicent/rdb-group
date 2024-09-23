@@ -17,6 +17,7 @@ import Vision from "./Vision";
 import Mission from "./Mission";
 import FractoSectionImage from "./FractoVisionMission";
 import FractoAdvantage from "./FractoAdvantage";
+import "./howtowork2.css";
 
 const page = () => {
   return (
@@ -52,9 +53,6 @@ const page = () => {
               padding: "0 20px",
             }}
           >
-            {/* <h3 className="banner-heading hero-heading">
-              Invest in Opportunities. Unlock Real Estate Value.
-            </h3> */}
             <Heading
               headTitle="Unlocking the Future of Real Estate Investing."
               color="white"
@@ -70,7 +68,7 @@ const page = () => {
           }}
         >
           <Heading headTitle="About Us" />
-          <p className="lead my-4">
+          <p className="lead my-4 mobile-justify">
             Fracto makes commercial real estate investing easy and accessible to
             more people. We use technology to provide a simple, transparent
             platform where investors can buy shares in commercial properties and
@@ -81,18 +79,18 @@ const page = () => {
             value and reduce risk.
           </p>
         </div>
-        {/* <SectionImage /> */}
-        {/* <Vision /> */}
-        {/* <Mission /> */}
+        <SectionImage />
+        <Vision />
+        <Mission />
         <FractoSectionImage />
 
         <div
-          style={{ display: "flex", margin: "60px auto" }}
-          className="container"
+          style={{ display: "flex", margin: "60px auto", gap: "40px" }}
+          className="container founder-mobile"
         >
-          <div style={{ flex: "1", paddingRight: "40px" }}>
+          <div style={{ flex: "1" }}>
             <Heading headTitle="Our Founder" textAlign="left" />
-            <p>
+            <p className="mobile-justify">
               Dhaval Thakkar, with 15 years of experience in commercial and
               retail real estate, is known for his attention to detail and
               passion for innovation. His leadership has driven the company’s
@@ -101,7 +99,7 @@ const page = () => {
               Dhaval focuses on diversification and embracing new technologies
               to create value.
             </p>
-            <p>
+            <p className="mobile-justify">
               He inspires his team, fostering collaboration and creativity, and
               believes growth is about building a sustainable, innovative
               future. Dhaval’s vision has expanded the company’s reach and set
@@ -113,12 +111,13 @@ const page = () => {
             <Image
               alt="Dhaval Thakkar"
               src="/assets/images2/Dhaval.png"
-              style={{ width: "320px", zIndex: 1 }}
+              style={{ zIndex: 1 }}
               width={100}
               height={100}
             />
 
             <div
+              className="frame-mobile"
               style={{
                 position: "absolute",
                 inset: 0,
@@ -131,20 +130,11 @@ const page = () => {
             ></div>
           </div>
         </div>
-
         <ProjectFracto />
-
         <Cre />
-        <FractoAdvantage />
-        {/* <Advantage /> */}
         <Advantage2 />
-        {/* <HowItWorks /> */}
-        {/* <Cre /> */}
-
-        {/* <HowItWorks /> */}
         <Ourbrand />
         <Contact />
-        {/* <Investment /> */}
       </div>
     </>
   );

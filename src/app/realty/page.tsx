@@ -24,10 +24,9 @@ const Realty = () => {
     <>
       <main className="bg- text-black">
         <FrameSlider data={data} />
-        {/* <Experience /> */}
         <div className="container">
           <Heading headTitle="Overview" />
-          <p>
+          <p className="">
             In the real estate domain, we are renowned for our exceptional
             expertise and services, especially in luxury property development
             and strategic land acquisition. With a commitment to quality and
@@ -41,30 +40,16 @@ const Realty = () => {
             discerning clients.
           </p>
         </div>
-        {/* <SectionImage /> */}
         <div className="d-none d-md-block">
           <MissionVision />
         </div>
         <div className="d-block d-md-none">
           <MissionVisionMobile />
         </div>
-
-        {/* <DirectorCard /> */}
-        {/* <MissionVision /> */}
         <DirectorCard />
         <Project />
-        {/* 
-        <OngoingProject />
-        <CompletedProjects />
-        <UpcomingProject /> */}
         <Sustainability />
-        {/* <Careers paddingTop={false} border /> */}
-
-        {/* contact page-- contact and email */}
         <ContactComponent />
-        {/* <ResumeUpload /> */}
-
-        {/* <FractoAdvantage /> */}
       </main>
     </>
   );

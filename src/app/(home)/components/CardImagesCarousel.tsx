@@ -2,8 +2,6 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { CarouselItem, Col, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import { BsCaretLeft, BsCaretRight } from "react-icons/bs";
-import { FaArrowLeftLong, FaArrowRight } from "react-icons/fa6";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -117,19 +115,17 @@ function DarkVariantExample({ spliti, data }: any) {
             </div>
           </Col>
 
-          <Col className="d-inline d-md-none">
+          <Col className="d-inline d-md-none p-0 p-md-2">
             <div>
-              {/* {item?.date?.map((part, index) => ( */}
-              <div className="p-2 fs-5" key={index}>
+              <div className="p-0 p-md-2 fs-7" key={index}>
                 {item?.date}
               </div>
-              {/* ))} */}
             </div>
 
             <span>
               {item.title.split("<br />")?.map((line, index) => (
                 <React.Fragment key={index}>
-                  <span className="fw-bold fs-5 px-2">{line}</span>
+                  <span className="fw-bold fs-6 px-0 px-md-2">{line}</span>
                   <br />
                 </React.Fragment>
               ))}
@@ -184,7 +180,7 @@ function splitToNChunks(array, n) {
 }
 
 const directionButtons = (direction) => {
-  console.log("🚀 ~ directionButtons ~ direction:", direction);
+  // console.log("🚀 ~ directionButtons ~ direction:", direction);
   return (
     <span
       aria-hidden="true"
@@ -204,7 +200,7 @@ const directionButtons = (direction) => {
         // border: "1px solid #d4af5f",
         // backgroundColor: "white",
       }}
-      className={`${direction} === Next ? button-next : button-prev swiper-arrow-mobile`}
+      className={`${direction} === Next ? button-next : button-prev swiper-arrow-mobile d-none d-md-block`}
     >
       {direction === "Next" ? (
         <IoIosArrowForward fontSize={48} />
@@ -218,13 +214,13 @@ const directionButtons = (direction) => {
 const CarouselEvent = ({ data }) => {
   return (
     <Carousel
-      interval={null}
+      interval={4000}
       controls={true}
       indicators={false}
       variant="dark"
       nextIcon={directionButtons("Next")}
       prevIcon={directionButtons("Previous")}
-      className="d-flex flex-column gap-2  mb-3 ms-3 me-3"
+      className="d-flex flex-column gap-2  mb-3 mx-0 mx-md-3"
     >
       {splitarr.map((spliti, index) => {
         // console.log("out of ", spliti);
