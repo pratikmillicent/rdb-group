@@ -163,7 +163,7 @@
 }} */
 
 .project-images {
-  filter: grayscale(90%);
+  /* filter: grayscale(90%); */
   object-fit: cover;
   object-position: center center;
 }
