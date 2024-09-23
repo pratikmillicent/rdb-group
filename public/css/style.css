@@ -11836,11 +11836,11 @@ header.in-box {
     5% 4%, 5% 4%;
 }
 
-.film img {
+/* .film img {
   filter: grayscale(90%);
   transition: filter 0.5s ease-in;
 }
 
 .film:hover img {
   filter: none;
-}
+} */

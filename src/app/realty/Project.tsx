@@ -218,7 +218,7 @@ const Project = () => {
               {/* <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} /> */}
             </div>
             <div
-              className="swiper-button-next text-dark fw-600 swiper-arrow-mobile"
+              className="swiper-button-next text-dark fw-600 swiper-arrow-mobile d-none d-md-block"
               style={{
                 fontWeight: "600",
                 height: "40px",
@@ -231,7 +231,7 @@ const Project = () => {
             />
 
             <div
-              className="swiper-button-prev text-dark swiper-arrow-mobile"
+              className="swiper-button-prev text-dark swiper-arrow-mobile d-none d-md-block"
               style={{
                 fontWeight: "600",
                 height: "40px",
@@ -357,7 +357,7 @@ const Project = () => {
               {/* <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} /> */}
             </div>
             <div
-              className="swiper-button-next text-dark fw-600 swiper-arrow-mobile"
+              className="swiper-button-next text-dark fw-600 swiper-arrow-mobile d-none d-md-block"
               style={{
                 fontWeight: "600",
                 height: "40px",
@@ -370,7 +370,7 @@ const Project = () => {
             />
 
             <div
-              className="swiper-button-prev text-dark swiper-arrow-mobile"
+              className="swiper-button-prev text-dark swiper-arrow-mobile d-none d-md-block"
               style={{
                 fontWeight: "600",
                 height: "40px",
@@ -496,7 +496,7 @@ const Project = () => {
               {/* <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} /> */}
             </div>
             <div
-              className="swiper-button-next text-dark fw-600 swiper-arrow-mobile"
+              className="d-none d-md-block swiper-button-next text-dark fw-600 swiper-arrow-mobile"
               style={{
                 fontWeight: "600",
                 height: "40px",
@@ -509,7 +509,7 @@ const Project = () => {
             />
 
             <div
-              className="swiper-button-prev text-dark swiper-arrow-mobile"
+              className=" d-none d-md-block swiper-button-prev text-dark swiper-arrow-mobile d-none d-md-block"
               style={{
                 fontWeight: "600",
                 height: "40px",

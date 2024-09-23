@@ -13,31 +13,30 @@ import TeamSection2 from "../about/components/TeamSection2";
 
 import MovieSlider from "./MovieSlider";
 import Project from "./Project";
-import OurMission from "./OurMission";
 import AwardMovie from "./AwardMovie";
 import Review from "./Review";
 import ContactComponent from "../contact-us/components/ContactComponent";
 import Movieteam2 from "./Movieteam2";
 import Gallery from "./Gallery";
+import AboutUs from "./AboutUs";
+import MobileMovieTeam from "./MobileMovieTeam";
 
 const page = () => {
   return (
     <div className="w-100">
       <MovieSlider />
-      <OurMission />
-      <About />
-      {/* <Movieteam /> */}
-      <Movieteam2 />
+      <AboutUs />
+      {/* <About /> */}
+      <div className="d-none d-md-block">
+        <Movieteam2 />
+      </div>
+      <div className="d-block d-md-none">
+        <MobileMovieTeam />
+      </div>
+
       <Project />
-      {/* <AwardMovie /> */}
-      <Gallery />
       <Review />
       <ContactComponent />
-      {/* <Project /> */}
-      {/* <LatestNews /> */}
-      {/* <Enquiries /> */}
-      {/* <Contact /> */}
-      {/* <Contact /> */}
     </div>
   );
 };

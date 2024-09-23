@@ -10,25 +10,25 @@ const ContactComponent = () => {
     message: "",
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
   };
   return (
     <div>
-      <Heading headTitle="Contact Us!" />
+      <Heading headTitle="Enquiry/Contact Us!" />
       <section className="contact-crev mt-30">
         <div className="container">
           <div className="row">
-            <div className="col-lg-5" style={{ paddingLeft: 0 }}>
+            <div className="col-lg-5">
               <div className="sec-lg-head mb-60">
                 {/* <h6 className="dot-titl-non mb-10">Get In Touch</h6> */}
                 <h2 className="fz-50">

@@ -1,11 +1,18 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
 
 const swiperOptions = {
+  modules: [Navigation, Autoplay],
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
   slidesPerView: 4,
   loop: true,
   spaceBetween: 60,

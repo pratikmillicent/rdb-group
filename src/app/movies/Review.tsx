@@ -135,9 +135,9 @@ function Review() {
           </div>
           <div
             className="col-lg-8"
-            style={{
-              padding: 0,
-            }}
+            // style={{
+            //   padding: 0,
+            // }}
           >
             <div className="testim-swiper2">
               {loadSwiper && (

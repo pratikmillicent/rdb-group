@@ -16,16 +16,42 @@ import DirectorCard from "../about/components/DirectorCard";
 import Sustainability from "./Sustainability";
 import ContactComponent from "../contact-us/components/ContactComponent";
 import MissionVision from "./MissionVision";
+import MissionVisionMobile from "./MissionVisionMobile";
+import Heading from "@/components/heading/Heading";
 
 const Realty = () => {
   return (
     <>
       <main className="bg- text-black">
         <FrameSlider data={data} />
-        <Experience />
+        {/* <Experience /> */}
+        <div className="container">
+          <Heading headTitle="Overview" />
+          <p>
+            In the real estate domain, we are renowned for our exceptional
+            expertise and services, especially in luxury property development
+            and strategic land acquisition. With a commitment to quality and
+            innovation, we consistently strive to exceed our clients'
+            expectations, delivering projects that epitomize sophistication and
+            functionality. Our focus extends beyond mere construction; we create
+            spaces that offer enduring value, blending aesthetic appeal with
+            practical design. Each project is thoughtfully crafted to reflect
+            our dedication to excellence, ensuring long-term satisfaction and a
+            seamless blend of luxury living with modern convenience for
+            discerning clients.
+          </p>
+        </div>
         {/* <SectionImage /> */}
-        <MissionVision />
+        <div className="d-none d-md-block">
+          <MissionVision />
+        </div>
+        <div className="d-block d-md-none">
+          <MissionVisionMobile />
+        </div>
+
         {/* <DirectorCard /> */}
+        {/* <MissionVision /> */}
+        <DirectorCard />
         <Project />
         {/* 
         <OngoingProject />
