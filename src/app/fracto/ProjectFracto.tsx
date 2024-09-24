@@ -7,21 +7,11 @@ const ProjectFracto = () => {
   return (
     <div className="container">
       <Heading headTitle="Project" />
-
-      {/* <div
-        className=""
-        style={{
-          backgroundImage: "url(/assets/fracto/bg-fracto.jpg)",
-          height: "100dvh",
-          width: "100dvw",
-          zIndex: 2,
-        }}
-      > */}
       <div className="gallery">
         <div className="row grid md-marg">
           {Fractoproject.map((item) => (
             <div
-              className={`col-lg-4 col-md-6 items ${item.filter} info-overlay mb-0 px-2`}
+              className={`col-lg-4 col-md-6 items ${item.filter} info-overlay`}
               key={item.id}
             >
               <div className="item-img o-hidden">

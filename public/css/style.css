@@ -564,8 +564,6 @@ img {
     border: 2px solid #d4af37;
   }
 
-  
-
   .main-director {
     height: auto !important;
   }
@@ -11836,11 +11834,9 @@ header.in-box {
     5% 4%, 5% 4%;
 }
 
-/* .film img {
-  filter: grayscale(90%);
-  transition: filter 0.5s ease-in;
+@media screen and (max-width: 576px) {
+  .mobile-cre {
+    justify-content: flex-start !important;
+    padding: 0px 20px !important;
+  }
 }
-
-.film:hover img {
-  filter: none;
-} */

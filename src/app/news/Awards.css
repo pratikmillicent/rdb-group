@@ -140,3 +140,8 @@
 .swiper-button-prev:after {
   font-size: 30px !important;
 }
+@media (min-width: 576px) {
+  .mobile-cre {
+    justify-content: flex-start !important;
+  }
+}

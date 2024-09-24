@@ -45,12 +45,12 @@ import Heading from "@/components/heading/Heading";
 
 const AboutUs = () => {
   return (
-    <div>
-      <div
-        className="silverscreen-container"
-        style={{ display: "flex", flexDirection: "column", marginTop: "60px" }}
-      >
+    <div className="silverscreen-container " style={{ marginTop: "60px" }}>
+      <div className="pt-2 ">
         <Heading headTitle="About Us" color="white" />
+      </div>
+
+      <div style={{ display: "flex", flexDirection: "column" }}>
         {/* Top left corner: REC and timer */}
         <div className="top-left">
           <span

@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
-//= Modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import Heading from "@/components/heading/Heading";
-// stable asset
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
-// monthly cashflow
 import { GiTakeMyMoney } from "react-icons/gi";
-// captial
 import { GiMoebiusTriangle } from "react-icons/gi";
-
-// portofolio
 import { ImProfile } from "react-icons/im";
+import { Navigation, Pagination, Autoplay } from "swiper";
 
 const swiperOptions = {
   speed: 1000,
@@ -51,23 +45,13 @@ const Cre = () => {
             </div>
           </div>
         </div>
-        {/* <div className="">
-          <p className="lead  my-4">
-            Investing in commercial real estate has historically been one of the
-            most lucrative options, providing strong returns, long-term
-            stability, and portfolio diversification. Unlike other investment
-            avenues, CRE offers higher yields, rental income, and appreciation
-            potential while mitigating volatility. With Fracto, we make it
-            easier for individual investors to tap into this high-value asset
-            class, traditionally available only to institutional players
-          </p>
-        </div> */}
+
         <div className="swiper4">
           {loadSwiper && (
             <Swiper
               {...swiperOptions}
               id="content-carousel-container-unq-approch"
-              className="swiper-container  d-flex justify-content-center"
+              className="swiper-container  d-flex justify-content-center mobile-cre"
             >
               {data.map((item) => (
                 <SwiperSlide className="px-3" key={item.id}>
@@ -85,7 +69,7 @@ const Cre = () => {
                     </h2>
 
                     {/* <p className="fz-16 mt-30">{item.text}</p> */}
-                    <Link href="/dark/page-about" className="mt-15">
+                    <div className="mt-15">
                       <span>
                         <svg
                           width="20"
@@ -101,7 +85,7 @@ const Cre = () => {
                           ></path>
                         </svg>
                       </span>
-                    </Link>
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}
