@@ -19,7 +19,7 @@ interface DataItem {
 const data: DataItem[] = [
   {
     id: 1,
-    image: "assets/images/home/properties.webp",
+    image: "assets/images/home/properties.png",
     logo: "assets/images/home/rdb-property.png",
     type: "Properties",
     title: "Aspect Global Ventures Pvt.Ltd.",
@@ -27,7 +27,7 @@ const data: DataItem[] = [
   },
   {
     id: 2,
-    image: "assets/images/home/img2.jpg",
+    image: "assets/images/home/realty-2.png",
     logo: "assets/images/home/rdb-realty.png",
     type: "Realty",
     title: "Aspect Bullion & Refinery",
@@ -35,7 +35,7 @@ const data: DataItem[] = [
   },
   {
     id: 3,
-    image: "assets/images/home/Fractal.jpg",
+    image: "assets/images/home/fracto.png",
     logo: "assets/images/home/rdb-movie.png",
     type: "Fracto",
     title: "Aspect Infrastructure",
@@ -94,7 +94,7 @@ const NewGroupGrid: React.FC = () => {
       portfolio.height / (data.length - 1) < portfolio.bottom
     ) {
       leftSide.style.position = "fixed";
-      leftSide.style.top = "0px";
+      leftSide.style.top = "80px";
       leftSide.style.width = width + "px";
       leftSide.classList.remove("is_stuck");
     } else if (portfolio.height / (data.length - 1) > portfolio.bottom) {
@@ -139,8 +139,11 @@ const NewGroupGrid: React.FC = () => {
               </div>
               <div className="col-lg-6 sub-bg right">
                 {data?.map((item, index) => {
-                  const isLastTwo = index >= data.length - 2;
-                  const marginStyle = isLastTwo
+                  const isLastTwo = index == data.length - 2;
+                  const isLast = index == data.length - 1;
+                  const marginStyle = isLast
+                    ? { marginTop: "100px" }
+                    : isLastTwo
                     ? { marginTop: "100px", marginBottom: "100px" }
                     : { marginBottom: "150px" };
 

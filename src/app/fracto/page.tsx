@@ -25,7 +25,7 @@ const page = () => {
     <>
       <div style={{ position: "relative" }}>
         <Image
-          src="https://img.freepik.com/premium-photo/two-real-estate-agents-shaking-hands-stunning-urban-backdrop-generative-ai_108146-5933.jpg?w=900"
+          src="/assets/images/fracto/banner.png"
           className="w-100 news-banner banner "
           alt="fracto"
           width={800}
