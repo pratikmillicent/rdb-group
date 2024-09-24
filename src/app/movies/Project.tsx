@@ -1,16 +1,26 @@
-import Image from "next/image";
+// import React from 'react'
+
+// const Project = () => {
+//   return (
+//     <div>Project</div>
+//   )
+// }
+
+// export default Probject
+
 import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
-// import PrevNext from "@/utils/PrevNext";
-// import Link from "next/link";
+import ModalVideo from "@/components/modal-video/ModalVideo";
 import Heading from "@/components/heading/Heading";
-import { Col, Row } from "react-bootstrap";
-import "./ourmission.css";
+import Image from "next/image";
+import Link from "next/link";
+import CarouselEvent from "../(home)/components/CardImagesCarousel";
+import PrevNext from "@/utils/PrevNext";
 
 const Project = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
-
+  const [isVideoOpen, setIsVideoOpen] = useState(null);
   const latestPrevRef = useRef(null);
   const latestNextRef = useRef(null);
 
@@ -19,33 +29,40 @@ const Project = () => {
   }, []);
 
   const swiperOptions = {
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
     autoplay: {
       delay: 1000,
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
-    slidesPerView: 2.5,
-    centeredSlides: true,
-    loop: true,
-    spaceBetween: 30,
+    slidesPerView: 4,
+    // slidesPerGroup: 3,
+    // loop: true,
+    spaceBetween: 0,
     speed: 1000,
     navigation: {
-      prevEl: latestPrevRef.current,
-      nextEl: latestNextRef.current,
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     breakpoints: {
       0: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
       },
       640: {
-        slidesPerView: 2,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      768: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
       },
     },
-    onSwiper: (swiper: any) => {
+    onSwiper: (swiper) => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();
@@ -54,430 +71,228 @@ const Project = () => {
   };
 
   const [active, setActive] = useState(0);
+
   return (
-    <div
-      className="overflow-hidden"
-      // style={{
-      //   marginTop: "40px",
-      //   paddingBottom: "40px",
-      // }}
-    >
-      <Heading headTitle="Project" />
-      <div className="project-container">
-        <section className="">
-          {active == 0 && (
+    <div>
+      <section className="blog-modern">
+        <div className="container">
+          <div className="sec-lg-head">
+            <div className="row">
+              <div className="col-lg-12">
+                <Heading headTitle="Projects" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            style={{
+              position: "relative",
+              display: "flex",
+              gap: "12px",
+              fontSize: "18px",
+              fontWeight: "500",
+              color: "var(--navy)",
+              marginBottom: "12px",
+            }}
+          >
             <div
+              onClick={() => setActive(0)}
               style={{
-                background: "var(--navy)",
-                padding: "20px 0",
+                // textDecoration: active === 0 ? "underline" : "none",
+                // textDecorationColor: "var(--navy)",
+                // textUnderlineOffset: "4px",
+                cursor: "pointer",
               }}
             >
-              {/* <div className="blog-carsouel">
-                {loadSwiper && (
-                  <Swiper
-                    {...swiperOptions}
-                    id="content-carousel-container-unq-blog"
-                    className="swiper-container"
-                    style={{ background: "inherit" }}
-                  >
-                    <Row>
-                      <Swiper>
-                        {release.map((item) => (
-                          <SwiperSlide key={item.id}>
-                            <Col lg={12}>
-                              <div className="item">
-                                <div className="img image-container film">
-                                  <Image
-                                    style={{
-                                      // filter: "grayscale(90%)",
-                                      objectFit: "cover",
-                                      objectPosition: "center center",
-                                    }}
-                                    src={item.image}
-                                    alt={item.description}
-                                    width={400}
-                                    height={400}
-                                  />
-                                </div>
-                              </div>
-                            </Col>
-                          </SwiperSlide>
-                        ))}
-                      </Swiper>
-                    </Row>
-                  </Swiper>
-                )}
-              </div> */}
-              <div className="blog-carousel">
+              Released
+            </div>
+            <div
+              onClick={() => setActive(1)}
+              style={{
+                // textDecoration: active === 1 ? "underline" : "none",
+                // textDecorationColor: "var(--navy)",
+                // textUnderlineOffset: "4px",
+                cursor: "pointer",
+              }}
+            >
+              Upcoming
+            </div>
+
+            <div
+              style={{
+                position: "absolute",
+                left: active === 0 ? "5px" : active === 1 ? "92px" : "208px",
+                bottom: -4,
+                height: "2px",
+                width: "3.5em",
+                background: "var(--golden)",
+                transition: "all ease .5s",
+              }}
+            ></div>
+          </div>
+
+          {active == 0 && (
+            <div className="position-relative">
+              <div className="blog-carsouel">
                 {loadSwiper && (
                   <Swiper
                     {...swiperOptions}
                     id="content-carousel-container-unq-blog"
                     className="swiper-container"
                   >
-                    {release.map((item) => (
-                      <SwiperSlide key={item.id}>
-                        <Col lg={12}>
-                          <div className="item">
-                            <div className="img movie-gallery-container film">
-                              <Image
-                                className="project-images"
-                                // style={{
-                                //   // filter: "grayscale(90%)",
-                                //   objectFit: "cover",
-                                //   objectPosition: "center center",
-                                // }}
-                                src={item.image}
-                                alt={item.description}
-                                width={400}
-                                height={400}
-                              />
-                            </div>
+                    {completedProjectsData.map((item) => (
+                      <SwiperSlide
+                        key={item.id}
+                        className="wow fadeInUp"
+                        data-wow-delay=".100s"
+                      >
+                        <div className="item pb-5 mb-3">
+                          <div className="img img-container">
+                            <Image
+                              src={item.image}
+                              alt={item.description}
+                              style={{
+                                height: "320px",
+                                objectFit: "contain",
+                                // width: "100%",
+                                borderRadius: "8px",
+                              }}
+                              width={800}
+                              height={500}
+                            />
                           </div>
-                        </Col>
+                          <div className="cont mt-10">
+                            <h6 className="fw-600">{item.description}</h6>
+                          </div>
+                        </div>
                       </SwiperSlide>
                     ))}
                   </Swiper>
                 )}
+                {/* <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} /> */}
               </div>
+              <div
+                className="swiper-button-next text-dark fw-600 swiper-arrow-mobile"
+                style={{
+                  fontWeight: "600",
+                  height: "40px",
+                  width: "40px",
+                  borderRadius: "50%",
+                  right: "-60px",
+                  top: "56%",
+                  transform: "translateY(-50%)",
+                }}
+              />
+
+              <div
+                className="swiper-button-prev text-dark swiper-arrow-mobile"
+                style={{
+                  fontWeight: "600",
+                  height: "40px",
+                  width: "40px",
+                  borderRadius: "50%",
+                  position: "absolute",
+                  left: "-60px",
+                  top: "56%",
+                  transform: "translateY(-50%)",
+                }}
+              />
             </div>
           )}
 
           {active == 1 && (
-            <div className="blog-carsouel">
-              {loadSwiper && (
-                <Swiper
-                  {...swiperOptions}
-                  id="content-carousel-container-unq-blog"
-                  className="swiper-container"
-                >
-                  {upcoming.map((item) => (
-                    <SwiperSlide key={item.id}>
-                      <div className="item pb-5 mb-3">
-                        <div className="img movie-gallery-container">
-                          <Image
-                            src={item.image}
-                            alt={item.description}
-                            width={800}
-                            height={500}
-                          />
+            <div className="position-relative">
+              <div className="blog-carsouel">
+                {loadSwiper && (
+                  <Swiper
+                    {...swiperOptions}
+                    id="content-carousel-container-unq-blog"
+                    className="swiper-container"
+                  >
+                    {upcomingProjectsData.map((item) => (
+                      <SwiperSlide
+                        key={item.id}
+                        className="wow fadeInUp"
+                        data-wow-delay=".100s"
+                      >
+                        <div className="item pb-5 mb-3">
+                          <div className="img img-container">
+                            <Image
+                              src={item.image}
+                              alt={item.description}
+                              style={{
+                                height: "320px",
+                                objectFit: "contain",
+                                // width: "100%",
+                                borderRadius: "8px",
+                              }}
+                              width={800}
+                              height={500}
+                            />
+                          </div>
+                          <div className="cont mt-10">
+                            <h6 className="fw-600">{item.description}</h6>
+                          </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              )}
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                )}
+                {/* <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} /> */}
+              </div>
+              <div
+                className="swiper-button-next text-dark fw-600 swiper-arrow-mobile"
+                style={{
+                  fontWeight: "600",
+                  height: "40px",
+                  width: "40px",
+                  borderRadius: "50%",
+                  right: "-60px",
+                  top: "56%",
+                  transform: "translateY(-50%)",
+                }}
+              />
+
+              <div
+                className="swiper-button-prev text-dark swiper-arrow-mobile"
+                style={{
+                  fontWeight: "600",
+                  height: "40px",
+                  width: "40px",
+                  borderRadius: "50%",
+                  position: "absolute",
+                  left: "-60px",
+                  top: "56%",
+                  transform: "translateY(-50%)",
+                }}
+              />
             </div>
           )}
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   );
 };
 
 export default Project;
 
-const release: IMovie[] = [
+const completedProjectsData = [
   {
     id: 1,
-    image:
-      "https://www.justwatch.com/images/backdrop/302387776/s640/kutch-express/kutch-express",
-    description: "Luxury Apartments in South Mumbai - Completed in 2023",
+    image: "/assets/images/movie/jhamkudi.jpg",
+    description: "Jhamkudi",
   },
   {
-    id: 2,
-    image: "https://i.ytimg.com/vi/RiQJw0znUjw/maxresdefault.jpg",
-    description: "Commercial Complex in Andheri - Completed in 2022",
-  },
-  {
-    id: 3,
-    image: "https://i.ytimg.com/vi/RiQJw0znUjw/maxresdefault.jpg",
-    description: "Luxury Apartments in South Mumbai - Completed in 2023",
-  },
-  {
-    id: 4,
-    image:
-      "https://www.justwatch.com/images/backdrop/302387776/s640/kutch-express/kutch-express",
-    description: "Commercial Complex in Andheri - Completed in 2022",
-  },
-
-  {
-    id: 5,
-    image:
-      "https://www.justwatch.com/images/backdrop/302387776/s640/kutch-express/kutch-express",
-    description: "Commercial Complex in Andheri - Completed in 2022",
-  },
-  {
-    id: 6,
-    image: "https://i.ytimg.com/vi/RiQJw0znUjw/maxresdefault.jpg",
-    description: "Luxury Apartments in South Mumbai - Completed in 2023",
+    id: 1,
+    image: "/assets/images/movie/kutch-express.jpg",
+    description: "Kutch Express",
   },
 ];
 
-const upcoming: IMovie[] = [];
-
-interface IMovie {
-  id: number;
-  image: string;
-  description: string;
-}
-
-// import Image from "next/image";
-// import React, { useRef, useEffect, useState } from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay, Navigation } from "swiper";
-// import PrevNext from "@/utils/PrevNext";
-// import Link from "next/link";
-// import Heading from "@/components/heading/Heading";
-
-// const Project = () => {
-//   const [loadSwiper, setLoadSwiper] = useState(false);
-
-//   const latestPrevRef = useRef(null);
-//   const latestNextRef = useRef(null);
-
-//   useEffect(() => {
-//     setLoadSwiper(true);
-//   }, []);
-
-//   const swiperOptions = {
-//     modules: [Navigation, Autoplay],
-//     autoplay: {
-//       delay: 1000,
-//       disableOnInteraction: false,
-//       pauseOnMouseEnter: true,
-//     },
-//     slidesPerView: 3,
-//     slidesPerGroup: 3,
-//     loop: false,
-//     spaceBetween: 17,
-//     speed: 1000,
-//     navigation: {
-//       prevEl: latestPrevRef.current,
-//       nextEl: latestNextRef.current,
-//     },
-//     breakpoints: {
-//       0: {
-//         slidesPerView: 1,
-//         slidesPerGroup: 1,
-//       },
-//       640: {
-//         slidesPerView: 2,
-//         slidesPerGroup: 2,
-//       },
-//       768: {
-//         slidesPerView: 2,
-//         slidesPerGroup: 2,
-//       },
-//       1024: {
-//         slidesPerView: 3,
-//         slidesPerGroup: 3,
-//       },
-//     },
-//     onSwiper: swiper => {
-//       setTimeout(() => {
-//         swiper.navigation.init();
-//         swiper.navigation.update();
-//       }, 0);
-//     },
-//   };
-//   const [active, setActive] = useState(0);
-//   return (
-//     <div
-//       className="overflow-hidden"
-//       style={{
-//         marginTop: "40px",
-//         paddingBottom: "40px",
-//       }}
-//     >
-//       <Heading headTitle="Project" />
-//       {/* <div
-//         className="position-relative"
-//         style={{
-//           height: "90vh",
-//           width: "100vw",
-//         }}
-//       >
-//         <Image
-//           src="https://www.edgehill.ac.uk/wp-content/uploads/2022/07/Creative-Arts.jpg"
-//           alt="Our Mission"
-//           layout="fill"
-//           objectFit="cover"
-//           className="position-absolute w-100 h-100"
-//         />
-//         <div
-//           className="overlay position-absolute w-100 h-100"
-//           style={{ opacity: 0.9, background: "var(--navy)" }}
-//         ></div>
-//         <div className="container text-center position-relative text-white d-flex flex-col justify-content-center align-item-center h-100">
-//           <h1 className="mb-4 movie-mission">Our Mission</h1>
-//           <p className="movie-mission-text">
-//             At RD Brothers Studio, our mission is to inspire, entertain, and
-//             connect people through the power of storytelling. We are committed
-//             to producing high-quality films that not only captivate audiences
-//             but also ignite emotions, provoke thought, and leave a lasting
-//             impact.
-//           </p>
-//         </div>
-//       </div> */}
-//       {/* <section className="">
-//         <div
-//           style={{
-//             height: "50px",
-//             width: "100vw",
-//             overflow: "hidden",
-//           }}
-//         >
-//           <div
-//             style={{
-//               height: "50px",
-//               width: "200%",
-//               backgroundImage: "url('/assets/images/movie/strip1.jpg')",
-//               backgroundRepeat: "repeat",
-//               backgroundSize: "contain",
-//               animation: "scrolling 10s linear infinite",
-//             }}
-//           ></div>
-//         </div>
-//       </section> */}
-//       <div className="">
-//         <section className="container">
-//           <div
-//             style={{
-//               position: "relative",
-//               display: "flex",
-//               gap: "12px",
-//               fontSize: "18px",
-//               fontWeight: "500",
-//               color: "var(--navy)",
-//               marginBottom: "12px",
-//               marginTop: "12px",
-//             }}
-//           >
-//             <div
-//               onClick={() => setActive(0)}
-//               style={{
-//                 cursor: "pointer",
-//               }}
-//             >
-//               RELEASED
-//             </div>
-//             <div
-//               onClick={() => setActive(1)}
-//               style={{
-//                 cursor: "pointer",
-//               }}
-//             >
-//               UPCOMING
-//             </div>
-
-//             <div
-//               style={{
-//                 position: "absolute",
-//                 left: active === 0 ? "10px" : active === 1 ? "108px" : "208px",
-//                 bottom: -4,
-//                 height: "2px",
-//                 width: "3.5em",
-//                 background: "var(--golden)",
-//                 transition: "all ease .5s",
-//               }}
-//             ></div>
-//           </div>
-//           {active == 0 && (
-//             <div className="blog-carsouel">
-//               {loadSwiper && (
-//                 <Swiper
-//                   {...swiperOptions}
-//                   id="content-carousel-container-unq-blog"
-//                   className="swiper-container"
-//                 >
-//                   {release.map(item => (
-//                     <SwiperSlide
-//                       key={item.id}
-//                       className="wow fadeInUp"
-//                       data-wow-delay=".100s"
-//                     >
-//                       <div className="item pb-5 mb-3">
-//                         <div className="img image-container">
-//                           <Image
-//                             src={item.image}
-//                             alt={item.description}
-//                             width={800}
-//                             height={500}
-//                           />
-//                         </div>
-//                       </div>
-//                     </SwiperSlide>
-//                   ))}
-//                 </Swiper>
-//               )}
-//               <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} />
-//             </div>
-//           )}
-
-//           {active == 1 && (
-//             <div className="blog-carsouel">
-//               {loadSwiper && (
-//                 <Swiper
-//                   {...swiperOptions}
-//                   id="content-carousel-container-unq-blog"
-//                   className="swiper-container"
-//                 >
-//                   {upcoming.map(item => (
-//                     <SwiperSlide
-//                       key={item.id}
-//                       className="wow fadeInUp"
-//                       data-wow-delay=".100s"
-//                     >
-//                       <div className="item pb-5 mb-3">
-//                         <div className="img image-container">
-//                           <Image
-//                             src={item.image}
-//                             alt={item.description}
-//                             width={800}
-//                             height={500}
-//                           />
-//                         </div>
-//                       </div>
-//                     </SwiperSlide>
-//                   ))}
-//                 </Swiper>
-//               )}
-//               <PrevNext prevRef={latestPrevRef} nextRef={latestNextRef} />
-//             </div>
-//           )}
-//         </section>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Project;
-
-// const release: IMovie[] = [
-//   {
-//     id: 1,
-//     image: "https://i.ytimg.com/vi/RiQJw0znUjw/maxresdefault.jpg",
-//     description: "Luxury Apartments in South Mumbai - Completed in 2023",
-//   },
-//   {
-//     id: 2,
-//     image:
-//       "https://www.justwatch.com/images/backdrop/302387776/s640/kutch-express/kutch-express",
-//     description: "Commercial Complex in Andheri - Completed in 2022",
-//   },
-// ];
-
-// const upcoming: IMovie[] = [
-//   // {
-//   //   id: 1,
-//   //   image: "https://theunbiasedguy.com/wp-content/uploads/2024/05/Jhamkudi.png",
-//   //   description: "Skyline Tower in South Mumbai - Expected Completion in 2025",
-//   // },
-// ];
-
-// interface IMovie {
-//   id: number;
-//   image: string;
-//   description: string;
-// }
+const upcomingProjectsData = [
+  {
+    id: 1,
+    image: "/assets/images/movie/kutch-express.jpg",
+    description: "Kutch Express",
+  },
+];

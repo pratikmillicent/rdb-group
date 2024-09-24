@@ -45,167 +45,173 @@ import Heading from "@/components/heading/Heading";
 
 const AboutUs = () => {
   return (
-    <div>
-      <div
-        className="silverscreen-container"
-        style={{ display: "flex", flexDirection: "column", marginTop: "60px" }}
+    <>
+      <section
+        id="section-highlight"
+        className="relative text-light"
+        data-bgcolor="var(--background)"
+        style={{
+          backgroundColor: "var(--background)",
+          backgroundSize: "cover",
+          borderBottom: "3px solid var(--golden)",
+        }}
       >
-        <Heading headTitle="About Us" color="white" />
-        {/* Top left corner: REC and timer */}
-        <div className="top-left">
-          <span
-            className="rec-mobile"
-            style={{ position: "absolute", top: "25px", left: "50px" }}
-          >
-            <Image
-              src={"/assets/images/movie/about/recording1.gif"}
-              alt={"corner"}
-              width={100}
-              height={100}
-              style={{
-                width: "50%",
-              }}
-            />
-          </span>
-          {/* <span className="timer">00:12:04 | 45:00</span> */}
-          <Image
-            src={"/assets/images/movie/about/corner1.png"}
-            alt={"corner"}
-            width={100}
-            height={100}
-            // style={{
-            //   width: "60%",
-            // }}
-          />
-        </div>
-
-        {/* Center text: SILVERSCREEN */}
         <div
-          className="fz-16"
-          style={{
-            zIndex: 9,
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-
-            // backgroundColor: "var(--navy)",
-            // margin: "40px",
-            width: "70%",
-            // height: "100%",
-            alignItems: "center",
-            textAlign: "justify",
-            // fontFamily: "FontAwesome",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
+          className="container"
+          style={{ backgroundSize: "cover", padding: "90px 0" }}
         >
           <div
-            className="text-white text-mobile"
-            style={{ fontFamily: "monospace", display: "flex", width: "100%" }}
+            className="row align-items-center"
+            style={{ backgroundSize: "cover", marginBottom: "60px" }}
           >
-            RD Movies, the entertainment arm of RD Brothers, has made a
-            remarkable impact in the film industry by producing critically
-            acclaimed and commercially successful films. With a blend of
-            creative storytelling and sharp business acumen, we aim to deliver
-            cinematic experiences that resonate both culturally and
-            commercially. Our production house is responsible for blockbuster
-            films like Kutch Express as well as ventures into new genres with
-            our latest horror comedy release, Jhamkuddi. At RD Movies, we are
-            more than just filmmakers—we are storytellers committed to creating
-            unique, compelling narratives for audiences worldwide.
+            <div className="col-md-4" style={{ backgroundSize: "cover" }}>
+              {/* <span
+                className="p-title wow fadeInUp animated"
+                style={{ visibility: "visible", animationName: "fadeInUp" }}
+              >
+                Welcome
+              </span> */}
+              <br />
+              <div style={{ width: "fit-content", position: "relative" }}>
+                <h2
+                  className="wow fadeInUp animated"
+                  style={{
+                    visibility: "visible",
+                    animationName: "fadeInUp",
+                    color: "#000",
+                  }}
+                >
+                  About Us
+                </h2>
+                <div
+                  className="border-line position-absolute "
+                  style={{
+                    // width: borderWidth,
+                    left: "12.5%",
+                    right: "12.5%",
+                    top: "100%",
+                  }}
+                ></div>
+              </div>
+              <div
+                className="small-border sm-left"
+                style={{ backgroundSize: "cover" }}
+              ></div>
+            </div>
+            <div className="col-md-8" style={{ backgroundSize: "cover" }}>
+              <p
+                className="wow fadeInRight animated"
+                style={{
+                  visibility: "visible",
+                  animationName: "fadeInRight",
+                  color: "#000",
+                  fontWeight: "400",
+                }}
+              >
+                RD Movies, the entertainment arm of RD Brothers, has made a
+                remarkable impact in the film industry by producing critically
+                acclaimed and commercially successful films. With a blend of
+                creative storytelling and sharp business acumen, we aim to
+                deliver cinematic experiences that resonate both culturally and
+                commercially. Our production house is responsible for
+                blockbuster films like Kutch Express as well as ventures into
+                new genres with our latest horror comedy release, Jhamkuddi. At
+                RD Movies, we are more than just filmmakers—we are storytellers
+                committed to creating unique, compelling narratives for
+                audiences worldwide.
+              </p>
+            </div>
           </div>
-
           <div
-            style={{
-              // display: "flex",
-              justifyContent: "space-between",
-              fontFamily: "monospace",
-              marginTop: "50px",
-            }}
-          >
-            <strong style={{ textAlign: "center", fontStyle: "italic" }}>
-              Vision&nbsp;
-            </strong>
-            To promote meaningful filmmaking, delivering captivating stories
-            that connect with audiences on a cultural and commercial level,
-            while fostering innovation in film production.
-          </div>
+            className="spacer-double"
+            style={{ backgroundSize: "cover" }}
+          ></div>
+        </div>
+      </section>
+
+      <section
+        className="no-top relative z1000"
+        style={{
+          backgroundSize: "cover",
+          backgroundImage: "linear-gradient(var(--navy))",
+          transform: "translateY(-90px)",
+        }}
+      >
+        <div className="container" style={{ backgroundSize: "cover" }}>
           <div
-            style={{
-              // display: "flex",
-              justifyContent: "space-between",
-              fontFamily: "monospace",
-              marginTop: "50px",
-            }}
+            className="row"
+            style={{ backgroundSize: "cover", display: "flex", gap: "40px" }}
           >
-            <strong style={{ fontStyle: "italic" }}> Mission&nbsp;</strong>To
-            create impactful cinematic experiences that blend creativity with
-            business acumen, ensuring our films captivate audiences worldwide
-            and contribute to the growth of the entertainment industry.
+            <div
+              className="col-md-5 mb-sm-30 wow fadeInRight animated"
+              style={{
+                background: "var(--navy)",
+                // border: "3px solid var(--golden)",
+                backgroundSize: "cover",
+                visibility: "visible",
+                animationDelay: "0.2s",
+                animationName: "fadeInRight",
+                padding: "20px",
+              }}
+            >
+              <div className="mask" style={{ backgroundSize: "cover" }}>
+                <div className="cover" style={{ backgroundSize: "cover" }}>
+                  <div className="c-inner" style={{ backgroundSize: "cover" }}>
+                    <h4>
+                      <i className="icofont-people"></i>
+                      <span style={{ color: "var(--golden)" }}>Mission</span>
+                    </h4>
+                    <p style={{ color: "#fff" }}>
+                      To create impactful cinematic experiences that blend
+                      creativity with business acumen, ensuring our films
+                      captivate audiences worldwide and contribute to the growth
+                      of the entertainment industry.
+                    </p>
+                    <div
+                      className="spacer20"
+                      style={{ backgroundSize: "cover" }}
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-md-5 mb-sm-30 wow fadeInRight animated"
+              style={{
+                background: "var(--navy)",
+                // border: "3px solid var(--golden)",
+                backgroundSize: "cover",
+                visibility: "visible",
+                animationDelay: "0.4s",
+                animationName: "fadeInRight",
+                padding: "20px",
+              }}
+            >
+              <div className="mask" style={{ backgroundSize: "cover" }}>
+                <div className="cover" style={{ backgroundSize: "cover" }}>
+                  <div className="c-inner" style={{ backgroundSize: "cover" }}>
+                    <h4>
+                      <i className="icofont-home"></i>
+                      <span style={{ color: "var(--golden)" }}>Vision</span>
+                    </h4>
+                    <p style={{ color: "#fff" }}>
+                      To promote meaningful filmmaking, delivering captivating
+                      stories that connect with audiences on a cultural and
+                      commercial level, while fostering innovation in film
+                      production.
+                    </p>
+                    <div
+                      className="spacer20"
+                      style={{ backgroundSize: "cover" }}
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* Scroll Down indicator */}
-        <div className="scroll-down">
-          {/* <span>SCROLL DOWN</span> */}
-          <Image
-            src={"/assets/images/movie/about/element.png"}
-            alt={"corner"}
-            width={100}
-            height={100}
-            // style={{
-            //   width: "60%",
-            // }}
-          />
-          {/* <div className="scroll-arrow"></div> */}
-        </div>
-
-        {/* Bottom left: Camera settings */}
-        <div className="bottom-left">
-          {/* <span>ISO 100 | 1/80 | F4.0</span> */}
-          <Image
-            src={"/assets/images/movie/about/corner3.png"}
-            alt={"corner"}
-            width={100}
-            height={100}
-            // style={{
-            //   width: "60%",
-            // }}
-          />
-        </div>
-
-        {/* Bottom right: Video length */}
-        <div className="bottom-right">
-          {/* <span>~01:30</span> */}
-          <Image
-            src={"/assets/images/movie/about/corner4.png"}
-            alt={"corner"}
-            width={100}
-            height={100}
-            // style={{ width: "60%" }}
-          />
-        </div>
-
-        {/* Top right: Video quality */}
-        <div className="top-right">
-          {/* <span>4K | 3840 x 2160 | 30FPS | 70Mbps</span> */}
-          <Image
-            src={"/assets/images/movie/about/corner2.png"}
-            alt={"corner"}
-            width={100}
-            height={100}
-            style={{
-              // width: "60%",
-
-              objectFit: "cover",
-            }}
-          />
-        </div>
-
-        {/* Horizontal/Vertical Guides */}
-        <div className="guides"></div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

@@ -170,17 +170,19 @@ function Navbar() {
       >
         <div className="container">
           <Link href="/">
-            <Image
-              src="/rdb-group.svg"
+            <div
+              // src="/rdb-group.svg"
               style={{
-                height: isSmallScreen ? "80px" : "100px",
-                width: "125px",
-                objectFit: "cover",
+                height: isSmallScreen ? "80px" : "130px",
+                width: "178px",
+                // objectFit: "cover",
+                backgroundSize: "cover",
+                backgroundImage: "url(/rdb-group.svg)",
               }}
               className="logo-responsive"
-              alt="logo"
-              width={800}
-              height={500}
+              // alt="logo"
+              // width={800}
+              // height={500}
             />
           </Link>
           <button
@@ -216,7 +218,7 @@ function Navbar() {
                   aria-expanded="false"
                   onClick={handleLinkClick}
                 >
-                  <span className="rolling-text text-capitalize  fz-14 ">
+                  <span className="rolling-text text-capitalize  fz-15 ">
                     About
                   </span>
                 </Link>

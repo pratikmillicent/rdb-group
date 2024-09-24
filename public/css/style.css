@@ -10970,7 +10970,7 @@ header.in-box {
 }
 
 .img-container img {
-  width: 100%;
+  width: auto;
   height: 100%;
   transition: transform 0.5s ease, opacity 0.5s ease;
   transform: translateY(10px);
@@ -11287,6 +11287,17 @@ header.in-box {
   /* width: 10%; */
   height: 3px;
   border-top: solid 2px var(--golden) !important;
+  border-left: none;
+  border-right: none;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.border-line-gray {
+  width: 70%;
+  height: 3px;
+  border-top: solid 2px var(--background) !important;
   border-left: none;
   border-right: none;
   display: block;
