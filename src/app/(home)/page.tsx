@@ -54,23 +54,23 @@ export default function Home() {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const videoData = [
-    // {
-    //   src: "/assets/video/video-5.mp4",
-    //   text: `Crafted with <span
-    //      style="
-    //           font-weight : 500
-    //         "> Experience </span>, Built with <span style="
-    //           font-weight : 500
-    //         "> Trust </span>`,
-    //   link: "/about",
-    // },
+    {
+      src: "/assets/video/video-5.mp4",
+      text: `Crafted with <span
+         style="
+              font-weight : 500
+            "> Experience </span>, Built with <span style="
+              font-weight : 500
+            "> Trust </span>`,
+      link: "/about",
+    },
     {
       src: "/assets/video/properties-v2.mp4",
       text: "Properties",
       link: "https://rdbrothers.com",
     },
     {
-      src: "/assets/video/video-2.mp4",
+      src: "/assets/video/reality.m4v",
       text: "Realty",
       link: "/realty",
     },
