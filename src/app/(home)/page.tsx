@@ -54,18 +54,18 @@ export default function Home() {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const videoData = [
+    // {
+    //   src: "/assets/video/video-5.mp4",
+    //   text: `Crafted with <span
+    //      style="
+    //           font-weight : 500
+    //         "> Experience </span>, Built with <span style="
+    //           font-weight : 500
+    //         "> Trust </span>`,
+    //   link: "/about",
+    // },
     {
-      src: "/assets/video/video-5.mp4",
-      text: `Crafted with <span
-         style="
-              font-weight : 500
-            "> Experience </span>, Built with <span style="
-              font-weight : 500
-            "> Trust </span>`,
-      link: "/about",
-    },
-    {
-      src: "/assets/video/video-1.mp4",
+      src: "/assets/video/properties-v2.mp4",
       text: "Properties",
       link: "https://rdbrothers.com",
     },
@@ -75,12 +75,12 @@ export default function Home() {
       link: "/realty",
     },
     {
-      src: "/assets/video/video-3.mp4",
+      src: "/assets/video/fracto.m4v",
       text: "Fracto",
       link: "/fracto",
     },
     {
-      src: "/assets/video/video-4.mp4",
+      src: "/assets/video/movie.m4v",
       text: "Movies",
       link: "/movies",
     },
@@ -169,7 +169,7 @@ export default function Home() {
                 padding: "0 20px 20px 20px ",
               }}
             >
-              {loopCount !== 0 && (
+              {/* {loopCount !== 0 && (
                 <img
                   src="/rdb_1.svg"
                   style={{
@@ -178,7 +178,7 @@ export default function Home() {
                     objectFit: "contain",
                   }}
                 />
-              )}
+              )} */}
 
               <p
                 className=""

@@ -9,7 +9,7 @@ const page = () => {
     <>
       <div style={{ position: "relative" }}>
         <Image
-          src="/assets/images/career/career.png"
+          src="/assets/images/career/banner.png"
           className="circle-img career-banner banner"
           alt="carrer page"
           // style={{ height: "100vh" }}
