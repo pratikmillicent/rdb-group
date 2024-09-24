@@ -40,7 +40,7 @@ const StickySocialMedia = () => {
         style={{
           position: "fixed",
           right: "3px",
-          bottom: "140px",
+          top: "120px",
           zIndex: "5",
         }}
         className="cursor-pointer"

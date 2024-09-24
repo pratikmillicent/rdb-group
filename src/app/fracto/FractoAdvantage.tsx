@@ -5,7 +5,7 @@ import Heading from "@/components/heading/Heading";
 // const mediaItems = [
 //   {
 //     id: 1,
-//     name: "Discover",
+//     name: "Dis"cover"",
 //     description:
 //       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus officiis corporis aut ipsa dolorem cupiditate magnam ea minima. Culpa.",
 //   },
@@ -84,92 +84,156 @@ const FractoAdvantage = () => {
   return (
     <div className="container">
       <Heading headTitle="Fracto Advantage" />
-      <div className="row mb-4">
-        {/* First row with col-6 */}
 
-        <div className="col-6 d-flex justify-content-center align-items-center flex-col">
-          <h3
-            className="d-flex justify-content-center"
-            style={{ color: "var(--navy)" }}
-          >
-            {/* Works */}
-          </h3>
-          <p
-            className="d-flex justify-content-center text-left px-5"
-            style={{
-              color: "var(--navy)",
-            }}
-          >
-            At Fracto, we offer a unique advantage by combining innovation with
-            deep market expertise. Here’s why investing with us is different:
-          </p>
-        </div>
-        <div className="col-6 d-flex">
-          {/* Mapping the first two items */}
-          {mediaItems.slice(0, 2).map((item) => (
-            <div
-              key={item.id}
-              className="col-6 "
-              style={{
-                marginRight: "15px",
-              }}
-            >
-              <div className="flip-card">
-                <div className="flip-card-inner">
-                  <div className="flip-card-front d-flex justify-content-center align-items-center">
-                    <div className="">
-                      <h6 style={{ color: "var(--golden)", fontWeight: 600 }}>
-                        {item.name}
-                      </h6>
-                    </div>
-                  </div>
-                  <div className="flip-card-back">
-                    <p
-                      style={{
-                        color: "white",
-                        textAlign: "left",
-                        padding: "15px",
-                      }}
-                    >
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Next rows with two boxes each */}
       <div className="row">
-        {/* Mapping the rest of items */}
-        {mediaItems.slice(2).map((item) => (
-          <div key={item.id} className="col-3 mb-4">
-            <div className="flip-card">
-              <div className="flip-card-inner">
-                <div className="flip-card-front d-flex justify-content-center align-items-center">
-                  <div className="">
-                    <h6 style={{ color: "var(--golden)", fontWeight: 600 }}>
-                      {item.name}
-                    </h6>
-                  </div>
-                </div>
-                <div className="flip-card-back ">
-                  <p
-                    style={{
-                      color: "white",
-                      textAlign: "left",
-                      padding: "15px",
-                    }}
-                  >
-                    {item.description}
-                  </p>
-                </div>
+        <div
+          className="col-md-3 wow fadeInRight animated"
+          data-wow-delay=".2s"
+          style={{
+            backgroundSize: "cover",
+            visibility: "visible",
+            animationDelay: "0.2s",
+            animationName: "fadeInRight",
+          }}
+        >
+          <div className="mask" style={{ backgroundSize: "cover" }}>
+            <div className="cover" style={{ backgroundSize: "cover" }}>
+              <div className="c-inner" style={{ backgroundSize: "cover" }}>
+                <h3 style={{ lineHeight: "20px" }}>
+                  <i
+                    style={{ fontSize: "20px" }}
+                    className="fa-solid fa-magnifying-glass"
+                  ></i>
+                  <span style={{ marginLeft: ".5em" }}>Transparency</span>
+                </h3>
+                <p>
+                  Explore innovative strategies, expert guidance, and tailored
+                  solutions to propel your success forward.{" "}
+                </p>
+                <div
+                  className="spacer20"
+                  style={{ backgroundSize: "cover" }}
+                ></div>
               </div>
             </div>
+            <img
+              src="assets/images/fracto/transparency.jpg"
+              alt=""
+              className="img-responsive"
+            />
           </div>
-        ))}
+        </div>
+        <div
+          className="col-md-3 wow fadeInRight animated"
+          data-wow-delay=".2s"
+          style={{
+            backgroundSize: "cover",
+            visibility: "visible",
+            animationDelay: "0.2s",
+            animationName: "fadeInRight",
+          }}
+        >
+          <div className="mask" style={{ backgroundSize: "cover" }}>
+            <div className="cover" style={{ backgroundSize: "cover" }}>
+              <div className="c-inner" style={{ backgroundSize: "cover" }}>
+                <h3>
+                  <i
+                    style={{ fontSize: "20px" }}
+                    className="fa-solid fa-circle-info"
+                  ></i>
+                  <span style={{ marginLeft: ".5em" }}>Accessibility</span>
+                </h3>
+                <p>
+                  Explore innovative strategies, expert guidance, and tailored
+                  solutions to propel your success forward.{" "}
+                </p>
+                <div
+                  className="spacer20"
+                  style={{ backgroundSize: "cover" }}
+                ></div>
+              </div>
+            </div>
+            <img
+              src="assets/images/fracto/transparency.jpg"
+              alt=""
+              className="img-responsive"
+            />
+          </div>
+        </div>
+        <div
+          className="col-md-3 wow fadeInRight animated"
+          data-wow-delay=".2s"
+          style={{
+            backgroundSize: "cover",
+            visibility: "visible",
+            animationDelay: "0.2s",
+            animationName: "fadeInRight",
+          }}
+        >
+          <div className="mask" style={{ backgroundSize: "cover" }}>
+            <div className="cover" style={{ backgroundSize: "cover" }}>
+              <div className="c-inner" style={{ backgroundSize: "cover" }}>
+                <h3>
+                  <i
+                    style={{ fontSize: "20px" }}
+                    className="fa-solid fa-microchip"
+                  ></i>
+                  <span style={{ marginLeft: ".5em" }}>Technology Driven</span>
+                </h3>
+                <p>
+                  Explore innovative strategies, expert guidance, and tailored
+                  solutions to propel your success forward.{" "}
+                </p>
+                <div
+                  className="spacer20"
+                  style={{ backgroundSize: "cover" }}
+                ></div>
+              </div>
+            </div>
+            <img
+              src="assets/images/fracto/transparency.jpg"
+              alt=""
+              className="img-responsive"
+            />
+          </div>
+        </div>
+        <div
+          className="col-md-3 wow fadeInRight animated"
+          data-wow-delay=".2s"
+          style={{
+            backgroundSize: "cover",
+            visibility: "visible",
+            animationDelay: "0.2s",
+            animationName: "fadeInRight",
+          }}
+        >
+          <div className="mask" style={{ backgroundSize: "cover" }}>
+            <div className="cover" style={{ backgroundSize: "cover" }}>
+              <div className="c-inner" style={{ backgroundSize: "cover" }}>
+                <h3>
+                  <i
+                    style={{ fontSize: "20px" }}
+                    className="fa-solid fa-circle-nodes"
+                  ></i>
+                  <span style={{ marginLeft: ".5em" }}>End2End Management</span>
+                </h3>
+                <p>
+                  Explore innovative strategies, expert guidance, and tailored
+                  solutions to propel your success forward.{" "}
+                </p>
+                <div
+                  className="spacer20"
+                  style={{ backgroundSize: "cover" }}
+                ></div>
+              </div>
+            </div>
+            <img
+              src="assets/images/fracto/transparency.jpg"
+              alt=""
+              className="img-responsive"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

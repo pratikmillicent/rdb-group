@@ -25,6 +25,8 @@ const page = () => {
     <>
       <div style={{ position: "relative" }}>
         <Image
+          style={{ objectFit: "cover" }}
+          objectFit="cover"
           src="/assets/images/fracto/banner.png"
           className="w-100 news-banner banner "
           alt="fracto"
@@ -69,7 +71,7 @@ const page = () => {
           }}
         >
           <Heading headTitle="About Us" />
-          <p className="lead my-4 mobile-justify">
+          <p className="my-4 mobile-justify">
             Fracto makes commercial real estate investing easy and accessible to
             more people. We use technology to provide a simple, transparent
             platform where investors can buy shares in commercial properties and
@@ -89,7 +91,7 @@ const page = () => {
           className="container founder-mobile"
         >
           <div style={{ flex: "1" }}>
-            <Heading headTitle="Our Founder" textAlign="left" />
+            <Heading headTitle="Our Founder" />
             <p className="mobile-justify">
               Dhaval Thakkar, with 15 years of experience in commercial and
               retail real estate, is known for his attention to detail and
@@ -130,8 +132,9 @@ const page = () => {
             ></div>
           </div>
         </div>
-        <ProjectFracto />
+
         <Cre />
+
         <div className="d-block d-lg-none">
           <FractoAdvantageMobile />
         </div>
@@ -139,6 +142,9 @@ const page = () => {
           <FractoAdvantage />
         </div>
         <Advantage2 />
+
+        <ProjectFracto />
+
         <Ourbrand />
         <Contact />
       </div>

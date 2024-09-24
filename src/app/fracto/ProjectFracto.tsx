@@ -2,8 +2,37 @@ import Heading from "@/components/heading/Heading";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper";
 
 const ProjectFracto = () => {
+  const swiperOptions = {
+    modules: [Navigation, Autoplay],
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 80,
+    speed: 1000,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  };
   return (
     <div className="container">
       <Heading headTitle="Project" />
@@ -19,57 +48,61 @@ const ProjectFracto = () => {
       > */}
       <div className="gallery">
         <div className="row grid md-marg">
-          {Fractoproject.map((item) => (
-            <div
-              className={`col-lg-4 col-md-6 items ${item.filter} info-overlay mb-0 px-2`}
-              key={item.id}
-            >
-              <div className="item-img o-hidden">
-                <Link href="fracto/FracProjDetail" className="imago wow">
-                  <div className="inner wow">
-                    <div className="img img-container">
-                      <Image
-                        src={item.image}
-                        alt="image"
-                        style={{
-                          height: "400px",
-                          objectFit: "cover",
-                          width: "100%",
-                          borderRadius: "8px",
-                        }}
-                        width={800}
-                        height={500}
-                      />
-                    </div>
-                    {/* <img src={item.image} alt="image" /> */}
-                  </div>
-                </Link>
-                <div className="info">
-                  <div className="effect-caption py-1">
-                    <div className="text-left">
-                      <h6 className="m-0">Monte South, Byculla (W)</h6>
-                    </div>
+          <Swiper {...swiperOptions}>
+            {Fractoproject.map((item) => (
+              <div
+                className={`col-lg-4 col-md-6 items ${item.filter} info-overlay mb-0 px-2`}
+                key={item.id}
+              >
+                <SwiperSlide>
+                  <div className="item-img o-hidden">
+                    <Link href="fracto/FracProjDetail" className="imago wow">
+                      <div className="inner wow">
+                        <div className="img img-container">
+                          <Image
+                            src={item.image}
+                            alt="image"
+                            style={{
+                              height: "300px",
+                              objectFit: "cover",
+                              width: "100%",
+                              borderRadius: "8px",
+                            }}
+                            width={800}
+                            height={500}
+                          />
+                        </div>
+                        {/* <img src={item.image} alt="image" /> */}
+                      </div>
+                    </Link>
+                    <div className="info">
+                      <div className="effect-caption py-1">
+                        <div className="text-left">
+                          <h6 className="m-0">Monte South, Byculla (W)</h6>
+                        </div>
 
-                    <div className="effect-description text-left">
-                      <p
-                        style={{
-                          fontSize: "12px",
-                          fontStyle: "normal",
-                          lineHeight: "22px",
-                          color: "#000",
-                          fontWeight: 500,
-                        }}
-                        className="description"
-                      >
-                        2, 2.5, 3 &amp; 3.5 BHK starting ₹3.41Cr Residential |
-                        Ready &amp; Under-construction available
-                      </p>
+                        <div className="effect-description text-left">
+                          <p
+                            style={{
+                              fontSize: "12px",
+                              fontStyle: "normal",
+                              lineHeight: "22px",
+                              color: "#000",
+                              fontWeight: 500,
+                            }}
+                            className="description"
+                          >
+                            2, 2.5, 3 &amp; 3.5 BHK starting ₹3.41Cr Residential
+                            | Ready &amp; Under-construction available
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </SwiperSlide>
               </div>
-            </div>
-          ))}
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

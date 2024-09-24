@@ -23,11 +23,11 @@ interface IImage {
 
 const events: IEvent[] = [
   {
-    title: "mumbai",
+    title: "Jhamkudi Movie Mumbai Premier",
     image: "/assets/images/movie/gallary/mumbai-premier/i (1).JPG",
   },
   {
-    title: "ahemadabad",
+    title: "Jhamkudi Movie Ahemdabad Premier",
     image: "/assets/images/movie/gallary/ahemadabad-premier/i (1).JPG",
   },
 ];
