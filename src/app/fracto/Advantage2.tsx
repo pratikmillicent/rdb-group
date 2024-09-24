@@ -56,7 +56,7 @@ const Advantage = () => {
 
         <div className="col-md-5 col-12">
           <img
-            src="https://www.jpmorgan.com/content/dam/jpmorgan/images/cb/commercial-real-estate/cb-cre-banner-commercial-property-financing-solutions-490x870-vertical.jpg"
+            src="assets/images/fracto/howitworks.png"
             alt="Commercial Property Financing Solutions"
             className="img-fluid"
             style={{
@@ -69,7 +69,8 @@ const Advantage = () => {
           className=" col-md-8 col-12 d-flex flex-wrap position-absolute cre-position overflow-hidden m-0"
           style={{
             right: "5%",
-            top: "27%",
+            top: "50%",
+            transform: "translateY(-50%)",
           }}
         >
           {[

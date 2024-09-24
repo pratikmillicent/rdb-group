@@ -107,8 +107,8 @@ const FractoAdvantage = () => {
                   <span style={{ marginLeft: ".5em" }}>Transparency</span>
                 </h3>
                 <p>
-                  Explore innovative strategies, expert guidance, and tailored
-                  solutions to propel your success forward.{" "}
+                  Every investment is backed by extensive market research and
+                  financial analysis, ensuring clarity at every step.
                 </p>
                 <div
                   className="spacer20"
@@ -144,8 +144,8 @@ const FractoAdvantage = () => {
                   <span style={{ marginLeft: ".5em" }}>Accessibility</span>
                 </h3>
                 <p>
-                  Explore innovative strategies, expert guidance, and tailored
-                  solutions to propel your success forward.{" "}
+                  We break down the barriers to CRE investing, allowing even
+                  first-time investors to participate in premium opportunities.
                 </p>
                 <div
                   className="spacer20"
@@ -181,8 +181,8 @@ const FractoAdvantage = () => {
                   <span style={{ marginLeft: ".5em" }}>Technology Driven</span>
                 </h3>
                 <p>
-                  Explore innovative strategies, expert guidance, and tailored
-                  solutions to propel your success forward.{" "}
+                  Our platform offers a seamless, user-friendly experience that
+                  allows you to manage your investments effortlessly.
                 </p>
                 <div
                   className="spacer20"
@@ -218,8 +218,8 @@ const FractoAdvantage = () => {
                   <span style={{ marginLeft: ".5em" }}>End2End Management</span>
                 </h3>
                 <p>
-                  Explore innovative strategies, expert guidance, and tailored
-                  solutions to propel your success forward.{" "}
+                  We manage the asset from acquisition to exit. Investors enjoy
+                  a hands-off investment experience.
                 </p>
                 <div
                   className="spacer20"

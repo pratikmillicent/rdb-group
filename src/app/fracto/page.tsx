@@ -141,6 +141,7 @@ const page = () => {
         <div className="d-none d-lg-block">
           <FractoAdvantage />
         </div>
+
         <Advantage2 />
 
         <ProjectFracto />
