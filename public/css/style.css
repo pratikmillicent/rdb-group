@@ -21,8 +21,8 @@
   list-style: none;
 }
 
-p {
-  color: var(--text-foreground) !important;
+body p {
+  color: var(--text-foreground);
 }
 
 .text-golden {

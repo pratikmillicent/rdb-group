@@ -104,7 +104,7 @@ const AboutUs = () => {
                 style={{
                   visibility: "visible",
                   animationName: "fadeInRight",
-                  color: "#000",
+                  // color: "#000",
                   fontWeight: "400",
                 }}
               >
