@@ -39,7 +39,7 @@ const Blog = () => {
       <section className="" style={{ paddingBottom: "60px" }}>
         <div className="container">
           <div className="sec-lg-head">
-            <div className="row">
+            <div className="mt-30 mb-60">
               <Heading headTitle="Blogs" />
             </div>
           </div>

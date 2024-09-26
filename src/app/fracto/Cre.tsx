@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
-//= Modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import Heading from "@/components/heading/Heading";
-// stable asset
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
-// monthly cashflow
 import { GiTakeMyMoney } from "react-icons/gi";
-// captial
 import { GiMoebiusTriangle } from "react-icons/gi";
-
-// portofolio
 import { ImProfile } from "react-icons/im";
+import { Navigation, Pagination, Autoplay } from "swiper";
 
 const Cre = () => {
   return (
