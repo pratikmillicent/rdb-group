@@ -228,7 +228,7 @@ export default function Home() {
             />
           </div>
           <div className="d-lg-none">
-            <MobileCarousel data={data} />
+            <MobileCarousel />
           </div>
           {/* ) : isSmallScreen ? ( */}
           {/* ) : null} */}
@@ -246,15 +246,15 @@ export default function Home() {
 let cards = [
   {
     key: 1,
-    content: <Card imagen="/assets/home/Events.jpg" />,
+    content: <Card imagen="/assets/home/Event1.jpg" />,
   },
   {
     key: 2,
-    content: <Card imagen="https://fakeimg.pl/640x320" />,
+    content: <Card imagen="/assets/home/Event2.jpg" />,
   },
   {
     key: 3,
-    content: <Card imagen="/assets/home/Events.jpg" />,
+    content: <Card imagen="/assets/home/Event3.jpg" />,
   },
   {
     key: 4,

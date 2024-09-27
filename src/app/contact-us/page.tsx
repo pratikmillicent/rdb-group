@@ -26,22 +26,22 @@ const ContactUs = () => {
     message: "",
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
   };
 
   return (
     <>
-      <div style={{ position: "relative", height: "70vh" }}>
+      <div style={{ position: "relative", height: "94vh" }}>
         <Image
           src="/assets/images/contact/Contact-Us-1.jpg"
           className="circle-img contact-banner banner"

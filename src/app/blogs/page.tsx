@@ -18,6 +18,7 @@ const Blog = () => {
         <Image
           src="/assets/images/blog/blog-banner.png"
           className="circle-img blog-banner banner"
+          // className="circle-img blog-banner"
           alt="Landscape picture"
           width={800}
           height={500}

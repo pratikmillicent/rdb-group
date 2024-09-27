@@ -62,7 +62,11 @@ const MobileCarousel = () => {
                     <Image
                       src={item.image}
                       alt={item.image}
-                      style={{ objectFit: "contain" }}
+                      style={{
+                        objectFit: "contain",
+                        height: "100%",
+                        width: "100%",
+                      }}
                       width={800}
                       height={500}
                     />
@@ -80,11 +84,15 @@ const MobileCarousel = () => {
 const data = [
   {
     id: 1,
-    image: "/assets/home/Events.jpg",
+    image: "/assets/home/Event1.jpg",
   },
   {
     id: 2,
-    image: "https://fakeimg.pl/640x320",
+    image: "/assets/home/Event2.jpg",
+  },
+  {
+    id: 3,
+    image: "/assets/home/Event3.jpg",
   },
 ];
 

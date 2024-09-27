@@ -25,7 +25,7 @@ function About() {
   const [ref, inView] = useInView({ once: true });
   return (
     <>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative", height: "100dvh" }}>
         <video
           className="mw-100 w-100 d-block hero-height"
           src="/assets/video/AboutHero.mp4"
@@ -34,6 +34,7 @@ function About() {
           playsInline
           loop
           preload="auto"
+          style={{ height: "100%" }}
         />
         <div
           style={{

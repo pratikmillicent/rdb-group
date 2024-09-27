@@ -11,6 +11,7 @@ const page = () => {
         <Image
           src="/assets/images/career/banner.png"
           className="circle-img career-banner banner"
+          // className="circle-img career-banner"
           alt="carrer page"
           // style={{ height: "100vh" }}
           width={800}

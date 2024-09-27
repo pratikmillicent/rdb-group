@@ -19,7 +19,9 @@ const News = () => {
         <Image
           src="/assets/images/news/banner.png"
           className="w-100 d-block  news-banner banner hero-height"
+          // className="w-100 d-block  news-banner hero-height"
           alt="News Banner"
+          // style={{objectFit : 'cover'}}
           width={800}
           height={500}
         />

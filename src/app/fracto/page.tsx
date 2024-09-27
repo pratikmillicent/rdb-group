@@ -28,7 +28,8 @@ const page = () => {
           style={{ objectFit: "cover" }}
           objectFit="cover"
           src="/assets/images/fracto/banner.png"
-          className="w-100 news-banner banner "
+          // className="w-100 news-banner banner "
+          className="w-100 news-banner banner"
           alt="fracto"
           width={800}
           height={500}
@@ -59,7 +60,30 @@ const page = () => {
             <Heading
               headTitle="Unlocking the Future of Real Estate Investing."
               color="white"
+              isSpace={false}
             />
+            {/* <div
+      style={{width: "fit-content", margin: "0 auto" }}
+      className="position-relative"
+    >
+      <h2
+        className="mb-80 mb-30 fs-2"
+        style={{ fontSize: `${fontSize} !important` }}
+      >
+        <span style={{ color }} ref={spanRef}>
+          {headTitle}
+        </span>
+      </h2>
+      <div
+        className="border-line position-absolute "
+        style={{
+          
+          top: "100%",
+          left: textAlign === "center" ? "12.5%" : "0",
+          right: textAlign === "center" ? "12.5%" : "70%",
+        }}
+      ></div>
+    </div> */}
           </div>
         </div>
       </div>

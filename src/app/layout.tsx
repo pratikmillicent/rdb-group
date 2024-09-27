@@ -75,7 +75,7 @@ export default function RootLayout({
 
         <Cursor />
         <ProgressScroll />
-        <StickySocialMedia />
+        {/* <StickySocialMedia /> */}
 
         <Loader />
 
