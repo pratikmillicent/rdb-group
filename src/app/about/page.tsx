@@ -11,6 +11,7 @@ import Experience from "./components/Experience";
 import { useInView } from "react-spring";
 import { lazy } from "react";
 import AboutSectionImage from "./components/AboutSectionImage";
+import Director2 from "./components/Director2";
 
 const data = [
   { value: 4500, label: "Home Secured" },
@@ -64,7 +65,7 @@ function About() {
 
       <Experience />
       <AboutSectionImage />
-      <DirectorCard />
+      <Director2 />
       <CallToAction />
       <Team />
       <div style={{ marginTop: "10px" }} ref={ref}>
