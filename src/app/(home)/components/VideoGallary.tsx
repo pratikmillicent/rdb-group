@@ -63,7 +63,7 @@ function VideoGallary() {
 
   const renderSlide = (item: Video) => (
     <div className="">
-      <div onClick={(e) => openVideo?.(e, item)}>
+      <div onClick={e => openVideo?.(e, item)}>
         <div style={{ position: "relative" }}>
           <svg
             style={{
@@ -122,7 +122,7 @@ function VideoGallary() {
                     {...swiperOptions}
                     id="content-carousel-container-unq-w"
                     className="swiper-container"
-                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    onSwiper={swiper => (swiperRef.current = swiper)}
                   >
                     {data.map((item, i) => (
                       <SwiperSlide key={i}>{renderSlide(item)}</SwiperSlide>

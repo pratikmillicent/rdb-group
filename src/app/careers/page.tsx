@@ -3,6 +3,7 @@ import Heading from "@/components/heading/Heading";
 import ResumeUpload from "./components/ResumeUpload";
 import React from "react";
 import Image from "next/image";
+import TestimonialCareer from "./components/TestimonialCareer.jsx";
 
 const page = () => {
   return (
@@ -93,6 +94,9 @@ const page = () => {
             </p>
 
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
+
+            <TestimonialCareer />
+
             <div>
               <Heading headTitle="Current Openings" />
 

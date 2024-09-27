@@ -91,6 +91,9 @@ const page = () => {
         alt="news details"
         height={500}
         width={800}
+        style={{
+          filter: "brightness(0.5)",
+        }}
       />
       <div className="container">
         <h1
