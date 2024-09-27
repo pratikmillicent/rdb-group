@@ -175,6 +175,7 @@ function CarrerGallery() {
                     height: "40px",
                     width: "40px",
                     borderRadius: "50%",
+                    right: "-60px",
                     right: "-60px !important",
                     top: "59%",
                     transform: "translateY(-50%)",
@@ -186,6 +187,7 @@ function CarrerGallery() {
                   style={{
                     fontWeight: "600",
                     height: "40px",
+                    left: "-60px",
                     width: "40px",
                     borderRadius: "50%",
                     position: "absolute",
