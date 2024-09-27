@@ -147,7 +147,7 @@ function CarrerGallery() {
                       onSwiper={(swiper) => (swiperRef.current = swiper)}
                     >
                       {events.map((item, i) => (
-                        <span className="text-center">
+                        <span key={i} className="text-center">
                           <SwiperSlide onClick={() => openModal(i)} key={i}>
                             {renderSlide(item)}
                           </SwiperSlide>

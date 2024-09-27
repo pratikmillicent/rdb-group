@@ -73,12 +73,13 @@ const swiperOptions = {
   },
 };
 
-const page = () => {
+const Page = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
 
   useEffect(() => {
     setLoadSwiper(true);
   }, []);
+
   return (
     <div
       style={{
@@ -236,7 +237,7 @@ const page = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {data?.map(item => (
+                  {data?.map((item) => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
@@ -324,7 +325,7 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 const DateBanner = () => {
   return (
