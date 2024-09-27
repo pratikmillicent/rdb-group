@@ -62,7 +62,7 @@ const Project = () => {
         slidesPerGroup: 4,
       },
     },
-    onSwiper: (swiper) => {
+    onSwiper: swiper => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();
@@ -140,7 +140,7 @@ const Project = () => {
                     id="content-carousel-container-unq-blog"
                     className="swiper-container"
                   >
-                    {completedProjectsData.map((item) => (
+                    {completedProjectsData.map(item => (
                       <SwiperSlide
                         key={item.id}
                         className="wow fadeInUp"
@@ -209,7 +209,7 @@ const Project = () => {
                     id="content-carousel-container-unq-blog"
                     className="swiper-container"
                   >
-                    {upcomingProjectsData.map((item) => (
+                    {upcomingProjectsData.map(item => (
                       <SwiperSlide
                         key={item.id}
                         className="wow fadeInUp"
@@ -282,11 +282,11 @@ const completedProjectsData = [
     image: "/assets/images/movie/jhamkudi.jpg",
     description: "Jhamkudi",
   },
-  {
-    id: 1,
-    image: "/assets/images/movie/kutch-express.jpg",
-    description: "Kutch Express",
-  },
+  // {
+  //   id: 2,
+  //   image: "/assets/images/movie/kutch-express.jpg",
+  //   description: "Kutch Express",
+  // },
 ];
 
 const upcomingProjectsData = [

@@ -19,14 +19,25 @@ const Cre = () => {
             <div className="col-lg-6" style={{ color: "var(--navy)" }}>
               <Heading
                 headTitle="Why Commercial Real Estate?"
-                fontSize="48px"
+                fontSize="40px"
                 textAlign="left"
+                isMargin="0"
               />
               {/* <h1 style={{ fontSize: "48px" }}>
                 Why Commercial
                 <br />
                 Real Estate?
               </h1> */}
+              <p>
+                Investing in commercial real estate has historically been one of
+                the most lucrative options, providing strong returns, long-term
+                stability, and portfolio diversification. Unlike other
+                investment avenues, CRE offers higher yields, rental income, and
+                appreciation potential while mitigating volatility. With Fracto,
+                we make it easier for individual investors to tap into this
+                high-value asset class, traditionally available only to
+                institutional players.
+              </p>
             </div>
             <div className="col-lg-6">
               <img

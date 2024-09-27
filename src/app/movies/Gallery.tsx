@@ -84,7 +84,7 @@ const Gallery = () => {
             spaceBetween={50}
             slidesPerView={1}
             initialSlide={activeIndex}
-            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            onSlideChange={swiper => setActiveIndex(swiper.activeIndex)}
             navigation // Enable navigation arrows
             modules={[Navigation]} // Import the Swiper navigation module
           >

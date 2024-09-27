@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
+import Link from "next/link";
 
 const data = [
   {
@@ -91,43 +92,45 @@ function News2() {
               id="content-carousel-container-unq-blog"
               className="swiper-container"
             >
-              {data?.map((item) => (
+              {data?.map(item => (
                 <SwiperSlide
                   key={item.id}
                   className="wow fadeInUp"
                   data-wow-delay=".1s"
                 >
-                  <div className="max-w-sm rounded overflow-hidden bg-white position-relative">
-                    {/* Image */}
-                    <div className="">
-                      <Image
-                        src={item.cover}
-                        alt={item.title}
-                        width={100}
-                        height={100}
-                        style={{
-                          width: "100%",
-                          height: "250px",
-                          objectFit: "cover",
-                        }}
-                      />
-                    </div>
-                    {/* Content */}
-                    <div className="bg-grey" style={{ padding: "30px 40px" }}>
-                      <div className="fw-700 fz-10 text-golden">LAW FIRM</div>
-                      <div className="fw-600 fz-22 mb-2">{item.title}</div>
-                      <p className="fz-16 fw-400">{item.description}</p>
-                      {/* Author */}
-                      <div className="px-6 pt-4 pb-2">
-                        <span className="text-grey news-firm">
-                          Fynley Wilkinson
-                        </span>
-                        <div className="bg-dark date-banner">
-                          <DateBanner />
+                  <Link href={"/newsDetails"}>
+                    <div className="max-w-sm rounded overflow-hidden bg-white position-relative">
+                      {/* Image */}
+                      <div className="">
+                        <Image
+                          src={item.cover}
+                          alt={item.title}
+                          width={100}
+                          height={100}
+                          style={{
+                            width: "100%",
+                            height: "250px",
+                            objectFit: "cover",
+                          }}
+                        />
+                      </div>
+                      {/* Content */}
+                      <div className="bg-grey" style={{ padding: "30px 40px" }}>
+                        <div className="fw-700 fz-10 text-golden">LAW FIRM</div>
+                        <div className="fw-600 fz-22 mb-2">{item.title}</div>
+                        <p className="fz-16 fw-400">{item.description}</p>
+                        {/* Author */}
+                        <div className="px-6 pt-4 pb-2">
+                          <span className="text-grey news-firm">
+                            Fynley Wilkinson
+                          </span>
+                          <div className="bg-dark date-banner">
+                            <DateBanner />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </SwiperSlide>
               ))}
             </Swiper>

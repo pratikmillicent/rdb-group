@@ -113,7 +113,7 @@ function Gallary2() {
 
   const renderSlide = (item: IImage) => (
     <div className="" style={{}}>
-      <div>
+      <div className="">
         <div style={{ position: "relative" }}>
           <Image
             src={item?.image}
@@ -121,7 +121,7 @@ function Gallary2() {
             alt="Landscape picture"
             width={800}
             height={300}
-            style={{ height: "250px" }}
+            style={{ height: "250px", width: "530px" }}
           />
 
           <h3
@@ -153,24 +153,34 @@ function Gallary2() {
         <div className="container">
           <div className="container-fluid rest">
             <div className="row" style={{ marginBottom: "120px" }}>
-              <div className="col-12" style={{ position: "relative" }}>
-                <div className="work-crus work-crus2">
-                  {loadSwiper && (
-                    <Swiper
-                      {...swiperOptions}
-                      id="content-carousel-container-unq-w"
-                      className="swiper-container"
-                      onSwiper={(swiper) => (swiperRef.current = swiper)}
-                    >
-                      {events.map((item, i) => (
-                        <SwiperSlide onClick={() => openModal(i)} key={i}>
-                          {renderSlide(item)}
-                        </SwiperSlide>
-                      ))}
-                      {/* <div className="swiper-pagination" /> */}
-                    </Swiper>
-                  )}
-                </div>
+              <div className="" style={{ position: "relative" }}>
+                {events.length === 2 ? (
+                  <div className="work-crus work-crus2 w-100 gap-5 d-flex ">
+                    {events.map((item, i) => (
+                      <div onClick={() => openModal(i)} key={i}>
+                        {renderSlide(item)}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="work-crus work-crus2">
+                    {loadSwiper && (
+                      <Swiper
+                        {...swiperOptions}
+                        id="content-carousel-container-unq-w"
+                        className="swiper-container"
+                        onSwiper={swiper => (swiperRef.current = swiper)}
+                      >
+                        {events.map((item, i) => (
+                          <SwiperSlide onClick={() => openModal(i)} key={i}>
+                            {renderSlide(item)}
+                          </SwiperSlide>
+                        ))}
+                        {/* <div className="swiper-pagination" /> */}
+                      </Swiper>
+                    )}
+                  </div>
+                )}
 
                 {/* <div
                 className=""
@@ -222,7 +232,7 @@ function Gallary2() {
             spaceBetween={50}
             slidesPerView={1}
             initialSlide={activeIndex}
-            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            onSlideChange={swiper => setActiveIndex(swiper.activeIndex)}
             navigation // Enable navigation arrows
             modules={[Navigation]} // Import the Swiper navigation module
           >
@@ -266,10 +276,11 @@ function Gallary2() {
 
 const swiperOptions = {
   speed: 1000,
-  spaceBetween: 80,
+  spaceBetween: 20,
   loop: true,
   centeredSlides: true,
   slidesPerView: 2,
+
   breakpoints: {
     0: {
       slidesPerView: 1,

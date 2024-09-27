@@ -88,7 +88,7 @@ const Advantage = () => {
             },
             {
               title: "Earn Returns",
-              text: "Comprehensive property management services to maximize .",
+              text: "Comprehensive property management services to maximize.",
             },
             // {
             //   title: "Construction loans",
@@ -97,10 +97,13 @@ const Advantage = () => {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="col-md-4 col-sm-6 col-12 text-navy p-md-3 p-1"
+              className="col-md-6 col-sm-6 col-12 text-navy p-md-3 p-1"
+              style={{
+                height: "170px",
+              }}
             >
               <div
-                className="p-md-4 p-2 h-100 bg-white card-border"
+                className="p-md-6 p-2 h-100 bg-white card-border"
                 style={{
                   borderBottom: "5px solid var(--golden)",
                 }}
