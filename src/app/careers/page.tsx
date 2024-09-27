@@ -4,6 +4,8 @@ import ResumeUpload from "./components/ResumeUpload";
 import React from "react";
 import Image from "next/image";
 import TestimonialCareer from "./components/TestimonialCareer.jsx";
+import { Col, Row } from "react-bootstrap";
+import CarrerGallery from "./CarrerGallery";
 
 const page = () => {
   return (
@@ -40,25 +42,11 @@ const page = () => {
               height: "100%",
               padding: "0 20px",
             }}
-          >
-            {/* <h3 className="banner-heading hero-heading">Careers</h3>
-            <div
-              style={{
-                width: "50px",
-                height: "3px",
-                borderTop: "solid 2px var(--golden) !important",
-                borderLeft: "none",
-                borderRight: "none",
-                display: "block",
-                margin: "0 auto",
-                marginBottom: "30px",
-              }}
-            ></div> */}
-          </div>
+          ></div>
         </div>
       </div>
 
-      <div className="container">
+      <div className="">
         <div className="work-header ">
           <div
             className="pt-3 section-padding"
@@ -66,33 +54,58 @@ const page = () => {
           >
             <div>
               <div className="caption text-grey">
-                {/* <h6 className="sub-title">INTRODUCTION</h6> */}
-                <h2>Become part of a team that strives for Excellence!</h2>
+                <section
+                  className=""
+                  style={{ background: "var(--background)" }}
+                >
+                  <div className="container">
+                    <div className="sec-lg-head">
+                      <div
+                        className="d-flex row justify-content-center"
+                        style={{
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div
+                          className="col-lg-6"
+                          style={{ color: "var(--navy)" }}
+                        >
+                          <Heading
+                            headTitle="Become part of a team that strives for Excellence!"
+                            fontSize="40px"
+                            textAlign="left"
+                            isMargin="0"
+                          />
+
+                          <p>
+                            Our greatest asset is our team. We’re dedicated to a
+                            dynamic environment where innovation and expertise
+                            drive success. Enjoy opportunities for growth,
+                            client exposure, and skill development in a
+                            collaborative culture. Ready to make an impact in
+                            real estate? Explore career opportunities with us.
+                          </p>
+                        </div>
+                        <div className="col-lg-6">
+                          <img
+                            style={{ height: "80vh" }}
+                            src="https://plus.unsplash.com/premium_vector-1682309052944-69df8e1ddc26?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="cre"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <Heading headTitle=" Beyond the Desk" />
               </div>
             </div>
           </div>
         </div>
         <div className="d-flex gap-3 mb-60">
-          <div className="text-grey">
-            {/* <p className="text-dark fz-20 fw-bold mb-3">
-              FASCINATING WORK, ENDLESS OPPORTUNITY
-            </p> */}
-            <p className="text-black fz-16 fw-400 mb-3">
-              {/* <p
-                          style={{
-                            textAlign: "justify",
-                          }}
-                          className="text-black fz-16 fw-400"
-                        >
-                          {item.text}.
-                        </p> */}
-              Our greatest asset is our team. We’re dedicated to a dynamic
-              environment where innovation and expertise drive success. Enjoy
-              opportunities for growth, client exposure, and skill development
-              in a collaborative culture. Ready to make an impact in real
-              estate? Explore career opportunities with us.
-            </p>
-
+          <div className="text-grey container">
+            <CarrerGallery />
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
 
             <TestimonialCareer />
