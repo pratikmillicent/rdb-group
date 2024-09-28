@@ -21,6 +21,7 @@ import Gallery from "./Gallery";
 import Gallery2 from "./Gallery2";
 import AboutUs from "./AboutUs";
 import MobileMovieTeam from "./MobileMovieTeam";
+import Founder from "./Founder";
 
 const page = () => {
   return (
@@ -75,6 +76,7 @@ const page = () => {
       </div>
 
       <AboutUs />
+      <Founder />
       {/* <About /> */}
       {/* <div className="d-none d-md-block">
         <Movieteam2 />
