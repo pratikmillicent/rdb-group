@@ -26,7 +26,11 @@ const page = () => {
   return (
     <div className="w-100">
       <div className="hero-responsive">
-        <img src="/assets/images/movie/gallary.png" alt="banner" />
+        <img
+          style={{ objectFit: "fill" }}
+          src="/assets/images/movie/gallary.png"
+          alt="banner"
+        />
 
         <div
           style={{
@@ -80,6 +84,8 @@ const page = () => {
         </div> */}
       {/* <ParallaxSlider data={data} /> */}
       {/* <MovieSlider /> */}
+      {/* <Awards /> */}
+      <AwardMovie />
 
       <Project />
 

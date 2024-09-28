@@ -4,8 +4,8 @@ import "../../(home)/SectionImage.css";
 
 const images = {
   overview: "/assets/images/home/about3.jpg",
-  vision: "/assets/images/about/vission.png",
-  mission: "/assets/images/about/mission.png",
+  vision: "/assets/images/about/vision.jpeg",
+  mission: "/assets/images/about/mission.jpg",
 };
 
 function AboutSectionImage() {

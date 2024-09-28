@@ -37,7 +37,20 @@ const News = () => {
             zIndex: 1,
             pointerEvents: "none",
           }}
-        ></div>
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+              // padding: "0 20px",
+            }}
+          >
+            <Heading headTitle="News & Media" color="white" isSpace={false} />
+          </div>
+        </div>
       </div>
 
       <div className="container">

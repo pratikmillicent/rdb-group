@@ -25,7 +25,7 @@ const page = () => {
     <>
       <div style={{ position: "relative" }}>
         <Image
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "fill" }}
           objectFit="cover"
           src="/assets/images/fracto/banner.png"
           // className="w-100 news-banner banner "

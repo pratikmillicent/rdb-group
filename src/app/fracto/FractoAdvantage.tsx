@@ -94,9 +94,13 @@ const FractoAdvantage = () => {
             visibility: "visible",
             animationDelay: "0.2s",
             animationName: "fadeInRight",
+            height: "220px",
           }}
         >
-          <div className="mask" style={{ backgroundSize: "cover" }}>
+          <div
+            className="mask"
+            style={{ backgroundSize: "cover", height: "100%" }}
+          >
             <div className="cover" style={{ backgroundSize: "cover" }}>
               <div className="c-inner" style={{ backgroundSize: "cover" }}>
                 <h3 style={{ lineHeight: "20px" }}>
@@ -117,9 +121,10 @@ const FractoAdvantage = () => {
               </div>
             </div>
             <img
-              src="assets/images/fracto/transparency.jpg"
+              src="assets/images/fracto/transparency.png"
               alt=""
               className="img-responsive"
+              height="100%"
             />
           </div>
         </div>
@@ -131,9 +136,13 @@ const FractoAdvantage = () => {
             visibility: "visible",
             animationDelay: "0.2s",
             animationName: "fadeInRight",
+            height: "220px",
           }}
         >
-          <div className="mask" style={{ backgroundSize: "cover" }}>
+          <div
+            className="mask"
+            style={{ backgroundSize: "cover", height: "100%" }}
+          >
             <div className="cover" style={{ backgroundSize: "cover" }}>
               <div className="c-inner" style={{ backgroundSize: "cover" }}>
                 <h3>
@@ -154,9 +163,10 @@ const FractoAdvantage = () => {
               </div>
             </div>
             <img
-              src="assets/images/fracto/transparency.jpg"
+              src="assets/images/fracto/accessibility.png"
               alt=""
               className="img-responsive"
+              height="100%"
             />
           </div>
         </div>
@@ -168,9 +178,13 @@ const FractoAdvantage = () => {
             visibility: "visible",
             animationDelay: "0.2s",
             animationName: "fadeInRight",
+            height: "220px",
           }}
         >
-          <div className="mask" style={{ backgroundSize: "cover" }}>
+          <div
+            className="mask"
+            style={{ backgroundSize: "cover", height: "100%" }}
+          >
             <div className="cover" style={{ backgroundSize: "cover" }}>
               <div className="c-inner" style={{ backgroundSize: "cover" }}>
                 <h3>
@@ -191,9 +205,10 @@ const FractoAdvantage = () => {
               </div>
             </div>
             <img
-              src="assets/images/fracto/transparency.jpg"
+              src="assets/images/fracto/tech-driven.jpeg"
               alt=""
               className="img-responsive"
+              height="100%"
             />
           </div>
         </div>
@@ -205,9 +220,13 @@ const FractoAdvantage = () => {
             visibility: "visible",
             animationDelay: "0.2s",
             animationName: "fadeInRight",
+            height: "220px",
           }}
         >
-          <div className="mask" style={{ backgroundSize: "cover" }}>
+          <div
+            className="mask"
+            style={{ backgroundSize: "cover", height: "100%" }}
+          >
             <div className="cover" style={{ backgroundSize: "cover" }}>
               <div className="c-inner" style={{ backgroundSize: "cover" }}>
                 <h3>
@@ -228,9 +247,10 @@ const FractoAdvantage = () => {
               </div>
             </div>
             <img
-              src="assets/images/fracto/transparency.jpg"
+              src="assets/images/fracto/end-to-end.jpg"
               alt=""
               className="img-responsive"
+              height="100%"
             />
           </div>
         </div>

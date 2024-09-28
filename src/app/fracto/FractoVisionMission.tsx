@@ -54,7 +54,7 @@ function FractoSectionImage() {
       >
         <div
           className="back-image bg-img parallaxie"
-          data-background="/assets/images/about/vission.png"
+          data-background="/assets/images/fracto/vision.png"
           // data-overlay-dark="3"
           data-parallaxie={{
             speed: "-0.4",
