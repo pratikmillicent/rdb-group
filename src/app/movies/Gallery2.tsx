@@ -112,7 +112,7 @@ function Gallary2() {
   }, []);
 
   const renderSlide = (item: IImage) => (
-    <div className="" style={{ width: "100%" }}>
+    <div className="mobile-padding" style={{ width: "100%" }}>
       <div className="">
         <div style={{ position: "relative", width: "100%" }}>
           <Image
@@ -161,11 +161,11 @@ function Gallary2() {
           <div className="container-fluid rest">
             <div className="row" style={{ marginBottom: "120px" }}>
               <div className="" style={{ position: "relative" }}>
-                {events.length === 2 ? (
+                {events?.length === 2 ? (
                   <div className="work-crus work-crus2 w-100 gap-5 galler-flex">
-                    {events.map((item, i) => (
-                      <div onClick={() => openModal(i)} key={i}>
-                        {renderSlide(item)}
+                    {events?.map((item, i) => (
+                      <div onClick={() => openModal?.(i)} key={i}>
+                        {renderSlide?.(item)}
                       </div>
                     ))}
                   </div>
