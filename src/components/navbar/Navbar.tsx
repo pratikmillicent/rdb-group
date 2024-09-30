@@ -173,12 +173,13 @@ function Navbar() {
             <div
               // src="/rdb-group.svg"
               style={{
-                height: isSmallScreen ? "116px" : "166px",
+                // height: isSmallScreen ? "116px" : "166px",
+                height: "60px",
                 // height: isSmallScreen ? "80px" : "130px",
-                width: "166px",
+                width: "160px",
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "contain",
-                backgroundImage: "url(/rdb_logo.png)",
+                backgroundSize: "100% 100%",
+                backgroundImage: "url(/rdb_logo-small.png)",
               }}
               className="logo-responsive"
               // alt="logo"
