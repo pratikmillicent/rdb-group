@@ -114,10 +114,11 @@ const Page = () => {
         </h1>
         <div className="">
           <div className="d-flex align-items-center">
-            <span className="fz-60 fw-600 main-color line-height-1 mr-10">
+            <span className="fz-60 fw-600 main-color line-height-1 mr-10 headFirstLetter">
               H
             </span>
             <p>
+              <span className="h-block">H</span>
               ome buying is generally associated with end-users, especially
               considering that home is such an emotional aspect of life.However,
               according to the FICCI - Anarock Homebuyer Sentiment Survey,
@@ -129,6 +130,7 @@ const Page = () => {
             perspective rather than for self-use as compared to the H2 2022
             survey. What has led to this shift in preferences?
           </p>
+
           <p>
             Notably, many people, especially millennials, are eyeing real estate
             as an investment avenue. The survey reveals, 31 per cent of
@@ -237,7 +239,7 @@ const Page = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {data?.map((item) => (
+                  {data?.map(item => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"

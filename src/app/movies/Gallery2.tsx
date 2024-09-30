@@ -112,24 +112,26 @@ function Gallary2() {
   }, []);
 
   const renderSlide = (item: IImage) => (
-    <div className="" style={{}}>
+    <div className="" style={{ width: "100%" }}>
       <div className="">
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative", width: "100%" }}>
           <Image
             src={item?.image}
             className="circle-img"
             alt="Landscape picture"
             width={800}
             height={300}
-            style={{ height: "250px", width: "530px" }}
+            style={{
+              width: "100%",
+              height: "250px",
+            }}
           />
-
           <h3
             style={{
               position: "absolute",
               bottom: "0",
               left: "20px",
-              color: "#fff",
+              color: "var(--white)",
               fontSize: "28px",
             }}
           >
@@ -150,12 +152,17 @@ function Gallary2() {
         }}
       >
         <Heading headTitle="Our Gallery" />
-        <div className="container">
+        <div
+          className="container"
+          style={{
+            overlayX: "hidden",
+          }}
+        >
           <div className="container-fluid rest">
             <div className="row" style={{ marginBottom: "120px" }}>
               <div className="" style={{ position: "relative" }}>
                 {events.length === 2 ? (
-                  <div className="work-crus work-crus2 w-100 gap-5 d-flex ">
+                  <div className="work-crus work-crus2 w-100 gap-5 galler-flex">
                     {events.map((item, i) => (
                       <div onClick={() => openModal(i)} key={i}>
                         {renderSlide(item)}

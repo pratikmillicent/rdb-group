@@ -129,6 +129,13 @@
   }
 }
 
+.advantage-postion {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @media (max-width: 480px) {
   .cre-box {
     top: 0 !important;
@@ -144,4 +151,18 @@
   .cre-text {
     font-size: 14px !important;
   }
+  .advantage-postion {
+    position: static !important;
+    transform: none !important;
+  }
+  .img-hide {
+    display: none !important;
+  }
+  .adv-card-height {
+    min-height: auto !important;
+  }
+}
+
+.adv-card-height {
+  min-height: 170px;
 }

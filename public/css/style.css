@@ -11855,4 +11855,16 @@ header.in-box {
     justify-content: flex-start !important;
     padding: 0px 20px !important;
   }
+  .headFirstLetter {
+    display: none !important;
+  }
+  .h-block {
+    display: inline !important;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .h-block {
+    display: none !important;
+  }
 }

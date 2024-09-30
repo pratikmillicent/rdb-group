@@ -40,7 +40,7 @@ const AwardMovie = () => {
         <Heading headTitle="Awards" isMargin="0" />
       </div>
       <div className="row">
-        <div className="md:col-12 col-5">
+        <div className=" col-lg-5 col-12">
           <div className="fz-18 text-golden pt-40">Awards Winning</div>
           <div
             className=""
@@ -56,7 +56,7 @@ const AwardMovie = () => {
             Our Awards and Recognitions
           </div>
         </div>
-        <div className="md:col-12 col-7">
+        <div className=" col-lg-7 col-12">
           {awardsData.map((item, index) => (
             <div
               className="award-item d-flex align-items-start justify-content-between gap-3 p-3 border-bottom"
