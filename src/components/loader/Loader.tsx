@@ -41,8 +41,8 @@ function Loader() {
           <h2 className="load-text">
             <span>
               <Image
-                src="/rdb-group.svg"
-                style={{ width: "185px", height: "200px" }}
+                src="/rdb_logo-small.png"
+                style={{ width: "185px" }}
                 alt="logo"
                 width={800}
                 height={500}
