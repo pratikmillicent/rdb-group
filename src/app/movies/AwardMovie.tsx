@@ -41,11 +41,11 @@ const AwardMovie = () => {
       </div>
       <div className="row">
         <div className=" col-lg-5 col-12">
-          <div className="fz-18 text-golden pt-40">Awards Winning</div>
+          <div className="fz-18 text-golden pt-0 pt-md-40">Awards Winning</div>
           <div
-            className=""
+            className="award-mobile"
             style={{
-              fontSize: "48px",
+              fontSize: "36px",
               fontWeight: 500,
               lineHeight: "1.3em",
               letterSpacing: "0px",
@@ -77,7 +77,7 @@ const AwardMovie = () => {
                 <div
                   className="award-title"
                   style={{
-                    fontSize: "30px",
+                    fontSize: "24px",
                     fontWeight: 500,
                     lineHeight: "1.4em",
                     letterSpacing: "0px",
@@ -90,7 +90,7 @@ const AwardMovie = () => {
               <div
                 className="award-year text-golden"
                 style={{
-                  fontSize: "30px",
+                  fontSize: "24px",
                   fontWeight: 500,
                   lineHeight: "1.4em",
                   letterSpacing: "0px",

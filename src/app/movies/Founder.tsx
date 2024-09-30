@@ -1,6 +1,7 @@
 import Heading from "@/components/heading/Heading";
 import Image from "next/image";
 import React from "react";
+import "../fracto/howtowork2.css";
 
 function Founder() {
   return (

@@ -79,7 +79,6 @@
   text-align: justify !important;
 }
 
-
 .mask {
   position: relative;
   overflow: hidden;
@@ -93,14 +92,14 @@
 }
 
 .mask:hover i {
-  color: var(--golden)
+  color: var(--golden);
 }
 
 .mask:hover .cover {
   top: 0;
   margin-top: 0px;
 
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .cover {
@@ -109,7 +108,7 @@
   position: absolute;
   top: 100%;
 
-  transition: .7s;
+  transition: 0.7s;
 
   padding: 15px;
 
