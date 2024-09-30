@@ -10,13 +10,19 @@
   gap: 0;
 }
 
-@media (max-width: 480px) {
-  .swiper-arrow-mobile-left {
-    display: none !important;
-  }
+@media (max-width: 800px) {
   .galler-flex {
     display: block !important;
     gap: 20px !important;
+  }
+  .mobile-padding {
+    padding-top: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-arrow-mobile-left {
+    display: none !important;
   }
 }
 

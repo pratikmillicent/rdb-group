@@ -58,7 +58,7 @@ const OfficeAddress = () => {
     <div>
       <div className="">
         <Heading headTitle="Mumbai" textAlign="left" />
-        <div className="d-flex gap-3">
+        <div className="d-md-flex d-block gap-3">
           <div className="col-md-4" style={{ backgroundSize: "cover" }}>
             <img
               src={
