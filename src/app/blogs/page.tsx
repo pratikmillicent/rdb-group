@@ -16,7 +16,8 @@ const Blog = () => {
     <>
       <div style={{ position: "relative" }}>
         <Image
-          src="/assets/images/blog/blog-banner.png"
+          style={{ objectFit: "fill" }}
+          src="/assets/images/blog/banner.jpg"
           className="circle-img blog-banner banner"
           // className="circle-img blog-banner"
           alt="Landscape picture"

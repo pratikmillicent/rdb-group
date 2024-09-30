@@ -14,12 +14,22 @@ import AboutSectionImage from "./components/AboutSectionImage";
 import Director2 from "./components/Director2";
 
 const data = [
-  { value: 4500, label: "Home Secured" },
-  { value: 16, suffix: "k", label: "Lives Impacted" },
-  { value: 4, suffix: "m", label: "Cost Savings Achived" },
-  { value: 52, suffix: "k", label: "Agreements Finalized" },
-  { value: 100, suffix: "+", label: "Global Presence" },
-  { value: 2, suffix: "k", label: "Team Members" },
+  { value: 1000, suffix: "+", label: "Developer Relationships" },
+  { value: 5000, suffix: "+", label: "Happy Customers" },
+  {
+    value: 8,
+    suffix: (
+      <>
+        <span style={{ marginLeft: "4px" }}></span>
+        <span style={{ fontSize: "17px", fontWeight: 500, marginLeft: "4px" }}>
+          Cities + GCC
+        </span>
+      </>
+    ),
+    label: "Market Presence",
+  },
+  { value: 50, suffix: "+", label: "Projects Launched" },
+  { value: 200, suffix: "+", label: "Team Strength" },
 ];
 
 function About() {
@@ -69,6 +79,7 @@ function About() {
       <CallToAction />
       <Team />
       <div style={{ marginTop: "10px" }} ref={ref}>
+        {/* @ts-ignore */}
         {inView && <DashboardCount data={data} />}
       </div>
     </>

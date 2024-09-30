@@ -24,21 +24,21 @@ const Carroussel3D = dynamic(() => import("./components/Carousel"), {
 
 const data = [
   { value: 1000, suffix: "+", label: "Developer Relationships" },
-  { value: 5000, suffix: "+", label: "Channel partners" },
+  { value: 5000, suffix: "+", label: "Happy Customers" },
   {
     value: 8,
     suffix: (
       <>
-        <span style={{ marginLeft: "4px" }}> cities +</span>
+        <span style={{ marginLeft: "4px" }}></span>
         <span style={{ fontSize: "17px", fontWeight: 500, marginLeft: "4px" }}>
-          GCC
+          Cities + GCC
         </span>
       </>
     ),
     label: "Market Presence",
   },
-  { value: 1000, suffix: "+", label: "Brands serviced" },
   { value: 50, suffix: "+", label: "Projects Launched" },
+  { value: 200, suffix: "+", label: "Team Strength" },
 ];
 
 export default function Home() {
@@ -210,28 +210,30 @@ export default function Home() {
 
         <NewGroupGrid />
 
-        <div className="spotlight-heading">
-          <Heading headTitle="Spotlight" />
-        </div>
+        <div>
+          <div className="spotlight-heading">
+            <Heading headTitle="Spotlight" />
+          </div>
 
-        <div style={{ padding: "0" }}>
-          {/* {isMediumScreen ? ( */}
-          <div className="carousel-desktop d-none d-lg-block">
-            <Carroussel3D
-              cards={cards}
-              height="320px"
-              width="1000px"
-              margin="0 auto"
-              offset={100}
-              autoScrollInterval={5000}
-              showArrows={false}
-            />
+          <div style={{ padding: "0" }}>
+            {/* {isMediumScreen ? ( */}
+            <div className="carousel-desktop d-none d-lg-block">
+              <Carroussel3D
+                cards={cards}
+                height="320px"
+                width="1000px"
+                margin="0 auto"
+                offset={100}
+                autoScrollInterval={5000}
+                showArrows={false}
+              />
+            </div>
+            <div className="d-lg-none">
+              <MobileCarousel />
+            </div>
+            {/* ) : isSmallScreen ? ( */}
+            {/* ) : null} */}
           </div>
-          <div className="d-lg-none">
-            <MobileCarousel />
-          </div>
-          {/* ) : isSmallScreen ? ( */}
-          {/* ) : null} */}
         </div>
 
         {/* <NewMobile /> */}
@@ -255,10 +257,6 @@ let cards = [
   {
     key: 3,
     content: <Card imagen="/assets/home/Event3.jpg" />,
-  },
-  {
-    key: 4,
-    content: <Card imagen="https://fakeimg.pl/640x320" />,
   },
 ];
 

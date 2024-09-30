@@ -239,7 +239,7 @@ const Page = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {data?.map(item => (
+                  {data?.map((item) => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"

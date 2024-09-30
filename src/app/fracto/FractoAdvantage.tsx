@@ -163,7 +163,7 @@ const FractoAdvantage = () => {
               </div>
             </div>
             <img
-              src="assets/images/fracto/accessibility.png"
+              src="assets/images/fracto/accessibility.jpg"
               alt=""
               className="img-responsive"
               height="100%"

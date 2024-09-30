@@ -9,7 +9,7 @@ const Advantage = () => {
       <div
         className="row position-relative w-100 overflow-hidden p-0 m-0"
         style={{
-          background: "var(--background)",
+          background: "var(--navy)",
           paddingTop: "40px",
           paddingBottom: "40px",
           width: "100vw",
@@ -36,19 +36,19 @@ const Advantage = () => {
         >
           {[
             {
-              title: "Explore Opportunities",
+              title: "1. Explore Opportunities",
               text: "Accurate valuation services to help you understand the true value of your property.",
             },
             {
-              title: "Choose Your Investment",
+              title: "2. Choose Your Investment",
               text: "Explore lucrative real estate investment opportunities with high.",
             },
             {
-              title: "Invest Seamlessly",
+              title: "3. Invest Seamlessly",
               text: "Get expert legal advice to navigate the complexities of real estate transactions.",
             },
             {
-              title: "Earn Returns",
+              title: "4. Earn Returns",
               text: "Comprehensive property management services to maximize.",
             },
           ].map((item, idx) => (
@@ -57,8 +57,9 @@ const Advantage = () => {
               className="col-md-6 col-sm-6 col-12 text-navy p-md-3 p-1 adv-card-height"
             >
               <div
-                className="p-md-6 p-2 h-100 bg-white card-border"
+                className="p-md-6 p-3 h-100 card-border"
                 style={{
+                  backgroundColor: "var(--background)",
                   borderBottom: "5px solid var(--golden)",
                 }}
               >

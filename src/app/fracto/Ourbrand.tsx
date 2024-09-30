@@ -48,7 +48,7 @@ const Ourbrand = () => {
         <div className="row justify-content-center px-2 px-md-1">
           {clients.map((client, index) => (
             <div
-              className="col-lg-3 col-md-4 col-sm-4 col-6 p-1" // Added padding to create gap
+              className="col-lg-1 col-md-4 col-sm-4 col-6 p-1" // Added padding to create gap
               key={index}
             >
               <div

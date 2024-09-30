@@ -12,7 +12,7 @@ const page = () => {
     <>
       <div style={{ position: "relative" }}>
         <Image
-          src="/assets/images/career/banner.png"
+          src="/assets/images/career/banner-2.png"
           className="circle-img career-banner banner"
           // className="circle-img career-banner"
           alt="carrer page"
@@ -35,14 +35,30 @@ const page = () => {
         >
           <div
             style={{
+              // marginTop: "100px",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
               height: "100%",
-              padding: "0 20px",
+              // padding: "0 20px 20px 20px ",
             }}
-          ></div>
+          >
+            <p
+              className=""
+              style={{
+                marginBottom: "20px",
+                lineHeight: "56px",
+                letterSpacing: "-1px",
+                fontWeight: 600,
+                fontSize: "48px",
+                color: "#fff",
+                transition: "all",
+              }}
+            >
+              CAREERS
+            </p>
+          </div>
         </div>
       </div>
 

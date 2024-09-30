@@ -62,8 +62,10 @@ const Director2 = () => {
             <Col>
               <div style={{ paddingRight: "20px" }}>
                 <Image
-                  src="https://anarock.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstory-about.b32157e6.webp&w=750&q=75"
+                  // src="https://anarock.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstory-about.b32157e6.webp&w=750&q=75"
+                  src="/assets/images/about/leaders.png"
                   // className="circle-img blog-banner"
+                  style={{ height: "412px" }}
                   alt="Landscape picture"
                   width={800}
                   height={500}

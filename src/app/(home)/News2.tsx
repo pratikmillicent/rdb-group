@@ -10,8 +10,7 @@ const data = [
     id: 1,
     title: "Tising in our life became a info noise",
     // cover: "/assets/images/home/news2.jpg",
-    cover:
-      "https://gdoc.io/uploads/Twitter_Real_Estate_Newspaper_2_1600_900_1artboards_.jpg",
+    cover: "/assets/images/news/news-detail-1.jpg",
     author: "Admin",
     date: "August 6, 2021",
     category: "Real Estate",
@@ -21,8 +20,7 @@ const data = [
   {
     id: 2,
     title: "We create some things success in future growth",
-    cover:
-      "https://images.squarespace-cdn.com/content/5c115fec9d5abbba78a23c93/1597936991711-BPDT1FFFWNAGVDCD0EP7/How+Is+Commercial+Real+Estate+Valued-01.jpg?format=1500w&content-type=image%2Fjpeg",
+    cover: "/assets/images/news/news-detail-2.jpg",
     author: "Admin",
     date: "August 6, 2021",
     category: "Real Estate",
@@ -33,7 +31,7 @@ const data = [
     id: 3,
     title: "We create some things success in future growth",
     cover:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6oK8Ovykk09mja3ilBvtk2Y6e-zIZYtURvA&s",
+      "https://www.ttrweekly.com/site/wp-content/uploads/2020/09/melbourne.jpg",
     author: "Admin",
     date: "August 6, 2021",
     category: "Real Estate",
@@ -92,7 +90,7 @@ function News2() {
               id="content-carousel-container-unq-blog"
               className="swiper-container"
             >
-              {data?.map(item => (
+              {data?.map((item) => (
                 <SwiperSlide
                   key={item.id}
                   className="wow fadeInUp"

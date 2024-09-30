@@ -27,7 +27,7 @@ const data: DataItem[] = [
   },
   {
     id: 2,
-    image: "assets/images/home/realty-2.png",
+    image: "assets/images/home/realty-3.png",
     logo: "assets/images/home/rdb-realty.png",
     type: "Realty",
     title: "Aspect Bullion & Refinery",
