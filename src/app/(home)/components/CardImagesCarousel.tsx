@@ -239,11 +239,6 @@ const carouselData = [
   {
     date: "31 Oct 2022",
     title: "Lorem, ipsum dolor sit loerm",
-    // images: [
-    //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK92UVfWmKFimBK90JD7wPOjectFATDhpJ_g&s",
-    //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpEVj7-_LPKXkdXvEH40UXbPcTr43lXAnPYQ&s",
-    //   "assets/images/contact/contact.jpg",
-    // ],
     images: [
       "assets/images/contact/contact.jpg",
       "assets/images/contact/contact.jpg",

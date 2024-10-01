@@ -23,19 +23,31 @@ const Director2 = () => {
 
   const DhavalThakkar = (
     <>
-      <h3 className="text-center">Our Story</h3>
+      <h3 className="text-center" style={{ color: "var(--navy)" }}>
+        Our Story
+      </h3>
       <p>
-        With over 15 years of real estate experience, specialising in commercial
-        and retail spaces across Mumbai and Gujarat, Dhaval has personally led
-        project marketing initiatives for numerous commercial projects in and
-        around Mumbai. He has also delivered over 1.5 million sq. ft. across 14
-        cities in India and has strived to bring an element of professionalism
-        to the unorganized real estate sector. He has also been an ardent
-        supporter for the adoption of technology for better business management,
-        business expansion and social outreach, inspiring a sense of confidence
-        and reassurance among his 700+ happy customers. He is also moving into
-        newer facets of real estate as director of Fracrospace a new venture
-        dealing in fractional ownership of properties.
+        With over 20 years’ experience, Raj and Dhaval Thakkar are the driving
+        forces behind RD Group’s remarkable growth and industry leadership.
+        Their forward-thinking approach and shared vision have transformed the
+        company into a key player in commercial and retail real estate,
+        delivering over 2.7 million square feet of prime real estate across 14
+        cities in India.
+        <br />
+        Together, they bring a unique blend of strategic insight and innovation.
+        Raj’s ability to anticipate market trends and build strong, long-term
+        relationships based on trust and integrity has been instrumental in
+        shaping the company’s trajectory. Meanwhile, Dhaval’s passion for
+        integrating emerging technologies and embracing new opportunities has
+        fueled RD Group’s expansion, setting new standards in diversified
+        industries.
+        <br />
+        Their leadership is defined by a relentless pursuit of excellence, with
+        a focus on creating value-driven solutions and fostering a
+        collaborative, inclusive work culture. Raj and Dhaval’s visionary
+        approach continues to propel RD Group forward, redefining industry
+        benchmarks and positioning the company for sustained success in the
+        global marketplace.
       </p>
     </>
   );
@@ -58,7 +70,7 @@ const Director2 = () => {
     <div>
       <section className="pg-about pb-60 pt-60 sub-bg">
         <div className="container">
-          <Row>
+          <Row style={{ display: "flex", alignItems: "center" }}>
             <Col>
               <div style={{ paddingRight: "20px" }}>
                 <Image

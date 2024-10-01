@@ -50,7 +50,7 @@ function ParallaxSlider({ data }) {
     <header className="slider showcase-full">
       {loadSwiper && (
         <Swiper {...swiperOptions} className="swiper-container parallax-slider">
-          {data.map(item => (
+          {data.map((item) => (
             <SwiperSlide key={item.id}>
               <div
                 className="bg-img valign"
@@ -61,15 +61,18 @@ function ParallaxSlider({ data }) {
                   <div className="row">
                     <div className="col-lg-11 offset-lg-1">
                       <div className="caption">
-                        <h6
+                        {/* <h6
                           className="sub-title mb-30"
                           data-swiper-parallax="-1000"
                         >
                           © {item.year} <br /> {item.type}
-                        </h6>
+                        </h6> */}
                         <h1>
                           <Link href="/realty">
-                            <span data-swiper-parallax="-2000">
+                            <span
+                              style={{ fontSize: "40px" }}
+                              data-swiper-parallax="-2000"
+                            >
                               {item.title}
                             </span>
                           </Link>

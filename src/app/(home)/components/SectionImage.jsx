@@ -108,11 +108,14 @@ function SectionImage() {
             )}
             {selectedTab === "vision" && (
               <p className="text-white fz-16 fw-400 pb-5">
-                We are inspired by the power of innovation, the art of
-                storytelling, and the ability to shape environments that
-                influence people’s lives. Every project we undertake is driven
-                by our belief in creating lasting value and making a meaningful
-                difference in the industries we touch.
+                We are driven by a passion for excellence, innovation, and
+                making a meaningful impact. Our commitment to purpose-driven
+                ventures fuels our determination to lead across diverse
+                industries, constantly pushing the boundaries of what’s
+                possible. Guided by our vision to deliver exceptional value, we
+                thrive on challenges, embrace opportunities for growth, and
+                remain steadfast in our pursuit of creating a sustainable, more
+                innovative world for our stakeholders and communities.
               </p>
             )}
           </div>

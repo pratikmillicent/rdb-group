@@ -60,10 +60,11 @@ export default Realty;
 const data = [
   {
     id: 1,
-    background: "/assets/images/realty/banner-1.png",
-    year: "2023",
-    type: "Ongoing Project",
-    title: "Codeword Boss",
+    background: "/assets/images/realty/banner.jpg",
+    year: "",
+    type: "",
+    title:
+      "Taking real estate development to the next level with a customer-first attitude.",
   },
   {
     id: 2,
