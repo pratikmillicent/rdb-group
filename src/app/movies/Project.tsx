@@ -62,7 +62,7 @@ const Project = () => {
         slidesPerGroup: 4,
       },
     },
-    onSwiper: swiper => {
+    onSwiper: (swiper) => {
       setTimeout(() => {
         swiper.navigation.init();
         swiper.navigation.update();
@@ -140,7 +140,7 @@ const Project = () => {
                     id="content-carousel-container-unq-blog"
                     className="swiper-container"
                   >
-                    {completedProjectsData.map(item => (
+                    {completedProjectsData.map((item) => (
                       <SwiperSlide
                         key={item.id}
                         className="wow fadeInUp"
@@ -209,7 +209,7 @@ const Project = () => {
                     id="content-carousel-container-unq-blog"
                     className="swiper-container"
                   >
-                    {upcomingProjectsData.map(item => (
+                    {upcomingProjectsData.map((item) => (
                       <SwiperSlide
                         key={item.id}
                         className="wow fadeInUp"
@@ -279,7 +279,7 @@ export default Project;
 const completedProjectsData = [
   {
     id: 1,
-    image: "/assets/images/movie/jhamkudi.jpg",
+    image: "/assets/images/movie/project/movies-released.jpeg",
     description: "Jhamkudi",
   },
   // {
