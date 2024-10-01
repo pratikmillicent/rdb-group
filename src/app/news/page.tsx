@@ -71,22 +71,22 @@ export default News;
 const data = [
   {
     id: 1,
-    image: "/assets/images2/news1.webp",
+    // image: "/assets/images2/news1.webp",
     description:
       "Augmented Reality in Real Estate: Forecasting Market Trends in 2024",
-    link: "https://homecapital.in/augmented-reality-in-real-estate-forecasting-market-trends-in-2024/",
+    // link: "https://homecapital.in/augmented-reality-in-real-estate-forecasting-market-trends-in-2024/",
   },
   {
     id: 2,
-    image: "/assets/images2/news2.jpg",
+    // image: "/assets/images2/news2.jpg",
     description: "Best Place for Real Estate Investment in Mumbai...",
-    link: "https://www.hiranandani.com/is-thane-the-best-real-estate-investment-destination.aspx",
+    // link: "https://www.hiranandani.com/is-thane-the-best-real-estate-investment-destination.aspx",
   },
   {
     id: 3,
-    image: "/assets/images2/news3.webp",
+    // image: "/assets/images2/news3.webp",
     description:
       "Why Hire Real Estate Agent: Benefits & Reasons | Spiffy Spools",
-    link: "https://www.spiffyspools.com/spiffy-speak/why-hire-real-estate-agent/",
+    // link: "https://www.spiffyspools.com/spiffy-speak/why-hire-real-estate-agent/",
   },
 ];

@@ -141,7 +141,7 @@ function DarkVariantExample({ spliti, data }: any) {
                     id="content-carousel-container-unq-blog"
                     className="swiper-container"
                   >
-                    {data.map((item) => (
+                    {item.images.map((item) => (
                       <SwiperSlide
                         key={item.id}
                         className="wow fadeInUp mb-2"
@@ -150,7 +150,7 @@ function DarkVariantExample({ spliti, data }: any) {
                         <div className="item p-0 mb-5">
                           <div className="w-100 h-100">
                             <Image
-                              src={item.image}
+                              src={item}
                               alt={item.description}
                               style={{ height: "160px", width: "100%" }}
                               width={800}
@@ -238,83 +238,74 @@ export default CarouselEvent;
 const carouselData = [
   {
     date: "31 Oct 2022",
-    title: "Lorem, ipsum dolor sit loerm",
+    title: "Codeword Boss CP Meet",
     images: [
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
+      "/assets/images/news/events/Codeword Boss CP Meet/img (1).jpeg",
+      "/assets/images/news/events/Codeword Boss CP Meet/img (2).jpeg",
+      "/assets/images/news/events/Codeword Boss CP Meet/img (3).jpeg",
+      "/assets/images/news/events/Codeword Boss CP Meet/img (4).jpeg",
     ],
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm",
+    title: "Codeword Edge Channel Partner Meet",
     images: [
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
+      "/assets/images/news/events/Codeword Edge Channel Partner Meet/img (1).JPG",
+      "/assets/images/news/events/Codeword Edge Channel Partner Meet/img (2).JPG",
+      "/assets/images/news/events/Codeword Edge Channel Partner Meet/img (3).JPG",
+      "/assets/images/news/events/Codeword Edge Channel Partner Meet/img (4).JPG",
+      "/assets/images/news/events/Codeword Edge Channel Partner Meet/img (5).JPG",
     ],
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm ",
+    title: "Codeword Edge Pooja",
     images: [
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
+      "/assets/images/news/events/Codeword Edge Pooja/img (1).JPG",
+      "/assets/images/news/events/Codeword Edge Pooja/img (2).JPG",
     ],
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm ",
+    title: "Estella Success Party",
     images: [
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
+      "/assets/images/news/events/Estella Success Party/img (1).jpeg",
+      "/assets/images/news/events/Estella Success Party/img (2).jpeg",
+      "/assets/images/news/events/Estella Success Party/img (3).jpeg",
+      "/assets/images/news/events/Estella Success Party/img (4).jpeg",
+      "/assets/images/news/events/Estella Success Party/img (5).jpeg",
+      "/assets/images/news/events/Estella Success Party/img (6).jpeg",
+      "/assets/images/news/events/Estella Success Party/img (7).jpeg",
+      "/assets/images/news/events/Estella Success Party/img (8).jpeg",
+      "/assets/images/news/events/Estella Success Party/img (9).jpeg",
     ],
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm ",
+    title: "Jhamkudi Movie Mumbai Premier",
     images: [
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
+      "/assets/images/news/events/Jhamkudi Movie Mumbai Premier/img (1).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Mumbai Premier/img (2).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Mumbai Premier/img (3).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Mumbai Premier/img (4).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Mumbai Premier/img (5).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Mumbai Premier/img (6).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Mumbai Premier/img (7).JPG",
     ],
   },
   {
     date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm ",
+    title: "Jhamkudi Movie Ahemdabad Premier",
     images: [
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-    ],
-  },
-  {
-    date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm ",
-    images: [
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-    ],
-  },
-  {
-    date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm ",
-    images: [
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-    ],
-  },
-  {
-    date: "1 Aug 2023",
-    title: "Lorem, ipsum dolor sit loerm ",
-    images: [
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
-      "assets/images/contact/contact.jpg",
+      "/assets/images/news/events/Jhamkudi Movie Ahemdabad Premier/img (1).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Ahemdabad Premier/img (2).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Ahemdabad Premier/img (3).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Ahemdabad Premier/img (4).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Ahemdabad Premier/img (5).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Ahemdabad Premier/img (6).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Ahemdabad Premier/img (7).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Ahemdabad Premier/img (8).JPG",
+      "/assets/images/news/events/Jhamkudi Movie Ahemdabad Premier/img (9).JPG",
     ],
   },
 ];
