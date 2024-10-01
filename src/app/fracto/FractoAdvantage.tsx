@@ -247,7 +247,7 @@ const FractoAdvantage = () => {
               </div>
             </div>
             <img
-              src="assets/images/fracto/end-to-end.jpg"
+              src="assets/images/fracto/transparency2.jpg"
               alt=""
               className="img-responsive"
               height="100%"
