@@ -12,6 +12,8 @@ import { useInView } from "react-spring";
 import { lazy } from "react";
 import AboutSectionImage from "./components/AboutSectionImage";
 import Director2 from "./components/Director2";
+import Image from "next/image";
+import Heading from "@/components/heading/Heading";
 
 const data = [
   { value: 1000, suffix: "+", label: "Developer Relationships" },
@@ -36,16 +38,15 @@ function About() {
   const [ref, inView] = useInView({ once: true });
   return (
     <>
-      <div style={{ position: "relative", height: "100dvh" }}>
-        <video
-          className="mw-100 w-100 d-block hero-height"
-          src="/assets/video/AboutHero.mp4"
-          autoPlay
-          muted
-          playsInline
-          loop
-          preload="auto"
-          style={{ height: "100%" }}
+      <div style={{ position: "relative" }}>
+        <Image
+          src="/assets/images/about/banner.png"
+          className="w-100 d-block  news-banner banner hero-height"
+          // className="w-100 d-block  news-banner hero-height"
+          alt="News Banner"
+          // style={{objectFit : 'cover'}}
+          width={800}
+          height={500}
         />
         <div
           style={{
@@ -67,9 +68,11 @@ function About() {
               justifyContent: "center",
               alignItems: "center",
               height: "100%",
-              padding: "0 20px",
+              // padding: "0 20px",
             }}
-          ></div>
+          >
+            <Heading headTitle="About Us" color="white" isSpace={false} />
+          </div>
         </div>
       </div>
 

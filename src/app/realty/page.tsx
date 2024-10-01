@@ -18,12 +18,57 @@ import ContactComponent from "../contact-us/components/ContactComponent";
 import MissionVision from "./MissionVision";
 import MissionVisionMobile from "./MissionVisionMobile";
 import Heading from "@/components/heading/Heading";
+import Image from "next/image";
 
 const Realty = () => {
   return (
     <>
       <main className="bg- text-black">
-        <FrameSlider data={data} />
+        <div style={{ position: "relative" }}>
+          <Image
+            src="/assets/images/realty/banner.jpg"
+            className="w-100 d-block  news-banner banner hero-height"
+            // className="w-100 d-block  news-banner hero-height"
+            alt="News Banner"
+            // style={{objectFit : 'cover'}}
+            width={800}
+            height={500}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              background: "rgba(0,0,0, .3)",
+              // background:
+              //   "linear-gradient(117deg, rgba(23, 38, 57, 90%) 0%, rgba(1, 1, 1, 50%) 75%)",
+              zIndex: 1,
+              pointerEvents: "none",
+            }}
+          >
+            <div
+              className="container"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                // alignItems: "center",
+                // paddingRight: "320px",
+                height: "100%",
+                // padding: "0 20px",
+              }}
+            >
+              <p style={{ fontSize: "46px", color: "#FFF" }}>
+                Taking real estate
+                <br /> development to the next level
+                <br /> with a customer-first attitude
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* <FrameSlider data={data} /> */}
         <div className="container">
           <Heading headTitle="Overview" />
           <p className="">

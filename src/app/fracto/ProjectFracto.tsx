@@ -35,11 +35,11 @@ const ProjectFracto = () => {
   };
   return (
     <div className="container">
-      <Heading headTitle="Project" />
+      <Heading headTitle="Projects" />
       <div className="gallery " style={{ overflowX: "hidden" }}>
         <div className="row grid md-marg">
           <Swiper {...swiperOptions}>
-            {Fractoproject.map(item => (
+            {Fractoproject.map((item) => (
               <div
                 className={`col-lg-4 col-md-6 items ${item.filter} info-overlay mb-0 px-2`}
                 key={item.id}

@@ -60,6 +60,7 @@
     padding: 0px;
   }
 }
+
 /* Gallery  */
 
 /* @media only screen and (max-width: 576px) {
@@ -71,5 +72,59 @@
   .portfolio-fixed .right {
     padding: 0px !important;
     padding-left: 25px !important;
+  }
+}
+
+.swiper-button-next:after {
+  font-size: 30px;
+}
+
+.swiper-button-prev:after {
+  font-size: 30px;
+}
+
+.galler-flex {
+  display: flex;
+  gap: 0;
+}
+
+@media (max-width: 800px) {
+  .galler-flex {
+    display: block !important;
+    gap: 20px !important;
+  }
+
+  .mobile-padding {
+    padding-top: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-arrow-mobile-left {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .swiper-arrow-mobile-left {
+    left: -30px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-arrow-mobile-right {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .swiper-arrow-mobile-right {
+    right: -36px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .swiper-arrow-mobile-right {
+    right: -24px !important;
   }
 }

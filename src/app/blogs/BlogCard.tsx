@@ -9,7 +9,7 @@ function BlogCard({ item }) {
         <div className="row rest">
           <div className="col-md-6">
             <div className="img">
-              <img src={item?.image} alt="" />
+              <img style={{ height: "300px" }} src={item?.image} alt="" />
             </div>
           </div>
           <div className="col-md-6 valign">

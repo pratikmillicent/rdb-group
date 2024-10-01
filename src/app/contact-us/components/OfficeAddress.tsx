@@ -39,7 +39,7 @@ const OfficeAddress = () => {
         "C 2/01,The First Commercial Complex,B/H Keshav Baug Party,Plot Near Shivalik High Street,Vastrapur, Ahmedabad - 380015",
       phone: "+1 123-456-7890",
       email: "info@example.com",
-      image: "/assets/social-media/ahmedabad.png",
+      image: "/assets/social-media/ahmedabad.webp",
     },
     // {
     //   branch: "Dubai",
@@ -58,7 +58,7 @@ const OfficeAddress = () => {
         <div className="d-md-flex d-block gap-3">
           <div className="col-md-4" style={{ backgroundSize: "cover" }}>
             <img
-              src={"/assets/social-media/CST-station-Mumbai.jpg"}
+              src={"/assets/social-media/CST-Station-Mumbai.jpg"}
               alt=""
               className="img-fluid"
               style={{ marginBottom: "15px", height: "250px" }}
@@ -94,7 +94,7 @@ const OfficeAddress = () => {
           </div>
           <div className="col-md-4" style={{ backgroundSize: "cover" }}>
             <img
-              src={"/assets/social-media/sea link.webp"}
+              src={"/assets/social-media/mumbai-2.webp"}
               alt=""
               className="img-fluid"
               style={{ marginBottom: "15px", height: "250px" }}
@@ -172,7 +172,7 @@ const OfficeAddress = () => {
         <div className="d-flex gap-3">
           <div className="col-md-4" style={{ backgroundSize: "cover" }}>
             <img
-              src={"/assets/social-media/dubai.jpg"}
+              src={"/assets/social-media/dubai-2.jpg"}
               alt=""
               className="img-fluid"
               style={{ marginBottom: "15px", height: "250px" }}
