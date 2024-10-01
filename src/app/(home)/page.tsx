@@ -65,12 +65,12 @@ export default function Home() {
       link: "/about",
     },
     {
-      src: "/assets/video/properties-v2.mp4",
+      src: "/assets/video/properties.mp4",
       text: "Properties",
       link: "https://rdbrothers.com",
     },
     {
-      src: "/assets/video/reality.m4v",
+      src: "/assets/video/realty.mkv",
       text: "Realty",
       link: "/realty",
     },
@@ -210,9 +210,9 @@ export default function Home() {
 
         <NewGroupGrid />
 
-        <div>
+        <div style={{ background: "var(--background)", padding: "60px 0" }}>
           <div className="spotlight-heading">
-            <Heading headTitle="Spotlight" />
+            <Heading headTitle="Spotlight" isMargin="false" />
           </div>
 
           <div style={{ padding: "0" }}>

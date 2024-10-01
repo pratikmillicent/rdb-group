@@ -83,14 +83,14 @@ function SectionImage() {
           <div className={`tab-content ${animate ? "slide-in" : ""}`}>
             {selectedTab === "overview" && (
               <p className="text-white fz-16 fw-400 w-100">
-                We aspire to be a leading force in both real estate and the
-                entertainment industry, continuously pushing the boundaries of
-                innovation and creativity. Our goal is to deliver value by
-                shaping transformative real estate projects and create films
-                that captivate audiences worldwide. By bridging the gap between
-                technology, finance, and creativity, we aim to revolutionize the
-                sectors we are present by ensuring our work creates a lasting
-                impact
+                We aspire to be a global leader, setting new standards of
+                excellence and innovation across diverse industries. With a
+                relentless focus on purpose-driven ventures, we aim to create
+                lasting value for our stakeholders, inspire progress, and
+                positively impact the global marketplace. Through our visionary
+                leadership and commitment to innovation, we strive to shape a
+                future where every endeavor contributes meaningfully to the
+                world.
               </p>
             )}
             {selectedTab === "mission" && (

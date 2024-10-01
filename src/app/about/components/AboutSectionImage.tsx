@@ -5,7 +5,7 @@ import "../../(home)/SectionImage.css";
 const images = {
   overview: "/assets/images/home/about3.jpg",
   vision: "/assets/images/about/vision.jpeg",
-  mission: "/assets/images/about/mission.jpg",
+  mission: "/assets/images/about/mission-2.jpg",
 };
 
 function AboutSectionImage() {
@@ -41,7 +41,7 @@ function AboutSectionImage() {
   };
 
   useEffect(() => {
-    parallaxie(".back-image.parallaxie", 0.35);
+    parallaxie(".back-image.parallaxie", 0.8);
   }, [currentImage]);
 
   return (
@@ -73,17 +73,14 @@ function AboutSectionImage() {
         <div className={`tab-content ${animate ? "slide-in" : ""}`}>
           {selectedTab === "vision" && (
             <p className="text-white fz-16 fw-400 w-100">
-              Our vision is to streamline real estate with efficient processes
-              and cutting-edge technology, while leading the global marketplace
-              with excellence, innovation, and purpose-driven ventures
+              To lead the global marketplace with diversified excellence,
+              innovation, and purpose-driven ventures.
             </p>
           )}
           {selectedTab === "mission" && (
             <p className="text-white fz-16 fw-400">
-              Our vision is to elevate property management by blending
-              exceptional professionalism with Indian warmth. We aim to deliver
-              outstanding service across India and globally, while driving
-              innovation and excellence in every aspect of our business.
+              Our mission is to deliver exceptional value and innovation across
+              diverse industries and lead with a purpose.
             </p>
           )}
         </div>

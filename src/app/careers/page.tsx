@@ -88,19 +88,20 @@ const page = () => {
                           style={{ color: "var(--navy)" }}
                         >
                           <Heading
-                            headTitle="Become part of a team that strives for Excellence!"
+                            headTitle="Empower Your Career, Build with Purpose"
                             fontSize="40px"
                             textAlign="left"
                             isMargin="0"
                           />
 
                           <p>
-                            Our greatest asset is our team. We’re dedicated to a
-                            dynamic environment where innovation and expertise
-                            drive success. Enjoy opportunities for growth,
-                            client exposure, and skill development in a
-                            collaborative culture. Ready to make an impact in
-                            real estate? Explore career opportunities with us.
+                            We believe in nurturing talent and fostering growth.
+                            Our employees are the heart of our success, and
+                            their voices reflect the dynamism, inclusivity, and
+                            forward-thinking culture we cultivate. Hear from our
+                            team as they share their journeys, experiences, and
+                            the impact they've made in reshaping a progressive
+                            future with us.
                           </p>
                         </div>
                         <div className="col-lg-6">

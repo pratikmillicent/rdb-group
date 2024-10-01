@@ -19,7 +19,7 @@ interface DataItem {
 const data: DataItem[] = [
   {
     id: 1,
-    image: "assets/images/home/properties.png",
+    image: "assets/images/home/properties-3.png",
     logo: "assets/images/home/rdb-property.png",
     type: "Properties",
     title: "Aspect Global Ventures Pvt.Ltd.",
@@ -44,7 +44,7 @@ const data: DataItem[] = [
 
   {
     id: 4,
-    image: "assets/images/home/movie.webp",
+    image: "assets/images/home/movies.png",
     logo: "assets/images/home/rdb-movie.png",
     type: "Movies",
     title: "Aspect Infrastructure",

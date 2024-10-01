@@ -9,99 +9,44 @@ const AwardMovie = () => {
       id: "01",
       title: "Best Actress - Silver Lotus Award",
       year: 2024,
+      img: "/assets/images/movie/awards/7.jpg",
+      recipient: "Manasi Parekh",
+      movie: "Jamkudi",
     },
     {
       id: "02",
       title: "Best Costume Design - Silver Lotus Award",
       year: 2024,
+      img: "/assets/images/movie/awards/8.jpg",
+      recipient: "Niki Joshi",
+      movie: "Jamkudi",
     },
     {
       id: "03",
       title:
         "Best feature film Promoting National, Social and Enviorment Values - Silver Lotus Award",
       year: 2024,
+      img: "/assets/images/movie/awards/6.jpg",
+      recipient: "Viral Shah",
+      movie: "Jamkudi",
     },
   ];
 
   return (
     <div className="container">
-      <div
-        className="bg-navy"
-        style={{
-          background: "url(/assets/images/movie/bg-leaf2.svg)",
-          backgroundRepeat: "no-repeat",
-          height: "30vh",
-          backgroundSize: "contain",
-          display: "flex",
-          alignItems: "center",
-          // backgroundColor: "var(--navy)",
-        }}
-      >
-        <Heading headTitle="Awards" isMargin="0" />
+      <div>
+        <Heading headTitle="Awards" />
       </div>
       <div className="row">
-        <div className=" col-lg-5 col-12">
-          <div className="fz-18 text-golden pt-0 pt-md-40">Awards Winning</div>
-          <div
-            className="award-mobile"
-            style={{
-              fontSize: "36px",
-              fontWeight: 500,
-              lineHeight: "1.3em",
-              letterSpacing: "0px",
-              textTransform: "uppercase",
-              color: "var(--navy)",
-            }}
-          >
-            Our Awards and Recognitions
+        {awardsData.map((award, index) => (
+          <div className="col-4 text-center" key={index}>
+            <img src={award.img} alt={award.title} />
+            <span className="award-info">
+              <span>{award.recipient}</span>
+              <i className="text-golden">{award.movie}</i>
+            </span>
           </div>
-        </div>
-        <div className=" col-lg-7 col-12">
-          {awardsData.map((item, index) => (
-            <div
-              className="award-item d-flex align-items-start justify-content-between gap-3 p-3 border-bottom"
-              key={index}
-            >
-              <div className="d-flex align-items-start gap-3">
-                <div
-                  className="award-id"
-                  style={{
-                    fontSize: "16px",
-                    fontWeight: 500,
-                    lineHeight: "1.7em",
-                    color: "var(--golden)",
-                  }}
-                >
-                  ({item.id})
-                </div>
-                <div
-                  className="award-title"
-                  style={{
-                    fontSize: "24px",
-                    fontWeight: 500,
-                    lineHeight: "1.4em",
-                    letterSpacing: "0px",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  {item.title}
-                </div>
-              </div>
-              <div
-                className="award-year text-golden"
-                style={{
-                  fontSize: "24px",
-                  fontWeight: 500,
-                  lineHeight: "1.4em",
-                  letterSpacing: "0px",
-                  textTransform: "uppercase",
-                }}
-              >
-                {item.year}
-              </div>
-            </div>
-          ))}
-        </div>
+        ))}
       </div>
     </div>
   );

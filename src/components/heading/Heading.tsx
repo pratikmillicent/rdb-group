@@ -29,7 +29,10 @@ const Heading: React.FC<HeadingProps> = ({
 
   return (
     <div
-      style={{ textAlign, width: "fit-content", margin: "0 auto" }}
+      style={{
+        width: "fit-content",
+        margin: textAlign === "center" ? "0 auto" : "0",
+      }}
       className="position-relative"
     >
       <h2

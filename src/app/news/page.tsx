@@ -11,6 +11,7 @@ import Awards from "./components/Awards";
 import LatestNews from "./LatestNews";
 import News2 from "../(home)/News2";
 import AwardGallery from "./components/Award2";
+import AwardMovie from "../movies/AwardMovie";
 
 const News = () => {
   return (
@@ -56,7 +57,8 @@ const News = () => {
       <div className="container">
         <News2 />
 
-        <AwardGallery />
+        <AwardMovie />
+        {/* <AwardGallery /> */}
         <Heading headTitle="Gallery" />
         <CarouselEvent data={data} />
       </div>
