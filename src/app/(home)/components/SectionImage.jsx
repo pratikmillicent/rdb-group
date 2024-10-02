@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import "../SectionImage.css";
 
 const images = {
-  overview: "/assets/images/home/aspirations-2.webp",
-  vision: "/assets/images/home/what-drives-us.webp",
-  mission: "/assets/images/home/future-outlook-2.png",
+  overview: "/assets/images/home/aspirations-5.png",
+  vision: "/assets/images/home/what-drives-us.png",
+  mission: "/assets/images/home/future-outlook.png",
 };
 
 function SectionImage() {

@@ -1,26 +1,11 @@
 "use client";
 import React from "react";
-import About from "./About";
-import Mission from "./Project";
-import Movieteam from "./Movieteam";
-import Awards from "../news/components/Awards";
-import LatestNews from "../news/LatestNews";
-// import Contact from "./Contact";
-import OurProjects from "./OurProjects";
-import Enquiries from "./Enquiries";
-import Contact from "../fracto/Contact";
-import TeamSection2 from "../about/components/TeamSection2";
-
-import MovieSlider from "./MovieSlider";
 import Project from "./Project";
 import AwardMovie from "./AwardMovie";
 import Review from "./Review";
 import ContactComponent from "../contact-us/components/ContactComponent";
-import Movieteam2 from "./Movieteam2";
-import Gallery from "./Gallery";
 import Gallery2 from "./Gallery2";
 import AboutUs from "./AboutUs";
-import MobileMovieTeam from "./MobileMovieTeam";
 import Founder from "./Founder";
 
 const page = () => {
@@ -28,7 +13,14 @@ const page = () => {
     <div className="w-100">
       <div className="hero-responsive">
         <img
-          style={{ objectFit: "fill" }}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
           src="/assets/images/movie/gallary.png"
           alt="banner"
         />

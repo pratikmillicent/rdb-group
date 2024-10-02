@@ -52,111 +52,104 @@ const AboutUs = () => {
         data-bgcolor="var(--background)"
         style={{
           backgroundColor: "var(--background)",
-          backgroundSize: "cover",
+
           borderBottom: "3px solid var(--golden)",
         }}
       >
-        <div
-          className="container"
-          style={{ backgroundSize: "cover", padding: "90px 0" }}
-        >
+        <div className="container">
           <div
-            className="row align-items-center"
-            style={{ backgroundSize: "cover", marginBottom: "60px" }}
+            style={{
+              padding: "90px 0",
+            }}
           >
-            <div className="col-md-4" style={{ backgroundSize: "cover" }}>
-              {/* <span
+            <div
+              className="row align-items-center"
+              style={{ marginBottom: "60px" }}
+            >
+              <div className="col-md-4" style={{}}>
+                {/* <span
                 className="p-title wow fadeInUp animated"
                 style={{ visibility: "visible", animationName: "fadeInUp" }}
               >
                 Welcome
               </span> */}
-              <br />
-              <div style={{ width: "fit-content", position: "relative" }}>
-                <h2
-                  className="wow fadeInUp animated"
+                <br />
+                <div style={{ width: "fit-content", position: "relative" }}>
+                  <h2
+                    className="wow fadeInUp animated"
+                    style={{
+                      visibility: "visible",
+                      animationName: "fadeInUp",
+                      color: "#000",
+                    }}
+                  >
+                    About Us
+                  </h2>
+                  <div
+                    className="border-line position-absolute "
+                    style={{
+                      // width: borderWidth,
+                      left: "12.5%",
+                      right: "12.5%",
+                      top: "100%",
+                    }}
+                  ></div>
+                </div>
+                <div className="small-border sm-left" style={{}}></div>
+              </div>
+              <div className="col-md-8" style={{}}>
+                <p
+                  className="wow fadeInRight animated"
                   style={{
                     visibility: "visible",
-                    animationName: "fadeInUp",
-                    color: "#000",
+                    animationName: "fadeInRight",
+                    // color: "#000",
+                    fontWeight: "400",
                   }}
                 >
-                  About Us
-                </h2>
-                <div
-                  className="border-line position-absolute "
-                  style={{
-                    // width: borderWidth,
-                    left: "12.5%",
-                    right: "12.5%",
-                    top: "100%",
-                  }}
-                ></div>
+                  RD Movies, the entertainment arm of RD Brothers, has made a
+                  remarkable impact in the film industry by producing critically
+                  acclaimed and commercially successful films. With a blend of
+                  creative storytelling and sharp business acumen, we aim to
+                  deliver cinematic experiences that resonate both culturally
+                  and commercially. Our production house is responsible for
+                  blockbuster films like Kutch Express as well as ventures into
+                  new genres with our latest horror comedy release, Jhamkuddi.
+                  At RD Movies, we are more than just filmmakers—we are
+                  storytellers committed to creating unique, compelling
+                  narratives for audiences worldwide.
+                </p>
               </div>
-              <div
-                className="small-border sm-left"
-                style={{ backgroundSize: "cover" }}
-              ></div>
             </div>
-            <div className="col-md-8" style={{ backgroundSize: "cover" }}>
-              <p
-                className="wow fadeInRight animated"
-                style={{
-                  visibility: "visible",
-                  animationName: "fadeInRight",
-                  // color: "#000",
-                  fontWeight: "400",
-                }}
-              >
-                RD Movies, the entertainment arm of RD Brothers, has made a
-                remarkable impact in the film industry by producing critically
-                acclaimed and commercially successful films. With a blend of
-                creative storytelling and sharp business acumen, we aim to
-                deliver cinematic experiences that resonate both culturally and
-                commercially. Our production house is responsible for
-                blockbuster films like Kutch Express as well as ventures into
-                new genres with our latest horror comedy release, Jhamkuddi. At
-                RD Movies, we are more than just filmmakers—we are storytellers
-                committed to creating unique, compelling narratives for
-                audiences worldwide.
-              </p>
-            </div>
+            <div className="spacer-double" style={{}}></div>
           </div>
-          <div
-            className="spacer-double"
-            style={{ backgroundSize: "cover" }}
-          ></div>
         </div>
       </section>
 
       <section
         className="no-top relative z1000"
         style={{
-          backgroundSize: "cover",
           backgroundImage: "linear-gradient(var(--navy))",
           transform: "translateY(-90px)",
         }}
       >
-        <div className="container" style={{ backgroundSize: "cover" }}>
-          <div
-            className="row"
-            style={{ backgroundSize: "cover", display: "flex", gap: "40px" }}
-          >
+        <div className="container" style={{}}>
+          <div className="row" style={{ display: "flex", gap: "40px" }}>
             <div
               className="col-md-5 mb-sm-30 wow fadeInRight animated"
               style={{
                 background: "var(--navy)",
                 // border: "3px solid var(--golden)",
-                backgroundSize: "cover",
+
                 visibility: "visible",
                 animationDelay: "0.2s",
                 animationName: "fadeInRight",
                 padding: "20px",
               }}
             >
-              <div className="mask" style={{ backgroundSize: "cover" }}>
-                <div className="cover" style={{ backgroundSize: "cover" }}>
-                  <div className="c-inner" style={{ backgroundSize: "cover" }}>
+              <div className="" style={{}}>
+                <div className="" style={{}}>
+                  <div className="c-inner" style={{}}>
                     <h4>
                       <i className="icofont-people"></i>
                       <span style={{ color: "var(--golden)" }}>Mission</span>
@@ -167,10 +160,7 @@ const AboutUs = () => {
                       captivate audiences worldwide and contribute to the growth
                       of the entertainment industry.
                     </p>
-                    <div
-                      className="spacer20"
-                      style={{ backgroundSize: "cover" }}
-                    ></div>
+                    <div className="spacer20" style={{}}></div>
                   </div>
                 </div>
               </div>
@@ -180,16 +170,16 @@ const AboutUs = () => {
               style={{
                 background: "var(--navy)",
                 // border: "3px solid var(--golden)",
-                backgroundSize: "cover",
+
                 visibility: "visible",
                 animationDelay: "0.4s",
                 animationName: "fadeInRight",
                 padding: "20px",
               }}
             >
-              <div className="mask" style={{ backgroundSize: "cover" }}>
-                <div className="cover" style={{ backgroundSize: "cover" }}>
-                  <div className="c-inner" style={{ backgroundSize: "cover" }}>
+              <div className="" style={{}}>
+                <div className="" style={{}}>
+                  <div className="c-inner" style={{}}>
                     <h4>
                       <i className="icofont-home"></i>
                       <span style={{ color: "var(--golden)" }}>Vision</span>
@@ -200,10 +190,7 @@ const AboutUs = () => {
                       commercial level, while fostering innovation in film
                       production.
                     </p>
-                    <div
-                      className="spacer20"
-                      style={{ backgroundSize: "cover" }}
-                    ></div>
+                    <div className="spacer20" style={{}}></div>
                   </div>
                 </div>
               </div>

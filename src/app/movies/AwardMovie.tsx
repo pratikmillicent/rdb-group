@@ -37,9 +37,9 @@ const AwardMovie = () => {
       <div>
         <Heading headTitle="Awards" />
       </div>
-      <div className="row">
+      <div className="row d-flex flex-column flex-md-row">
         {awardsData.map((award, index) => (
-          <div className="col-4 text-center" key={index}>
+          <div className="col-sm-1 col-md-4 text-center" key={index}>
             <img src={award.img} alt={award.title} />
             <span className="award-info">
               <span>{award.recipient}</span>

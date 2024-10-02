@@ -70,7 +70,10 @@ const Director2 = () => {
     <div>
       <section className="pg-about pb-60 pt-60 sub-bg">
         <div className="container">
-          <Row style={{ display: "flex", alignItems: "center" }}>
+          <Row
+            className="flex-column flex-md-row"
+            style={{ display: "flex", alignItems: "center" }}
+          >
             <Col>
               <div style={{ paddingRight: "20px" }}>
                 <Image

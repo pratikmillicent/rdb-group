@@ -46,7 +46,7 @@ export default function Home() {
   const isSmallScreen = useMediaQuery("(max-width: 768px)");
 
   const [loopCount, setLoopCount] = useState(0);
-  const [videoSrc, setVideoSrc] = useState("/assets/video/HeroVideo1.mp4");
+  const [videoSrc, setVideoSrc] = useState("/assets/video/properties.mp4");
   const [headingText, setHeadingText] = useState("");
   const [linkHref, setLinkHref] = useState("/about");
   const [displayedText, setDisplayedText] = useState("");
@@ -55,7 +55,7 @@ export default function Home() {
 
   const videoData = [
     {
-      src: "/assets/video/video-5.mp4",
+      src: "/assets/video/properties.mp4",
       text: `Crafted with <span
          style="
               font-weight : 500
