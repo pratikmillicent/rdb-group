@@ -15,7 +15,7 @@ const ProjectFracto = () => {
     },
     slidesPerView: 3,
     loop: true,
-    spaceBetween: 80,
+    spaceBetween: 40,
     speed: 1000,
     breakpoints: {
       0: {
@@ -45,46 +45,127 @@ const ProjectFracto = () => {
                 key={item.id}
               >
                 <SwiperSlide>
-                  <div className="item-img o-hidden">
-                    <Link href="fracto/FracProjDetail" className="imago wow">
-                      <div className="inner wow">
-                        <div className="img img-container">
-                          <Image
-                            src={item.image}
-                            alt="image"
-                            style={{
-                              height: "300px",
-                              objectFit: "cover",
-                              width: "100%",
-                              borderRadius: "8px",
-                            }}
-                            width={800}
-                            height={500}
-                          />
+                  <div
+                    className="item pb-5 mb-3"
+                    style={{
+                      background: "var(--background)",
+                    }}
+                  >
+                    <div>
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        style={{
+                          height: "320px",
+                          objectFit: "cover",
+                          width: "100%",
+                        }}
+                        width={800}
+                        height={500}
+                      />
+                    </div>
+                    <div
+                      className="cont mt-10"
+                      style={{
+                        padding: "10px",
+                      }}
+                    >
+                      {/* <h6 className="fw-600">{item.description}</h6> */}
+                      <div
+                        className="w-layout-grid grid-30 d-flex"
+                        style={{
+                          justifyContent: "center",
+                          alignItems: "center",
+                          paddingBottom: "10px",
+                          flexWrap: "wrap",
+                        }}
+                      >
+                        <div
+                          style={{
+                            width: "50%",
+                            paddingLeft: "20px",
+                            paddingBottom: "10px",
+                          }}
+                          id="w-node-_9464ec8f-844b-84ac-117f-88e55f50cc08-4edefbb9"
+                          className="div-block-103"
+                        >
+                          <div className="text-block-109 ">
+                            Gross Entry Yield
+                          </div>
+                          <div id="entry-yield" className="text-golden">
+                            8.1%
+                          </div>
                         </div>
-                        {/* <img src={item.image} alt="image" /> */}
-                      </div>
-                    </Link>
-                    <div className="info">
-                      <div className="effect-caption py-1">
-                        <div className="text-left">
-                          <h6 className="m-0">Monte South, Byculla (W)</h6>
+                        <div
+                          style={{
+                            width: "50%",
+                            paddingLeft: "20px",
+                            paddingBottom: "10px",
+                          }}
+                          id="w-node-_18c36b8a-daf7-0b23-dc5e-4dceeb9f9c1d-4edefbb9"
+                          className="div-block-103"
+                        >
+                          <div className="text-block-109">Asset Value</div>
+                          <div id="asset-value" className="text-golden">
+                            ₹39,20,00,000
+                          </div>
                         </div>
-
-                        <div className="effect-description text-left">
-                          <p
+                        <div
+                          style={{
+                            width: "50%",
+                            paddingLeft: "20px",
+                            // paddingBottom: "10px",
+                          }}
+                          id="w-node-_3f2d2efa-a90b-f5e1-e6fb-00dd44e11071-4edefbb9"
+                          className="div-block-103"
+                        >
+                          <div className="text-block-109">Target IRR</div>
+                          <div id="target-irr" className="text-golden">
+                            13%
+                          </div>
+                        </div>
+                        <div
+                          style={{
+                            width: "50%",
+                            paddingLeft: "20px",
+                            // paddingBottom: "10px",
+                          }}
+                        >
+                          <Link
+                            href={item.image}
+                            className="mt-6 ls1 sub-title fw-500"
                             style={{
-                              fontSize: "12px",
-                              fontStyle: "normal",
-                              lineHeight: "22px",
-                              color: "#000",
-                              fontWeight: 500,
+                              color: "#333",
+                              fontSize: "14px",
+                              textDecoration: "none",
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: "5px",
                             }}
-                            className="description"
                           >
-                            2, 2.5, 3 &amp; 3.5 BHK starting ₹3.41Cr Residential
-                            | Ready &amp; Under-construction available
-                          </p>
+                            Read More{" "}
+                            <i
+                              className="ml-5"
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                              }}
+                            >
+                              <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 18 18"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                style={{ transition: "transform 0.3s" }}
+                              >
+                                <path
+                                  d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Link>
                         </div>
                       </div>
                     </div>

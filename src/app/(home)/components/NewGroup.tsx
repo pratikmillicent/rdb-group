@@ -35,7 +35,7 @@ const data: DataItem[] = [
   },
   {
     id: 3,
-    image: "assets/images/home/fracto.png",
+    image: "assets/images/home/fracto-2.webp",
     logo: "assets/images/home/rdb-movie.png",
     type: "Fracto",
     title: "Aspect Infrastructure",
@@ -91,7 +91,7 @@ const NewGroupGrid: React.FC = () => {
 
     if (
       portfolio.top < 75 &&
-      portfolio.height / (data.length - 1) < portfolio.bottom
+      (portfolio.height - 80) / (data.length - 1) < portfolio.bottom
     ) {
       leftSide.style.position = "fixed";
       leftSide.style.top = "80px";
@@ -152,7 +152,7 @@ const NewGroupGrid: React.FC = () => {
                       className={`cont ${index === 0 ? "active" : ""}`}
                       data-tab={`tab-${index + 1}`}
                       key={index}
-                      style={marginStyle}
+                      // style={marginStyle}
                     >
                       <div className="img-hiden">
                         <Image
