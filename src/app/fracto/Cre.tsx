@@ -10,13 +10,16 @@ import { Navigation, Pagination, Autoplay } from "swiper";
 const Cre = () => {
   return (
     <section className="" style={{ background: "var(--background)" }}>
-      <div className="container">
+      <div className="">
         <div className="sec-lg-head">
           <div
             className="d-flex row justify-content-center"
             style={{ justifyContent: "center", alignItems: "center" }}
           >
-            <div className="col-lg-6" style={{ color: "var(--navy)" }}>
+            <div
+              className="col-lg-6"
+              style={{ color: "var(--navy)", padding: "0 100px" }}
+            >
               <Heading
                 headTitle="Why Commercial Real Estate?"
                 fontSize="40px"
@@ -42,7 +45,7 @@ const Cre = () => {
             <div className="col-lg-6">
               <img
                 style={{ height: "80vh" }}
-                src="/assets/images/fracto/CRE.png"
+                src="/assets/images/fracto/CRE_2.png"
                 alt="cre"
               />
             </div>

@@ -28,7 +28,7 @@ const page = () => {
         <Image
           style={{ objectFit: "fill" }}
           objectFit="cover"
-          src="/assets/images/fracto/banner.png"
+          src="/assets/images/fracto/banner-2.png"
           // className="w-100 news-banner banner "
           className="w-100 news-banner banner"
           alt="fracto"
@@ -43,7 +43,7 @@ const page = () => {
             width: "100%",
             height: "100%",
             background:
-              "linear-gradient(117deg, rgba(23, 38, 57, 90%) 0%, rgba(1, 1, 1, 50%) 75%)",
+              "linear-gradient(117deg, rgba(23, 38, 57, 100%) 0%, rgba(1, 1, 1, 10%) 70%)",
             zIndex: 1,
             pointerEvents: "none",
           }}

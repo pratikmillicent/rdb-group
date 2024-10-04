@@ -23,12 +23,13 @@ interface IImage {
 
 const events: IEvent[] = [
   {
-    title: "",
-    image: "https://fakeimg.pl/640x320",
+    image: "/assets/images/career/gallary/2.jpg",
   },
   {
-    title: "",
-    image: "https://fakeimg.pl/640x320",
+    image: "/assets/images/career/gallary/3.jpg",
+  },
+  {
+    image: "/assets/images/career/gallary/1.jpg",
   },
 ];
 
@@ -61,20 +62,12 @@ const events: IEvent[] = [
 //     image: "/assets/images/movie/gallary/mumbai-premier/i (9).JPG",
 //   },
 // ];
-const ahemdabad: IImage[] = [
-  {
-    image: "https://fakeimg.pl/640x320",
-  },
-  {
-    image: "https://fakeimg.pl/640x320",
-  },
-  {
-    image: "https://fakeimg.pl/640x320",
-  },
-  {
-    image: "https://fakeimg.pl/640x320",
-  },
-];
+// const ahemdabad: IImage[] = [
+
+//   // {
+//   //   image: "/assets/images/career/gallary/1.jpg",
+//   // },
+// ];
 
 function CarrerGallery() {
   const [showModal, setShowModal] = useState(false);
@@ -105,14 +98,15 @@ function CarrerGallery() {
   const renderSlide = (item: IImage) => (
     <div className="" style={{}}>
       <div>
-        <div style={{ position: "relative" }}>
+        <div style={{ position: "relative", height: "300px" }}>
           <Image
             src={item?.image}
             className="circle-img"
             alt="Landscape picture"
-            width={800}
-            height={300}
-            style={{ height: "250px" }}
+            fill
+            // width={600}
+            // height={250}
+            // style={{ height: "250px" }}
           />
 
           <h3
@@ -204,57 +198,45 @@ function CarrerGallery() {
       </section>
 
       {/* Modal for displaying images */}
-      <Modal show={showModal} onHide={handleClose} centered size="lg">
-        <Modal.Body>
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
-            initialSlide={activeIndex}
-            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-            navigation // Enable navigation arrows
-            modules={[Navigation]} // Import the Swiper navigation module
-          >
-            {ahemdabad.map((image, index) => (
-              <SwiperSlide key={index}>
-                <div className="swiper-image-container">
-                  <img
-                    src={image.image}
-                    alt={image.image}
-                    className="landscape-image"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </Modal.Body>
-        <Modal.Footer>
-          <div className="toast-header">
-            {/* <button
-              className="btn btn-5"
-              style={{ color: "#fff" }}
-              onClick={handleClose}
+      <div style={{ maxHeight: "50vh" }}>
+        <Modal show={showModal} onHide={handleClose} centered>
+          <Modal.Body>
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              // initialSlide={activeIndex}
+              // onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+              navigation
+              modules={[Navigation]}
             >
-              <span></span>
+              {events.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <div className="swiper-image-container">
+                    <img
+                      style={{ height: "300px" }}
+                      src={image.image}
+                      alt={image.image}
+                      className="landscape-image"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </Modal.Body>
+          <Modal.Footer>
+            <button onClick={handleClose} className="btn btn-golden">
               Close
-            </button> */}
-            <div>
-              <button
-                onClick={handleClose}
-                className="btn btn-10 flex-vh-center"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </Modal.Footer>
-      </Modal>
+            </button>
+          </Modal.Footer>
+        </Modal>
+      </div>
     </>
   );
 }
 
 const swiperOptions = {
   speed: 1000,
-  spaceBetween: 80,
+  spaceBetween: 40,
   loop: true,
   centeredSlides: true,
   slidesPerView: 2,

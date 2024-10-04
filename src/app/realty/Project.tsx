@@ -37,7 +37,7 @@ const Project = () => {
     },
     slidesPerView: 3,
     slidesPerGroup: 3,
-    loop: true,
+    loop: false,
     spaceBetween: 40,
     speed: 1000,
     navigation: {
@@ -104,7 +104,7 @@ const Project = () => {
                 cursor: "pointer",
               }}
             >
-              Ongoing
+              Completed
             </div>
             {/* <div
               // onClick={() => setActive(1)}
@@ -175,7 +175,7 @@ const Project = () => {
                         <div className="cont mt-30">
                           <h6 className="fw-600">{item.description}</h6>
                           <Link
-                            href={item.link}
+                            href={"/realty/" + item.id}
                             className="mt-6 ls1 sub-title fw-500"
                             style={{
                               color: "#333",
@@ -267,7 +267,7 @@ const Project = () => {
                 cursor: "pointer",
               }}
             >
-              Completed
+              Ongoing
             </div>
 
             <div
@@ -290,7 +290,7 @@ const Project = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {upcomingProjectsData.map((item) => (
+                  {ongoingProjectsData.map((item) => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
@@ -314,7 +314,7 @@ const Project = () => {
                         <div className="cont mt-30">
                           <h6 className="fw-600">{item.description}</h6>
                           <Link
-                            href={item.link}
+                            href={"/realty/" + item.id}
                             className="mt-6 ls1 sub-title fw-500"
                             style={{
                               color: "#333",
@@ -429,7 +429,7 @@ const Project = () => {
                   id="content-carousel-container-unq-blog"
                   className="swiper-container"
                 >
-                  {sustainabilityProjectsData.map((item) => (
+                  {upcomingProjectsData.map((item) => (
                     <SwiperSlide
                       key={item.id}
                       className="wow fadeInUp"
@@ -453,7 +453,7 @@ const Project = () => {
                         <div className="cont mt-30">
                           <h6 className="fw-600">{item.description}</h6>
                           <Link
-                            href={item.link}
+                            href={"/realty/" + item.id}
                             className="mt-6 ls1 sub-title fw-500"
                             style={{
                               color: "#333",
@@ -532,74 +532,109 @@ const Project = () => {
 
 export default Project;
 
-const completedProjectsData = [
+// const completedProjectsData = [
+//   {
+//     id: 1,
+//     image:
+//       "https://www.commercialproperty.review/wp-content/uploads/2020/12/The-World-Towers-Apartments-Worli-South-Mumbai.jpg",
+//     description: "Luxury Apartments in South Mumbai - Completed in 2023",
+//   },
+//   {
+//     id: 2,
+//     image:
+//       "https://img.staticmb.com/mbimages/project/Photo_h300_w450/2019/05/20/Project-Photo-11-Lodha-Supremus-Mumbai-5029261_345_1366_300_450.jpg",
+//     description: "Commercial Complex in Andheri - Completed in 2022",
+//   },
+//   {
+//     id: 3,
+//     image:
+//       "https://destinationcompress.s3.ap-south-1.amazonaws.com/acdb2987-80d1-4b05-9ad3-de30647a64ef.jpeg",
+//     description: "Eco-Friendly Villas in Pune - Completed in 2021",
+//   },
+// ];
+
+// const upcomingProjectsData = [
+//   {
+//     id: 1,
+//     image:
+//       "https://www.piramalmahalaxmi.net/wp-content/uploads/2019/07/PMCENTRALTOWER-1024x877.jpg",
+//     description: "Skyline Tower in South Mumbai - Expected Completion in 2025",
+//   },
+//   {
+//     id: 2,
+//     image:
+//       "https://static.squareyards.com/resources/images/mumbai/project-image/raiaskaran-tech-park-project-project-large-image1.jpg",
+//     description: "Tech Park in Andheri - Expected Completion in 2024",
+//   },
+//   {
+//     id: 3,
+//     image:
+//       "https://www.adanirealty.com/-/media/Project/Realty/Residential/Pune/Atelier-Greens/Carousel-Images/3.jpg",
+//     description:
+//       "Eco-Friendly Residences in Pune - Expected Completion in 2026",
+//   },
+// ];
+
+// const sustainabilityProjectsData = [
+//   {
+//     id: 1,
+//     image:
+//       "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-40-Omkar-1973-Mumbai-5019920_345_1366_310_462.jpg",
+//     description: "Green Residential Towers in Worli - LEED Certified",
+//   },
+//   {
+//     id: 2,
+//     image: "https://www.ghar.tv/projectimages/168/photo-518.jpg",
+//     description: "Solar-Powered Office Complex in Andheri",
+//   },
+//   {
+//     id: 3,
+//     image:
+//       "https://admin.purplerealtors.in/admin/upload/Gallery/new_21387487501638337746.jpg",
+//     description: "Zero-Waste Community in Pune",
+//   },
+// ];
+
+const ongoingProjectsData = [
   {
     id: 1,
-    image:
-      "https://www.commercialproperty.review/wp-content/uploads/2020/12/The-World-Towers-Apartments-Worli-South-Mumbai.jpg",
-    description: "Luxury Apartments in South Mumbai - Completed in 2023",
-    link: "https://www.example.com/luxury-apartments-south-mumbai",
+    image: "/assets/images/realty/projects/2.jpg",
+    description: "Skyline Tower in South Mumbai - Expected Completion in 2025",
   },
   {
     id: 2,
-    image:
-      "https://img.staticmb.com/mbimages/project/Photo_h300_w450/2019/05/20/Project-Photo-11-Lodha-Supremus-Mumbai-5029261_345_1366_300_450.jpg",
+    image: "/assets/images/realty/projects/3.jpg",
+    description: "Tech Park in Andheri - Expected Completion in 2024",
+  },
+];
+
+const completedProjectsData = [
+  {
+    id: 1,
+    image: "/assets/images/realty/projects/1.jpg",
+    description: "Luxury Apartments in South Mumbai - Completed in 2023",
+  },
+  {
+    id: 2,
+    image: "/assets/images/realty/projects/4.jpg",
     description: "Commercial Complex in Andheri - Completed in 2022",
-    link: "https://www.example.com/commercial-complex-andheri",
   },
   {
     id: 3,
-    image:
-      "https://destinationcompress.s3.ap-south-1.amazonaws.com/acdb2987-80d1-4b05-9ad3-de30647a64ef.jpeg",
+    image: "/assets/images/realty/projects/5.jpg",
     description: "Eco-Friendly Villas in Pune - Completed in 2021",
-    link: "https://www.example.com/eco-friendly-villas-pune",
   },
 ];
 
 const upcomingProjectsData = [
   {
     id: 1,
-    image:
-      "https://www.piramalmahalaxmi.net/wp-content/uploads/2019/07/PMCENTRALTOWER-1024x877.jpg",
+    image: "/assets/images/realty/projects/2.jpg",
     description: "Skyline Tower in South Mumbai - Expected Completion in 2025",
-    link: "https://www.example.com/skyline-tower-south-mumbai",
   },
-  {
-    id: 2,
-    image:
-      "https://static.squareyards.com/resources/images/mumbai/project-image/raiaskaran-tech-park-project-project-large-image1.jpg",
-    description: "Tech Park in Andheri - Expected Completion in 2024",
-    link: "https://www.example.com/tech-park-andheri",
-  },
-  {
-    id: 3,
-    image:
-      "https://www.adanirealty.com/-/media/Project/Realty/Residential/Pune/Atelier-Greens/Carousel-Images/3.jpg",
-    description:
-      "Eco-Friendly Residences in Pune - Expected Completion in 2026",
-    link: "https://www.example.com/eco-friendly-residences-pune",
-  },
-];
-
-const sustainabilityProjectsData = [
-  {
-    id: 1,
-    image:
-      "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-40-Omkar-1973-Mumbai-5019920_345_1366_310_462.jpg",
-    description: "Green Residential Towers in Worli - LEED Certified",
-    link: "https://www.example.com/green-residential-towers-worli",
-  },
-  {
-    id: 2,
-    image: "https://www.ghar.tv/projectimages/168/photo-518.jpg",
-    description: "Solar-Powered Office Complex in Andheri",
-    link: "https://www.example.com/solar-powered-office-complex-andheri",
-  },
-  {
-    id: 3,
-    image:
-      "https://admin.purplerealtors.in/admin/upload/Gallery/new_21387487501638337746.jpg",
-    description: "Zero-Waste Community in Pune",
-    link: "https://www.example.com/zero-waste-community-pune",
-  },
+  // {
+  //   id: 2,
+  //   image: "/assets/images/realty/projects/3.jpg",
+  //   description: "Tech Park in Andheri - Expected Completion in 2024",
+  // },
 ];

@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import "../SectionImage.css";
 
 const images = {
-  overview: "/assets/images/home/aspirations-7.png",
-  vision: "/assets/images/home/what-drives-us.png",
-  mission: "/assets/images/home/future-outlook.png",
+  overview: "/assets/images/home/aspiration-4.webp",
+  vision: "/assets/images/home/what-drives-us-2.webp",
+  mission: "/assets/images/home/future-outlook-2.jpg",
 };
 
 function SectionImage() {
@@ -40,19 +40,19 @@ function SectionImage() {
     }
   };
 
-  useEffect(() => {
-    parallaxie(".back-image.parallaxie", 0.1);
-  }, [currentImage]);
+  // useEffect(() => {
+  //   parallaxie(".back-image.parallaxie", 0.1);
+  // }, [currentImage]);
 
   return (
     <>
       <div
         className="section-container d-md-flex flex-md-row"
-        style={{ width: "100vw" }}
+        style={{ width: "100vw", height: "70vh" }}
       >
         <div
-          className="vision-container col-md-6 d-flex flex-column pt-40 align-items-center bg-navy"
-          // style={{ padding: "0px 100px" }}
+          className="col-md-7 d-flex flex-column align-items-center bg-navy"
+          style={{ padding: "40px 100px" }}
         >
           <div className="w-100 mb-2 d-flex justify-content-start align-items-start text-white fz-36 fw-600">
             RD Brothers
@@ -121,25 +121,27 @@ function SectionImage() {
           </div>
         </div>
         <div
-          className={`col-md-6 position-relative p-0 ${
+          className={`col-md-5 position-relative p-0 ${
             animate ? "slide-in" : ""
           } d-none d-sm-none d-md-block d-lg-block d-xl-block`}
         >
           <div
-            className="back-image bg-img parallaxie"
-            data-background={currentImage}
+            // className="back-image bg-img parallaxie"
+            // data-background={currentImage}
             // data-overlay-dark="3"
-            data-parallaxie={{
-              speed: "-0.4",
-              size: "auto",
-            }}
+            // data-parallaxie={{
+            //   speed: "-0.4",
+            //   size: "auto",
+            // }}
             style={{
+              backgroundImage: `url(${currentImage})`,
               // backgroundSize: "cover",
               // backgroundPosition: "center",
               height: "100%",
               // width: "100%",
               // backgroundPosition: "center",
-              backgroundSize: "50vw 100%",
+              backgroundSize: "100% 100%",
+              backgroundRepeat: "no-repeat",
             }}
           />
         </div>

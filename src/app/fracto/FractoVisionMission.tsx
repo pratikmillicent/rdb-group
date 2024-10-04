@@ -21,7 +21,7 @@ function FractoSectionImage() {
     >
       <div
         className="vision-container col-md-6 d-flex flex-column align-items-center"
-        style={{ backgroundColor: "var(--navy)" }}
+        style={{ backgroundColor: "var(--navy)", paddingBottom: "30px" }}
       >
         <div className={`tab-content slide-in`}>
           {/* <h5 className="mt-30" style={{ color: "var(--golden)" }}>
@@ -61,7 +61,7 @@ function FractoSectionImage() {
       >
         <div
           className="back-image bg-img parallaxie"
-          data-background="/assets/images/fracto/vision.png"
+          data-background="/assets/images/fracto/vision-mission.webp"
           // data-overlay-dark="3"
           data-parallaxie={{
             speed: "-0.4",

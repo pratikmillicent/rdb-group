@@ -94,7 +94,7 @@ const FractoAdvantage = () => {
             visibility: "visible",
             animationDelay: "0.2s",
             animationName: "fadeInRight",
-            height: "220px",
+            height: "280px",
           }}
         >
           <div
@@ -136,7 +136,7 @@ const FractoAdvantage = () => {
             visibility: "visible",
             animationDelay: "0.2s",
             animationName: "fadeInRight",
-            height: "220px",
+            height: "280px",
           }}
         >
           <div
@@ -178,7 +178,7 @@ const FractoAdvantage = () => {
             visibility: "visible",
             animationDelay: "0.2s",
             animationName: "fadeInRight",
-            height: "220px",
+            height: "280px",
           }}
         >
           <div
@@ -220,7 +220,7 @@ const FractoAdvantage = () => {
             visibility: "visible",
             animationDelay: "0.2s",
             animationName: "fadeInRight",
-            height: "220px",
+            height: "280px",
           }}
         >
           <div

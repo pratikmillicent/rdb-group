@@ -26,7 +26,8 @@ const Realty = () => {
       <main className="bg- text-black">
         <div style={{ position: "relative" }}>
           <Image
-            src="/assets/images/realty/banner.jpg"
+            style={{ objectFit: "fill" }}
+            src="/assets/images/realty/banner.webp"
             className="w-100 d-block  news-banner banner hero-height"
             // className="w-100 d-block  news-banner hero-height"
             alt="News Banner"
@@ -60,7 +61,7 @@ const Realty = () => {
                 // padding: "0 20px",
               }}
             >
-              <p style={{ fontSize: "46px", color: "#FFF" }}>
+              <p style={{ fontSize: "48px", fontWeight: "600", color: "#FFF" }}>
                 Taking real estate
                 <br /> development to the next level
                 <br /> with a customer-first attitude

@@ -40,11 +40,11 @@ function About() {
     <>
       <div style={{ position: "relative" }}>
         <Image
-          src="/assets/images/about/banner.png"
+          src="/assets/images/about/banner-3.webp"
           className="w-100 d-block  news-banner banner hero-height"
           // className="w-100 d-block  news-banner hero-height"
           alt="News Banner"
-          // style={{objectFit : 'cover'}}
+          style={{ objectFit: "fill" }}
           width={800}
           height={500}
         />
@@ -56,7 +56,7 @@ function About() {
             width: "100%",
             height: "100%",
             background:
-              "linear-gradient(117deg, rgba(23, 38, 57, 90%) 0%, rgba(1, 1, 1, 50%) 75%)",
+              "linear-gradient(117deg, rgba(23, 38, 57, 100%) 0%, rgba(1, 1, 1, 10%) 70%)",
             zIndex: 1,
             pointerEvents: "none",
           }}

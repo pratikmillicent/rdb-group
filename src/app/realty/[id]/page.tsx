@@ -1,11 +1,11 @@
 import React from "react";
-import ProjectFractoDetailsPage from "./FracProjDetail";
+import ProjectDetailsPage from "./ProjDetail";
 
 const page = () => {
   return (
     <>
       <div>
-        <ProjectFractoDetailsPage />
+        <ProjectDetailsPage />
       </div>
     </>
   );
