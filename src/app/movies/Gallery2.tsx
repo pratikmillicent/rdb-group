@@ -273,28 +273,28 @@ function Gallary2() {
 
 const swiperOptions = {
   speed: 1000,
-  spaceBetween: 20,
+  spaceBetween: 40,
   loop: true,
-  centeredSlides: true,
-  slidesPerView: 2,
+  centeredSlides: false,
+  slidesPerView: 3,
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 60,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 60,
-    },
-    1024: {
-      slidesPerView: 2,
-    },
-  },
+  // breakpoints: {
+  //   0: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 30,
+  //   },
+  //   640: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 60,
+  //   },
+  //   768: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 60,
+  //   },
+  //   1024: {
+  //     slidesPerView: 2,
+  //   },
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

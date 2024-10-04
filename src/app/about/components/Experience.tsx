@@ -10,7 +10,7 @@ const Experience = () => {
               className=" p-4 d-flex flex-col align-items-center justify-content-center"
               style={{ border: "2px solid #eaa636" }}
             >
-              <h1 className="experience-font">20</h1>
+              <h1 className="experience-font">20+</h1>
               <p className="year-exp">years of Experience</p>
             </div>
           </div>

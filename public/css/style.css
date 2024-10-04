@@ -11353,7 +11353,8 @@ header.in-box {
 } */
 .experience-font {
   color: #172639;
-  font-size: 180px;
+  font-size: 160px;
+  line-height: 240px;
 }
 
 .year-exp {

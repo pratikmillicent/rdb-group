@@ -20,32 +20,26 @@ interface Video {
 
 const data: Video[] = [
   {
-    image: "/assets/images/home/business-update2.webp",
+    image: "/assets/images/career/testimonial-1.webp",
     title: "Expanding Horizons with Strategic Acquisitions and Future Growth",
     videoId: "AzwC6umvd1s",
     channel: "youtube",
   },
   {
-    image: "/assets/images/home/business-update1.webp",
+    image: "/assets/images/career/testimonial-2.jpeg",
     title: "Expanding Horizons with Strategic Acquisitions and Future Growth",
     videoId: "AzwC6umvd1s",
     channel: "youtube",
   },
   {
-    image: "/assets/images/home/business-update2.webp",
-    title: "Expanding Horizons with Strategic Acquisitions and Future Growth",
-    videoId: "AzwC6umvd1s",
-    channel: "youtube",
-  },
-  {
-    image: "/assets/images/home/business-update1.webp",
+    image: "/assets/images/career/testimonial-3.jpg",
     title: "Expanding Horizons with Strategic Acquisitions and Future Growth",
     videoId: "AzwC6umvd1s",
     channel: "youtube",
   },
 ];
 
-function VideoGallary() {
+function TestimonialVideo() {
   const swiperRef = useRef<SwiperCore>(null);
   const [loadSwiper, setLoadSwiper] = useState(false);
 
@@ -111,7 +105,7 @@ function VideoGallary() {
 
   return (
     <>
-      <Heading headTitle="Our Gallery" />
+      <Heading headTitle="Testimonials" />
       <div className="container">
         <div className="container-fluid rest">
           <div className="row" style={{ marginBottom: "120px" }}>
@@ -210,4 +204,4 @@ const swiperOptions = {
   },
 };
 
-export default VideoGallary;
+export default TestimonialVideo;

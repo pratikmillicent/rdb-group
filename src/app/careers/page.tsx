@@ -6,6 +6,7 @@ import Image from "next/image";
 import TestimonialCareer from "./components/TestimonialCareer.jsx";
 import { Col, Row } from "react-bootstrap";
 import CarrerGallery from "./CarrerGallery";
+import TestimonialVideo from "./components/TestimonialVideo";
 
 const page = () => {
   return (
@@ -125,7 +126,8 @@ const page = () => {
             <CarrerGallery />
             {/* <p className="text-dark fw-900 mb-4">Open Positions</p> */}
 
-            <TestimonialCareer />
+            {/* <TestimonialCareer /> */}
+            <TestimonialVideo />
 
             <div>
               <Heading headTitle="Current Openings" />
